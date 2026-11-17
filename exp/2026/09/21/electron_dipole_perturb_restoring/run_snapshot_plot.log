@@ -1,0 +1,6 @@
+N=2784735  slice cells=2821  t_final=2.05
+[vacuum] done
+  init_electron_dipole_ic_vecpot: scale=50.0  R_sph=1.0  r_axis=30.53  u_bg=0.0  inner_cells=680395/2784735  (24.4%)
+  divergence_clean: div_rms 2.7641e-04 → 2.5593e-12  (×9.26e-09)
+[dipole_lam2] done
+saved exp/2026/09/21/electron_dipole_perturb_restoring/charge_snapshot_start_end.png

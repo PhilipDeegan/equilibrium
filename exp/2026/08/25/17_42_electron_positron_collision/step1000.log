@@ -1,0 +1,27 @@
+N=1175219  R=60.0  scale=8.0  z0=+/-10.0  m0=2.49  cross_scale=0.1
+
+[electron] dipole IC at z=+10.0
+  init_electron_dipole_ic: scale=8.0  R_sph=1.0  sigma=None  r_axis=4.89  u_bg=0.0  inner_cells=2798/1175219  (0.2%)
+  divergence_clean: div_rms 4.3261e-02 → 4.0899e-10  (×9.45e-09)
+[positron] mirrored dipole IC at z=-10.0
+  init_electron_dipole_ic: scale=8.0  R_sph=1.0  sigma=None  r_axis=4.89  u_bg=0.0  inner_cells=2798/1175219  (0.2%)
+  divergence_clean: div_rms 4.3261e-02 → 4.0899e-10  (×9.45e-09)
+w0_e=4.9645e+02  w0_p=4.9645e+02  dt=5.1282e-03
+
+   step       J_mid      phi_up     phi_mid      phi_dn    surv_e    surv_p       H_total
+  ------------------------------------------------------------------------------------------
+      0  1.7901e-05  1.3562e-02  1.1450e-02  1.3562e-02    1.0000    1.0000   1.52417e+03
+    100  1.7832e-05  1.1859e-02  1.1450e-02  1.1859e-02    0.9999    0.9999   1.21532e+03
+    200  2.5774e-05  1.1240e-02  1.1441e-02  1.1240e-02    0.9972    0.9972   1.11128e+03
+    300  1.6817e-04  1.0921e-02  1.1293e-02  1.0921e-02    0.9810    0.9810   1.05194e+03
+    400  3.4505e-04  1.0809e-02  1.0975e-02  1.0809e-02    0.9442    0.9442   1.02083e+03
+    500  4.5836e-04  1.0812e-02  1.0518e-02  1.0812e-02    0.8973    0.8973   1.01058e+03
+    600  4.4854e-04  1.0797e-02  1.0005e-02  1.0797e-02    0.8558    0.8558   1.00569e+03
+    700  6.4438e-04  1.0772e-02  9.7549e-03  1.0772e-02    0.8330    0.8330   1.00507e+03
+    800  9.2775e-04  1.0763e-02  9.8289e-03  1.0763e-02    0.8284    0.8284   1.00504e+03
+    900  1.0237e-03  1.0777e-02  9.9848e-03  1.0777e-02    0.8360    0.8360   1.00500e+03
+   1000  1.1008e-03  1.0785e-02  1.0211e-02  1.0785e-02    0.8490    0.8490   1.00471e+03
+final state saved -> /bk/dst/electron_positron_step1000.hdf5
+data saved -> exp/2026/08/25/17_42_electron_positron_collision/step1000.npz
+plot -> exp/2026/08/25/17_42_electron_positron_collision/step1000.png
+cross-section plot -> exp/2026/08/25/17_42_electron_positron_collision/step1000_cross.png

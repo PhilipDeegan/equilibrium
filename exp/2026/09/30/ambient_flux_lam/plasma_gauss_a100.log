@@ -1,0 +1,2 @@
+potential_gauss_a100_T0.01_amb0.2: alpha_eff=83.33 T=1.000e-02 bath lam mean 5.222e-01  Edep_core late 9.1371e-01  (t=0.25/0.5/1: 1.004e+00 7.919e-01 1.054e+00)  lam core late 1.276e+00 vs bath 1.151e+00  lam_max 1.569e+00  2283s
+potential_gauss_a100_T0.1_amb2: alpha_eff=33.33 T=1.000e-01 bath lam mean 5.294e+00  Edep_core late 7.6072e+00  (t=0.25/0.5/1: 1.306e+01 1.042e+01 6.899e+00)  lam core late 1.146e+01 vs bath 1.113e+01  lam_max 1.446e+01  955s

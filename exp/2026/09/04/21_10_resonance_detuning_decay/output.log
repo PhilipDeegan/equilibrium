@@ -1,0 +1,142 @@
+
+=== delta=+0.00 (K=4.4930) ===
+N=147047  dt=5.1282e-03  u_rms0=4.8726e-02  circ0=+7.7512e+02  H0=3.2465e+03
+       0  u_ratio=1.000000  circ_ratio=1.000000  H/H0=1.000000  overlap_u=1.0000  overlap_phi=0.6625
+     200  u_ratio=1.122033  circ_ratio=1.000003  H/H0=1.002896  overlap_u=0.7736  overlap_phi=-0.3854
+     400  u_ratio=1.486768  circ_ratio=1.000014  H/H0=1.002345  overlap_u=-0.7766  overlap_phi=0.1960
+     600  u_ratio=1.432724  circ_ratio=1.000006  H/H0=1.001888  overlap_u=0.1626  overlap_phi=0.2347
+     800  u_ratio=1.426514  circ_ratio=0.999995  H/H0=1.001914  overlap_u=0.0339  overlap_phi=0.0567
+    1000  u_ratio=1.428498  circ_ratio=1.000015  H/H0=1.001873  overlap_u=0.0105  overlap_phi=0.1005
+    1200  u_ratio=1.428530  circ_ratio=0.999986  H/H0=1.000812  overlap_u=0.0032  overlap_phi=0.1088
+    1400  u_ratio=1.431149  circ_ratio=1.000014  H/H0=0.955000  overlap_u=0.0005  overlap_phi=0.1143
+    1600  u_ratio=0.858464  circ_ratio=0.999998  H/H0=0.891323  overlap_u=-0.0009  overlap_phi=0.1125
+    1800  u_ratio=0.958324  circ_ratio=0.999994  H/H0=0.778018  overlap_u=-0.0004  overlap_phi=0.1229
+    2000  u_ratio=1.010597  circ_ratio=1.000007  H/H0=0.727821  overlap_u=0.0007  overlap_phi=0.1268
+    2200  u_ratio=0.825354  circ_ratio=0.999996  H/H0=0.702617  overlap_u=0.0013  overlap_phi=0.1269
+    2400  u_ratio=0.780840  circ_ratio=1.000005  H/H0=0.696639  overlap_u=-0.0250  overlap_phi=0.1192
+    2600  u_ratio=0.779124  circ_ratio=0.999998  H/H0=0.694207  overlap_u=-0.0049  overlap_phi=0.1583
+    2800  u_ratio=0.777935  circ_ratio=1.000003  H/H0=0.692656  overlap_u=0.4401  overlap_phi=0.1260
+    3000  u_ratio=0.769525  circ_ratio=0.999998  H/H0=0.691336  overlap_u=-0.7418  overlap_phi=-0.0622
+    3200  u_ratio=0.444229  circ_ratio=1.000005  H/H0=0.690864  overlap_u=-0.3204  overlap_phi=0.4422
+    3400  u_ratio=0.953569  circ_ratio=1.000001  H/H0=0.690447  overlap_u=0.9414  overlap_phi=-0.0208
+    3600  u_ratio=0.852949  circ_ratio=0.999997  H/H0=0.689333  overlap_u=-0.6606  overlap_phi=0.0207
+    3800  u_ratio=0.770411  circ_ratio=1.000006  H/H0=0.688834  overlap_u=-0.0524  overlap_phi=0.2730
+    4000  u_ratio=0.768468  circ_ratio=1.000005  H/H0=0.688458  overlap_u=0.1756  overlap_phi=0.0481
+    4200  u_ratio=0.759557  circ_ratio=1.000006  H/H0=0.688032  overlap_u=-0.0591  overlap_phi=0.1587
+    4400  u_ratio=0.761804  circ_ratio=1.000006  H/H0=0.687200  overlap_u=0.0092  overlap_phi=0.1136
+    4600  u_ratio=0.729466  circ_ratio=1.000000  H/H0=0.682179  overlap_u=0.0081  overlap_phi=0.1268
+    4800  u_ratio=0.608930  circ_ratio=1.000000  H/H0=0.663379  overlap_u=-0.0026  overlap_phi=0.1307
+    5000  u_ratio=0.766481  circ_ratio=0.999997  H/H0=0.633705  overlap_u=-0.0020  overlap_phi=0.1334
+    5200  u_ratio=0.538700  circ_ratio=1.000009  H/H0=0.617361  overlap_u=-0.0013  overlap_phi=0.1312
+    5400  u_ratio=0.424194  circ_ratio=0.999997  H/H0=0.607773  overlap_u=0.0032  overlap_phi=0.1308
+    5600  u_ratio=0.427019  circ_ratio=1.000001  H/H0=0.603890  overlap_u=-0.0228  overlap_phi=0.1270
+    5800  u_ratio=0.428664  circ_ratio=1.000001  H/H0=0.602463  overlap_u=-0.0620  overlap_phi=0.1385
+    6000  u_ratio=0.425061  circ_ratio=1.000002  H/H0=0.601642  overlap_u=0.3801  overlap_phi=0.1689
+
+=== delta=+0.02 (K=4.5829) ===
+N=147047  dt=5.1282e-03  u_rms0=4.7180e-02  circ0=+7.7114e+02  H0=3.1194e+03
+       0  u_ratio=1.000000  circ_ratio=1.000000  H/H0=1.000000  overlap_u=0.9987  overlap_phi=0.6700
+     200  u_ratio=1.133042  circ_ratio=0.999999  H/H0=1.002951  overlap_u=0.7698  overlap_phi=-0.3901
+     400  u_ratio=1.510755  circ_ratio=1.000002  H/H0=1.002423  overlap_u=-0.7743  overlap_phi=0.2042
+     600  u_ratio=1.462285  circ_ratio=1.000002  H/H0=1.001975  overlap_u=0.1699  overlap_phi=0.2302
+     800  u_ratio=1.456067  circ_ratio=0.999992  H/H0=1.001993  overlap_u=0.0304  overlap_phi=0.0597
+    1000  u_ratio=1.458223  circ_ratio=1.000010  H/H0=1.001950  overlap_u=0.0102  overlap_phi=0.1009
+    1200  u_ratio=1.459098  circ_ratio=0.999992  H/H0=1.000571  overlap_u=0.0031  overlap_phi=0.1095
+    1400  u_ratio=1.453086  circ_ratio=1.000008  H/H0=0.954700  overlap_u=0.0005  overlap_phi=0.1149
+    1600  u_ratio=0.860303  circ_ratio=0.999996  H/H0=0.888064  overlap_u=-0.0009  overlap_phi=0.1130
+    1800  u_ratio=0.966009  circ_ratio=0.999997  H/H0=0.773781  overlap_u=-0.0004  overlap_phi=0.1234
+    2000  u_ratio=1.027104  circ_ratio=0.999999  H/H0=0.722656  overlap_u=0.0007  overlap_phi=0.1277
+    2200  u_ratio=0.840611  circ_ratio=0.999998  H/H0=0.697738  overlap_u=0.0019  overlap_phi=0.1280
+    2400  u_ratio=0.798788  circ_ratio=1.000000  H/H0=0.691948  overlap_u=-0.0251  overlap_phi=0.1193
+    2600  u_ratio=0.796677  circ_ratio=0.999999  H/H0=0.689592  overlap_u=-0.0206  overlap_phi=0.1581
+    2800  u_ratio=0.796794  circ_ratio=1.000000  H/H0=0.688088  overlap_u=0.4536  overlap_phi=0.1347
+    3000  u_ratio=0.776338  circ_ratio=0.999999  H/H0=0.686803  overlap_u=-0.7330  overlap_phi=-0.0711
+    3200  u_ratio=0.459803  circ_ratio=1.000001  H/H0=0.686382  overlap_u=-0.3426  overlap_phi=0.4483
+    3400  u_ratio=0.973889  circ_ratio=1.000000  H/H0=0.685971  overlap_u=0.9364  overlap_phi=-0.0234
+    3600  u_ratio=0.876341  circ_ratio=0.999999  H/H0=0.684859  overlap_u=-0.6595  overlap_phi=0.0240
+    3800  u_ratio=0.790758  circ_ratio=1.000001  H/H0=0.684363  overlap_u=-0.0400  overlap_phi=0.2744
+    4000  u_ratio=0.786340  circ_ratio=1.000001  H/H0=0.683992  overlap_u=0.1686  overlap_phi=0.0478
+    4200  u_ratio=0.777594  circ_ratio=1.000003  H/H0=0.683570  overlap_u=-0.0562  overlap_phi=0.1600
+    4400  u_ratio=0.780351  circ_ratio=1.000000  H/H0=0.682696  overlap_u=0.0080  overlap_phi=0.1149
+    4600  u_ratio=0.743057  circ_ratio=1.000000  H/H0=0.677930  overlap_u=0.0082  overlap_phi=0.1273
+    4800  u_ratio=0.631955  circ_ratio=0.999997  H/H0=0.658518  overlap_u=-0.0022  overlap_phi=0.1317
+    5000  u_ratio=0.785740  circ_ratio=0.999999  H/H0=0.627928  overlap_u=-0.0019  overlap_phi=0.1346
+    5200  u_ratio=0.556618  circ_ratio=1.000002  H/H0=0.611124  overlap_u=-0.0012  overlap_phi=0.1325
+    5400  u_ratio=0.437553  circ_ratio=0.999999  H/H0=0.601365  overlap_u=0.0040  overlap_phi=0.1321
+    5600  u_ratio=0.438501  circ_ratio=0.999998  H/H0=0.597533  overlap_u=-0.0207  overlap_phi=0.1279
+    5800  u_ratio=0.439281  circ_ratio=1.000000  H/H0=0.596105  overlap_u=-0.0730  overlap_phi=0.1383
+    6000  u_ratio=0.435597  circ_ratio=0.999999  H/H0=0.595311  overlap_u=0.3740  overlap_phi=0.1739
+
+=== delta=+0.05 (K=4.7177) ===
+N=147047  dt=5.1282e-03  u_rms0=4.5096e-02  circ0=+7.6071e+02  H0=2.9311e+03
+       0  u_ratio=1.000000  circ_ratio=1.000000  H/H0=1.000000  overlap_u=0.9916  overlap_phi=0.6800
+     200  u_ratio=1.146101  circ_ratio=0.999994  H/H0=1.003028  overlap_u=0.7614  overlap_phi=-0.3970
+     400  u_ratio=1.541062  circ_ratio=0.999986  H/H0=1.002540  overlap_u=-0.7691  overlap_phi=0.2170
+     600  u_ratio=1.501926  circ_ratio=0.999995  H/H0=1.002113  overlap_u=0.1806  overlap_phi=0.2224
+     800  u_ratio=1.495898  circ_ratio=0.999987  H/H0=1.002119  overlap_u=0.0249  overlap_phi=0.0644
+    1000  u_ratio=1.498226  circ_ratio=1.000001  H/H0=1.002074  overlap_u=0.0096  overlap_phi=0.1012
+    1200  u_ratio=1.500259  circ_ratio=1.000001  H/H0=1.000005  overlap_u=0.0028  overlap_phi=0.1103
+    1400  u_ratio=1.479120  circ_ratio=0.999999  H/H0=0.953711  overlap_u=0.0003  overlap_phi=0.1155
+    1600  u_ratio=0.857972  circ_ratio=0.999994  H/H0=0.882444  overlap_u=-0.0010  overlap_phi=0.1136
+    1800  u_ratio=0.971465  circ_ratio=1.000003  H/H0=0.766769  overlap_u=-0.0003  overlap_phi=0.1240
+    2000  u_ratio=1.046111  circ_ratio=0.999988  H/H0=0.714246  overlap_u=0.0008  overlap_phi=0.1290
+    2200  u_ratio=0.860169  circ_ratio=1.000002  H/H0=0.689869  overlap_u=0.0027  overlap_phi=0.1294
+    2400  u_ratio=0.823220  circ_ratio=0.999992  H/H0=0.684377  overlap_u=-0.0251  overlap_phi=0.1193
+    2600  u_ratio=0.820436  circ_ratio=1.000001  H/H0=0.682141  overlap_u=-0.0431  overlap_phi=0.1577
+    2800  u_ratio=0.822409  circ_ratio=0.999995  H/H0=0.680712  overlap_u=0.4723  overlap_phi=0.1479
+    3000  u_ratio=0.783614  circ_ratio=1.000000  H/H0=0.679488  overlap_u=-0.7188  overlap_phi=-0.0846
+    3200  u_ratio=0.482285  circ_ratio=0.999995  H/H0=0.679145  overlap_u=-0.3720  overlap_phi=0.4573
+    3400  u_ratio=0.999928  circ_ratio=0.999999  H/H0=0.678746  overlap_u=0.9281  overlap_phi=-0.0276
+    3600  u_ratio=0.908252  circ_ratio=1.000001  H/H0=0.677642  overlap_u=-0.6572  overlap_phi=0.0292
+    3800  u_ratio=0.818761  circ_ratio=0.999994  H/H0=0.677151  overlap_u=-0.0209  overlap_phi=0.2760
+    4000  u_ratio=0.810518  circ_ratio=0.999996  H/H0=0.676788  overlap_u=0.1572  overlap_phi=0.0473
+    4200  u_ratio=0.802222  circ_ratio=0.999999  H/H0=0.676370  overlap_u=-0.0515  overlap_phi=0.1616
+    4400  u_ratio=0.805527  circ_ratio=0.999991  H/H0=0.675414  overlap_u=0.0060  overlap_phi=0.1167
+    4600  u_ratio=0.761065  circ_ratio=1.000000  H/H0=0.670941  overlap_u=0.0083  overlap_phi=0.1279
+    4800  u_ratio=0.664561  circ_ratio=0.999992  H/H0=0.650590  overlap_u=-0.0016  overlap_phi=0.1329
+    5000  u_ratio=0.811833  circ_ratio=1.000001  H/H0=0.618629  overlap_u=-0.0018  overlap_phi=0.1364
+    5200  u_ratio=0.582169  circ_ratio=0.999991  H/H0=0.601089  overlap_u=-0.0011  overlap_phi=0.1342
+    5400  u_ratio=0.456821  circ_ratio=1.000002  H/H0=0.591090  overlap_u=0.0051  overlap_phi=0.1338
+    5600  u_ratio=0.454423  circ_ratio=0.999994  H/H0=0.587339  overlap_u=-0.0176  overlap_phi=0.1291
+    5800  u_ratio=0.453712  circ_ratio=0.999999  H/H0=0.585911  overlap_u=-0.0886  overlap_phi=0.1378
+    6000  u_ratio=0.449817  circ_ratio=0.999996  H/H0=0.585160  overlap_u=0.3645  overlap_phi=0.1812
+
+=== delta=+0.10 (K=4.9423) ===
+N=147047  dt=5.1282e-03  u_rms0=4.2273e-02  circ0=+7.4247e+02  H0=2.6657e+03
+       0  u_ratio=1.000000  circ_ratio=1.000000  H/H0=1.000000  overlap_u=0.9634  overlap_phi=0.6875
+     200  u_ratio=1.156487  circ_ratio=0.999987  H/H0=1.003091  overlap_u=0.7391  overlap_phi=-0.4041
+     400  u_ratio=1.572303  circ_ratio=0.999959  H/H0=1.002690  overlap_u=-0.7551  overlap_phi=0.2366
+     600  u_ratio=1.550519  circ_ratio=0.999984  H/H0=1.002325  overlap_u=0.1973  overlap_phi=0.2042
+     800  u_ratio=1.545365  circ_ratio=0.999979  H/H0=1.002313  overlap_u=0.0151  overlap_phi=0.0722
+    1000  u_ratio=1.547708  circ_ratio=0.999987  H/H0=1.002261  overlap_u=0.0084  overlap_phi=0.1005
+    1200  u_ratio=1.551312  circ_ratio=1.000016  H/H0=0.998597  overlap_u=0.0023  overlap_phi=0.1101
+    1400  u_ratio=1.500086  circ_ratio=0.999984  H/H0=0.951531  overlap_u=0.0001  overlap_phi=0.1147
+    1600  u_ratio=0.839054  circ_ratio=0.999990  H/H0=0.873245  overlap_u=-0.0010  overlap_phi=0.1128
+    1800  u_ratio=0.961445  circ_ratio=1.000011  H/H0=0.757202  overlap_u=-0.0002  overlap_phi=0.1228
+    2000  u_ratio=1.058864  circ_ratio=0.999970  H/H0=0.703108  overlap_u=0.0008  overlap_phi=0.1288
+    2200  u_ratio=0.881490  circ_ratio=1.000008  H/H0=0.680221  overlap_u=0.0040  overlap_phi=0.1296
+    2400  u_ratio=0.854557  circ_ratio=0.999980  H/H0=0.675308  overlap_u=-0.0249  overlap_phi=0.1172
+    2600  u_ratio=0.850492  circ_ratio=1.000004  H/H0=0.673308  overlap_u=-0.0782  overlap_phi=0.1541
+    2800  u_ratio=0.855141  circ_ratio=0.999988  H/H0=0.672029  overlap_u=0.4990  overlap_phi=0.1675
+    3000  u_ratio=0.786350  circ_ratio=1.000001  H/H0=0.670937  overlap_u=-0.6917  overlap_phi=-0.1065
+    3200  u_ratio=0.515645  circ_ratio=0.999985  H/H0=0.670732  overlap_u=-0.4112  overlap_phi=0.4661
+    3400  u_ratio=1.027822  circ_ratio=0.999997  H/H0=0.670362  overlap_u=0.9116  overlap_phi=-0.0355
+    3600  u_ratio=0.949213  circ_ratio=1.000006  H/H0=0.669293  overlap_u=-0.6513  overlap_phi=0.0380
+    3800  u_ratio=0.855469  circ_ratio=0.999983  H/H0=0.668820  overlap_u=0.0119  overlap_phi=0.2736
+    4000  u_ratio=0.841004  circ_ratio=0.999987  H/H0=0.668475  overlap_u=0.1357  overlap_phi=0.0459
+    4200  u_ratio=0.834040  circ_ratio=0.999993  H/H0=0.668066  overlap_u=-0.0428  overlap_phi=0.1612
+    4400  u_ratio=0.837635  circ_ratio=0.999977  H/H0=0.666942  overlap_u=0.0025  overlap_phi=0.1180
+    4600  u_ratio=0.782554  circ_ratio=1.000001  H/H0=0.662800  overlap_u=0.0083  overlap_phi=0.1266
+    4800  u_ratio=0.711056  circ_ratio=0.999985  H/H0=0.641181  overlap_u=-0.0006  overlap_phi=0.1327
+    5000  u_ratio=0.845141  circ_ratio=1.000005  H/H0=0.607481  overlap_u=-0.0016  overlap_phi=0.1368
+    5200  u_ratio=0.619088  circ_ratio=0.999973  H/H0=0.588847  overlap_u=-0.0009  overlap_phi=0.1347
+    5400  u_ratio=0.485227  circ_ratio=1.000006  H/H0=0.578631  overlap_u=0.0068  overlap_phi=0.1344
+    5600  u_ratio=0.475830  circ_ratio=0.999987  H/H0=0.575069  overlap_u=-0.0127  overlap_phi=0.1289
+    5800  u_ratio=0.472210  circ_ratio=0.999996  H/H0=0.573664  overlap_u=-0.1121  overlap_phi=0.1346
+    6000  u_ratio=0.467779  circ_ratio=0.999990  H/H0=0.572993  overlap_u=0.3477  overlap_phi=0.1902
+
+=== summary: circulation retained + shape overlap at final step ===
+delta=+0.00  circ_ratio@6000=1.000002  H/H0=0.601642  overlap_u(->proton)=0.3801  overlap_phi(->proton)=0.1689
+delta=+0.02  circ_ratio@6000=0.999999  H/H0=0.595311  overlap_u(->proton)=0.3740  overlap_phi(->proton)=0.1739
+delta=+0.05  circ_ratio@6000=0.999996  H/H0=0.585160  overlap_u(->proton)=0.3645  overlap_phi(->proton)=0.1812
+delta=+0.10  circ_ratio@6000=0.999990  H/H0=0.572993  overlap_u(->proton)=0.3477  overlap_phi(->proton)=0.1902

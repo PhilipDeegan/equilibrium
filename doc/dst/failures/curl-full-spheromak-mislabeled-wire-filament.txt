@@ -1,0 +1,26 @@
+CONTEXT: equilibrium/substrate/curl_full_spheromak_ic.py (seed_curl_full_pair),
+built on adaptive_flux_tube.find_toroidal_ring plus a locally-fixed
+find_linked_loop_anchored, was presented mid-session (2026-08-16/17) as "a curl-full
+spheromak IC" — a candidate replacement for the curl-free dipole_mode_ic object.
+
+WHAT FAILED: The object is NOT a spheromak. It produces a Hopf-linked ring PAIR
+(Ring A: hops-scaled toroidal loop; Ring B: small 4-tile linked plaquette) with real,
+validated circulation (validated at hops=41, production-relevant radius), and
+matching R180L0/R60L1 checkpoint ICs were built (/bk/curlfull_uniform_r180_ic220.h5,
+/bk/curlfull_l1_wider_margin_ic220.h5, both H0=332.0, ring A=328/B=4 tiles). But it is
+a bare 1-cell-wide wire filament: u=0 everywhere, no volume, no thickness, no lobes —
+nothing like the volume-filling, two-lobed dipole object it was meant to stand in for.
+The user caught this being oversold as "a curl-full spheromak IC."
+
+ROOT CAUSE: Conflating "validates the circulation-conservation / step_cross-erosion
+mechanism on a toy" with "is the real deliverable." The wire-loop pair is a useful
+mechanism diagnostic (and legitimately proved step_cross erodes ring circulation
+~2.6-3.4% over 10 steps while pure evolver.step() conserves it exactly) but has none
+of the structural properties (volume-filling u/phi, two lobes) that make the dipole
+object comparable to PHARE's EM_B.vtkhdf reference.
+
+LESSON: Don't call a bare wire-filament/ring diagnostic "a spheromak" just because it
+validates the right mechanism (curl-full circulation, step_cross erosion). A
+spheromak-class object must be checked for volume-filling u and multi-lobe structure,
+not just circulation. It also was explicitly NOT yet stepped in this session ("we
+will step later") — don't imply stepped/tested results for it before that happens.

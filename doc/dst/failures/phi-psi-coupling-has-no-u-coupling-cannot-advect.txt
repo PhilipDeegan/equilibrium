@@ -1,0 +1,86 @@
+CONTEXT: recommendation #1 from the "what's missing for a genuine
+leapfrogging EM wave" discussion (`now`, 2026-09-06 night) — the (phi,psi)
+conjugate pairing is the only curl-full-content mechanism already
+confirmed STABLE and non-destructive (bounded oscillatory exchange, not
+runaway — probe_long_energy_bound.py/probe_long_ring_bound.py, exp/2026/
+09/06/10_52_phi_psi_ordering_long_control/), but it had only ever been
+tested on STATIC ICs sitting still. Proposed test: superpose a small
+localized curl-full toroidal bump (curl_full_dipole_ic.py's
+toroidal_envelope/_phihat, re-centred off-origin) onto an actual
+propagating traveling wave (traveling_wave.py) and see whether the
+bump's own circulation content travels along with the wave once the
+(phi,psi) coupling is switched on, instead of staying frozen the way
+plain step() provably freezes any B=curl(phi) content.
+
+WHAT FAILED, before even running the full experiment: two problems, one
+methodological (diagnostic confound), one structural (the mechanism
+itself cannot do this, checked cheaply before committing to the full
+run).
+
+1. DIAGNOSTIC CONFOUND (caught before it mattered): the per-elementary-
+   triangle circulation metric (`discrete_curl.py`'s `circ_D`/
+   `triangle_triples`) is EXACTLY the metric
+   `per-triangle-curl-metric-doesnt-distinguish-curl-full.txt` already
+   warned not to use as a "how curl-full is this" measure — it flags
+   local face-midpoint-sampling curvature noise present in ANY
+   continuum-sampled field, not real macroscopic circulation. Measured
+   directly: the traveling wave ALONE (no added bump) has
+   `circ_rms=0.16345`, essentially IDENTICAL to the wave+bump combined
+   value (`0.163451`) — the deliberately-added bump (amplitude 0.15,
+   ~10x smaller than the wave) is completely swamped by the wave's own
+   per-triangle sampling noise. A circulation-weighted position centroid
+   built on this metric just tracks wherever the WAVE's own noise
+   happens to be — i.e., the wave's own envelope motion — regardless of
+   whether the bump moves at all. Not usable as originally designed.
+
+2. STRUCTURAL: the validated (phi,psi) update is LINEAR and has NO
+   coupling to `u` or position at all — `dpsi/dt = -D(phi)`,
+   `dphi/dt += c2*D^T(psi)` (D = the 12-triangle circulation extractor,
+   D^T its adjoint scatter). Neither term references `u`, a gradient, or
+   any wave-following/advective structure. Because the whole (u,phi,psi)
+   system is exactly linear, superposition holds identically: a
+   wave+bump run is exactly the sum of a wave-alone run and a
+   bump-alone run, for all time. So the bump's own trajectory under this
+   coupling is completely independent of whether a wave is anywhere
+   nearby — checked directly and cheaply (400 steps, bump alone, no
+   wave, c2=1e-3, `circ_centroid_z` on the correctly-isolated
+   bump-only signal): `circ_centroid_z` stayed at `-40.008` EXACTLY
+   (unchanged to 3 decimals) for the entire run, while `circ_rms` slowly
+   decayed (0.9930 of its initial value by step 400) — matching the
+   already-known "real, monotonic decay, no oscillation yet observed at
+   this timescale" signature from the original ring probes. The
+   mechanism lets curl-full content locally decay/recover in place; it
+   has no way, even in principle, to make that content translate/ride
+   along with a separately-propagating disturbance.
+
+ROOT CAUSE: (phi,psi) was built and validated as phi's own curl content
+gaining a conjugate "momentum" (mirroring how u/phi are already a pair)
+— a self-contained SECOND pair, deliberately decoupled from u to keep
+the construction tractable and testable in isolation. That same
+decoupling is exactly what makes it unable to answer "can B ride with a
+propagating E-like wave" — the question needs a term that couples psi's
+(or phi's curl content's) evolution to u/the wave's own motion, which
+this pairing was never built to have.
+
+LESSON: before spending a real compute budget on a two-domain (baseline
+vs test) experiment, run the cheap, isolated, single-domain version of
+the causal claim first — here, "does the mechanism move a stationary
+bump at all, with nothing else present" settles the question in ~13s
+instead of the ~12 minutes the full wave+bump x {c2=0,c2=1e-3} run would
+have cost, and does so without the diagnostic confound above ever
+mattering (no wave noise to confuse it, since there's no wave in this
+isolated check).
+
+NOT YET DONE: recommendation #2 from the same discussion (make lam
+respond to the wave's own motion, matching how gravity's step_lam/
+lam_force already works, rather than (phi,psi)'s current u-decoupled
+form) becomes the more load-bearing candidate — or, alternatively, a
+genuinely NEW (phi,psi)-like pair that explicitly couples to u/grad(u)
+rather than being phi-self-contained. Neither built. The exp/2026/09/06/
+22_40_curl_full_riding_wave/probe_curl_full_rides_wave.py script itself
+still runs correctly (smoke-tested, no crash) but its result would not
+have been a valid test of the original question, per point 1 above —
+don't run it to completion expecting a clean answer without first fixing
+the diagnostic (swap to a macro-ring circulation measure, per
+`per-triangle-curl-metric-doesnt-distinguish-curl-full.txt`'s own
+prescribed fix, if this line of attack is revisited).

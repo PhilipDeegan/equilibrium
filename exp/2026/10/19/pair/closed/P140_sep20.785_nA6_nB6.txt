@@ -1,0 +1,9 @@
+P 140 N 686000 a 5.0 sep 20.785 nA 6.0 nB 6.0 ngap 1.0 sponge 0.0 cells A 673 B 673 gap 1110 out 683544 T 400.0
+  t    0.0  A 0.8246  B 0.0000  gap 1.852e-02  out 0.1569  shell 0.0000  absorbed 0.0000  total 1.000000  (0 s, ETA 2.2 min)
+  t    5.0  A 0.7504  B 0.0000  gap 1.808e-02  out 0.2323  shell 0.0000  absorbed 0.0000  total 1.000726  (9 s, ETA 12.1 min)
+  t   10.0  A 0.7616  B 0.0001  gap 9.539e-03  out 0.2296  shell 0.0000  absorbed 0.0000  total 1.000900  (18 s, ETA 11.7 min)
+  t   15.0  A 0.8001  B 0.0011  gap 4.352e-03  out 0.1953  shell 0.0000  absorbed 0.0000  total 1.000845  (27 s, ETA 11.5 min)
+  t   20.0  A 0.8366  B 0.0016  gap 3.080e-03  out 0.1594  shell 0.0000  absorbed 0.0000  total 1.000705  (36 s, ETA 11.3 min)
+  t   25.0  A 0.8239  B 0.0020  gap 4.069e-03  out 0.1707  shell 0.0000  absorbed 0.0000  total 1.000726  (44 s, ETA 11.1 min)
+  t   30.0  A 0.7740  B 0.0024  gap 5.761e-03  out 0.2187  shell 0.0000  absorbed 0.0000  total 1.000884  (53 s, ETA 11.0 min)
+  t   35.0  A 0.7560  B 0.0026  gap 4.582e-03  out 0.2378  shell 0.0000  absorbed 0.0000  total 1.000928  (63 s, ETA 10.9 min)

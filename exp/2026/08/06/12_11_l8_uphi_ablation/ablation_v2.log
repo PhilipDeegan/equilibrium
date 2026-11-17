@@ -1,0 +1,21 @@
+  init_spheromak_ic_refinable: scale=1.1021e-01  R_sph=1.0  sigma=None  inner_cells=3839/110887  (3.5%)
+  [post-store] phi_rms=5.4633e-02  phi_nonzero_cells=3838
+  init_spheromak_ic_refinable: scale=1.1021e-01  R_sph=1.0  sigma=None  inner_cells=3839/110887  (3.5%)
+  [post-store] phi_rms=5.4633e-02  phi_nonzero_cells=3838
+  init_spheromak_ic_refinable: scale=1.1021e-01  R_sph=1.0  sigma=None  inner_cells=3839/110887  (3.5%)
+  [post-store] phi_rms=5.4633e-02  phi_nonzero_cells=3838
+L=4  full: H0=3.2773e+03 H1=3.3910e+03 H/H0=1.0347   u=0 (phi+lam only): H0=2.3168e+03 H1=2.3162e+03 H/H0=0.9998   phi=0 (u+lam only): H0=9.6054e+02 H1=1.0747e+03 H/H0=1.1189
+  init_spheromak_ic_refinable: scale=1.2245e-02  R_sph=1.0  sigma=None  inner_cells=3839/144427  (2.7%)
+  [post-store] phi_rms=4.7871e-02  phi_nonzero_cells=3838
+  init_spheromak_ic_refinable: scale=1.2245e-02  R_sph=1.0  sigma=None  inner_cells=3839/144427  (2.7%)
+  [post-store] phi_rms=4.7871e-02  phi_nonzero_cells=3838
+  init_spheromak_ic_refinable: scale=1.2245e-02  R_sph=1.0  sigma=None  inner_cells=3839/144427  (2.7%)
+  [post-store] phi_rms=4.7871e-02  phi_nonzero_cells=3838
+L=6  full: H0=3.2773e+03 H1=1.2002e+04 H/H0=3.6621   u=0 (phi+lam only): H0=2.3168e+03 H1=2.3117e+03 H/H0=0.9978   phi=0 (u+lam only): H0=9.6054e+02 H1=9.6900e+03 H/H0=10.0881
+  init_spheromak_ic_refinable: scale=1.3606e-03  R_sph=1.0  sigma=None  inner_cells=3839/180671  (2.1%)
+  [post-store] phi_rms=4.2801e-02  phi_nonzero_cells=3838
+  init_spheromak_ic_refinable: scale=1.3606e-03  R_sph=1.0  sigma=None  inner_cells=3839/180671  (2.1%)
+  [post-store] phi_rms=4.2801e-02  phi_nonzero_cells=3838
+  init_spheromak_ic_refinable: scale=1.3606e-03  R_sph=1.0  sigma=None  inner_cells=3839/180671  (2.1%)
+  [post-store] phi_rms=4.2801e-02  phi_nonzero_cells=3838
+L=8  full: H0=3.2773e+03 H1=4.3940e+05 H/H0=134.0728   u=0 (phi+lam only): H0=2.3168e+03 H1=2.2782e+03 H/H0=0.9833   phi=0 (u+lam only): H0=9.6054e+02 H1=4.3712e+05 H/H0=455.0812

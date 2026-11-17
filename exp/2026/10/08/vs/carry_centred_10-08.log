@@ -1,0 +1,7 @@
+flow wsum midpoint x3 centred dt x1 kappa +1.0 a0 2.0 R0 12.0 wt 3.0 dt 0.0182 (1100 ticks)
+  t   0.00: |B| centroid rho  13.03 z  -0.000; sum|B|   1778.70; max |u| 0.000e+00; E   5241.669 E_lf        nan
+  t   4.00: |B| centroid rho  13.03 z  +0.245; sum|B|   1773.80; max |u| 1.927e-01; E   5241.681 E_lf   5241.665
+  t   8.00: |B| centroid rho  13.04 z  +0.487; sum|B|   1771.19; max |u| 1.975e-01; E   5241.663 E_lf   5241.668
+  t  12.00: |B| centroid rho  13.06 z  +0.719; sum|B|   1772.59; max |u| 1.840e-01; E   5241.620 E_lf   5241.667
+  t  16.00: |B| centroid rho  13.10 z  +0.929; sum|B|   1770.07; max |u| 2.014e-01; E   5241.661 E_lf   5241.668
+  t  20.00: |B| centroid rho  13.13 z  +1.128; sum|B|   1768.48; max |u| 2.014e-01; E   5241.676 E_lf   5241.668

@@ -1,0 +1,7 @@
+CONTEXT: Direct test of the "toroidal + poloidal flux both at c" hope (candidate geometric origin for E=mc² via proton dipole structure) — a lockstep probe using pure `evolver.step()` (no `step_cross`), tracking `u_rms` (poloidal tracer) against macro ring circulation (toroidal tracer, already proven exactly frozen by the Kelvin-circulation theorem).
+
+WHAT FAILED: Getting the IC's shape right did not by itself produce a locked, co-propagating structure. Circulation stayed exactly frozen everywhere tested (as expected), but `u_rms` drifted upward by a quantity called `swing` that is NOT locked to circulation in any simple way.
+
+ROOT CAUSE: Not diagnosed as a bug — this is a real, if inconclusive, negative result. Shape-matching the IC (correct poloidal/toroidal geometry) is apparently not sufficient on its own to produce the hoped-for co-propagation; there is no explicit coupling mechanism in the code between the poloidal and toroidal components that would enforce "both at c" behavior.
+
+LESSON: Don't assume that constructing an IC with the right geometric shape (toroidal + poloidal both nominally "at c") will automatically produce physically locked, co-propagating behavior under evolution. If the "both at c" idea is to be pursued further, it needs an explicit coupling mechanism to be designed and built, not just inferred from IC construction. Full saga: [[project_curl_full_dipole_spheromak]] memory.

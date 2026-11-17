@@ -1,0 +1,8 @@
+case n1 +0 n2 +0: q1 0.0000 q2 0.0000  w1.w2 1.3e-33  rel velocity 0.0000  clean rho sd at T 0.00e+00; |d| 2.8e-07 -> 2.8e-07, growth (linear stage) nan / tick (0 pts)
+case n1 +1 n2 -1: q1 0.1134 q2 -0.1134  w1.w2 5.4e-34  rel velocity 0.0567  clean rho sd at T 2.69e-15; |d| 2.8e-07 -> 5.1e-07, growth (linear stage) nan / tick (0 pts)
+case n1 +2 n2 -2: q1 0.2267 q2 -0.2267  w1.w2 1.7e-33  rel velocity 0.1134  clean rho sd at T 7.06e-12; |d| 2.8e-07 -> 3.6e-04, growth (linear stage) 3.27e-03 / tick (30 pts)
+case n1 +3 n2 -3: q1 0.3401 q2 -0.3401  w1.w2 2.7e-51  rel velocity 0.1700  clean rho sd at T 5.96e-16; |d| 2.8e-07 -> 1.2e-03, growth (linear stage) 3.42e-03 / tick (36 pts)
+case n1 +5 n2 -5: q1 0.5668 q2 -0.5668  w1.w2 3.3e-17  rel velocity 0.2834  clean rho sd at T 6.69e-16; |d| 2.8e-07 -> 2.3e-03, growth (linear stage) 3.57e-03 / tick (38 pts)
+case n1 +2 n2 +0: q1 0.2267 q2 0.0000  w1.w2 2.0e-34  rel velocity 0.0567  clean rho sd at T 6.03e-16; |d| 2.8e-07 -> 4.3e-07, growth (linear stage) nan / tick (0 pts)
+case n1 +4 n2 +0: q1 0.4534 q2 0.0000  w1.w2 8.0e-34  rel velocity 0.1134  clean rho sd at T 3.19e-12; |d| 2.8e-07 -> 1.9e-04, growth (linear stage) 3.12e-03 / tick (27 pts)
+case n1 +2 n2 +2: q1 0.2267 q2 0.2267  w1.w2 1.5e-34  rel velocity 0.0000  clean rho sd at T 3.32e-16; |d| 2.8e-07 -> 2.9e-07, growth (linear stage) nan / tick (0 pts)

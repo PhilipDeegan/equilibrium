@@ -1,0 +1,196 @@
+R=150 octagon Poynting-ring far-field / boundary assessment
+=============================================================
+Checkpoint chain: fine_R150_octagon_t{10,20,30,40,50,60,70}_state*.h5
+(fresh IC at t=0, --hops 8 --mode octagon --threads 6, restart-chained in
+10-time-unit legs; see fine_R150_octagon_t*.log for exact per-leg commands)
+
+1. Far-field radial |phi| profile check (t=50)
+-----------------------------------------------
+Script: probe_farfield_radial_profile.py
+Run:
+  python3 probe_farfield_radial_profile.py \
+    --state fine_R150_octagon_t50_state_step0009750.h5 \
+    --r-min 30 --r-max 130 --n-bins 30
+Output: fine_R150_octagon_t50_state_step0009750_farfield_profile.{npz,png}
+
+Result: phi_rms(r) is NOT a single power law over r=[30,130].
+  - r=30-65:   clean decay, fitted slope ~ -2.67 (close to dipole-like 1/r^3)
+  - r=70-126:  flattens to a plateau, fitted slope ~ -0.32, amplitude ~1.0-1.3e-6
+  - sponge starts at r_inner ~ 127.5 (= 0.85 * r_max_present=150.0)
+
+Interpretation at the time: the flat tail seen at R=100 (r=30-85, amplitude
+~5-20e-6) resolves into real decay with more domain room, but the plateau
+itself persists (just pushed further out, r~70 instead of r~30) at a similar
+absolute amplitude regardless of domain size -- read as a background noise
+floor, not genuine propagating far-field content, since a real 1/r^n falloff
+would keep decreasing rather than plateau.
+
+CAVEAT ADDED BELOW: this profile was taken at t=50, i.e. BEFORE the sponge
+reflection event described in section 2 (predicted arrival ~t=68) reaches
+the near-ring region. It should NOT be contaminated by that specific
+reflection. However, the sponge's imperfect absorption (section 2) means
+earlier/different reflections at other frequencies or from other emission
+times could in principle already be present in the r=70-126 plateau at t=50
+-- the "noise floor" interpretation should be treated as provisional pending
+a real absorption-quality check (see section 3).
+
+2. Sponge reflection event, t60-t70 leg
+-----------------------------------------
+Symptom: S[r=20] (energy-flux magnitude, equatorial shell average) rose from
+~1.0e-08 (t=60) to a peak of 6.1e-08 (t=67.44), then declined to 2.9e-08 by
+t=70 -- a ~6x excursion, well above the smooth monotonic decay seen in every
+prior leg (t10 through t60: S20 peak values 1.9e-5, 4.4e-7, 7.6e-8, 4.6e-8,
+2.1e-8, 1.6e-8 -- steadily decreasing until this leg).
+
+All five measured shells (r=8,12,16,20,24) rose and fell IN LOCKSTEP, peaking
+within a narrow window (t=67.4-68.2), not with a radius-dependent time lag
+(which would indicate a wavefront newly sweeping outward through the shells).
+Amplitude was overwhelmingly concentrated at r=20 (peak 6.1e-08) vs r=8 (peak
+2.3e-09, ~26x smaller) -- r=20 sits almost exactly at the ring radius
+(ring_r=19.79 for this IC).
+
+Rendered XZ cross-sections at t=62.5/65.5/68.0/70.0 (fine_R150_octagon_t70_
+frames/) show no obviously new spatial feature -- same qualitative "cross"
+pattern and similar log10|S| dynamic range at all four times. Consistent
+with the effect being concentrated in the equatorial sector used for the
+shell measurement (near the ring's own plane) rather than the polar-axis
+region the XZ slab mostly shows, and with the color scale being per-frame
+normalized (a moderate absolute change is not obviously visible by eye).
+
+Working hypothesis: partial reflection off the sponge boundary of the
+strong initial burst launched when the toroidal winding is seeded at t=0
+(t10 leg shows by far the largest transient: S20 peak 1.9e-5 during t=0-10).
+
+Round-trip light-crossing check:
+  ring radius            r_ring    = 19.79
+  sponge inner radius    r_inner   = 127.5   (0.85 * 150.0, from radial
+                                               profile check r_max_present)
+  substrate wave speed   c         = sqrt(10) ~= 3.162   (per casimir.py
+                                               docstring, axis-aligned)
+  one-way distance                 = 127.5 - 19.79 = 107.71
+  round-trip distance              = 215.42
+  predicted round-trip time        = 215.42 / 3.162 ~= 68.1
+
+Observed peak: t ~= 67.4-68.2. Predicted: t ~= 68.1. Match to within ~1%.
+
+Conclusion: the sponge (--sponge 0.15, --damp-max 0.003, quadratic_sponge
+BC, r_inner ~ 0.85 * r_max) is NOT fully absorbing -- a real, non-negligible
+fraction of the t=0 burst is reflecting back into the domain rather than
+being damped, and it is large enough to dominate the r=20 shell signal by
+~6x over its pre-reflection baseline.
+
+3. Implication for far-field / noise-floor conclusions
+---------------------------------------------------------
+- The t=50 radial profile (section 1) predates this reflection's arrival at
+  the near-ring shells (t~68), so it should be reasonably clean of THIS
+  specific echo. But the sponge quality problem is generic, not a one-off:
+  any future profile/trace measurement taken after ~t=68 (this checkpoint
+  chain) will have reflection contamination at least in the near-ring
+  shells, and possibly further out too depending on where the reflected
+  wavefront currently sits.
+- The "flat tail = noise floor, not real 1/r decay" conclusion from section
+  1 should be treated as provisional until sponge absorption is actually
+  verified quantitatively (e.g. via probe_sponge_quality_v3.py, or by
+  comparing runs with tightened sponge parameters).
+
+4. Suggested next steps (not yet done)
+------------------------------------------
+- Re-run a leg (or a short isolated test) with a tightened sponge (larger
+  --damp-max and/or larger --sponge fraction, i.e. more absorbing layer
+  before r_inner) and check whether the t~68 bump at r=20 shrinks or
+  disappears -- would confirm the reflection hypothesis and quantify how
+  much of the r=70-126 t=50 plateau is genuine floor vs. residual leakage.
+- Re-run the r=30-130 radial profile check at t=70 (fine_R150_octagon_t70_
+  state_step0013650.h5) and compare directly against the t=50 profile above
+  -- if the r=70-126 plateau amplitude jumps between t=50 and t=70, that is
+  direct evidence the plateau itself is (at least partly) reflection-driven
+  rather than a stable noise floor.
+- Consider extending the R=100 checkpoint chain (which has a nearer sponge,
+  r_inner ~ 85) with the same round-trip-time logic to see if an analogous,
+  earlier-arriving reflection bump is present there too (predicted round
+  trip for R=100: 2*(85-19.79)/3.162 ~= 41.3 -- would show up around t~41
+  in that chain, i.e. within the fine-logging window already collected;
+  worth checking the existing R100 traces for a similar signature).
+
+5. Tightened-sponge re-run (2026-09-10) -- damp_max=0.01 made the reflection
+   WORSE, not better
+------------------------------------------------------------------------------
+Followed up on step 4's first suggestion. Before spending R150 compute, tuned
+damp_max cheaply at small R using probe_sponge_quality_v3.py (R=30, script
+defaults --mode square --hops 4, sponge_fraction=0.15 held fixed to match
+production, damp_max swept 0.003/0.005/0.007/0.01/0.015/0.02). Result: a clean
+non-monotonic optimum at damp_max=0.01 -- outer-shell late-time |S| dropped
+~5-8x vs damp_max=0.003 (r=20: 1.157e-8 -> 2.32e-9; r=24: 9.73e-9 -> 1.26e-9),
+degrading again above 0.01 (classic over-damping/impedance-mismatch signature).
+Widening sponge_fraction to 0.35 helped further but was rejected -- at R=150
+that would cost 30 units of exactly the far-field domain room this whole R150
+push was for (r_inner 127.5 -> 97.5), so frac was kept at 0.15 with only
+damp_max raised.
+
+A direct raw-lattice-field diff (new script: probe_sponge_direct_field_diff.py,
+same IC run twice with damp_max=0.003 vs 0.01, shared non-percentile color
+scale, R=30/t=10, well past one-way sponge arrival but before round-trip)
+confirmed the mechanism was real and geometrically localized: interior field
+identical to noise level (mean|S| 4.637e-7 vs 4.639e-7, r<0.5*r_inner), with a
+genuine ~13% reduction confined to the sponge edge itself (r>=r_inner: 4.950e-8
+vs 4.292e-8). This also explained an earlier user observation that individual
+R150 t=45 frames "looked very different" (old vmin=-13.7 vs new vmin=-16.3 in
+log10|S|, vmax nearly identical) -- a real but edge-localized effect getting
+visually amplified by each frame's independent percentile-based color
+normalization (matplotlib figure titles print the actual vmin/vmax per frame;
+worth checking those numbers directly before trusting a color-only comparison
+across separately-rendered/normalized frames or movies).
+
+Ran the full R150 octagon damp_max=0.01 chain anyway (7 legs, t0->t70,
+--threads 8, same --sponge 0.15, out-prefix tightsponge_R150_octagon_t*) to
+check the actual t~68 reflection bump. Direct shell-trace comparison against
+the original damp_max=0.003 chain (fine_R150_octagon_t70.log):
+
+  t       S[r=20] old(0.003)   S[r=20] new(0.01)
+  60.0    1.01e-8              1.08e-8   (baseline matches, pre-reflection)
+  65.5    4.66e-8              1.00e-7
+  66.0    5.35e-8              1.02e-7   <- new peak (EARLIER than old's)
+  67.5    6.05e-8   <- old peak  7.46e-8
+  70.0    2.93e-8              5.40e-8   (rising again, not settled)
+
+The tightened sponge made the reflection WORSE: peak ~1.7x higher (1.02e-7 vs
+6.05e-8), arrives ~1.5 time units earlier (t~66 vs t~67.5), and hasn't cleanly
+decayed by t=70 (new shows a renewed uptick at the end where old was still
+monotonically falling) -- opposite of the small-R30 sweep's prediction.
+
+Root cause (identified, not yet fixed): the R=30 damp_max sweep used
+probe_sponge_quality_v3.py's script DEFAULTS, --mode square --hops 4 -- never
+overridden to match the actual production geometry, --mode octagon --hops 8.
+Different ring mode/hops means different emitted frequency content, and a
+sponge/PML-style absorbing layer is inherently frequency-sensitive -- a
+damp_max that's well-matched (low reflection coefficient) for one wavelength
+can be badly mismatched (high reflection coefficient, even reflection-
+amplifying) for another. The sweep tuned against the wrong ring geometry
+entirely, so its "optimal" damp_max=0.01 doesn't transfer to production.
+
+6. Suggested next steps for tomorrow
+------------------------------------------
+- Redo the probe_sponge_quality_v3.py damp_max sweep with --mode octagon
+  --hops 8 (matching production) instead of the script's square/hops=4
+  defaults, still at small/cheap R -- this is the fix for the root cause
+  above and should be done BEFORE trusting any damp_max recommendation for
+  R150. Re-verify the non-monotonic optimum exists and find its actual
+  location for this geometry (may not be 0.01).
+- Once a properly-matched-geometry optimum is found, re-validate with the
+  direct raw-field-diff script (probe_sponge_direct_field_diff.py, also
+  needs --mode/--hops overridden to octagon/8) before committing to another
+  full R150 chain re-run -- cheap sanity check that catches sign-flips like
+  this one before burning R150 compute.
+- Only after both of the above pass, re-run the R150 t0->t70 chain with the
+  corrected damp_max and re-check the t~68 reflection bump against both the
+  original (damp=0.003) and the failed tightened (damp=0.01) attempts above.
+- The r=70-126 far-field plateau question (section 3) is still open and now
+  additionally confounded: the t=50 profile predates t~68 either way, but a
+  fresh t=70 profile comparison should wait until a validated (not worse)
+  sponge config is in hand, since a bad sponge could inject its own spurious
+  contribution into that far-field region on top of whatever's genuine.
+- Data hygiene note: the original fine_R150_octagon_t* run's frame PNGs and
+  HDF5 checkpoints were deleted at some point after this report was written
+  (only the .log files survived) -- if a like-for-like frame/state comparison
+  against the original chain is needed again, it will have to be reproduced
+  from a fresh damp_max=0.003 run rather than reloaded from disk.

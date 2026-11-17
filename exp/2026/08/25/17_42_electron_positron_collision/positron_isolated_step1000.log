@@ -1,0 +1,23 @@
+N=1175219  R=60.0  scale=8.0  species=positron  z=-10.0  m0=2.49  cross_scale=0.1
+
+[positron] dipole IC at z=-10.0 (isolated -- no partner object)
+  init_electron_dipole_ic: scale=8.0  R_sph=1.0  sigma=None  r_axis=4.89  u_bg=0.0  inner_cells=2798/1175219  (0.2%)
+  divergence_clean: div_rms 4.3261e-02 → 4.0899e-10  (×9.45e-09)
+w0=4.2569e+02  dt=5.1282e-03
+
+   step       J_mid     phi_own     phi_mid     phi_far      surv       H_total
+  ------------------------------------------------------------------------------
+      0  1.0401e-05  1.3822e-02  8.0992e-03  1.1582e-03    1.0000   7.93941e+02
+    100  1.0144e-05  1.1953e-02  8.0977e-03  1.1559e-03    0.9995   6.20878e+02
+    200  2.6740e-05  1.1285e-02  8.0507e-03  1.1542e-03    0.9942   5.63309e+02
+    300  1.0402e-04  1.0956e-02  7.8221e-03  1.1530e-03    0.9711   5.31509e+02
+    400  1.9807e-04  1.0829e-02  7.3996e-03  1.1520e-03    0.9240   5.12691e+02
+    500  2.6484e-04  1.0827e-02  6.9022e-03  1.1509e-03    0.8667   5.05259e+02
+    600  3.2117e-04  1.0814e-02  6.5503e-03  1.1425e-03    0.8227   5.01768e+02
+    700  4.2909e-04  1.0768e-02  6.5647e-03  1.1048e-03    0.8073   5.00997e+02
+    800  5.7163e-04  1.0716e-02  6.9309e-03  1.0355e-03    0.8184   5.00951e+02
+    900  6.4986e-04  1.0691e-02  7.3308e-03  9.5918e-04    0.8402   5.00935e+02
+   1000  7.0885e-04  1.0679e-02  7.5197e-03  8.9853e-04    0.8603   5.00921e+02
+final state saved -> /bk/dst/positron_isolated_step1000.hdf5
+data saved -> exp/2026/08/25/17_42_electron_positron_collision/positron_isolated_step1000.npz
+plot -> exp/2026/08/25/17_42_electron_positron_collision/positron_isolated_step1000.png

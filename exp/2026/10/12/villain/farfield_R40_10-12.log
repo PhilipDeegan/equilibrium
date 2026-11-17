@@ -1,0 +1,11 @@
+linked before smoothing +1.000000 +1.000000 +0.000000
+smoothed tau 19.7531: linked +1.000000 +0.999156 +0.147495
+linked-circulation lines at r 0.0 20.0 46.0
+  return _methods._mean(a, axis=axis, dtype=dtype,
+  ret = ret.dtype.type(ret / rcount)
+P 278 N 5371238 R0 40.0 kappa 0.132 dt 0.0182 ticks 0 midpoint x3
+t 0 instantaneous (term x unit time): |Gamma|-weighted z +0.03800; defect-label z +nan; max off-integer at defects 0.000e+00; max |Gamma| off-defect 1.886e-03
+       t count sum_n rho z_label z_|G| max|G-n|@def max|G|@non sum|G|@non/count  E_lf
+    0.00     0    +0    nan    +nan +0.1632 0.000e+00 1.886e-03 1.867e+03  12883.437629  leak 8.920e-01 rms 8.878 sum|G| 1.8671e+03 linked +1.000000 +0.999156 +0.147495 x_|G| +0.13966  (11.8 s/tick, ETA 0 min)
+seed built (2407 s)
+R0 40.0 P 278 tau 19.753: core rms 8.878 (rms / R 0.2219); far / core term ratio 7.2006e-01; far ring |Gamma| max 2.68e-06; far term max 7.53e-05  (2435 s)

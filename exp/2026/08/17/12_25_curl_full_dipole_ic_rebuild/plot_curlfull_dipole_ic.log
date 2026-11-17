@@ -1,0 +1,8 @@
+[uniform_r180] loaded /bk/curlfull_dipole_uniform_r180_ic220.h5  n_leaves=31734323  t=3.2s
+[uniform_r180] n_leaves=31734323 levels=[0] -> exp/2026/08/17/12_25_curl_full_dipole_ic_rebuild/plots/xz_curlfull_dipole_uniform_r180.png
+[uniform_r180] done  total_t=10.1s
+[l1_wider_margin] loaded /bk/curlfull_dipole_l1_wider_margin_ic220.h5  n_leaves=15542429  t=5.3s
+/home/p/git/eq/exp/2026/08/17/12_25_curl_full_dipole_ic_rebuild/plot_curlfull_dipole_ic.py:110: RuntimeWarning: All-NaN slice encountered
+  lw = 0.5 + 2.5 * (speed_safe / np.nanmax(speed_safe))
+[l1_wider_margin] n_leaves=15542429 levels=[0, 1] -> exp/2026/08/17/12_25_curl_full_dipole_ic_rebuild/plots/xz_curlfull_dipole_l1_wider_margin.png
+[l1_wider_margin] done  total_t=12.2s

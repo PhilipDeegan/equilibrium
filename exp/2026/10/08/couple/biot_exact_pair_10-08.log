@@ -1,0 +1,7 @@
+r0 31.0 a 10.0 N 2 sigma 3.9; advection n/(3m) = 0.2500
+P  240 s  138.6 d  120.0: own (self + images + U0) <u_z> +4.44446e-02; partner +3.8848e-03 -> dv +0.00097
+P  300 s  173.2 d  150.0: own (self + images + U0) <u_z> +4.39928e-02; partner +1.6599e-03 -> dv +0.00041
+P  360 s  207.8 d  180.0: own (self + images + U0) <u_z> +4.36970e-02; partner +8.5711e-04 -> dv +0.00021
+P  420 s  242.5 d  210.0: own (self + images + U0) <u_z> +4.35216e-02; partner +5.0097e-04 -> dv +0.00013
+P  480 s  277.1 d  240.0: own (self + images + U0) <u_z> +4.34148e-02; partner +3.1896e-04 -> dv +0.00008
+lone-box drift relative to P 480 : P 240 +0.00026  P 300 +0.00014  P 360 +0.00007  P 420 +0.00003  P 480 +0.00000

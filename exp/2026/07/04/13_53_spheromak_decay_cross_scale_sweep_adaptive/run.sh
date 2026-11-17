@@ -1,0 +1,1 @@
+PYTHONPATH=$PWD python3 -u tst/substrate/adaptive/sweep_spheromak_decay_cross_scale.py --R 40 --n-steps 50000 --report 1000 --n-jobs 8 --lo 1e-4 --hi 1e-2 --out tmp/spheromak_decay_cross_scale_sweep.png

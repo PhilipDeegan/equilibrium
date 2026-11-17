@@ -1,0 +1,20 @@
+springbox_N2_S1_q1_a14_r30_xi3.9_m0.8_P220_z0_wxi_rc_par t 0: rc 31.7 zc -0.0 coil core 5146 axis core 54 floor/cell +5.22e-03
+   D  interior      4942  strands     35770  near     17841  outer     16196  axis         0  floor      3813  | total 78562
+   E  interior     418.5  strands    2055.5  near     500.4  outer     219.4  axis       0.0  floor      46.2  | total 3240.0
+   structure (interior + strands + near): D 58554  E 2974.4  E/D 0.0508
+springbox_N2_S1_q1_a14_r30_xi3.9_m0.8_P220_z0_wxi_rc_par t 2000: rc 35.0 zc +5.5 coil core 13345 axis core 334 floor/cell +6.94e-04
+   D  interior     10381  strands     40604  near     19181  outer      7930  axis         0  floor       467  | total 78562
+   E  interior     407.6  strands    1418.1  near     629.1  outer     322.5  axis       0.0  floor      81.3  | total 2858.5
+   structure (interior + strands + near): D 70165  E 2454.8  E/D 0.0350
+springbox_N2_S1_q1_a14_r30_xi3.9_m0.8_P220_z0_wxi_rc_par t 4000: rc 35.9 zc +4.8 coil core 13529 axis core 0 floor/cell -6.58e-05
+   D  interior     11990  strands     40878  near     18847  outer      6890  axis         0  floor       -43  | total 78562
+   E  interior     402.6  strands    1369.6  near     686.4  outer     325.6  axis       0.0  floor      77.8  | total 2862.0
+   structure (interior + strands + near): D 71716  E 2458.6  E/D 0.0343
+springbox_N2_S1_q1_a14_r30_xi3.9_m0.8_P220_z0_wxi_rc_par t 6000: rc 33.6 zc +5.5 coil core 12325 axis core 144 floor/cell +6.25e-03
+   D  interior      6359  strands     39688  near     16620  outer     11549  axis         0  floor      4346  | total 78562
+   E  interior     405.2  strands    1522.5  near     589.4  outer     322.8  axis       0.0  floor      72.4  | total 2912.3
+   structure (interior + strands + near): D 62668  E 2517.1  E/D 0.0402
+springbox_N2_S1_q1_a14_r30_xi3.9_m0.8_P220_z0_wxi_rc_par t 8000: rc 33.4 zc +6.1 coil core 13149 axis core 62 floor/cell -2.23e-03
+   D  interior      6224  strands     42808  near     19678  outer     11410  axis         0  floor     -1557  | total 78562
+   E  interior     399.7  strands    1517.6  near     543.2  outer     294.7  axis       0.0  floor      92.0  | total 2847.2
+   structure (interior + strands + near): D 68710  E 2460.5  E/D 0.0358

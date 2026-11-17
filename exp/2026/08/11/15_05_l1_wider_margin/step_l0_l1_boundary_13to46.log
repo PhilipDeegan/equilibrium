@@ -1,0 +1,60 @@
+H0 (from /bk/l0_l1_boundary_ic220.h5)=4.462388e+06
+loaded /bk/l0_l1_boundary_stepped/step_013_final.h5 (resuming from absolute step 13) n_leaves=10222517 t=31.2s peak_rss_GB=8.44
+dt=5.128205e-03
+step 14 step_time=2.7s H=4.439550e+06 H/H0=0.994882 H_by_level=[1.0982151317125104e-20, 4439549.998210517] peak_rss_GB=8.44
+step 15 step_time=2.6s H=4.438183e+06 H/H0=0.994576 H_by_level=[2.742927208268398e-20, 4438182.812784353] peak_rss_GB=9.51
+[step_015] n_leaves=10222517 n_slice=115709 -> exp/2026/08/10/19_24_l0_l1_boundary_error/plots/boundary/xz_step_015.png
+step 15 plotted exp/2026/08/10/19_24_l0_l1_boundary_error/plots/boundary/xz_step_015.png plot_time=3.7s
+step 16 step_time=2.7s H=4.436891e+06 H/H0=0.994286 H_by_level=[6.41816817742336e-20, 4436891.205344275] peak_rss_GB=9.52
+step 17 step_time=2.6s H=4.435682e+06 H/H0=0.994015 H_by_level=[1.4192777413407323e-19, 4435682.300762853] peak_rss_GB=9.52
+step 18 step_time=2.6s H=4.434563e+06 H/H0=0.993764 H_by_level=[2.987149862497123e-19, 4434562.857808054] peak_rss_GB=9.52
+[step_018] n_leaves=10222517 n_slice=115709 -> exp/2026/08/10/19_24_l0_l1_boundary_error/plots/boundary/xz_step_018.png
+step 18 plotted exp/2026/08/10/19_24_l0_l1_boundary_error/plots/boundary/xz_step_018.png plot_time=3.6s
+step 19 step_time=2.6s H=4.433539e+06 H/H0=0.993535 H_by_level=[6.018777653156369e-19, 4433539.213376737] peak_rss_GB=9.52
+step 20 step_time=2.6s H=4.432617e+06 H/H0=0.993328 H_by_level=[1.1666119231734118e-18, 4432617.23532608] peak_rss_GB=9.52
+step 21 step_time=2.6s H=4.431802e+06 H/H0=0.993146 H_by_level=[2.1841529118116826e-18, 4431802.28460579] peak_rss_GB=9.52
+[step_021] n_leaves=10222517 n_slice=115709 -> exp/2026/08/10/19_24_l0_l1_boundary_error/plots/boundary/xz_step_021.png
+step 21 plotted exp/2026/08/10/19_24_l0_l1_boundary_error/plots/boundary/xz_step_021.png plot_time=3.6s
+step 22 step_time=2.7s H=4.431099e+06 H/H0=0.992988 H_by_level=[3.963542423540631e-18, 4431099.18709021] peak_rss_GB=9.52
+step 23 step_time=2.6s H=4.430512e+06 H/H0=0.992857 H_by_level=[6.992263039272992e-18, 4430512.215325806] peak_rss_GB=9.52
+step 24 step_time=2.6s H=4.430045e+06 H/H0=0.992752 H_by_level=[1.2022634308169328e-17, 4430045.0802316535] peak_rss_GB=9.52
+[step_024] n_leaves=10222517 n_slice=115709 -> exp/2026/08/10/19_24_l0_l1_boundary_error/plots/boundary/xz_step_024.png
+step 24 plotted exp/2026/08/10/19_24_l0_l1_boundary_error/plots/boundary/xz_step_024.png plot_time=3.6s
+step 25 step_time=2.6s H=4.429701e+06 H/H0=0.992675 H_by_level=[2.0192851490954124e-17, 4429700.932395683] peak_rss_GB=9.52
+step 26 step_time=2.7s H=4.429482e+06 H/H0=0.992626 H_by_level=[3.319397241878946e-17, 4429482.37262802] peak_rss_GB=9.52
+step 27 step_time=2.6s H=4.429391e+06 H/H0=0.992606 H_by_level=[5.3497087406601384e-17, 4429391.471021408] peak_rss_GB=9.52
+[step_027] n_leaves=10222517 n_slice=115709 -> exp/2026/08/10/19_24_l0_l1_boundary_error/plots/boundary/xz_step_027.png
+step 27 plotted exp/2026/08/10/19_24_l0_l1_boundary_error/plots/boundary/xz_step_027.png plot_time=3.6s
+step 28 step_time=2.6s H=4.429430e+06 H/H0=0.992614 H_by_level=[8.465841792070333e-17, 4429429.793732675] peak_rss_GB=9.52
+step 29 step_time=2.6s H=4.429598e+06 H/H0=0.992652 H_by_level=[1.3172426525673352e-16, 4429598.436469059] peak_rss_GB=9.52
+step 30 step_time=2.6s H=4.429898e+06 H/H0=0.992719 H_by_level=[2.017626622894056e-16, 4429898.063585635] peak_rss_GB=9.52
+[step_030] n_leaves=10222517 n_slice=115709 -> exp/2026/08/10/19_24_l0_l1_boundary_error/plots/boundary/xz_step_030.png
+step 30 plotted exp/2026/08/10/19_24_l0_l1_boundary_error/plots/boundary/xz_step_030.png plot_time=3.6s
+step 31 step_time=2.7s H=4.430329e+06 H/H0=0.992816 H_by_level=[3.0455436922918743e-16, 4430328.951577083] peak_rss_GB=9.52
+step 32 step_time=2.6s H=4.430891e+06 H/H0=0.992942 H_by_level=[4.534826068922203e-16, 4430891.035675591] peak_rss_GB=9.52
+step 33 step_time=2.6s H=4.431584e+06 H/H0=0.993097 H_by_level=[6.666687561630233e-16, 4431583.958291721] peak_rss_GB=9.52
+[step_033] n_leaves=10222517 n_slice=115709 -> exp/2026/08/10/19_24_l0_l1_boundary_error/plots/boundary/xz_step_033.png
+step 33 plotted exp/2026/08/10/19_24_l0_l1_boundary_error/plots/boundary/xz_step_033.png plot_time=3.6s
+step 34 step_time=2.6s H=4.432407e+06 H/H0=0.993281 H_by_level=[9.684102977639805e-16, 4432407.117979443] peak_rss_GB=9.52
+step 35 step_time=2.6s H=4.433360e+06 H/H0=0.993495 H_by_level=[1.3909876600560312e-15, 4433359.717679905] peak_rss_GB=9.52
+step 36 step_time=2.6s H=4.434441e+06 H/H0=0.993737 H_by_level=[1.976918533073084e-15, 4434440.811038057] peak_rss_GB=9.52
+[step_036] n_leaves=10222517 n_slice=115709 -> exp/2026/08/10/19_24_l0_l1_boundary_error/plots/boundary/xz_step_036.png
+step 36 plotted exp/2026/08/10/19_24_l0_l1_boundary_error/plots/boundary/xz_step_036.png plot_time=3.6s
+step 37 step_time=2.6s H=4.435649e+06 H/H0=0.994008 H_by_level=[2.7817517543526532e-15, 4435649.345721907] peak_rss_GB=9.52
+step 38 step_time=2.6s H=4.436984e+06 H/H0=0.994307 H_by_level=[3.8775082482657655e-15, 4436984.202768562] peak_rss_GB=9.52
+step 39 step_time=2.6s H=4.438444e+06 H/H0=0.994634 H_by_level=[5.356893889866016e-15, 4438444.23110996] peak_rss_GB=9.52
+[step_039] n_leaves=10222517 n_slice=115709 -> exp/2026/08/10/19_24_l0_l1_boundary_error/plots/boundary/xz_step_039.png
+step 39 plotted exp/2026/08/10/19_24_l0_l1_boundary_error/plots/boundary/xz_step_039.png plot_time=3.6s
+step 40 step_time=2.6s H=4.440028e+06 H/H0=0.994989 H_by_level=[7.338428764257398e-15, 4440028.276619698] peak_rss_GB=9.52
+step 41 step_time=2.6s H=4.441735e+06 H/H0=0.995372 H_by_level=[9.972659314400362e-15, 4441735.2051932365] peak_rss_GB=9.52
+step 42 step_time=2.6s H=4.443564e+06 H/H0=0.995782 H_by_level=[1.3449644539835238e-14, 4443563.919519112] peak_rss_GB=9.52
+[step_042] n_leaves=10222517 n_slice=115709 -> exp/2026/08/10/19_24_l0_l1_boundary_error/plots/boundary/xz_step_042.png
+step 42 plotted exp/2026/08/10/19_24_l0_l1_boundary_error/plots/boundary/xz_step_042.png plot_time=3.6s
+step 43 step_time=2.6s H=4.445513e+06 H/H0=0.996218 H_by_level=[1.8007934966906477e-14, 4445513.369431638] peak_rss_GB=9.52
+step 44 step_time=2.7s H=4.447583e+06 H/H0=0.996682 H_by_level=[2.3945293814569097e-14, 4447582.555873326] peak_rss_GB=9.52
+step 45 step_time=2.6s H=4.449771e+06 H/H0=0.997172 H_by_level=[3.163144390227234e-14, 4449770.528684486] peak_rss_GB=9.52
+[step_045] n_leaves=10222517 n_slice=115709 -> exp/2026/08/10/19_24_l0_l1_boundary_error/plots/boundary/xz_step_045.png
+step 45 plotted exp/2026/08/10/19_24_l0_l1_boundary_error/plots/boundary/xz_step_045.png plot_time=3.6s
+step 46 step_time=2.7s H=4.452076e+06 H/H0=0.997689 H_by_level=[4.152316167902512e-14, 4452076.378623576] peak_rss_GB=9.52
+saved final /bk/l0_l1_boundary_stepped/step_046_final.h5 save_time=0.9s
+FINAL peak_rss_GB=9.52 total_time=183.3s

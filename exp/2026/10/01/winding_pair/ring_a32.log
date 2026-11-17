@@ -1,0 +1,3 @@
+ring alpha=32 N=15009 omegas=['0.3611'] scale=1.0000 E_tube0/E_tot=0.9863 E0=142.257 seed_res=9.4e-11 steps=18187
+  t=    0.00 Etube/E0=1.0000 sigma=0.1784 rho_rms=5.594 lam_max=31.100 |a|=0.500 0.061 0.061 0.061 0.061 0.025 0.025 (0s)
+done 1463s

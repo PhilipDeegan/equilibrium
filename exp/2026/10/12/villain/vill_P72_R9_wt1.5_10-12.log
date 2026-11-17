@@ -1,0 +1,9 @@
+  return _methods._mean(a, axis=axis, dtype=dtype,
+  ret = ret.dtype.type(ret / rcount)
+P 72 N 93312 R0 9.0 kappa 0.132 dt 0.0182 ticks 110 midpoint x3
+t 0 instantaneous (term x unit time): |Gamma|-weighted z +0.03918; defect-label z +nan; max off-integer at defects 0.000e+00; max |Gamma| off-defect 6.526e-02
+       t count sum_n rho z_label z_|G| max|G-n|@def max|G|@non sum|G|@non/count  E_lf
+    0.00     0    +0    nan    +nan +0.0000 0.000e+00 6.526e-02 6.268e+02  949.125545  leak 3.784e-03 rms 2.711 sum|G| 6.2683e+02
+    0.51     0    +0    nan    +nan +0.0204 0.000e+00 6.411e-02 6.263e+02  949.119769  leak 3.779e-03 rms 2.720 sum|G| 6.2628e+02
+    1.02     0    +0    nan    +nan +0.0396 0.000e+00 6.053e-02 6.246e+02  949.126614  leak 3.829e-03 rms 2.739 sum|G| 6.2457e+02
+    1.53     0    +0    nan    +nan +0.0556 0.000e+00 5.785e-02 6.244e+02  949.129739  leak 3.879e-03 rms 2.752 sum|G| 6.2444e+02

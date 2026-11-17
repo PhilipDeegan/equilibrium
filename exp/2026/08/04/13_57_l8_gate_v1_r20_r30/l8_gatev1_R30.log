@@ -1,0 +1,66 @@
+R=30.0  max_level=8  region_r0=5.0  lam_target=1.0  lam_scale=0.05  lam_mode=dynamic  n_steps=1
+cross_scales (1): 1.0000e-03
+
+=== cross_scale=1.0000e-03 ===
+calibration: 1 sim-unit=1.9599e-12 m  neutron scale=4.0818e-04 sim-units  (a0=5.2918e-11 m, margin=0.9)
+  init_spheromak_ic_refinable: scale=4.0818e-04  R_sph=1.0  sigma=None  inner_cells=113/284119  (0.0%)
+  [post-store] phi_rms=6.2408e-03  phi_nonzero_cells=112
+  IC: cross_scale=1.0000e-03  gate=v1  N_total=284119  N_spheromak=113 (0.0%)  R=30  scale=4.0818e-04  B0_max=0.613  phi_rms=6.2408e-03  dt=5.1282e-03  level_max=8  est_mem=0.0651 GB
+[reflux-probe] tag=step_subcycle n_pairs=24824 total_abs_error=2.635671e+01 total_abs_scale=6.646767e+02 rel=3.965343e-02
+  [reflux-probe]   junction L0/L1: count_a_total=18134 count_b_total=1454
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=1454 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+  [reflux-probe]   junction L1/L1: count_a_total=52444 count_b_total=52444
+      matched:    n=3604 abs_error=1.268063e-40 abs_scale=2.169477e-24 rel=5.845017e-17
+      mismatched: n=24 abs_error=4.720786e-27 abs_scale=4.201901e-25 rel=1.123488e-02
+  [reflux-probe]   junction L1/L2: count_a_total=25682 count_b_total=15842
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=974 abs_error=2.589009e-18 abs_scale=1.125817e-17 rel=2.299672e-01
+  [reflux-probe]   junction L2/L2: count_a_total=37892 count_b_total=37112
+      matched:    n=1756 abs_error=2.876866e-33 abs_scale=3.344761e-16 rel=8.601111e-18
+      mismatched: n=34 abs_error=4.886032e-12 abs_scale=5.876418e-11 rel=8.314643e-02
+  [reflux-probe]   junction L2/L3: count_a_total=23914 count_b_total=14854
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=916 abs_error=1.655964e-14 abs_scale=4.422955e-11 rel=3.744022e-04
+  [reflux-probe]   junction L3/L3: count_a_total=37922 count_b_total=37202
+      matched:    n=1756 abs_error=1.230589e-30 abs_scale=1.082232e-13 rel=1.137083e-17
+      mismatched: n=34 abs_error=3.956133e-10 abs_scale=4.779665e-09 rel=8.277009e-02
+  [reflux-probe]   junction L3/L4: count_a_total=24276 count_b_total=14916
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=948 abs_error=5.846770e-13 abs_scale=3.599385e-09 rel=1.624380e-04
+  [reflux-probe]   junction L4/L4: count_a_total=38348 count_b_total=37568
+      matched:    n=1780 abs_error=3.609824e-28 abs_scale=2.808883e-11 rel=1.285146e-17
+      mismatched: n=34 abs_error=3.214843e-08 abs_scale=3.878092e-07 rel=8.289754e-02
+  [reflux-probe]   junction L4/L5: count_a_total=23914 count_b_total=14854
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=916 abs_error=1.859107e-10 abs_scale=2.927201e-07 rel=6.351143e-04
+  [reflux-probe]   junction L5/L5: count_a_total=37892 count_b_total=37112
+      matched:    n=1756 abs_error=9.874019e-26 abs_scale=6.998142e-09 rel=1.410949e-17
+      mismatched: n=34 abs_error=2.604618e-06 abs_scale=3.142942e-05 rel=8.287197e-02
+  [reflux-probe]   junction L5/L6: count_a_total=23914 count_b_total=14854
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=916 abs_error=2.905179e-08 abs_scale=2.388662e-05 rel=1.216237e-03
+  [reflux-probe]   junction L6/L6: count_a_total=38432 count_b_total=37292
+      matched:    n=1756 abs_error=3.519772e-23 abs_scale=1.713170e-06 rel=2.054538e-17
+      mismatched: n=34 abs_error=2.194646e-04 abs_scale=2.537996e-03 rel=8.647160e-02
+  [reflux-probe]   junction L6/L7: count_a_total=25006 count_b_total=15442
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=964 abs_error=1.672833e-05 abs_scale=2.021635e-03 rel=8.274655e-03
+  [reflux-probe]   junction L7/L7: count_a_total=41558 count_b_total=40478
+      matched:    n=1972 abs_error=8.333176e-21 abs_scale=4.216683e-04 rel=1.976240e-17
+      mismatched: n=34 abs_error=1.767142e-02 abs_scale=2.055426e-01 rel=8.597446e-02
+  [reflux-probe]   junction L7/L8: count_a_total=25368 count_b_total=15504
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=996 abs_error=2.384950e-03 abs_scale=1.811985e-01 rel=1.316208e-02
+  [reflux-probe]   junction L8/L8: count_a_total=36860 count_b_total=36860
+      matched:    n=2132 abs_error=2.633641e+01 abs_scale=6.642849e+02 rel=3.964626e-02
+      mismatched: n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+  step=     1  H=6.282373e+04  H/H0=606.2010
+ABORT: H=6.2824e+04 exceeds 100.0x H0=1.0364e+04 -- stopping this cross_scale early at step=1 (1/1); marking diverged, sweep continues.
+
+ cross_scale   phi_rms_0   phi_rms_f         H_0         H_f  lam_mean_f   lam_max_f    circ_r12_0    circ_r12_f   n_leaves  lvl_max
+------------------------------------------------------------------------------------------------------------------------------------
+  1.0000e-03  6.2408e-03  1.7771e-01  1.0364e+02  6.2824e+04      0.0001      0.9779   +0.0000e+00   +0.0000e+00     284119        8  DIVERGED@step1
+[log: plot.py:25 - savefig() ] saved -> tmp/refined_neutron_decay_sweep.png
+
+WARNING: one or more cross_scale runs diverged before --n-steps completed -- see DIVERGED markers above.

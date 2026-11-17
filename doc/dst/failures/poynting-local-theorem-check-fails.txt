@@ -1,0 +1,26 @@
+CONTEXT: Tested whether the Poynting-ring probes' E/B convention
+(E:=-dphi/dt, B:=curl(phi)) satisfies the local Poynting theorem
+(energy conservation: dH/dt = -div(S), S=ExB) directly, on a genuinely
+curl-full field.
+
+WHAT FAILED: correlation between measured dH/dt and computed -div(S)
+was -0.01 (i.e. no relationship, wrong sign if anything), with ~89%
+magnitude mismatch.
+
+ROOT CAUSE: not fully diagnosed at the time, but the leading suspect
+identified afterward: S was computed via a naive 3-axis finite
+difference for the divergence, on a scalar/vector layout that doesn't
+match DST's actual cell/face staggering. DST's own validated conserved
+quantity is H_i = 0.5*u_i^2 + 0.5*sum(phi_ik^2), which lives with
+energy at cells and flux naturally living at faces (Yee-grid-like).
+A naive continuum-calculus finite-difference divergence doesn't
+respect that structure, so the check likely tested the wrong quantity
+rather than genuinely falsifying the update rule's conservation law.
+
+LESSON: don't retry a naive finite-difference divergence to check the
+local Poynting theorem on DST fields. Any future flux/energy-
+conservation check must be derived symbolically from the update rule
+directly (the same method used successfully for the E_full≡0 identity
+and the traveling-wave companion phi derivation), with energy-at-cell
+/ flux-at-face bookkeeping matching the actual lattice, not assumed
+from continuum vector calculus.

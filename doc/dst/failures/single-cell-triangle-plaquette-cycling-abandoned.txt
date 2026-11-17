@@ -1,0 +1,7 @@
+CONTEXT: looking for a genuinely new, minimal "pretend particle" object built from the 12 elementary triangle plaquettes per cell ([[project_dst_discrete_curl]]), as a cleaner alternative to the large multi-cell rings (electron double-ring, counter-rotating spheromak).
+
+WHAT FAILED: the 12 triangles' natural rotation axes turned out to be the lattice's 6 diagonal directions, not x/y/z, and only 2 of 12 triangles share any single axis (touching 4 of 8 hex faces, not "most of 14" as hoped) — geometrically awkward, not the clean single-cell construction that was wanted.
+
+ROOT CAUSE: the per-cell triangle plaquette structure's natural symmetry axes don't align with the axes needed for a simple "cycling on most faces" object; this is a real geometric fact about the 12-triangle decomposition, not a bug.
+
+LESSON: don't revisit single-cell triangle-plaquette cycling as a minimal-particle construction — Philip explicitly redirected away from it ("I don't think triangles is something we want to support"). The existing electron double-ring dipole remains the standard minimal non-decaying "pretend particle" (already validated as a genuine R1 fixed point); the counter-rotating spheromak was also considered and rejected for this role since it's built to reconnect/decay, confounding any translation measurement with its own erosion.

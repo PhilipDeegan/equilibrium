@@ -1,0 +1,56 @@
+RESUMED from exp/2026/09/08/12_15_poynting_time_evolution/tightsponge_R150_octagon_t40_state_step0007800.h5 at start_step=7800 (t=40.000)  N=18366667 R=150.0 hops=8 ring_r=19.790 dt=5.1282e-03
+shells=[8.0, 12.0, 16.0, 20.0, 24.0] plot_times=[np.float64(40.0), np.float64(40.5), np.float64(41.0), np.float64(41.5), np.float64(42.0), np.float64(42.5), np.float64(43.0), np.float64(43.5), np.float64(44.0), np.float64(44.5), np.float64(45.0), np.float64(45.5), np.float64(46.0), np.float64(46.5), np.float64(47.0), np.float64(47.5), np.float64(48.0), np.float64(48.5), np.float64(49.0), np.float64(49.5), np.float64(50.0)]
+shell union: 38104 / 18366667 cells
+slab |y|<1.5: 265059 / 18366667 cells
+fine logging: steps [1170,3510) every 2
+plot steps: [7800, 7898, 7995, 8092, 8190, 8288, 8385, 8482, 8580, 8678, 8775, 8872, 8970, 9068, 9165, 9262, 9360, 9458, 9555, 9652, 9750]
+step=  7800 t=  40.005 S[r=8]=1.186e-09 S[r=12]=1.296e-09 S[r=16]=1.810e-09 S[r=20]=2.133e-08 S[r=24]=5.767e-09
+saved exp/2026/09/08/12_15_poynting_time_evolution/tightsponge_R150_octagon_t50_frames/t_040.005.png
+step=  7898 t=  40.508 S[r=8]=1.253e-09 S[r=12]=1.145e-09 S[r=16]=1.716e-09 S[r=20]=2.000e-08 S[r=24]=5.440e-09
+saved exp/2026/09/08/12_15_poynting_time_evolution/tightsponge_R150_octagon_t50_frames/t_040.508.png
+step=  7995 t=  41.005 S[r=8]=1.182e-09 S[r=12]=1.287e-09 S[r=16]=1.760e-09 S[r=20]=1.941e-08 S[r=24]=5.218e-09
+saved exp/2026/09/08/12_15_poynting_time_evolution/tightsponge_R150_octagon_t50_frames/t_041.005.png
+step=  8000 t=  41.031 S[r=8]=1.139e-09 S[r=12]=1.283e-09 S[r=16]=1.705e-09 S[r=20]=1.924e-08 S[r=24]=5.157e-09
+step=  8092 t=  41.503 S[r=8]=1.108e-09 S[r=12]=1.137e-09 S[r=16]=1.719e-09 S[r=20]=1.976e-08 S[r=24]=5.602e-09
+saved exp/2026/09/08/12_15_poynting_time_evolution/tightsponge_R150_octagon_t50_frames/t_041.503.png
+step=  8190 t=  42.005 S[r=8]=1.182e-09 S[r=12]=1.203e-09 S[r=16]=1.814e-09 S[r=20]=1.966e-08 S[r=24]=5.425e-09
+saved exp/2026/09/08/12_15_poynting_time_evolution/tightsponge_R150_octagon_t50_frames/t_042.005.png
+step=  8288 t=  42.508 S[r=8]=9.929e-10 S[r=12]=1.163e-09 S[r=16]=1.554e-09 S[r=20]=1.987e-08 S[r=24]=5.584e-09
+saved exp/2026/09/08/12_15_poynting_time_evolution/tightsponge_R150_octagon_t50_frames/t_042.508.png
+step=  8385 t=  43.005 S[r=8]=1.161e-09 S[r=12]=1.116e-09 S[r=16]=1.647e-09 S[r=20]=1.912e-08 S[r=24]=5.372e-09
+saved exp/2026/09/08/12_15_poynting_time_evolution/tightsponge_R150_octagon_t50_frames/t_043.005.png
+step=  8482 t=  43.503 S[r=8]=8.997e-10 S[r=12]=1.180e-09 S[r=16]=1.579e-09 S[r=20]=1.899e-08 S[r=24]=5.312e-09
+saved exp/2026/09/08/12_15_poynting_time_evolution/tightsponge_R150_octagon_t50_frames/t_043.503.png
+step=  8500 t=  43.595 S[r=8]=1.001e-09 S[r=12]=1.086e-09 S[r=16]=1.625e-09 S[r=20]=1.790e-08 S[r=24]=5.005e-09
+step=  8580 t=  44.005 S[r=8]=1.107e-09 S[r=12]=1.064e-09 S[r=16]=1.660e-09 S[r=20]=1.888e-08 S[r=24]=5.370e-09
+saved exp/2026/09/08/12_15_poynting_time_evolution/tightsponge_R150_octagon_t50_frames/t_044.005.png
+step=  8678 t=  44.508 S[r=8]=8.981e-10 S[r=12]=1.142e-09 S[r=16]=1.450e-09 S[r=20]=1.893e-08 S[r=24]=5.273e-09
+saved exp/2026/09/08/12_15_poynting_time_evolution/tightsponge_R150_octagon_t50_frames/t_044.508.png
+step=  8775 t=  45.005 S[r=8]=1.001e-09 S[r=12]=1.068e-09 S[r=16]=1.537e-09 S[r=20]=1.815e-08 S[r=24]=5.143e-09
+saved exp/2026/09/08/12_15_poynting_time_evolution/tightsponge_R150_octagon_t50_frames/t_045.005.png
+step=  8872 t=  45.503 S[r=8]=9.785e-10 S[r=12]=1.082e-09 S[r=16]=1.447e-09 S[r=20]=1.825e-08 S[r=24]=5.129e-09
+saved exp/2026/09/08/12_15_poynting_time_evolution/tightsponge_R150_octagon_t50_frames/t_045.503.png
+step=  8970 t=  46.005 S[r=8]=8.746e-10 S[r=12]=1.090e-09 S[r=16]=1.605e-09 S[r=20]=1.776e-08 S[r=24]=5.104e-09
+saved exp/2026/09/08/12_15_poynting_time_evolution/tightsponge_R150_octagon_t50_frames/t_046.005.png
+step=  9000 t=  46.159 S[r=8]=1.071e-09 S[r=12]=1.022e-09 S[r=16]=1.392e-09 S[r=20]=1.343e-08 S[r=24]=3.849e-09
+step=  9068 t=  46.508 S[r=8]=1.060e-09 S[r=12]=9.940e-10 S[r=16]=1.352e-09 S[r=20]=1.763e-08 S[r=24]=5.039e-09
+saved exp/2026/09/08/12_15_poynting_time_evolution/tightsponge_R150_octagon_t50_frames/t_046.508.png
+step=  9165 t=  47.005 S[r=8]=7.383e-10 S[r=12]=1.100e-09 S[r=16]=1.571e-09 S[r=20]=1.696e-08 S[r=24]=4.887e-09
+saved exp/2026/09/08/12_15_poynting_time_evolution/tightsponge_R150_octagon_t50_frames/t_047.005.png
+step=  9262 t=  47.503 S[r=8]=1.144e-09 S[r=12]=9.360e-10 S[r=16]=1.343e-09 S[r=20]=1.668e-08 S[r=24]=4.842e-09
+saved exp/2026/09/08/12_15_poynting_time_evolution/tightsponge_R150_octagon_t50_frames/t_047.503.png
+step=  9360 t=  48.005 S[r=8]=6.185e-10 S[r=12]=1.066e-09 S[r=16]=1.594e-09 S[r=20]=1.685e-08 S[r=24]=4.865e-09
+saved exp/2026/09/08/12_15_poynting_time_evolution/tightsponge_R150_octagon_t50_frames/t_048.005.png
+step=  9458 t=  48.508 S[r=8]=1.131e-09 S[r=12]=9.145e-10 S[r=16]=1.316e-09 S[r=20]=1.642e-08 S[r=24]=5.018e-09
+saved exp/2026/09/08/12_15_poynting_time_evolution/tightsponge_R150_octagon_t50_frames/t_048.508.png
+step=  9500 t=  48.723 S[r=8]=6.500e-10 S[r=12]=1.068e-09 S[r=16]=1.588e-09 S[r=20]=9.306e-09 S[r=24]=2.332e-09
+step=  9555 t=  49.005 S[r=8]=6.192e-10 S[r=12]=9.886e-10 S[r=16]=1.523e-09 S[r=20]=1.746e-08 S[r=24]=5.040e-09
+saved exp/2026/09/08/12_15_poynting_time_evolution/tightsponge_R150_octagon_t50_frames/t_049.005.png
+step=  9652 t=  49.503 S[r=8]=1.020e-09 S[r=12]=9.422e-10 S[r=16]=1.391e-09 S[r=20]=1.545e-08 S[r=24]=4.810e-09
+saved exp/2026/09/08/12_15_poynting_time_evolution/tightsponge_R150_octagon_t50_frames/t_049.503.png
+step=  9749 t=  50.000 S[r=8]=7.970e-10 S[r=12]=9.000e-10 S[r=16]=1.428e-09 S[r=20]=1.582e-08 S[r=24]=4.764e-09
+saved exp/2026/09/08/12_15_poynting_time_evolution/tightsponge_R150_octagon_t50_frames/t_050.000.png
+saved final state: exp/2026/09/08/12_15_poynting_time_evolution/tightsponge_R150_octagon_t50_state_step0009750.h5  (step=9750, t=50.000)
+
+fine-window peaks at shell r=8.0: []
+done

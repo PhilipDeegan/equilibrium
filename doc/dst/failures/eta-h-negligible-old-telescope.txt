@@ -1,0 +1,26 @@
+CONTEXT: eta_h (per-AMR-level regularization parameter) at level L5 was
+calibrated (L1-L6 re-earn ladder 0, 0, 1e-5, 1e-7, 3e-9, 1e-10, 1e-12, last
+touched 2026-07-30) against an old telescope checkpoint, and separately
+project_odd27_amr_junction_leak.md (Part 25/36) concluded "eta_h is
+negligible for the real spheromak" from that same-era testing.
+
+WHAT FAILED: re-sweeping L5 directly against the real, properly-resolved
+checkpoint (cells_across=220, /bk/l5_core_diameter9_cells_across_220.h5,
+2026-08-08 night, L0-L4 held at the old re-earned ladder) showed eta_h does
+real, non-negligible work: monotonic improvement from eta5=0 to 1e-8 (step3
+growth 2.64% -> 2.04%, ~23% reduction), only saturating by eta5=1e-7/1e-6
+(within 0.02% of the 1e-8 value). This directly contradicts the earlier
+"eta_h negligible" reading.
+
+ROOT CAUSE: the earlier calibration/conclusion was made against a telescope
+with different resolution than the real spheromak checkpoint currently in
+use. At cells_across=220 the curvature scale differs enough that eta_h has
+a real effect that simply didn't show up under the old, coarser telescope.
+
+LESSON: an eta_h (or similar per-level regularization/damping parameter)
+calibration or negligibility conclusion is only valid for the specific
+checkpoint resolution it was tested against. Before citing or reusing an
+"eta_h is negligible" (or any similar knob-is-negligible) finding, check
+whether it was tested against the currently-in-use production checkpoint,
+not an older or differently-resolved stand-in telescope — results do not
+transfer across resolution changes.

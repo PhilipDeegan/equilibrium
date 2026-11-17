@@ -1,0 +1,26 @@
+CONTEXT: While building tst/substrate/adaptive/test_curl_full_dipole_ic.py for the
+new curl_full_dipole_ic.py (phi_pol + phi_tor combined IC), the existing per-
+elementary-triangle circulation/phi-RMS ratio metric (from discrete_curl.py — the
+same metric that had flagged dipole_mode_ic's phi_pol as having a ~0.2-0.3 curvature
+artifact) was applied to phi_tor to check whether it is "genuinely curl-full."
+
+WHAT FAILED: The per-triangle ratio does NOT distinguish phi_tor from phi_pol.
+Measured directly on the same fixture, phi_tor's ratio (~0.32) is essentially the
+same order as phi_pol's (~0.33) — despite phi_tor being constructed to have real
+macroscopic circulation and phi_pol having none. Using this metric alone would have
+wrongly suggested phi_tor is no more "curl-full" than the known curl-free phi_pol.
+
+ROOT CAUSE: The per-triangle ratio is a small, local 3-cell-loop sampling artifact
+common to ANY face-midpoint-sampled continuum field (curl-full or not) — it measures
+finite-hop curvature noise, not real macroscopic circulation. It is not a valid
+"is this field curl-full" test on its own.
+
+LESSON: Don't use the per-triangle discrete_curl ratio as evidence of (or against)
+genuine curl-full structure — it only flags local sampling curvature, present in all
+continuum-sampled fields regardless of true rotational content. The correct test is
+the pre-existing MACRO ring circulation (adaptive_flux_tube.phi_ring_circulation,
+the same tool used for the wire-loop tests): net circulation around a full ring
+encircling the axis is exactly 0.0 for a genuinely curl-free axisymmetric field
+(phi_pol) and a large, real, O(1)+ value scaling linearly with amplitude for a
+genuinely curl-full one (phi_tor). This macro-ring test, not the per-triangle ratio,
+is now the primary check in test_curl_full_dipole_ic.py.

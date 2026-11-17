@@ -1,0 +1,27 @@
+CONTEXT: dipole_mode_ic (equilibrium.substrate.dipole_mode_ic, seed_dipole_ic), the
+two-lobed, volume-filling u/phi spheromak IC, was rebuilt from scratch under the
+current post-2026-08-15 pass1/pass2-fix code (R180L0 and R60L1 checkpoints) to test
+whether it eventually shows PHARE-style flux-tube merging.
+
+WHAT FAILED: No matter how long it runs, dipole_mode_ic never shows PHARE-style
+merging (confirmed on the rebuilt R180L0/R60L1 checkpoints). The two lobes stay
+separate; there is no genuine reconnection/merging dynamic to observe.
+
+ROOT CAUSE: phi = grad(U) in this IC is curl-free by construction. Diagnosed via a
+new coordinate-free discrete curl on the Kelvin/BCC lattice (12 elementary triangle
+loops per cell, 2 hex hops == 1 direct sq hop to the same cell, verified 100% on real
+leaf data). Key distinction found: a true discrete-derivative field
+(phi[k,i]=u[nb[i,k]]-u[i]) has EXACTLY zero circulation (pure telescoping, float64
+noise only) at any resolution — a strictly stronger condition than continuum Stokes'
+theorem, which only gives exact zero in the infinitesimal-loop limit. dipole_mode_ic's
+phi instead SAMPLES the continuum gradient rather than discrete-differencing u, so it
+carries a real (not float-noise) nonzero per-triangle circulation (~0.21 relative to
+phi's RMS) — but this is a finite-hop curvature artifact, NOT genuine rotational
+content, and is not enough to drive merging.
+
+LESSON: Don't expect merging from any IC built purely as phi=grad(U) sampled from a
+continuum potential, regardless of resolution or runtime — the object is
+mathematically curl-free at the discrete level. A genuinely curl-full object needs a
+component that is constant (not zero-summing) around a closed azimuthal loop; see
+project_dst_discrete_curl memory and the coordinate-free discrete curl module
+(equilibrium/substrate/discrete_curl.py, tst/substrate/adaptive/test_discrete_curl.py).

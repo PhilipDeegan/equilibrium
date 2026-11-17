@@ -1,0 +1,10 @@
+t 21000 (z_shift +77.4): 1 pieces, sizes [39896]
+   main strand r max 100.7
+t 22000 (z_shift +80.8): 1 pieces, sizes [36422]
+   main strand r max 100.6
+t 23000 (z_shift +87.8): 5 pieces, sizes [25480, 398, 398, 395, 395]
+   piece    398: centroid (  -3.9, +83.5, -28.5) |c|  88.3 r max  94.0; sd across 0.8, ring radius 3.8, hole 0.4; normal.radial +0.18 normal_z -0.23; gap to main 32.9
+   piece    398: centroid (  +3.9, -83.5, -28.5) |c|  88.3 r max  94.0; sd across 0.8, ring radius 3.8, hole 0.4; normal.radial +0.18 normal_z -0.23; gap to main 32.9
+   piece    395: centroid ( -83.4,  -3.8, -28.5) |c|  88.3 r max  93.7; sd across 0.8, ring radius 3.8, hole 0.4; normal.radial +0.18 normal_z -0.23; gap to main 32.9
+   piece    395: centroid ( +83.4,  +3.8, -28.5) |c|  88.3 r max  93.7; sd across 0.8, ring radius 3.8, hole 0.4; normal.radial +0.18 normal_z -0.23; gap to main 32.9
+   main strand r max 81.0

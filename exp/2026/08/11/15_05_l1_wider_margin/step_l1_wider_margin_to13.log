@@ -1,0 +1,26 @@
+H0 (from /bk/l1_wider_margin_ic220.h5)=4.462388e+06
+loaded /bk/l1_wider_margin_ic220.h5 (resuming from absolute step 0) n_leaves=15542429 t=48.9s peak_rss_GB=12.83
+dt=5.128205e-03
+step 1 step_time=4.1s H=4.460741e+06 H/H0=0.999631 H_by_level=[0.0, 4460741.30002937] peak_rss_GB=12.83
+step 2 step_time=4.1s H=4.459073e+06 H/H0=0.999257 H_by_level=[0.0, 4459073.0865607085] peak_rss_GB=14.45
+step 3 step_time=4.2s H=4.457388e+06 H/H0=0.998879 H_by_level=[0.0, 4457388.243776389] peak_rss_GB=14.45
+[step_003] n_leaves=15542429 n_slice=148637 -> exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_003.png
+step 3 plotted exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_003.png plot_time=3.7s
+step 4 step_time=4.2s H=4.455692e+06 H/H0=0.998499 H_by_level=[0.0, 4455691.889695839] peak_rss_GB=14.46
+step 5 step_time=4.2s H=4.453990e+06 H/H0=0.998118 H_by_level=[0.0, 4453989.70478855] peak_rss_GB=14.46
+step 6 step_time=4.2s H=4.452288e+06 H/H0=0.997737 H_by_level=[0.0, 4452287.885733788] peak_rss_GB=14.46
+[step_006] n_leaves=15542429 n_slice=148637 -> exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_006.png
+step 6 plotted exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_006.png plot_time=3.6s
+step 7 step_time=4.3s H=4.450593e+06 H/H0=0.997357 H_by_level=[2.829762957650489e-112, 4450593.089903161] peak_rss_GB=14.46
+step 8 step_time=4.2s H=4.448912e+06 H/H0=0.996980 H_by_level=[2.6747418199027734e-108, 4448912.3716529915] peak_rss_GB=14.46
+step 9 step_time=4.2s H=4.447253e+06 H/H0=0.996608 H_by_level=[3.1166337432168576e-105, 4447253.111700054] peak_rss_GB=14.46
+[step_009] n_leaves=15542429 n_slice=148637 -> exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_009.png
+step 9 plotted exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_009.png plot_time=3.7s
+step 10 step_time=4.2s H=4.445623e+06 H/H0=0.996243 H_by_level=[1.9437057188069294e-102, 4445622.941047054] peak_rss_GB=14.46
+step 11 step_time=4.3s H=4.444030e+06 H/H0=0.995886 H_by_level=[5.117983712705407e-100, 4444029.660971583] peak_rss_GB=14.46
+step 12 step_time=4.2s H=4.442481e+06 H/H0=0.995539 H_by_level=[5.940096491493714e-98, 4442481.160653355] peak_rss_GB=14.46
+[step_012] n_leaves=15542429 n_slice=148637 -> exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_012.png
+step 12 plotted exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_012.png plot_time=3.6s
+step 13 step_time=4.2s H=4.440985e+06 H/H0=0.995204 H_by_level=[3.682777832488418e-96, 4440985.334139159] peak_rss_GB=14.46
+saved final /bk/l1_wider_margin_stepped/step_013_final.h5 save_time=1.4s
+FINAL peak_rss_GB=14.46 total_time=134.1s

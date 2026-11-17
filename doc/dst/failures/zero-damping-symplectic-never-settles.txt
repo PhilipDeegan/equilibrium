@@ -1,0 +1,7 @@
+CONTEXT: probe_grounded_sphere.py — testing the classical "point charge inside a grounded conducting sphere" problem (u=0 fixed at outer shell, exact target u(r)=q(1/r-1/R)) as a well-posed alternative to the sponge BC.
+
+WHAT FAILED: first attempt used damp_max=0 for an "exact" zero-dissipation boundary. With zero dissipation, DampedLattice.step()'s symplectic (energy-conserving) dynamics never settle to a static state at all — they ring forever. The measured profile had u genuinely go negative in a real spatial region (r~25-32), which the analytic target structurally cannot do.
+
+ROOT CAUSE: a symplectic/energy-conserving integrator has no mechanism to dissipate the initial transient into a fixed point; without damping, the system is condemned to oscillate indefinitely, and any single-snapshot "profile" read off it is a slice of a ringing transient, not a converged static solution.
+
+LESSON: never test a static/steady-state (Poisson-type) target using damp_max=0 on this lattice — some nonzero damping is required for the dynamics to actually settle before comparing to an analytic static solution. Restoring damp_max=0.003 fixed it here (R^2=0.973->0.992, interior |Q_i| dropped ~10x, residuals mostly under ~9%). If a profile shows features a static analytic target structurally forbids (like going negative when the true solution can't), suspect an unsettled/ringing transient before suspecting the mechanism itself.

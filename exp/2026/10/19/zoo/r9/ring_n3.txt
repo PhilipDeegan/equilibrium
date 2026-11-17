@@ -1,0 +1,13 @@
+struct ring n 3 P 72 R 9.0 N 93312 curves 1 smooth 1.0 ticks 1100
+  t   0.00  disp  +0.000  +0.000  +0.000  rms2 1.6102  rms2r 1.6022 rot   0.1  leak 1.6152e-01  sum|G| 1.22251e+03  E 2.31628284e+04  (7.95 s/tick, ETA 145.8 min)
+  t   2.00  disp  -0.003  -0.004  +0.918  rms2 1.9376  rms2r 1.9291 rot   0.1  leak 2.3072e-01  sum|G| 1.20604e+03  E 2.31628758e+04  (0.20 s/tick, ETA 3.3 min)
+  t   4.00  disp  +0.001  -0.005  +1.601  rms2 2.0096  rms2r 1.9800 rot   0.1  leak 2.7378e-01  sum|G| 1.25281e+03  E 2.31627829e+04  (0.17 s/tick, ETA 2.4 min)
+  t   6.00  disp  +0.006  -0.005  +2.289  rms2 2.2045  rms2r 2.1235 rot   0.1  leak 3.3847e-01  sum|G| 1.34278e+03  E 2.31627982e+04  (0.15 s/tick, ETA 2.0 min)
+  t   8.00  disp  +0.012  -0.003  +2.965  rms2 2.4384  rms2r 2.2790 rot   0.0  leak 4.0520e-01  sum|G| 1.47567e+03  E 2.31627482e+04  (0.15 s/tick, ETA 1.6 min)
+  t  10.00  disp  +0.019  +0.000  +3.577  rms2 2.7424  rms2r 2.5294 rot   0.1  leak 4.8087e-01  sum|G| 1.61437e+03  E 2.31628075e+04  (0.14 s/tick, ETA 1.3 min)
+  t  12.00  disp  +0.021  +0.001  +4.126  rms2 3.0376  rms2r 2.7625 rot   0.1  leak 5.4208e-01  sum|G| 1.76283e+03  E 2.31627747e+04  (0.14 s/tick, ETA 1.0 min)
+  t  14.00  disp  +0.025  +0.000  +4.679  rms2 3.3488  rms2r 3.0381 rot   0.1  leak 6.0173e-01  sum|G| 1.91744e+03  E 2.31627922e+04  (0.14 s/tick, ETA 0.8 min)
+  t  16.00  disp  +0.021  -0.007  +5.222  rms2 3.6424  rms2r 3.2996 rot   0.1  leak 6.4861e-01  sum|G| 2.08535e+03  E 2.31627790e+04  (0.14 s/tick, ETA 0.5 min)
+  t  18.00  disp  +0.014  -0.013  +5.732  rms2 3.9401  rms2r 3.5844 rot   0.2  leak 7.0006e-01  sum|G| 2.26392e+03  E 2.31627741e+04  (0.13 s/tick, ETA 0.2 min)
+  t  20.00  disp  -0.000  -0.019  +6.238  rms2 4.2796  rms2r 3.9202 rot   0.2  leak 7.4677e-01  sum|G| 2.45812e+03  E 2.31627692e+04  (0.13 s/tick, ETA 0.0 min)
+RESULT ring n 3 R 9.0 P 72  |v| 0.3057 v +0.0008 -0.0006 +0.3057  rms2 1.610->4.280 (+165.79 %)  leak 1.615e-01->7.468e-01  rms2r 1.602->3.920 (+144.67 %)  sum|G| +101.07 %  dE/E -2.6e-06

@@ -1,0 +1,7 @@
+spring_N8_S1_q1_a10_r30_xi3.9_m0.5_R72: N_cells=2030741 build+seed 194s; g 0.0219 xi 3.90; strand pitch (toroidal advance per turn) 23.6 cells at r0, inner-side turn spacing 15.7
+  t 0: core cells 11080, minor radius 10.1, helix phase +0.000, winding centre circle -8.00, meridional -1.00
+  t 300: core cells 23300, minor radius 10.7, helix phase -0.309, winding centre circle +0.00, meridional -1.00
+  t 600: core cells 8104, minor radius 17.3, helix phase -1.445, winding centre circle +0.00, meridional -1.00
+  t 900: core cells 6834, minor radius 26.6, helix phase +1.236, winding centre circle -0.00, meridional +0.00
+  t 1200: core cells 7570, minor radius 40.6, helix phase +2.946, winding centre circle -0.00, meridional +0.00
+  1200 ticks in 1153s

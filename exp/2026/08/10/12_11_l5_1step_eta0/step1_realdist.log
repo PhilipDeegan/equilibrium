@@ -1,0 +1,6 @@
+loaded /bk/l5_realdist_core_ic_220.h5 n_leaves=9850949 t=13.3s peak_rss_GB=7.85
+H0=6.114140e+06 H_by_level_0=[0.0, 0.0, 0.0, 0.0, 0.0, 6114140.036527713]
+dt=5.128205e-03 eta_h_by_level=[0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+step 1 step_time=232.9s H=6.136281e+06 H/H0=1.003621 H_by_level=[0.0, 1.7706681061063919e-28, 7.540737206024283e-13, 1.598695125672128e-06, 0.016955714011561332, 6136280.50978783] peak_rss_GB=9.03
+step 1 saved /bk/l5_realdist_1step/step_01.h5 save_time=0.8s
+FINAL peak_rss_GB=9.03 total_time=248.4s

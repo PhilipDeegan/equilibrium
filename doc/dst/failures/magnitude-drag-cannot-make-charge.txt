@@ -1,0 +1,7 @@
+CONTEXT: lam relaxing to kappa*|phi|^2 (uncapped or saturating) on an m=4 travelling torus, tested as a charge-making self-confinement, 2026-09-24, exp/2026/09/24/electron_ic_falsify/status.md.
+
+WHAT FAILED: the drag holds energy near the core (Enear 0.82-0.90) but the net shell charge stays zero and the mode still decays monotonically.
+
+ROOT CAUSE: symmetry. A drag that depends only on |phi|^2 cannot rectify an oscillating mode to a nonzero m=0 (mean divergence) component.
+
+LESSON: a charge-making mechanism must depend on direction, phase or chirality, not on magnitude. Oscillation phase alone averages away (exp/2026/09/25/phase_interaction).

@@ -1,0 +1,3 @@
+struct coil_3_2 n 1 P 140 R 20.0 N 686000 curves 1 smooth 4.938 ticks 1650
+resumed /bk/dst/2026/10/18/zoo/seed_coil_3_2_R20_ckpt.npz at t 9.00
+Terminated

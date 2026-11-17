@@ -1,0 +1,54 @@
+struct ring n 1 P 96 R 9.0 N 221184 curves 1 smooth 1.0 ticks 1375
+  t   0.00  disp  +0.000  +0.000  +0.000  rms2 1.4272  rms2r 1.4175 rot   0.1  leak 1.0909e-01  sum|G| 4.13757e+02  E 2.85355325e+03  Eu 0.0000e+00  shells 2.1007e+02 1.3333e+03 9.5559e+02 2.2715e+02 1.2740e+02  (1.29 s/tick, ETA 29.6 min)
+    div-free store 2.811019e+03  core max S / S_c 1.000  n > S_c 0  div-free max S / S_c 1.442
+  t   1.00  disp  -0.002  -0.001  +0.134  rms2 1.4561  rms2r 1.4465 rot   0.1  leak 1.1076e-01  sum|G| 4.13470e+02  E 2.85355380e+03  Eu 3.6136e+01  shells 2.1788e+02 1.3987e+03 8.8140e+02 2.2817e+02 1.2744e+02  (0.10 s/tick, ETA 2.3 min)
+    div-free store 2.791984e+03  core max S / S_c 1.000  n > S_c 0  div-free max S / S_c 1.100
+  t   2.00  disp  -0.005  -0.003  +0.295  rms2 1.4669  rms2r 1.4565 rot   0.1  leak 1.1302e-01  sum|G| 4.12962e+02  E 2.85355286e+03  Eu 4.9843e+01  shells 2.4651e+02 1.4859e+03 7.6618e+02 2.2652e+02 1.2844e+02  (0.09 s/tick, ETA 1.9 min)
+    div-free store 2.778693e+03  core max S / S_c 1.000  n > S_c 0  div-free max S / S_c 0.896
+  t   3.00  disp  -0.008  -0.004  +0.468  rms2 1.4775  rms2r 1.4655 rot   0.1  leak 1.1193e-01  sum|G| 4.13073e+02  E 2.85355180e+03  Eu 4.9316e+01  shells 2.8179e+02 1.5150e+03 7.1653e+02 2.0992e+02 1.3027e+02  (0.09 s/tick, ETA 1.8 min)
+    div-free store 2.776042e+03  core max S / S_c 1.000  n > S_c 0  div-free max S / S_c 0.949
+  t   4.00  disp  -0.012  -0.005  +0.628  rms2 1.4954  rms2r 1.4813 rot   0.1  leak 1.1655e-01  sum|G| 4.14935e+02  E 2.85355227e+03  Eu 5.2694e+01  shells 2.9908e+02 1.5223e+03 7.1509e+02 1.8539e+02 1.3173e+02  (0.08 s/tick, ETA 1.6 min)
+    div-free store 2.771674e+03  core max S / S_c 1.000  n > S_c 0  div-free max S / S_c 0.971
+  t   5.00  disp  -0.015  -0.006  +0.773  rms2 1.5159  rms2r 1.4977 rot   0.1  leak 1.2484e-01  sum|G| 4.18522e+02  E 2.85355226e+03  Eu 5.4211e+01  shells 2.9749e+02 1.5285e+03 7.2912e+02 1.6885e+02 1.2956e+02  (0.08 s/tick, ETA 1.5 min)
+    div-free store 2.768835e+03  core max S / S_c 1.000  n > S_c 0  div-free max S / S_c 0.970
+  t   6.00  disp  -0.019  -0.006  +0.910  rms2 1.5389  rms2r 1.5149 rot   0.1  leak 1.3290e-01  sum|G| 4.23164e+02  E 2.85355236e+03  Eu 5.5153e+01  shells 2.8558e+02 1.5360e+03 7.4262e+02 1.6468e+02 1.2466e+02  (0.08 s/tick, ETA 1.4 min)
+    div-free store 2.767807e+03  core max S / S_c 1.000  n > S_c 0  div-free max S / S_c 0.970
+  t   7.00  disp  -0.023  -0.008  +1.042  rms2 1.5641  rms2r 1.5326 rot   0.1  leak 1.4216e-01  sum|G| 4.28645e+02  E 2.85355242e+03  Eu 5.3467e+01  shells 2.7038e+02 1.5398e+03 7.5594e+02 1.6609e+02 1.2137e+02  (0.08 s/tick, ETA 1.3 min)
+    div-free store 2.769539e+03  core max S / S_c 1.000  n > S_c 0  div-free max S / S_c 0.968
+  t   8.00  disp  -0.026  -0.008  +1.172  rms2 1.5912  rms2r 1.5509 rot   0.1  leak 1.5398e-01  sum|G| 4.34893e+02  E 2.85355198e+03  Eu 4.9101e+01  shells 2.6582e+02 1.5198e+03 7.7926e+02 1.6860e+02 1.2012e+02  (0.08 s/tick, ETA 1.3 min)
+    div-free store 2.774237e+03  core max S / S_c 1.000  n > S_c 0  div-free max S / S_c 0.986
+  t   9.00  disp  -0.029  -0.008  +1.299  rms2 1.6226  rms2r 1.5726 rot   0.1  leak 1.6617e-01  sum|G| 4.41822e+02  E 2.85355171e+03  Eu 4.6153e+01  shells 2.5933e+02 1.4932e+03 8.0262e+02 1.7802e+02 1.2041e+02  (0.08 s/tick, ETA 1.2 min)
+    div-free store 2.777479e+03  core max S / S_c 1.000  n > S_c 0  div-free max S / S_c 1.002
+  t  10.00  disp  -0.033  -0.009  +1.421  rms2 1.6596  rms2r 1.5998 rot   0.1  leak 1.7933e-01  sum|G| 4.49156e+02  E 2.85355240e+03  Eu 4.6938e+01  shells 2.5354e+02 1.4822e+03 7.9928e+02 1.9780e+02 1.2074e+02  (0.08 s/tick, ETA 1.1 min)
+    div-free store 2.776800e+03  core max S / S_c 1.000  n > S_c 0  div-free max S / S_c 1.001
+  t  11.00  disp  -0.035  -0.008  +1.539  rms2 1.6970  rms2r 1.6271 rot   0.1  leak 1.9111e-01  sum|G| 4.56906e+02  E 2.85355220e+03  Eu 4.7408e+01  shells 2.5016e+02 1.4803e+03 7.8053e+02 2.1476e+02 1.2777e+02  (0.08 s/tick, ETA 1.0 min)
+    div-free store 2.777114e+03  core max S / S_c 1.000  n > S_c 0  div-free max S / S_c 1.006
+  t  12.00  disp  -0.036  -0.008  +1.654  rms2 1.7378  rms2r 1.6572 rot   0.1  leak 2.0281e-01  sum|G| 4.65541e+02  E 2.85355221e+03  Eu 4.7423e+01  shells 2.4838e+02 1.4775e+03 7.7229e+02 2.1397e+02 1.4143e+02  (0.08 s/tick, ETA 1.0 min)
+    div-free store 2.777459e+03  core max S / S_c 1.000  n > S_c 0  div-free max S / S_c 1.005
+  t  13.00  disp  -0.039  -0.007  +1.765  rms2 1.7814  rms2r 1.6898 rot   0.1  leak 2.1664e-01  sum|G| 4.74950e+02  E 2.85355226e+03  Eu 4.3817e+01  shells 2.4791e+02 1.4743e+03 7.7636e+02 1.9653e+02 1.5842e+02  (0.08 s/tick, ETA 0.9 min)
+    div-free store 2.777424e+03  core max S / S_c 1.000  n > S_c 0  div-free max S / S_c 1.006
+  t  14.00  disp  -0.039  -0.007  +1.873  rms2 1.8272  rms2r 1.7240 rot   0.1  leak 2.3324e-01  sum|G| 4.85227e+02  E 2.85355226e+03  Eu 4.3832e+01  shells 2.5111e+02 1.4659e+03 7.8181e+02 1.8532e+02 1.6942e+02  (0.08 s/tick, ETA 0.8 min)
+    div-free store 2.777476e+03  core max S / S_c 1.000  n > S_c 0  div-free max S / S_c 1.006
+  t  15.00  disp  -0.040  -0.005  +1.979  rms2 1.8746  rms2r 1.7602 rot   0.1  leak 2.4720e-01  sum|G| 4.95935e+02  E 2.85355225e+03  Eu 5.2639e+01  shells 2.5307e+02 1.4598e+03 7.8708e+02 1.8347e+02 1.7011e+02  (0.08 s/tick, ETA 0.7 min)
+    div-free store 2.777443e+03  core max S / S_c 1.000  n > S_c 0  div-free max S / S_c 1.005
+  t  16.00  disp  -0.042  -0.005  +2.084  rms2 1.9236  rms2r 1.7979 rot   0.1  leak 2.6464e-01  sum|G| 5.07367e+02  E 2.85355228e+03  Eu 4.6619e+01  shells 2.5610e+02 1.4522e+03 7.9326e+02 1.8230e+02 1.6966e+02  (0.08 s/tick, ETA 0.7 min)
+    div-free store 2.777306e+03  core max S / S_c 1.000  n > S_c 0  div-free max S / S_c 1.004
+  t  17.00  disp  -0.042  -0.005  +2.188  rms2 1.9736  rms2r 1.8377 rot   0.1  leak 2.7584e-01  sum|G| 5.18770e+02  E 2.85355228e+03  Eu 4.5951e+01  shells 2.5588e+02 1.4498e+03 7.9793e+02 1.7999e+02 1.6997e+02  (0.08 s/tick, ETA 0.6 min)
+    div-free store 2.777107e+03  core max S / S_c 1.000  n > S_c 0  div-free max S / S_c 1.003
+  t  18.00  disp  -0.043  -0.004  +2.289  rms2 2.0246  rms2r 1.8782 rot   0.1  leak 2.9465e-01  sum|G| 5.30392e+02  E 2.85355229e+03  Eu 4.5180e+01  shells 2.5191e+02 1.4548e+03 7.9830e+02 1.7780e+02 1.7076e+02  (0.08 s/tick, ETA 0.5 min)
+    div-free store 2.776825e+03  core max S / S_c 1.000  n > S_c 0  div-free max S / S_c 1.002
+  t  19.00  disp  -0.044  -0.004  +2.390  rms2 2.0763  rms2r 1.9200 rot   0.2  leak 3.0809e-01  sum|G| 5.42373e+02  E 2.85355231e+03  Eu 4.6821e+01  shells 2.4551e+02 1.4644e+03 7.9503e+02 1.7570e+02 1.7286e+02  (0.08 s/tick, ETA 0.4 min)
+    div-free store 2.776495e+03  core max S / S_c 1.000  n > S_c 0  div-free max S / S_c 1.001
+  t  20.00  disp  -0.043  -0.003  +2.490  rms2 2.1285  rms2r 1.9629 rot   0.2  leak 3.2525e-01  sum|G| 5.54404e+02  E 2.85355238e+03  Eu 4.8187e+01  shells 2.4263e+02 1.4660e+03 7.9306e+02 1.8053e+02 1.7131e+02  (0.08 s/tick, ETA 0.4 min)
+    div-free store 2.776382e+03  core max S / S_c 1.000  n > S_c 0  div-free max S / S_c 0.999
+  t  21.00  disp  -0.043  -0.002  +2.590  rms2 2.1808  rms2r 2.0067 rot   0.1  leak 3.4131e-01  sum|G| 5.67188e+02  E 2.85355239e+03  Eu 4.6675e+01  shells 2.4031e+02 1.4628e+03 7.9183e+02 1.9015e+02 1.6848e+02  (0.08 s/tick, ETA 0.3 min)
+    div-free store 2.777215e+03  core max S / S_c 1.000  n > S_c 0  div-free max S / S_c 0.997
+  t  22.00  disp  -0.039  -0.001  +2.688  rms2 2.2336  rms2r 2.0514 rot   0.1  leak 3.5450e-01  sum|G| 5.80698e+02  E 2.85355229e+03  Eu 4.4372e+01  shells 2.3720e+02 1.4516e+03 8.0205e+02 1.9693e+02 1.6578e+02  (0.08 s/tick, ETA 0.2 min)
+    div-free store 2.778984e+03  core max S / S_c 1.000  n > S_c 0  div-free max S / S_c 0.999
+  t  23.00  disp  -0.038  +0.000  +2.783  rms2 2.2873  rms2r 2.0969 rot   0.1  leak 3.6695e-01  sum|G| 5.93901e+02  E 2.85355241e+03  Eu 4.3477e+01  shells 2.3377e+02 1.4331e+03 8.2369e+02 2.0120e+02 1.6180e+02  (0.08 s/tick, ETA 0.1 min)
+    div-free store 2.780910e+03  core max S / S_c 1.000  n > S_c 0  div-free max S / S_c 1.003
+  t  24.00  disp  -0.039  +0.001  +2.876  rms2 2.3403  rms2r 2.1415 rot   0.1  leak 3.8053e-01  sum|G| 6.07322e+02  E 2.85355246e+03  Eu 3.9460e+01  shells 2.2771e+02 1.4203e+03 8.4233e+02 2.0579e+02 1.5747e+02  (0.08 s/tick, ETA 0.1 min)
+    div-free store 2.783992e+03  core max S / S_c 1.000  n > S_c 0  div-free max S / S_c 1.027
+  t  25.00  disp  -0.041  +0.001  +2.965  rms2 2.3910  rms2r 2.1844 rot   0.2  leak 3.9279e-01  sum|G| 6.21138e+02  E 2.85355210e+03  Eu 3.6232e+01  shells 2.2282e+02 1.4167e+03 8.5504e+02 2.0540e+02 1.5361e+02  (0.08 s/tick, ETA 0.0 min)
+    div-free store 2.787994e+03  core max S / S_c 1.000  n > S_c 0  div-free max S / S_c 1.062
+RESULT ring n 1 R 9.0 P 96  |v| 0.1170 v -0.0017 +0.0002 +0.1170  rms2 1.427->2.391 (+67.53 %)  leak 1.091e-01->3.928e-01  rms2r 1.417->2.184 (+54.10 %)  sum|G| +50.12 %  dE/E -4.0e-07

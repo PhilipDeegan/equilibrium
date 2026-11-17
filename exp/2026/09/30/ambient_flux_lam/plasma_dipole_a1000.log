@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "/home/p/git/eq/exp/2026/09/30/ambient_flux_lam/run.py", line 142, in <module>
+    bc.step(dt)
+    ~~~~~~~^^^^
+  File "/home/p/git/eq/equilibrium/substrate/ambient_bc.py", line 117, in step
+    self.wave_step(self.lat, dt)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/home/p/git/eq/exp/2026/09/30/ambient_flux_lam/run.py", line 92, in midpoint
+    du, dp, _ = rhs(lat, u0, p0)
+                ~~~^^^^^^^^^^^^^
+  File "/home/p/git/eq/exp/2026/09/30/ambient_flux_lam/run.py", line 84, in rhs
+    lam = lam_of(lat, u, phi)
+  File "/home/p/git/eq/exp/2026/09/30/ambient_flux_lam/run.py", line 77, in lam_of
+    raise RuntimeError(f"total depletion {lam.min():.3e} < 0: raise lam_amb or lower T")
+RuntimeError: total depletion -1.619e-04 < 0: raise lam_amb or lower T

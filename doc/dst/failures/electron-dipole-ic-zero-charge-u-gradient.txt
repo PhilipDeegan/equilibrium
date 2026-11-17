@@ -1,0 +1,7 @@
+CONTEXT: checking whether init_electron_dipole_ic (the electron double-ring IC) sources any u-gradient, since doc/dst.md defines one candidate charge formula Q_i = Sum_k A_ik * du/dr|_k.
+
+WHAT FAILED (narrow code observation, not a broad claim): init_electron_dipole_ic's own docstring says its u is set uniform by design ("zero-net-force construction"). Combining that with doc/dst.md's Q_i formula, that formula reads exactly zero on this IC. A2's set_winding-built "proton knot" shows the same pattern for an unrelated reason (set_winding only ever touches lam, never u).
+
+ROOT CAUSE: the electron dipole IC was constructed to have no net force (uniform u everywhere), and doc/dst.md's one candidate Q_i definition happens to depend entirely on a u-gradient. The IC and the formula were never checked against each other before now.
+
+LESSON: this is NOT "the electron IC has zero charge" (obviously false) and NOT a verdict that doc/dst.md's Q_i formula is the final/binding definition of charge in DST — it's one section of a living, non-final doc. What it does mean: if/when charge is meant to show up via a u-gradient in this framework, init_electron_dipole_ic doesn't have one, and any future variant meant to carry real charge needs to source a genuine u-gradient (or DST needs a different charge formula that isn't purely du/dr-based). Check this before building any charge-carrying electron variant on the current double-ring IC.

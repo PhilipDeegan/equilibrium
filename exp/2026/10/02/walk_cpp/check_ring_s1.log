@@ -1,0 +1,11 @@
+N 347941 cells, build+seed 0.4s, g 0.0493
+  t 0: z_c +13.94 radius 12.05 core 720
+  t 50: z_c +11.25 radius 12.23 core 1484
+  t 100: z_c +7.52 radius 12.91 core 998
+  t 150: z_c +2.97 radius 13.16 core 1384
+  t 200: z_c -1.86 radius 13.49 core 1408
+  t 250: z_c -6.24 radius 12.32 core 1518
+  t 300: z_c -9.74 radius 11.45 core 1318
+  t 350: z_c -12.78 radius 11.29 core 1040
+  t 400: z_c -16.39 radius 12.29 core 1366
+speed -0.0794 cells/tick (-0.0794 in s = 1 units x s); 159.6 ticks/s, 55.5 M cell-ticks/s at 4 threads

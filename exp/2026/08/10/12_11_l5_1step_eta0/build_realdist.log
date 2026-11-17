@@ -1,0 +1,16 @@
+[base] n_leaves=147047  t=0.0s  peak_rss_GB=0.20
+[L1, r<=5.0200] n_leaves=165273  t=0.3s  peak_rss_GB=0.25
+[L2, r<=4.0100] n_leaves=409907  t=2.5s  peak_rss_GB=0.45
+[L3, r<=2.9100] n_leaves=2950965  t=21.8s  peak_rss_GB=2.45
+[L4, r<=1.8200] n_leaves=19745847  t=140.5s  peak_rss_GB=15.83
+[L5, r<=0.4630] n_leaves=27206625  t=130.2s  peak_rss_GB=22.71
+[telescope built] n_leaves=27206625  level_hist=[146346, 9518, 156310, 1992834, 17153886, 7747731]  total_t=295.4s  peak_rss_GB=22.71
+cells_across=220  scale=0.452675
+  buffer[1 cells before r=0.5]: n=8574  max|B|=0.0000e+00  (vs overall max|B|=6.1685e-01, ratio=0.0000e+00)
+  buffer[2 cells before r=0.5]: n=17438  max|B|=0.0000e+00  (vs overall max|B|=6.1685e-01, ratio=0.0000e+00)
+  buffer[3 cells before r=0.5]: n=26006  max|B|=0.0000e+00  (vs overall max|B|=6.1685e-01, ratio=0.0000e+00)
+  buffer[5 cells before r=0.5]: n=42232  max|B|=0.0000e+00  (vs overall max|B|=6.1685e-01, ratio=0.0000e+00)
+inner_cells=7244095/27206625 (26.6262%)
+H0=6.114140e+06  phi_rms=1.505623e-01  u_rms=2.569957e-01  peak_rss_GB=26.45
+saved /bk/l5_realdist_core_ic_220.h5  save_t=2.4s
+FINAL total_t=344.6s  peak_rss_GB=26.45

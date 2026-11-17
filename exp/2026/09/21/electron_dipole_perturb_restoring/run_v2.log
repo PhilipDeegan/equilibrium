@@ -1,0 +1,41 @@
+  init_electron_dipole_ic_vecpot: scale=4.5  R_sph=1.0  r_axis=2.75  u_bg=0.0  inner_cells=531/147047  (0.4%)
+  divergence_clean: div_rms 1.2108e-03 → 9.4377e-12  (×7.79e-09)
+N=147047  scale=4.50  r_axis=2.748  dt=5.1282e-03  bump_w=1.35
+
+=== static-lam sweep, 3000 steps each, paired bump/no-bump ===
+  init_electron_dipole_ic_vecpot: scale=4.5  R_sph=1.0  r_axis=2.75  u_bg=0.0  inner_cells=531/147047  (0.4%)
+  divergence_clean: div_rms 1.2108e-03 → 9.4377e-12  (×7.79e-09)
+  lam_target=0.0: b_max=0.0000  lam_static mean(dipole-nonzero)=0.0000  max=0.0000  sigma_min=1.0000
+  lam_target=0.0: E_bump min=1.5625e-12 at t=10.00 (step 1950); final=8.9006e-04 at t=15.38  (51.3s)
+    spatial@step=  500: total_excess=4.4496e-02  near(r<4)=1.4509e-06 (0.00%)  far(r>=4)=4.4494e-02
+    spatial@step= 1500: total_excess=3.8921e-02  near(r<4)=6.7010e-12 (0.00%)  far(r>=4)=3.8921e-02
+    spatial@step= 2450: total_excess=1.2349e-02  near(r<4)=1.2450e-06 (0.01%)  far(r>=4)=1.2347e-02
+  init_electron_dipole_ic_vecpot: scale=4.5  R_sph=1.0  r_axis=2.75  u_bg=0.0  inner_cells=531/147047  (0.4%)
+  divergence_clean: div_rms 1.2108e-03 → 9.4377e-12  (×7.79e-09)
+  lam_target=0.5: b_max=1.7451  lam_static mean(dipole-nonzero)=0.0023  max=0.5000  sigma_min=0.6667
+  lam_target=0.5: E_bump min=2.4260e-07 at t=11.28 (step 2200); final=8.5057e-04 at t=15.38  (51.6s)
+    spatial@step=  500: total_excess=4.4495e-02  near(r<4)=2.2205e-04 (0.50%)  far(r>=4)=4.4273e-02
+    spatial@step= 1500: total_excess=3.9381e-02  near(r<4)=1.5998e-06 (0.00%)  far(r>=4)=3.9380e-02
+    spatial@step= 2450: total_excess=1.2561e-02  near(r<4)=1.3787e-06 (0.01%)  far(r>=4)=1.2560e-02
+  init_electron_dipole_ic_vecpot: scale=4.5  R_sph=1.0  r_axis=2.75  u_bg=0.0  inner_cells=531/147047  (0.4%)
+  divergence_clean: div_rms 1.2108e-03 → 9.4377e-12  (×7.79e-09)
+  lam_target=1.0: b_max=1.7451  lam_static mean(dipole-nonzero)=0.0046  max=1.0000  sigma_min=0.5000
+  lam_target=1.0: E_bump min=4.0069e-06 at t=12.05 (step 2350); final=7.8477e-04 at t=15.38  (52.2s)
+    spatial@step=  500: total_excess=4.4495e-02  near(r<4)=1.1073e-03 (2.49%)  far(r>=4)=4.3388e-02
+    spatial@step= 1500: total_excess=3.9783e-02  near(r<4)=4.1375e-05 (0.10%)  far(r>=4)=3.9742e-02
+    spatial@step= 2450: total_excess=1.2948e-02  near(r<4)=3.9443e-06 (0.03%)  far(r>=4)=1.2944e-02
+  init_electron_dipole_ic_vecpot: scale=4.5  R_sph=1.0  r_axis=2.75  u_bg=0.0  inner_cells=531/147047  (0.4%)
+  divergence_clean: div_rms 1.2108e-03 → 9.4377e-12  (×7.79e-09)
+  lam_target=2.0: b_max=1.7451  lam_static mean(dipole-nonzero)=0.0092  max=2.0000  sigma_min=0.3333
+  lam_target=2.0: E_bump min=1.6336e-04 at t=13.08 (step 2550); final=7.3657e-04 at t=15.38  (53.7s)
+    spatial@step=  500: total_excess=4.4498e-02  near(r<4)=8.5491e-03 (19.21%)  far(r>=4)=3.5949e-02
+    spatial@step= 1500: total_excess=4.0442e-02  near(r<4)=3.2664e-04 (0.81%)  far(r>=4)=4.0116e-02
+    spatial@step= 2450: total_excess=1.6947e-02  near(r<4)=1.8476e-04 (1.09%)  far(r>=4)=1.6763e-02
+
+=== summary ===
+lam_target=0.0 (vacuum baseline): E_bump min = 1.5625e-12
+  lam_target=0.5: E_bump min = 2.4260e-07  (x155268.48 vs baseline)
+  lam_target=1.0: E_bump min = 4.0069e-06  (x2564488.48 vs baseline)
+  lam_target=2.0: E_bump min = 1.6336e-04  (x104553090.62 vs baseline)
+
+saved results_static_lam.npz

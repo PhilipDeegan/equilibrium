@@ -1,0 +1,12 @@
+Sun 11 Oct 2026 16:18:33 CEST
+f 1
+t 0 instantaneous speed +0.03435 (1.047 x expected) (term only, unit time, linear estimate)
+Sun 11 Oct 2026 16:18:38 CEST
+f 1.41421
+t 0 instantaneous speed +0.03574 (1.090 x expected) (term only, unit time, linear estimate)
+Sun 11 Oct 2026 16:18:53 CEST
+f 2
+t 0 instantaneous speed +0.03646 (1.112 x expected) (term only, unit time, linear estimate)
+Sun 11 Oct 2026 16:19:50 CEST
+f 2.82843
+t 0 instantaneous speed +0.03693 (1.126 x expected) (term only, unit time, linear estimate)

@@ -1,0 +1,12 @@
+ring: P 120 N 432000 dt 0.0182 ticks 1650 kappa 0.0 triangles/cell 24
+  t   0.00: defect triangles 696 (sum n -4, |n|>1: 0), rho  14.85 +- 0.26, z  +0.003; max |u| 0.000e+00; E 7543.356
+  t   3.00: defect triangles 696 (sum n +0, |n|>1: 0), rho  14.78 +- 0.31, z  -0.002; max |u| 8.986e-01; E 7546.195
+  t   6.00: defect triangles 696 (sum n +0, |n|>1: 0), rho  14.78 +- 0.31, z  -0.002; max |u| 6.356e-01; E 7545.926
+  t   9.00: defect triangles 696 (sum n +0, |n|>1: 0), rho  14.78 +- 0.31, z  -0.002; max |u| 4.466e-01; E 7545.760
+  t  12.00: defect triangles 696 (sum n +0, |n|>1: 0), rho  14.78 +- 0.31, z  -0.002; max |u| 3.208e-01; E 7545.690
+  t  15.00: defect triangles 696 (sum n +0, |n|>1: 0), rho  14.78 +- 0.31, z  -0.002; max |u| 2.728e-01; E 7545.660
+  t  18.00: defect triangles 696 (sum n +0, |n|>1: 0), rho  14.78 +- 0.31, z  -0.002; max |u| 2.966e-01; E 7545.630
+  t  21.00: defect triangles 696 (sum n +0, |n|>1: 0), rho  14.78 +- 0.31, z  -0.002; max |u| 2.839e-01; E 7545.533
+  t  24.00: defect triangles 696 (sum n +0, |n|>1: 0), rho  14.78 +- 0.31, z  -0.002; max |u| 2.238e-01; E 7545.467
+  t  27.00: defect triangles 696 (sum n +0, |n|>1: 0), rho  14.78 +- 0.31, z  -0.002; max |u| 2.167e-01; E 7545.628
+  t  30.00: defect triangles 696 (sum n +0, |n|>1: 0), rho  14.78 +- 0.31, z  -0.002; max |u| 2.323e-01; E 7545.559

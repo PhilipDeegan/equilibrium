@@ -1,0 +1,8 @@
+LS  h=0.5 n=[1. 0. 0.] kh=0.785: A: dc/c -0.09268 cell-res 9.238e-01 face-res 8.559e-01  E: dc/c -0.11524 cell-res 1.001e+00 face-res 1.005e+00  (23s, N=43599)
+DEC h=0.5 n=[1. 0. 0.] kh=0.785: A: dc/c -0.00537 cell-res 5.098e-02 face-res 5.004e-02  E: dc/c -0.00522 cell-res 7.874e-02 face-res 7.497e-02  (2s, N=43599)
+LS  h=0.5 n=[0.577 0.577 0.577] kh=0.785: A: dc/c -0.06833 cell-res 5.501e-01 face-res 6.209e-01  E: dc/c -0.07403 cell-res 7.939e-01 face-res 8.186e-01  (23s, N=43599)
+DEC h=0.5 n=[0.577 0.577 0.577] kh=0.785: A: dc/c -0.00745 cell-res 6.910e-02 face-res 6.555e-02  E: dc/c -0.00746 cell-res 1.027e-01 face-res 1.109e-01  (2s, N=43599)
+LS  h=0.25 n=[1. 0. 0.] kh=0.393: A: dc/c -0.02659 cell-res 2.548e-01 face-res 2.491e-01  E: dc/c -0.02779 cell-res 3.572e-01 face-res 3.592e-01  (405s, N=347941)
+DEC h=0.25 n=[1. 0. 0.] kh=0.393: A: dc/c -0.00135 cell-res 1.293e-02 face-res 1.254e-02  E: dc/c -0.00130 cell-res 2.017e-02 face-res 1.893e-02  (59s, N=347941)
+LS  h=0.25 n=[0.577 0.577 0.577] kh=0.393: A: dc/c -0.01783 cell-res 1.658e-01 face-res 1.720e-01  E: dc/c -0.01783 cell-res 2.512e-01 face-res 2.511e-01  (425s, N=347941)
+DEC h=0.25 n=[0.577 0.577 0.577] kh=0.393: A: dc/c -0.00164 cell-res 1.746e-02 face-res 1.613e-02  E: dc/c -0.00158 cell-res 3.734e-02 face-res 3.481e-02  (76s, N=347941)

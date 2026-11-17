@@ -1,0 +1,57 @@
+R=20.0  max_level=7  region_r0=5.0  lam_target=1.0  lam_scale=0.05  lam_mode=frozen  n_steps=150
+cross_scales (3): 1.0000e-02, 1.0000e-01, 1.0000e+00
+
+=== cross_scale=1.0000e-02 ===
+calibration: SCALE OVERRIDE active -- scale_ref=1.3606e-03 @ L8  ->  scale=4.0818e-03 sim-units @ L7 (real-world neutron/Bohr-radius calibration bypassed; this run is a pure numerical stability probe, not a calibrated physical result)
+  init_spheromak_ic_refinable: scale=4.0818e-03  R_sph=1.0  sigma=None  inner_cells=3839/162445  (2.4%)
+  [post-store] phi_rms=4.5138e-02  phi_nonzero_cells=3838
+  IC: cross_scale=1.0000e-02  gate=barrier  m0=2.49e+00  N_total=162445  N_spheromak=3839 (2.4%)  R=20  scale=4.0818e-03  B0_max=0.617  phi_rms=4.5138e-02  dt=5.1282e-03  level_max=7  est_mem=0.0372 GB
+  step=    15  H=1.060409e+05  H/H0=32.3558
+  step=    30  H=1.082383e+05  H/H0=33.0263
+  step=    45  H=3.361073e+04  H/H0=10.2555
+  step=    60  H=5.557825e+04  H/H0=16.9583
+  step=    75  H=8.581650e+04  H/H0=26.1848
+  step=    90  H=4.672423e+04  H/H0=14.2568
+  step=   105  H=9.278813e+04  H/H0=28.3120
+  step=   120  H=1.886438e+05  H/H0=57.5600
+  step=   135  H=9.783179e+04  H/H0=29.8510
+  step=   150  H=5.846199e+04  H/H0=17.8382
+
+=== cross_scale=1.0000e-01 ===
+calibration: SCALE OVERRIDE active -- scale_ref=1.3606e-03 @ L8  ->  scale=4.0818e-03 sim-units @ L7 (real-world neutron/Bohr-radius calibration bypassed; this run is a pure numerical stability probe, not a calibrated physical result)
+  init_spheromak_ic_refinable: scale=4.0818e-03  R_sph=1.0  sigma=None  inner_cells=3839/162445  (2.4%)
+  [post-store] phi_rms=4.5138e-02  phi_nonzero_cells=3838
+  IC: cross_scale=1.0000e-01  gate=barrier  m0=2.49e+00  N_total=162445  N_spheromak=3839 (2.4%)  R=20  scale=4.0818e-03  B0_max=0.617  phi_rms=4.5138e-02  dt=5.1282e-03  level_max=7  est_mem=0.0372 GB
+  step=    15  H=1.060406e+05  H/H0=32.3557
+  step=    30  H=1.082376e+05  H/H0=33.0261
+  step=    45  H=3.360989e+04  H/H0=10.2552
+  step=    60  H=5.557675e+04  H/H0=16.9579
+  step=    75  H=8.581498e+04  H/H0=26.1843
+  step=    90  H=4.672271e+04  H/H0=14.2563
+  step=   105  H=9.278600e+04  H/H0=28.3114
+  step=   120  H=1.886421e+05  H/H0=57.5595
+  step=   135  H=9.783143e+04  H/H0=29.8509
+  step=   150  H=5.845946e+04  H/H0=17.8375
+
+=== cross_scale=1.0000e+00 ===
+calibration: SCALE OVERRIDE active -- scale_ref=1.3606e-03 @ L8  ->  scale=4.0818e-03 sim-units @ L7 (real-world neutron/Bohr-radius calibration bypassed; this run is a pure numerical stability probe, not a calibrated physical result)
+  init_spheromak_ic_refinable: scale=4.0818e-03  R_sph=1.0  sigma=None  inner_cells=3839/162445  (2.4%)
+  [post-store] phi_rms=4.5138e-02  phi_nonzero_cells=3838
+  IC: cross_scale=1.0000e+00  gate=barrier  m0=2.49e+00  N_total=162445  N_spheromak=3839 (2.4%)  R=20  scale=4.0818e-03  B0_max=0.617  phi_rms=4.5138e-02  dt=5.1282e-03  level_max=7  est_mem=0.0372 GB
+  step=    15  H=1.060377e+05  H/H0=32.3548
+  step=    30  H=1.082310e+05  H/H0=33.0241
+  step=    45  H=3.360147e+04  H/H0=10.2527
+  step=    60  H=5.556178e+04  H/H0=16.9533
+  step=    75  H=8.579985e+04  H/H0=26.1797
+  step=    90  H=4.670751e+04  H/H0=14.2517
+  step=   105  H=9.276486e+04  H/H0=28.3049
+  step=   120  H=1.886246e+05  H/H0=57.5542
+  step=   135  H=9.782766e+04  H/H0=29.8497
+  step=   150  H=5.843417e+04  H/H0=17.8298
+
+ cross_scale   phi_rms_0   phi_rms_f         H_0         H_f  lam_mean_f   lam_max_f    circ_r12_0    circ_r12_f   n_leaves  lvl_max
+------------------------------------------------------------------------------------------------------------------------------------
+  1.0000e-02  4.5138e-02  2.2491e-01  3.2773e+03  5.8462e+04      0.0097      1.0000   +0.0000e+00   +4.2039e-45     162445        7
+  1.0000e-01  4.5138e-02  2.2491e-01  3.2773e+03  5.8459e+04      0.0097      1.0000   +0.0000e+00   +0.0000e+00     162445        7
+  1.0000e+00  4.5138e-02  2.2486e-01  3.2773e+03  5.8434e+04      0.0097      1.0000   +0.0000e+00   +1.3312e-44     162445        7
+[log: plot.py:25 - savefig() ] saved -> tmp/refined_neutron_decay_sweep.png

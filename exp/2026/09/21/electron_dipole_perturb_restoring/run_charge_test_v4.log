@@ -1,0 +1,22 @@
+domain R=80.0  sponge from r=70.0 to 80.0 (10.0 cells)
+N=2784735  electron_scale=50.0  cells_across=100  dt=5.1282e-03  N_STEPS=400 (t_final=2.05)  deficit_width=15.00  window cells=495745
+
+=== short-window rate-of-change sweep, 400 steps each ===
+[      vacuum] deficit0=1.3405e+04  deficit@t=2.05=1.2960e+04  linear_rate=-2.1392e+02/t  frac_rate=-1.5958e-02/t  rel_change_over_window=0.0332  (90.4s)
+  init_electron_dipole_ic_vecpot: scale=50.0  R_sph=1.0  r_axis=30.53  u_bg=0.0  inner_cells=680395/2784735  (24.4%)
+  divergence_clean: div_rms 2.7641e-04 → 2.5593e-12  (×9.26e-09)
+[ dipole_lam0] deficit0=1.3405e+04  deficit@t=2.05=1.2960e+04  linear_rate=-2.1392e+02/t  frac_rate=-1.5958e-02/t  rel_change_over_window=0.0332  (90.3s)
+  init_electron_dipole_ic_vecpot: scale=50.0  R_sph=1.0  r_axis=30.53  u_bg=0.0  inner_cells=680395/2784735  (24.4%)
+  divergence_clean: div_rms 2.7641e-04 → 2.5593e-12  (×9.26e-09)
+[ dipole_lam1] deficit0=1.3405e+04  deficit@t=2.05=1.3130e+04  linear_rate=-1.3262e+02/t  frac_rate=-9.8932e-03/t  rel_change_over_window=0.0205  (89.7s)
+  init_electron_dipole_ic_vecpot: scale=50.0  R_sph=1.0  r_axis=30.53  u_bg=0.0  inner_cells=680395/2784735  (24.4%)
+  divergence_clean: div_rms 2.7641e-04 → 2.5593e-12  (×9.26e-09)
+[ dipole_lam2] deficit0=1.3405e+04  deficit@t=2.05=1.3217e+04  linear_rate=-9.0842e+01/t  frac_rate=-6.7765e-03/t  rel_change_over_window=0.0140  (89.5s)
+
+=== summary: fractional rate of change (per unit time) ===
+vacuum baseline: frac_rate = -1.5958e-02/t
+   dipole_lam0: frac_rate = -1.5958e-02/t  (100.0% of vacuum's rate)
+   dipole_lam1: frac_rate = -9.8932e-03/t  (62.0% of vacuum's rate)
+   dipole_lam2: frac_rate = -6.7765e-03/t  (42.5% of vacuum's rate)
+
+saved results_charge_test_v4.npz

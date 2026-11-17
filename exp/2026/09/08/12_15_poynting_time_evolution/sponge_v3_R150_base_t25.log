@@ -1,0 +1,14 @@
+[split_d0.003] N=18366667 sponge_fraction=0.15 damp_max=0.003 r_inner=127.50 r_ring=19.80 dt=5.1282e-03 start_step=0 predicted_round_trip_t=68.12 (t range this leg: 0.00 -> 25.00)
+saved exp/2026/09/08/12_15_poynting_time_evolution/sponge_v3_R150_base_t25_split_d0.003_frames/t_005.000.png
+saved exp/2026/09/08/12_15_poynting_time_evolution/sponge_v3_R150_base_t25_split_d0.003_frames/t_010.000.png
+saved exp/2026/09/08/12_15_poynting_time_evolution/sponge_v3_R150_base_t25_split_d0.003_frames/t_015.000.png
+saved exp/2026/09/08/12_15_poynting_time_evolution/sponge_v3_R150_base_t25_split_d0.003_frames/t_020.000.png
+saved exp/2026/09/08/12_15_poynting_time_evolution/sponge_v3_R150_base_t25_split_d0.003_frames/t_025.000.png
+[split_d0.003] saved final state -> exp/2026/09/08/12_15_poynting_time_evolution/sponge_v3_R150_base_t25_split_d0.003_step0004875.h5
+[split_d0.003] done, 200 log points
+
+=== late-time (last third of run) outer-shell |S| comparison across configs ===
+split_d0.003         r=   8: mean=3.1680e-09 std=4.6039e-10 max=4.2125e-09
+split_d0.003         r=  20: mean=7.4596e-08 std=3.3802e-08 max=1.6657e-07
+split_d0.003         r=  24: mean=1.9500e-08 std=8.6681e-09 max=4.4153e-08
+done

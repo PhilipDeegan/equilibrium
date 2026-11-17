@@ -1,0 +1,28 @@
+int g dV = 1.0000000000000002
+w=5.736 period=1.095 window=[4.79,6.98] (2 periods) N=347941
+  step 400/2724 t=1.03 |u|max=5.88e-03 (5s)
+  step 800/2724 t=2.05 |u|max=7.08e-03 (11s)
+  step 1200/2724 t=3.08 |u|max=8.36e-03 (16s)
+  step 1600/2724 t=4.10 |u|max=9.85e-03 (22s)
+  step 2000/2724 t=5.13 |u|max=1.25e-02 (28s)
+  step 2400/2724 t=6.15 |u|max=1.31e-02 (36s)
+
+measurements=107  P_theory=1.7924e-02  source work -<J.E> / P_th = 0.598
+r= 5.0 P/P_th=0.866  r^2*S_eq=1.8612e-03  sin^2 fit amp/theory=0.857  pattern resid=0.042  pole/eq=+0.084
+      S(th)/S_th_eq: +0.073 +0.270 +0.494 +0.738 +0.870 +0.738 +0.494 +0.270 +0.073
+      eq. azimuth S/mean: 1.003 1.001 1.001 0.995 1.003 1.001 1.001 0.995  spread (max-min)/mean=0.008
+r= 6.5 P/P_th=0.932  r^2*S_eq=2.0219e-03  sin^2 fit amp/theory=0.916  pattern resid=0.070  pole/eq=+0.114
+      S(th)/S_th_eq: +0.108 +0.328 +0.521 +0.772 +0.945 +0.772 +0.521 +0.328 +0.108
+      eq. azimuth S/mean: 1.008 0.992 0.993 1.008 1.008 0.992 0.993 1.008  spread (max-min)/mean=0.017
+r= 8.0 P/P_th=0.931  r^2*S_eq=2.1257e-03  sin^2 fit amp/theory=0.915  pattern resid=0.089  pole/eq=+0.131
+      S(th)/S_th_eq: +0.130 +0.338 +0.490 +0.761 +0.994 +0.761 +0.490 +0.338 +0.130
+      eq. azimuth S/mean: 1.015 0.986 0.987 1.012 1.015 0.986 0.987 1.012  spread (max-min)/mean=0.030
+r= 9.5 P/P_th=0.802  r^2*S_eq=1.9165e-03  sin^2 fit amp/theory=0.791  pattern resid=0.109  pole/eq=+0.148
+      S(th)/S_th_eq: +0.132 +0.291 +0.386 +0.660 +0.896 +0.660 +0.386 +0.291 +0.132
+      eq. azimuth S/mean: 1.021 0.980 0.982 1.017 1.021 0.980 0.982 1.017  spread (max-min)/mean=0.042
+equatorial slope d log S / d log r = -1.918 (theory -2)
+Traceback (most recent call last):
+  File "/home/p/git/eq/exp/2026/09/26/dipole/dipole_radiation.py", line 218, in <module>
+    dict(u=lat.u, phi=lat.phi, e=ae.e, pos=lat.pos)))
+                                 ^^^^
+AttributeError: 'NoneType' object has no attribute 'e'

@@ -1,0 +1,19 @@
+CONTEXT: double_slit.py runs a continuously-driven source for ~1600 steps
+and records accumulated dose (integral of u^2 dt) at a backplate.
+
+WHAT FAILED: first attempt used a plain SubstrateLattice (no boundary
+damping). This produced an "edge blowup" artefact contaminating the
+backplate pattern.
+
+ROOT CAUSE: with a continuously-driven source running for ~1600 steps,
+plain (non-absorbing) domain boundaries let energy build up and reflect
+back inward, contaminating the long-exposure accumulated-dose measurement
+at the backplate. A short/pulsed run might get away with this; a long
+continuously-driven run cannot.
+
+LESSON: any continuously-driven, long-duration accumulated-dose/exposure
+style measurement on this lattice needs DampedLattice (sponge boundary),
+not plain SubstrateLattice -- reflection contamination shows up as an
+edge-originating blowup, not a subtle bias, so it's usually easy to spot
+once you know to look for it. Check boundary type first if a long-running
+driven-source demo shows edge-localized growth.

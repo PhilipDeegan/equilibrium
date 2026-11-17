@@ -1,0 +1,9 @@
+reference t 4000: structure rms(rho - 1) 0.240
+  t 6000: rms vs t 4000 at best rotation 0.095 (phi   1.2 deg), at phi 0 0.115; torus radius 117.2 (ref 113.4)
+  t 8000: rms vs t 4000 at best rotation 0.166 (phi   2.2 deg), at phi 0 0.198; torus radius 116.1 (ref 113.4)
+  t 9000: rms vs t 4000 at best rotation 0.052 (phi  14.6 deg), at phi 0 0.318; torus radius 120.6 (ref 113.4)
+  t 10000: rms vs t 4000 at best rotation 0.054 (phi   4.0 deg), at phi 0 0.215; torus radius 119.2 (ref 113.4)
+  t 11000: rms vs t 4000 at best rotation 0.047 (phi  15.6 deg), at phi 0 0.306; torus radius 119.2 (ref 113.4)
+  t 12000: rms vs t 4000 at best rotation 0.041 (phi   4.7 deg), at phi 0 0.246; torus radius 120.2 (ref 113.4)
+  t 13000: rms vs t 4000 at best rotation 0.064 (phi  16.6 deg), at phi 0 0.277; torus radius 120.7 (ref 113.4)
+  t 14000: rms vs t 4000 at best rotation 0.048 (phi   5.9 deg), at phi 0 0.284; torus radius 120.4 (ref 113.4)

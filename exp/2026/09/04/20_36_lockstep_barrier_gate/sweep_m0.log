@@ -1,0 +1,8 @@
+drive: max=9.3812 median(nz)=4.4589 nnz=2712/147047
+m0= 1.494  frac(nonzero-drive cells firing @t0)=0.873  circ_ratio@2000=0.935422
+m0= 2.490  frac(nonzero-drive cells firing @t0)=0.792  circ_ratio@2000=0.936073
+m0= 4.460  frac(nonzero-drive cells firing @t0)=0.499  circ_ratio@2000=0.941947
+m0= 7.000  frac(nonzero-drive cells firing @t0)=0.162  circ_ratio@2000=0.973711
+m0= 9.380  frac(nonzero-drive cells firing @t0)=0.001  circ_ratio@2000=0.999814
+m0=12.000  frac(nonzero-drive cells firing @t0)=0.000  circ_ratio@2000=1.000007
+m0=20.000  frac(nonzero-drive cells firing @t0)=0.000  circ_ratio@2000=1.000007

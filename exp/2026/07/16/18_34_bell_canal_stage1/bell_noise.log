@@ -1,0 +1,37 @@
+cells=7345  dt=0.0051  |A patch|=19  |B patch|=19  D=14.0  noise=0.01 (bulk)
+
+ ticks        t     |v_A|     xtalk       S  P_agr(30)   [LHV cap 2/3=0.667, QM 3/4]
+     0     0.00  1.00e+00  0.00e+00   1.413     0.6247
+   500     2.56  9.72e-01  9.38e-08   1.416     0.6265
+  1000     5.13  9.75e-01  4.65e-04   1.408     0.6242
+  2000    10.26  9.75e-01  1.55e-04   1.411     0.6247
+  4000    20.51  9.74e-01  4.62e-05   1.421     0.6258
+
+u-profile (A-x imprint run): final u_rms on A-B axis segment (201 cells) = 3.332e-01
+z-binned u_rms at final checkpoint:
+  z= -23.00  u_rms=1.620e-04
+  z= -21.00  u_rms=6.199e-04
+  z= -19.00  u_rms=1.085e-03
+  z= -17.00  u_rms=9.085e-04
+  z= -15.00  u_rms=1.114e-03
+  z= -13.00  u_rms=1.008e-03
+  z= -11.00  u_rms=1.655e-03
+  z=  -9.00  u_rms=2.148e-03
+  z=  -7.00  u_rms=2.299e-03  <-- A
+  z=  -5.00  u_rms=1.818e-03
+  z=  -3.00  u_rms=1.444e-03
+  z=  -1.00  u_rms=1.366e-03
+  z=  +1.00  u_rms=9.194e-04
+  z=  +3.00  u_rms=1.126e-03
+  z=  +5.00  u_rms=7.573e-04
+  z=  +7.00  u_rms=8.998e-04  <-- B
+  z=  +9.00  u_rms=7.964e-04
+  z= +11.00  u_rms=6.357e-04
+  z= +13.00  u_rms=6.527e-04
+  z= +15.00  u_rms=6.564e-04
+  z= +17.00  u_rms=7.353e-04
+  z= +19.00  u_rms=6.233e-04
+  z= +21.00  u_rms=4.741e-04
+  z= +23.00  u_rms=2.473e-04
+
+saved -> /tmp/claude-1000/-home-p-git-eq/dd9c7420-374f-408b-80b0-b15a2e4b04c8/scratchpad/bell_noise/bell_canal_stage1.npz

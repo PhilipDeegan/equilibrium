@@ -1,0 +1,4 @@
+N 432000  |lie| 2.477e-01 antisym resid 5.1e-16  sum phi.lie 6.98e-15 (vs sum|phi||lie| 9.66e+02)  |wsum| 4.376e-02
+corr(lie, wsum) +0.333  best scale +2.846
+div of lie (sum W out) max 5.726e-01
+div-free parts: |lie_T|/|lie| 0.225  |wsum_T|/|wsum| 0.231  corr +0.909  best scale +7.578

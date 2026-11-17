@@ -1,0 +1,6 @@
+[uniform L0 base] n_leaves=147047  t=0.0s  peak_rss_GB=0.20
+cells_across=220  scale=0.452675  (spheromak radius in L0-cells: 0.453)
+inner_cells=1/147047 (0.0007%)
+H0=0.000000e+00  phi_rms=0.000000e+00  u_rms=0.000000e+00  peak_rss_GB=0.49
+saved /bk/uniform_l0_r30_ic_220.h5  save_t=0.0s
+FINAL total_t=0.3s  peak_rss_GB=0.49

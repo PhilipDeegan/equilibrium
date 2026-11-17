@@ -1,0 +1,2 @@
+curl=dec R=8.0 N=2733 steps=17600: max |div E change| 1.92e-15; <u> = a psi + c: a = 1.0006, rel rms resid 3.822e-05; core <u> - shell <u> = 0.0585 vs psi 0.0584; inner rel resid 4.463e-04
+curl=ls R=8.0 N=2733 steps=17600: max |div E change| 3.24e-03; <u> = a psi + c: a = 1.0004, rel rms resid 3.918e-05; core <u> - shell <u> = 0.0584 vs psi 0.0584; inner rel resid 4.466e-04

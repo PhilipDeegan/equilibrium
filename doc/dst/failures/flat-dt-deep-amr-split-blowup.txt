@@ -1,0 +1,28 @@
+CONTEXT: tst.substrate.test_adaptive_vs_substrate.TestMultipleSplits, a
+center-only BFS split chain, drives time-stepping with a FLAT,
+non-level-scaled dt=0.003 (alat.step(0, DT), i.e. TimeStepper::make_fixed).
+
+WHAT FAILED: Once pass1's coefficient was correctly fixed to scale as 1/L
+(2026-08-15 fix, see doc/dst_amr.md), this same test started blowing up
+exponentially (u -> -inf). Bisected precisely: max|u| stayed ~0.87 through
+split 4, then went 2.97 -> 2.3e11 -> ... -> inf by split 15.
+
+ROOT CAUSE: the corrected pass1 also correctly restores the TRUE, steeper
+CFL requirement (dt ∝ L) at deep levels, which a flat dt cannot satisfy.
+The OLD, buggy pass1 had been inadvertently masking this the whole time by
+having an artificially weak coefficient at fine levels — i.e. an unrelated
+bug was silently compensating for a genuine CFL violation in the test
+harness. Confirmed directly: the identical BFS chain run with a proper
+level-scaled TimeStepper.by_level stayed perfectly stable through split 11
+(subcycling cost grows ~3^level per outer step, too slow to push further).
+
+LESSON: never drive deep AMR split-chain tests with a flat/unscaled dt —
+always recompute dt from the CURRENT deepest level
+(0.4*L_min/(sigma_max*W2_SUM), same formula as TestFluxConservation's
+_dt()), or use a level-scaled stepper. More generally: fixing one bug can
+unmask a second, previously-hidden one that the first was compensating
+for — a test staying green is not proof every code path it exercises is
+correct. (Separately, at N_SPLITS 12+ with the flat-dt test workaround, a
+different depth-dependent issue surfaces in the threshold_loss_localised
+spatial-coherence check — see the N_BETWEEN-scaling note in the positive
+log; that one is an open TODO, not a resolved failure.)

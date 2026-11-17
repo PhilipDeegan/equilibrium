@@ -1,0 +1,7 @@
+[L0 base] R_L0=60.0  n_leaves=1175219  t=0.5s  peak_rss_GB=0.81
+[L1 core, r<=40.0] n_leaves=10222517  level_hist=[827246, 9395271]  t=147.0s  peak_rss_GB=8.47
+cells_across=220  scale=36.666667  margin to R_L1=40.0: 3.33 (10.0 L1-cells)
+inner_cells=7243583/10222517 (70.8591%)
+H0=4.462388e+06  phi_rms=2.231699e-01  u_rms=2.964653e-01  peak_rss_GB=8.86
+saved /bk/l0_l1_boundary_ic220.h5  save_t=1.0s
+FINAL total_t=186.2s  peak_rss_GB=8.86

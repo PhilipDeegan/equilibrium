@@ -1,0 +1,27 @@
+== R175
+t     0: main voxels 3484 (pieces 1); neck  34.6 at rho_cyl  50.6 az   -135, geodesic 159
+t  1000: main voxels 5779 (pieces 1); neck  33.4 at rho_cyl  56.3 az    -61, geodesic 137
+t  2000: main voxels 6099 (pieces 1); neck  31.6 at rho_cyl  67.4 az    -72, geodesic 129
+t  3000: main voxels 6429 (pieces 1); neck  26.6 at rho_cyl  74.1 az    -77, geodesic 126
+t  4000: main voxels 6583 (pieces 1); neck  21.7 at rho_cyl  79.7 az    -85, geodesic 121
+t  5000: main voxels 7125 (pieces 2); neck  15.6 at rho_cyl  96.3 az    -90, geodesic 98
+t  6000: main voxels 7223 (pieces 2); neck  11.2 at rho_cyl  94.4 az    +38, geodesic 105
+t  7000: main voxels 7353 (pieces 1); neck  38.6 at rho_cyl  69.1 az    -14, geodesic 61
+t  8000: main voxels 7538 (pieces 1); neck  41.9 at rho_cyl  68.6 az    -18, geodesic 60
+t  9000: main voxels 7535 (pieces 1); neck  42.4 at rho_cyl  67.2 az    -28, geodesic 60
+t 10000: main voxels 5370 (pieces 5); neck  45.4 at rho_cyl  85.2 az   +154, geodesic 60
+t 11000: main voxels 5341 (pieces 5); neck  46.2 at rho_cyl  83.5 az    -33, geodesic 60
+t 12000: main voxels 5048 (pieces 5); neck  45.9 at rho_cyl 113.4 az    -56, geodesic 60
+== R167
+t     0: main voxels 3484 (pieces 1); neck  34.6 at rho_cyl  50.6 az   -135, geodesic 159
+t  1000: main voxels 5842 (pieces 1); neck  33.4 at rho_cyl  56.3 az    -61, geodesic 138
+t  2000: main voxels 5967 (pieces 1); neck  30.3 at rho_cyl  68.6 az   -116, geodesic 127
+t  3000: main voxels 6372 (pieces 1); neck  27.3 at rho_cyl  76.1 az    -77, geodesic 119
+t  4000: main voxels 6555 (pieces 2); neck  23.4 at rho_cyl  85.9 az    -84, geodesic 104
+t  5000: main voxels 6068 (pieces 2); neck  19.5 at rho_cyl  92.8 az    -91, geodesic 84
+t  6000: main voxels 5562 (pieces 1); neck  18.9 at rho_cyl  85.5 az   -144, geodesic 92
+t  7000: main voxels 5384 (pieces 1); neck  21.4 at rho_cyl  86.7 az   -106, geodesic 77
+t  8000: main voxels 5328 (pieces 1); neck  27.5 at rho_cyl  84.1 az    -71, geodesic 76
+t  9000: main voxels 5342 (pieces 1); neck  31.5 at rho_cyl  85.1 az   -130, geodesic 63
+t 10000: main voxels 5338 (pieces 1); neck  30.8 at rho_cyl  82.2 az    +40, geodesic 64
+t 11000: main voxels 5220 (pieces 1); neck  32.8 at rho_cyl  60.4 az    -99, geodesic 115

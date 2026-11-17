@@ -1,0 +1,25 @@
+linked before smoothing +1.000000 +1.000000 +0.000000
+smoothed tau 1.0: linked +1.000000 +0.998011 +0.000007
+linked-circulation lines at r 0.0 4.5 15.0
+P 72 N 93312 R0 9.0 kappa 0.132 dt 0.0182 ticks 220 midpoint x3
+t 0 instantaneous (term x unit time): |Gamma|-weighted z +0.14641; defect-label z +0.00000; max off-integer at defects 2.625e-01; max |Gamma| off-defect 4.225e-01
+       t count sum_n rho z_label z_|G| max|G-n|@def max|G|@non sum|G|@non/count  E_lf
+    0.00     4    -4   9.04 +0.0000 -0.0188 1.438e-02 3.749e-02 1.026e+02  2834.505298  leak 1.079e-01 rms 2.002 sum|G| 4.1436e+02 linked +1.000000 +0.998011 +0.000007 x_|G| -0.10148
+    1.00     4    -4   9.04 +0.0000 +0.1525 1.774e-01 4.351e-01 1.153e+02  2889.752061  leak 1.784e-01 rms 2.819 sum|G| 4.6452e+02 linked +1.001181 +0.999844 -0.000031 x_|G| -0.41188
+    2.00    34   -34   9.73 -0.0340 +0.2490 4.923e-01 4.979e-01 1.763e+01  3946.871000  leak 2.216e-01 rms 3.180 sum|G| 6.2224e+02 linked +1.005946 +0.997220 -0.000173 x_|G| -2.34742
+  T[:, k] -= M2[:, n] * v[j, b]
+  T[:, k] -= M2[:, n] * v[j, b]
+  T[:, k] -= v[:, a_] * M2[nb[:, a_], n]
+  T[:, k] -= v[:, a_] * M2[nb[:, a_], n]
+  T[:, k] -= M2[:, n] * v[j, b]
+  M2[:, n] = sum(a[:, p_] + a[nb[:, p_], q] for p_, q in paths[k_]) / len(paths[k_])
+  T[:, k] -= v[:, a_] * M2[nb[:, a_], n]
+  return W * T
+Traceback (most recent call last):
+  File "/home/p/git/eq/exp/2026/10/12/villain/vill.py", line 179, in <module>
+    c, sn, rho, zl, zw, fdef, gnon, snon, leak, rms, tot = tri_stats(ph)
+                                                           ~~~~~~~~~^^^^
+  File "/home/p/git/eq/exp/2026/10/12/villain/vill.py", line 108, in tri_stats
+    return (int(m.sum()), int(n.sum()), rho.mean() if m.any() else np.nan, zc if m.any() else np.nan, zw,
+                          ~~~^^^^^^^^^
+ValueError: cannot convert float NaN to integer

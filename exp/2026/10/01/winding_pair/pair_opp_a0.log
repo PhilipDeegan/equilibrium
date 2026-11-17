@@ -1,0 +1,3 @@
+pair_opp alpha=0 N=15009 omegas=['3.3251', '3.3251'] scale=0.6904 E_tube0/E_tot=0.9997 E0=149.612 seed_res=9.6e-11 steps=7275
+  t=    0.00 Etube/E0=1.0000 sigma=1.0000 rho_rms=5.322 lam_max=0.000 |a|=0.084 0.362 0.362 0.362 0.362 0.027 0.027 (0s)
+done 492s

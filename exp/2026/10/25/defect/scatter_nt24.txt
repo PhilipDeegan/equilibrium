@@ -1,0 +1,21 @@
+box 24x24x160 (184320 cells) packet z0 40 defect z 88 dt 0.05
+  k 0.25: 1136 steps, ETA 0.3 min
+RESULT k  0.25 w 12.0 cell S100  sigma_s 4.4834e-07  sigma_s * S^2 4.4834e-03
+RESULT k  0.25 w 12.0 pair S100  sigma_s 6.4327e-07  sigma_s * S^2 6.4327e-03
+RESULT k  0.25 w 12.0 cell S50   sigma_s 1.7952e-06  sigma_s * S^2 4.4881e-03
+RESULT k  0.25 w 12.0 pair S50   sigma_s 2.5743e-06  sigma_s * S^2 6.4356e-03
+  k 0.5: 821 steps, ETA 0.2 min
+RESULT k  0.50 w  6.0 cell S100  sigma_s 2.1080e-07  sigma_s * S^2 2.1080e-03
+RESULT k  0.50 w  6.0 pair S100  sigma_s 3.4635e-08  sigma_s * S^2 3.4635e-04
+RESULT k  0.50 w  6.0 cell S50   sigma_s 8.4132e-07  sigma_s * S^2 2.1033e-03
+RESULT k  0.50 w  6.0 pair S50   sigma_s 1.3856e-07  sigma_s * S^2 3.4641e-04
+  k 1.0: 821 steps, ETA 0.2 min
+RESULT k  1.00 w  6.0 cell S100  sigma_s 2.4958e-06  sigma_s * S^2 2.4958e-02
+RESULT k  1.00 w  6.0 pair S100  sigma_s 1.0046e-06  sigma_s * S^2 1.0046e-02
+RESULT k  1.00 w  6.0 cell S50   sigma_s 9.9702e-06  sigma_s * S^2 2.4925e-02
+RESULT k  1.00 w  6.0 pair S50   sigma_s 4.0185e-06  sigma_s * S^2 1.0046e-02
+  k 2.0: 821 steps, ETA 0.2 min
+RESULT k  2.00 w  6.0 cell S100  sigma_s 3.5746e-05  sigma_s * S^2 3.5746e-01
+RESULT k  2.00 w  6.0 pair S100  sigma_s 2.2349e-05  sigma_s * S^2 2.2349e-01
+RESULT k  2.00 w  6.0 cell S50   sigma_s 1.4444e-04  sigma_s * S^2 3.6109e-01
+RESULT k  2.00 w  6.0 pair S50   sigma_s 8.9469e-05  sigma_s * S^2 2.2367e-01

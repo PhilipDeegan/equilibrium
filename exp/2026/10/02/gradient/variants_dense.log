@@ -1,0 +1,4 @@
+plain xi 2.6: 2.19e-02 (grid frac > 1e-12: 3.1e-02) | xi 3.9: 9.68e-03 (grid frac > 1e-12: 1.2e-02) | xi 5.2: 5.43e-03 (grid frac > 1e-12: 8.3e-03)
+avg8 xi 2.6: 3.21e-03 (grid frac > 1e-12: 7.5e-04) | xi 3.9: 1.41e-03 (grid frac > 1e-12: 3.8e-04) | xi 5.2: 7.92e-04 (grid frac > 1e-12: 3.8e-04)
+avg9 xi 2.6: 4.86e-03 (grid frac > 1e-12: 3.4e-03) | xi 3.9: 2.15e-03 (grid frac > 1e-12: 1.1e-03) | xi 5.2: 1.20e-03 (grid frac > 1e-12: 3.8e-04)
+avg15 xi 2.6: 3.86e-03 (grid frac > 1e-12: 7.5e-04) | xi 3.9: 4.22e-15 (grid frac > 1e-12: 0.0e+00) | xi 5.2: 4.44e-15 (grid frac > 1e-12: 0.0e+00)

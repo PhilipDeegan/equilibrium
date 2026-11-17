@@ -1,0 +1,14 @@
+  seed: mean phase jump across face x +0.0005
+  seed: mean phase jump across face y -0.0007
+  seed: mean phase jump across face z -0.4041
+springbox_N2_S1_q1_a14_r30_xi3.9_m0.8_P220_z0_wxi_rc_par: N_cells=2662000 build+seed 5s; g 0.0082 xi 3.90; strand pitch (toroidal advance per turn) 94.2 cells at r0, inner-side turn spacing 50.3
+  t 0: core cells 5200, minor radius 13.9, helix phase -0.000, winding centre circle -2.00, meridional -1.00, centre (rho, z) (31.6, -0.0), D_near 58492 D_core 40689, frame shift +0.0
+  t 1000: core cells 13438, minor radius 13.2, helix phase +0.881, winding centre circle -2.00, meridional -1.00, centre (rho, z) (32.8, +6.0), D_near 65418 D_core 48309, frame shift +5.8
+  t 2000: core cells 13679, minor radius 13.4, helix phase +1.493, winding centre circle -2.00, meridional -1.00, centre (rho, z) (34.5, +5.6), D_near 69658 D_core 50706, frame shift +17.3
+  t 3000: core cells 14183, minor radius 13.8, helix phase +2.027, winding centre circle -2.00, meridional -1.00, centre (rho, z) (36.6, +5.7), D_near 66865 D_core 49634, frame shift +28.9
+  t 4000: core cells 13529, minor radius 13.6, helix phase +2.573, winding centre circle -2.00, meridional -1.00, centre (rho, z) (35.9, +4.8), D_near 71716 D_core 52868, frame shift +41.6
+  t 5000: core cells 13982, minor radius 13.2, helix phase -3.084, winding centre circle -2.00, meridional -1.00, centre (rho, z) (35.0, +5.9), D_near 74021 D_core 53819, frame shift +52.0
+  t 6000: core cells 12469, minor radius 13.1, helix phase -2.492, winding centre circle -2.00, meridional -1.00, centre (rho, z) (33.4, +5.5), D_near 62479 D_core 45955, frame shift +63.5
+  t 7000: core cells 13226, minor radius 13.5, helix phase -1.700, winding centre circle -2.00, meridional -1.00, centre (rho, z) (32.0, +5.6), D_near 63083 D_core 47976, frame shift +75.1
+  t 8000: core cells 13211, minor radius 13.2, helix phase -0.932, winding centre circle -2.00, meridional -1.00, centre (rho, z) (33.3, +6.1), D_near 68642 D_core 49012, frame shift +86.6
+  8000 ticks in 213s

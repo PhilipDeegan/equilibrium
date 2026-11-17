@@ -1,0 +1,24 @@
+CONTEXT: While designing a genuine curl-full test object (the wire-loop diagnostic
+that preceded curl_full_dipole_ic.py), adaptive_flux_tube.init_toroidal_winding's
+default cos-pattern azimuthal phi profile was considered as the "constant loop"
+ingredient for a curl-full ring.
+
+WHAT FAILED: The default cos-pattern is curl-free in disguise — it sums to exactly
+zero over one full period around the ring, so it carries no net circulation despite
+"winding" around the loop. It had to be replaced with a genuinely CONSTANT phi value
+around the ring to get real, nonzero circulation.
+
+ROOT CAUSE: A field that oscillates (e.g. as cos(theta)) around a closed azimuthal
+loop integrates to zero net circulation over the full loop even though it is
+non-uniform pointwise — a "standing wave" pattern that looks like winding/rotation
+locally but cancels globally. This is the same pitfall already flagged once before,
+in project_spheromak_decay's 2026-07-03 correction, and it recurred here in a
+different context (curl-full IC construction) before being caught again.
+
+LESSON: Before treating any azimuthally-varying phi profile as evidence of real
+circulation/winding, integrate it around the FULL closed loop first. A cos(theta)-
+type (or any zero-mean-over-one-period) pattern is curl-free/standing-wave and will
+NOT produce genuine circulation, no matter how "wound" it looks locally. Only a
+profile that is constant (or otherwise non-zero-mean) around the closed loop gives
+real net circulation. This is a recurring trap — check for it explicitly whenever
+building or evaluating a new toroidal/azimuthal winding IC.

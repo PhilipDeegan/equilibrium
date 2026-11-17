@@ -1,0 +1,21 @@
+CONTEXT: Rebuilding the R180L0/R60L1 production checkpoints with the new
+curl_full_dipole_ic.py (seed_curl_full_dipole_ic) at cells_across=220 scale
+(exp/2026/08/17/12_25_curl_full_dipole_ic_rebuild/, build_curlfull_dipole_uniform_
+r180.py).
+
+WHAT FAILED: The uniform-R180 build (31.7M leaves) was SIGKILL'd (rc=137, OOM) on
+the first attempt.
+
+ROOT CAUSE: seed_curl_full_dipole_ic's boundary-masking step built one unbatched
+(N,14,3) float64 temporary, which is 10GB+ at this N, on top of the mesh's own ~19GB
+and phi_pol/phi_tor/phi_full's ~3.5GB each. This combination fit fine at the smaller
+L1R60 scale but overflowed available memory at the full 31.7M-leaf uniform-R180
+scale. [Note: the fix itself falls in the following log range (lines 851-975) and is
+not captured here — see that continuation's notes/failure files for the resolution.]
+
+LESSON: Any per-leaf temporary shaped like (N, 14, 3) float64 (or similar
+per-neighbor/per-face batched array) in boundary-masking or similar IC-construction
+code must be checked against total N before scaling up to production leaf counts —
+it silently multiplies into 10GB+ at N~31M. Batch or chunk such operations rather
+than allocating one unbatched temporary sized to the full leaf count, especially when
+stacked on top of the mesh's own ~19GB baseline and multiple ~3.5GB field arrays.

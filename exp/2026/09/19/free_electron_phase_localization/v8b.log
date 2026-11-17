@@ -1,0 +1,7 @@
+running 32 (phase,alpha) tasks across 6 workers, n_periods=3.0
+[  1/32] phase=0.0625pi alpha=0.90 grow%= +15.96 slope%=  +0.04  (task 870s, elapsed 14.5min, ETA 449.7min)
+[  2/32] phase=0.0625pi alpha=0.80 grow%=  +0.35 slope%=  +2.26  (task 871s, elapsed 14.5min, ETA 217.7min)
+[  3/32] phase=0.0625pi alpha=0.60 grow%= -14.72 slope%=  +4.59  (task 872s, elapsed 14.5min, ETA 140.5min)
+[  4/32] phase=0.0625pi alpha=1.00 grow%= +29.68 slope%=  -2.99  (task 872s, elapsed 14.5min, ETA 101.7min)
+[  5/32] phase=0.0625pi alpha=0.70 grow%= -12.20 slope%=  +3.60  (task 873s, elapsed 14.5min, ETA 78.5min)
+[  6/32] phase=0.0625pi alpha=1.10 grow%= +25.15 slope%=  -5.39  (task 873s, elapsed 14.5min, ETA 63.0min)

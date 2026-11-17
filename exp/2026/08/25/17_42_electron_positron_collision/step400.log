@@ -1,0 +1,27 @@
+N=1175219  R=60.0  scale=8.0  z0=+/-10.0  m0=2.49  cross_scale=0.1
+
+[electron] dipole IC at z=+10.0
+  init_electron_dipole_ic: scale=8.0  R_sph=1.0  sigma=None  r_axis=4.89  u_bg=0.0  inner_cells=2798/1175219  (0.2%)
+  divergence_clean: div_rms 4.3261e-02 → 4.0899e-10  (×9.45e-09)
+[positron] mirrored dipole IC at z=-10.0
+  init_electron_dipole_ic: scale=8.0  R_sph=1.0  sigma=None  r_axis=4.89  u_bg=0.0  inner_cells=2798/1175219  (0.2%)
+  divergence_clean: div_rms 4.3261e-02 → 4.0899e-10  (×9.45e-09)
+w0_e=4.9645e+02  w0_p=4.9645e+02  dt=5.1282e-03
+
+   step       J_mid      phi_up     phi_mid      phi_dn    surv_e    surv_p       H_total
+  ------------------------------------------------------------------------------------------
+      0  1.7901e-05  1.3562e-02  1.1450e-02  1.3562e-02    1.0000    1.0000   1.52417e+03
+     40  1.7882e-05  1.2718e-02  1.1450e-02  1.2718e-02    1.0000    1.0000   1.36461e+03
+     80  1.7859e-05  1.2094e-02  1.1450e-02  1.2094e-02    0.9999    0.9999   1.25505e+03
+    120  1.7785e-05  1.1669e-02  1.1450e-02  1.1669e-02    0.9997    0.9997   1.18393e+03
+    160  1.8199e-05  1.1403e-02  1.1449e-02  1.1403e-02    0.9990    0.9990   1.13979e+03
+    200  2.5774e-05  1.1240e-02  1.1441e-02  1.1240e-02    0.9972    0.9972   1.11128e+03
+    240  6.5006e-05  1.1102e-02  1.1409e-02  1.1102e-02    0.9933    0.9933   1.08624e+03
+    280  1.3082e-04  1.0973e-02  1.1341e-02  1.0973e-02    0.9860    0.9860   1.06227e+03
+    320  2.0532e-04  1.0879e-02  1.1239e-02  1.0879e-02    0.9751    0.9751   1.04287e+03
+    360  2.7633e-04  1.0829e-02  1.1117e-02  1.0829e-02    0.9610    0.9610   1.02969e+03
+    400  3.4505e-04  1.0809e-02  1.0975e-02  1.0809e-02    0.9442    0.9442   1.02083e+03
+final state saved -> /bk/dst/electron_positron_step400.hdf5
+data saved -> exp/2026/08/25/17_42_electron_positron_collision/step400.npz
+plot -> exp/2026/08/25/17_42_electron_positron_collision/step400.png
+cross-section plot -> exp/2026/08/25/17_42_electron_positron_collision/step400_cross.png

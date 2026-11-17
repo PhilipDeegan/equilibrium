@@ -1,0 +1,32 @@
+P 96 a 6.0 N 221184 beta -0.5 um 0.08 dt 0.05 steps 1200  E0 4.492449e+01
+   t     dE/E       umax     umin    <u>r<a/2  <u>a/2..a  <u>a..1.5a  <u>1.5a..2.5a  Eu/E   circE in/out(r>1.5a)  phi-change
+   0.0  +0.00e+00  +0.0000  +0.0000  +0.00000  +0.00000  +0.00000  +0.00000  0.0000  1.0000/0.0000  (0.020 s/step, ETA 0.4 min)
+   2.0  -5.47e-04  +0.0533  -0.3490  -0.22397  -0.14942  +0.01846  +0.00949  0.2722  0.5789/0.1490  (0.098 s/step, ETA 1.9 min)
+   4.0  -7.82e-04  +0.0390  -0.4694  -0.34377  -0.26045  -0.01344  +0.00999  0.4725  0.2889/0.2386  (0.098 s/step, ETA 1.8 min)
+   6.0  -8.31e-04  +0.0297  -0.5512  -0.41654  -0.32355  -0.02567  -0.00172  0.5978  0.1796/0.2226  (0.098 s/step, ETA 1.8 min)
+   8.0  -8.50e-04  +0.0238  -0.6455  -0.46709  -0.35022  -0.02704  -0.00882  0.6661  0.1353/0.1986  (0.099 s/step, ETA 1.7 min)
+  10.0  -8.60e-04  +0.0348  -0.7889  -0.50570  -0.34615  -0.02474  -0.01156  0.7108  0.1270/0.1622  (0.099 s/step, ETA 1.6 min)
+  12.0  -8.68e-04  +0.0320  -0.9078  -0.53437  -0.32467  -0.01955  -0.01183  0.6982  0.1412/0.1606  (0.099 s/step, ETA 1.6 min)
+  14.0  -8.77e-04  +0.0537  -1.0528  -0.55018  -0.29954  -0.01215  -0.00988  0.6616  0.1626/0.1758  (0.099 s/step, ETA 1.5 min)
+  16.0  -8.92e-04  +0.0535  -1.2107  -0.54940  -0.27820  -0.00653  -0.00304  0.6219  0.1860/0.1920  (0.099 s/step, ETA 1.4 min)
+/home/p/git/eq/exp/2026/11/09/pinch/pinch.py:55: RuntimeWarning: overflow encountered in exp
+  return np.ones_like(u) if beta == 0 or np.isinf(um) else np.exp(-beta * u / um)
+/opt/py/py/lib/python3.13/site-packages/numpy/_core/fromnumeric.py:83: RuntimeWarning: invalid value encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/home/p/git/eq/exp/2026/11/09/pinch/pinch.py:51: RuntimeWarning: invalid value encountered in divide
+  return u if np.isinf(um) else u / (1 - u / um)
+/home/p/git/eq/exp/2026/11/09/pinch/pinch.py:69: RuntimeWarning: invalid value encountered in multiply
+  g = de(u) + 0.25 * ds(u) * np.sum(phi**2, 1)
+/home/p/git/eq/exp/2026/11/09/pinch/pinch.py:70: RuntimeWarning: invalid value encountered in subtract
+  pt = np.where(valid, -W * (g[nbs] - g[:, None]), 0.0)
+/home/p/git/eq/exp/2026/11/09/pinch/pinch.py:69: RuntimeWarning: overflow encountered in square
+  g = de(u) + 0.25 * ds(u) * np.sum(phi**2, 1)
+/opt/py/py/lib/python3.13/site-packages/numpy/_core/fromnumeric.py:83: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/home/p/git/eq/exp/2026/11/09/pinch/pinch.py:69: RuntimeWarning: overflow encountered in multiply
+  g = de(u) + 0.25 * ds(u) * np.sum(phi**2, 1)
+/home/p/git/eq/exp/2026/11/09/pinch/pinch.py:70: RuntimeWarning: overflow encountered in multiply
+  pt = np.where(valid, -W * (g[nbs] - g[:, None]), 0.0)
+/home/p/git/eq/exp/2026/11/09/pinch/pinch.py:47: RuntimeWarning: invalid value encountered in log1p
+  return um**2 * (-xx - np.log1p(-xx))
+  18.0  +nan  +nan  +nan  -0.53588  -0.26378  +0.00210  +0.00425  nan  nan/nan  (0.099 s/step, ETA 1.4 min)

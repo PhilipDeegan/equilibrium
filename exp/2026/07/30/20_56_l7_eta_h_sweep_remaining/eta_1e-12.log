@@ -1,0 +1,25 @@
+<frozen importlib._bootstrap>:491: RuntimeWarning: The global interpreter lock (GIL) has been enabled to load module 'equilibrium.lattice', which has not declared that it can run safely without the GIL. To override this behavior and keep the GIL disabled (at your own risk), run with PYTHON_GIL=0 or -Xgil=0.
+R=20.0  max_level=7  region_r0=5.0  lam_target=1.0  lam_scale=0.05  lam_mode=frozen  n_steps=150
+cross_scales (1): 0.0000e+00
+
+=== cross_scale=0.0000e+00 ===
+calibration: SCALE OVERRIDE active -- scale_ref=1.3606e-03 @ L8  ->  scale=4.0818e-03 sim-units @ L7 (real-world neutron/Bohr-radius calibration bypassed; this run is a pure numerical stability probe, not a calibrated physical result)
+  init_spheromak_ic_refinable: scale=4.0818e-03  R_sph=1.0  sigma=None  inner_cells=3839/162445  (2.4%)
+  [post-store] phi_rms=4.5138e-02  phi_nonzero_cells=3838
+  IC: cross_scale=0.0000e+00  gate=barrier  m0=2.49e+00  N_total=162445  N_spheromak=3839 (2.4%)  R=20  scale=4.0818e-03  B0_max=0.617  phi_rms=4.5138e-02  dt=5.1282e-03  level_max=7  est_mem=0.0372 GB
+  step=    15  H=1.246998e+06  H/H0=380.4908
+  step=    30  H=6.296591e+10  H/H0=19212504.4397
+  step=    45  H=6.142646e+15  H/H0=1874277775607.5293
+  step=    60  H=7.714572e+20  H/H0=235391250782409312.0000
+  step=    75  H=1.108348e+26  H/H0=33818511362454699638784.0000
+  step=    90  H=1.734052e+31  H/H0=5291035712502306365818011648.0000
+  step=   105  H=2.882953e+36  H/H0=879662501396809326020942456946688.0000
+  step=   120  H=5.014576e+41  H/H0=153007494261310388354178576039087702016.0000
+  step=   135  H=9.021511e+46  H/H0=27526930100126535512149103423117014096412672.0000
+  step=   150  H=1.664125e+52  H/H0=5077670043195880186847678488359914840684400476160.0000
+
+ cross_scale   phi_rms_0   phi_rms_f         H_0         H_f  lam_mean_f   lam_max_f    circ_r12_0    circ_r12_f   n_leaves  lvl_max
+------------------------------------------------------------------------------------------------------------------------------------
+  0.0000e+00  4.5138e-02  1.2028e+23  3.2773e+03  1.6641e+52      0.0097      1.0000   +0.0000e+00   -6.8877e-41     162445        7
+
+plot saved -> tmp/refined_neutron_decay_sweep.png

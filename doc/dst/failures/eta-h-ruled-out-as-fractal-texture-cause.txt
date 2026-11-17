@@ -1,0 +1,34 @@
+CONTEXT: chasing the within-level fractal/self-similar log|u| texture seen around the
+L4/L5 AMR core boundary (Sierpinski-like clustering of which cells have received flux vs
+are still at exact floor). An alternative, non-bug explanation was floated on 2026-08-10:
+"is it eta_h related?" — since step_boundary_hyper_resistivity's is_boundary selection
+checks the RAW cell.nb[k]+cluster[nbg].L directly, and so (unlike the Python leaf_nb
+array) correctly sees non-leaf/proxy neighbours including L4/L5 multiplicity junctions,
+eta_h's biharmonic boundary damping might itself be the source of the fractal-looking
+texture rather than a real ancestor-substitution flux-correction bug.
+
+WHAT FAILED: ruled out directly, twice. (1) 2026-08-10 reasoning check: the hypothesis
+was cleared on inspection (full reasoning not preserved verbatim here, see
+[[project_odd27_amr_junction_leak]] Part 25/36-era log). (2) Direct numeric test against
+the properly-resolved cells_across=220 checkpoint
+(/bk/l5_core_diameter9_cells_across_220.h5): ran one step with
+eta_h_by_level=[0,0,0,0,0,0] (all levels' biharmonic damping fully disabled,
+exp/2026/08/10/12_11_l5_1step_eta0/step1_eta0.py) and got H/H0=1.003582 — matching the
+real eta-ladder run's step 1 (1.0036) to 4 decimal places. plot_telescope_xz.py XZ-midplane
+renders of the two step-1 checkpoints (eta-ladder vs eta_h=0) were visually identical:
+same fractal/quilt cross pattern around the L4/L5 core, same levels_in_slice counts exactly.
+
+ROOT CAUSE: eta_h has no measurable effect on H after 1 step, and the fractal texture
+persists identically with eta_h fully disabled — so it cannot be a biharmonic-damping
+artefact. Consistent with an earlier eta5=0 calibration-table row that had already hinted
+at the same thing.
+
+LESSON: don't re-litigate "maybe it's just eta_h's boundary term" for this fractal-texture
+lead — checked and ruled out twice (2026-08-10 reasoning pass + direct eta_h=0 numeric
+test). The live, not-yet-ruled-out explanation is ancestor substitution: L4-L5 flux
+crossing only via the leaf_nb-invisible ancestor-substitution/multiplicity path, whose
+recursive 3x3x3 lineage structure is itself self-similar — escalated to "leading
+hypothesis" after the 2026-08-14 _step_pass1 coefficient-mismatch fix confirmed a real
+leak via that same path elsewhere. Next diagnostic step (not yet done): check whether the
+fractal clusters line up with shared-ancestor groups (ancestor_group_multiplicity
+boundaries) before spending more time on eta_h.

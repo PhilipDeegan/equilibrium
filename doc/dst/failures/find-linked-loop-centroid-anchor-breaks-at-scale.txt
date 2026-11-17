@@ -1,0 +1,34 @@
+CONTEXT: adaptive_flux_tube.find_linked_loop locates a small Hopf-linked ring (Ring B)
+relative to an existing larger toroidal ring (Ring A) — used both by curl_full_spheromak_ic.py
+(seed_curl_full_pair) and by stern_gerlach.py's original discrete-ring IC construction.
+
+WHAT FAILED: the function searches for Ring B near Ring A's MEAN CENTROID (offset by a
+fixed half-hop h=a/2). This broke twice, in two different projects using it, once ring
+A was scaled up: (1) in curl_full_spheromak_ic.py, at production scale (hops=41) a large
+"square"-mode ring's mean centroid is not a representative anchor point — square-mode
+ring geometry lacks the circular/convex symmetry the centroid heuristic assumes, so the
+search located the wrong region entirely; (2) in stern_gerlach.py, doubling the winding
+(find_toroidal_ring(mode="square", hops=2)) put Ring B (still searched near the now much
+bigger centroid) entirely inside Ring A's disk — both of B's plane-crossings landed
+inside A's polygon and cancelled, giving linking number ln=0.0 for every non-overlapping
+candidate near center, versus a real ln=1 found immediately at hops=1.
+
+ROOT CAUSE: a mean-centroid anchor implicitly assumes the ring is small enough, and
+close enough to circular/convex, that centroid≈wire. Neither holds once the ring is
+scaled up or built in "square" mode — the function's placement heuristic silently
+assumed ring size stays on the same scale as its own centroid-offset, and breaks with
+no error, just linking-number-0 (looks like "no link found" rather than "wrong tool").
+
+LESSON: find_toroidal_ring / find_linked_loop / init_toroidal_winding /
+find_toroidal_spheromak are NOT scale-invariant — don't rescale a ring built with these
+without checking find_linked_loop's centroid-offset assumption still holds. Two fixes
+exist depending on context: (a) find_linked_loop_anchored, which anchors the search to
+one of Ring A's OWN tile positions instead of its mean centroid (used in
+curl_full_spheromak_ic.py) — use this whenever linking a small loop to a large
+non-circular (e.g. square-mode) ring; (b) for stern_gerlach.py, the project's actual fix
+was to abandon this discrete ring+plaquette construction entirely in favor of the
+already-scale-invariant analytic Taylor-spheromak IC (init_spheromak_ic / sph_frac
+convention, scale = R * sph_frac, matching neutron_decay.py). Prefer the analytic
+sph_frac-based IC over hand-placed discrete ring/plaquette constructions whenever scale
+needs to vary; if a discrete ring+plaquette construction must be kept, always anchor
+Ring B's search to a concrete point on Ring A, never to a computed centroid.

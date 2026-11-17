@@ -1,0 +1,2 @@
+potential_dipole_a1000_T0.01_amb10: alpha_eff=90.91 T=1.000e-02 bath lam mean 1.317e+01  Edep_core late 1.6607e+00  (t=0.25/0.5/1: 2.263e+00 2.226e+00 1.578e+00)  lam core late 2.000e+01 vs bath 1.866e+01  lam_max 2.381e+01  996s
+potential_dipole_a1000_T0.1_amb100: alpha_eff=9.901 T=1.000e-01 bath lam mean 1.318e+02  Edep_core late 1.9882e+00  (t=0.25/0.5/1: 1.106e+00 1.389e+00 2.298e+00)  lam core late 2.057e+02 vs bath 1.920e+02  lam_max 2.545e+02  515s

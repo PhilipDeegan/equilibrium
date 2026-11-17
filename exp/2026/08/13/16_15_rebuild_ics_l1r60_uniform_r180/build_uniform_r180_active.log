@@ -1,0 +1,6 @@
+[uniform L0] R_domain=180.000  n_leaves=31734323  t=19.8s  peak_rss_GB=19.03
+cells_across=220  scale=110.000000  padding=70.0 cells
+inner_cells=7243911/31734323 (22.8267%)
+H0=4.462518e+06  phi_rms=1.266654e-01  u_rms=1.682628e-01  lam_scale=1  lam_max=2.333185e+00  lam_mean=1.406212e-01  peak_rss_GB=24.22
+saved /bk/uniform_r180_active_ic220_v2.h5  save_t=2.7s
+FINAL total_t=138.2s  peak_rss_GB=24.22

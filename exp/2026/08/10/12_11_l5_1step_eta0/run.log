@@ -1,0 +1,6 @@
+loaded /bk/l5_core_diameter9_cells_across_220.h5 n_leaves=23005337 t=34.7s peak_rss_GB=18.22
+H0=6.113238e+06 H_by_level_0=[0.0, 0.0, 0.0, 0.0, 33.699589942746904, 6113204.687483028]
+dt=5.128205e-03 eta_h_by_level=[0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+step 1 step_time=546.4s H=6.135135e+06 H/H0=1.003582 H_by_level=[0.0, 1.9676989449519838e-46, 3.8089720590083238e-31, 3.750758407560721e-15, 41.95916667285484, 6135092.802442895] peak_rss_GB=20.96
+step 1 saved /bk/l5_1step_eta0/step_01.h5 save_time=1.9s
+FINAL peak_rss_GB=20.96 total_time=586.2s

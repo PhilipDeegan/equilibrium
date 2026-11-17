@@ -1,0 +1,7 @@
+P 64 a 6.0 N 65536 triangles 786432  g_c 4.2469  g 4.2469  hold 1.0  order 4
+  t    0.0  (E+Ee)/E0 1.000000  Ephi/E0 1.0000  Ee/E0 0.0000  |dphi| 0.0000  cos 0.9672  fine 0.0002  in/shell/out 0.9699 0.0301 0.0000  (ETA 2.8 min)
+  t   10.0  (E+Ee)/E0 0.999998  Ephi/E0 0.9979  Ee/E0 0.0021  |dphi| 0.0521  cos 0.9673  fine 0.0001  in/shell/out 0.9652 0.0341 0.0006  (ETA 3.0 min)
+  t   20.0  (E+Ee)/E0 1.000001  Ephi/E0 0.9952  Ee/E0 0.0048  |dphi| 0.0872  cos 0.9685  fine 0.0001  in/shell/out 0.9602 0.0388 0.0011  (ETA 2.0 min)
+  t   30.0  (E+Ee)/E0 1.000003  Ephi/E0 0.9937  Ee/E0 0.0063  |dphi| 0.1205  cos 0.9681  fine 0.0001  in/shell/out 0.9553 0.0426 0.0021  (ETA 0.9 min)
+  t   40.0  (E+Ee)/E0 1.000004  Ephi/E0 0.9928  Ee/E0 0.0072  |dphi| 0.1426  cos 0.9674  fine 0.0001  in/shell/out 0.9523 0.0444 0.0033  (ETA 0.0 min)
+RESULT handoff 1.0 hold 1.0  Ephi 0.9928  Ee 0.0072  |dphi| 0.1426  cos 0.9672->0.9674  in 0.9699->0.9523  fine 0.0002->0.0001  wall 200 s

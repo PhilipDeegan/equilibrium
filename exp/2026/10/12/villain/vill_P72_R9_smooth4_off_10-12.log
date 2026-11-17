@@ -1,0 +1,13 @@
+linked before smoothing +1.000000 +1.000000 -0.000000
+smoothed tau 4.0: linked +0.992763 +0.905769 +0.011322
+linked-circulation lines at r 0.0 4.5 15.0
+  return _methods._mean(a, axis=axis, dtype=dtype,
+  ret = ret.dtype.type(ret / rcount)
+P 72 N 93312 R0 9.0 kappa 0.132 dt 0.0182 ticks 220 midpoint x3
+t 0 instantaneous (term x unit time): |Gamma|-weighted z +0.11666; defect-label z +nan; max off-integer at defects 0.000e+00; max |Gamma| off-defect 9.176e-03
+       t count sum_n rho z_label z_|G| max|G-n|@def max|G|@non sum|G|@non/count  E_lf
+    0.00     0    +0    nan    +nan +0.1488 0.000e+00 9.084e-03 3.975e+02  1622.352495  leak 5.629e-01 rms 3.954 sum|G| 3.9754e+02 linked +0.992763 +0.905769 +0.011322 x_|G| +0.12228
+    1.00     0    +0    nan    +nan +0.2711 0.000e+00 9.112e-03 4.041e+02  1622.352045  leak 5.711e-01 rms 4.198 sum|G| 4.0407e+02 linked +0.993065 +0.904883 +0.011335 x_|G| +0.12166
+    2.00     0    +0    nan    +nan +0.4008 0.000e+00 9.049e-03 4.147e+02  1622.352270  leak 5.848e-01 rms 4.481 sum|G| 4.1470e+02 linked +0.992751 +0.902985 +0.011363 x_|G| +0.12086
+    3.00     0    +0    nan    +nan +0.5333 0.000e+00 8.980e-03 4.274e+02  1622.352455  leak 5.979e-01 rms 4.749 sum|G| 4.2740e+02 linked +0.989411 +0.901399 +0.011407 x_|G| +0.12009
+    4.00     0    +0    nan    +nan +0.6639 0.000e+00 9.061e-03 4.417e+02  1622.352537  leak 6.123e-01 rms 4.994 sum|G| 4.4170e+02 linked +0.984347 +0.900292 +0.011477 x_|G| +0.11964

@@ -1,0 +1,20 @@
+=== starting pml_width_sf0.3 Sat 12 Sep 2026 21:22:44 CEST ===
+[pml_g0.5] N=1493309 sponge_fraction=0.3 damp_max=0.5 r_inner=45.50 r_ring=19.80 dt=5.1282e-03 start_step=0 predicted_round_trip_t=16.25 (t range this leg: 0.00 -> 33.33)
+[pml_g0.5] done, 261 log points
+[pml_g1.0] N=1493309 sponge_fraction=0.3 damp_max=1.0 r_inner=45.50 r_ring=19.80 dt=5.1282e-03 start_step=0 predicted_round_trip_t=16.25 (t range this leg: 0.00 -> 33.33)
+[pml_g1.0] done, 261 log points
+[pml_g2.0] N=1493309 sponge_fraction=0.3 damp_max=2.0 r_inner=45.50 r_ring=19.80 dt=5.1282e-03 start_step=0 predicted_round_trip_t=16.25 (t range this leg: 0.00 -> 33.33)
+[pml_g2.0] done, 261 log points
+
+=== late-time (last third of run) outer-shell |S| comparison across configs ===
+pml_g0.5             r=   8: mean=1.1809e-08 std=1.0986e-08 max=3.9849e-08
+pml_g0.5             r=  20: mean=1.2652e-07 std=4.8184e-08 max=2.2782e-07
+pml_g0.5             r=  24: mean=3.1461e-08 std=1.0645e-08 max=5.4141e-08
+pml_g1.0             r=   8: mean=8.3481e-09 std=6.2213e-09 max=2.3777e-08
+pml_g1.0             r=  20: mean=1.4890e-07 std=7.3544e-08 max=2.8332e-07
+pml_g1.0             r=  24: mean=3.8824e-08 std=1.8483e-08 max=6.6723e-08
+pml_g2.0             r=   8: mean=8.0410e-09 std=5.0774e-09 max=1.8101e-08
+pml_g2.0             r=  20: mean=1.6673e-07 std=1.0596e-07 max=3.5168e-07
+pml_g2.0             r=  24: mean=4.3937e-08 std=2.7280e-08 max=8.8282e-08
+done
+=== finished pml_width_sf0.3 Sat 12 Sep 2026 21:42:58 CEST ===

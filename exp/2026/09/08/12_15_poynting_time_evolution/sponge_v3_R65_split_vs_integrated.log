@@ -1,0 +1,33 @@
+[split_d0.003] N=1493309 sponge_fraction=0.15 damp_max=0.003 r_inner=55.25 r_ring=19.80 dt=5.1282e-03 predicted_round_trip_t=22.42 (n_steps*dt=33.33)
+[split_d0.003] done, 261 log points
+[split_d0.01] N=1493309 sponge_fraction=0.15 damp_max=0.01 r_inner=55.25 r_ring=19.80 dt=5.1282e-03 predicted_round_trip_t=22.42 (n_steps*dt=33.33)
+[split_d0.01] done, 261 log points
+[split_d0.02] N=1493309 sponge_fraction=0.15 damp_max=0.02 r_inner=55.25 r_ring=19.80 dt=5.1282e-03 predicted_round_trip_t=22.42 (n_steps*dt=33.33)
+[split_d0.02] done, 261 log points
+[integ_d0.003] N=1493309 sponge_fraction=0.15 damp_max=0.003 r_inner=55.25 r_ring=19.80 dt=5.1282e-03 predicted_round_trip_t=22.42 (n_steps*dt=33.33)
+[integ_d0.003] done, 261 log points
+[integ_d0.01] N=1493309 sponge_fraction=0.15 damp_max=0.01 r_inner=55.25 r_ring=19.80 dt=5.1282e-03 predicted_round_trip_t=22.42 (n_steps*dt=33.33)
+[integ_d0.01] done, 261 log points
+[integ_d0.02] N=1493309 sponge_fraction=0.15 damp_max=0.02 r_inner=55.25 r_ring=19.80 dt=5.1282e-03 predicted_round_trip_t=22.42 (n_steps*dt=33.33)
+[integ_d0.02] done, 261 log points
+
+=== late-time (last third of run) outer-shell |S| comparison across configs ===
+split_d0.003         r=   8: mean=6.8809e-09 std=4.7192e-09 max=2.0080e-08
+split_d0.003         r=  20: mean=8.6737e-08 std=3.1481e-08 max=1.8358e-07
+split_d0.003         r=  24: mean=2.0825e-08 std=7.7617e-09 max=4.5453e-08
+split_d0.01          r=   8: mean=8.4532e-09 std=4.7643e-09 max=1.6373e-08
+split_d0.01          r=  20: mean=2.1356e-07 std=1.6408e-07 max=5.9156e-07
+split_d0.01          r=  24: mean=5.5018e-08 std=4.1572e-08 max=1.4923e-07
+split_d0.02          r=   8: mean=1.0510e-08 std=6.0538e-09 max=1.9440e-08
+split_d0.02          r=  20: mean=2.6972e-07 std=2.1268e-07 max=7.2970e-07
+split_d0.02          r=  24: mean=6.8785e-08 std=5.3883e-08 max=1.8412e-07
+integ_d0.003         r=   8: mean=4.0253e-08 std=4.7982e-08 max=1.4811e-07
+integ_d0.003         r=  20: mean=2.3501e-07 std=1.5717e-07 max=6.6035e-07
+integ_d0.003         r=  24: mean=5.8923e-08 std=3.9774e-08 max=1.5416e-07
+integ_d0.01          r=   8: mean=3.9253e-08 std=4.6739e-08 max=1.4435e-07
+integ_d0.01          r=  20: mean=2.3072e-07 std=1.5401e-07 max=6.4924e-07
+integ_d0.01          r=  24: mean=5.7789e-08 std=3.8944e-08 max=1.5155e-07
+integ_d0.02          r=   8: mean=3.7872e-08 std=4.5019e-08 max=1.3916e-07
+integ_d0.02          r=  20: mean=2.2474e-07 std=1.4960e-07 max=6.3364e-07
+integ_d0.02          r=  24: mean=5.6208e-08 std=3.7784e-08 max=1.4788e-07
+done

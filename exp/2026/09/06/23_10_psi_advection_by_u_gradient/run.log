@@ -1,0 +1,65 @@
+[eta=0_control] N=54447 eta=0 dt=0.005128 initial macro_centroid_z=-10.0002
+[eta=0_control] step=     0 t=   0.01 macro_centroid_z=-10.0002 (drift=+0.0000) psi_rms=3.3361e-05 phi_rms=2.0877e-02 wall=   0.1s
+[eta=0_control] step=   100 t=   0.52 macro_centroid_z= -9.8902 (drift=+0.1101) psi_rms=1.7225e-01 phi_rms=6.9990e-01 wall=   9.0s
+[eta=0_control] step=   200 t=   1.03 macro_centroid_z= -9.5781 (drift=+0.4221) psi_rms=6.8532e-01 phi_rms=1.3923e+00 wall=  17.8s
+[eta=0_control] step=   300 t=   1.54 macro_centroid_z= -9.1009 (drift=+0.8993) psi_rms=1.5387e+00 phi_rms=2.0845e+00 wall=  26.7s
+[eta=0_control] step=   400 t=   2.06 macro_centroid_z= -8.5083 (drift=+1.4919) psi_rms=2.7315e+00 phi_rms=2.7763e+00 wall=  35.7s
+[eta=0_control] step=   500 t=   2.57 macro_centroid_z= -7.8516 (drift=+2.1486) psi_rms=4.2625e+00 phi_rms=3.4676e+00 wall=  44.5s
+[eta=0_control] step=   600 t=   3.08 macro_centroid_z= -7.1752 (drift=+2.8251) psi_rms=6.1300e+00 phi_rms=4.1581e+00 wall=  53.3s
+[eta=0_control] step=   700 t=   3.59 macro_centroid_z= -6.5123 (drift=+3.4879) psi_rms=8.3322e+00 phi_rms=4.8478e+00 wall=  62.2s
+[eta=0_control] step=   800 t=   4.11 macro_centroid_z= -5.8850 (drift=+4.1152) psi_rms=1.0867e+01 phi_rms=5.5365e+00 wall=  71.0s
+[eta=0_control] step=   900 t=   4.62 macro_centroid_z= -5.3055 (drift=+4.6948) psi_rms=1.3731e+01 phi_rms=6.2240e+00 wall=  79.8s
+[eta=0_control] step=  1000 t=   5.13 macro_centroid_z= -4.7789 (drift=+5.2213) psi_rms=1.6922e+01 phi_rms=6.9103e+00 wall=  88.6s
+[eta=0_control] step=  1100 t=   5.65 macro_centroid_z= -4.3057 (drift=+5.6946) psi_rms=2.0436e+01 phi_rms=7.5953e+00 wall=  97.5s
+[eta=0_control] step=  1200 t=   6.16 macro_centroid_z= -3.8832 (drift=+6.1170) psi_rms=2.4270e+01 phi_rms=8.2787e+00 wall= 106.3s
+[eta=0_control] step=  1300 t=   6.67 macro_centroid_z= -3.5077 (drift=+6.4926) psi_rms=2.8419e+01 phi_rms=8.9605e+00 wall= 115.1s
+[eta=0_control] step=  1400 t=   7.18 macro_centroid_z= -3.1743 (drift=+6.8260) psi_rms=3.2880e+01 phi_rms=9.6406e+00 wall= 123.9s
+[eta=0_control] step=  1500 t=   7.70 macro_centroid_z= -2.8783 (drift=+7.1219) psi_rms=3.7647e+01 phi_rms=1.0319e+01 wall= 132.8s
+[eta=0_control] step=  1600 t=   8.21 macro_centroid_z= -2.6154 (drift=+7.3848) psi_rms=4.2717e+01 phi_rms=1.0995e+01 wall= 141.7s
+[eta=0_control] step=  1700 t=   8.72 macro_centroid_z= -2.3813 (drift=+7.6190) psi_rms=4.8082e+01 phi_rms=1.1669e+01 wall= 150.5s
+[eta=0_control] step=  1800 t=   9.24 macro_centroid_z= -2.1723 (drift=+7.8279) psi_rms=5.3738e+01 phi_rms=1.2341e+01 wall= 159.4s
+[eta=0_control] step=  1900 t=   9.75 macro_centroid_z= -1.9853 (drift=+8.0149) psi_rms=5.9680e+01 phi_rms=1.3011e+01 wall= 168.2s
+[eta=0_control] step=  2000 t=  10.26 macro_centroid_z= -1.8174 (drift=+8.1829) psi_rms=6.5899e+01 phi_rms=1.3678e+01 wall= 177.1s
+[eta=0_control] step=  2100 t=  10.77 macro_centroid_z= -1.6661 (drift=+8.3341) psi_rms=7.2391e+01 phi_rms=1.4343e+01 wall= 185.9s
+[eta=0_control] step=  2200 t=  11.29 macro_centroid_z= -1.5294 (drift=+8.4708) psi_rms=7.9149e+01 phi_rms=1.5006e+01 wall= 194.8s
+[eta=0_control] step=  2300 t=  11.80 macro_centroid_z= -1.4056 (drift=+8.5947) psi_rms=8.6164e+01 phi_rms=1.5666e+01 wall= 203.6s
+[eta=0_control] step=  2400 t=  12.31 macro_centroid_z= -1.2929 (drift=+8.7073) psi_rms=9.3431e+01 phi_rms=1.6323e+01 wall= 212.4s
+[eta=0_control] step=  2500 t=  12.83 macro_centroid_z= -1.1903 (drift=+8.8100) psi_rms=1.0094e+02 phi_rms=1.6977e+01 wall= 221.2s
+[eta=0_control] step=  2600 t=  13.34 macro_centroid_z= -1.0964 (drift=+8.9038) psi_rms=1.0869e+02 phi_rms=1.7629e+01 wall= 230.1s
+[eta=0_control] step=  2700 t=  13.85 macro_centroid_z= -1.0104 (drift=+8.9898) psi_rms=1.1666e+02 phi_rms=1.8278e+01 wall= 238.9s
+[eta=0_control] step=  2800 t=  14.36 macro_centroid_z= -0.9315 (drift=+9.0687) psi_rms=1.2485e+02 phi_rms=1.8924e+01 wall= 247.8s
+[eta=0_control] step=  2900 t=  14.88 macro_centroid_z= -0.8589 (drift=+9.1413) psi_rms=1.3325e+02 phi_rms=1.9568e+01 wall= 256.7s
+[eta=0_control] step=  2999 t=  15.38 macro_centroid_z= -0.7927 (drift=+9.2075) psi_rms=1.4177e+02 phi_rms=2.0202e+01 wall= 265.5s
+[eta=1_test] N=54447 eta=1 dt=0.005128 initial macro_centroid_z=-10.0002
+[eta=1_test] step=     0 t=   0.01 macro_centroid_z=-10.0002 (drift=+0.0000) psi_rms=3.3138e-05 phi_rms=2.0877e-02 wall=   0.1s
+[eta=1_test] step=   100 t=   0.52 macro_centroid_z= -9.8902 (drift=+0.1100) psi_rms=1.7158e-01 phi_rms=6.9990e-01 wall=   9.1s
+[eta=1_test] step=   200 t=   1.03 macro_centroid_z= -9.5785 (drift=+0.4218) psi_rms=6.9768e-01 phi_rms=1.3923e+00 wall=  18.1s
+[eta=1_test] step=   300 t=   1.54 macro_centroid_z= -9.1028 (drift=+0.8974) psi_rms=1.6332e+00 phi_rms=2.0845e+00 wall=  27.0s
+[eta=1_test] step=   400 t=   2.06 macro_centroid_z= -8.5126 (drift=+1.4876) psi_rms=3.0696e+00 phi_rms=2.7764e+00 wall=  36.0s
+[eta=1_test] step=   500 t=   2.57 macro_centroid_z= -7.8519 (drift=+2.1484) psi_rms=5.1238e+00 phi_rms=3.4677e+00 wall=  44.9s
+[eta=1_test] step=   600 t=   3.08 macro_centroid_z= -7.1380 (drift=+2.8622) psi_rms=7.9286e+00 phi_rms=4.1584e+00 wall=  53.8s
+[eta=1_test] step=   700 t=   3.59 macro_centroid_z= -6.3418 (drift=+3.6585) psi_rms=1.1625e+01 phi_rms=4.8483e+00 wall=  62.8s
+[eta=1_test] step=   800 t=   4.11 macro_centroid_z= -5.3682 (drift=+4.6320) psi_rms=1.6358e+01 phi_rms=5.5373e+00 wall=  71.8s
+[eta=1_test] step=   900 t=   4.62 macro_centroid_z= -4.0503 (drift=+5.9499) psi_rms=2.2274e+01 phi_rms=6.2253e+00 wall=  80.8s
+[eta=1_test] step=  1000 t=   5.13 macro_centroid_z= -2.1725 (drift=+7.8278) psi_rms=2.9517e+01 phi_rms=6.9123e+00 wall=  89.8s
+[eta=1_test] step=  1100 t=   5.65 macro_centroid_z= +0.4524 (drift=+10.4526) psi_rms=3.8230e+01 phi_rms=7.5982e+00 wall=  98.8s
+[eta=1_test] step=  1200 t=   6.16 macro_centroid_z= +3.8566 (drift=+13.8569) psi_rms=4.8557e+01 phi_rms=8.2828e+00 wall= 107.9s
+[eta=1_test] step=  1300 t=   6.67 macro_centroid_z= +7.8240 (drift=+17.8243) psi_rms=6.0635e+01 phi_rms=8.9663e+00 wall= 116.9s
+[eta=1_test] step=  1400 t=   7.18 macro_centroid_z=+11.9359 (drift=+21.9361) psi_rms=7.4600e+01 phi_rms=9.6485e+00 wall= 125.9s
+[eta=1_test] step=  1500 t=   7.70 macro_centroid_z=+15.7546 (drift=+25.7548) psi_rms=9.0587e+01 phi_rms=1.0329e+01 wall= 134.9s
+[eta=1_test] step=  1600 t=   8.21 macro_centroid_z=+18.9949 (drift=+28.9951) psi_rms=1.0872e+02 phi_rms=1.1009e+01 wall= 143.9s
+[eta=1_test] step=  1700 t=   8.72 macro_centroid_z=+21.5682 (drift=+31.5685) psi_rms=1.2914e+02 phi_rms=1.1688e+01 wall= 153.0s
+[eta=1_test] step=  1800 t=   9.24 macro_centroid_z=+23.5246 (drift=+33.5249) psi_rms=1.5195e+02 phi_rms=1.2366e+01 wall= 162.0s
+[eta=1_test] step=  1900 t=   9.75 macro_centroid_z=+24.9746 (drift=+34.9749) psi_rms=1.7727e+02 phi_rms=1.3043e+01 wall= 171.0s
+[eta=1_test] step=  2000 t=  10.26 macro_centroid_z=+26.0362 (drift=+36.0365) psi_rms=2.0521e+02 phi_rms=1.3719e+01 wall= 179.9s
+[eta=1_test] step=  2100 t=  10.77 macro_centroid_z=+26.8109 (drift=+36.8111) psi_rms=2.3585e+02 phi_rms=1.4396e+01 wall= 188.9s
+[eta=1_test] step=  2200 t=  11.29 macro_centroid_z=+27.3774 (drift=+37.3776) psi_rms=2.6925e+02 phi_rms=1.5072e+01 wall= 197.8s
+[eta=1_test] step=  2300 t=  11.80 macro_centroid_z=+27.7940 (drift=+37.7943) psi_rms=3.0545e+02 phi_rms=1.5750e+01 wall= 206.7s
+[eta=1_test] step=  2400 t=  12.31 macro_centroid_z=+28.1029 (drift=+38.1031) psi_rms=3.4446e+02 phi_rms=1.6428e+01 wall= 215.7s
+[eta=1_test] step=  2500 t=  12.83 macro_centroid_z=+28.3338 (drift=+38.3341) psi_rms=3.8627e+02 phi_rms=1.7109e+01 wall= 224.6s
+[eta=1_test] step=  2600 t=  13.34 macro_centroid_z=+28.5081 (drift=+38.5084) psi_rms=4.3084e+02 phi_rms=1.7792e+01 wall= 233.6s
+[eta=1_test] step=  2700 t=  13.85 macro_centroid_z=+28.6409 (drift=+38.6411) psi_rms=4.7815e+02 phi_rms=1.8479e+01 wall= 242.5s
+[eta=1_test] step=  2800 t=  14.36 macro_centroid_z=+28.7430 (drift=+38.7432) psi_rms=5.2813e+02 phi_rms=1.9170e+01 wall= 251.5s
+[eta=1_test] step=  2900 t=  14.88 macro_centroid_z=+28.8222 (drift=+38.8224) psi_rms=5.8074e+02 phi_rms=1.9867e+01 wall= 260.4s
+[eta=1_test] step=  2999 t=  15.38 macro_centroid_z=+28.8836 (drift=+38.8839) psi_rms=6.3536e+02 phi_rms=2.0564e+01 wall= 269.2s
+done

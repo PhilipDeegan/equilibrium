@@ -1,0 +1,8 @@
+[pml_g0.5] N=1493309 sponge_fraction=0.15 damp_max=0.5 r_inner=55.25 r_ring=19.80 dt=5.1282e-03 start_step=0 predicted_round_trip_t=22.42 (t range this leg: 0.00 -> 41.03)
+[pml_g0.5] done, 161 log points
+
+=== late-time (last third of run) outer-shell |S| comparison across configs ===
+pml_g0.5             r=   8: mean=2.4093e-08 std=1.9485e-08 max=7.9204e-08
+pml_g0.5             r=  20: mean=3.4781e-07 std=2.6738e-07 max=9.0478e-07
+pml_g0.5             r=  24: mean=7.8633e-08 std=6.1201e-08 max=2.0521e-07
+done

@@ -1,0 +1,65 @@
+two-component exclusion test (pair_box.py), P 300 box, xi 3.9, background mix 45 deg (v1 + v2)/sqrt2, 8000 ticks
+plot dir name: pair_<ring>_<ring>_mix45_P300_xi3.9, ring = r<radius> z<plane z> q<sign> c<component: 1 / 2 / full>
+states: /bk/dst/2026/10/04/pair/<plot dir name>/ (t 0, 4000, 8000)
+
+log         plot dir                                           rings                          status / result
+run_E.log   pair_r40z0q1c1_r40z0q1c2_mix45_P300_xi3.9          v1 + v2 coincident             stopped ~2.5k: identical to one full ring (v1 and v2 winding together = full winding)
+run_E2.log  pair_r40z-4q1c1_r40z4q1c2_mix45_P300_xi3.9         v1 at z -4, v2 at z +4         done: no merge; leapfrog, then a compact co-moving pair 9-10 apart to 8k
+run_D2.log  pair_r40z-4q1c1_r40z4q1c1_mix45_P300_xi3.9         v1 at z -4, v1 at z +4         done: fuse by t 250, v2-flooded core swells, disperses into box-wide v1/v2 bands by ~3-5k
+run_D.log   pair_r40z0q1c1_r40z0q1c1_mix45_P300_xi3.9          v1 + v1 coincident (charge 2)  done: box-wide v1/v2 texture by 8k, no compact rings
+run_B.log   pair_r40z0q1c1_mix45_P300_xi3.9                    single v1 ring                 done: does NOT persist; v1-low region balloons, ring shrinks 40 -> 20, gone by 5k (rho min ~0.8, no density core)
+run_C.log   pair_r40z0q1cfull_r40z0q1cfull_mix45_P300_xi3.9    full + full coincident         done: charge-2 ring SPLITS into two unit rings by ~4k (4 dots in the y=0 cut), they stay ~10 apart and orbit
+                                                                                              (cores touch -> piece count says 1); stays compact to 8k; jump -0.70 in BOTH components
+run_B450.log pair_r40z0q1c1_mix45_P450_xi3.9                   single v1 ring, P 450 box      done: SAME decay as P 300 (73.7k vs 73.5k at 1k, r 31 at 3k, gone ~5k) with jump 2.2x smaller
+                                                                                              -> box uniform term ruled out: a lone component ring is intrinsically unstable
+run_E2_s20.log pair_r40z-10q1c1_r40z10q1c2_mix45_P300_xi3.9   v1 at z -10, v2 at z +10       done (plots): windings SURVIVE as a co-moving pair (sharp |a1|^2, |a2|^2 zeros, offset ~15-17 in z to 8k);
+                                                                                              each core filled by the partner -> rho dip only ~0.7; much energy into box-wide v1/v2 bands
+                                                                                              (log cell counts 44k / 79k = bands joined to cores, item C)
+run_E2_s40.log pair_r40z-20q1c1_r40z20q1c2_mix45_P300_xi3.9   v1 at z -20, v2 at z +20       done: rings shrink toward the axis by 4k; at 8k v1 zeros near x +-35 z -58 + broad v2 low, rho dip 0.71
+                                                                                              -> messy, NOT a clean pair, but not gone like B (B gone by 5k); ambiguous
+run_E2_T20k.log pair_r40z-4q1c1_r40z4q1c2_mix45_P300_xi3.9T20k E2 to 20k                     done: compact to 20k, rho min 0.18-0.33 no trend, v1/v2 swap inner/outer (r 34 <-> 44)
+                                                                                              with period ~4k = periodic orbit; ~12 z / 1k; box bands quiet by 20k
+--          pair_r15z0q1c1_mix45_P120_xi3.9_smoke              single v1 ring, P 120          smoke test only
+
+reading so far: a component ring alone disperses (B); two like ones disperse faster (D2, D); only an opposite-component
+pair stays compact and co-moving (E2). A component winding persists only paired with its opposite partner.
+
+hypothesis (relative flow) -- box part REFUTED by B450; intrinsic part open: the seed removes each component's mean face jump as a uniform flow in that component.
+Equal in both components (E, E2, C) -> no relative flow -> survives; v1 only (B -0.35, D / D2 -0.70) -> relative
+v1/v2 flow -> dies, faster for -0.70. With the density turn symmetric in v1 / v2 the spin stiffness is zero, so any
+relative flow is unstable (box-wide v1/v2 bands). C vs D: same -0.70, common vs relative: compact split pair vs dispersal.
+C: coincident like full windings separate (charge 2 -> 2 x 1), the topology + nonlinearity 'no sharing' effect.
+
+open: why the E2 pair survives (cores grow to ~17-25k then hold) -- partner fills / bounds the other's flooded core?
+test: E2 with the rings seeded further apart; pairing is real if the pair dies beyond some separation.
+
+separation scan (10-04): 8 apart (E2) compact, overlapping cores, rho min ~0.27-0.33; 20 apart the winding pair survives
+(offset zeros, co-moving) with partner-filled cores (rho ~0.7) + strong radiation into bands; 40 apart messy (see row).
+-> pairing real; 40 apart ambiguous (not clean, not gone), needs longer run / item C counting; partial decay at 20 = radiated seed energy, not loss of the windings.
+
+ITEM C (10-04, cut_zeros.py -> cut_zeros.log, <run>/zeros_t*.png): phase-winding zeros of each component in the y = 0 cut
+(topological, not fooled by bands / touching cores). Rings per component v1 / v2 at the saved states:
+  E2 T20k 1/1 to 20k | 20 apart 1/1 to 8k (14-16 apart) | C 2/2 coincident to 8k (two unit full rings ~10-14 apart)
+  B (lone v1) 1/0 -> 0/1 at 4k (r 22) -> 1/0 at 8k (r 10): NOT gone; winding hops between components while shrinking
+  D2 / D (v1 + v1) 2/0 -> 1/1 at 4k and 8k: one ring CONVERTS to v2, then a co-moving v1 + v2 pair (z -26/-12, -16/-6)
+  40 apart 1/1 -> 0/1 (4k) -> 2/0 (8k: r 36 + opposite-sign r 82 at the box edge): hopping, ambiguous
+CORRECTS the readings above: B does not die by 5k and D / D2 do not disperse (the rho < 0.25 / component-threshold
+counts lost the windings when they changed component). Like rings cannot share a component: one converts -> the
+opposite-component pair = the end state from both E2 and D/D2 seeds. Which component holds a zero is not fixed (local
+v1/v2 mix rotates round the ring). States only 0/4k/8k -> conversion timing unresolved: rerun D2 with --state_every 250
+(or in-run zero counting) to see the conversion.
+
+IN-RUN ZERO COUNT (every 100 ticks; run_D2_zc.log / run_B_zc.log, plot dirs ...xi3.9zc). REVISES "hops" above: no zero
+moves between components; a NEW ring of the other component nucleates on the axis (r ~2-8), grows, the old one shrinks out.
+  B (lone v1, 12k): v1 r 40 (gone 3600) -> v2 born 1600 r 2, max r ~28 (gone 7300) -> v1 born 6700 r 4, max r ~16 (gone 8500)
+     -> v2 born 10200 r 2, max r 12 (gone by 12000). Generations shrink 40 / 28 / 16 / 12 -> no zeros at 12k.
+     rho min 0.81-0.89 throughout (never a density core). Lone ring DOES die, by an alternating shrinking cascade, ~3-4k per generation.
+  D2 (v1 + v1): leapfrog to 1000; t 1100 v2 ring + ANTI-ring nucleate on axis (r 8), anti gone by 1500; t 2300-2400 v2 ring
+     coincides with a v1 ring (r ~25, z 52) -> rho min 0.02 (full-ring core); t 2700-3300 v1 ring/anti-ring pairs nucleate
+     (up to 10 v1 zeros) -> by 3500 one v1 + one v2 ring. Then NOT steady: v2 leaves the cut 4800, 5800-7100, new small v2
+     born 7200; at 8k v1 r 24 / v2 r 24. The same churn as B, unlike E2 (1/1 at all saved states to 20k).
+  -> only a v1 + v2 pair seeded close together (E2, 8 apart; 20 apart to 8k) avoids the cascade.
+  E2 control (run_E2_zc.log, 20k, every 100): v1 1 ring + v2 1 ring at 198 / 201 samples, NO nucleation ever; rho min
+     0.17-0.40. The 3 misses (t 7000-7200) = pair crossing the periodic z face (|z| ~86, edge of the cut grid; rho min 0.27
+     unchanged) -> cut artifact. Same artifact explains D2 v2 miss at 4800 and B empty at 5400; D2 v2 absent 5800-7100 is real (mid-box).
+  => E2 pair is a steady structure; lone and like-pair seeds churn through nucleation and die / degrade.

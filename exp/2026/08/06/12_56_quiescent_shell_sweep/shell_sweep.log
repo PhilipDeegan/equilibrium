@@ -1,0 +1,39 @@
+=== BASELINE: pure uniform (no refinement anywhere) ===
+  init_spheromak_ic_refinable: scale=4.5000e+01  R_sph=1.0  sigma=None  inner_cells=496161/5441209  (9.1%)
+  [post-store] phi_rms=8.8133e-02  phi_nonzero_cells=496160
+N_total=5441209  dt=5.1282e-03  H/H0=1.000000
+=== SHELL [47.4, 47.6] refined to L1 ===
+  init_spheromak_ic_refinable: scale=4.5000e+01  R_sph=1.0  sigma=None  inner_cells=496161/5441209  (9.1%)
+  [post-store] phi_rms=8.8133e-02  phi_nonzero_cells=496160
+    N_before=5441209  N_after=5626537  (+185328)
+    [pre-step] N=50112  max|u|=1.182e-03  max|phi|=0.000e+00
+    [post-step] N=50112  max|u|=1.182e-03  max|phi|=7.280e-05
+    N_total=5626537  dt=5.1282e-03  H0=4.188748e+05  H1=4.188749e+05  H/H0=1.000000
+=== SHELL [46.0, 47.6] refined to L1 ===
+  init_spheromak_ic_refinable: scale=4.5000e+01  R_sph=1.0  sigma=None  inner_cells=496161/5441209  (9.1%)
+  [post-store] phi_rms=8.8133e-02  phi_nonzero_cells=496160
+    N_before=5441209  N_after=6927369  (+1486160)
+    [pre-step] N=1335280  max|u|=8.545e-03  max|phi|=0.000e+00
+    [post-step] N=1335280  max|u|=8.543e-03  max|phi|=2.153e-04
+    N_total=6927369  dt=5.1282e-03  H0=4.188814e+05  H1=4.188815e+05  H/H0=1.000000
+=== SHELL [45.0, 47.6] refined to L1 ===
+  init_spheromak_ic_refinable: scale=4.5000e+01  R_sph=1.0  sigma=None  inner_cells=496161/5441209  (9.1%)
+  [post-store] phi_rms=8.8133e-02  phi_nonzero_cells=496160
+    N_before=5441209  N_after=7817869  (+2376660)
+    [pre-step] N=2259670  max|u|=1.374e-02  max|phi|=9.893e-04
+    [post-step] N=2259670  max|u|=1.374e-02  max|phi|=1.010e-03
+    N_total=7817869  dt=5.1282e-03  H0=4.188986e+05  H1=4.188988e+05  H/H0=1.000000
+=== SHELL [43.0, 47.6] refined to L1 ===
+  init_spheromak_ic_refinable: scale=4.5000e+01  R_sph=1.0  sigma=None  inner_cells=496161/5441209  (9.1%)
+  [post-store] phi_rms=8.8133e-02  phi_nonzero_cells=496160
+    N_before=5441209  N_after=9452385  (+4011176)
+    [pre-step] N=3971722  max|u|=1.035e-01  max|phi|=8.230e-03
+    [post-step] N=3971722  max|u|=1.037e-01  max|phi|=8.276e-03
+    N_total=9452385  dt=5.1282e-03  H0=4.224095e+05  H1=4.224099e+05  H/H0=1.000001
+=== SHELL [40.0, 47.6] refined to L1 ===
+  init_spheromak_ic_refinable: scale=4.5000e+01  R_sph=1.0  sigma=None  inner_cells=496161/5441209  (9.1%)
+  [post-store] phi_rms=8.8133e-02  phi_nonzero_cells=496160
+    N_before=5441209  N_after=11657445  (+6216236)
+    [pre-step] N=6266872  max|u|=2.696e-01  max|phi|=2.075e-02
+    [post-step] N=6266872  max|u|=2.701e-01  max|phi|=2.080e-02
+    N_total=11657445  dt=5.1282e-03  H0=4.713547e+05  H1=4.713555e+05  H/H0=1.000002

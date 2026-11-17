@@ -1,0 +1,55 @@
+Sat 11 Jul 2026 19:57:58 CEST
+=== threshold scan: cross=0.03 force=0.03 ===
+N=43599  dt=5.1282e-03  chi0=0.9  profile=1/r2
+max|u|=0.000e+00  max|phi|=0.000e+00  lam_sum=3235.0870
+       0  base  com=( -0.0000, +0.0000, +0.0000)  mass=3.2351e+03  spread=  3.1547  phi_rms=0.000e+00  rad_cum=+0.000e+00
+    1000  base  com=( -0.0000, +0.0000, +0.0000)  mass=3.2351e+03  spread=  3.1547  phi_rms=0.000e+00  rad_cum=+0.000e+00
+    2000  kick  com=( +0.0000, +0.0000, +0.0000)  mass=3.2351e+03  spread=  3.1547  phi_rms=1.988e-03  rad_cum=+2.747e-03
+    3000  kick  com=( +0.0000, +0.0000, +0.0000)  mass=3.2351e+03  spread=  3.1547  phi_rms=2.833e-03  rad_cum=+1.214e-02
+    4000  kick  com=( +0.0000, -0.0000, +0.0000)  mass=3.2351e+03  spread=  3.1547  phi_rms=3.270e-03  rad_cum=+2.663e-02
+    5000  kick  com=( +0.0000, +0.0000, +0.0000)  mass=3.2351e+03  spread=  3.1547  phi_rms=3.545e-03  rad_cum=+4.511e-02
+    6000  kick  com=( +0.0000, -0.0000, +0.0000)  mass=3.2351e+03  spread=  3.1547  phi_rms=3.745e-03  rad_cum=+6.700e-02
+    7000  kick  com=( -0.0000, +0.0000, -0.0000)  mass=3.2351e+03  spread=  3.1547  phi_rms=3.908e-03  rad_cum=+9.198e-02
+    8000 coast  com=( +0.0000, -0.0000, -0.0001)  mass=3.2351e+03  spread=  3.1548  phi_rms=4.121e-03  rad_cum=+6.949e-02
+    9000 coast  com=( +0.0000, -0.0000, -0.0001)  mass=3.2351e+03  spread=  3.1548  phi_rms=2.847e-03  rad_cum=+2.977e-02
+   10000 coast  com=( -0.0000, -0.0000, -0.0001)  mass=3.2351e+03  spread=  3.1549  phi_rms=1.397e-03  rad_cum=-5.681e-03
+   11000 coast  com=( -0.0000, +0.0000, -0.0001)  mass=3.2351e+03  spread=  3.1549  phi_rms=1.574e-03  rad_cum=-2.175e-02
+
+-> v_base=+0.000e+00  v_kick=-1.344e-06  v_coast=-2.949e-06  d_kick=-0.0000  mobility v/g=-2.689e-03  mass_frac=1.0000  spread_frac=1.0001  radiated/mass0=-6.724e-06
+data saved -> /tmp/claude-1000/-home-p-git-eq/9e0aed34-29e0-4647-a61c-2a737cf29e54/scratchpad/proton_translate_s0.03.npz
+=== threshold scan: cross=0.1 force=0.1 ===
+N=43599  dt=5.1282e-03  chi0=0.9  profile=1/r2
+max|u|=0.000e+00  max|phi|=0.000e+00  lam_sum=3235.0870
+       0  base  com=( -0.0000, +0.0000, +0.0000)  mass=3.2351e+03  spread=  3.1547  phi_rms=0.000e+00  rad_cum=+0.000e+00
+    1000  base  com=( -0.0000, +0.0000, +0.0000)  mass=3.2351e+03  spread=  3.1547  phi_rms=0.000e+00  rad_cum=+0.000e+00
+    2000  kick  com=( +0.0000, +0.0000, +0.0000)  mass=3.2351e+03  spread=  3.1547  phi_rms=1.051e-03  rad_cum=+5.282e-03
+    3000  kick  com=( +0.0000, +0.0000, -0.0000)  mass=3.2351e+03  spread=  3.1547  phi_rms=1.243e-03  rad_cum=+2.018e-02
+    4000  kick  com=( +0.0000, -0.0000, -0.0001)  mass=3.2351e+03  spread=  3.1548  phi_rms=1.360e-03  rad_cum=+4.177e-02
+    5000  kick  com=( -0.0000, +0.0000, -0.0001)  mass=3.2351e+03  spread=  3.1548  phi_rms=1.463e-03  rad_cum=+6.917e-02
+    6000  kick  com=( +0.0000, -0.0000, -0.0002)  mass=3.2351e+03  spread=  3.1548  phi_rms=1.563e-03  rad_cum=+1.019e-01
+    7000  kick  com=( +0.0000, -0.0000, -0.0003)  mass=3.2351e+03  spread=  3.1549  phi_rms=1.661e-03  rad_cum=+1.394e-01
+    8000 coast  com=( -0.0000, -0.0000, -0.0005)  mass=3.2351e+03  spread=  3.1549  phi_rms=1.852e-03  rad_cum=+1.057e-01
+    9000 coast  com=( +0.0000, -0.0000, -0.0006)  mass=3.2351e+03  spread=  3.1550  phi_rms=1.465e-03  rad_cum=+4.464e-02
+   10000 coast  com=( -0.0000, -0.0000, -0.0007)  mass=3.2351e+03  spread=  3.1550  phi_rms=8.403e-04  rad_cum=-6.631e-03
+   11000 coast  com=( +0.0000, +0.0000, -0.0007)  mass=3.2351e+03  spread=  3.1550  phi_rms=5.379e-04  rad_cum=-3.197e-02
+
+-> v_base=+0.000e+00  v_kick=-1.955e-05  v_coast=-5.862e-06  d_kick=-0.0003  mobility v/g=-3.909e-02  mass_frac=1.0000  spread_frac=1.0001  radiated/mass0=-9.881e-06
+data saved -> /tmp/claude-1000/-home-p-git-eq/9e0aed34-29e0-4647-a61c-2a737cf29e54/scratchpad/proton_translate_s0.1.npz
+=== isotropy check: strong drive, kick-axis=x ===
+N=43599  dt=5.1282e-03  chi0=0.9  profile=1/r2
+max|u|=0.000e+00  max|phi|=0.000e+00  lam_sum=3235.0870
+       0  base  com=( -0.0000, +0.0000, +0.0000)  mass=3.2351e+03  spread=  3.1547  phi_rms=0.000e+00  rad_cum=+0.000e+00
+    1000  base  com=( -0.0000, +0.0000, +0.0000)  mass=3.2351e+03  spread=  3.1547  phi_rms=0.000e+00  rad_cum=+0.000e+00
+    2000  kick  com=( -0.0000, -0.0000, -0.0000)  mass=3.2351e+03  spread=  3.1547  phi_rms=4.683e-04  rad_cum=+6.068e-03
+    3000  kick  com=( -0.0003, -0.0000, +0.0000)  mass=3.2351e+03  spread=  3.1547  phi_rms=5.559e-04  rad_cum=+2.345e-02
+    4000  kick  com=( -0.0007, -0.0000, +0.0000)  mass=3.2351e+03  spread=  3.1547  phi_rms=6.342e-04  rad_cum=+4.928e-02
+    5000  kick  com=( -0.0011, +0.0000, +0.0000)  mass=3.2351e+03  spread=  3.1547  phi_rms=7.050e-04  rad_cum=+8.175e-02
+    6000  kick  com=( -0.0017, -0.0000, +0.0000)  mass=3.2350e+03  spread=  3.1547  phi_rms=7.692e-04  rad_cum=+1.194e-01
+    7000  kick  com=( -0.0024, -0.0000, -0.0000)  mass=3.2350e+03  spread=  3.1547  phi_rms=8.280e-04  rad_cum=+1.611e-01
+    8000 coast  com=( -0.0026, -0.0000, +0.0000)  mass=3.2350e+03  spread=  3.1547  phi_rms=6.891e-04  rad_cum=+1.185e-01
+    9000 coast  com=( -0.0030, -0.0000, -0.0000)  mass=3.2350e+03  spread=  3.1548  phi_rms=5.714e-04  rad_cum=+4.441e-02
+   10000 coast  com=( -0.0032, -0.0000, +0.0000)  mass=3.2350e+03  spread=  3.1549  phi_rms=3.662e-04  rad_cum=-7.255e-03
+   11000 coast  com=( -0.0033, +0.0000, +0.0000)  mass=3.2350e+03  spread=  3.1550  phi_rms=2.257e-04  rad_cum=-3.170e-02
+
+-> v_base=+0.000e+00  v_kick=-1.191e-04  v_coast=-2.002e-05  d_kick=-0.0024  mobility v/g=-2.382e-01  mass_frac=1.0000  spread_frac=1.0001  radiated/mass0=-9.798e-06
+data saved -> /tmp/claude-1000/-home-p-git-eq/9e0aed34-29e0-4647-a61c-2a737cf29e54/scratchpad/proton_translate_strong_x.npz

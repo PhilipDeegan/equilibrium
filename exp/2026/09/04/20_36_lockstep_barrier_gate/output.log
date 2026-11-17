@@ -1,0 +1,108 @@
+M0 (derived, scale=8.0) = 1.494000
+
+=== plain step() only (reproduce drift baseline) (gate=None, m0=None) ===
+N=147047  dt=5.1282e-03  u_rms0=4.8726e-02  circ0=+7.7512e+02  H0=3.2465e+03
+       0  u_ratio=1.000000  circ_ratio=1.000000  swing=+0.000000  H/H0=1.000000
+     200  u_ratio=1.122033  circ_ratio=1.000003  swing=+0.122030  H/H0=1.002896
+     400  u_ratio=1.486768  circ_ratio=1.000014  swing=+0.486754  H/H0=1.002345
+     600  u_ratio=1.432724  circ_ratio=1.000006  swing=+0.432718  H/H0=1.001888
+     800  u_ratio=1.426514  circ_ratio=0.999995  swing=+0.426518  H/H0=1.001914
+    1000  u_ratio=1.428498  circ_ratio=1.000015  swing=+0.428482  H/H0=1.001873
+    1200  u_ratio=1.428530  circ_ratio=0.999986  swing=+0.428544  H/H0=1.000812
+    1400  u_ratio=1.431149  circ_ratio=1.000014  swing=+0.431135  H/H0=0.955000
+    1600  u_ratio=0.858464  circ_ratio=0.999998  swing=-0.141534  H/H0=0.891323
+    1800  u_ratio=0.958324  circ_ratio=0.999994  swing=-0.041669  H/H0=0.778018
+    2000  u_ratio=1.010597  circ_ratio=1.000007  swing=+0.010590  H/H0=0.727821
+    2200  u_ratio=0.825354  circ_ratio=0.999996  swing=-0.174642  H/H0=0.702617
+    2400  u_ratio=0.780840  circ_ratio=1.000005  swing=-0.219165  H/H0=0.696639
+    2600  u_ratio=0.779124  circ_ratio=0.999998  swing=-0.220874  H/H0=0.694207
+    2800  u_ratio=0.777935  circ_ratio=1.000003  swing=-0.222067  H/H0=0.692656
+    3000  u_ratio=0.769525  circ_ratio=0.999998  swing=-0.230474  H/H0=0.691336
+    3200  u_ratio=0.444229  circ_ratio=1.000005  swing=-0.555775  H/H0=0.690864
+    3400  u_ratio=0.953569  circ_ratio=1.000001  swing=-0.046432  H/H0=0.690447
+    3600  u_ratio=0.852949  circ_ratio=0.999997  swing=-0.147048  H/H0=0.689333
+    3800  u_ratio=0.770411  circ_ratio=1.000006  swing=-0.229595  H/H0=0.688834
+    4000  u_ratio=0.768468  circ_ratio=1.000005  swing=-0.231537  H/H0=0.688458
+    4200  u_ratio=0.759557  circ_ratio=1.000006  swing=-0.240449  H/H0=0.688032
+    4400  u_ratio=0.761804  circ_ratio=1.000006  swing=-0.238203  H/H0=0.687200
+    4600  u_ratio=0.729466  circ_ratio=1.000000  swing=-0.270534  H/H0=0.682179
+    4800  u_ratio=0.608930  circ_ratio=1.000000  swing=-0.391070  H/H0=0.663379
+    5000  u_ratio=0.766481  circ_ratio=0.999997  swing=-0.233516  H/H0=0.633705
+    5200  u_ratio=0.538700  circ_ratio=1.000009  swing=-0.461309  H/H0=0.617361
+    5400  u_ratio=0.424194  circ_ratio=0.999997  swing=-0.575803  H/H0=0.607773
+    5600  u_ratio=0.427019  circ_ratio=1.000001  swing=-0.572982  H/H0=0.603890
+    5800  u_ratio=0.428664  circ_ratio=1.000001  swing=-0.571337  H/H0=0.602463
+    6000  u_ratio=0.425061  circ_ratio=1.000002  swing=-0.574941  H/H0=0.601642
+
+=== step() + step_cross(gate='v1') (2026-09-02 baseline, for comparison) (gate='v1', m0=None) ===
+N=147047  dt=5.1282e-03  u_rms0=4.8726e-02  circ0=+7.7512e+02  H0=3.2465e+03
+       0  u_ratio=1.000000  circ_ratio=1.000000  swing=+0.000000  H/H0=1.000000
+     200  u_ratio=1.119636  circ_ratio=0.993340  swing=+0.126296  H/H0=0.994014
+     400  u_ratio=1.478669  circ_ratio=0.986733  swing=+0.491936  H/H0=0.983675
+     600  u_ratio=1.419989  circ_ratio=0.980151  swing=+0.439837  H/H0=0.973311
+     800  u_ratio=1.409397  circ_ratio=0.973610  swing=+0.435786  H/H0=0.963829
+    1000  u_ratio=1.406809  circ_ratio=0.967144  swing=+0.439665  H/H0=0.954341
+    1200  u_ratio=1.402343  circ_ratio=0.960671  swing=+0.441672  H/H0=0.943983
+    1400  u_ratio=1.400500  circ_ratio=0.954298  swing=+0.446202  H/H0=0.890833
+    1600  u_ratio=0.837027  circ_ratio=0.947925  swing=-0.110897  H/H0=0.821277
+    1800  u_ratio=0.931604  circ_ratio=0.941606  swing=-0.010002  H/H0=0.706011
+    2000  u_ratio=0.978759  circ_ratio=0.935345  swing=+0.043414  H/H0=0.651013
+    2200  u_ratio=0.796581  circ_ratio=0.929103  swing=-0.132522  H/H0=0.620324
+    2400  u_ratio=0.751239  circ_ratio=0.922922  swing=-0.171683  H/H0=0.607839
+    2600  u_ratio=0.747186  circ_ratio=0.916767  swing=-0.169581  H/H0=0.598777
+    2800  u_ratio=0.743513  circ_ratio=0.910664  swing=-0.167151  H/H0=0.590577
+    3000  u_ratio=0.733639  circ_ratio=0.904593  swing=-0.170954  H/H0=0.582860
+    3200  u_ratio=0.421212  circ_ratio=0.898573  swing=-0.477361  H/H0=0.575878
+    3400  u_ratio=0.902932  circ_ratio=0.892584  swing=+0.010349  H/H0=0.568920
+    3600  u_ratio=0.805308  circ_ratio=0.886633  swing=-0.081325  H/H0=0.561660
+    3800  u_ratio=0.724745  circ_ratio=0.880735  swing=-0.155991  H/H0=0.554851
+    4000  u_ratio=0.720614  circ_ratio=0.874867  swing=-0.154253  H/H0=0.548289
+    4200  u_ratio=0.710095  circ_ratio=0.869040  swing=-0.158945  H/H0=0.541796
+    4400  u_ratio=0.709911  circ_ratio=0.863251  swing=-0.153341  H/H0=0.535004
+    4600  u_ratio=0.677594  circ_ratio=0.857495  swing=-0.179902  H/H0=0.524656
+    4800  u_ratio=0.563547  circ_ratio=0.851783  swing=-0.288237  H/H0=0.502698
+    5000  u_ratio=0.707547  circ_ratio=0.846106  swing=-0.138559  H/H0=0.471603
+    5200  u_ratio=0.494784  circ_ratio=0.840481  swing=-0.345697  H/H0=0.452189
+    5400  u_ratio=0.388051  circ_ratio=0.834872  swing=-0.446821  H/H0=0.438816
+    5600  u_ratio=0.389546  circ_ratio=0.829314  swing=-0.439768  H/H0=0.430370
+    5800  u_ratio=0.389886  circ_ratio=0.823790  swing=-0.433904  H/H0=0.424074
+    6000  u_ratio=0.385278  circ_ratio=0.818304  swing=-0.433025  H/H0=0.418327
+
+=== step() + step_cross(gate='barrier', m0=1.4940) (theory-consistent gate) (gate='barrier', m0=1.494) ===
+N=147047  dt=5.1282e-03  u_rms0=4.8726e-02  circ0=+7.7512e+02  H0=3.2465e+03
+       0  u_ratio=1.000000  circ_ratio=1.000000  swing=+0.000000  H/H0=1.000000
+     200  u_ratio=1.120011  circ_ratio=0.993358  swing=+0.126653  H/H0=0.994193
+     400  u_ratio=1.479277  circ_ratio=0.986759  swing=+0.492518  H/H0=0.984303
+     600  u_ratio=1.422631  circ_ratio=0.980184  swing=+0.442447  H/H0=0.975123
+     800  u_ratio=1.414905  circ_ratio=0.973652  swing=+0.441253  H/H0=0.967487
+    1000  u_ratio=1.416124  circ_ratio=0.967200  swing=+0.448924  H/H0=0.960461
+    1200  u_ratio=1.416042  circ_ratio=0.960742  swing=+0.455300  H/H0=0.952836
+    1400  u_ratio=1.418682  circ_ratio=0.954381  swing=+0.464301  H/H0=0.901066
+    1600  u_ratio=0.847753  circ_ratio=0.948017  swing=-0.100264  H/H0=0.831815
+    1800  u_ratio=0.947626  circ_ratio=0.941706  swing=+0.005920  H/H0=0.714062
+    2000  u_ratio=0.998987  circ_ratio=0.935453  swing=+0.063534  H/H0=0.658872
+    2200  u_ratio=0.816515  circ_ratio=0.929219  swing=-0.112705  H/H0=0.628268
+    2400  u_ratio=0.772875  circ_ratio=0.923048  swing=-0.150173  H/H0=0.616486
+    2600  u_ratio=0.771144  circ_ratio=0.916901  swing=-0.145757  H/H0=0.608218
+    2800  u_ratio=0.769624  circ_ratio=0.910809  swing=-0.141184  H/H0=0.600790
+    3000  u_ratio=0.761018  circ_ratio=0.904745  swing=-0.143728  H/H0=0.593470
+    3200  u_ratio=0.437314  circ_ratio=0.898734  swing=-0.461420  H/H0=0.586809
+    3400  u_ratio=0.938309  circ_ratio=0.892758  swing=+0.045550  H/H0=0.580000
+    3600  u_ratio=0.836923  circ_ratio=0.886827  swing=-0.049904  H/H0=0.572836
+    3800  u_ratio=0.754927  circ_ratio=0.880937  swing=-0.126011  H/H0=0.566509
+    4000  u_ratio=0.752475  circ_ratio=0.875073  swing=-0.122599  H/H0=0.560590
+    4200  u_ratio=0.743587  circ_ratio=0.869260  swing=-0.125673  H/H0=0.554791
+    4400  u_ratio=0.745649  circ_ratio=0.863483  swing=-0.117834  H/H0=0.548733
+    4600  u_ratio=0.714142  circ_ratio=0.857738  swing=-0.143596  H/H0=0.538712
+    4800  u_ratio=0.594586  circ_ratio=0.852045  swing=-0.257458  H/H0=0.515461
+    5000  u_ratio=0.749464  circ_ratio=0.846389  swing=-0.096925  H/H0=0.481872
+    5200  u_ratio=0.525564  circ_ratio=0.840785  swing=-0.315220  H/H0=0.461242
+    5400  u_ratio=0.414548  circ_ratio=0.835200  swing=-0.420652  H/H0=0.447225
+    5600  u_ratio=0.417113  circ_ratio=0.829664  swing=-0.412551  H/H0=0.438716
+    5800  u_ratio=0.418687  circ_ratio=0.824158  swing=-0.405470  H/H0=0.432574
+    6000  u_ratio=0.415127  circ_ratio=0.818691  swing=-0.403564  H/H0=0.427073
+
+=== summary ===
+plain step()  swing min=-0.5758 max=+0.4868 final=-0.5749
+v1            swing min=-0.4774 max=+0.4919 final=-0.4330
+barrier       swing min=-0.4614 max=+0.4925 final=-0.4036

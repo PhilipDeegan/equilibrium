@@ -1,0 +1,9 @@
+Sun 16 Aug 2026 15:02:49 CEST
+=== build L1R60 + uniform R180 ICs in parallel (L1R60: 6 threads, uniform R180: 3 threads) ===
+Sun 16 Aug 2026 15:07:17 CEST
+=== builds done: l1_wider_margin_active rc=0  uniform_r180_active rc=0 ===
+=== step both in parallel (L1R60: 6 threads, uniform R180: 3 threads), 100 steps, plot every 25 ===
+Sun 16 Aug 2026 15:20:15 CEST
+=== stepping done: l1_wider_margin_active rc=0  uniform_r180_active rc=0 ===
+Sun 16 Aug 2026 15:20:15 CEST
+=== done ===

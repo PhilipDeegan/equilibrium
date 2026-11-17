@@ -1,0 +1,23 @@
+springbox_N2_S1_q1_a10_r24_xi3.9_m0.8_P220_z0_wxi_rc_par t 0: rc 25.2 zc -0.0 coil core 4048 axis core 0 floor/cell +5.04e-03
+   D  interior      1630  strands     26464  near     14198  outer     15855  axis         0  floor      5563  | total 63711
+   E  interior     136.2  strands    1534.2  near     376.4  outer     129.8  axis       0.0  floor      25.6  | total 2202.3
+   structure (interior + strands + near): D 42293  E 2046.8  E/D 0.0484
+springbox_N2_S1_q1_a10_r24_xi3.9_m0.8_P220_z0_wxi_rc_par t 2000: rc 28.2 zc +7.4 coil core 10009 axis core 112 floor/cell +2.28e-03
+   D  interior      3973  strands     30889  near     12846  outer     13672  axis         0  floor      2332  | total 63711
+   E  interior     123.1  strands    1021.3  near     475.4  outer     223.0  axis       0.0  floor      72.5  | total 1915.4
+   structure (interior + strands + near): D 47708  E 1619.9  E/D 0.0340
+   census off-structure (rho < 0.6, >= 10 cells): 2 pieces, D 26, E 0.2
+     cells     32 min rho 0.57 D       13 E     0.1 at rho_cyl   53.9 z-zc   -3.1
+     cells     32 min rho 0.57 D       13 E     0.1 at rho_cyl   53.9 z-zc   -3.1
+springbox_N2_S1_q1_a10_r24_xi3.9_m0.8_P220_z0_wxi_rc_par t 4000: rc 25.4 zc +6.5 coil core 9138 axis core 6 floor/cell +7.88e-03
+   D  interior      2825  strands     31187  near     11043  outer     10005  axis         0  floor      8650  | total 63711
+   E  interior     132.9  strands    1166.9  near     395.0  outer     202.5  axis       0.0  floor      74.7  | total 1971.9
+   structure (interior + strands + near): D 45056  E 1694.7  E/D 0.0376
+springbox_N2_S1_q1_a10_r24_xi3.9_m0.8_P220_z0_wxi_rc_par t 6000: rc 27.0 zc +7.7 coil core 9963 axis core 338 floor/cell +8.29e-04
+   D  interior      3390  strands     35168  near     17982  outer      6298  axis         0  floor       872  | total 63711
+   E  interior     120.7  strands    1050.6  near     432.4  outer     211.8  axis       0.0  floor      78.0  | total 1893.7
+   structure (interior + strands + near): D 56541  E 1603.8  E/D 0.0284
+springbox_N2_S1_q1_a10_r24_xi3.9_m0.8_P220_z0_wxi_rc_par t 8000: rc 26.2 zc +7.9 coil core 9911 axis core 0 floor/cell +1.01e-02
+   D  interior      4001  strands     33755  near      9659  outer      5393  axis         0  floor     10902  | total 63711
+   E  interior     128.4  strands    1072.1  near     416.9  outer     209.7  axis       0.0  floor      92.7  | total 1919.7
+   structure (interior + strands + near): D 47415  E 1617.3  E/D 0.0341

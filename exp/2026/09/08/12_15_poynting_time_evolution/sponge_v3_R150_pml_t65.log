@@ -1,0 +1,15 @@
+=== starting pml_t65 Sat 12 Sep 2026 19:56:17 CEST ===
+[pml_g0.5] N=18366667 sponge_fraction=0.15 damp_max=0.5 r_inner=127.50 r_ring=19.80 dt=5.1282e-03 start_step=8775 predicted_round_trip_t=68.12 (t range this leg: 45.00 -> 65.00)
+saved exp/2026/09/08/12_15_poynting_time_evolution/sponge_v3_R150_pml_t65_pml_g0.5_frames/t_050.000.png
+saved exp/2026/09/08/12_15_poynting_time_evolution/sponge_v3_R150_pml_t65_pml_g0.5_frames/t_055.000.png
+saved exp/2026/09/08/12_15_poynting_time_evolution/sponge_v3_R150_pml_t65_pml_g0.5_frames/t_060.000.png
+saved exp/2026/09/08/12_15_poynting_time_evolution/sponge_v3_R150_pml_t65_pml_g0.5_frames/t_065.000.png
+[pml_g0.5] saved final state -> exp/2026/09/08/12_15_poynting_time_evolution/sponge_v3_R150_pml_t65_pml_g0.5_step0012675.h5
+[pml_g0.5] done, 160 log points
+
+=== late-time (last third of run) outer-shell |S| comparison across configs ===
+pml_g0.5             r=   8: mean=6.6190e-10 std=1.2160e-10 max=8.4363e-10
+pml_g0.5             r=  20: mean=1.2843e-08 std=4.3347e-09 max=2.4120e-08
+pml_g0.5             r=  24: mean=3.7756e-09 std=1.3169e-09 max=7.0130e-09
+done
+=== finished pml_t65 Sat 12 Sep 2026 20:46:16 CEST ===

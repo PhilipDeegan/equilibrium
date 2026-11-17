@@ -1,0 +1,7 @@
+CONTEXT: Building large curl-full dipole IC checkpoints (uniform r180 and L1 wider-margin) for the 2026-08-17 curl-full spheromak investigation; two builds were run around the same time.
+
+WHAT FAILED: A build at 31.7M leaves failed when run concurrently with another build in progress. A build at 15.5M leaves had happened to succeed when it built first and finished before the other started — that earlier "success" was incidental timing, not evidence the code path was correct at scale.
+
+ROOT CAUSE: `seed_dipole_ic` (in `equilibrium/substrate/curl_full_dipole_ic.py`) had its own face-loop that was NOT batched the same way as the rest of the build pipeline. Running two unbatched face-loops concurrently against the lattice corrupted/raced at the larger leaf count; the smaller run only "worked" because it wasn't actually contending with the other process at the critical moment.
+
+LESSON: Before trusting a build/seeding result, check whether ALL face-loops touching shared lattice state are batched consistently, not just the ones you already know about — a routine that seeds ICs can have its own unbatched loop even when the main build pipeline is fine. A single successful concurrent run is not proof of correctness; retry alone and check test suites. After batching `seed_dipole_ic`'s face-loop like the rest of the pipeline, a retry-alone run succeeded cleanly (peak_rss_GB=30.84, total_t=140.6s) and both `now`-relevant test suites were re-verified passing.

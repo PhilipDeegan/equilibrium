@@ -1,0 +1,39 @@
+=== BASELINE: pure uniform (no refinement anywhere), IC seeded directly ===
+  init_spheromak_ic_refinable: scale=4.5000e+01  R_sph=1.0  sigma=None  inner_cells=496161/5441209  (9.1%)
+  [post-store] phi_rms=8.8133e-02  phi_nonzero_cells=496160
+N_total=5441209  dt=5.1282e-03  H/H0=1.000000
+=== SHELL [47.4, 47.6]: REFINE FIRST, then seed IC analytically (no prolongation) ===
+    N_before=5441209  N_after=5626537  (+185328)
+  init_spheromak_ic_refinable: scale=4.5000e+01  R_sph=1.0  sigma=None  inner_cells=496161/5626537  (8.8%)
+  [post-store] phi_rms=8.6670e-02  phi_nonzero_cells=496160
+    [pre-step] N=50112  max|u|=0.000e+00  max|phi|=0.000e+00
+    [post-step] N=50112  max|u|=0.000e+00  max|phi|=0.000e+00
+    N_total=5626537  dt=5.1282e-03  H0=4.188746e+05  H1=4.188747e+05  H/H0=1.000000
+=== SHELL [46.0, 47.6]: REFINE FIRST, then seed IC analytically (no prolongation) ===
+    N_before=5441209  N_after=6927369  (+1486160)
+  init_spheromak_ic_refinable: scale=4.5000e+01  R_sph=1.0  sigma=None  inner_cells=496161/6927369  (7.2%)
+  [post-store] phi_rms=7.8109e-02  phi_nonzero_cells=496160
+    [pre-step] N=1335280  max|u|=0.000e+00  max|phi|=0.000e+00
+    [post-step] N=1335280  max|u|=4.277e-14  max|phi|=6.218e-11
+    N_total=6927369  dt=5.1282e-03  H0=4.188746e+05  H1=4.188747e+05  H/H0=1.000000
+=== SHELL [45.0, 47.6]: REFINE FIRST, then seed IC analytically (no prolongation) ===
+    N_before=5441209  N_after=7817869  (+2376660)
+  init_spheromak_ic_refinable: scale=4.5000e+01  R_sph=1.0  sigma=None  inner_cells=593983/7817869  (7.6%)
+  [post-store] phi_rms=7.3529e-02  phi_nonzero_cells=593982
+    [pre-step] N=2259670  max|u|=2.039e-04  max|phi|=4.387e-03
+    [post-step] N=2259670  max|u|=2.149e-04  max|phi|=4.879e-03
+    N_total=7817869  dt=5.1282e-03  H0=4.188989e+05  H1=4.188990e+05  H/H0=1.000000
+=== SHELL [43.0, 47.6]: REFINE FIRST, then seed IC analytically (no prolongation) ===
+    N_before=5441209  N_after=9452385  (+4011176)
+  init_spheromak_ic_refinable: scale=4.5000e+01  R_sph=1.0  sigma=None  inner_cells=2136475/9452385  (22.6%)
+  [post-store] phi_rms=6.7936e-02  phi_nonzero_cells=2136474
+    [pre-step] N=3971722  max|u|=1.037e-01  max|phi|=1.042e-01
+    [post-step] N=3971722  max|u|=1.037e-01  max|phi|=1.042e-01
+    N_total=9452385  dt=5.1282e-03  H0=4.323526e+05  H1=4.323531e+05  H/H0=1.000001
+=== SHELL [40.0, 47.6]: REFINE FIRST, then seed IC analytically (no prolongation) ===
+    N_before=5441209  N_after=11657445  (+6216236)
+  init_spheromak_ic_refinable: scale=4.5000e+01  R_sph=1.0  sigma=None  inner_cells=4341535/11657445  (37.2%)
+  [post-store] phi_rms=7.2939e-02  phi_nonzero_cells=4341534
+    [pre-step] N=6266872  max|u|=2.695e-01  max|phi|=2.698e-01
+    [post-step] N=6266872  max|u|=2.695e-01  max|phi|=2.698e-01
+    N_total=11657445  dt=5.1282e-03  H0=6.146183e+05  H1=6.146192e+05  H/H0=1.000002

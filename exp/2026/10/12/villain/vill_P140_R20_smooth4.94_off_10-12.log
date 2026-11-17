@@ -1,0 +1,16 @@
+linked before smoothing +1.000000 +1.000000 +0.000000
+smoothed tau 4.94: linked +1.000000 +0.998633 +0.018104
+linked-circulation lines at r 0.0 10.0 26.0
+  return _methods._mean(a, axis=axis, dtype=dtype,
+  ret = ret.dtype.type(ret / rcount)
+P 140 N 686000 R0 20.0 kappa 0.132 dt 0.0182 ticks 220 midpoint x3
+t 0 instantaneous (term x unit time): |Gamma|-weighted z +0.07380; defect-label z +nan; max off-integer at defects 0.000e+00; max |Gamma| off-defect 7.524e-03
+       t count sum_n rho z_label z_|G| max|G-n|@def max|G|@non sum|G|@non/count  E_lf
+    0.00     0    +0    nan    +nan +0.1599 0.000e+00 7.538e-03 9.375e+02  6456.132268  leak 6.343e-01 rms 4.447 sum|G| 9.3749e+02 linked +1.000000 +0.998633 +0.018104 x_|G| +0.09004  (1.5 s/tick, ETA 5 min)
+    0.51     0    +0    nan    +nan +0.1995 0.000e+00 7.527e-03 9.511e+02  6456.131656  leak 6.396e-01 rms 4.901 sum|G| 9.5110e+02 linked +1.000010 +0.998665 +0.018106 x_|G| +0.09135  (9.1 s/tick, ETA 29 min)
+    1.02     0    +0    nan    +nan +0.2403 0.000e+00 7.507e-03 9.689e+02  6456.131721  leak 6.468e-01 rms 5.339 sum|G| 9.6889e+02 linked +1.000042 +0.998754 +0.018113 x_|G| +0.09269  (9.0 s/tick, ETA 24 min)
+    1.53     0    +0    nan    +nan +0.2823 0.000e+00 7.495e-03 9.889e+02  6456.131816  leak 6.541e-01 rms 5.740 sum|G| 9.8888e+02 linked +1.000096 +0.998887 +0.018128 x_|G| +0.09406  (8.9 s/tick, ETA 20 min)
+    2.04     0    +0    nan    +nan +0.3255 0.000e+00 7.478e-03 1.010e+03  6456.131925  leak 6.623e-01 rms 6.107 sum|G| 1.0104e+03 linked +1.000176 +0.999034 +0.018152 x_|G| +0.09513  (9.0 s/tick, ETA 16 min)
+    2.55     0    +0    nan    +nan +0.3694 0.000e+00 7.452e-03 1.033e+03  6456.132035  leak 6.710e-01 rms 6.441 sum|G| 1.0330e+03 linked +1.000286 +0.999149 +0.018184 x_|G| +0.09630  (8.7 s/tick, ETA 12 min)
+    3.05     0    +0    nan    +nan +0.4137 0.000e+00 7.427e-03 1.057e+03  6456.132136  leak 6.785e-01 rms 6.747 sum|G| 1.0565e+03 linked +1.000431 +0.999182 +0.018224 x_|G| +0.09722  (8.6 s/tick, ETA 7 min)
+    3.56     0    +0    nan    +nan +0.4582 0.000e+00 7.408e-03 1.081e+03  6456.132224  leak 6.870e-01 rms 7.028 sum|G| 1.0808e+03 linked +1.000621 +0.999095 +0.018271 x_|G| +0.09803  (8.5 s/tick, ETA 3 min)

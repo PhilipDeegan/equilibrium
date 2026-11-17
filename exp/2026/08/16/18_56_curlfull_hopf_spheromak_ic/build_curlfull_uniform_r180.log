@@ -1,0 +1,6 @@
+[uniform L0] R_domain=180.000  n_leaves=31734323  t=16.5s  peak_rss_GB=19.02
+cells_across=220  scale=110.000000  padding=70.0  hops=41
+ring pair found: A=328 tiles, B=4 tiles  t=10.4s
+H0=3.320000e+02  phi_rms=1.222518e-03  lam_scale=1  lam_max=1.000000e+00  peak_rss_GB=23.52
+saved /bk/curlfull_uniform_r180_ic220.h5  save_t=2.9s
+FINAL total_t=31.3s  peak_rss_GB=23.52

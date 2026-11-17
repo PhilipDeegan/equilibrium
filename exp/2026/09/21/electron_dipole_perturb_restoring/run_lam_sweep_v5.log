@@ -1,0 +1,29 @@
+N=2784735  electron_scale=50.0  dt=5.1282e-03
+
+=== lam-target sweep for zero-rate crossing, 400 steps each ===
+  init_electron_dipole_ic_vecpot: scale=50.0  R_sph=1.0  r_axis=30.53  u_bg=0.0  inner_cells=680395/2784735  (24.4%)
+  divergence_clean: div_rms 2.7641e-04 → 2.5593e-12  (×9.26e-09)
+[lam_target=  0.0] frac_rate=-1.5958e-02/t  lam_static mean(nonzero)=0.0000  max=0.0000  (91.2s)
+  init_electron_dipole_ic_vecpot: scale=50.0  R_sph=1.0  r_axis=30.53  u_bg=0.0  inner_cells=680395/2784735  (24.4%)
+  divergence_clean: div_rms 2.7641e-04 → 2.5593e-12  (×9.26e-09)
+[lam_target=  1.0] frac_rate=-9.8932e-03/t  lam_static mean(nonzero)=0.2260  max=1.0000  (90.5s)
+  init_electron_dipole_ic_vecpot: scale=50.0  R_sph=1.0  r_axis=30.53  u_bg=0.0  inner_cells=680395/2784735  (24.4%)
+  divergence_clean: div_rms 2.7641e-04 → 2.5593e-12  (×9.26e-09)
+[lam_target=  2.0] frac_rate=-6.7765e-03/t  lam_static mean(nonzero)=0.4520  max=2.0000  (90.8s)
+  init_electron_dipole_ic_vecpot: scale=50.0  R_sph=1.0  r_axis=30.53  u_bg=0.0  inner_cells=680395/2784735  (24.4%)
+  divergence_clean: div_rms 2.7641e-04 → 2.5593e-12  (×9.26e-09)
+[lam_target=  4.0] frac_rate=-3.8099e-03/t  lam_static mean(nonzero)=0.9040  max=4.0000  (90.3s)
+  init_electron_dipole_ic_vecpot: scale=50.0  R_sph=1.0  r_axis=30.53  u_bg=0.0  inner_cells=680395/2784735  (24.4%)
+  divergence_clean: div_rms 2.7641e-04 → 2.5593e-12  (×9.26e-09)
+[lam_target=  8.0] frac_rate=-1.7377e-03/t  lam_static mean(nonzero)=1.8080  max=8.0000  (88.9s)
+
+=== summary: frac_rate vs lam_target ===
+  lam_target=  0.0  frac_rate=-1.5958e-02/t
+  lam_target=  1.0  frac_rate=-9.8932e-03/t
+  lam_target=  2.0  frac_rate=-6.7765e-03/t
+  lam_target=  4.0  frac_rate=-3.8099e-03/t
+  lam_target=  8.0  frac_rate=-1.7377e-03/t
+
+log(-frac_rate) vs lam_target: slope=-0.2677  (decaying toward an asymptote, never reaching exactly 0)
+
+saved results_lam_sweep_v5.npz

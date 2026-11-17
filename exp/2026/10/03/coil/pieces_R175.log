@@ -1,0 +1,56 @@
+t 12000 (z_shift +17.3): 5 pieces, sizes [99788, 9332, 9332, 8644, 8644]
+   piece   9332: centroid (-124.3, +23.7, -12.5) |c| 127.1 r max 150.5; sd across 2.1, ring radius 18.8, hole 12.7; normal.radial +0.25 normal_z +0.12; gap to main 26.3
+   piece   9332: centroid (+124.3, -23.7, -12.5) |c| 127.1 r max 150.5; sd across 2.1, ring radius 18.8, hole 12.7; normal.radial +0.25 normal_z +0.12; gap to main 26.3
+   piece   8644: centroid (-107.6, -72.3, -14.2) |c| 130.4 r max 152.1; sd across 2.0, ring radius 18.2, hole 12.1; normal.radial +0.28 normal_z +0.07; gap to main 30.3
+   piece   8644: centroid (+107.6, +72.3, -14.2) |c| 130.4 r max 152.1; sd across 2.0, ring radius 18.2, hole 12.1; normal.radial +0.28 normal_z +0.07; gap to main 30.3
+   main strand r max 142.7
+t 13000 (z_shift +21.9): 7 pieces, sizes [72588, 10020, 10020, 8835, 8835, 8288, 8288]
+   piece  10020: centroid ( -38.7,-110.2,  -7.6) |c| 117.1 r max 141.1; sd across 2.2, ring radius 20.0, hole 13.4; normal.radial +0.16 normal_z +0.29; gap to main 13.3
+   piece  10020: centroid ( +38.7,+110.2,  -7.6) |c| 117.1 r max 141.1; sd across 2.2, ring radius 20.0, hole 13.4; normal.radial +0.16 normal_z +0.29; gap to main 13.3
+   piece   8835: centroid (-122.7, +43.4, -14.8) |c| 131.0 r max 150.9; sd across 1.9, ring radius 18.4, hole 11.6; normal.radial +0.32 normal_z +0.13; gap to main 33.4
+   piece   8835: centroid (+122.7, -43.4, -14.8) |c| 131.0 r max 150.9; sd across 1.9, ring radius 18.4, hole 11.6; normal.radial +0.32 normal_z +0.13; gap to main 33.4
+   piece   8288: centroid (-121.2, -56.3, -17.7) |c| 134.8 r max 153.5; sd across 1.9, ring radius 17.7, hole 10.6; normal.radial +0.33 normal_z +0.09; gap to main 39.3
+   piece   8288: centroid (+121.2, +56.3, -17.7) |c| 134.8 r max 153.5; sd across 1.9, ring radius 17.7, hole 10.6; normal.radial +0.33 normal_z +0.09; gap to main 39.3
+   main strand r max 135.2
+t 14000 (z_shift +25.4): 7 pieces, sizes [75336, 10930, 10930, 8456, 8456, 7118, 7118]
+   piece  10930: centroid ( -55.4,-104.9,  -6.4) |c| 118.8 r max 142.2; sd across 2.0, ring radius 20.4, hole 13.3; normal.radial +0.22 normal_z +0.31; gap to main 15.5
+   piece  10930: centroid ( +55.4,+104.9,  -6.4) |c| 118.8 r max 142.2; sd across 2.0, ring radius 20.4, hole 13.3; normal.radial +0.22 normal_z +0.31; gap to main 15.5
+   piece   8456: centroid (-118.2, +63.8, -15.2) |c| 135.1 r max 154.5; sd across 2.0, ring radius 17.6, hole 10.3; normal.radial +0.34 normal_z +0.15; gap to main 39.4
+   piece   8456: centroid (+118.2, -63.8, -15.2) |c| 135.1 r max 154.5; sd across 2.0, ring radius 17.6, hole 10.3; normal.radial +0.34 normal_z +0.15; gap to main 39.4
+   piece   7118: centroid (-132.1, -36.3, -19.1) |c| 138.3 r max 155.9; sd across 1.9, ring radius 16.2, hole 9.0; normal.radial +0.29 normal_z +0.12; gap to main 44.0
+   piece   7118: centroid (+132.1, +36.3, -19.1) |c| 138.3 r max 155.9; sd across 1.9, ring radius 16.2, hole 9.0; normal.radial +0.29 normal_z +0.12; gap to main 44.0
+   main strand r max 133.1
+t 15000 (z_shift +32.3): 7 pieces, sizes [78002, 10864, 10864, 7060, 7060, 5892, 5892]
+   piece  10864: centroid ( -71.4, -98.5,  -8.3) |c| 121.9 r max 147.3; sd across 2.1, ring radius 20.6, hole 14.4; normal.radial +0.27 normal_z +0.35; gap to main 18.0
+   piece  10864: centroid ( +71.4, +98.5,  -8.3) |c| 121.9 r max 147.3; sd across 2.1, ring radius 20.6, hole 14.4; normal.radial +0.27 normal_z +0.35; gap to main 18.0
+   piece   7060: centroid (-108.0, +84.1, -17.3) |c| 138.0 r max 155.8; sd across 1.9, ring radius 15.9, hole 9.4; normal.radial +0.27 normal_z +0.20; gap to main 44.9
+   piece   7060: centroid (+108.0, -84.1, -17.3) |c| 138.0 r max 155.8; sd across 1.9, ring radius 15.9, hole 9.4; normal.radial +0.27 normal_z +0.20; gap to main 44.9
+   piece   5892: centroid (-137.2, -11.4, -21.8) |c| 139.4 r max 156.2; sd across 1.8, ring radius 14.0, hole 7.5; normal.radial +0.19 normal_z +0.18; gap to main 47.4
+   piece   5892: centroid (+137.2, +11.4, -21.8) |c| 139.4 r max 156.2; sd across 1.8, ring radius 14.0, hole 7.5; normal.radial +0.19 normal_z +0.18; gap to main 47.4
+   main strand r max 136.0
+t 16000 (z_shift +39.3): 7 pieces, sizes [76118, 10247, 10247, 5829, 5829, 5188, 5188]
+   piece  10247: centroid ( -86.4, -90.8,  -9.0) |c| 125.7 r max 150.6; sd across 2.0, ring radius 20.6, hole 13.7; normal.radial +0.31 normal_z +0.37; gap to main 27.1
+   piece  10247: centroid ( +86.4, +90.8,  -9.0) |c| 125.7 r max 150.6; sd across 2.0, ring radius 20.6, hole 13.7; normal.radial +0.31 normal_z +0.37; gap to main 27.1
+   piece   5829: centroid ( -92.1,+103.1, -17.3) |c| 139.4 r max 155.5; sd across 1.8, ring radius 13.7, hole 7.1; normal.radial +0.21 normal_z +0.25; gap to main 46.3
+   piece   5829: centroid ( +92.1,-103.1, -17.3) |c| 139.4 r max 155.5; sd across 1.8, ring radius 13.7, hole 7.1; normal.radial +0.21 normal_z +0.25; gap to main 46.3
+   piece   5188: centroid (-136.7, +15.6, -22.1) |c| 139.4 r max 154.5; sd across 1.7, ring radius 12.0, hole 4.9; normal.radial +0.14 normal_z +0.24; gap to main 48.6
+   piece   5188: centroid (+136.7, -15.6, -22.1) |c| 139.4 r max 154.5; sd across 1.7, ring radius 12.0, hole 4.9; normal.radial +0.14 normal_z +0.24; gap to main 48.6
+   main strand r max 138.7
+t 17000 (z_shift +46.2): 7 pieces, sizes [72682, 9564, 9564, 5312, 5312, 5144, 5144]
+   piece   9564: centroid (-101.0, -81.3,  -8.8) |c| 129.9 r max 152.3; sd across 2.1, ring radius 20.2, hole 13.5; normal.radial +0.33 normal_z +0.39; gap to main 33.9
+   piece   9564: centroid (+101.0, +81.3,  -8.8) |c| 129.9 r max 152.3; sd across 2.1, ring radius 20.2, hole 13.5; normal.radial +0.33 normal_z +0.39; gap to main 33.9
+   piece   5312: centroid ( -71.2,+119.2, -15.4) |c| 139.7 r max 154.8; sd across 1.7, ring radius 12.0, hole 4.8; normal.radial +0.14 normal_z +0.30; gap to main 45.6
+   piece   5312: centroid ( +71.2,-119.2, -15.4) |c| 139.7 r max 154.8; sd across 1.7, ring radius 12.0, hole 4.8; normal.radial +0.14 normal_z +0.30; gap to main 45.6
+   piece   5144: centroid (-130.5, +42.8, -20.4) |c| 138.8 r max 153.3; sd across 1.6, ring radius 10.4, hole 0.4; normal.radial +0.09 normal_z +0.29; gap to main 47.2
+   piece   5144: centroid (+130.5, -42.8, -20.4) |c| 138.8 r max 153.3; sd across 1.6, ring radius 10.4, hole 0.4; normal.radial +0.09 normal_z +0.29; gap to main 47.2
+   main strand r max 140.9
+t 18000 (z_shift +53.1): 9 pieces, sizes [49264, 9121, 9121, 7669, 7669, 5019, 5019, 4788, 4788]
+   piece   9121: centroid (-114.8, -69.5,  -7.9) |c| 134.4 r max 154.6; sd across 1.9, ring radius 19.5, hole 11.6; normal.radial +0.32 normal_z +0.42; gap to main 41.6
+   piece   9121: centroid (+114.8, +69.5,  -7.9) |c| 134.4 r max 154.6; sd across 1.9, ring radius 19.5, hole 11.6; normal.radial +0.32 normal_z +0.42; gap to main 41.6
+   piece   7669: centroid ( -35.5,-117.4,  -5.1) |c| 122.7 r max 141.8; sd across 1.9, ring radius 15.6, hole 8.4; normal.radial +0.21 normal_z +0.56; gap to main 17.2
+   piece   7669: centroid ( +35.5,+117.4,  -5.1) |c| 122.7 r max 141.8; sd across 1.9, ring radius 15.6, hole 8.4; normal.radial +0.21 normal_z +0.56; gap to main 17.2
+   piece   5019: centroid ( -46.3,+131.1, -12.2) |c| 139.6 r max 153.5; sd across 1.7, ring radius 10.3, hole 0.7; normal.radial +0.09 normal_z +0.35; gap to main 43.5
+   piece   5019: centroid ( +46.3,-131.1, -12.2) |c| 139.6 r max 153.5; sd across 1.7, ring radius 10.3, hole 0.7; normal.radial +0.09 normal_z +0.35; gap to main 43.5
+   piece   4788: centroid (-118.6, +68.5, -17.0) |c| 138.0 r max 151.6; sd across 1.7, ring radius 9.5, hole 0.4; normal.radial +0.08 normal_z +0.33; gap to main 44.5
+   piece   4788: centroid (+118.6, -68.5, -17.0) |c| 138.0 r max 151.6; sd across 1.7, ring radius 9.5, hole 0.4; normal.radial +0.08 normal_z +0.33; gap to main 44.5
+   main strand r max 95.6

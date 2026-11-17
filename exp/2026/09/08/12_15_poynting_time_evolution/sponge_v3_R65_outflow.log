@@ -1,0 +1,23 @@
+[outflow_c1.0] N=1493309 sponge_fraction=0.15 damp_max=1.0 r_inner=65.00 r_ring=19.80 dt=5.1282e-03 start_step=0 predicted_round_trip_t=28.59 (t range this leg: 0.00 -> 33.33)
+[outflow_c1.0] done, 261 log points
+[outflow_c3.16228] N=1493309 sponge_fraction=0.15 damp_max=3.16228 r_inner=65.00 r_ring=19.80 dt=5.1282e-03 start_step=0 predicted_round_trip_t=28.59 (t range this leg: 0.00 -> 33.33)
+[outflow_c3.16228] done, 261 log points
+[outflow_c10.0] N=1493309 sponge_fraction=0.15 damp_max=10.0 r_inner=65.00 r_ring=19.80 dt=5.1282e-03 start_step=0 predicted_round_trip_t=28.59 (t range this leg: 0.00 -> 33.33)
+[outflow_c10.0] done, 261 log points
+[outflow_c31.6228] N=1493309 sponge_fraction=0.15 damp_max=31.6228 r_inner=65.00 r_ring=19.80 dt=5.1282e-03 start_step=0 predicted_round_trip_t=28.59 (t range this leg: 0.00 -> 33.33)
+[outflow_c31.6228] done, 261 log points
+
+=== late-time (last third of run) outer-shell |S| comparison across configs ===
+outflow_c1.0         r=   8: mean=9.9518e-09 std=8.9514e-09 max=3.1735e-08
+outflow_c1.0         r=  20: mean=1.6980e-07 std=9.3268e-08 max=3.9015e-07
+outflow_c1.0         r=  24: mean=4.2582e-08 std=2.2919e-08 max=9.8466e-08
+outflow_c3.16228     r=   8: mean=5.8242e-09 std=3.8799e-09 max=1.4836e-08
+outflow_c3.16228     r=  20: mean=7.7179e-08 std=2.7734e-08 max=1.3684e-07
+outflow_c3.16228     r=  24: mean=1.9608e-08 std=6.5281e-09 max=4.0250e-08
+outflow_c10.0        r=   8: mean=9.1162e-09 std=8.3064e-09 max=2.7295e-08
+outflow_c10.0        r=  20: mean=9.0480e-08 std=4.2133e-08 max=2.1572e-07
+outflow_c10.0        r=  24: mean=2.3312e-08 std=1.0831e-08 max=5.1155e-08
+outflow_c31.6228     r=   8: mean=2.4917e-08 std=2.8252e-08 max=8.6654e-08
+outflow_c31.6228     r=  20: mean=1.7363e-07 std=1.0838e-07 max=4.7373e-07
+outflow_c31.6228     r=  24: mean=4.3708e-08 std=2.7552e-08 max=1.1106e-07
+done

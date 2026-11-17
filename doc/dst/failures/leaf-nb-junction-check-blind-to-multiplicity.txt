@@ -1,0 +1,31 @@
+CONTEXT: 2026-08-09 structural sanity check on 5-step L5 run snapshots
+(exp/2026/08/09/15_50_l5_5step_save_each_step/), trying to verify L1-L2,
+L2-L3, L3-L4 and L4-L5 cross-level junctions were clean using the Python
+`leaf_nb` array.
+
+WHAT FAILED: a `leaf_nb`-based cross-level junction check can only see ONE
+cross-level pair type in the whole 23M-leaf mesh: (L0,L1), out at
+r=3.29-5.02 (pure vacuum). L1-L2, L2-L3, L3-L4, and L4-L5 (the junction
+right at the core, the one that actually matters for the blowup
+investigation) show ZERO direct `leaf_nb` cross-level pointers anywhere.
+This is not evidence those junctions are clean — it's the check being blind
+to them.
+
+ROOT CAUSE: `leaf_nb` is a leaf-only array and returns -1 for exactly the
+L4/L5-type multiplicity>1 cases, where a coarse face touches several finer
+leaves. Those junctions are handled by the ancestor-substitution/
+multiplicity machinery instead of a direct leaf-to-leaf pointer, so a plain
+neighbour-diff check over `leaf_nb` structurally cannot see them at all —
+it silently reports "no pairs found" rather than "junction is clean."
+
+LESSON: never use a `leaf_nb`-based neighbour-diff as a junction-sanity
+check at L4/L5 (or any multiplicity>1 junction) and read "zero pairs found"
+as "junction verified clean" — it means the check didn't run there, not
+that the junction passed. Any future junction-sanity check at these levels
+must walk ancestry (ancestor-substitution/multiplicity path) instead. The
+C++ side already does this correctly in places — e.g.
+`step_boundary_hyper_resistivity`'s `is_boundary` selection
+(inc/eq/core/data/lattice/adaptive_lattice.hpp:1315-1319) checks the raw
+`cell.nb[k]` + `cluster[nbg].L` directly, which does work for non-leaf/proxy
+neighbours — so prefer that pattern over the Python leaf_nb array when
+writing new junction checks.

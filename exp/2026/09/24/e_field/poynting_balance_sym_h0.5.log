@@ -1,0 +1,13 @@
+h=0.5 N=43599 n=468 dt=0.00256 U_in0=2.68495e+00 U_tot0=2.68498e+00
+  t=0.100 U_in/U0=1.0154 (U0-U_in)/U0=-0.0154 flux_out/U0=+0.0001 balance_err=-1.56e-02 U_tot/U_tot0=1.0155 |u|max=1.05e-04 (4s)
+  t=0.200 U_in/U0=1.0316 (U0-U_in)/U0=-0.0316 flux_out/U0=+0.0011 balance_err=-3.27e-02 U_tot/U_tot0=1.0322 |u|max=1.54e-04 (7s)
+  t=0.300 U_in/U0=1.0266 (U0-U_in)/U0=-0.0266 flux_out/U0=+0.0051 balance_err=-3.18e-02 U_tot/U_tot0=1.0300 |u|max=1.72e-03 (11s)
+  t=0.400 U_in/U0=1.0012 (U0-U_in)/U0=-0.0012 flux_out/U0=+0.0164 balance_err=-1.76e-02 U_tot/U_tot0=1.0133 |u|max=4.54e-03 (15s)
+  t=0.500 U_in/U0=0.9691 (U0-U_in)/U0=+0.0309 flux_out/U0=+0.0398 balance_err=-8.84e-03 U_tot/U_tot0=1.0018 |u|max=7.63e-03 (20s)
+  t=0.600 U_in/U0=0.9359 (U0-U_in)/U0=+0.0641 flux_out/U0=+0.0758 balance_err=-1.17e-02 U_tot/U_tot0=1.0036 |u|max=8.81e-03 (24s)
+  t=0.700 U_in/U0=0.9011 (U0-U_in)/U0=+0.0989 flux_out/U0=+0.1157 balance_err=-1.69e-02 U_tot/U_tot0=1.0101 |u|max=8.12e-03 (28s)
+  t=0.800 U_in/U0=0.8752 (U0-U_in)/U0=+0.1248 flux_out/U0=+0.1455 balance_err=-2.07e-02 U_tot/U_tot0=1.0131 |u|max=7.24e-03 (33s)
+  t=0.900 U_in/U0=0.8728 (U0-U_in)/U0=+0.1272 flux_out/U0=+0.1604 balance_err=-3.32e-02 U_tot/U_tot0=1.0150 |u|max=5.94e-03 (37s)
+  t=1.000 U_in/U0=0.8812 (U0-U_in)/U0=+0.1188 flux_out/U0=+0.1798 balance_err=-6.10e-02 U_tot/U_tot0=1.0198 |u|max=5.15e-03 (42s)
+  t=1.100 U_in/U0=0.8504 (U0-U_in)/U0=+0.1496 flux_out/U0=+0.2409 balance_err=-9.13e-02 U_tot/U_tot0=1.0249 |u|max=4.53e-03 (46s)
+  t=1.200 U_in/U0=0.7378 (U0-U_in)/U0=+0.2622 flux_out/U0=+0.3659 balance_err=-1.04e-01 U_tot/U_tot0=1.0254 |u|max=4.39e-03 (51s)

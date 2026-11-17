@@ -1,0 +1,65 @@
+This file tracks MINIMUM-RESOLUTION REQUIREMENTS — things a coarse mesh/short
+run/sparse quadrature will get wrong not because a mechanism or hypothesis is
+broken, but because the measurement itself hasn't converged yet. These are NOT
+failure modes (see doc/dst/failures/ for those — a failure is a wrong
+hypothesis, a category error, a mismatched mechanism, or a bug). A resolution
+requirement is a standing precondition to check before trusting a NUMBER, even
+when the underlying qualitative finding is solid.
+
+General pattern seen repeatedly across this project: an apparent lattice/
+continuum deviation, or an apparent convergence/plateau, that shrinks or moves
+smoothly toward the "expected" value as some resolution knob (spatial
+cells-across, quadrature grid Nyz, step budget) increases is under-resolution,
+not a real correction factor or real convergence. Only a ratio/value that
+holds steady across a resolution DOUBLING is evidence of a genuine effect.
+
+REQUIREMENT 1 — curl-full poloidal+toroidal spheromak probes (swing/H-loss/
+overlap diagnostics): don't trust the NUMBER below cells_across~218-220.
+project_curl_full_dipole_spheromak's resolution sweep found swing drops
+smoothly from 0.718 at cells_across=22 to ~0.09-0.10 only once
+cells_across>=218 — real, large, monotonic resolution dependence. Several
+2026-09-04 probes (lockstep/barrier-gate re-test, m0 sweep, resonance
+detuning) ran at R_SPH=8 (cells_across~16), below even the worst point in
+that sweep. The QUALITATIVE circulation-exact-freeze finding is unaffected
+(confirmed frozen at every resolution tested, no exception) — only swing/
+H-loss/overlap numbers need this caveat. Cheap intermediate check available:
+cells_across=55 or 110 (495K/3.97M leaves) before committing to the full
+~220 rerun (~31.7M leaves, ~27-29GB RAM).
+
+REQUIREMENT 2 — step_cross gate/cross_scale sweeps: don't trust a
+cross_scale<=0.03 result unless checked for resolution (domain size R)
+convergence out to at least R=100. The 2026-08-24 barrier-gate R=50 check
+found cs=0.1 resolution-robust (R=20->R=50: +0.3%/+3.4% for m0=2.49/3.0) but
+cs=0.03 still climbing at R=50 (+16.7% over R=20, not plateaued). Next step
+(not yet done): push the same 3-pair check to R=100.
+
+REQUIREMENT 3 — any lattice-vs-continuum ratio measured via numerical
+quadrature/grid summation (e.g. Casimir-Polder Green's-function integrals):
+sweep the quadrature/grid resolution (Nyz or equivalent) before reading a
+sub-1 ratio as a real BZ-shape/anisotropy correction. At r=30, an
+under-converged Nyz=256 gave G/G_continuum=0.810, which climbed
+monotonically (0.902@512 -> 0.950@1024 -> 0.973@2048 -> 0.981@3072 ->
+0.985@4096, Richardson-extrapolating to ~0.997) as Nyz increased — the true
+ratio is ~1, not a fixed sub-1 constant, because point-scatterer dispersion
+is isotropic at leading order (unlike the parallel-plate case's genuinely 2D
+BZ-boundary integral, which DOES hold a real fixed ~0.72-0.76 ratio across
+resolution — that one is a genuine effect, not an artifact). The energy
+integral U(r) was not yet fully converged when work stopped (0.839->0.935->
+0.947->0.949 over Nyz=200-800) — n_xi may be a second co-limiting factor,
+not yet isolated separately. Not yet built: a systematic "required Nyz vs r"
+convergence table (only two spot-checks exist, r~25-30).
+
+REQUIREMENT 4 — any sweep over a parameter that changes an object's own
+natural timescale (size/resolution, cells_across, etc.) run under a FIXED
+step budget: scale the step budget (or compare matched phase-fractions of
+the object's own oscillation period) instead of using one fixed step count
+across the whole sweep. The curl-full spheromak's own oscillation period
+scales as T_steps~136*cells_across (confirmed ~30,000 steps at
+cells_across=220 vs ~3,000 at cells_across=22, since dt is constant across
+resolutions but the period scales with object size) — a fixed 60-step
+budget samples ~2% of one period at cells_across=22 but only ~0.2% at
+cells_across=220, so an apparent "convergence" of a diagnostic like swing as
+resolution increases can be almost entirely a sampling-window artifact, not
+real physics. Not yet done: re-run the cells_across sweep with N_STEPS
+scaled to cells_across (or an equivalent phase-matched comparison) before
+citing that sweep as evidence of convergence.

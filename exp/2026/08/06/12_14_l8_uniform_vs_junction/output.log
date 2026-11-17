@@ -1,0 +1,8 @@
+Thu 06 Aug 2026 12:14:53 CEST
+R_cells=20  phys_R=3.0483e-03 (scale=1.3606e-03)  d1=1.5242e-04  N_leaves=43631  levels_present=[0]
+  H0=9.605360e+02  H1=9.605691e+02  H/H0=1.000034  dt=7.8162e-07
+R_cells=40  phys_R=6.0966e-03 (scale=1.3606e-03)  d1=1.5242e-04  N_leaves=347973  levels_present=[0]
+  H0=9.605360e+02  H1=9.605691e+02  H/H0=1.000034  dt=7.8162e-07
+R_cells=60  phys_R=9.1449e-03 (scale=1.3606e-03)  d1=1.5242e-04  N_leaves=1175379  levels_present=[0]
+  H0=9.605360e+02  H1=9.605691e+02  H/H0=1.000034  dt=7.8162e-07
+Thu 06 Aug 2026 12:14:55 CEST

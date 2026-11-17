@@ -1,0 +1,17 @@
+P 140 N 686000 fam pack sig 4.2 amp 300.0 beta 1.0 seed 0 H0 3.59274e+04
+  t   0.0  H/H0-1 -2.22e-16  Ewin/H 0.769  umax 3.270e+01  cen  +0.08  +0.04  -0.77  reuse nan  (0 s)
+  t  10.0  H/H0-1 -2.92e-04  Ewin/H 0.767  umax 3.381e+01  cen  +0.09  +0.05  -0.45  reuse 0.87  (18 s)
+  t  20.0  H/H0-1 -6.27e-04  Ewin/H 0.796  umax 3.515e+01  cen  +0.23  +0.18  +0.15  reuse 0.86  (35 s)
+  t  30.0  H/H0-1 -8.78e-04  Ewin/H 0.796  umax 3.553e+01  cen  +0.20  +0.14  +0.49  reuse 0.85  (53 s)
+  t  40.0  H/H0-1 -1.03e-03  Ewin/H 0.670  umax 4.592e+01  cen  +0.10  +1.11  +2.14  reuse 0.86  (70 s)
+  t  50.0  H/H0-1 -1.17e-03  Ewin/H 0.753  umax 5.279e+01  cen  +0.11  -0.52  +2.03  reuse 0.88  (88 s)
+  t  60.0  H/H0-1 -1.33e-03  Ewin/H 0.674  umax 6.694e+01  cen  +0.11  -0.84  +2.11  reuse 0.88  (105 s)
+  t  70.0  H/H0-1 -1.50e-03  Ewin/H 0.694  umax 7.866e+01  cen  +0.11  +0.84  +2.11  reuse 0.89  (122 s)
+  t  80.0  H/H0-1 -1.59e-03  Ewin/H 0.752  umax 8.111e+01  cen  +0.25  -0.33  +2.06  reuse 0.90  (140 s)
+  t  90.0  H/H0-1 -1.68e-03  Ewin/H 0.753  umax 9.828e+01  cen  +0.12  -0.30  +2.06  reuse 0.91  (158 s)
+  t 100.0  H/H0-1 -1.76e-03  Ewin/H 0.747  umax 1.094e+02  cen  -0.18  +0.13  +2.12  reuse 0.91  (178 s)
+  t 110.0  H/H0-1 -1.80e-03  Ewin/H 0.752  umax 1.088e+02  cen  +0.40  +0.12  +2.05  reuse 0.92  (200 s)
+  t 120.0  H/H0-1 -1.92e-03  Ewin/H 0.774  umax 1.196e+02  cen  -0.03  +0.07  +1.88  reuse 0.92  (222 s)
+  t 130.0  H/H0-1 -1.98e-03  Ewin/H 0.793  umax 1.236e+02  cen  +0.14  +0.07  +1.56  reuse 0.93  (243 s)
+  t 140.0  H/H0-1 -2.06e-03  Ewin/H 0.736  umax 1.291e+02  cen  +0.13  +0.34  +1.93  reuse 0.94  (264 s)
+RESULT fam pack sig 4.2 amp 300.0 beta 1.0 seed 0  Ewin/H end 0.736 min 0.670  |v| late 0.005  reuse late 0.92  umax end/0 3.948  dH/H 2.1e-03

@@ -1,0 +1,9 @@
+reference t 0: structure rms(rho - 1) 0.191
+  t 1000: rms vs t 0 at best rotation 0.141 (phi  51.4 deg), at phi 0 0.271; torus radius 33.3 (ref 30.6)
+  t 2000: rms vs t 0 at best rotation 0.146 (phi  16.8 deg), at phi 0 0.217; torus radius 32.9 (ref 30.6)
+  t 3000: rms vs t 0 at best rotation 0.112 (phi  69.2 deg), at phi 0 0.214; torus radius 30.9 (ref 30.6)
+  t 4000: rms vs t 0 at best rotation 0.106 (phi  29.7 deg), at phi 0 0.243; torus radius 31.3 (ref 30.6)
+  t 5000: rms vs t 0 at best rotation 0.115 (phi  81.1 deg), at phi 0 0.150; torus radius 31.5 (ref 30.6)
+  t 6000: rms vs t 0 at best rotation 0.100 (phi  41.5 deg), at phi 0 0.257; torus radius 31.0 (ref 30.6)
+  t 7000: rms vs t 0 at best rotation 0.112 (phi   1.0 deg), at phi 0 0.114; torus radius 31.1 (ref 30.6)
+  t 8000: rms vs t 0 at best rotation 0.117 (phi  53.4 deg), at phi 0 0.251; torus radius 30.8 (ref 30.6)

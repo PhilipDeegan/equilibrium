@@ -1,0 +1,13 @@
+case diffuse box side 55.426 n 64 dx 0.866 a 9.0 smooth 1.0 amp 0.3 eta 0.05 nu 0.0  seed lam a/4.49 0.8916
+  t    0.00  EB/EB0 1.00000  EV/EB0 0.000e+00  H/H0 1.00000  lam a/4.49 0.8916  overlap 1.0000  in/shell/out 0.9726 0.0274 0.0000  cz -0.000 cr 0.000  fine 2.72e-06
+  t   30.00  EB/EB0 0.53464  EV/EB0 0.000e+00  H/H0 0.57832  lam a/4.49 0.8007  overlap 0.9846  in/shell/out 0.9351 0.0649 0.0001  cz -0.000 cr 0.000  fine 1.35e-10
+  t   60.00  EB/EB0 0.31718  EV/EB0 0.000e+00  H/H0 0.36486  lam a/4.49 0.7242  overlap 0.9493  in/shell/out 0.8894 0.1097 0.0009  cz -0.000 cr 0.000  fine 9.16e-15
+  t   90.00  EB/EB0 0.20326  EV/EB0 0.000e+00  H/H0 0.24575  lam a/4.49 0.6589  overlap 0.9034  in/shell/out 0.8379 0.1584 0.0037  cz -0.000 cr 0.000  fine 6.20e-19
+  t  120.00  EB/EB0 0.13827  EV/EB0 0.000e+00  H/H0 0.17410  lam a/4.49 0.6030  overlap 0.8530  in/shell/out 0.7835 0.2070 0.0095  cz -0.000 cr 0.000  fine 4.07e-23
+  t  150.00  EB/EB0 0.09857  EV/EB0 0.000e+00  H/H0 0.12835  lam a/4.49 0.5552  overlap 0.8020  in/shell/out 0.7286 0.2524 0.0190  cz -0.000 cr 0.000  fine 2.59e-27
+  t  180.00  EB/EB0 0.07295  EV/EB0 0.000e+00  H/H0 0.09769  lam a/4.49 0.5139  overlap 0.7526  in/shell/out 0.6752 0.2928 0.0321  cz -0.000 cr 0.000  fine 2.43e-31
+  t  210.00  EB/EB0 0.05566  EV/EB0 0.000e+00  H/H0 0.07632  lam a/4.49 0.4781  overlap 0.7060  in/shell/out 0.6242 0.3272 0.0486  cz -0.000 cr 0.000  fine 8.06e-32
+  t  240.00  EB/EB0 0.04354  EV/EB0 0.000e+00  H/H0 0.06093  lam a/4.49 0.4468  overlap 0.6626  in/shell/out 0.5764 0.3554 0.0683  cz -0.000 cr 0.000  fine 8.21e-32
+  t  270.00  EB/EB0 0.03479  EV/EB0 0.000e+00  H/H0 0.04955  lam a/4.49 0.4192  overlap 0.6226  in/shell/out 0.5319 0.3776 0.0905  cz -0.000 cr 0.000  fine 8.19e-32
+  t  300.00  EB/EB0 0.02830  EV/EB0 0.000e+00  H/H0 0.04092  lam a/4.49 0.3948  overlap 0.5860  in/shell/out 0.4910 0.3943 0.1147  cz -0.000 cr 0.000  fine 8.23e-32
+RESULT diffuse  EB 0.0283  H 0.0409  overlap 0.5860  in 0.9726->0.4910  lam 0.8916->0.3948  fine 2.7e-06->8.2e-32  wall 0 s

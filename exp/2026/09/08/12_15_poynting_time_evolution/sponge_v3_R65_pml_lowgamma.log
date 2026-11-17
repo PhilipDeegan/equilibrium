@@ -1,0 +1,28 @@
+[pml_g0.05] N=1493309 sponge_fraction=0.15 damp_max=0.05 r_inner=55.25 r_ring=19.80 dt=5.1282e-03 predicted_round_trip_t=22.42 (n_steps*dt=33.33)
+[pml_g0.05] done, 261 log points
+[pml_g0.1] N=1493309 sponge_fraction=0.15 damp_max=0.1 r_inner=55.25 r_ring=19.80 dt=5.1282e-03 predicted_round_trip_t=22.42 (n_steps*dt=33.33)
+[pml_g0.1] done, 261 log points
+[pml_g0.2] N=1493309 sponge_fraction=0.15 damp_max=0.2 r_inner=55.25 r_ring=19.80 dt=5.1282e-03 predicted_round_trip_t=22.42 (n_steps*dt=33.33)
+[pml_g0.2] done, 261 log points
+[pml_g0.3] N=1493309 sponge_fraction=0.15 damp_max=0.3 r_inner=55.25 r_ring=19.80 dt=5.1282e-03 predicted_round_trip_t=22.42 (n_steps*dt=33.33)
+[pml_g0.3] done, 261 log points
+[pml_g0.5] N=1493309 sponge_fraction=0.15 damp_max=0.5 r_inner=55.25 r_ring=19.80 dt=5.1282e-03 predicted_round_trip_t=22.42 (n_steps*dt=33.33)
+[pml_g0.5] done, 261 log points
+
+=== late-time (last third of run) outer-shell |S| comparison across configs ===
+pml_g0.05            r=   8: mean=3.6485e-08 std=4.3281e-08 max=1.3451e-07
+pml_g0.05            r=  20: mean=2.1935e-07 std=1.4505e-07 max=6.1806e-07
+pml_g0.05            r=  24: mean=5.4627e-08 std=3.6562e-08 max=1.4412e-07
+pml_g0.1             r=   8: mean=3.2869e-08 std=3.8745e-08 max=1.2131e-07
+pml_g0.1             r=  20: mean=2.0349e-07 std=1.3264e-07 max=5.7508e-07
+pml_g0.1             r=  24: mean=5.0306e-08 std=3.3270e-08 max=1.3397e-07
+pml_g0.2             r=   8: mean=2.7055e-08 std=3.1373e-08 max=9.9884e-08
+pml_g0.2             r=  20: mean=1.7634e-07 std=1.1087e-07 max=4.9992e-07
+pml_g0.2             r=  24: mean=4.2904e-08 std=2.7474e-08 max=1.1631e-07
+pml_g0.3             r=   8: mean=2.2697e-08 std=2.5732e-08 max=8.3575e-08
+pml_g0.3             r=  20: mean=1.5507e-07 std=9.2846e-08 max=4.3696e-07
+pml_g0.3             r=  24: mean=3.7141e-08 std=2.2674e-08 max=1.0159e-07
+pml_g0.5             r=   8: mean=1.6924e-08 std=1.7951e-08 max=6.1320e-08
+pml_g0.5             r=  20: mean=1.2915e-07 std=6.6473e-08 max=3.3938e-07
+pml_g0.5             r=  24: mean=3.0361e-08 std=1.5620e-08 max=7.8879e-08
+done

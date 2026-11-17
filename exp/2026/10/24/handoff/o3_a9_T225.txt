@@ -1,0 +1,18 @@
+P 96 a 9.0 N 221184 triangles 2654208  g_c 4.2445  g 4.2445  hold 1.0  order 3
+  t    0.0  (E+Ee)/E0 1.000000  Ephi/E0 1.0000  Ee/E0 0.0000  |dphi| 0.0000  cos 0.9651  fine 0.0000  in/shell/out 0.9708 0.0292 0.0000  e in/shell/out 0.000 0.000 0.000  (ETA 50.1 min)
+  t   15.0  (E+Ee)/E0 1.000000  Ephi/E0 0.9995  Ee/E0 0.0005  |dphi| 0.0352  cos 0.9653  fine 0.0000  in/shell/out 0.9689 0.0309 0.0002  e in/shell/out 0.567 0.330 0.103  (ETA 45.8 min)
+  t   30.0  (E+Ee)/E0 1.000000  Ephi/E0 0.9987  Ee/E0 0.0013  |dphi| 0.0654  cos 0.9657  fine 0.0000  in/shell/out 0.9667 0.0330 0.0003  e in/shell/out 0.495 0.374 0.132  (ETA 42.5 min)
+  t   45.0  (E+Ee)/E0 1.000000  Ephi/E0 0.9978  Ee/E0 0.0022  |dphi| 0.0893  cos 0.9647  fine 0.0000  in/shell/out 0.9651 0.0344 0.0005  e in/shell/out 0.508 0.330 0.162  (ETA 38.7 min)
+  t   60.0  (E+Ee)/E0 1.000000  Ephi/E0 0.9967  Ee/E0 0.0033  |dphi| 0.1072  cos 0.9629  fine 0.0000  in/shell/out 0.9639 0.0354 0.0007  e in/shell/out 0.515 0.308 0.178  (ETA 33.0 min)
+  t   75.0  (E+Ee)/E0 1.000001  Ephi/E0 0.9957  Ee/E0 0.0043  |dphi| 0.1226  cos 0.9608  fine 0.0000  in/shell/out 0.9627 0.0363 0.0010  e in/shell/out 0.493 0.310 0.197  (ETA 28.6 min)
+  t   90.0  (E+Ee)/E0 1.000001  Ephi/E0 0.9947  Ee/E0 0.0053  |dphi| 0.1389  cos 0.9587  fine 0.0000  in/shell/out 0.9610 0.0376 0.0014  e in/shell/out 0.467 0.307 0.226  (ETA 24.9 min)
+  t  105.0  (E+Ee)/E0 1.000001  Ephi/E0 0.9936  Ee/E0 0.0064  |dphi| 0.1593  cos 0.9564  fine 0.0000  in/shell/out 0.9585 0.0397 0.0018  e in/shell/out 0.452 0.297 0.251  (ETA 21.6 min)
+  t  120.0  (E+Ee)/E0 1.000003  Ephi/E0 0.9922  Ee/E0 0.0078  |dphi| 0.1880  cos 0.9521  fine 0.0000  in/shell/out 0.9547 0.0430 0.0023  e in/shell/out 0.460 0.279 0.261  (ETA 18.6 min)
+  t  135.0  (E+Ee)/E0 1.000004  Ephi/E0 0.9899  Ee/E0 0.0101  |dphi| 0.2340  cos 0.9387  fine 0.0000  in/shell/out 0.9489 0.0482 0.0029  e in/shell/out 0.496 0.255 0.249  (ETA 15.7 min)
+  t  150.0  (E+Ee)/E0 1.000006  Ephi/E0 0.9849  Ee/E0 0.0151  |dphi| 0.3219  cos 0.8898  fine 0.0000  in/shell/out 0.9397 0.0566 0.0037  e in/shell/out 0.590 0.212 0.198  (ETA 12.9 min)
+  t  165.0  (E+Ee)/E0 1.000027  Ephi/E0 0.9682  Ee/E0 0.0318  |dphi| 0.5021  cos 0.7291  fine 0.0000  in/shell/out 0.9242 0.0708 0.0050  e in/shell/out 0.743 0.146 0.111  (ETA 10.2 min)
+  t  180.0  (E+Ee)/E0 1.000127  Ephi/E0 0.9188  Ee/E0 0.0813  |dphi| 0.7340  cos 0.4884  fine 0.0001  in/shell/out 0.8897 0.1018 0.0084  e in/shell/out 0.751 0.181 0.068  (ETA 7.6 min)
+  t  195.0  (E+Ee)/E0 1.000269  Ephi/E0 0.8538  Ee/E0 0.1464  |dphi| 0.9049  cos 0.2933  fine 0.0001  in/shell/out 0.8072 0.1603 0.0326  e in/shell/out 0.572 0.263 0.165  (ETA 5.0 min)
+  t  210.0  (E+Ee)/E0 1.000382  Ephi/E0 0.7956  Ee/E0 0.2048  |dphi| 1.0144  cos 0.1357  fine 0.0001  in/shell/out 0.6858 0.2251 0.0891  e in/shell/out 0.418 0.272 0.310  (ETA 2.5 min)
+  t  225.0  (E+Ee)/E0 1.000465  Ephi/E0 0.7469  Ee/E0 0.2536  |dphi| 1.0845  cos 0.0250  fine 0.0001  in/shell/out 0.5582 0.2862 0.1556  e in/shell/out 0.322 0.264 0.414  (ETA 0.0 min)
+RESULT handoff 1.0 hold 1.0  Ephi 0.7469  Ee 0.2536  |dphi| 1.0845  cos 0.9651->0.0250  in 0.9708->0.5582  fine 0.0000->0.0001  wall 2248 s

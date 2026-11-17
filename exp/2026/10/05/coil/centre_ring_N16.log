@@ -1,0 +1,4 @@
+3000 centre ring (rho_cyl<40) none
+t 3000 coil (rho_cyl>80): cells 54944, radius 120.2, z +3.4; meridional winding around tube -1.00
+t 4000 centre ring (rho_cyl<40): cells 3482, radius 12.8, z +8.9; winding around core (r 3) +1.00; winding around core (r 5) +1.00
+t 4000 coil (rho_cyl>80): cells 54706, radius 119.8, z +0.3; meridional winding around tube -1.00

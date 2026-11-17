@@ -1,0 +1,7 @@
+gp_m0.5_g0.05_q1_r12_R40_conv: N=347941 omega0 0.5236 xi 2.58 c_s 0.1826 GP ring speed 0.0834 (x q sign) -> 33.3 cells in 400 ticks; sponge from r 30.0
+  t 0: core r 12.05 z +13.94  deficit 8902.6  windings [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]  mean rho inner 0.9393
+  t 100: core r 12.92 z +7.52  deficit 19406.3  windings [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]  mean rho inner 0.8911
+  t 200: core r 12.36 z -2.61  deficit 12027.2  windings [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]  mean rho inner 0.9539
+  t 300: core r 11.45 z -9.78  deficit 9751.7  windings [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]  mean rho inner 0.9791
+  t 400: core r 12.34 z -16.46  deficit 8491.8  windings [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]  mean rho inner 0.9953
+  400 ticks in 50s; ring speed dz/dt -0.0787 (GP 0.0834, ratio 0.944), dr/dt -0.0066; in GP units (xi, tau = xi^2 m / c^2 = 10.0): v 0.3047, r0/xi 4.65

@@ -1,0 +1,27 @@
+CONTEXT: Candidate fix for the L8 base-update blowup (H/H0=134): does
+enable_ancestor_debias_correction (adaptive_lattice.hpp) resolve it?
+
+WHAT FAILED: The debias correction is real and correctly targeted — it
+fixes a genuine Jensen-inequality restriction bias in cross-level
+ancestor substitution, closing ~82% of an isolated junction's
+flux-isotropy error (verified at 1- and 2-level gaps), survives reflux,
+and is zero-cost when inert. But applied reasoning/estimation showed its
+effect on the real production spheromak IC is 4+ orders of magnitude too
+small to move the L8 blowup.
+
+ROOT CAUSE: The correction's effect is curvature-proportional, and the
+real spheromak IC is flat almost everywhere except a tiny core — so
+there's almost no curvature for it to act on at the scale that matters
+for the L8 blowup. The blowup's real driver (confirmed separately) was
+under-resolution: the calibrated production spheromak only had ~17.9
+cells across its own diameter at L8, giving H/H0 ∝ cells_across^-1.85
+scaling — a resolution problem, not a cross-level-bias problem.
+
+LESSON: This is a correct fix for a real, different bug — it should
+still ship on by default eventually (it fixes genuine per-junction
+flux-isotropy error), but don't expect turning it on to change anything
+for the L8 blowup specifically. Don't re-test it as a blowup fix without
+new evidence the curvature regime has changed (e.g. a much less smooth
+IC). The actual fix for under-resolution is more cells_across, not
+better cross-level correction — see project_hop_telescope_resolved_spheromak
+and project_odd27_amr_junction_leak.

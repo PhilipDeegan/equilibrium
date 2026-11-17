@@ -1,0 +1,5 @@
+/home/p/git/eq/exp/2026/08/16/14_50_rebuild_r180l0_r60l1_post_pass1_fix/plot_phi_vector_per_level.py:95: RuntimeWarning: All-NaN slice encountered
+  lw = 0.5 + 2.5 * (speed_safe / np.nanmax(speed_safe))
+[l1_wider_margin_active_ic220_pp1fix] n_leaves=15542429 levels=[0, 1] -> exp/2026/08/16/14_50_rebuild_r180l0_r60l1_post_pass1_fix/plots/L1_R60_phi_vector/xz_phi_vec_l1_wider_margin_active_ic220_pp1fix.png
+[step_100_final] n_leaves=15542429 levels=[0, 1] -> exp/2026/08/16/14_50_rebuild_r180l0_r60l1_post_pass1_fix/plots/L1_R60_phi_vector/xz_phi_vec_step_100_final.png
+[step_300_final] n_leaves=15542429 levels=[0, 1] -> exp/2026/08/16/14_50_rebuild_r180l0_r60l1_post_pass1_fix/plots/L1_R60_phi_vector/xz_phi_vec_step_300_final.png

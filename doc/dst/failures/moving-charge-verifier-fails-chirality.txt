@@ -1,0 +1,29 @@
+CONTEXT: Test A (exp/2026/08/20/17_32_moving_charge_curl_test/) checked
+DST's untested classical EM claim that a moving charge generates a
+magnetic-like `curl(phi)` field (a Biot-Savart-like wake). Construction:
+lam-carrying knot + static `u`-monopole "charge", kicked to constant
+coasting velocity (kick mechanism reused from
+exp/2026/07/11/19_45_proton_knot_translation, cross_scale=force_scale=0.3 —
+the default 0.01 gives sub-noise transport).
+
+WHAT FAILED: `curl(phi)` measured in a shell around the charge, Q=0/+1/-1.
+Existence signal is real (25-30x the Q=0 noise floor), but:
+- Chirality FAILS: cos_sim(wake_Q+1, wake_Q-1) = +0.52 (want ~= -1, i.e.
+  opposite-sign charges should produce mirror-image wakes).
+- Orientation FAILS: along-velocity component (7.4e-5) exceeds azimuthal
+  (6.2e-5); a real Biot-Savart wake should be azimuthal-dominant, not
+  along-velocity-dominant.
+
+ROOT CAUSE: Matches doc/dst.md's own claim (Magnetism section) that B needs
+`phi` ring-mode CYCLING as the source, not a static charge merely riding
+along at constant velocity. Constant-velocity translation of a static charge
+under bare `step()` does not contain the mechanism doc/dst.md says produces
+magnetism, so failing to reproduce it here is a genuine "code/mechanism
+doesn't exist yet" negative, not a measurement artifact.
+
+LESSON: Don't test magnetism-from-motion with a static charge kicked to
+constant velocity — it is the wrong construction by doc/dst.md's own
+prescription. The real target (a boosted-Coulomb B: sign-flipping,
+azimuthal) is legitimate and was cleanly missed, not disproven. See
+cycling-ring-verifier-fails-chirality.txt for the construction that follows
+doc/dst.md's actual prescription (cycling ring-mode) instead.

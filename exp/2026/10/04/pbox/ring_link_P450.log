@@ -1,0 +1,27 @@
+t 14000: main 23972 cells, centre z +53.5
+   3613 cells, rel. main centre (rho  44.4, dz  -99.5), radius 13.1, normal [0.22 0.97 0.13] (radial comp 0.03); main crosses plane at in-plane dist min 103.3 -> not threaded
+   3611 cells, rel. main centre (rho  44.3, dz  -99.5), radius 13.1, normal [ 0.97 -0.22  0.13] (radial comp 0.03); main crosses plane at in-plane dist min 103.3 -> not threaded
+   3611 cells, rel. main centre (rho  44.4, dz  -99.5), radius 13.1, normal [ 0.22  0.97 -0.13] (radial comp 0.03); main crosses plane at in-plane dist min 103.3 -> not threaded
+   3611 cells, rel. main centre (rho  44.3, dz  -99.5), radius 13.1, normal [ 0.97 -0.22 -0.13] (radial comp 0.03); main crosses plane at in-plane dist min 103.3 -> not threaded
+   3245 cells, rel. main centre (rho 105.2, dz  -94.5), radius 12.0, normal [ 0.95  0.3  -0.04] (radial comp 0.87); main crosses plane at in-plane dist min 163.7 -> not threaded
+   3245 cells, rel. main centre (rho 105.2, dz  -94.5), radius 12.0, normal [0.95 0.3  0.04] (radial comp 0.87); main crosses plane at in-plane dist min 163.7 -> not threaded
+   3243 cells, rel. main centre (rho 105.2, dz  -94.5), radius 12.0, normal [-0.3   0.95  0.04] (radial comp 0.87); main crosses plane at in-plane dist min 163.7 -> not threaded
+   3243 cells, rel. main centre (rho 105.2, dz  -94.5), radius 12.0, normal [-0.3   0.95 -0.04] (radial comp 0.87); main crosses plane at in-plane dist min 163.7 -> not threaded
+t 16000: main 22902 cells, centre z +68.2
+   3506 cells, rel. main centre (rho  68.8, dz -118.2), radius 12.8, normal [-0.16 -0.98  0.11] (radial comp 0.81); main crosses plane at in-plane dist min 133.5 -> not threaded
+   3505 cells, rel. main centre (rho  68.8, dz -118.2), radius 12.8, normal [-0.16 -0.98 -0.11] (radial comp 0.81); main crosses plane at in-plane dist min 133.5 -> not threaded
+   3502 cells, rel. main centre (rho  68.8, dz -118.2), radius 12.8, normal [ 0.98 -0.16  0.11] (radial comp 0.81); main crosses plane at in-plane dist min 133.5 -> not threaded
+   3502 cells, rel. main centre (rho  68.8, dz -118.2), radius 12.8, normal [ 0.98 -0.16 -0.11] (radial comp 0.81); main crosses plane at in-plane dist min 133.5 -> not threaded
+   3306 cells, rel. main centre (rho  60.9, dz -113.0), radius 11.8, normal [-0.33  0.94  0.1 ] (radial comp 0.59); main crosses plane at in-plane dist min 109.0 -> not threaded
+   3306 cells, rel. main centre (rho  60.9, dz -113.0), radius 11.8, normal [ 0.33 -0.94  0.1 ] (radial comp 0.59); main crosses plane at in-plane dist min 109.0 -> not threaded
+   3296 cells, rel. main centre (rho  60.8, dz -113.0), radius 11.8, normal [0.94 0.33 0.1 ] (radial comp 0.59); main crosses plane at in-plane dist min 109.0 -> not threaded
+   3295 cells, rel. main centre (rho  60.8, dz -113.0), radius 11.8, normal [ 0.94  0.33 -0.1 ] (radial comp 0.59); main crosses plane at in-plane dist min 109.0 -> not threaded
+t 18000: main 22949 cells, centre z +75.0
+   3523 cells, rel. main centre (rho 116.2, dz +124.1), radius 13.1, normal [0.17 0.98 0.09] (radial comp 0.93); main crosses plane at in-plane dist min   nan -> not threaded
+   3522 cells, rel. main centre (rho 116.2, dz +124.1), radius 13.1, normal [-0.17 -0.98  0.09] (radial comp 0.93); main crosses plane at in-plane dist min   nan -> not threaded
+   3515 cells, rel. main centre (rho 116.2, dz +124.1), radius 13.1, normal [ 0.98 -0.17  0.09] (radial comp 0.93); main crosses plane at in-plane dist min   nan -> not threaded
+   3515 cells, rel. main centre (rho 116.2, dz +124.1), radius 13.1, normal [ 0.98 -0.17 -0.09] (radial comp 0.93); main crosses plane at in-plane dist min   nan -> not threaded
+   3105 cells, rel. main centre (rho  54.6, dz +127.5), radius 11.7, normal [ 0.33 -0.94  0.12] (radial comp 0.40); main crosses plane at in-plane dist min 121.1 -> not threaded
+   3105 cells, rel. main centre (rho  54.6, dz +127.5), radius 11.7, normal [-0.33  0.94  0.12] (radial comp 0.40); main crosses plane at in-plane dist min 121.1 -> not threaded
+   3098 cells, rel. main centre (rho  54.5, dz +127.5), radius 11.7, normal [0.94 0.33 0.12] (radial comp 0.40); main crosses plane at in-plane dist min 121.1 -> not threaded
+   3098 cells, rel. main centre (rho  54.5, dz +127.5), radius 11.7, normal [ 0.94  0.33 -0.12] (radial comp 0.40); main crosses plane at in-plane dist min 121.1 -> not threaded

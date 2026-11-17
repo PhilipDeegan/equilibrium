@@ -1,0 +1,113 @@
+Fri 10 Jul 2026 23:01:37 CEST
+  init_electron_dipole_ic: scale=4.0  R_sph=1.0  sigma=None  r_axis=2.44  u_bg=0.0  inner_cells=339/43599  (0.8%)
+  divergence_clean: div_rms 1.5218e-01 → 1.3376e-09  (×8.79e-09)
+
+=== config: cross=0.0  kick_axis=x  g=0.0005 ===
+       0  base  com=( -0.0000, -0.0000, +0.0000)  circ_pol=+1.082e+02  prms_max=5.097e-01
+     500  base  com=( -0.0000, +0.0000, +0.0000)  circ_pol=+1.082e+02  prms_max=5.097e-01
+    1000  kick  com=( -0.0000, -0.0000, +0.0000)  circ_pol=+1.082e+02  prms_max=5.097e-01
+    1500  kick  com=( -0.0000, -0.0000, +0.0000)  circ_pol=+1.082e+02  prms_max=5.097e-01
+    2000  kick  com=( -0.0000, +0.0000, +0.0000)  circ_pol=+1.082e+02  prms_max=5.097e-01
+    2500  kick  com=( -0.0000, +0.0000, +0.0000)  circ_pol=+1.082e+02  prms_max=5.097e-01
+    3000  kick  com=( -0.0000, -0.0000, +0.0000)  circ_pol=+1.082e+02  prms_max=5.097e-01
+    3500  kick  com=( +0.0000, +0.0000, +0.0000)  circ_pol=+1.082e+02  prms_max=5.098e-01
+    4000 coast  com=( -0.0000, -0.0000, +0.0000)  circ_pol=+1.082e+02  prms_max=5.098e-01
+    4500 coast  com=( -0.0000, +0.0000, +0.0000)  circ_pol=+1.082e+02  prms_max=5.102e-01
+    5000 coast  com=( -0.0000, +0.0000, +0.0000)  circ_pol=+1.082e+02  prms_max=5.098e-01
+    5500 coast  com=( -0.0000, +0.0000, +0.0000)  circ_pol=+1.082e+02  prms_max=5.097e-01
+  → v_base=+0.000e+00  v_kick=+9.351e-17  v_coast=-1.913e-17  Δ_kick=+0.0000  mobility v/g=+1.870e-13  pol_survival=1.000
+  init_electron_dipole_ic: scale=4.0  R_sph=1.0  sigma=None  r_axis=2.44  u_bg=0.0  inner_cells=339/43599  (0.8%)
+  divergence_clean: div_rms 1.5218e-01 → 1.3376e-09  (×8.79e-09)
+
+=== config: cross=0.0  kick_axis=z  g=0.0005 ===
+       0  base  com=( -0.0000, -0.0000, +0.0000)  circ_pol=+1.082e+02  prms_max=5.097e-01
+     500  base  com=( -0.0000, +0.0000, +0.0000)  circ_pol=+1.082e+02  prms_max=5.097e-01
+    1000  kick  com=( -0.0000, +0.0000, +0.0000)  circ_pol=+1.044e+02  prms_max=5.081e-01
+    1500  kick  com=( -0.0000, +0.0000, +0.0000)  circ_pol=+1.006e+02  prms_max=5.064e-01
+    2000  kick  com=( -0.0000, +0.0000, -0.0000)  circ_pol=+9.687e+01  prms_max=5.048e-01
+    2500  kick  com=( -0.0000, +0.0000, -0.0000)  circ_pol=+9.309e+01  prms_max=5.032e-01
+    3000  kick  com=( -0.0000, +0.0000, +0.0000)  circ_pol=+8.931e+01  prms_max=5.016e-01
+    3500  kick  com=( -0.0000, +0.0000, -0.0000)  circ_pol=+8.553e+01  prms_max=5.000e-01
+    4000 coast  com=( -0.0000, -0.0000, -0.0000)  circ_pol=+8.567e+01  prms_max=5.000e-01
+    4500 coast  com=( -0.0000, -0.0000, -0.0000)  circ_pol=+1.248e+02  prms_max=5.306e-01
+    5000 coast  com=( -0.0000, -0.0000, -0.0000)  circ_pol=+1.175e+02  prms_max=4.989e-01
+    5500 coast  com=( -0.0000, -0.0000, -0.0000)  circ_pol=+1.149e+02  prms_max=5.155e-01
+  → v_base=+0.000e+00  v_kick=-2.212e-17  v_coast=-1.864e-17  Δ_kick=-0.0000  mobility v/g=-4.425e-14  pol_survival=1.062
+  init_electron_dipole_ic: scale=4.0  R_sph=1.0  sigma=None  r_axis=2.44  u_bg=0.0  inner_cells=339/43599  (0.8%)
+  divergence_clean: div_rms 1.5218e-01 → 1.3376e-09  (×8.79e-09)
+
+=== config: cross=0.01  kick_axis=x  g=0.0005 ===
+       0  base  com=( -0.0000, -0.0000, +0.0000)  circ_pol=+1.082e+02  prms_max=5.097e-01
+     500  base  com=( -0.0000, +0.0000, +0.0049)  circ_pol=+9.113e+01  prms_max=4.390e-01
+    1000  kick  com=( +0.0044, +0.0000, -0.0009)  circ_pol=+7.812e+01  prms_max=3.786e-01
+    1500  kick  com=( +0.0046, +0.0000, +0.0056)  circ_pol=+6.609e+01  prms_max=3.269e-01
+    2000  kick  com=( +0.0043, +0.0000, -0.0039)  circ_pol=+5.607e+01  prms_max=2.828e-01
+    2500  kick  com=( +0.0011, +0.0000, -0.0136)  circ_pol=+4.784e+01  prms_max=2.450e-01
+    3000  kick  com=( +0.0072, +0.0000, -0.0191)  circ_pol=+4.096e+01  prms_max=2.126e-01
+    3500  kick  com=( +0.0097, +0.0000, -0.0128)  circ_pol=+3.451e+01  prms_max=1.849e-01
+    4000 coast  com=( +0.0109, +0.0000, -0.0144)  circ_pol=+2.936e+01  prms_max=1.611e-01
+    4500 coast  com=( -0.0130, +0.0000, -0.0012)  circ_pol=+2.484e+01  prms_max=1.412e-01
+    5000 coast  com=( +0.0163, +0.0000, -0.0204)  circ_pol=+2.123e+01  prms_max=1.228e-01
+    5500 coast  com=( +0.0167, +0.0000, -0.0497)  circ_pol=+1.800e+01  prms_max=1.075e-01
+  → v_base=+0.000e+00  v_kick=+1.692e-03  v_coast=+1.585e-04  Δ_kick=+0.0097  mobility v/g=+3.385e+00  pol_survival=0.166
+  init_electron_dipole_ic: scale=4.0  R_sph=1.0  sigma=None  r_axis=2.44  u_bg=0.0  inner_cells=339/43599  (0.8%)
+  divergence_clean: div_rms 1.5218e-01 → 1.3376e-09  (×8.79e-09)
+
+=== config: cross=0.01  kick_axis=z  g=0.0005 ===
+       0  base  com=( -0.0000, -0.0000, +0.0000)  circ_pol=+1.082e+02  prms_max=5.097e-01
+     500  base  com=( -0.0000, +0.0000, +0.0049)  circ_pol=+9.113e+01  prms_max=4.390e-01
+    1000  kick  com=( -0.0000, +0.0000, +0.0035)  circ_pol=+7.388e+01  prms_max=3.772e-01
+    1500  kick  com=( +0.0000, +0.0000, +0.0046)  circ_pol=+5.921e+01  prms_max=3.243e-01
+    2000  kick  com=( +0.0000, +0.0000, -0.0039)  circ_pol=+4.688e+01  prms_max=2.791e-01
+    2500  kick  com=( +0.0000, +0.0000, -0.0167)  circ_pol=+3.690e+01  prms_max=2.405e-01
+    3000  kick  com=( +0.0000, +0.0000, -0.0170)  circ_pol=+2.798e+01  prms_max=2.075e-01
+    3500  kick  com=( -0.0000, +0.0000, -0.0431)  circ_pol=+2.029e+01  prms_max=1.793e-01
+    4000 coast  com=( +0.0000, +0.0000, -0.0719)  circ_pol=+1.734e+01  prms_max=1.565e-01
+    4500 coast  com=( -0.0000, +0.0000, -0.0463)  circ_pol=+4.130e+01  prms_max=1.535e-01
+    5000 coast  com=( -0.0000, +0.0000, -0.0540)  circ_pol=+3.317e+01  prms_max=1.186e-01
+    5500 coast  com=( +0.0000, +0.0000, -0.0421)  circ_pol=+2.375e+01  prms_max=1.110e-01
+  → v_base=+0.000e+00  v_kick=-5.160e-03  v_coast=+4.622e-03  Δ_kick=-0.0431  mobility v/g=-1.032e+01  pol_survival=0.219
+  init_electron_dipole_ic: scale=4.0  R_sph=1.0  sigma=None  r_axis=2.44  u_bg=0.0  inner_cells=339/43599  (0.8%)
+  divergence_clean: div_rms 1.5218e-01 → 1.3376e-09  (×8.79e-09)
+
+=== config: cross=0.02  kick_axis=x  g=0.0005 ===
+       0  base  com=( -0.0000, -0.0000, +0.0000)  circ_pol=+1.082e+02  prms_max=5.097e-01
+     500  base  com=( +0.0000, +0.0000, -0.0016)  circ_pol=+7.743e+01  prms_max=3.786e-01
+    1000  kick  com=( +0.0075, -0.0000, -0.0230)  circ_pol=+5.659e+01  prms_max=2.827e-01
+    1500  kick  com=( +0.0048, +0.0000, -0.0049)  circ_pol=+4.044e+01  prms_max=2.125e-01
+    2000  kick  com=( -0.0026, -0.0000, -0.0267)  circ_pol=+2.949e+01  prms_max=1.610e-01
+    2500  kick  com=( -0.0142, -0.0000, -0.0399)  circ_pol=+2.135e+01  prms_max=1.230e-01
+    3000  kick  com=( +0.0030, -0.0000, -0.0651)  circ_pol=+1.552e+01  prms_max=9.467e-02
+    3500  kick  com=( -0.0389, -0.0000, -0.1112)  circ_pol=+1.111e+01  prms_max=7.346e-02
+    4000 coast  com=( -0.0110, +0.0000, -0.1251)  circ_pol=+8.245e+00  prms_max=5.743e-02
+    4500 coast  com=( +0.0023, -0.0000, -0.0290)  circ_pol=+5.820e+00  prms_max=4.641e-02
+    5000 coast  com=( +0.0413, -0.0000, -0.0512)  circ_pol=+4.182e+00  prms_max=3.581e-02
+    5500 coast  com=( +0.0476, -0.0000, -0.2697)  circ_pol=+3.041e+00  prms_max=2.865e-02
+  → v_base=+0.000e+00  v_kick=-4.818e-03  v_coast=+2.445e-03  Δ_kick=-0.0389  mobility v/g=-9.636e+00  pol_survival=0.028
+  init_electron_dipole_ic: scale=4.0  R_sph=1.0  sigma=None  r_axis=2.44  u_bg=0.0  inner_cells=339/43599  (0.8%)
+  divergence_clean: div_rms 1.5218e-01 → 1.3376e-09  (×8.79e-09)
+
+=== config: cross=0.02  kick_axis=z  g=0.0005 ===
+       0  base  com=( -0.0000, -0.0000, +0.0000)  circ_pol=+1.082e+02  prms_max=5.097e-01
+     500  base  com=( +0.0000, +0.0000, -0.0016)  circ_pol=+7.743e+01  prms_max=3.786e-01
+    1000  kick  com=( -0.0000, +0.0000, +0.0006)  circ_pol=+5.298e+01  prms_max=2.814e-01
+    1500  kick  com=( +0.0000, -0.0000, +0.0018)  circ_pol=+3.475e+01  prms_max=2.103e-01
+    2000  kick  com=( +0.0000, -0.0000, -0.0186)  circ_pol=+2.239e+01  prms_max=1.583e-01
+    2500  kick  com=( +0.0000, -0.0000, -0.0005)  circ_pol=+1.298e+01  prms_max=1.198e-01
+    3000  kick  com=( +0.0000, -0.0000, -0.0926)  circ_pol=+7.752e+00  prms_max=9.127e-02
+    3500  kick  com=( +0.0000, -0.0000, -0.0648)  circ_pol=+1.187e+01  prms_max=6.993e-02
+    4000 coast  com=( +0.0000, -0.0000, -0.1021)  circ_pol=+6.627e+00  prms_max=5.496e-02
+    4500 coast  com=( +0.0000, +0.0000, -0.6831)  circ_pol=+2.430e+01  prms_max=5.293e-02
+    5000 coast  com=( -0.0000, -0.0000, -0.6083)  circ_pol=+1.806e+01  prms_max=3.418e-02
+    5500 coast  com=( +0.0000, -0.0000, -0.9252)  circ_pol=+1.066e+01  prms_max=3.022e-02
+  → v_base=+0.000e+00  v_kick=-1.254e-02  v_coast=-1.236e-01  Δ_kick=-0.0648  mobility v/g=-2.508e+01  pol_survival=0.099
+
+  cross  axis      v_base      v_kick     v_coast    mobility  pol_surv
+  0.000     x  +0.000e+00  +9.351e-17  -1.913e-17  +1.870e-13     1.000
+  0.000     z  +0.000e+00  -2.212e-17  -1.864e-17  -4.425e-14     1.062
+  0.010     x  +0.000e+00  +1.692e-03  +1.585e-04  +3.385e+00     0.166
+  0.010     z  +0.000e+00  -5.160e-03  +4.622e-03  -1.032e+01     0.219
+  0.020     x  +0.000e+00  -4.818e-03  +2.445e-03  -9.636e+00     0.028
+  0.020     z  +0.000e+00  -1.254e-02  -1.236e-01  -2.508e+01     0.099
+data saved → /tmp/claude-1000/-home-p-git-eq/502eb75b-c617-4c71-8865-fc1e344f7491/scratchpad/etrans.npz
+plot saved → /tmp/claude-1000/-home-p-git-eq/502eb75b-c617-4c71-8865-fc1e344f7491/scratchpad/etrans.png

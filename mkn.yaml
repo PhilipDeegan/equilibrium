@@ -1,0 +1,93 @@
+#! clean build -qp mod -dtOa -fPIC -g 0
+
+name: equilibrium
+
+property:
+  mkn.avx.version: master
+
+profile:
+
+- name: mod
+  inc: inc
+  src: src/mod.cpp
+  self: lattice_deps
+  mode: none
+  mod: lang.python3 python3.module
+  out: cpp
+  install: equilibrium
+  env: |
+    MKN_LIB_LINK_LIB=1
+    MKN_PYTHON_LIB_EMBED=0
+
+- name: mod_lattice
+  self: lattice_core phlop highfive
+  inc: inc
+  src: src/eq/lattice.cpp
+       tpp/phlop/src/phlop/timing/scope_timer.cpp
+  mode: none
+  mod: lang.python3 python3.module
+  out: lattice
+  install: equilibrium
+  arg: -fPIC -std=c++20
+  env: |
+    MKN_LIB_LINK_LIB=1
+    MKN_PYTHON_LIB_EMBED=0
+
+- name: lattice_core
+  self: lattice_deps
+  src: tpp/phlop/src/phlop/timing/scope_timer.cpp
+
+- name: lattice_deps
+  self: cppdict thread_pool phlop
+  dep: lang.nanobind&tpp/nanobind mkn.kul mkn.avx
+
+- name: test_lattice
+  inc: inc
+  self: cppdict thread_pool highfive
+  test: tst/eq/core/data/lattice/test_(\w+).cpp
+
+- name: check_amr_junctions
+  inc: inc
+  self: cppdict thread_pool highfive
+  main: tst/eq/core/data/lattice/check_amr_junctions.cpp
+
+- name: measure_junction_ghost_error
+  inc: inc
+  self: cppdict thread_pool highfive
+  main: tst/eq/core/data/lattice/measure_junction_ghost_error.cpp
+
+- name: cppdict
+  sub: cppdict&tpp/cppdict(https://github.com/LaboratoryOfPlasmaPhysics/cppdict)
+  inc: tpp/cppdict/include
+
+- name: thread_pool
+  sub: bto&tpp/bto(https://github.com/bshoshany/thread-pool)
+  inc: tpp/bto/include
+
+- name: highfive
+  sub: h5&tpp/highfive(https://github.com/highfive-devs/highfive)
+  inc: tpp/highfive/include
+  lib: hdf5
+
+- name: phlop
+  sub: phlop&tpp/phlop(https://github.com/PhilipDeegan/phlop)
+  inc: tpp/phlop/inc
+
+- name: floater
+  sub: mppp&tpp/mppp(https://github.com/bluescarni/mppp)
+  main: floater.cpp
+  inc: tpp/mppp/include
+  src: tpp/mppp/src
+
+- name: clang.tidy
+  src: src
+  self: lattice_deps
+  mod:
+  - name: clang.tidy
+    version: master
+    arg:
+        link:
+            args: -DArg       #(optional, default="")
+            checks: CSV       #(optional, default="", see: [link](https://clang.llvm.org/extra/clang-tidy/checks/list.html))
+            config: file      #(optional, default='.clang-tidy')
+            types: cpp:cxx:cc #(optional, default=cpp:cxx:cc)

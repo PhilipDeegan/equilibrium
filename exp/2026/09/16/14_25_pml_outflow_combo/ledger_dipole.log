@@ -1,0 +1,35 @@
+[outflow/dipole] N=5521 R=10.0 r_ring=0.00 dt=5.1282e-03 n_steps=18468 t_round_trip=6.314 energy_ic=2.5884e+03 shell_r0=6.00 n_shell_cells=4310 shell_energy_ic=1.0182e+02 n_center_cells=15
+[outflow/dipole] energy at each round trip (t, whole/IC, shell/shell_IC):
+  round_trip= 1  t=  6.313  whole_frac=1.1259e-01  shell_frac=1.0952e+00
+  round_trip= 2  t= 12.621  whole_frac=5.4810e-03  shell_frac=7.3303e-02
+  round_trip= 3  t= 18.954  whole_frac=3.5383e-04  shell_frac=6.5206e-03
+  round_trip= 4  t= 25.262  whole_frac=2.2337e-04  shell_frac=4.9298e-03
+  round_trip= 5  t= 31.569  whole_frac=1.9124e-04  shell_frac=3.8328e-03
+  round_trip= 6  t= 37.877  whole_frac=1.8667e-04  shell_frac=3.7991e-03
+  round_trip= 7  t= 44.210  whole_frac=1.8675e-04  shell_frac=3.8025e-03
+  round_trip= 8  t= 50.518  whole_frac=1.8650e-04  shell_frac=3.7943e-03
+  round_trip= 9  t= 56.826  whole_frac=1.8645e-04  shell_frac=3.7942e-03
+  round_trip=10  t= 63.133  whole_frac=1.8645e-04  shell_frac=3.7941e-03
+  round_trip=11  t= 69.467  whole_frac=1.8644e-04  shell_frac=3.7940e-03
+  round_trip=12  t= 75.774  whole_frac=1.8644e-04  shell_frac=3.7940e-03
+  round_trip=13  t= 82.082  whole_frac=1.8644e-04  shell_frac=3.7940e-03
+  round_trip=14  t= 88.390  whole_frac=1.8644e-04  shell_frac=3.7940e-03
+  round_trip=15  t= 94.708  whole_frac=1.8644e-04  shell_frac=3.7940e-03
+[outflow_ledger/dipole] N=5521 R=10.0 r_ring=0.00 dt=5.1282e-03 n_steps=18468 t_round_trip=6.314 energy_ic=2.5884e+03 shell_r0=6.00 n_shell_cells=4310 shell_energy_ic=1.0182e+02 n_center_cells=15
+[outflow_ledger/dipole] energy at each round trip (t, whole/IC, shell/shell_IC):
+  round_trip= 1  t=  6.313  whole_frac=1.1259e-01  shell_frac=1.0952e+00
+  round_trip= 2  t= 12.621  whole_frac=5.4810e-03  shell_frac=7.3303e-02
+  round_trip= 3  t= 18.954  whole_frac=3.5383e-04  shell_frac=6.5206e-03
+  round_trip= 4  t= 25.262  whole_frac=2.2337e-04  shell_frac=4.9298e-03
+  round_trip= 5  t= 31.569  whole_frac=1.9124e-04  shell_frac=3.8328e-03
+  round_trip= 6  t= 37.877  whole_frac=1.8667e-04  shell_frac=3.7991e-03
+  round_trip= 7  t= 44.210  whole_frac=1.8675e-04  shell_frac=3.8025e-03
+  round_trip= 8  t= 50.518  whole_frac=1.8650e-04  shell_frac=3.7943e-03
+  round_trip= 9  t= 56.826  whole_frac=1.8645e-04  shell_frac=3.7942e-03
+  round_trip=10  t= 63.133  whole_frac=1.8645e-04  shell_frac=3.7941e-03
+  round_trip=11  t= 69.467  whole_frac=1.8644e-04  shell_frac=3.7940e-03
+  round_trip=12  t= 75.774  whole_frac=1.8644e-04  shell_frac=3.7940e-03
+  round_trip=13  t= 82.082  whole_frac=1.8644e-04  shell_frac=3.7940e-03
+  round_trip=14  t= 88.390  whole_frac=1.8644e-04  shell_frac=3.7940e-03
+  round_trip=15  t= 94.708  whole_frac=1.8644e-04  shell_frac=3.7940e-03
+saved exp/2026/09/16/14_25_pml_outflow_combo/ledger_dipole_dipole_energy_vs_t.png

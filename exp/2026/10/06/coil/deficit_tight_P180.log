@@ -1,0 +1,45 @@
+springbox_N1_S1_q1_a10_r30_xi3.9_m0.8_P180_z0_wxi_rc_par t 16000: rc 37.4 zc +8.7 coil core 8990 axis core 1488 floor/cell -1.98e-02
+   D  interior      3267  strands     33387  near     23455  outer     -1345  axis         0  floor     -3012  | total 55752
+   E  interior      95.2  strands     951.3  near     690.4  outer     636.0  axis       0.0  floor      48.8  | total 2421.7
+   structure (interior + strands + near): D 60109  E 1736.9  E/D 0.0289
+   census off-structure (rho < 0.6, >= 10 cells): 1 pieces, D 2826, E 86.3
+     cells   4358 min rho 0.00 D     2826 E    86.3 at rho_cyl   11.2 z-zc  -12.1
+springbox_N2_S1_q1_a10_r30_xi3.9_m0.8_P180_z0_wxi_rc_par t 16000: rc 31.6 zc +6.7 coil core 11533 axis core 0 floor/cell -9.45e-03
+   D  interior      4512  strands     39477  near     17266  outer      2429  axis         0  floor     -1621  | total 62063
+   E  interior     150.5  strands    1327.4  near     626.8  outer     379.7  axis       0.0  floor      50.8  | total 2535.2
+   structure (interior + strands + near): D 61255  E 2104.7  E/D 0.0344
+springbox_N3_S1_q1_a10_r30_xi3.9_m0.8_P180_z0_wxi_rc_par t 16000: rc 31.3 zc +6.8 coil core 12730 axis core 0 floor/cell -1.32e-02
+   D  interior      4773  strands     43084  near     17888  outer      6773  axis         0  floor     -2289  | total 70229
+   E  interior     177.7  strands    1442.4  near     601.7  outer     446.3  axis       0.0  floor      71.3  | total 2739.4
+   structure (interior + strands + near): D 65745  E 2221.8  E/D 0.0338
+springbox_N4_S1_q1_a10_r30_xi3.9_m0.8_P180_z0_wxi_rc_par t 16000: rc 29.3 zc +7.0 coil core 8533 axis core 0 floor/cell +5.73e-02
+   D  interior      9600  strands     30485  near     10093  outer     16724  axis         0  floor     10683  | total 77586
+   E  interior     352.5  strands    1227.8  near     579.9  outer     727.6  axis       0.0  floor     141.8  | total 3029.6
+   structure (interior + strands + near): D 50179  E 2160.2  E/D 0.0431
+   census off-structure (rho < 0.6, >= 10 cells): 3 pieces, D 459, E 0.9
+     cells    881 min rho 0.41 D      408 E     0.8 at rho_cyl   69.7 z-zc  +25.0
+     cells     62 min rho 0.57 D       26 E     0.0 at rho_cyl   50.8 z-zc  -23.9
+     cells     61 min rho 0.57 D       25 E     0.0 at rho_cyl   50.9 z-zc  -24.0
+springbox_N5_S1_q1_a10_r30_xi3.9_m0.8_P180_z0_wxi_rc_par t 16000: rc 29.0 zc +7.7 coil core 10267 axis core 0 floor/cell +2.53e-02
+   D  interior     10205  strands     37158  near     16746  outer     17727  axis         0  floor      4754  | total 86590
+   E  interior     303.2  strands    1254.4  near     679.6  outer     947.6  axis       0.0  floor     195.5  | total 3380.4
+   structure (interior + strands + near): D 64109  E 2237.2  E/D 0.0349
+   census off-structure (rho < 0.6, >= 10 cells): 5 pieces, D 58, E 0.3
+     cells     53 min rho 0.56 D       22 E     0.1 at rho_cyl   69.6 z-zc  +37.1
+     cells     36 min rho 0.52 D       15 E     0.1 at rho_cyl   53.4 z-zc   +9.7
+     cells     19 min rho 0.57 D        8 E     0.0 at rho_cyl   56.5 z-zc  +22.1
+     cells     17 min rho 0.57 D        7 E     0.0 at rho_cyl   59.3 z-zc  -35.3
+     cells     14 min rho 0.58 D        6 E     0.1 at rho_cyl   63.1 z-zc  -18.7
+springbox_N6_S1_q1_a10_r30_xi3.9_m0.8_P180_z0_wxi_rc_par t 16000: rc 28.9 zc +8.0 coil core 10172 axis core 0 floor/cell +3.97e-02
+   D  interior     10232  strands     36498  near     11027  outer     28788  axis         0  floor      7519  | total 94065
+   E  interior     317.3  strands    1279.1  near     765.0  outer    1176.5  axis       0.0  floor     250.4  | total 3788.3
+   structure (interior + strands + near): D 57757  E 2361.3  E/D 0.0409
+   census off-structure (rho < 0.6, >= 10 cells): 8 pieces, D 194, E 1.0
+     cells    180 min rho 0.52 D       77 E     0.2 at rho_cyl   71.7 z-zc  +22.5
+     cells    109 min rho 0.55 D       46 E     0.3 at rho_cyl    2.8 z-zc  -14.7
+     cells     36 min rho 0.54 D       15 E     0.1 at rho_cyl   59.2 z-zc   -3.1
+     cells     35 min rho 0.54 D       15 E     0.1 at rho_cyl   59.2 z-zc   -3.1
+     cells     33 min rho 0.56 D       14 E     0.1 at rho_cyl   64.2 z-zc   -9.4
+     cells     29 min rho 0.56 D       12 E     0.1 at rho_cyl   64.2 z-zc   -9.6
+     cells     19 min rho 0.57 D        8 E     0.0 at rho_cyl   53.7 z-zc  +29.1
+     cells     17 min rho 0.57 D        7 E     0.0 at rho_cyl   53.7 z-zc  +29.1

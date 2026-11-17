@@ -1,0 +1,3 @@
+springcpp_N8_S1_q1_a20_r60_xi3.9_m0.8_R125_z0_wxi_rc_par t 18000: core-weighted ring radius rc 60.6, zc +3.9, core cells 36476
+  shell R 70.3 (95185 cells): fitted loop q +1 rl 53.0 zl +2.6; rms phase 0.716, rms residual 0.527; rl = rc fixed: residual 0.558
+  shell R 79.7 (123760 cells): fitted loop q +1 rl 46.6 zl +1.0; rms phase 0.373, rms residual 0.228; rl = rc fixed: residual 0.320

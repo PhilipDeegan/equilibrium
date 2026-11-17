@@ -1,0 +1,19 @@
+springcpp_N30_S1_q1_a10_r120_xi3.9_m0.8_R200_z0_wxi_rc_par: N_cells=43529223 build+seed 248s; g 0.0082 xi 3.90; strand pitch (toroidal advance per turn) 25.1 cells at r0, inner-side turn spacing 23.0
+  t 0: core cells 41676, minor radius 10.1, helix phase -0.000, winding centre circle -30.00, meridional -1.00, centre (rho, z) (120.0, +0.0), D_near 350473 D_core 234035, frame shift +0.0
+  t 500: core cells 73552, minor radius 8.7, helix phase -1.831, winding centre circle -30.00, meridional -1.00, centre (rho, z) (121.1, +2.0), D_near 294889 D_core 204540, frame shift +0.0
+  t 1000: core cells 70090, minor radius 8.8, helix phase +2.401, winding centre circle -30.00, meridional -1.00, centre (rho, z) (123.4, +0.3), D_near 266227 D_core 199895, frame shift +2.3
+  t 1500: core cells 69568, minor radius 8.7, helix phase +0.223, winding centre circle -30.00, meridional -1.00, centre (rho, z) (123.6, +0.4), D_near 274861 D_core 202600, frame shift +2.3
+  t 2000: core cells 68902, minor radius 8.8, helix phase -1.896, winding centre circle -30.00, meridional -1.00, centre (rho, z) (122.3, +1.1), D_near 273685 D_core 201679, frame shift +2.3
+  t 2500: core cells 67010, minor radius 8.9, helix phase +2.445, winding centre circle -30.00, meridional -1.00, centre (rho, z) (120.8, +2.3), D_near 265999 D_core 195511, frame shift +3.5
+  t 3000: core cells 66468, minor radius 8.9, helix phase +0.580, winding centre circle -30.00, meridional -1.00, centre (rho, z) (120.7, +3.0), D_near 261416 D_core 193729, frame shift +5.8
+  t 3500: core cells 74472, minor radius 20.6, helix phase -1.513, winding centre circle +0.00, meridional -1.00, centre (rho, z) (112.2, +4.6), D_near 251899 D_core 155391, frame shift +9.2
+  t 4000: core cells 73330, minor radius 14.6, helix phase +2.851, winding centre circle -30.00, meridional -1.00, centre (rho, z) (117.3, -1.4), D_near 270399 D_core 191095, frame shift +13.9
+  t 4500: core cells 74598, minor radius 16.9, helix phase +0.777, winding centre circle -30.00, meridional -1.00, centre (rho, z) (114.8, -0.7), D_near 266060 D_core 180133, frame shift +12.7
+  t 5000: core cells 69410, minor radius 12.9, helix phase -1.236, winding centre circle -30.00, meridional -1.00, centre (rho, z) (117.4, +0.9), D_near 269487 D_core 187971, frame shift +11.5
+  t 5500: core cells 70818, minor radius 12.7, helix phase +3.136, winding centre circle -30.00, meridional -1.00, centre (rho, z) (117.6, +1.5), D_near 284166 D_core 199639, frame shift +12.7
+  t 6000: core cells 72736, minor radius 12.5, helix phase +1.201, winding centre circle -30.00, meridional -1.00, centre (rho, z) (118.4, +2.2), D_near 300215 D_core 207221, frame shift +13.9
+  t 6500: core cells 75112, minor radius 13.5, helix phase -0.837, winding centre circle -30.00, meridional -1.00, centre (rho, z) (118.7, +0.2), D_near 303025 D_core 204573, frame shift +16.2
+  t 7000: core cells 72923, minor radius 14.1, helix phase -2.969, winding centre circle -26.00, meridional -1.00, centre (rho, z) (118.8, -0.1), D_near 285310 D_core 193987, frame shift +16.2
+  t 7500: core cells 72170, minor radius 15.0, helix phase +1.120, winding centre circle -16.00, meridional -1.00, centre (rho, z) (118.4, +0.3), D_near 272899 D_core 184056, frame shift +16.2
+  t 8000: core cells 70914, minor radius 16.1, helix phase -1.122, winding centre circle -16.00, meridional -1.00, centre (rho, z) (117.9, +1.9), D_near 261192 D_core 173717, frame shift +16.2
+  8000 ticks in 3868s

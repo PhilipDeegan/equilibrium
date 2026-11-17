@@ -1,0 +1,14 @@
+base (u,phi) wave: wavelength=9.238 v_phase=3.6212 dt=0.005128
+
+=== stage 1: fine c2 sweep, 1500 steps each ===
+c2= 0.500: blew_up=False gap_final=  -6.678 full_slope= -0.5734  (727.8s)
+c2= 0.550: blew_up=False gap_final=  -3.882 full_slope= -0.4914  (726.8s)
+c2= 0.600: blew_up=False gap_final=  -2.163 full_slope= -0.3980  (711.4s)
+c2= 0.650: blew_up=False gap_final=  -2.554 full_slope= -0.3440  (748.9s)
+c2= 0.700: blew_up=False gap_final=  -2.375 full_slope= -0.3126  (766.8s)
+c2= 0.750: blew_up=False gap_final=  -2.099 full_slope= -0.2893  (739.1s)
+c2= 0.800: blew_up=False gap_final=  -3.113 full_slope= -0.2992  (858.6s)
+c2= 0.850: blew_up=False gap_final=  -3.555 full_slope= -0.3189  (744.3s)
+c2= 0.900: blew_up=False gap_final=  -2.932 full_slope= -0.3234  (735.1s)
+c2= 0.950: blew_up=False gap_final=  -2.976 full_slope= -0.3204  (265.2s)
+c2= 1.000: blew_up=False gap_final=  -3.077 full_slope= -0.3116  (575.6s)

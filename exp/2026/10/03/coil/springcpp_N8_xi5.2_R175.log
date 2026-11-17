@@ -1,0 +1,2 @@
+springcpp_N8_S1_q1_a26.6667_r80_xi5.2_m0.8_R175_z0_wxi_rcres: N_cells=29160823 build+seed 1735s; g 0.0046 xi 5.20; strand pitch (toroidal advance per turn) 62.8 cells at r0, inner-side turn spacing 41.9
+  t 0: core cells 51220, minor radius 26.7, helix phase -0.000, winding centre circle -8.00, meridional -1.00, centre (rho, z) (80.6, +0.0), D_near 525273 D_core 380146, frame shift +0.0

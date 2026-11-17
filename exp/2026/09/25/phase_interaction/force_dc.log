@@ -1,0 +1,6 @@
+w=0.0 k=0.0000 s=1.5 R=40.0
+d=  3.0 kd= 0.00  F_like=+2.7552e-04  point ref=+6.6315e-04  ref w/ form factor=+6.6315e-04  -> like REPEL
+d=  4.5 kd= 0.00  F_like=+2.2845e-04  point ref=+2.9473e-04  ref w/ form factor=+2.9473e-04  -> like REPEL
+d=  6.0 kd= 0.00  F_like=+1.5612e-04  point ref=+1.6579e-04  ref w/ form factor=+1.6579e-04  -> like REPEL
+d=  9.0 kd= 0.00  F_like=+7.0862e-05  point ref=+7.3683e-05  ref w/ form factor=+7.3683e-05  -> like REPEL
+d= 12.0 kd= 0.00  F_like=+3.8091e-05  point ref=+4.1447e-05  ref w/ form factor=+4.1447e-05  -> like REPEL

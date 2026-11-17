@@ -1,0 +1,8 @@
+P 278 N 5371238 side 160.50 h 0.5774
+R  40.0: E  23874.185  E / 2piR  94.992  dE/dR * h  409.841  (73 s)
+   full-hop check: cyl sign -1, E(disc+cyl) - E(disc at z+h) +0.000e+00
+   z-ring moved z (commensurate)      spread   53.488  / (dE/dR h)  0.131  / E 2.24e-03  per length 0.2128  [-0.00 -18.65 -1.46 +19.54 +25.45 -6.22 +20.52 +34.84]  (339 s)
+   z-ring moved x (in-plane)          spread   16.147  / (dE/dR h)  0.039  / E 6.76e-04  per length 0.0642  [-0.00 +10.00 +1.18 +13.35 +16.15 +5.11 +14.98 +14.22]  (519 s)
+   tilted ring moved along normal     spread   64.065  / (dE/dR h)  0.156  / E 2.68e-03  per length 0.2549  [+67.12 +54.11 +37.15 +56.43 +69.64 +90.96 +101.21 +84.10]  (710 s)
+   tilted ring moved lateral          spread   54.820  / (dE/dR h)  0.134  / E 2.30e-03  per length 0.2181  [+67.12 +56.36 +62.04 +86.85 +85.65 +99.69 +111.18 +67.98]  (893 s)
+   z-ring kinked hop (alpha 0..2pi)   spread   31.829  / (dE/dR h)  0.078  / E 1.33e-03  per length 0.1266  [-0.00 +2.65 -2.43 +0.06 +11.09 +20.48 +27.30 +29.40 +25.45]  (1130 s)

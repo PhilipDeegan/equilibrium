@@ -1,0 +1,5 @@
+A row: antisym 2.552e+00  late change 3.60e-04  slope[2,8.6] -1.4243  apparent charge in sponge-edge shells -1.1642e+04  source cell div 1.2076e+04
+A face: antisym 0.000e+00  late change 8.79e-03  slope[2,8.6] -0.0002  apparent charge in sponge-edge shells -2.3088e+03  source cell div 2.3090e+03
+A face-row: max |du| interior 9.821e-01 (rel 9.821e-01)
+B row: interior energy at t=15.6: 1.544e-02 of initial (reference 1.766e-10); antisym 8.517e-04
+B face: interior energy at t=15.6: 4.727e-02 of initial (reference 1.766e-10); antisym 0.000e+00

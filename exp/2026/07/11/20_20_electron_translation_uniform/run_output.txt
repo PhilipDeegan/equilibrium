@@ -1,0 +1,73 @@
+Sat 11 Jul 2026 20:27:07 CEST
+=== electron ring: cross=0.01 ===
+N=43599  dt=5.1282e-03  ring_axis=z  ring size=8
+max|u|=0.000e+00  max|phi|=1.000e+00
+       0  base  com=( +2.3094, +0.0000, +0.0000)  mass=3.0237e+00  spread=  1.4142  phi_rms=5.120e-03  rad_cum=+0.000e+00
+    1000  base  com=( +2.2965, +0.0000, -0.0000)  mass=2.9470e+00  spread=  2.8076  phi_rms=4.188e-03  rad_cum=+1.579e-05
+    2000  kick  com=( +0.0497, -0.0000, +0.0010)  mass=1.0874e+02  spread= 14.3721  phi_rms=4.316e-03  rad_cum=+9.151e-04
+    3000  kick  com=( +0.0254, -0.0000, +0.0108)  mass=1.7978e+02  spread= 14.2461  phi_rms=5.274e-03  rad_cum=+5.083e-03
+    4000  kick  com=( +0.0166, -0.0000, +0.0194)  mass=2.3084e+02  spread= 14.1630  phi_rms=6.259e-03  rad_cum=+1.250e-02
+    5000  kick  com=( +0.0118, -0.0000, +0.0278)  mass=2.6902e+02  spread= 14.1142  phi_rms=7.102e-03  rad_cum=+2.274e-02
+    6000  kick  com=( +0.0088, -0.0000, +0.0359)  mass=2.9825e+02  spread= 14.0846  phi_rms=7.794e-03  rad_cum=+3.545e-02
+    7000  kick  com=( +0.0067, -0.0000, +0.0437)  mass=3.2115e+02  spread= 14.0670  phi_rms=8.361e-03  rad_cum=+5.037e-02
+    8000 coast  com=( +0.0067, -0.0000, +0.0427)  mass=2.4205e+02  spread= 14.6003  phi_rms=6.044e-03  rad_cum=+3.874e-02
+    9000 coast  com=( +0.0105, -0.0000, +0.0023)  mass=1.7042e+02  spread= 14.3031  phi_rms=4.361e-03  rad_cum=+1.463e-02
+   10000 coast  com=( +0.0335, +0.0000, -0.0218)  mass=5.4617e+01  spread= 14.5504  phi_rms=1.607e-03  rad_cum=-5.087e-03
+   11000 coast  com=( +0.0145, +0.0000, -0.0065)  mass=9.9790e+01  spread= 14.3031  phi_rms=2.582e-03  rad_cum=-1.197e-02
+
+-> v_base=+0.000e+00  v_kick=+1.545e-03  v_coast=+2.993e-03  d_kick=+0.0437  mobility v/g=+3.090e+00  mass_frac=33.0025  spread_frac=10.1138  radiated/mass0=-3.960e-03
+data saved -> /tmp/claude-1000/-home-p-git-eq/9e0aed34-29e0-4647-a61c-2a737cf29e54/scratchpad/electron_uniform_s0.01.npz
+=== electron ring: cross=0.03 ===
+N=43599  dt=5.1282e-03  ring_axis=z  ring size=8
+max|u|=0.000e+00  max|phi|=1.000e+00
+       0  base  com=( +2.3094, +0.0000, +0.0000)  mass=3.0237e+00  spread=  1.4142  phi_rms=5.120e-03  rad_cum=+0.000e+00
+    1000  base  com=( +2.2759, +0.0000, +0.0000)  mass=2.5817e+00  spread=  3.9992  phi_rms=2.863e-03  rad_cum=+4.383e-05
+    2000  kick  com=( +0.0388, -0.0000, +0.0103)  mass=8.3635e+01  spread= 14.4646  phi_rms=2.606e-03  rad_cum=+2.381e-03
+    3000  kick  com=( +0.0166, -0.0000, +0.0352)  mass=1.1578e+02  spread= 14.4069  phi_rms=3.007e-03  rad_cum=+1.134e-02
+    4000  kick  com=( +0.0082, -0.0000, +0.0562)  mass=1.3167e+02  spread= 14.3912  phi_rms=3.321e-03  rad_cum=+2.543e-02
+    5000  kick  com=( +0.0038, -0.0000, +0.0774)  mass=1.4128e+02  spread= 14.3991  phi_rms=3.554e-03  rad_cum=+4.351e-02
+    6000  kick  com=( +0.0014, -0.0000, +0.0997)  mass=1.4793e+02  spread= 14.4165  phi_rms=3.739e-03  rad_cum=+6.502e-02
+    7000  kick  com=( -0.0000, -0.0000, +0.1250)  mass=1.5298e+02  spread= 14.4381  phi_rms=3.894e-03  rad_cum=+8.963e-02
+    8000 coast  com=( -0.0012, -0.0000, +0.1481)  mass=1.6897e+02  spread= 14.4467  phi_rms=4.125e-03  rad_cum=+6.795e-02
+    9000 coast  com=( -0.0000, -0.0000, +0.0679)  mass=1.1421e+02  spread= 14.2825  phi_rms=2.853e-03  rad_cum=+2.896e-02
+   10000 coast  com=( -0.0010, +0.0000, +0.1196)  mass=5.4948e+01  spread= 14.4501  phi_rms=1.395e-03  rad_cum=-5.410e-03
+   11000 coast  com=( -0.0008, -0.0000, +0.0945)  mass=6.2781e+01  spread= 14.3533  phi_rms=1.562e-03  rad_cum=-2.082e-02
+
+-> v_base=+0.000e+00  v_kick=+4.640e-03  v_coast=-4.888e-03  d_kick=+0.1250  mobility v/g=+9.281e+00  mass_frac=20.7629  spread_frac=10.1493  radiated/mass0=-6.885e-03
+data saved -> /tmp/claude-1000/-home-p-git-eq/9e0aed34-29e0-4647-a61c-2a737cf29e54/scratchpad/electron_uniform_s0.03.npz
+=== electron ring: cross=0.1 ===
+N=43599  dt=5.1282e-03  ring_axis=z  ring size=8
+max|u|=0.000e+00  max|phi|=1.000e+00
+       0  base  com=( +2.3094, +0.0000, +0.0000)  mass=3.0237e+00  spread=  1.4142  phi_rms=5.120e-03  rad_cum=+0.000e+00
+    1000  base  com=( +2.1856, +0.0000, +0.0000)  mass=1.2036e+00  spread=  5.7720  phi_rms=8.572e-04  rad_cum=+9.254e-05
+    2000  kick  com=( +0.0074, -0.0000, +0.0705)  mass=4.3846e+01  spread= 14.7591  phi_rms=1.063e-03  rad_cum=+5.115e-03
+    3000  kick  com=( -0.0006, -0.0000, +0.1463)  mass=5.0445e+01  spread= 14.8182  phi_rms=1.238e-03  rad_cum=+1.970e-02
+    4000  kick  com=( -0.0018, -0.0000, +0.2309)  mass=5.3650e+01  spread= 14.8852  phi_rms=1.354e-03  rad_cum=+4.102e-02
+    5000  kick  com=( -0.0021, -0.0000, +0.3124)  mass=5.5945e+01  spread= 14.9499  phi_rms=1.456e-03  rad_cum=+6.818e-02
+    6000  kick  com=( -0.0023, -0.0000, +0.3900)  mass=5.7867e+01  spread= 15.0065  phi_rms=1.556e-03  rad_cum=+1.007e-01
+    7000  kick  com=( -0.0025, -0.0000, +0.4645)  mass=5.9592e+01  spread= 15.0546  phi_rms=1.654e-03  rad_cum=+1.380e-01
+    8000 coast  com=( -0.0020, +0.0000, +0.4497)  mass=7.7687e+01  spread= 14.7365  phi_rms=1.848e-03  rad_cum=+1.048e-01
+    9000 coast  com=( -0.0014, +0.0000, +0.2985)  mass=6.0428e+01  spread= 14.5781  phi_rms=1.460e-03  rad_cum=+4.451e-02
+   10000 coast  com=( -0.0018, -0.0000, +0.3130)  mass=3.4099e+01  spread= 14.6398  phi_rms=8.350e-04  rad_cum=-6.205e-03
+   11000 coast  com=( -0.0022, -0.0000, +0.2974)  mass=2.1182e+01  spread= 14.8064  phi_rms=5.327e-04  rad_cum=-3.123e-02
+
+-> v_base=+0.000e+00  v_kick=+1.482e-02  v_coast=-3.035e-03  d_kick=+0.4645  mobility v/g=+2.964e+01  mass_frac=7.0053  spread_frac=10.4697  radiated/mass0=-1.033e-02
+data saved -> /tmp/claude-1000/-home-p-git-eq/9e0aed34-29e0-4647-a61c-2a737cf29e54/scratchpad/electron_uniform_s0.1.npz
+=== electron ring: cross=0.3 ===
+N=43599  dt=5.1282e-03  ring_axis=z  ring size=8
+max|u|=0.000e+00  max|phi|=1.000e+00
+       0  base  com=( +2.3094, +0.0000, +0.0000)  mass=3.0237e+00  spread=  1.4142  phi_rms=5.120e-03  rad_cum=+0.000e+00
+    1000  base  com=( +1.6742, -0.0002, -0.0000)  mass=1.3152e-01  spread=  8.9481  phi_rms=3.900e-05  rad_cum=+5.712e-05
+    2000  kick  com=( -0.0001, +0.0000, +0.2581)  mass=1.9120e+01  spread= 15.2118  phi_rms=4.662e-04  rad_cum=+6.334e-03
+    3000  kick  com=( -0.0001, +0.0000, +0.4611)  mass=2.1112e+01  spread= 15.3640  phi_rms=5.536e-04  rad_cum=+2.388e-02
+    4000  kick  com=( -0.0002, +0.0000, +0.6481)  mass=2.2492e+01  spread= 15.4412  phi_rms=6.318e-04  rad_cum=+4.987e-02
+    5000  kick  com=( -0.0002, +0.0000, +0.8256)  mass=2.3585e+01  spread= 15.4836  phi_rms=7.025e-04  rad_cum=+8.249e-02
+    6000  kick  com=( -0.0003, +0.0000, +0.9929)  mass=2.4491e+01  spread= 15.5084  phi_rms=7.666e-04  rad_cum=+1.203e-01
+    7000  kick  com=( -0.0003, +0.0000, +1.1498)  mass=2.5269e+01  spread= 15.5235  phi_rms=8.253e-04  rad_cum=+1.621e-01
+    8000 coast  com=( -0.0003, +0.0000, +1.0159)  mass=2.8699e+01  spread= 15.4087  phi_rms=6.869e-04  rad_cum=+1.194e-01
+    9000 coast  com=( -0.0002, +0.0000, +0.7894)  mass=2.3206e+01  spread= 15.1072  phi_rms=5.679e-04  rad_cum=+4.508e-02
+   10000 coast  com=( -0.0003, +0.0000, +0.8235)  mass=1.3753e+01  spread= 15.1566  phi_rms=3.634e-04  rad_cum=-6.753e-03
+   11000 coast  com=( -0.0003, +0.0000, +1.0939)  mass=7.1709e+00  spread= 15.4465  phi_rms=2.234e-04  rad_cum=-3.128e-02
+
+-> v_base=+0.000e+00  v_kick=+3.161e-02  v_coast=+5.274e-02  d_kick=+1.1498  mobility v/g=+6.322e+01  mass_frac=2.3716  spread_frac=10.9224  radiated/mass0=-1.035e-02
+data saved -> /tmp/claude-1000/-home-p-git-eq/9e0aed34-29e0-4647-a61c-2a737cf29e54/scratchpad/electron_uniform_s0.3.npz

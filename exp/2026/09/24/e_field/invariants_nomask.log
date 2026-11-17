@@ -1,0 +1,9 @@
+|u|0=9.6909
+step 600: H_T/H_T0=0.984195  (unmasked form 0.984195)  |u|=139.2153
+step 1200: H_T/H_T0=0.970212  (unmasked form 0.970212)  |u|=143.0111
+step 1800: H_T/H_T0=0.979317  (unmasked form 0.979317)  |u|=141.0371
+step 2400: H_T/H_T0=0.966770  (unmasked form 0.966770)  |u|=143.6554
+step 3000: H_T/H_T0=0.973496  (unmasked form 0.973496)  |u|=141.6378
+step 3600: H_T/H_T0=0.992651  (unmasked form 0.992651)  |u|=141.7113
+control: plain step() on the same IC
+step(): E/E0=1.000203 |u|=141.8951

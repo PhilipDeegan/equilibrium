@@ -1,0 +1,14 @@
+  seed: mean phase jump across face x +0.0003
+  seed: mean phase jump across face y -0.0005
+  seed: mean phase jump across face z -0.3850
+springbox_N2_S1_q1_a10_r30_xi3.9_m0.8_P220_z0_wxi_rc_par: N_cells=2662000 build+seed 5s; g 0.0082 xi 3.90; strand pitch (toroidal advance per turn) 94.2 cells at r0, inner-side turn spacing 62.8
+  t 0: core cells 4576, minor radius 10.0, helix phase -0.000, winding centre circle -2.00, meridional -1.00, centre (rho, z) (31.2, +0.0), D_near 49506 D_core 32874, frame shift +0.0
+  t 1000: core cells 11565, minor radius 9.7, helix phase +0.890, winding centre circle -2.00, meridional -1.00, centre (rho, z) (31.3, +6.1), D_near 56566 D_core 40084, frame shift +6.9
+  t 2000: core cells 11860, minor radius 10.2, helix phase +1.584, winding centre circle -2.00, meridional -1.00, centre (rho, z) (32.4, +6.4), D_near 60235 D_core 41800, frame shift +19.6
+  t 3000: core cells 12102, minor radius 10.2, helix phase +2.284, winding centre circle -2.00, meridional -1.00, centre (rho, z) (32.9, +7.1), D_near 59496 D_core 42352, frame shift +32.3
+  t 4000: core cells 11305, minor radius 9.5, helix phase +2.980, winding centre circle -2.00, meridional -1.00, centre (rho, z) (31.9, +6.2), D_near 56557 D_core 41862, frame shift +46.2
+  t 5000: core cells 11636, minor radius 9.6, helix phase -2.498, winding centre circle -2.00, meridional -1.00, centre (rho, z) (31.3, +6.2), D_near 58033 D_core 42139, frame shift +58.9
+  t 6000: core cells 11170, minor radius 10.1, helix phase -1.691, winding centre circle -2.00, meridional -1.00, centre (rho, z) (31.4, +6.3), D_near 58955 D_core 40667, frame shift +71.6
+  t 7000: core cells 11337, minor radius 10.5, helix phase -0.844, winding centre circle -2.00, meridional -1.00, centre (rho, z) (31.6, +6.9), D_near 55033 D_core 39679, frame shift +84.3
+  t 8000: core cells 11676, minor radius 10.1, helix phase -0.101, winding centre circle -2.00, meridional -1.00, centre (rho, z) (32.0, +6.7), D_near 60236 D_core 42597, frame shift +98.1
+  8000 ticks in 278s

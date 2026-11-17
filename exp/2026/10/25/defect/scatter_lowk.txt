@@ -1,0 +1,13 @@
+box 24x24x400 (460800 cells) packet z0 160 defect z 208 dt 0.05
+  k 0.125: 1768 steps, ETA 0.6 min
+RESULT k  0.12 w 24.0 cell S100  sigma_s 1.6144e-09  sigma_s * S^2 1.6144e-05
+RESULT k  0.12 w 24.0 pair S100  sigma_s 1.3313e-10  sigma_s * S^2 1.3313e-06
+  k 0.25: 1136 steps, ETA 0.4 min
+RESULT k  0.25 w 12.0 cell S100  sigma_s 1.2622e-08  sigma_s * S^2 1.2622e-04
+RESULT k  0.25 w 12.0 pair S100  sigma_s 5.8927e-10  sigma_s * S^2 5.8927e-06
+  k 0.5: 821 steps, ETA 0.3 min
+RESULT k  0.50 w  6.0 cell S100  sigma_s 2.1081e-07  sigma_s * S^2 2.1081e-03
+RESULT k  0.50 w  6.0 pair S100  sigma_s 3.4636e-08  sigma_s * S^2 3.4636e-04
+  k 1.0: 821 steps, ETA 0.3 min
+RESULT k  1.00 w  6.0 cell S100  sigma_s 2.4964e-06  sigma_s * S^2 2.4964e-02
+RESULT k  1.00 w  6.0 pair S100  sigma_s 1.0046e-06  sigma_s * S^2 1.0046e-02

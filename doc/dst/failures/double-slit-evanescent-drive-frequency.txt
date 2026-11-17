@@ -1,0 +1,18 @@
+CONTEXT: double_slit.py demo needs a continuously-driven quasi-monochromatic
+source so enough cycles reach the screen to form a fringe pattern (a single
+Gaussian pulse doesn't carry enough cycles).
+
+WHAT FAILED: first choice of drive period was period_steps=24 (omega~a much
+higher frequency). The wave decayed near the source instead of propagating
+to the backplate -- no fringe pattern could form.
+
+ROOT CAUSE: period_steps=24 put the drive frequency above the lattice's
+dispersion cutoff (omega_max ~ 12.5 for W_HEX=3/W_SQ=1). Above cutoff, modes
+are evanescent (spatially decaying, not propagating), not photon-like waves.
+
+LESSON: before choosing a drive period/frequency for any oscillator source
+on this lattice, check it against the dispersion cutoff omega_max for the
+weight configuration in use (W_HEX/W_SQ dependent) -- an evanescent choice
+looks like a near-field decay artefact, not an obviously-wrong number.
+Working default that stayed safely inside the propagating band:
+drive_period_steps=250 (omega~4.9, wavelength~4-5 cells).

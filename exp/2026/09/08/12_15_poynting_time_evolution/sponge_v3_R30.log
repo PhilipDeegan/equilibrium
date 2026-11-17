@@ -1,0 +1,33 @@
+[prod] N=147047 sponge_fraction=0.15 damp_max=0.003 r_inner=25.50 r_ring=5.16 dt=5.1282e-03 predicted_round_trip_t=12.86 (n_steps*dt=33.33)
+[prod] done, 261 log points
+[f15d01] N=147047 sponge_fraction=0.15 damp_max=0.01 r_inner=25.50 r_ring=5.16 dt=5.1282e-03 predicted_round_trip_t=12.86 (n_steps*dt=33.33)
+[f15d01] done, 261 log points
+[f15d03] N=147047 sponge_fraction=0.15 damp_max=0.03 r_inner=25.50 r_ring=5.16 dt=5.1282e-03 predicted_round_trip_t=12.86 (n_steps*dt=33.33)
+[f15d03] done, 261 log points
+[f35d003] N=147047 sponge_fraction=0.35 damp_max=0.003 r_inner=19.50 r_ring=5.16 dt=5.1282e-03 predicted_round_trip_t=9.06 (n_steps*dt=33.33)
+[f35d003] done, 261 log points
+[f35d01] N=147047 sponge_fraction=0.35 damp_max=0.01 r_inner=19.50 r_ring=5.16 dt=5.1282e-03 predicted_round_trip_t=9.06 (n_steps*dt=33.33)
+[f35d01] done, 261 log points
+[f35d05] N=147047 sponge_fraction=0.35 damp_max=0.05 r_inner=19.50 r_ring=5.16 dt=5.1282e-03 predicted_round_trip_t=9.06 (n_steps*dt=33.33)
+[f35d05] done, 261 log points
+
+=== late-time (last third of run) outer-shell |S| comparison across configs ===
+prod                 r=   8: mean=2.5888e-07 std=1.0056e-07 max=5.2850e-07
+prod                 r=  20: mean=1.1566e-08 std=5.5902e-09 max=2.6606e-08
+prod                 r=  24: mean=9.7286e-09 std=6.8705e-09 max=2.9054e-08
+f15d01               r=   8: mean=8.1750e-08 std=2.4998e-08 max=1.2935e-07
+f15d01               r=  20: mean=2.3249e-09 std=8.6862e-10 max=3.9937e-09
+f15d01               r=  24: mean=1.2631e-09 std=6.2510e-10 max=3.6268e-09
+f15d03               r=   8: mean=2.8148e-07 std=2.5640e-07 max=8.4089e-07
+f15d03               r=  20: mean=6.1505e-09 std=3.9473e-09 max=1.5554e-08
+f15d03               r=  24: mean=3.4928e-09 std=3.2279e-09 max=1.1338e-08
+f35d003              r=   8: mean=1.2607e-07 std=4.4876e-08 max=2.2341e-07
+f35d003              r=  20: mean=2.9771e-09 std=1.6217e-09 max=8.8132e-09
+f35d003              r=  24: mean=2.1223e-09 std=2.0868e-09 max=9.3659e-09
+f35d01               r=   8: mean=6.4183e-08 std=2.5303e-08 max=1.1601e-07
+f35d01               r=  20: mean=1.4422e-09 std=7.1476e-10 max=3.3651e-09
+f35d01               r=  24: mean=2.7427e-10 std=2.6018e-10 max=9.9755e-10
+f35d05               r=   8: mean=1.6390e-07 std=1.2014e-07 max=4.4273e-07
+f35d05               r=  20: mean=3.3109e-09 std=2.5993e-09 max=1.0528e-08
+f35d05               r=  24: mean=3.9259e-10 std=4.2410e-10 max=1.6967e-09
+done

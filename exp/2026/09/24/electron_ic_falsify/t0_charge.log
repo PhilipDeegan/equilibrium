@@ -1,0 +1,97 @@
+  init_electron_dipole_ic: scale=50.0  R_sph=1.0  sigma=None  r_axis=30.53  u_bg=0.0  inner_cells=680395/2784735  (24.4%)
+  divergence_clean: div_rms 7.0847e-02 → 6.7316e-10  (×9.50e-09)
+
+=== init_electron_dipole_ic
+    R_s          Q_u   Q_u/|.|        Q_phi Q_phi/|.|
+     10   0.0000e+00  0.00e+00   3.2401e-12  9.39e-16
+     20   0.0000e+00  0.00e+00   4.1922e-12  7.35e-16
+     30   0.0000e+00  0.00e+00   7.7307e-12  3.85e-16
+     40   0.0000e+00  0.00e+00   1.2960e-11  4.94e-16
+     55   0.0000e+00  0.00e+00   8.9244e-12  3.59e-16
+     65   0.0000e+00  0.00e+00  -3.9790e-12 -1.81e-16
+     75   0.0000e+00  0.00e+00   1.7963e-11  8.25e-16
+  init_electron_dipole_ic_vecpot: scale=50.0  R_sph=1.0  r_axis=30.53  u_bg=0.0  inner_cells=680395/2784735  (24.4%)
+  divergence_clean: div_rms 2.7641e-04 → 2.5593e-12  (×9.26e-09)
+
+=== init_electron_dipole_ic_vecpot
+    R_s          Q_u   Q_u/|.|        Q_phi Q_phi/|.|
+     10   0.0000e+00  0.00e+00  -1.3767e-14 -5.58e-18
+     20   0.0000e+00  0.00e+00   2.5047e-13  1.70e-17
+     30   0.0000e+00  0.00e+00  -2.3981e-13 -7.88e-18
+     40   0.0000e+00  0.00e+00  -6.3061e-13 -2.13e-17
+     55   0.0000e+00  0.00e+00  -2.0363e-17 -2.70e-17
+     65   0.0000e+00  0.00e+00  -1.8093e-18 -5.03e-18
+     75   0.0000e+00  0.00e+00  -4.3839e-17 -2.14e-16
+  init_spheromak_ic: scale=50.0  R_sph=1.0  sigma=None  inner_cells=680395/2784735  (24.4%)
+  [pre-store] phi_nonzero=680394  outer_nonzero_python=0  inner=680395  N=2784735
+  [post-store] outer_nonzero=0  max_r_with_phi=1.000 sph-u
+
+=== init_spheromak_ic
+    R_s          Q_u   Q_u/|.|        Q_phi Q_phi/|.|
+     10  -3.6347e+02 -8.62e-01  -1.4211e-14 -5.11e-18
+     20  -3.7908e+02 -5.52e-01   2.2737e-13  1.37e-17
+     30   1.6833e+03  8.92e-01  -4.5475e-13 -1.32e-17
+     40   5.4494e+03  9.95e-01  -1.1369e-12 -3.41e-17
+     55   0.0000e+00  0.00e+00   0.0000e+00  0.00e+00
+     65   0.0000e+00  0.00e+00   0.0000e+00  0.00e+00
+     75   0.0000e+00  0.00e+00   0.0000e+00  0.00e+00
+
+=== seed_dipole_ic
+    R_s          Q_u   Q_u/|.|        Q_phi Q_phi/|.|
+     10   0.0000e+00  0.00e+00   0.0000e+00  0.00e+00
+     20   1.4211e-14  1.53e-17  -2.2737e-13 -1.74e-17
+     30   0.0000e+00  0.00e+00  -5.6843e-14 -2.39e-18
+     40   5.6843e-14  1.56e-17  -4.5475e-13 -8.87e-18
+     55   0.0000e+00  0.00e+00   0.0000e+00  0.00e+00
+     65   0.0000e+00  0.00e+00   0.0000e+00  0.00e+00
+     75   0.0000e+00  0.00e+00   0.0000e+00  0.00e+00
+
+=== seed_curl_full_dipole_ic
+    R_s          Q_u   Q_u/|.|        Q_phi Q_phi/|.|
+     10   0.0000e+00  0.00e+00  -5.6843e-14 -9.06e-18
+     20   1.4211e-14  1.53e-17  -1.1369e-12 -5.49e-17
+     30   0.0000e+00  0.00e+00   1.5632e-13  3.66e-18
+     40   5.6843e-14  1.56e-17   9.0949e-13  1.43e-17
+     55   0.0000e+00  0.00e+00   0.0000e+00  0.00e+00
+     65   0.0000e+00  0.00e+00   0.0000e+00  0.00e+00
+     75   0.0000e+00  0.00e+00   0.0000e+00  0.00e+00
+
+=== seed_curl_full_pair
+    R_s          Q_u   Q_u/|.|        Q_phi Q_phi/|.|
+     10   0.0000e+00  0.00e+00   0.0000e+00  0.00e+00
+     20   0.0000e+00  0.00e+00   0.0000e+00  0.00e+00
+     30   0.0000e+00  0.00e+00   0.0000e+00  0.00e+00
+     40   0.0000e+00  0.00e+00   0.0000e+00  0.00e+00
+     55   0.0000e+00  0.00e+00   0.0000e+00  0.00e+00
+     65   0.0000e+00  0.00e+00   0.0000e+00  0.00e+00
+     75   0.0000e+00  0.00e+00   0.0000e+00  0.00e+00
+
+=== bare current loop, A.dl seeding
+    R_s          Q_u   Q_u/|.|        Q_phi Q_phi/|.|
+     10   0.0000e+00  0.00e+00   2.6645e-15  9.31e-18
+     20   0.0000e+00  0.00e+00   1.1324e-14  5.28e-18
+     30   0.0000e+00  0.00e+00  -1.6875e-13 -2.45e-17
+     40   0.0000e+00  0.00e+00  -9.8588e-14 -1.39e-17
+     55   0.0000e+00  0.00e+00   1.6587e-13  2.27e-17
+     65   0.0000e+00  0.00e+00  -1.5810e-13 -2.16e-17
+     75   0.0000e+00  0.00e+00   3.5527e-15  4.82e-19
+
+=== init_toroidal_winding (octagon hops=12)
+    R_s          Q_u   Q_u/|.|        Q_phi Q_phi/|.|
+     10   0.0000e+00  0.00e+00   0.0000e+00  0.00e+00
+     20   0.0000e+00  0.00e+00   0.0000e+00  0.00e+00
+     30   3.5083e-14  6.66e-17  -5.3291e-15 -1.20e-16
+     40   0.0000e+00  0.00e+00   0.0000e+00  0.00e+00
+     55   0.0000e+00  0.00e+00   0.0000e+00  0.00e+00
+     65   0.0000e+00  0.00e+00   0.0000e+00  0.00e+00
+     75   0.0000e+00  0.00e+00   0.0000e+00  0.00e+00
+
+=== VERDICT (net charge on enclosing shells R_s=65,75; |rel|<1e-6 => neutral)
+  init_electron_dipole_ic                                      max|rel|=8.25e-16 max|Q|=1.80e-11  NEUTRAL -> ruled out
+  init_electron_dipole_ic_vecpot                               max|rel|=2.14e-16 max|Q|=4.38e-17  NEUTRAL -> ruled out
+  init_spheromak_ic                                            max|rel|=0.00e+00 max|Q|=0.00e+00  NEUTRAL -> ruled out
+  seed_dipole_ic                                               max|rel|=0.00e+00 max|Q|=0.00e+00  NEUTRAL -> ruled out
+  seed_curl_full_dipole_ic                                     max|rel|=0.00e+00 max|Q|=0.00e+00  NEUTRAL -> ruled out
+  seed_curl_full_pair                                          max|rel|=0.00e+00 max|Q|=0.00e+00  NEUTRAL -> ruled out
+  bare current loop, A.dl seeding                              max|rel|=2.16e-17 max|Q|=1.58e-13  NEUTRAL -> ruled out
+  init_toroidal_winding (octagon hops=12)                      max|rel|=0.00e+00 max|Q|=0.00e+00  NEUTRAL -> ruled out

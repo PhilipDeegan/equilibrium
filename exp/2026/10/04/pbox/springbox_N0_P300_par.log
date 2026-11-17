@@ -1,0 +1,15 @@
+  seed: mean phase jump across face x +0.0000
+  seed: mean phase jump across face y +0.0000
+  seed: mean phase jump across face z +0.0000
+/home/p/git/eq/exp/2026/10/04/pbox/spring_box.py:123: RuntimeWarning: invalid value encountered in divide
+  w.seed(a0 * d / np.sqrt(d**2 + xi**2) * np.exp(1j * args.q * Om / 2))
+Traceback (most recent call last):
+  File "/home/p/git/eq/exp/2026/10/04/pbox/spring_box.py", line 126, in <module>
+    assert max(np.abs(P).max() for P in strands) + 3 * xi < side / 2
+           ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/p/git/eq/exp/2026/10/04/pbox/spring_box.py", line 126, in <genexpr>
+    assert max(np.abs(P).max() for P in strands) + 3 * xi < side / 2
+               ~~~~~~~~~~~~~^^
+  File "/opt/py/py/lib/python3.13/site-packages/numpy/_core/_methods.py", line 41, in _amax
+    return umr_maximum(a, axis, None, out, keepdims, initial, where)
+ValueError: zero-size array to reduction operation maximum which has no identity

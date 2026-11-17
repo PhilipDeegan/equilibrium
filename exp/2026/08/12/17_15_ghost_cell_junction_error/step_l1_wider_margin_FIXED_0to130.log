@@ -1,0 +1,666 @@
+H0 (from /bk/l1_wider_margin_active_ic220.h5)=4.462388e+06
+cross_scale=0.001
+loaded /bk/l1_wider_margin_active_ic220.h5 (resuming from absolute step 0) n_leaves=15542429 lam_max=2.333185e+00 lam_mean=2.871101e-01 t=17.2s peak_rss_GB=11.49
+dt=5.128205e-03
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=0.000000e+00 total_abs_scale=0.000000e+00 rel=0.000000e+00
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+step 1 step_time=6.5s H=4.459472e+06 H/H0=0.999346 H_by_level=[0.0, 4459471.557721298] peak_rss_GB=11.87
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=0.000000e+00 total_abs_scale=0.000000e+00 rel=0.000000e+00
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+step 2 step_time=6.6s H=4.456506e+06 H/H0=0.998682 H_by_level=[0.0, 4456506.379682445] peak_rss_GB=13.37
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=0.000000e+00 total_abs_scale=0.000000e+00 rel=0.000000e+00
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+step 3 step_time=6.5s H=4.453494e+06 H/H0=0.998007 H_by_level=[0.0, 4453493.864706351] peak_rss_GB=13.39
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=0.000000e+00 total_abs_scale=0.000000e+00 rel=0.000000e+00
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+step 4 step_time=6.6s H=4.450436e+06 H/H0=0.997321 H_by_level=[0.0, 4450435.580970778] peak_rss_GB=13.39
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=0.000000e+00 total_abs_scale=0.000000e+00 rel=0.000000e+00
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+step 5 step_time=6.6s H=4.447334e+06 H/H0=0.996626 H_by_level=[0.0, 4447333.605487971] peak_rss_GB=13.39
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=0.000000e+00 total_abs_scale=0.000000e+00 rel=0.000000e+00
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+step 6 step_time=6.7s H=4.444190e+06 H/H0=0.995922 H_by_level=[0.0, 4444190.49051582] peak_rss_GB=13.39
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=0.000000e+00 total_abs_scale=0.000000e+00 rel=0.000000e+00
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+step 7 step_time=6.6s H=4.441009e+06 H/H0=0.995209 H_by_level=[0.0, 4441009.22221504] peak_rss_GB=13.39
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=1.709790e-124 total_abs_scale=1.709790e-124 rel=1.000000e+00
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=1.709790e-124 abs_scale=1.709790e-124 rel=1.000000e+00
+step 8 step_time=6.7s H=4.437793e+06 H/H0=0.994488 H_by_level=[1.0368266266064866e-294, 4437793.172381829] peak_rss_GB=13.39
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=1.091340e-114 total_abs_scale=1.096243e-114 rel=9.955270e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=1.091340e-114 abs_scale=1.096243e-114 rel=9.955270e-01
+step 9 step_time=6.7s H=4.434546e+06 H/H0=0.993761 H_by_level=[6.192278326140425e-236, 4434546.044237766] peak_rss_GB=13.39
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=5.145859e-108 total_abs_scale=5.163711e-108 rel=9.965428e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=5.145859e-108 abs_scale=5.163711e-108 rel=9.965428e-01
+step 10 step_time=6.8s H=4.431272e+06 H/H0=0.993027 H_by_level=[3.6728336050507625e-223, 4431271.813288435] peak_rss_GB=13.39
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=1.719167e-104 total_abs_scale=1.770643e-104 rel=9.709279e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=1.719167e-104 abs_scale=1.770643e-104 rel=9.709279e-01
+step 11 step_time=6.8s H=4.427975e+06 H/H0=0.992288 H_by_level=[2.998482710072067e-214, 4427974.6644765] peak_rss_GB=13.39
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=1.177917e-101 total_abs_scale=1.265013e-101 rel=9.311495e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=1.177917e-101 abs_scale=1.265013e-101 rel=9.311495e-01
+step 12 step_time=6.8s H=4.424659e+06 H/H0=0.991545 H_by_level=[8.390419922240922e-208, 4424658.926810791] peak_rss_GB=13.39
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=3.133732e-99 total_abs_scale=3.540391e-99 rel=8.851372e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=3.133732e-99 abs_scale=3.540391e-99 rel=8.851372e-01
+step 13 step_time=6.8s H=4.421329e+06 H/H0=0.990799 H_by_level=[1.797979089400638e-202, 4421329.00674234] peak_rss_GB=13.39
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=4.306126e-97 total_abs_scale=5.140807e-97 rel=8.376361e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=4.306126e-97 abs_scale=5.140807e-97 rel=8.376361e-01
+step 14 step_time=6.8s H=4.417989e+06 H/H0=0.990050 H_by_level=[7.484443142215004e-198, 4417989.3215559935] peak_rss_GB=13.39
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=3.594065e-95 total_abs_scale=4.542083e-95 rel=7.912812e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=3.594065e-95 abs_scale=4.542083e-95 rel=7.912812e-01
+step 15 step_time=6.7s H=4.414644e+06 H/H0=0.989301 H_by_level=[9.582844060717386e-194, 4414644.234022035] peak_rss_GB=13.39
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=2.021908e-93 total_abs_scale=2.705219e-93 rel=7.474101e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=2.021908e-93 abs_scale=2.705219e-93 rel=7.474101e-01
+step 16 step_time=6.8s H=4.411298e+06 H/H0=0.988551 H_by_level=[4.960224298832967e-190, 4411297.989491647] peak_rss_GB=13.39
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=8.240021e-92 total_abs_scale=1.166148e-91 rel=7.066017e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=8.240021e-92 abs_scale=1.166148e-91 rel=7.066017e-01
+step 17 step_time=6.8s H=4.407955e+06 H/H0=0.987802 H_by_level=[1.2430641955298495e-186, 4407954.656580823] peak_rss_GB=13.39
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=2.564143e-90 total_abs_scale=3.832749e-90 rel=6.690090e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=2.564143e-90 abs_scale=3.832749e-90 rel=6.690090e-01
+step 18 step_time=6.8s H=4.404618e+06 H/H0=0.987054 H_by_level=[1.7128131622927545e-183, 4404618.072477304] peak_rss_GB=13.39
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=6.340641e-89 total_abs_scale=9.992236e-89 rel=6.345568e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=6.340641e-89 abs_scale=9.992236e-89 rel=6.345568e-01
+step 19 step_time=6.9s H=4.401292e+06 H/H0=0.986309 H_by_level=[1.4255875352459982e-180, 4401291.793772897] peak_rss_GB=13.39
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=1.285378e-87 total_abs_scale=2.131438e-87 rel=6.030569e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=1.285378e-87 abs_scale=2.131438e-87 rel=6.030569e-01
+step 20 step_time=6.8s H=4.397979e+06 H/H0=0.985566 H_by_level=[7.702364849046571e-178, 4397979.053586975] peak_rss_GB=13.39
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=2.190015e-86 total_abs_scale=3.813544e-86 rel=5.742729e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=2.190015e-86 abs_scale=3.813544e-86 rel=5.742729e-01
+step 21 step_time=6.8s H=4.394683e+06 H/H0=0.984827 H_by_level=[2.8590177558634534e-175, 4394682.725673512] peak_rss_GB=13.39
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=3.200256e-85 total_abs_scale=5.840349e-85 rel=5.479562e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=3.200256e-85 abs_scale=5.840349e-85 rel=5.479562e-01
+step 22 step_time=6.8s H=4.391405e+06 H/H0=0.984093 H_by_level=[7.630844054557894e-173, 4391405.295923038] peak_rss_GB=13.39
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=4.078733e-84 total_abs_scale=7.785851e-84 rel=5.238648e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=4.078733e-84 abs_scale=7.785851e-84 rel=5.238648e-01
+step 23 step_time=6.8s H=4.388149e+06 H/H0=0.983363 H_by_level=[1.5202171417619444e-170, 4388148.841613861] peak_rss_GB=13.39
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=4.598036e-83 total_abs_scale=9.163585e-83 rel=5.017726e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=4.598036e-83 abs_scale=9.163585e-83 rel=5.017726e-01
+step 24 step_time=7.0s H=4.384915e+06 H/H0=0.982639 H_by_level=[2.331814732204987e-168, 4384915.0185492635] peak_rss_GB=13.39
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=4.639810e-82 total_abs_scale=9.636686e-82 rel=4.814736e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=4.639810e-82 abs_scale=9.636686e-82 rel=4.814736e-01
+step 25 step_time=7.0s H=4.381705e+06 H/H0=0.981919 H_by_level=[2.826732740206788e-166, 4381705.05603976] peak_rss_GB=13.39
+[step_025] n_leaves=15542429 n_slice=148637 -> exp/2026/08/12/17_15_ghost_cell_junction_error/plots_fixed_rerun/xz_step_025.png
+step 25 plotted exp/2026/08/12/17_15_ghost_cell_junction_error/plots_fixed_rerun/xz_step_025.png plot_time=3.9s
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=4.233888e-81 total_abs_scale=9.148764e-81 rel=4.627825e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=4.233888e-81 abs_scale=9.148764e-81 rel=4.627825e-01
+step 26 step_time=6.8s H=4.378520e+06 H/H0=0.981205 H_by_level=[2.7690813658981586e-164, 4378519.759585685] peak_rss_GB=13.56
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=3.524651e-80 total_abs_scale=7.911074e-80 rel=4.455338e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=3.524651e-80 abs_scale=7.911074e-80 rel=4.455338e-01
+step 27 step_time=6.8s H=4.375360e+06 H/H0=0.980497 H_by_level=[2.2343240281170155e-162, 4375359.520892732] peak_rss_GB=13.56
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=2.697497e-79 total_abs_scale=6.279368e-79 rel=4.295809e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=2.697497e-79 abs_scale=6.279368e-79 rel=4.295809e-01
+step 28 step_time=6.8s H=4.372224e+06 H/H0=0.979795 H_by_level=[1.5097594877835603e-160, 4372224.334776028] peak_rss_GB=13.56
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=1.910699e-78 total_abs_scale=4.606381e-78 rel=4.147940e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=1.910699e-78 abs_scale=4.606381e-78 rel=4.147940e-01
+step 29 step_time=7.1s H=4.369114e+06 H/H0=0.979098 H_by_level=[8.667604694771276e-159, 4369113.822320846] peak_rss_GB=13.56
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=1.260038e-77 total_abs_scale=3.141783e-77 rel=4.010582e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=1.260038e-77 abs_scale=3.141783e-77 rel=4.010582e-01
+step 30 step_time=6.8s H=4.366027e+06 H/H0=0.978406 H_by_level=[4.2819151372437324e-157, 4366027.259634115] peak_rss_GB=13.56
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=7.777077e-77 total_abs_scale=2.002997e-76 rel=3.882719e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=7.777077e-77 abs_scale=2.002997e-76 rel=3.882719e-01
+step 31 step_time=7.2s H=4.362964e+06 H/H0=0.977719 H_by_level=[1.84078548507352e-155, 4362963.611361987] peak_rss_GB=13.56
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=4.513613e-76 total_abs_scale=1.199327e-75 rel=3.763453e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=4.513613e-76 abs_scale=1.199327e-75 rel=3.763453e-01
+step 32 step_time=6.8s H=4.359922e+06 H/H0=0.977038 H_by_level=[6.955544431686616e-154, 4359921.568121099] peak_rss_GB=13.56
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=2.473591e-75 total_abs_scale=6.773273e-75 rel=3.651988e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=2.473591e-75 abs_scale=6.773273e-75 rel=3.651988e-01
+step 33 step_time=6.8s H=4.356900e+06 H/H0=0.976360 H_by_level=[2.3307510983689034e-152, 4356899.586927804] peak_rss_GB=13.56
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=1.284884e-74 total_abs_scale=3.621825e-74 rel=3.547615e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=1.284884e-74 abs_scale=3.621825e-74 rel=3.547615e-01
+step 34 step_time=6.8s H=4.353896e+06 H/H0=0.975687 H_by_level=[6.981902706983218e-151, 4353895.933710839] peak_rss_GB=13.56
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=6.347607e-74 total_abs_scale=1.840043e-73 rel=3.449707e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=6.347607e-74 abs_scale=1.840043e-73 rel=3.449707e-01
+step 35 step_time=6.8s H=4.350909e+06 H/H0=0.975018 H_by_level=[1.883203122742043e-149, 4350908.726943311] peak_rss_GB=13.56
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=2.991608e-73 total_abs_scale=8.909688e-73 rel=3.357703e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=2.991608e-73 abs_scale=8.909688e-73 rel=3.357703e-01
+step 36 step_time=6.8s H=4.347936e+06 H/H0=0.974352 H_by_level=[4.603617213668042e-148, 4347935.981492628] peak_rss_GB=13.56
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=1.348853e-72 total_abs_scale=4.123542e-72 rel=3.271103e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=1.348853e-72 abs_scale=4.123542e-72 rel=3.271103e-01
+step 37 step_time=6.7s H=4.344976e+06 H/H0=0.973688 H_by_level=[1.0260098779167217e-146, 4344975.651811825] peak_rss_GB=13.56
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=5.833095e-72 total_abs_scale=1.828866e-71 rel=3.189459e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=5.833095e-72 abs_scale=1.828866e-71 rel=3.189459e-01
+step 38 step_time=6.8s H=4.342026e+06 H/H0=0.973027 H_by_level=[2.0960229115518168e-145, 4342025.6736227935] peak_rss_GB=13.56
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=2.425060e-71 total_abs_scale=7.791679e-71 rel=3.112371e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=2.425060e-71 abs_scale=7.791679e-71 rel=3.112371e-01
+step 39 step_time=6.7s H=4.339084e+06 H/H0=0.972368 H_by_level=[3.944316375633914e-144, 4339084.003369484] peak_rss_GB=13.56
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=9.713259e-71 total_abs_scale=3.195701e-70 rel=3.039477e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=9.713259e-71 abs_scale=3.195701e-70 rel=3.039477e-01
+step 40 step_time=6.7s H=4.336149e+06 H/H0=0.971710 H_by_level=[6.868123807447042e-143, 4336148.65473232] peak_rss_GB=13.56
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=3.755621e-70 total_abs_scale=1.264327e-69 rel=2.970452e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=3.755621e-70 abs_scale=1.264327e-69 rel=2.970452e-01
+step 41 step_time=6.7s H=4.333218e+06 H/H0=0.971053 H_by_level=[1.1112064519724348e-141, 4333217.731680908] peak_rss_GB=13.56
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=1.404303e-69 total_abs_scale=4.834085e-69 rel=2.905003e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=1.404303e-69 abs_scale=4.834085e-69 rel=2.905003e-01
+step 42 step_time=6.8s H=4.330289e+06 H/H0=0.970397 H_by_level=[1.6768669506202142e-140, 4330289.457544314] peak_rss_GB=13.56
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=5.086630e-69 total_abs_scale=1.789261e-68 rel=2.842866e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=5.086630e-69 abs_scale=1.789261e-68 rel=2.842866e-01
+step 43 step_time=6.8s H=4.327362e+06 H/H0=0.969741 H_by_level=[2.368529642769438e-139, 4327362.1997668855] peak_rss_GB=13.56
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=1.787570e-68 total_abs_scale=6.421333e-68 rel=2.783800e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=1.787570e-68 abs_scale=6.421333e-68 rel=2.783800e-01
+step 44 step_time=6.8s H=4.324434e+06 H/H0=0.969085 H_by_level=[3.1415916977258257e-138, 4324434.490112289] peak_rss_GB=13.56
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=6.103581e-68 total_abs_scale=2.237723e-67 rel=2.727586e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=6.103581e-68 abs_scale=2.237723e-67 rel=2.727586e-01
+step 45 step_time=6.8s H=4.321505e+06 H/H0=0.968429 H_by_level=[3.924842144306127e-137, 4321505.040150554] peak_rss_GB=13.56
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=2.027568e-67 total_abs_scale=7.582452e-67 rel=2.674026e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=2.027568e-67 abs_scale=7.582452e-67 rel=2.674026e-01
+step 46 step_time=6.8s H=4.318573e+06 H/H0=0.967772 H_by_level=[4.6314128344458005e-136, 4318572.752017278] peak_rss_GB=13.56
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=6.561083e-67 total_abs_scale=2.501423e-66 rel=2.622940e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=6.561083e-67 abs_scale=2.501423e-66 rel=2.622940e-01
+step 47 step_time=6.8s H=4.315637e+06 H/H0=0.967114 H_by_level=[5.1755462611365746e-135, 4315636.724530551] peak_rss_GB=13.56
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=2.070567e-66 total_abs_scale=8.043656e-66 rel=2.574161e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=2.070567e-66 abs_scale=8.043656e-66 rel=2.574161e-01
+step 48 step_time=6.8s H=4.312696e+06 H/H0=0.966455 H_by_level=[5.490423552572776e-134, 4312696.254830727] peak_rss_GB=13.56
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=6.379510e-66 total_abs_scale=2.523999e-65 rel=2.527540e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=6.379510e-66 abs_scale=2.523999e-65 rel=2.527540e-01
+step 49 step_time=6.8s H=4.309751e+06 H/H0=0.965795 H_by_level=[5.541762321334617e-133, 4309750.83578511] peak_rss_GB=13.56
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=1.920924e-65 total_abs_scale=7.736497e-65 rel=2.482938e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=1.920924e-65 abs_scale=7.736497e-65 rel=2.482938e-01
+step 50 step_time=6.8s H=4.306800e+06 H/H0=0.965133 H_by_level=[5.3333953767177866e-132, 4306800.149542692] peak_rss_GB=13.56
+[step_050] n_leaves=15542429 n_slice=148637 -> exp/2026/08/12/17_15_ghost_cell_junction_error/plots_fixed_rerun/xz_step_050.png
+step 50 plotted exp/2026/08/12/17_15_ghost_cell_junction_error/plots_fixed_rerun/xz_step_050.png plot_time=3.8s
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=5.658096e-65 total_abs_scale=2.318677e-64 rel=2.440226e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=5.658096e-65 abs_scale=2.318677e-64 rel=2.440226e-01
+step 51 step_time=6.8s H=4.303844e+06 H/H0=0.964471 H_by_level=[4.903841422732711e-131, 4303844.057572764] peak_rss_GB=13.57
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=1.631756e-64 total_abs_scale=6.800993e-64 rel=2.399290e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=1.631756e-64 abs_scale=6.800993e-64 rel=2.399290e-01
+step 52 step_time=6.7s H=4.300883e+06 H/H0=0.963807 H_by_level=[4.315738094715404e-130, 4300882.587709355] peak_rss_GB=13.57
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=4.611351e-64 total_abs_scale=1.953945e-63 rel=2.360021e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=4.611351e-64 abs_scale=1.953945e-63 rel=2.360021e-01
+step 53 step_time=6.7s H=4.297916e+06 H/H0=0.963143 H_by_level=[3.6418309641172886e-129, 4297915.918624901] peak_rss_GB=13.57
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=1.278003e-63 total_abs_scale=5.503130e-63 rel=2.322320e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=1.278003e-63 abs_scale=5.503130e-63 rel=2.322320e-01
+step 54 step_time=6.8s H=4.294944e+06 H/H0=0.962477 H_by_level=[2.9515165565098003e-128, 4294944.36230587] peak_rss_GB=13.57
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=3.476069e-63 total_abs_scale=1.520527e-62 rel=2.286095e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=3.476069e-63 abs_scale=1.520527e-62 rel=2.286095e-01
+step 55 step_time=6.8s H=4.291968e+06 H/H0=0.961810 H_by_level=[2.3009349093750357e-127, 4291968.345002252] peak_rss_GB=13.57
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=9.285430e-63 total_abs_scale=4.124543e-62 rel=2.251263e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=9.285430e-63 abs_scale=4.124543e-62 rel=2.251263e-01
+step 56 step_time=6.8s H=4.288988e+06 H/H0=0.961142 H_by_level=[1.7279512702883092e-126, 4288988.387211165] peak_rss_GB=13.57
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=2.437584e-62 total_abs_scale=1.099128e-61 rel=2.217744e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=2.437584e-62 abs_scale=1.099128e-61 rel=2.217744e-01
+step 57 step_time=6.8s H=4.286005e+06 H/H0=0.960473 H_by_level=[1.2517725548188866e-125, 4286005.083188134] peak_rss_GB=13.57
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=6.292636e-62 total_abs_scale=2.879312e-61 rel=2.185465e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=6.292636e-62 abs_scale=2.879312e-61 rel=2.185465e-01
+step 58 step_time=6.8s H=4.283019e+06 H/H0=0.959804 H_by_level=[8.75894604299489e-125, 4283019.080459835] peak_rss_GB=13.57
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=1.598371e-61 total_abs_scale=7.419239e-61 rel=2.154360e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=1.598371e-61 abs_scale=7.419239e-61 rel=2.154360e-01
+step 59 step_time=6.8s H=4.280031e+06 H/H0=0.959135 H_by_level=[5.9271492366660344e-124, 4280031.059823541] peak_rss_GB=13.57
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=3.997037e-61 total_abs_scale=1.881520e-60 rel=2.124366e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=3.997037e-61 abs_scale=1.881520e-60 rel=2.124366e-01
+step 60 step_time=6.8s H=4.277042e+06 H/H0=0.958465 H_by_level=[3.883417782309455e-123, 4277041.716189556] peak_rss_GB=13.57
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=9.845656e-61 total_abs_scale=4.698646e-60 rel=2.095424e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=9.845656e-61 abs_scale=4.698646e-60 rel=2.095424e-01
+step 61 step_time=6.7s H=4.274052e+06 H/H0=0.957795 H_by_level=[2.4662483931702686e-122, 4274051.740686717] peak_rss_GB=13.57
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=2.390099e-60 total_abs_scale=1.156045e-59 rel=2.067479e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=2.390099e-60 abs_scale=1.156045e-59 rel=2.067479e-01
+step 62 step_time=6.7s H=4.271062e+06 H/H0=0.957125 H_by_level=[1.5197408522097766e-121, 4271061.804283743] peak_rss_GB=13.57
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=5.720842e-60 total_abs_scale=2.803672e-59 rel=2.040482e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=5.720842e-60 abs_scale=2.803672e-59 rel=2.040482e-01
+step 63 step_time=6.8s H=4.268073e+06 H/H0=0.956455 H_by_level=[9.095883501319041e-121, 4268072.543217988] peak_rss_GB=13.57
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=1.350748e-59 total_abs_scale=6.705513e-59 rel=2.014385e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=1.350748e-59 abs_scale=6.705513e-59 rel=2.014385e-01
+step 64 step_time=6.8s H=4.265085e+06 H/H0=0.955785 H_by_level=[5.2926604588689094e-120, 4265084.546396771] peak_rss_GB=13.57
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=3.147367e-59 total_abs_scale=1.582273e-58 rel=1.989142e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=3.147367e-59 abs_scale=1.582273e-58 rel=1.989142e-01
+step 65 step_time=6.8s H=4.262098e+06 H/H0=0.955116 H_by_level=[2.9967332882246574e-119, 4262098.344928364] peak_rss_GB=13.57
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=7.240325e-59 total_abs_scale=3.685181e-58 rel=1.964714e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=7.240325e-59 abs_scale=3.685181e-58 rel=1.964714e-01
+step 66 step_time=6.7s H=4.259114e+06 H/H0=0.954447 H_by_level=[1.652492253521008e-118, 4259114.40382959] peak_rss_GB=13.57
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=1.645043e-58 total_abs_scale=8.474971e-58 rel=1.941060e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=1.645043e-58 abs_scale=8.474971e-58 rel=1.941060e-01
+step 67 step_time=6.8s H=4.256133e+06 H/H0=0.953779 H_by_level=[8.881838101211433e-118, 4256133.115965451] peak_rss_GB=13.57
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=3.692902e-58 total_abs_scale=1.925246e-57 rel=1.918146e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=3.692902e-58 abs_scale=1.925246e-57 rel=1.918146e-01
+step 68 step_time=6.9s H=4.253155e+06 H/H0=0.953112 H_by_level=[4.656683013585654e-117, 4253154.798162952] peak_rss_GB=13.57
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=8.193799e-58 total_abs_scale=4.321772e-57 rel=1.895935e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=8.193799e-58 abs_scale=4.321772e-57 rel=1.895935e-01
+step 69 step_time=6.8s H=4.250180e+06 H/H0=0.952445 H_by_level=[2.3833276952315747e-116, 4250179.68945261] peak_rss_GB=13.57
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=1.797539e-57 total_abs_scale=9.589958e-57 rel=1.874397e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=1.797539e-57 abs_scale=9.589958e-57 rel=1.874397e-01
+step 70 step_time=7.2s H=4.247208e+06 H/H0=0.951779 H_by_level=[1.191605306103264e-115, 4247207.951283167] peak_rss_GB=13.57
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=3.900217e-57 total_abs_scale=2.104244e-56 rel=1.853501e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=3.900217e-57 abs_scale=2.104244e-56 rel=1.853501e-01
+step 71 step_time=7.4s H=4.244240e+06 H/H0=0.951114 H_by_level=[5.8239459799737665e-115, 4244239.669596216] peak_rss_GB=13.57
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=8.372451e-57 total_abs_scale=4.567079e-56 rel=1.833218e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=8.372451e-57 abs_scale=4.567079e-56 rel=1.833218e-01
+step 72 step_time=7.2s H=4.241275e+06 H/H0=0.950450 H_by_level=[2.7843272399726615e-114, 4241274.858536856] peak_rss_GB=13.57
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=1.778689e-56 total_abs_scale=9.807924e-56 rel=1.813522e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=1.778689e-56 abs_scale=9.807924e-56 rel=1.813522e-01
+step 73 step_time=7.1s H=4.238313e+06 H/H0=0.949786 H_by_level=[1.3028994640964647e-113, 4238313.465641787] peak_rss_GB=13.57
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=3.740721e-56 total_abs_scale=2.084678e-55 rel=1.794388e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=3.740721e-56 abs_scale=2.084678e-55 rel=1.794388e-01
+step 74 step_time=7.0s H=4.235355e+06 H/H0=0.949123 H_by_level=[5.97100524173388e-113, 4235355.378240127] peak_rss_GB=13.57
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=7.790015e-56 total_abs_scale=4.386786e-55 rel=1.775791e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=7.790015e-56 abs_scale=4.386786e-55 rel=1.775791e-01
+step 75 step_time=6.8s H=4.232400e+06 H/H0=0.948461 H_by_level=[2.6814972136095947e-112, 4232400.430856907] peak_rss_GB=13.57
+[step_075] n_leaves=15542429 n_slice=148637 -> exp/2026/08/12/17_15_ghost_cell_junction_error/plots_fixed_rerun/xz_step_075.png
+step 75 plotted exp/2026/08/12/17_15_ghost_cell_junction_error/plots_fixed_rerun/xz_step_075.png plot_time=3.8s
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=1.606805e-55 total_abs_scale=9.141475e-55 rel=1.757709e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=1.606805e-55 abs_scale=9.141475e-55 rel=1.757709e-01
+step 76 step_time=6.9s H=4.229448e+06 H/H0=0.947799 H_by_level=[1.1806952990458624e-111, 4229448.413376401] peak_rss_GB=13.58
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=3.283525e-55 total_abs_scale=1.886952e-54 rel=1.740121e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=3.283525e-55 abs_scale=1.886952e-54 rel=1.740121e-01
+step 77 step_time=6.8s H=4.226499e+06 H/H0=0.947138 H_by_level=[5.099839401684967e-111, 4226499.079723631] peak_rss_GB=13.58
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=6.649285e-55 total_abs_scale=3.859116e-54 rel=1.723007e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=6.649285e-55 abs_scale=3.859116e-54 rel=1.723007e-01
+step 78 step_time=6.8s H=4.223552e+06 H/H0=0.946478 H_by_level=[2.1619807435964692e-110, 4223552.15684592] peak_rss_GB=13.58
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=1.334654e-54 total_abs_scale=7.821697e-54 rel=1.706348e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=1.334654e-54 abs_scale=7.821697e-54 rel=1.706348e-01
+step 79 step_time=6.8s H=4.220607e+06 H/H0=0.945818 H_by_level=[8.999816091859098e-110, 4220607.353764378] peak_rss_GB=13.58
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=2.655942e-54 total_abs_scale=1.571447e-53 rel=1.690125e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=2.655942e-54 abs_scale=1.571447e-53 rel=1.690125e-01
+step 80 step_time=6.8s H=4.217664e+06 H/H0=0.945159 H_by_level=[3.680472628020805e-109, 4217664.370480785] peak_rss_GB=13.58
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=5.241058e-54 total_abs_scale=3.130258e-53 rel=1.674322e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=5.241058e-54 abs_scale=3.130258e-53 rel=1.674322e-01
+step 81 step_time=6.8s H=4.214723e+06 H/H0=0.944499 H_by_level=[1.4792977072580181e-108, 4214722.906584043] peak_rss_GB=13.58
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=1.025793e-53 total_abs_scale=6.183496e-53 rel=1.658921e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=1.025793e-53 abs_scale=6.183496e-53 rel=1.658921e-01
+step 82 step_time=6.8s H=4.211783e+06 H/H0=0.943840 H_by_level=[5.8462332225525114e-108, 4211782.669351018] peak_rss_GB=13.58
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=1.991719e-53 total_abs_scale=1.211575e-52 rel=1.643909e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=1.991719e-53 abs_scale=1.211575e-52 rel=1.643909e-01
+step 83 step_time=6.8s H=4.208843e+06 H/H0=0.943182 H_by_level=[2.2727139718069326e-107, 4208843.381208488] peak_rss_GB=13.58
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=3.837138e-53 total_abs_scale=2.355127e-52 rel=1.629270e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=3.837138e-53 abs_scale=2.355127e-52 rel=1.629270e-01
+step 84 step_time=6.8s H=4.205905e+06 H/H0=0.942523 H_by_level=[8.694295700930867e-107, 4205904.786459364] peak_rss_GB=13.58
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=7.336324e-53 total_abs_scale=4.542644e-52 rel=1.614990e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=7.336324e-53 abs_scale=4.542644e-52 rel=1.614990e-01
+step 85 step_time=6.8s H=4.202967e+06 H/H0=0.941865 H_by_level=[3.2742480683091975e-106, 4202966.6571184555] peak_rss_GB=13.58
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=1.392256e-52 total_abs_scale=8.695858e-52 rel=1.601056e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=1.392256e-52 abs_scale=8.695858e-52 rel=1.601056e-01
+step 86 step_time=6.8s H=4.200029e+06 H/H0=0.941206 H_by_level=[1.214330372889461e-105, 4200028.797859206] peak_rss_GB=13.58
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=2.623035e-52 total_abs_scale=1.652351e-51 rel=1.587456e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=2.623035e-52 abs_scale=1.652351e-51 rel=1.587456e-01
+step 87 step_time=6.8s H=4.197091e+06 H/H0=0.940548 H_by_level=[4.436751179756646e-105, 4197091.049944552] peak_rss_GB=13.58
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=4.906886e-52 total_abs_scale=3.117112e-51 rel=1.574177e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=4.906886e-52 abs_scale=3.117112e-51 rel=1.574177e-01
+step 88 step_time=6.7s H=4.194153e+06 H/H0=0.939890 H_by_level=[1.597517441202491e-104, 4194153.2941729743] peak_rss_GB=13.58
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=9.115798e-52 total_abs_scale=5.838938e-51 rel=1.561208e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=9.115798e-52 abs_scale=5.838938e-51 rel=1.561208e-01
+step 89 step_time=6.8s H=4.191215e+06 H/H0=0.939231 H_by_level=[5.670516873028524e-104, 4191215.452799423] peak_rss_GB=13.58
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=1.682045e-51 total_abs_scale=1.086214e-50 rel=1.548539e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=1.682045e-51 abs_scale=1.086214e-50 rel=1.548539e-01
+step 90 step_time=6.9s H=4.188277e+06 H/H0=0.938573 H_by_level=[1.9848853126454474e-103, 4188277.4904717356] peak_rss_GB=13.58
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=3.083188e-51 total_abs_scale=2.007078e-50 rel=1.536158e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=3.083188e-51 abs_scale=2.007078e-50 rel=1.536158e-01
+step 91 step_time=6.8s H=4.185339e+06 H/H0=0.937915 H_by_level=[6.853594744835594e-103, 4185339.4142006855] peak_rss_GB=13.58
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=5.614938e-51 total_abs_scale=3.684209e-50 rel=1.524055e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=5.614938e-51 abs_scale=3.684209e-50 rel=1.524055e-01
+step 92 step_time=6.8s H=4.182401e+06 H/H0=0.937256 H_by_level=[2.3350793283196577e-102, 4182401.2724186275] peak_rss_GB=13.58
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=1.016093e-50 total_abs_scale=6.719204e-50 rel=1.512222e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=1.016093e-50 abs_scale=6.719204e-50 rel=1.512222e-01
+step 93 step_time=6.8s H=4.179463e+06 H/H0=0.936598 H_by_level=[7.852550598330563e-102, 4179463.1532006236] peak_rss_GB=13.58
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=1.827361e-50 total_abs_scale=1.217714e-49 rel=1.500649e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=1.827361e-50 abs_scale=1.217714e-49 rel=1.500649e-01
+step 94 step_time=6.8s H=4.176525e+06 H/H0=0.935939 H_by_level=[2.6071575807647076e-101, 4176525.1817227146] peak_rss_GB=13.58
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=3.266440e-50 total_abs_scale=2.193231e-49 rel=1.489328e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=3.266440e-50 abs_scale=2.193231e-49 rel=1.489328e-01
+step 95 step_time=6.8s H=4.173588e+06 H/H0=0.935281 H_by_level=[8.548479176982669e-101, 4173587.517044965] peak_rss_GB=13.58
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=5.804166e-50 total_abs_scale=3.926377e-49 rel=1.478250e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=5.804166e-50 abs_scale=3.926377e-49 rel=1.478250e-01
+step 96 step_time=6.8s H=4.170650e+06 H/H0=0.934623 H_by_level=[2.768785467257892e-100, 4170650.3483205587] peak_rss_GB=13.58
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=1.025353e-49 total_abs_scale=6.987512e-49 rel=1.467408e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=1.025353e-49 abs_scale=6.987512e-49 rel=1.467408e-01
+step 97 step_time=6.8s H=4.167714e+06 H/H0=0.933965 H_by_level=[8.860920695603776e-100, 4167713.8905432876] peak_rss_GB=13.58
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=1.801055e-49 total_abs_scale=1.236315e-48 rel=1.456793e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=1.801055e-49 abs_scale=1.236315e-48 rel=1.456793e-01
+step 98 step_time=6.9s H=4.164778e+06 H/H0=0.933307 H_by_level=[2.802620221661787e-99, 4164778.3799189175] peak_rss_GB=13.58
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=3.145944e-49 total_abs_scale=2.175017e-48 rel=1.446400e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=3.145944e-49 abs_scale=2.175017e-48 rel=1.446400e-01
+step 99 step_time=6.8s H=4.161844e+06 H/H0=0.932649 H_by_level=[8.762922333911676e-99, 4161844.069005102] peak_rss_GB=13.58
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=5.465049e-49 total_abs_scale=3.805162e-48 rel=1.436220e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=5.465049e-49 abs_scale=3.805162e-48 rel=1.436220e-01
+step 100 step_time=6.9s H=4.158911e+06 H/H0=0.931992 H_by_level=[2.7091512908692767e-98, 4158911.221691335] peak_rss_GB=13.58
+[step_100] n_leaves=15542429 n_slice=148637 -> exp/2026/08/12/17_15_ghost_cell_junction_error/plots_fixed_rerun/xz_step_100.png
+step 100 plotted exp/2026/08/12/17_15_ghost_cell_junction_error/plots_fixed_rerun/xz_step_100.png plot_time=3.7s
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=9.442858e-49 total_abs_scale=6.620773e-48 rel=1.426247e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=9.442858e-49 abs_scale=6.620773e-48 rel=1.426247e-01
+step 101 step_time=6.8s H=4.155980e+06 H/H0=0.931335 H_by_level=[8.283509382456478e-98, 4155980.108167562] peak_rss_GB=13.59
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=1.623024e-48 total_abs_scale=1.145819e-47 rel=1.416475e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=1.623024e-48 abs_scale=1.145819e-47 rel=1.416475e-01
+step 102 step_time=6.9s H=4.153051e+06 H/H0=0.930679 H_by_level=[2.505454953065586e-97, 4153050.9999397174] peak_rss_GB=13.59
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=2.775256e-48 total_abs_scale=1.972607e-47 rel=1.406898e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=2.775256e-48 abs_scale=1.972607e-47 rel=1.406898e-01
+step 103 step_time=6.8s H=4.150124e+06 H/H0=0.930023 H_by_level=[7.497931193020395e-97, 4150124.165033311] peak_rss_GB=13.59
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=4.721511e-48 total_abs_scale=3.378519e-47 rel=1.397509e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=4.721511e-48 abs_scale=3.378519e-47 rel=1.397509e-01
+step 104 step_time=6.9s H=4.147200e+06 H/H0=0.929368 H_by_level=[2.2205866872669576e-96, 4147199.863450479] peak_rss_GB=13.59
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=7.992829e-48 total_abs_scale=5.757264e-47 rel=1.388303e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=7.992829e-48 abs_scale=5.757264e-47 rel=1.388303e-01
+step 105 step_time=6.8s H=4.144278e+06 H/H0=0.928713 H_by_level=[6.509560411531809e-96, 4144278.342956192] peak_rss_GB=13.59
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=1.346488e-47 total_abs_scale=9.762283e-47 rel=1.379275e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=1.346488e-47 abs_scale=9.762283e-47 rel=1.379275e-01
+step 106 step_time=6.8s H=4.141360e+06 H/H0=0.928059 H_by_level=[1.8891958067313425e-95, 4141359.8352998383] peak_rss_GB=13.59
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=2.257492e-47 total_abs_scale=1.647299e-46 rel=1.370420e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=2.257492e-47 abs_scale=1.647299e-46 rel=1.370420e-01
+step 107 step_time=6.8s H=4.138445e+06 H/H0=0.927406 H_by_level=[5.429064561667511e-95, 4138444.552882248] peak_rss_GB=13.59
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=3.767127e-47 total_abs_scale=2.766424e-46 rel=1.361732e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=3.767127e-47 abs_scale=2.766424e-46 rel=1.361732e-01
+step 108 step_time=6.8s H=4.135533e+06 H/H0=0.926753 H_by_level=[1.5451647875678312e-94, 4135532.6859729267] peak_rss_GB=13.59
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=6.257372e-47 total_abs_scale=4.624109e-46 rel=1.353206e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=6.257372e-47 abs_scale=4.624109e-46 rel=1.353206e-01
+step 109 step_time=6.8s H=4.132624e+06 H/H0=0.926101 H_by_level=[4.356153645628882e-94, 4132624.400449016] peak_rss_GB=13.59
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=1.034684e-46 total_abs_scale=7.693743e-46 rel=1.344838e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=1.034684e-46 abs_scale=7.693743e-46 rel=1.344838e-01
+step 110 step_time=6.8s H=4.129720e+06 H/H0=0.925451 H_by_level=[1.216703797787088e-93, 4129719.8361596116] peak_rss_GB=13.59
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=1.703306e-46 total_abs_scale=1.274335e-45 rel=1.336624e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=1.703306e-46 abs_scale=1.274335e-45 rel=1.336624e-01
+step 111 step_time=6.8s H=4.126819e+06 H/H0=0.924801 H_by_level=[3.3673826581968035e-93, 4126819.1058327444] peak_rss_GB=13.59
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=2.791782e-46 total_abs_scale=2.101361e-45 rel=1.328559e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=2.791782e-46 abs_scale=2.101361e-45 rel=1.328559e-01
+step 112 step_time=6.8s H=4.123922e+06 H/H0=0.924151 H_by_level=[9.236271286967408e-93, 4123922.2946102205] peak_rss_GB=13.59
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=4.556249e-46 total_abs_scale=3.450033e-45 rel=1.320639e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=4.556249e-46 abs_scale=3.450033e-45 rel=1.320639e-01
+step 113 step_time=6.8s H=4.121029e+06 H/H0=0.923503 H_by_level=[2.511113003121981e-92, 4121029.4601286734] peak_rss_GB=13.59
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=7.404624e-46 total_abs_scale=5.640072e-45 rel=1.312860e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=7.404624e-46 abs_scale=5.640072e-45 rel=1.312860e-01
+step 114 step_time=6.8s H=4.118141e+06 H/H0=0.922856 H_by_level=[6.768121229896459e-92, 4118140.633156889] peak_rss_GB=13.59
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=1.198395e-45 total_abs_scale=9.181572e-45 rel=1.305218e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=1.198395e-45 abs_scale=9.181572e-45 rel=1.305218e-01
+step 115 step_time=6.9s H=4.115256e+06 H/H0=0.922209 H_by_level=[1.8087038190096695e-91, 4115255.8187306314] peak_rss_GB=13.59
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=1.931653e-45 total_abs_scale=1.488510e-44 rel=1.297709e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=1.931653e-45 abs_scale=1.488510e-44 rel=1.297709e-01
+step 116 step_time=6.8s H=4.112375e+06 H/H0=0.921564 H_by_level=[4.793223577374027e-91, 4112374.997763926] peak_rss_GB=13.59
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=3.101135e-45 total_abs_scale=2.403366e-44 rel=1.290330e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=3.101135e-45 abs_scale=2.403366e-44 rel=1.290330e-01
+step 117 step_time=6.8s H=4.109498e+06 H/H0=0.920919 H_by_level=[1.2598261704113168e-90, 4109498.12903006] peak_rss_GB=13.59
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=4.959110e-45 total_abs_scale=3.865012e-44 rel=1.283078e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=4.959110e-45 abs_scale=3.865012e-44 rel=1.283078e-01
+step 118 step_time=6.8s H=4.106625e+06 H/H0=0.920275 H_by_level=[3.284554586391158e-90, 4106625.1515020905] peak_rss_GB=13.59
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=7.899634e-45 total_abs_scale=6.191186e-44 rel=1.275948e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=7.899634e-45 abs_scale=6.191186e-44 rel=1.275948e-01
+step 119 step_time=6.8s H=4.103756e+06 H/H0=0.919632 H_by_level=[8.495402051125843e-90, 4103755.986942557] peak_rss_GB=13.59
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=1.253598e-44 total_abs_scale=9.879101e-44 rel=1.268939e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=1.253598e-44 abs_scale=9.879101e-44 rel=1.268939e-01
+step 120 step_time=6.8s H=4.100891e+06 H/H0=0.918990 H_by_level=[2.1801690854024483e-89, 4100890.5426946706] peak_rss_GB=13.59
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=1.981912e-44 total_abs_scale=1.570396e-43 rel=1.262046e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=1.981912e-44 abs_scale=1.570396e-43 rel=1.262046e-01
+step 121 step_time=6.8s H=4.098029e+06 H/H0=0.918349 H_by_level=[5.5520192402285044e-89, 4098028.7145713177] peak_rss_GB=13.59
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=3.121851e-44 total_abs_scale=2.487001e-43 rel=1.255268e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=3.121851e-44 abs_scale=2.487001e-43 rel=1.255268e-01
+step 122 step_time=6.8s H=4.095170e+06 H/H0=0.917708 H_by_level=[1.403203521188178e-88, 4095170.3897958742] peak_rss_GB=13.59
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=4.899676e-44 total_abs_scale=3.924136e-43 rel=1.248600e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=4.899676e-44 abs_scale=3.924136e-43 rel=1.248600e-01
+step 123 step_time=6.8s H=4.092315e+06 H/H0=0.917068 H_by_level=[3.520078270199393e-88, 4092315.44988309] peak_rss_GB=13.59
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=7.662581e-44 total_abs_scale=6.169350e-43 rel=1.242040e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=7.662581e-44 abs_scale=6.169350e-43 rel=1.242040e-01
+step 124 step_time=6.8s H=4.089464e+06 H/H0=0.916429 H_by_level=[8.765923239549258e-88, 4089463.773438187] peak_rss_GB=13.59
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=1.194153e-43 total_abs_scale=9.664665e-43 rel=1.235586e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=1.194153e-43 abs_scale=9.664665e-43 rel=1.235586e-01
+step 125 step_time=6.8s H=4.086615e+06 H/H0=0.915791 H_by_level=[2.167240856541179e-87, 4086615.2387456642] peak_rss_GB=13.59
+[step_125] n_leaves=15542429 n_slice=148637 -> exp/2026/08/12/17_15_ghost_cell_junction_error/plots_fixed_rerun/xz_step_125.png
+step 125 plotted exp/2026/08/12/17_15_ghost_cell_junction_error/plots_fixed_rerun/xz_step_125.png plot_time=3.8s
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=1.854580e-43 total_abs_scale=1.508728e-42 rel=1.229235e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=1.854580e-43 abs_scale=1.508728e-42 rel=1.229235e-01
+step 126 step_time=6.8s H=4.083770e+06 H/H0=0.915153 H_by_level=[5.320226718460063e-87, 4083769.7261477904] peak_rss_GB=13.59
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=2.870489e-43 total_abs_scale=2.347120e-42 rel=1.222984e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=2.870489e-43 abs_scale=2.347120e-42 rel=1.222984e-01
+step 127 step_time=6.8s H=4.080927e+06 H/H0=0.914516 H_by_level=[1.2969243454072365e-86, 4080927.120127147] peak_rss_GB=13.59
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=4.428059e-43 total_abs_scale=3.639011e-42 rel=1.216830e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=4.428059e-43 abs_scale=3.639011e-42 rel=1.216830e-01
+step 128 step_time=6.8s H=4.078087e+06 H/H0=0.913880 H_by_level=[3.1398409498225897e-86, 4078087.311055569] peak_rss_GB=13.59
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=6.808329e-43 total_abs_scale=5.623129e-42 rel=1.210772e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=6.808329e-43 abs_scale=5.623129e-42 rel=1.210772e-01
+step 129 step_time=7.0s H=4.075250e+06 H/H0=0.913244 H_by_level=[7.550140266850496e-86, 4075250.19659352] peak_rss_GB=13.59
+[reflux-probe] tag=step_subcycle n_pairs=132662 total_abs_error=1.043420e-42 total_abs_scale=8.660467e-42 rel=1.204808e-01
+  [reflux-probe]   junction L0/L1: count_a_total=1658654 count_b_total=132662
+      matched:    n=0 abs_error=0.000000e+00 abs_scale=0.000000e+00 rel=0.000000e+00
+      mismatched: n=132662 abs_error=1.043420e-42 abs_scale=8.660467e-42 rel=1.204808e-01
+step 130 step_time=6.8s H=4.072416e+06 H/H0=0.912609 H_by_level=[1.803439384219531e-85, 4072415.6827082224] peak_rss_GB=13.59
+saved final /bk/l1_wider_margin_active_fixed_stepped/step_130_final.h5 save_time=1.4s
+FINAL peak_rss_GB=13.59 total_time=1081.2s

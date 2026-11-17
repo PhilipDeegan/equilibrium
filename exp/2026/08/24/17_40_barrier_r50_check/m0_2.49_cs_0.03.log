@@ -1,0 +1,56 @@
+
+=== scale=4 cells  R=20.00  n_steps=3000 ===
+  init_electron_dipole_ic: scale=4.0  R_sph=1.0  sigma=None  r_axis=2.44  u_bg=0.0  inner_cells=339/43599  (0.8%)
+  divergence_clean: div_rms 1.5218e-01 → 1.3376e-09  (×8.79e-09)
+
+--- electron  barrier/m0=2.49e+00  cs=0.03  dt=5.1282e-03 ---
+  step     surv      rms   <G>eng
+     0   1.0000   1.0000   0.0041
+  1000   0.8786   0.8077   0.0000
+  2000   0.8617   0.8034   0.0000
+  3000   0.8837   0.8027   0.0000
+  init_spheromak_ic: scale=4.0  R_sph=1.0  sigma=None  inner_cells=339/43599  (0.8%)
+  [pre-store] phi_nonzero=338  outer_nonzero_python=0  inner=339  N=43599
+  [post-store] outer_nonzero=0  max_r_with_phi=1.000 sph-u
+
+--- neutron  barrier/m0=2.49e+00  cs=0.03  dt=5.1282e-03 ---
+  step     surv      rms   <G>eng
+     0   1.0000   1.0000   0.6261
+  1000   0.7368   0.8009   0.0037
+  2000   0.5683   0.6422   0.0022
+  3000   0.4664   0.5425   0.0010
+scale=4  surv_e=0.8837  surv_n=0.4664  sep=1.895
+
+=== scale=10 cells  R=50.00  n_steps=7500 ===
+  init_electron_dipole_ic: scale=10.0  R_sph=1.0  sigma=None  r_axis=6.11  u_bg=0.0  inner_cells=5577/680211  (0.8%)
+  divergence_clean: div_rms 6.3805e-02 → 6.1161e-10  (×9.59e-09)
+
+--- electron  barrier/m0=2.49e+00  cs=0.03  dt=5.1282e-03 ---
+  step     surv      rms   <G>eng
+     0   1.0000   1.0000   0.0047
+  1000   0.8481   0.8020   0.0000
+  2000   0.8906   0.8014   0.0000
+  3000   0.8905   0.8009   0.0000
+  4000   0.8920   0.8001   0.0000
+  5000   0.8748   0.8001   0.0000
+  6000   0.9016   0.8000   0.0000
+  7000   0.8901   0.8000   0.0000
+  init_spheromak_ic: scale=10.0  R_sph=1.0  sigma=None  inner_cells=5577/680211  (0.8%)
+  [pre-store] phi_nonzero=5576  outer_nonzero_python=0  inner=5577  N=680211
+  [post-store] outer_nonzero=0  max_r_with_phi=1.000 sph-u
+
+--- neutron  barrier/m0=2.49e+00  cs=0.03  dt=5.1282e-03 ---
+  step     surv      rms   <G>eng
+     0   1.0000   1.0000   0.5667
+  1000   0.7490   0.8302   0.0154
+  2000   0.5769   0.7368   0.0020
+  3000   0.4751   0.6507   0.0008
+  4000   0.4411   0.5294   0.0000
+  5000   0.4237   0.5120   0.0005
+  6000   0.4148   0.5012   0.0007
+  7000   0.4026   0.5040   0.0008
+scale=10  surv_e=0.8901  surv_n=0.4026  sep=2.211
+
+   scale        R  n_steps   surv_e   surv_n      sep
+     4.0    20.00     3000   0.8837   0.4664    1.895
+    10.0    50.00     7500   0.8901   0.4026    2.211

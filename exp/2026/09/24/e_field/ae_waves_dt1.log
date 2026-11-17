@@ -1,0 +1,8 @@
+trans E=False h=0.5 errA=1.037e+00 u=3.791e-04 (1s)
+trans E=False h=0.25 errA=1.040e+00 u=1.832e-06 (7s)
+trans E=True  h=0.5 errA=2.022e-02 u=1.043e-02 (5s)
+trans E=True  h=0.25 errA=5.241e-03 u=8.393e-04 (82s)
+long  E=False h=0.5 errA=2.005e-02 u=7.595e-03 (1s)
+long  E=False h=0.25 errA=5.109e-03 u=1.904e-03 (7s)
+long  E=True  h=0.5 errA=5.548e-02 u=5.904e-02 (5s)
+long  E=True  h=0.25 errA=1.417e-02 u=1.430e-02 (83s)

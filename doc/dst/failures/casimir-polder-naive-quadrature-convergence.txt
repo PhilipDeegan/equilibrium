@@ -1,0 +1,21 @@
+CONTEXT: computing the point-scatterer ("knot-knot") Casimir-Polder Green's
+function G(r,xi) = INT_BZ cos(Kx*r)/(omega(K)^2+xi^2) d^3K/(2pi)^3 for
+casimir_polder.py, a 3-D Brillouin-zone quadrature.
+
+WHAT FAILED: naive equal-weight cube quadrature over the full 3-D BZ
+converges only ~1/N in the outer (Kx) direction, requiring impractically
+large N to reach acceptable accuracy at r ~ tens of lattice spacings `a`.
+
+ROOT CAUSE: cos(Kx*r) is generically incommensurate with the cube's
+periodicity, so a plain equal-weight grid can't exploit the oscillation --
+unlike the parallel-plate Casimir case, no clean analytic Euler-Maclaurin
+split exists here to accelerate convergence.
+
+LESSON: for any oscillatory BZ integral of this cos(Kx*r) form, split the
+integral -- do the outer (Kx) direction with a Filon-type oscillatory
+quadrature (e.g. scipy's weight='cos', which handles the oscillation
+exactly regardless of r) and only use an equal-weight grid for the smooth
+inner (Ky,Kz) directions. Verify inner-grid convergence by doubling (e.g.
+via a converged_G_point-style check) rather than assuming a fixed Nyz is
+enough -- required Nyz grows with r (see
+casimir-polder-underresolution-misread.txt for how large the effect is).

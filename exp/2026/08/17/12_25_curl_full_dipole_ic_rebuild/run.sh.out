@@ -1,0 +1,4 @@
+Mon 17 Aug 2026 12:25:06 CEST
+=== build L1R60 + uniform R180 curl-full-dipole ICs in parallel (L1R60: 6 threads, uniform R180: 3 threads) ===
+Mon 17 Aug 2026 12:29:56 CEST
+=== builds done: l1_wider_margin rc=0  uniform_r180 rc=137 ===

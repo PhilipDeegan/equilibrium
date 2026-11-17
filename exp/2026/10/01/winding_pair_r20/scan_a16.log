@@ -1,0 +1,24 @@
+pair_opp_a16_R56_r12_w2.67_scan: N=955329 build 48s; structure radius 20.0, sponge from r=42.0, cells across tube (6w) 16.0
+  seed 16s: omegas ['0.5197', '0.5197']  residual 9.1e-11  scale 0.7071  E0 tube 955.616 (0.9840 of total)  lam_max 11.918
+  IC plot /home/deegan/git/eq/exp/2026/10/01/winding_pair_r20/pair_opp_a16_R56_r12_w2.67_scan_ic.png  snapshot /home/deegan/tmp/dst/2026/10/01/winding_pair_r20/pair_opp_a16_R56_r12_w2.67_scan/state_0000000.h5
+  2000 steps in 274.6s (0.137 s/step, 8.3 min/crossing); midpoint iterations min/mean/max 7/7.93/8
+  roughness k_eff^2 of u in the tube (1/2 sum W^2 du^2 / sum u^2): 1.8075 -> 25.6279 (x14.179); series 1.8075 5.0961 10.1970 14.6986 24.1928 22.9462 22.7708 25.3393 25.3685
+  grid-scale fraction of u in the tube: 4.22e-03 5.55e-02 2.29e-01 3.51e-01 5.44e-01 8.46e-01 7.88e-01 7.66e-01 9.16e-01 9.31e-01 9.44e-01 (end 9.44e-01)
+  t  Etube/E0  sigma_tube  z_c  rho_rms  lam_max  Etot/E0tot  E_sponge/E0tot
+   0.000000e+00  1.000000e+00  3.026802e-01  -9.294299e-19  1.330660e+01  1.191797e+01  1.000000e+00  4.847080e-50
+   2.666667e+00  9.568641e-01  2.777030e-01  4.006732e-18  1.308072e+01  1.003618e+01  1.000000e+00  8.477816e-28
+   5.333333e+00  9.367391e-01  2.292005e-01  1.178234e-17  1.286519e+01  1.218730e+01  1.000000e+00  1.893897e-14
+   8.000000e+00  9.214945e-01  2.026874e-01  6.154105e-18  1.266190e+01  2.325625e+01  1.000000e+00  2.437582e-06
+   1.066667e+01  9.047751e-01  2.014860e-01  2.601830e-17  1.256324e+01  3.387837e+01  9.999093e-01  3.995657e-03
+   1.333333e+01  8.839159e-01  2.032558e-01  2.234419e-17  1.246533e+01  3.938812e+01  9.960646e-01  1.561350e-02
+   1.600000e+01  8.700173e-01  1.937381e-01  3.599633e-17  1.241809e+01  3.681926e+01  9.819874e-01  2.717850e-02
+   1.866667e+01  8.575652e-01  1.933767e-01  3.089679e-17  1.235651e+01  4.742890e+01  9.582783e-01  2.284583e-02
+   2.133333e+01  8.440464e-01  1.940415e-01  3.891051e-17  1.228354e+01  5.778571e+01  9.383078e-01  1.842168e-02
+   2.400000e+01  8.358925e-01  1.894158e-01  1.372069e-17  1.227943e+01  6.822153e+01  9.225481e-01  1.740185e-02
+   2.666667e+01  8.255597e-01  1.912741e-01  3.085225e-17  1.229224e+01  7.987227e+01  9.077687e-01  1.833104e-02
+   2.666667e+01  8.255597e-01  1.912741e-01  3.085225e-17  1.229224e+01  7.987227e+01  9.077687e-01  1.833104e-02
+  mode (1, 0): |a| 0.0786 -> 0.0651  phase rate -0.4229 (travel along +theta <-> negative)
+  mode (1, 1): |a| 0.3536 -> 0.0280  phase rate -0.2020 (travel along +theta <-> negative)
+  mode (1, -1): |a| 0.3536 -> 0.0280  phase rate -0.2020 (travel along +theta <-> negative)
+  mode (-1, 1): |a| 0.3536 -> 0.0280  phase rate +0.2020 (travel along +theta <-> negative)
+  final plot /home/deegan/git/eq/exp/2026/10/01/winding_pair_r20/pair_opp_a16_R56_r12_w2.67_scan_final.png  snapshot /home/deegan/tmp/dst/2026/10/01/winding_pair_r20/pair_opp_a16_R56_r12_w2.67_scan/state_0002000.h5

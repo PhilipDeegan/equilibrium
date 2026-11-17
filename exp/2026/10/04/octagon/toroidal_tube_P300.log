@@ -1,0 +1,30 @@
+springbox_N1_S1_q1_a0_r60_xi3.9_m0.8_P300_z0 t 10000: ring (rho, z) (59.3, +3.9); L_z (box) -3.379e+00; sum rho v (+9.09e-13, -1.67e-12, +8.99e+04)
+   shell 0-1 xi: cells    23104  sum rho v_phi +9.664e-02  mean v_phi +2.766e-05  rms v_phi 9.31e-02
+   shell 1-2 xi: cells    69428  sum rho v_phi -2.421e-02  mean v_phi -7.020e-07  rms v_phi 5.02e-03
+   shell 2-4 xi: cells   277484  sum rho v_phi -1.782e-02  mean v_phi -7.666e-08  rms v_phi 3.10e-03
+   shell 4-8 xi: cells  1096880  sum rho v_phi -5.158e-02  mean v_phi -4.866e-08  rms v_phi 2.97e-03
+springbox_N8_S1_q1_a4.5_r60_xi3.9_m0.8_P300_ t 0: ring (rho, z) (60.2, +0.0); L_z (box) -1.885e+05; sum rho v (-1.25e-02, +2.72e-03, +8.98e+04)
+   shell 0-1 xi: cells    23256  sum rho v_phi -1.379e+03  mean v_phi -1.063e-01  rms v_phi 1.61e-01
+   shell 1-2 xi: cells    70856  sum rho v_phi -1.337e+03  mean v_phi -2.905e-02  rms v_phi 1.15e-01
+   shell 2-4 xi: cells   280896  sum rho v_phi -3.924e+02  mean v_phi -1.606e-03  rms v_phi 1.98e-02
+   shell 4-8 xi: cells  1107098  sum rho v_phi -3.049e+01  mean v_phi -2.850e-05  rms v_phi 3.30e-03
+springbox_N8_S1_q1_a4.5_r60_xi3.9_m0.8_P300_ t 10000: ring (rho, z) (59.5, +3.8); L_z (box) -1.677e+05; sum rho v (-1.23e-02, +2.89e-03, +8.98e+04)
+   shell 0-1 xi: cells    23304  sum rho v_phi -7.501e+02  mean v_phi -9.316e-02  rms v_phi 1.71e-01
+   shell 1-2 xi: cells    69360  sum rho v_phi -1.125e+03  mean v_phi -3.093e-02  rms v_phi 1.02e-01
+   shell 2-4 xi: cells   278600  sum rho v_phi -7.690e+02  mean v_phi -3.384e-03  rms v_phi 2.46e-02
+   shell 4-8 xi: cells  1099146  sum rho v_phi -1.034e+02  mean v_phi -9.769e-05  rms v_phi 6.49e-03
+springbox_N24_S1_q1_a4.5_r60_xi3.9_m0.8_P300 t 0: ring (rho, z) (60.0, +0.0); L_z (box) -3.537e+05; sum rho v (-9.44e-05, +1.03e-04, +8.89e+04)
+   shell 0-1 xi: cells    23216  sum rho v_phi -3.564e+03  mean v_phi -3.309e-01  rms v_phi 4.50e-01
+   shell 1-2 xi: cells    70644  sum rho v_phi -2.127e+03  mean v_phi -6.199e-02  rms v_phi 2.28e-01
+   shell 2-4 xi: cells   280252  sum rho v_phi -1.914e+02  mean v_phi -8.415e-04  rms v_phi 1.46e-02
+   shell 4-8 xi: cells  1105922  sum rho v_phi -1.303e+00  mean v_phi -1.229e-06  rms v_phi 1.03e-03
+springbox_N24_S1_q1_a4.5_r60_xi3.9_m0.8_P300 t 5000: ring (rho, z) (59.4, +4.4); L_z (box) +1.911e+04; sum rho v (+9.76e-06, +9.66e-05, +8.89e+04)
+   shell 0-1 xi: cells    23424  sum rho v_phi +3.114e+01  mean v_phi +8.476e-03  rms v_phi 1.24e-01
+   shell 1-2 xi: cells    69124  sum rho v_phi +4.857e+01  mean v_phi +1.413e-03  rms v_phi 2.71e-02
+   shell 2-4 xi: cells   278556  sum rho v_phi +9.454e+01  mean v_phi +4.029e-04  rms v_phi 1.51e-02
+   shell 4-8 xi: cells  1098846  sum rho v_phi +3.423e+01  mean v_phi +3.220e-05  rms v_phi 1.16e-02
+springbox_N24_S1_q1_a4.5_r60_xi3.9_m0.8_P300 t 10000: ring (rho, z) (59.2, +4.0); L_z (box) -3.509e+03; sum rho v (+1.49e-04, +3.20e-05, +8.89e+04)
+   shell 0-1 xi: cells    23096  sum rho v_phi +5.798e+00  mean v_phi +1.573e-03  rms v_phi 1.15e-01
+   shell 1-2 xi: cells    69516  sum rho v_phi +5.717e+00  mean v_phi +1.651e-04  rms v_phi 2.21e-02
+   shell 2-4 xi: cells   276132  sum rho v_phi +4.610e+01  mean v_phi +2.019e-04  rms v_phi 1.30e-02
+   shell 4-8 xi: cells  1095892  sum rho v_phi +5.703e+01  mean v_phi +5.410e-05  rms v_phi 1.02e-02

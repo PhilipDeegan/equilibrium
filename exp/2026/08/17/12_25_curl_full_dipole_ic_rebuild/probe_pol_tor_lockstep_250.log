@@ -1,0 +1,9 @@
+[cells_across=250] R_domain=204.55 n_leaves=46568659 hops=47 build_t=24.7s
+[cells_across=250] t=0  u_rms=1.682604e-01  circ=1.715809e+03
+[cells_across=250] step  10  u_rms_ratio=1.013411  circ_ratio=1.000000
+[cells_across=250] step  20  u_rms_ratio=1.028383  circ_ratio=1.000000
+[cells_across=250] step  30  u_rms_ratio=1.043753  circ_ratio=1.000000
+[cells_across=250] step  40  u_rms_ratio=1.058564  circ_ratio=1.000000
+[cells_across=250] step  50  u_rms_ratio=1.072580  circ_ratio=1.000000
+[cells_across=250] step  60  u_rms_ratio=1.086201  circ_ratio=1.000000
+[cells_across=250] SUMMARY: u_rms_ratio range [1.0000, 1.0862]  swing=0.0862  total_t=340.5s

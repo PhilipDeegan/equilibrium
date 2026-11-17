@@ -1,0 +1,3 @@
+t 6000: coil-only centre rc 121.6 zc +3.6; centre-circle windings over 15 offset circles: [np.int64(-30)], min |rho| on them 0.46
+t 7000: coil-only centre rc 122.8 zc +2.6; centre-circle windings over 15 offset circles: [np.int64(-30), np.int64(-26), np.int64(-24), np.int64(-20)], min |rho| on them 0.17
+t 8000: coil-only centre rc 121.9 zc +5.8; centre-circle windings over 15 offset circles: [np.int64(-24), np.int64(-20), np.int64(-18), np.int64(-16), np.int64(-14), np.int64(-12)], min |rho| on them 0.00

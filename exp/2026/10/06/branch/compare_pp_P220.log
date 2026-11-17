@@ -1,0 +1,42 @@
+== springbox_N2_S1_q1_a10_r30_xi3.9_m0.8_P220_z0_wxi_rc_par
+t      0 structure E_q +150.88 E_nl -147.77 sum +3.11 | rest sum -67.11
+t      0: norm 2590618.342842  E_q-bg +172.200936  E_nl-bg -236.200072  sum -63.999136  (Om max 3.142)
+t   1000 structure E_q +298.90 E_nl -130.80 sum +168.11 | rest sum -232.20
+t   1000: norm 2590618.342842  E_q-bg +115.790011  E_nl-bg -179.878629  sum -64.088618  (Om max 3.142)
+t   2000 structure E_q +305.88 E_nl -144.20 sum +161.68 | rest sum -225.71
+t   2000: norm 2590618.342842  E_q-bg +114.107021  E_nl-bg -178.137958  sum -64.030937  (Om max 3.142)
+t   4000 structure E_q +286.67 E_nl -133.94 sum +152.73 | rest sum -216.73
+t   4000: norm 2590618.342841  E_q-bg +120.902665  E_nl-bg -184.903121  sum -64.000455  (Om max 3.142)
+t   8000 structure E_q +304.73 E_nl -143.28 sum +161.45 | rest sum -225.48
+t   8000: norm 2590618.342840  E_q-bg +113.693037  E_nl-bg -177.723239  sum -64.030201  (Om max 3.142)
+t      0 branch-: norm 1.921906e+02 (check 1.921906e+02)  E_- -179.3363  norm at Om~pi 2.543e-05
+t      0 branch- norm / cells by region: interior 1.0361e+01/13856  strands 1.2073e+02/187384  near 3.7872e+01/323544  outer 1.9322e+01/1190163  axis 0.0000e+00/0  floor 3.9039e+00/947053
+t   1000 branch-: norm 1.921030e+02 (check 1.921030e+02)  E_- -179.8322  norm at Om~pi 2.606e-05
+t   1000 branch- norm / cells by region: interior 4.1416e-01/13808  strands 8.1300e+00/187648  near 2.0668e+01/323904  outer 9.2522e+01/1192397  axis 0.0000e+00/0  floor 7.0369e+01/944243
+t   2000 branch-: norm 1.921247e+02 (check 1.921247e+02)  E_- -179.8704  norm at Om~pi 2.575e-05
+t   2000 branch- norm / cells by region: interior 6.1818e-01/14452  strands 1.0361e+01/194504  near 1.9362e+01/336516  outer 8.8193e+01/1196440  axis 0.0000e+00/0  floor 7.3591e+01/920088
+t   4000 branch-: norm 1.920602e+02 (check 1.920602e+02)  E_- -179.8810  norm at Om~pi 2.645e-05
+t   4000 branch- norm / cells by region: interior 1.0888e+00/13992  strands 1.7383e+01/191740  near 2.8625e+01/330612  outer 8.8461e+01/1194330  axis 0.0000e+00/0  floor 5.6502e+01/931326
+t   8000 branch-: norm 1.921217e+02 (check 1.921217e+02)  E_- -180.0592  norm at Om~pi 2.826e-05
+t   8000 branch- norm / cells by region: interior 8.3023e-01/14108  strands 1.3113e+01/191868  near 2.3298e+01/330816  outer 8.9374e+01/1195838  axis 0.0000e+00/0  floor 6.5506e+01/929370
+== pp_springbox_N2_S1_q1_a10_r30_xi3.9_m0.8_P220_z0_wxi_rc_par
+t      0 structure E_q +461.21 E_nl -148.14 sum +313.07 | rest sum -20.08
+t      0: norm 2590426.152273  E_q-bg +529.754643  E_nl-bg -236.764121  sum +292.990522  (Om max 3.142)
+t   1000 structure E_q +382.42 E_nl -130.85 sum +251.57 | rest sum +41.43
+t   1000: norm 2590426.152273  E_q-bg +473.715652  E_nl-bg -180.715855  sum +292.999798  (Om max 3.142)
+t   2000 structure E_q +374.23 E_nl -144.74 sum +229.48 | rest sum +63.51
+t   2000: norm 2590426.152273  E_q-bg +471.929067  E_nl-bg -178.935884  sum +292.993182  (Om max 3.142)
+t   4000 structure E_q +387.38 E_nl -134.10 sum +253.27 | rest sum +39.75
+t   4000: norm 2590426.152272  E_q-bg +478.656018  E_nl-bg -185.635921  sum +293.020098  (Om max 3.142)
+t   8000 structure E_q +381.17 E_nl -143.42 sum +237.75 | rest sum +55.28
+t   8000: norm 2590426.152271  E_q-bg +471.619771  E_nl-bg -178.596562  sum +293.023208  (Om max 3.142)
+t      0 branch-: norm 1.637904e-06 (check 1.637904e-06)  E_- -0.0000  norm at Om~pi 6.357e-06
+t      0 branch- norm / cells by region: interior 8.5382e-09/13920  strands 1.1511e-07/187112  near 1.9882e-07/322904  outer 7.3220e-07/1189835  axis 0.0000e+00/0  floor 5.8324e-07/948229
+t   1000 branch-: norm 1.217077e-03 (check 1.217077e-03)  E_- -0.0012  norm at Om~pi 6.320e-06
+t   1000 branch- norm / cells by region: interior 4.7220e-05/13840  strands 4.0661e-04/187600  near 1.8999e-04/323896  outer 3.1676e-04/1192365  axis 0.0000e+00/0  floor 2.5649e-04/944299
+t   2000 branch-: norm 1.173068e-03 (check 1.173068e-03)  E_- -0.0011  norm at Om~pi 6.128e-06
+t   2000 branch- norm / cells by region: interior 4.3852e-05/14468  strands 3.9034e-04/194672  near 2.0500e-04/336556  outer 2.9754e-04/1196560  axis 0.0000e+00/0  floor 2.3633e-04/919744
+t   4000 branch-: norm 1.225902e-03 (check 1.225902e-03)  E_- -0.0012  norm at Om~pi 6.182e-06
+t   4000 branch- norm / cells by region: interior 4.8162e-05/13976  strands 3.9539e-04/191700  near 1.9999e-04/330532  outer 3.2454e-04/1194266  axis 0.0000e+00/0  floor 2.5782e-04/931526
+t   8000 branch-: norm 1.286287e-03 (check 1.286287e-03)  E_- -0.0013  norm at Om~pi 6.440e-06
+t   8000 branch- norm / cells by region: interior 4.5774e-05/14108  strands 3.7826e-04/191868  near 2.3302e-04/330804  outer 3.5762e-04/1195790  axis 0.0000e+00/0  floor 2.7162e-04/929430

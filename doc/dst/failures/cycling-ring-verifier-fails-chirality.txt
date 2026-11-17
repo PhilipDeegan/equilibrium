@@ -1,0 +1,61 @@
+CONTEXT: Test A2 (exp/2026/08/20/18_00_cycling_ring_charge_test/) followed
+doc/dst.md's actual prescription for magnetism: charge = a cycling internal
+`phi` ring mode (`init_toroidal_winding(..., frozen=False)`, built the same
+way as exp/2026/06/15/22_57_ring_phi_dipole/), W=0/+1/-1, tested both at
+rest and while coasting (same knot+kick as Test A), to see whether ring-mode
+cycling (not a static charge) produces sign-dependent `curl(phi)`.
+
+WHAT FAILED: Both phases fail chirality.
+- At rest (cycling alone, no translation — the literal claim in
+  project_dst_magnetic_field): real signal (baseline exactly 0, W=+-1 give
+  1.7-1.9e-6 rms). Chirality FAILS (cos_sim=+0.035, want -1). Orientation
+  mixed (along-v 2.48e-6 slightly beats azimuthal 2.03e-6). One partial
+  positive: radial phi-falloff fit gives slope -2.645 (W=+1) / -2.780
+  (W=-1) vs the classical dipole target -3 — much closer than Test A got to
+  anything.
+- Coasting: weaker existence signal (2.37x / 1.78x noise, vs Test A's
+  25-30x). Chirality still FAILS (cos_sim~=+0.03). Orientation now
+  correctly azimuthal-dominant (6.6e-6 vs radial 4.1e-6 vs along-v 1.9e-6) —
+  an improvement over Test A's along-v-dominant miss.
+- 4-panel quiver plot (chirality.png) confirms visually: rest/coast x
+  W=+1/-1 all look nearly identical, not mirror images, matching the
+  near-zero (not -1) cos_sim in both phases.
+- Energy: H_rest ~0 for W=0 (exact fixed point), ~1.5-1.7e-3 for W=+-1
+  (ring's own energy); H_kick~=0.436 for all three (winding-independent
+  kick work, as expected); H_coast decays to ~0.035-0.039 for all three by
+  end of window — substantial dissipation during coast, similar magnitude
+  regardless of winding sign. Not determined whether this is legitimate
+  radiation or a leak.
+
+ROOT CAUSE (confound, confirmed real, UNRESOLVED — this failure is not yet
+settled): both Test A and A2 drive translation via
+`cross_scale=force_scale=0.3`, i.e. `lat.step_cross(dt, cross_scale, ...)`,
+called every step in ALL THREE phases (rest/base, kick, coast) via the
+shared `phys_step()` helper, not only while translating. For a bare
+lam-knot (Test A's reference script), this is a no-op at rest since
+phi==0 there exactly. But A2 superimposes a cycling ring, so phi is NOT
+uniformly zero at rest — meaning `step_cross` is actively acting on the
+ring's own circulation every step of the ENTIRE run, INCLUDING "rest".
+`step_cross` is independently flagged elsewhere as broken/unresolved:
+project_step_cross ("AMR still broken, deferred"), project_step_cross_v2
+("v1 default PROVEN inverted... no gate passes both; barrier never
+tested"), project_diffusion_vs_gate_mismatch (everything tested anywhere so
+far uses the wrong diffusion-shaped gate, not the threshold gate doc/dst.md
+actually specifies). Also confirmed: `step_cross` is load-bearing for the
+plain knot's own translation (mobility scales continuously from
+noise-floor at cross_scale=0.01 to real transport at 0.3), so it can't
+simply be zeroed for the kick/coast phases without breaking translation
+itself.
+
+LESSON: A2's chirality washout (cos_sim~=0 in BOTH rest and coast, not just
+coast) may NOT mean "cycling isn't the real magnetism mechanism" at all —
+it may be `step_cross`'s known-broken v1 gate corrupting the ring's
+circulation the whole time it's active. Do NOT treat this test as a settled
+negative, and do not build a follow-on Test A3 (explicit lam-velocity-driven
+phi source term) before doing the cheaper check first: rerun A2's REST
+phase only (no kick/coast needed, so step_cross's translation-load-bearing
+role is irrelevant there) with `cross_scale=0` entirely, and check whether
+cos_sim(diff_p, diff_m) moves toward -1. If yes, step_cross was the
+confound all along, and project_dst_magnetic_field's "cycling alone
+produces a dipole" claim may still be true once measured on clean
+bare-`step()` dynamics rather than this confounded setup.

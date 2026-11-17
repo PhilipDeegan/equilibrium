@@ -1,0 +1,7 @@
+xi 2.0: g 0.0833 (g rho0 per tick): k=0 growth 3.71e-02 at |q| 4.46; k=0.2 [100] 4.12e-02
+xi 2.6: g 0.0493 (g rho0 per tick): k=0 growth 2.19e-02 at |q| 4.45; k=0.2 [100] 2.41e-02
+xi 3.0: g 0.0370 (g rho0 per tick): k=0 growth 1.64e-02 at |q| 4.45; k=0.2 [100] 1.81e-02
+xi 3.3: g 0.0306 (g rho0 per tick): k=0 growth 1.35e-02 at |q| 4.45; k=0.2 [100] 1.49e-02
+xi 3.6: g 0.0257 (g rho0 per tick): k=0 growth 1.14e-02 at |q| 4.45; k=0.2 [100] 1.25e-02
+xi 3.9: g 0.0219 (g rho0 per tick): k=0 growth 9.68e-03 at |q| 4.45; k=0.2 [100] 1.07e-02
+xi 5.2: g 0.0123 (g rho0 per tick): k=0 growth 5.43e-03 at |q| 4.45; k=0.2 [100] 5.98e-03

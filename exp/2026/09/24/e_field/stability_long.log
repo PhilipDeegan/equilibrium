@@ -1,0 +1,3 @@
+dt_fac=1.0 clean=True: norm ratio at 6 checkpoints of 3600 steps: 1.032e+01 2.625e+02 1.123e+04 5.383e+05 2.718e+07 1.416e+09
+dt_fac=0.5 clean=True: norm ratio at 6 checkpoints of 3600 steps: 5.292e+00 1.025e+01 4.246e+01 2.349e+02 1.436e+03 9.299e+03
+dt_fac=0.35 clean=True: norm ratio at 6 checkpoints of 3600 steps: 4.859e+00 6.212e+00 1.150e+01 3.133e+01 1.034e+02 3.688e+02

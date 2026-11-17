@@ -1,0 +1,45 @@
+CONTEXT: across sessions, three different E/B "conventions" were used
+to try to build a 3D Poynting/energy-flux vector S=ExB in DST, in
+order to validate radiated-energy predictions (Hertzian dipole,
+Poynting-ring far-zone). They contradict each other.
+
+WHAT FAILED (three incompatible conventions found, no single one
+validated):
+1. test_maxwell.py's convention treats u as literally "a scalar proxy
+   for the electric field COMPONENT" — rigorously tested to 12
+   decimals, but only for a 1D/plane-wave dispersion check. Never
+   designed to build a genuine 3D S for an arbitrary source.
+2. The Poynting-ring probes' convention, E:=-dphi/dt, B:=curl(phi),
+   used for months including all Hertzian-dipole attempts, failed
+   three independent checks under the exact same formula (see
+   poynting-local-theorem-check-fails.txt and
+   hertzian-dipole-wrong-angular-ratio.txt).
+3. An older session's note (doc/dst_next.md sec 5) used the full
+   4-potential E:=-grad(u)-dphi/dt, which is confirmed identically
+   zero under plain step() (a real, solid algebraic identity, kept as
+   SOLID in the standing notes) — and from that concluded step_cross
+   is REQUIRED to source any E at all. That is the OPPOSITE conclusion
+   from the same overall investigation's "drop step_cross" fix to the
+   Poynting-ring equator/pole result, which used convention #2.
+
+ROOT CAUSE: not diagnosed/resolved. Open question left standing: did
+dropping step_cross for the Poynting-ring equator/pole result
+(R=30/R=50, ratio ~0.86-0.99) fix something real, or was it an
+artifact of convention #2, which has since failed three separate
+checks using that exact same formula? The traveling-wave reproducer's
+success (shift-match correlation 0.97-0.99, a genuinely positive
+result) does NOT validate convention #2 either — that test compared
+the whole (u,phi) state directly, never split it into E/B or computed
+S at all. It's fully possible u/phi genuinely co-propagate correctly
+while every attempt to extract a meaningful S=ExB from them (any of
+the 3 conventions) remains wrong.
+
+LESSON: do not cite any of the three conventions as settled. Do not
+pick a "4th guessed convention" either. Before doing more Poynting/
+energy-flux work, derive the flux J that satisfies dH_i/dt =
+(discrete divergence of J)_i EXACTLY from the update rule (the same
+rigorous symbolic method used for the traveling-wave companion phi
+and the E_full≡0 identity), with proper staggered/energy-at-cells-
+flux-at-faces bookkeeping. Only once that exact identity is found
+should "drop step_cross" and the Hertzian-dipole/Poynting-ring checks
+be revisited.

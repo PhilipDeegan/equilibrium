@@ -1,0 +1,18 @@
+[cells_across=180] R_domain=147.27 n_leaves=17382427 hops=34 build_t=8.4s
+[cells_across=180] t=0  u_rms=1.682567e-01  circ=1.239933e+03
+[cells_across=180] step  10  u_rms_ratio=1.018574  circ_ratio=1.000000
+[cells_across=180] step  20  u_rms_ratio=1.039248  circ_ratio=1.000000
+[cells_across=180] step  30  u_rms_ratio=1.060392  circ_ratio=1.000000
+[cells_across=180] step  40  u_rms_ratio=1.080687  circ_ratio=1.000000
+[cells_across=180] step  50  u_rms_ratio=1.099823  circ_ratio=1.000000
+[cells_across=180] step  60  u_rms_ratio=1.118361  circ_ratio=1.000000
+[cells_across=180] SUMMARY: u_rms_ratio range [1.0000, 1.1184]  swing=0.1184  total_t=115.5s
+[cells_across=235] R_domain=192.27 n_leaves=38677945 hops=44 build_t=19.7s
+[cells_across=235] t=0  u_rms=1.682631e-01  circ=1.607648e+03
+[cells_across=235] step  10  u_rms_ratio=1.014262  circ_ratio=1.000000
+[cells_across=235] step  20  u_rms_ratio=1.030180  circ_ratio=1.000000
+[cells_across=235] step  30  u_rms_ratio=1.046514  circ_ratio=1.000000
+[cells_across=235] step  40  u_rms_ratio=1.062245  circ_ratio=1.000000
+[cells_across=235] step  50  u_rms_ratio=1.077121  circ_ratio=1.000000
+[cells_across=235] step  60  u_rms_ratio=1.091571  circ_ratio=1.000000
+[cells_across=235] SUMMARY: u_rms_ratio range [1.0000, 1.0916]  swing=0.0916  total_t=257.2s

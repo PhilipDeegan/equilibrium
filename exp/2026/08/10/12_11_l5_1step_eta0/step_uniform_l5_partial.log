@@ -1,0 +1,10 @@
+loaded /bk/uniform_l5_partial_r055_ic_220.h5 n_leaves=12989511 t=1.8s peak_rss_GB=7.31
+H0=6.114140e+06
+dt=5.128205e-03
+step 1 step_time=0.3s H=6.157880e+06 H/H0=1.007154 peak_rss_GB=10.51
+step 1 saved /bk/uniform_l5_partial_steps/step_01.h5 save_time=1.1s
+step 2 step_time=0.4s H=6.288570e+06 H/H0=1.028529 peak_rss_GB=11.76
+step 2 saved /bk/uniform_l5_partial_steps/step_02.h5 save_time=1.0s
+step 3 step_time=0.4s H=6.505373e+06 H/H0=1.063988 peak_rss_GB=11.76
+step 3 saved /bk/uniform_l5_partial_steps/step_03.h5 save_time=1.0s
+FINAL peak_rss_GB=11.76 total_time=9.5s

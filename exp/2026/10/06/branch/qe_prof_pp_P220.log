@@ -1,0 +1,10 @@
+t      0 structure E_q +411.17 E_nl -152.88 sum +258.29 | rest sum +16.20
+t      0: norm 2591191.369895  E_q-bg +480.758648  E_nl-bg -206.269034  sum +274.489614  (Om max 3.142)
+t   1000 structure E_q +381.94 E_nl -124.74 sum +257.20 | rest sum +17.30
+t   1000: norm 2591191.369895  E_q-bg +461.421633  E_nl-bg -186.927126  sum +274.494507  (Om max 3.142)
+t   2000 structure E_q +371.20 E_nl -149.25 sum +221.95 | rest sum +52.54
+t   2000: norm 2591191.369895  E_q-bg +455.885914  E_nl-bg -181.394638  sum +274.491276  (Om max 3.142)
+t   4000 structure E_q +382.83 E_nl -130.58 sum +252.25 | rest sum +22.25
+t   4000: norm 2591191.369894  E_q-bg +462.410951  E_nl-bg -187.907996  sum +274.502955  (Om max 3.142)
+t   8000 structure E_q +380.09 E_nl -136.84 sum +243.24 | rest sum +31.25
+t   8000: norm 2591191.369893  E_q-bg +459.109799  E_nl-bg -184.610643  sum +274.499156  (Om max 3.142)

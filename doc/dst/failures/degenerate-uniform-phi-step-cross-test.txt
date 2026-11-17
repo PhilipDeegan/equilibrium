@@ -1,0 +1,22 @@
+CONTEXT: A C++ synthetic test (tst/eq/core/data/lattice/test_step_cross_per_level.cpp,
+added 2026-08-13) tried to measure step_cross's per-level rate using a
+perfectly uniform phi field on every face.
+
+WHAT FAILED: The test did not measure what it claimed to. It was deleted
+2026-08-15 rather than fixed, after mechanism-verifying (not just guessing)
+why it was invalid.
+
+ROOT CAUSE: _step_cross_local's redistribute-to-adjacent-faces design makes
+a perfectly uniform field self-cancel almost completely in the interior of
+the domain. So the test actually measured "what fraction of a small
+sphere's cells sit on the boundary" — not step_cross's per-level rate at
+all. Not representative of anything.
+
+LESSON: Don't build a step_cross rate test on a spatially uniform phi IC —
+the redistribute-to-adjacent-faces mechanism cancels a uniform field out in
+bulk, so only boundary-cell artifacts survive. Use a genuinely varying/
+gradient field so interior faces carry real signal. Note: step_cross's own
+per-level-rate question remains genuinely open, separately (see
+tst/substrate/adaptive/test_step_cross_per_level.py and
+[[project_step_cross_v2]] memory) — it was never actually tested by this
+now-deleted synthetic test.

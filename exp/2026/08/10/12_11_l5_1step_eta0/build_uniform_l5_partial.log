@@ -1,0 +1,7 @@
+[uniform base] n_leaves=1  t=0.0s  peak_rss_GB=0.11
+level histogram: [1]  (expect all at level 0)
+cells_across=220  scale=0.452675
+inner_cells=1/1 (100.0000%)
+H0=2.500000e+00  phi_rms=5.976143e-01  u_rms=0.000000e+00  peak_rss_GB=0.11
+saved /bk/uniform_l5_partial_r055_ic_220.h5  save_t=0.0s
+FINAL total_t=0.0s  peak_rss_GB=0.12

@@ -1,0 +1,23 @@
+Building cluster (R_DOMAIN=80, same convention as rest of gallery)...
+  n_leaves=2784735  build_t=2.8s
+  octagon ring: hops=12  n_tiles=192  ring_radius=29.58  centre=[5.18104078e-16 6.25656934e-16 0.00000000e+00]
+  seeded init_toroidal_winding, amplitude=1.0, resonant omega=0.032723
+  E0=1.920000e+02  circ0=-2.231548e-14  e_max=1.999567e+00
+  tail_frac_above_floor=0.000  tail_max_beyond=0.000e+00  -> HARD FLOOR at ring radius (closed-lineage signature)
+  saved /home/deegan/git/eq/exp/2026/09/22/dipole_ic_gallery/per_ic/toroidal_winding_octagon.png
+    step   50  E/E0=0.99387512  circ=-5.417888e-14
+    step  100  E/E0=0.99805072  circ=-3.519407e-14
+    step  150  E/E0=0.99963430  circ=-1.765255e-14
+    step  200  E/E0=0.99918044  circ=3.441691e-15
+    step  250  E/E0=0.99916873  circ=-4.329870e-14
+    step  300  E/E0=0.99990520  circ=2.331468e-14
+
+  PERSISTENCE SUMMARY: E/E0 final=0.99990520  circ0=-2.2315e-14  circ_final=2.3315e-14  shape_drift(mid)=0.2499  shape_drift(end)=0.3179  total_t=52.4s
+  saved /home/deegan/git/eq/exp/2026/09/22/dipole_ic_gallery/toroidal_winding_octagon_persistence.png
+
+=== FINAL ===
+ring_radius=29.58  n_tiles=192  omega=0.032723
+static verdict: HARD FLOOR at ring radius (closed-lineage signature)  (tail_frac=0.000)
+circ0=-2.231548e-14
+E/E0 final=0.99990520  circ_final=2.331468e-14
+shape_drift mid=0.2499  end=0.3179

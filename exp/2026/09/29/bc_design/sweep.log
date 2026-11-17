@@ -1,0 +1,30 @@
+c=2.309 window t=6.11..14.42; reference mean/max (0.00010428780676450434, 0.0022592863842987093)
+w= 2.4 p=2 gmax=   1 c/w=  0.962  refl mean 2.160e-01 max 2.396e-01
+w= 2.4 p=2 gmax=   3 c/w=  2.887  refl mean 2.540e-02 max 3.000e-02
+w= 2.4 p=2 gmax=  10 c/w=  9.623  refl mean 5.588e-03 max 1.309e-02
+w= 2.4 p=2 gmax=  30 c/w= 28.868  refl mean 1.333e-02 max 2.368e-02
+w= 2.4 p=3 gmax=   1 c/w=  0.962  refl mean 2.961e-01 max 3.277e-01
+w= 2.4 p=3 gmax=   3 c/w=  2.887  refl mean 5.399e-02 max 6.143e-02
+w= 2.4 p=3 gmax=  10 c/w=  9.623  refl mean 8.919e-03 max 1.653e-02
+w= 2.4 p=3 gmax=  30 c/w= 28.868  refl mean 1.380e-02 max 2.306e-02
+w= 4.8 p=2 gmax=   1 c/w=  0.481  refl mean 1.633e-01 max 2.317e-01
+w= 4.8 p=2 gmax=   3 c/w=  1.443  refl mean 1.483e-02 max 1.961e-02
+w= 4.8 p=2 gmax=  10 c/w=  4.811  refl mean 2.838e-03 max 6.065e-03
+w= 4.8 p=2 gmax=  30 c/w= 14.434  refl mean 3.584e-03 max 9.262e-03
+w= 4.8 p=3 gmax=   1 c/w=  0.481  refl mean 2.258e-01 max 3.220e-01
+w= 4.8 p=3 gmax=   3 c/w=  1.443  refl mean 3.363e-02 max 4.571e-02
+w= 4.8 p=3 gmax=  10 c/w=  4.811  refl mean 3.100e-03 max 4.598e-03
+w= 4.8 p=3 gmax=  30 c/w= 14.434  refl mean 3.696e-03 max 7.844e-03
+w= 9.6 p=2 gmax=   1 c/w=  0.241  refl mean 4.161e-02 max 2.222e-01
+w= 9.6 p=2 gmax=   3 c/w=  0.722  refl mean 3.376e-03 max 1.464e-02
+w= 9.6 p=2 gmax=  10 c/w=  2.406  refl mean 1.026e-03 max 2.640e-03
+w= 9.6 p=2 gmax=  30 c/w=  7.217  refl mean 1.919e-03 max 3.726e-03
+w= 9.6 p=3 gmax=   1 c/w=  0.241  refl mean 5.843e-02 max 3.141e-01
+w= 9.6 p=3 gmax=   3 c/w=  0.722  refl mean 8.590e-03 max 4.101e-02
+w= 9.6 p=3 gmax=  10 c/w=  2.406  refl mean 8.293e-04 max 2.344e-03
+w= 9.6 p=3 gmax=  30 c/w=  7.217  refl mean 1.420e-03 max 2.581e-03
+production DampedLattice w=2.4 damp 0.02: refl mean 2.414e-02 max 2.807e-02
+production DampedLattice w=4.8 damp 0.02: refl mean 3.160e-02 max 3.920e-02
+production DampedLattice w=9.6 damp 0.02: refl mean 7.216e-03 max 1.315e-02
+static Dirichlet shell only: late change 2.54e-02  fit a(1/r-1/b): a=0.2030 rel rms resid 1.01e-01  log slope -1.085
+static Dirichlet + best sponge w=9.6 p=3 k=10.0: late change 1.03e-01  fit a(1/r-1/b): a=5.3540 rel rms resid 4.30e-01  log slope -0.017

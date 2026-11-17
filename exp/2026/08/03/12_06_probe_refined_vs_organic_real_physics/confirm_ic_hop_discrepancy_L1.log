@@ -1,0 +1,13 @@
+  init_spheromak_ic: scale=4.8  R_sph=1.0  sigma=None  inner_cells=609/2784735  (0.0%)
+  [pre-store] phi_nonzero=608  outer_nonzero_python=0  inner=609  N=2784735
+  [post-store] outer_nonzero=0  max_r_with_phi=0.992 sph-u
+pre-adapt converged after 2 rounds, n_leaves=2811853
+  init_spheromak_ic: scale=4.8  R_sph=1.0  sigma=None  inner_cells=16361/2811853  (0.6%)
+  [pre-store] phi_nonzero=16360  outer_nonzero_python=0  inner=16361  N=2811853
+  [post-store] outer_nonzero=0  max_r_with_phi=0.998 sph-u
+n_leaves=2811853  level counts: [2783692   28161]
+organic ACTUAL phi_rms = 2.225368e-02  (probe log value: 2.2254e-02)
+same-mesh, cell_size-SCALED hop, phi_rms = 2.227957e-02  (refined's independently-measured value: 2.2314e-02)
+same-mesh, FIXED (organic-style) hop reimplementation, phi_rms = 2.225368e-02  (sanity cross-check vs organic ACTUAL above)
+  level 0: n_leaves=2783692  phi_rms(fixed-hop)=0.000000e+00  phi_rms(scaled-hop)=0.000000e+00  ratio=nan
+  level 1: n_leaves=28161  phi_rms(fixed-hop)=2.223689e-01  phi_rms(scaled-hop)=2.226276e-01  ratio=1.0012

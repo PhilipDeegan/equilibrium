@@ -1,0 +1,15 @@
+t      0 regions E_q/E_nl: interior   +32.36/  -17.72  strands  +288.25/ -227.19  near  +111.08/ -190.72  outer  +110.82/ -234.58  axis   +14.77/   -6.17  floor   +74.01/ -237.14
+t      0 structure E_q +431.69 E_nl -435.63 sum -3.94 | rest sum -278.28
+t      0: norm 27381936.814417  E_q-bg +631.287389  E_nl-bg -913.509277  sum -282.221887  (Om max 3.142)
+t   1000 regions E_q/E_nl: interior   +88.58/  -22.37  strands  +586.05/ -210.86  near  +327.13/ -189.04  outer  -177.35/ -222.63  axis    +1.96/   +5.47  floor  -349.15/ -120.08
+t   1000 structure E_q +1001.77 E_nl -422.27 sum +579.50 | rest sum -861.78
+t   1000: norm 27381936.814415  E_q-bg +477.232299  E_nl-bg -759.509526  sum -282.277227  (Om max 3.142)
+t   2000 regions E_q/E_nl: interior   +95.09/  -23.27  strands  +632.59/ -213.15  near  +326.61/ -169.72  outer  +113.19/ -138.41  axis    -8.93/   -7.82  floor  -669.79/ -218.78
+t   2000 structure E_q +1054.29 E_nl -406.14 sum +648.15 | rest sum -930.55
+t   2000: norm 27381936.814412  E_q-bg +488.755398  E_nl-bg -771.160647  sum -282.405249  (Om max 3.142)
+t   8000 regions E_q/E_nl: interior   +96.66/  -22.93  strands  +635.78/ -202.95  near  +382.60/ -159.81  outer  +254.52/ -150.52  axis   +30.10/   -6.97  floor  -914.51/ -224.32
+t   8000 structure E_q +1115.03 E_nl -385.69 sum +729.34 | rest sum -1011.70
+t   8000: norm 27381936.814397  E_q-bg +485.138441  E_nl-bg -767.508270  sum -282.369829  (Om max 3.142)
+t  16000 regions E_q/E_nl: interior   +89.01/  -24.30  strands  +631.91/ -215.49  near  +366.41/ -180.36  outer  +175.28/ -138.26  axis   +33.08/   +5.31  floor  -818.13/ -206.74
+t  16000 structure E_q +1087.34 E_nl -420.14 sum +667.20 | rest sum -949.46
+t  16000: norm 27381936.814376  E_q-bg +477.563841  E_nl-bg -759.827233  sum -282.263391  (Om max 3.142)

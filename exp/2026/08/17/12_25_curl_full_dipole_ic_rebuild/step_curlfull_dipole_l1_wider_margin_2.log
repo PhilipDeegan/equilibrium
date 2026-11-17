@@ -1,0 +1,114 @@
+H0 (from /bk/curlfull_dipole_l1_wider_margin_ic220.h5)=8.655806e+06
+cross_scale=0.001
+loaded /bk/curlfull_dipole_l1_wider_margin_stepped/step_100_final.h5 (resuming from absolute step 100) n_leaves=15542429 lam_max=3.427853e+00 lam_mean=5.569146e-01 t=14.4s peak_rss_GB=11.49
+dt=5.128205e-03
+step 101 step_time=7.0s H=8.652608e+06 H/H0=0.999631 H_by_level=[3.857980185384932e-71, 8652607.823410299] peak_rss_GB=11.87
+step 102 step_time=7.1s H=8.652579e+06 H/H0=0.999627 H_by_level=[1.1805446969172156e-70, 8652578.786361365] peak_rss_GB=13.37
+step 103 step_time=7.0s H=8.652550e+06 H/H0=0.999624 H_by_level=[3.57318877122467e-70, 8652549.75990911] peak_rss_GB=13.39
+step 104 step_time=7.0s H=8.652521e+06 H/H0=0.999620 H_by_level=[1.069967137303159e-69, 8652520.733633762] peak_rss_GB=13.39
+step 105 step_time=7.1s H=8.652492e+06 H/H0=0.999617 H_by_level=[3.170393281607605e-69, 8652491.6968442] peak_rss_GB=13.39
+step 106 step_time=6.9s H=8.652463e+06 H/H0=0.999614 H_by_level=[9.297556550461096e-69, 8652462.639561467] peak_rss_GB=13.39
+step 107 step_time=7.3s H=8.652434e+06 H/H0=0.999610 H_by_level=[2.6991055611622276e-68, 8652433.55354668] peak_rss_GB=13.39
+step 108 step_time=7.6s H=8.652404e+06 H/H0=0.999607 H_by_level=[7.757938099434788e-68, 8652404.433322575] peak_rss_GB=13.39
+step 109 step_time=7.2s H=8.652375e+06 H/H0=0.999604 H_by_level=[2.2081367491129365e-67, 8652375.277037095] peak_rss_GB=13.39
+step 110 step_time=7.2s H=8.652346e+06 H/H0=0.999600 H_by_level=[6.224930484248602e-67, 8652346.087123776] peak_rss_GB=13.39
+step 111 step_time=6.8s H=8.652317e+06 H/H0=0.999597 H_by_level=[1.738383258042852e-66, 8652316.870665725] peak_rss_GB=13.39
+step 112 step_time=7.2s H=8.652288e+06 H/H0=0.999594 H_by_level=[4.809840171231867e-66, 8652287.639436414] peak_rss_GB=13.39
+step 113 step_time=7.5s H=8.652258e+06 H/H0=0.999590 H_by_level=[1.318741067484786e-65, 8652258.409560693] peak_rss_GB=13.39
+step 114 step_time=7.1s H=8.652229e+06 H/H0=0.999587 H_by_level=[3.5834389872017674e-65, 8652229.200836727] peak_rss_GB=13.39
+step 115 step_time=7.2s H=8.652200e+06 H/H0=0.999583 H_by_level=[9.652018198091882e-65, 8652200.035731614] peak_rss_GB=13.39
+step 116 step_time=7.1s H=8.652171e+06 H/H0=0.999580 H_by_level=[2.5773784476001242e-64, 8652170.938124524] peak_rss_GB=13.39
+step 117 step_time=7.3s H=8.652142e+06 H/H0=0.999577 H_by_level=[6.82405999833434e-64, 8652141.931865746] peak_rss_GB=13.39
+step 118 step_time=7.1s H=8.652113e+06 H/H0=0.999573 H_by_level=[1.7917321796025992e-63, 8652113.03924791] peak_rss_GB=13.39
+step 119 step_time=7.1s H=8.652084e+06 H/H0=0.999570 H_by_level=[4.6658249086956536e-63, 8652084.279512329] peak_rss_GB=13.39
+step 120 step_time=6.8s H=8.652056e+06 H/H0=0.999567 H_by_level=[1.205221405970489e-62, 8652055.667450018] peak_rss_GB=13.39
+step 121 step_time=6.4s H=8.652027e+06 H/H0=0.999563 H_by_level=[3.088480097877114e-62, 8652027.212231895] peak_rss_GB=13.39
+step 122 step_time=5.4s H=8.651999e+06 H/H0=0.999560 H_by_level=[7.852672015709848e-62, 8651998.916545292] peak_rss_GB=13.39
+step 123 step_time=7.1s H=8.651971e+06 H/H0=0.999557 H_by_level=[1.981246631190359e-61, 8651970.77608969] peak_rss_GB=13.39
+step 124 step_time=7.0s H=8.651943e+06 H/H0=0.999554 H_by_level=[4.960900191375837e-61, 8651942.77946696] peak_rss_GB=13.39
+step 125 step_time=6.9s H=8.651915e+06 H/H0=0.999550 H_by_level=[1.2329187738094137e-60, 8651914.908509819] peak_rss_GB=13.39
+[step_125] n_leaves=15542429 levels=[0, 1] -> exp/2026/08/17/12_25_curl_full_dipole_ic_rebuild/plots/l1_wider_margin_stepped/xz_step_125.png
+step 125 plotted exp/2026/08/17/12_25_curl_full_dipole_ic_rebuild/plots/l1_wider_margin_stepped/xz_step_125.png plot_time=10.4s
+step 126 step_time=7.2s H=8.651887e+06 H/H0=0.999547 H_by_level=[3.0416581285957016e-60, 8651887.139018947] peak_rss_GB=13.85
+step 127 step_time=6.9s H=8.651859e+06 H/H0=0.999544 H_by_level=[7.449669864074857e-60, 8651859.441885512] peak_rss_GB=13.85
+step 128 step_time=7.2s H=8.651832e+06 H/H0=0.999541 H_by_level=[1.8115984092429549e-59, 8651831.78452385] peak_rss_GB=13.85
+step 129 step_time=7.0s H=8.651804e+06 H/H0=0.999538 H_by_level=[4.374531738956849e-59, 8651804.132544598] peak_rss_GB=13.85
+step 130 step_time=7.1s H=8.651776e+06 H/H0=0.999535 H_by_level=[1.0490382613694986e-58, 8651776.451593837] peak_rss_GB=13.85
+step 131 step_time=7.0s H=8.651749e+06 H/H0=0.999531 H_by_level=[2.498535514274725e-58, 8651748.709221797] peak_rss_GB=13.85
+step 132 step_time=7.0s H=8.651721e+06 H/H0=0.999528 H_by_level=[5.91095257464789e-58, 8651720.876674803] peak_rss_GB=13.85
+step 133 step_time=7.1s H=8.651693e+06 H/H0=0.999525 H_by_level=[1.389151115322791e-57, 8651692.930546941] peak_rss_GB=13.85
+step 134 step_time=7.0s H=8.651665e+06 H/H0=0.999522 H_by_level=[3.243418125269484e-57, 8651664.85411371] peak_rss_GB=13.85
+step 135 step_time=7.3s H=8.651637e+06 H/H0=0.999518 H_by_level=[7.52416392618399e-57, 8651636.638358999] peak_rss_GB=13.85
+step 136 step_time=7.5s H=8.651608e+06 H/H0=0.999515 H_by_level=[1.7344227039201845e-56, 8651608.282542657] peak_rss_GB=13.85
+step 137 step_time=7.3s H=8.651580e+06 H/H0=0.999512 H_by_level=[3.9731201335970765e-56, 8651579.794346308] peak_rss_GB=13.85
+step 138 step_time=7.1s H=8.651551e+06 H/H0=0.999508 H_by_level=[9.045369117897215e-56, 8651551.189505564] peak_rss_GB=13.85
+step 139 step_time=7.4s H=8.651522e+06 H/H0=0.999505 H_by_level=[2.0468014714900282e-55, 8651522.491032958] peak_rss_GB=13.85
+step 140 step_time=7.4s H=8.651494e+06 H/H0=0.999502 H_by_level=[4.60379688052899e-55, 8651493.727974065] peak_rss_GB=13.85
+step 141 step_time=7.5s H=8.651465e+06 H/H0=0.999499 H_by_level=[1.029397228857482e-54, 8651464.933880534] peak_rss_GB=13.85
+step 142 step_time=5.2s H=8.651436e+06 H/H0=0.999495 H_by_level=[2.2882890644878533e-54, 8651436.144959906] peak_rss_GB=13.85
+step 143 step_time=6.6s H=8.651407e+06 H/H0=0.999492 H_by_level=[5.057474871964676e-54, 8651407.39814403] peak_rss_GB=13.85
+step 144 step_time=7.3s H=8.651379e+06 H/H0=0.999489 H_by_level=[1.1114367027725996e-53, 8651378.729065575] peak_rss_GB=13.85
+step 145 step_time=7.1s H=8.651350e+06 H/H0=0.999485 H_by_level=[2.4288259074780367e-53, 8651350.170164337] peak_rss_GB=13.85
+step 146 step_time=7.1s H=8.651322e+06 H/H0=0.999482 H_by_level=[5.278378330530074e-53, 8651321.748969898] peak_rss_GB=13.85
+step 147 step_time=7.1s H=8.651293e+06 H/H0=0.999479 H_by_level=[1.1408493198596305e-52, 8651293.486693686] peak_rss_GB=13.85
+step 148 step_time=7.2s H=8.651265e+06 H/H0=0.999475 H_by_level=[2.4525068746986563e-52, 8651265.397205267] peak_rss_GB=13.85
+step 149 step_time=6.9s H=8.651237e+06 H/H0=0.999472 H_by_level=[5.2441639395852415e-52, 8651237.486435626] peak_rss_GB=13.85
+step 150 step_time=7.2s H=8.651210e+06 H/H0=0.999469 H_by_level=[1.1154642865248436e-51, 8651209.752265865] peak_rss_GB=13.85
+[step_150] n_leaves=15542429 levels=[0, 1] -> exp/2026/08/17/12_25_curl_full_dipole_ic_rebuild/plots/l1_wider_margin_stepped/xz_step_150.png
+step 150 plotted exp/2026/08/17/12_25_curl_full_dipole_ic_rebuild/plots/l1_wider_margin_stepped/xz_step_150.png plot_time=10.1s
+step 151 step_time=7.1s H=8.651182e+06 H/H0=0.999466 H_by_level=[2.3603541997424648e-51, 8651182.184876991] peak_rss_GB=14.03
+step 152 step_time=7.3s H=8.651155e+06 H/H0=0.999463 H_by_level=[4.9689992156075477e-51, 8651154.767531848] peak_rss_GB=14.03
+step 153 step_time=7.3s H=8.651127e+06 H/H0=0.999460 H_by_level=[1.0407789545712564e-50, 8651127.477735078] peak_rss_GB=14.03
+step 154 step_time=7.1s H=8.651100e+06 H/H0=0.999456 H_by_level=[2.1690668699567665e-50, 8651100.28870533] peak_rss_GB=14.03
+step 155 step_time=7.2s H=8.651073e+06 H/H0=0.999453 H_by_level=[4.498199966342747e-50, 8651073.17100641] peak_rss_GB=14.03
+step 156 step_time=7.2s H=8.651046e+06 H/H0=0.999450 H_by_level=[9.282863184262402e-50, 8651046.094330272] peak_rss_GB=14.03
+step 157 step_time=7.7s H=8.651019e+06 H/H0=0.999447 H_by_level=[1.9064613758958698e-49, 8651019.029177448] peak_rss_GB=14.03
+step 158 step_time=7.2s H=8.650992e+06 H/H0=0.999444 H_by_level=[3.8967446538496085e-49, 8650991.948498717] peak_rss_GB=14.03
+step 159 step_time=7.1s H=8.650965e+06 H/H0=0.999441 H_by_level=[7.927354696809032e-49, 8650964.829025514] peak_rss_GB=14.03
+step 160 step_time=7.1s H=8.650938e+06 H/H0=0.999438 H_by_level=[1.6052072120561792e-48, 8650937.652369563] peak_rss_GB=14.03
+step 161 step_time=7.0s H=8.650910e+06 H/H0=0.999434 H_by_level=[3.235444806239225e-48, 8650910.405746214] peak_rss_GB=14.03
+step 162 step_time=5.5s H=8.650883e+06 H/H0=0.999431 H_by_level=[6.491725389150432e-48, 8650883.082306245] peak_rss_GB=14.03
+step 163 step_time=6.0s H=8.650856e+06 H/H0=0.999428 H_by_level=[1.2966783969114953e-47, 8650855.68111213] peak_rss_GB=14.03
+step 164 step_time=6.8s H=8.650828e+06 H/H0=0.999425 H_by_level=[2.5785331579799844e-47, 8650828.206755823] peak_rss_GB=14.03
+step 165 step_time=7.3s H=8.650801e+06 H/H0=0.999422 H_by_level=[5.105089785861532e-47, 8650800.668638956] peak_rss_GB=14.03
+step 166 step_time=7.4s H=8.650773e+06 H/H0=0.999419 H_by_level=[1.0063424145544326e-46, 8650773.080055065] peak_rss_GB=14.03
+step 167 step_time=7.0s H=8.650745e+06 H/H0=0.999415 H_by_level=[1.9752452128573093e-46, 8650745.457061235] peak_rss_GB=14.03
+step 168 step_time=7.2s H=8.650718e+06 H/H0=0.999412 H_by_level=[3.860555894285094e-46, 8650717.817292] peak_rss_GB=14.03
+step 169 step_time=7.5s H=8.650690e+06 H/H0=0.999409 H_by_level=[7.513678778134288e-46, 8650690.178754782] peak_rss_GB=14.03
+step 170 step_time=7.4s H=8.650663e+06 H/H0=0.999406 H_by_level=[1.4562950075277244e-45, 8650662.558717307] peak_rss_GB=14.03
+step 171 step_time=7.0s H=8.650635e+06 H/H0=0.999403 H_by_level=[2.810992605087344e-45, 8650634.97272311] peak_rss_GB=14.03
+step 172 step_time=7.2s H=8.650607e+06 H/H0=0.999399 H_by_level=[5.4038458898132637e-45, 8650607.433803938] peak_rss_GB=14.03
+step 173 step_time=7.1s H=8.650580e+06 H/H0=0.999396 H_by_level=[1.0346610062409519e-44, 8650579.951957352] peak_rss_GB=14.03
+step 174 step_time=7.2s H=8.650553e+06 H/H0=0.999393 H_by_level=[1.9731664343790142e-44, 8650552.533816068] peak_rss_GB=14.03
+step 175 step_time=6.8s H=8.650525e+06 H/H0=0.999390 H_by_level=[3.7481604967626337e-44, 8650525.182615187] peak_rss_GB=14.03
+[step_175] n_leaves=15542429 levels=[0, 1] -> exp/2026/08/17/12_25_curl_full_dipole_ic_rebuild/plots/l1_wider_margin_stepped/xz_step_175.png
+step 175 plotted exp/2026/08/17/12_25_curl_full_dipole_ic_rebuild/plots/l1_wider_margin_stepped/xz_step_175.png plot_time=10.2s
+step 176 step_time=7.4s H=8.650498e+06 H/H0=0.999387 H_by_level=[7.092175270813956e-44, 8650497.89837386] peak_rss_GB=14.03
+step 177 step_time=8.0s H=8.650471e+06 H/H0=0.999384 H_by_level=[1.3367963494018273e-43, 8650470.678268537] peak_rss_GB=14.03
+step 178 step_time=11.4s H=8.650444e+06 H/H0=0.999381 H_by_level=[2.5101110802458037e-43, 8650443.517173301] peak_rss_GB=14.03
+step 179 step_time=9.3s H=8.650416e+06 H/H0=0.999377 H_by_level=[4.695475988431153e-43, 8650416.408291558] peak_rss_GB=14.03
+step 180 step_time=7.0s H=8.650389e+06 H/H0=0.999374 H_by_level=[8.75068613945549e-43, 8650389.34385197] peak_rss_GB=14.03
+step 181 step_time=7.1s H=8.650362e+06 H/H0=0.999371 H_by_level=[1.624788797858083e-42, 8650362.3158024] peak_rss_GB=14.03
+step 182 step_time=5.9s H=8.650335e+06 H/H0=0.999368 H_by_level=[3.0058015290370823e-42, 8650335.316439208] peak_rss_GB=14.03
+step 183 step_time=5.4s H=8.650308e+06 H/H0=0.999365 H_by_level=[5.540490868107008e-42, 8650308.338948984] peak_rss_GB=14.03
+step 184 step_time=5.3s H=8.650281e+06 H/H0=0.999362 H_by_level=[1.0175985081048947e-41, 8650281.377846276] peak_rss_GB=14.03
+step 185 step_time=5.2s H=8.650254e+06 H/H0=0.999359 H_by_level=[1.8623461973840332e-41, 8650254.429236079] peak_rss_GB=14.03
+step 186 step_time=5.2s H=8.650227e+06 H/H0=0.999356 H_by_level=[3.3963725114737845e-41, 8650227.490941767] peak_rss_GB=14.03
+step 187 step_time=5.2s H=8.650201e+06 H/H0=0.999352 H_by_level=[6.172429332820826e-41, 8650200.562484734] peak_rss_GB=14.03
+step 188 step_time=5.2s H=8.650174e+06 H/H0=0.999349 H_by_level=[1.1178861243941054e-40, 8650173.644921921] peak_rss_GB=14.03
+step 189 step_time=5.2s H=8.650147e+06 H/H0=0.999346 H_by_level=[2.0176885058367016e-40, 8650146.740569163] peak_rss_GB=14.03
+step 190 step_time=5.2s H=8.650120e+06 H/H0=0.999343 H_by_level=[3.629443532330151e-40, 8650119.852651773] peak_rss_GB=14.03
+step 191 step_time=5.2s H=8.650093e+06 H/H0=0.999340 H_by_level=[6.506828580471265e-40, 8650092.984901996] peak_rss_GB=14.03
+step 192 step_time=5.2s H=8.650066e+06 H/H0=0.999337 H_by_level=[1.1626684600872708e-39, 8650066.141138656] peak_rss_GB=14.03
+step 193 step_time=5.2s H=8.650039e+06 H/H0=0.999334 H_by_level=[2.0706810600128457e-39, 8650039.324876515] peak_rss_GB=14.03
+step 194 step_time=5.2s H=8.650013e+06 H/H0=0.999331 H_by_level=[3.675823939447349e-39, 8650012.538992457] peak_rss_GB=14.03
+step 195 step_time=5.2s H=8.649986e+06 H/H0=0.999328 H_by_level=[6.504194692617054e-39, 8649985.7854672] peak_rss_GB=14.03
+step 196 step_time=5.1s H=8.649959e+06 H/H0=0.999325 H_by_level=[1.1472093260934494e-38, 8649959.065219823] peak_rss_GB=14.03
+step 197 step_time=5.2s H=8.649932e+06 H/H0=0.999321 H_by_level=[2.0170416959157238e-38, 8649932.378078433] peak_rss_GB=14.03
+step 198 step_time=5.2s H=8.649906e+06 H/H0=0.999318 H_by_level=[3.5352711062639413e-38, 8649905.722808432] peak_rss_GB=14.03
+step 199 step_time=5.2s H=8.649879e+06 H/H0=0.999315 H_by_level=[6.177014067439712e-38, 8649879.097292958] peak_rss_GB=14.03
+step 200 step_time=5.2s H=8.649852e+06 H/H0=0.999312 H_by_level=[1.0759563821445974e-37, 8649852.498766745] peak_rss_GB=14.03
+[step_200] n_leaves=15542429 levels=[0, 1] -> exp/2026/08/17/12_25_curl_full_dipole_ic_rebuild/plots/l1_wider_margin_stepped/xz_step_200.png
+step 200 plotted exp/2026/08/17/12_25_curl_full_dipole_ic_rebuild/plots/l1_wider_margin_stepped/xz_step_200.png plot_time=7.1s
+saved final /bk/curlfull_dipole_l1_wider_margin_stepped/step_200_final.h5 save_time=1.3s
+FINAL peak_rss_GB=14.18 total_time=816.7s

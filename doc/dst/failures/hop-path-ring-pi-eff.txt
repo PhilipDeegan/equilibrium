@@ -1,0 +1,7 @@
+CONTEXT: electron winding candidates built from lattice hop paths (square ring, octagon with 2-16 hops per side, helical torus knot), 2026-09-22..24, exp/2026/09/24/electron_ic_falsify/pi_eff_rings.py.
+
+WHAT FAILED: none of them approaches a circle. path/2R = 3.31 (square), 3.61 -> 3.75 (octagon, hops 2 -> 16): it converges AWAY from pi (staircase), with a +-7 % radius ripple.
+
+ROOT CAUSE: a hop path is a staircase at every size; refining the hops refines the stairs, not the curve.
+
+LESSON: no hop-built winding geometry can represent a circular structure. Seed windings from continuous geometry sampled onto faces (solid angle / A-sampling), never from hop paths.

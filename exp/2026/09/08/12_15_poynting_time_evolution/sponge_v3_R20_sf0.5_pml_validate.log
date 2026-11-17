@@ -1,0 +1,48 @@
+[split_d0.003] N=43599 sponge_fraction=0.5 damp_max=0.003 r_inner=9.98 r_ring=2.58 dt=5.1282e-03 predicted_round_trip_t=4.68 (n_steps*dt=7.18)
+[split_d0.003] done, 281 log points
+[split_d0.01] N=43599 sponge_fraction=0.5 damp_max=0.01 r_inner=9.98 r_ring=2.58 dt=5.1282e-03 predicted_round_trip_t=4.68 (n_steps*dt=7.18)
+[split_d0.01] done, 281 log points
+[split_d0.02] N=43599 sponge_fraction=0.5 damp_max=0.02 r_inner=9.98 r_ring=2.58 dt=5.1282e-03 predicted_round_trip_t=4.68 (n_steps*dt=7.18)
+[split_d0.02] done, 281 log points
+[integ_g0.5] N=43599 sponge_fraction=0.5 damp_max=0.5 r_inner=9.98 r_ring=2.58 dt=5.1282e-03 predicted_round_trip_t=4.68 (n_steps*dt=7.18)
+[integ_g0.5] done, 281 log points
+[integ_g1.0] N=43599 sponge_fraction=0.5 damp_max=1.0 r_inner=9.98 r_ring=2.58 dt=5.1282e-03 predicted_round_trip_t=4.68 (n_steps*dt=7.18)
+[integ_g1.0] done, 281 log points
+[integ_g2.0] N=43599 sponge_fraction=0.5 damp_max=2.0 r_inner=9.98 r_ring=2.58 dt=5.1282e-03 predicted_round_trip_t=4.68 (n_steps*dt=7.18)
+[integ_g2.0] done, 281 log points
+[dir_g0.5] N=43599 sponge_fraction=0.5 damp_max=0.5 r_inner=9.98 r_ring=2.58 dt=5.1282e-03 predicted_round_trip_t=4.68 (n_steps*dt=7.18)
+[dir_g0.5] done, 281 log points
+[dir_g1.0] N=43599 sponge_fraction=0.5 damp_max=1.0 r_inner=9.98 r_ring=2.58 dt=5.1282e-03 predicted_round_trip_t=4.68 (n_steps*dt=7.18)
+[dir_g1.0] done, 281 log points
+[dir_g2.0] N=43599 sponge_fraction=0.5 damp_max=2.0 r_inner=9.98 r_ring=2.58 dt=5.1282e-03 predicted_round_trip_t=4.68 (n_steps*dt=7.18)
+[dir_g2.0] done, 281 log points
+
+=== late-time (last third of run) outer-shell |S| comparison across configs ===
+split_d0.003         r=   5: mean=8.6620e-07 std=1.7134e-07 max=1.2417e-06
+split_d0.003         r=  10: mean=3.5747e-07 std=3.1148e-07 max=1.0381e-06
+split_d0.003         r=  12: mean=5.1086e-07 std=2.7400e-07 max=8.6215e-07
+split_d0.01          r=   5: mean=8.7452e-07 std=1.6438e-07 max=1.1907e-06
+split_d0.01          r=  10: mean=3.5360e-07 std=3.0021e-07 max=1.0177e-06
+split_d0.01          r=  12: mean=4.8533e-07 std=2.5416e-07 max=8.2490e-07
+split_d0.02          r=   5: mean=9.6543e-07 std=1.5564e-07 max=1.3634e-06
+split_d0.02          r=  10: mean=3.6334e-07 std=2.8864e-07 max=1.0012e-06
+split_d0.02          r=  12: mean=4.4962e-07 std=2.4114e-07 max=7.7743e-07
+integ_g0.5           r=   5: mean=8.6687e-07 std=1.7188e-07 max=1.2489e-06
+integ_g0.5           r=  10: mean=3.5861e-07 std=3.1194e-07 max=1.0396e-06
+integ_g0.5           r=  12: mean=5.1221e-07 std=2.7682e-07 max=8.6495e-07
+integ_g1.0           r=   5: mean=8.6467e-07 std=1.7002e-07 max=1.2080e-06
+integ_g1.0           r=  10: mean=3.5397e-07 std=3.0852e-07 max=1.0312e-06
+integ_g1.0           r=  12: mean=5.0430e-07 std=2.6433e-07 max=8.5054e-07
+integ_g2.0           r=   5: mean=8.7565e-07 std=1.6373e-07 max=1.1953e-06
+integ_g2.0           r=  10: mean=3.5376e-07 std=2.9984e-07 max=1.0172e-06
+integ_g2.0           r=  12: mean=4.8494e-07 std=2.5407e-07 max=8.2452e-07
+dir_g0.5             r=   5: mean=8.6960e-07 std=1.7513e-07 max=1.2754e-06
+dir_g0.5             r=  10: mean=3.6219e-07 std=3.1353e-07 max=1.0449e-06
+dir_g0.5             r=  12: mean=5.3323e-07 std=2.6631e-07 max=8.7830e-07
+dir_g1.0             r=   5: mean=8.6708e-07 std=1.7352e-07 max=1.2600e-06
+dir_g1.0             r=  10: mean=3.5702e-07 std=3.1341e-07 max=1.0412e-06
+dir_g1.0             r=  12: mean=5.1695e-07 std=2.7845e-07 max=8.7276e-07
+dir_g2.0             r=   5: mean=8.6453e-07 std=1.7282e-07 max=1.2300e-06
+dir_g2.0             r=  10: mean=3.5016e-07 std=3.1141e-07 max=1.0341e-06
+dir_g2.0             r=  12: mean=5.0717e-07 std=2.7691e-07 max=8.6490e-07
+done

@@ -1,0 +1,7 @@
+CONTEXT: Resolution sweep of `swing` (the u_rms-drift metric from the poloidal/toroidal lockstep probe) across `cells_across` = 22 to 250 — varying the OBJECT's own size in fixed-cell-size units, not cell refinement — looking for real minima/resonances.
+
+WHAT FAILED: The sweep initially showed what looked like a real local minimum/resonance dip exactly at cells_across=220.
+
+ROOT CAUSE: The 220 datapoint had accidentally loaded the real production checkpoint, which has nonzero `lam` seeded, throttling `sigma(lam)`. Every other sweep point was built fresh with `lam=0`. The "dip" was therefore an artifact of inconsistent IC construction across sweep points, not a physical resonance. Rebuilding 220 with `lam=0` gave swing=0.098, matching neighbours 218/222 (0.097-0.098) almost exactly — the dip disappeared.
+
+LESSON: When sweeping a size/resolution parameter, verify every single datapoint is built via the identical IC construction path (same `lam` seeding, same fresh-build vs loaded-checkpoint status, etc.) before reading any bump or dip as physical. One inconsistently-sourced point in an otherwise-clean sweep is enough to fake a resonance. The corrected all-lam=0 table is smoothly decreasing (0.72 at 22 down to 0.086 at 250), not plateaued — but see the separate fixed-step-count-vs-period-scaling issue before trusting that trend as real convergence.

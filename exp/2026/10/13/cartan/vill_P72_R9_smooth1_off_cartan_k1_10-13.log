@@ -1,0 +1,14 @@
+linked before smoothing +1.000000 +1.000000 -0.000000
+smoothed tau 1.0: linked +1.000000 +0.998032 +0.000007
+linked-circulation lines at r 0.0 4.5 15.0
+P 72 N 93312 R0 9.0 kappa 1.0 dt 0.0182 ticks 220 midpoint x3
+t 0 instantaneous (term x unit time): |Gamma|-weighted z +0.17140; defect-label z +nan; max off-integer at defects 0.000e+00; max |Gamma| off-defect 3.776e-02
+       t count sum_n rho z_label z_|G| max|G-n|@def max|G|@non sum|G|@non/count  E_lf
+    0.00     0    +0    nan    +nan +0.1488 0.000e+00 3.739e-02 4.138e+02  2836.068893  leak 1.087e-01 rms 2.011 sum|G| 4.1376e+02 linked +1.000000 +0.998032 +0.000007 x_|G| +0.13795  (0.2 s/tick, ETA 1 min)
+    0.51     0    +0    nan    +nan +0.2361 0.000e+00 3.635e-02 4.136e+02  2836.065210  leak 1.093e-01 rms 2.016 sum|G| 4.1362e+02 linked +1.000000 +0.998042 +0.000007 x_|G| +0.13691  (0.1 s/tick, ETA 0 min)
+    1.02     0    +0    nan    +nan +0.3231 0.000e+00 3.574e-02 4.133e+02  2836.068950  leak 1.108e-01 rms 2.025 sum|G| 4.1332e+02 linked +1.000000 +0.998060 +0.000007 x_|G| +0.13558  (0.1 s/tick, ETA 0 min)
+    1.53     0    +0    nan    +nan +0.4093 0.000e+00 3.574e-02 4.130e+02  2836.070005  leak 1.126e-01 rms 2.032 sum|G| 4.1298e+02 linked +1.000000 +0.998064 +0.000007 x_|G| +0.13402  (0.1 s/tick, ETA 0 min)
+    2.04     0    +0    nan    +nan +0.4944 0.000e+00 3.588e-02 4.127e+02  2836.068873  leak 1.131e-01 rms 2.035 sum|G| 4.1274e+02 linked +1.000000 +0.998041 +0.000007 x_|G| +0.13217  (0.1 s/tick, ETA 0 min)
+    2.55     0    +0    nan    +nan +0.5785 0.000e+00 3.580e-02 4.127e+02  2836.067912  leak 1.122e-01 rms 2.035 sum|G| 4.1271e+02 linked +1.000000 +0.998015 +0.000007 x_|G| +0.13002  (0.1 s/tick, ETA 0 min)
+    3.05     0    +0    nan    +nan +0.6602 0.000e+00 3.610e-02 4.131e+02  2836.067744  leak 1.129e-01 rms 2.038 sum|G| 4.1310e+02 linked +1.000000 +0.998029 +0.000007 x_|G| +0.12772  (0.1 s/tick, ETA 0 min)
+    3.56     0    +0    nan    +nan +0.7396 0.000e+00 3.661e-02 4.139e+02  2836.067836  leak 1.154e-01 rms 2.044 sum|G| 4.1389e+02 linked +1.000000 +0.998089 +0.000007 x_|G| +0.12563  (0.1 s/tick, ETA 0 min)

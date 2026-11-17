@@ -1,0 +1,9 @@
+N2 t 0: rc 31.2 zc -0.0  E_tube 1939.1 (204704 cells)  E_shell 628.4  bg/cell 5.02e-05
+N2 t 2000: rc 32.4 zc +6.7  E_tube 1528.6 (212600 cells)  E_shell 758.0  bg/cell 6.21e-05
+N2 t 4000: rc 31.7 zc +6.9  E_tube 1483.3 (208196 cells)  E_shell 661.3  bg/cell 7.23e-05
+N4 t 0: rc 30.6 zc +0.0  E_tube 2546.5 (201064 cells)  E_shell 563.2  bg/cell 4.79e-05
+N4 t 2000: rc 32.6 zc +5.8  E_tube 1751.1 (213816 cells)  E_shell 754.7  bg/cell 6.05e-05
+N4 t 4000: rc 31.8 zc +5.4  E_tube 1736.1 (208352 cells)  E_shell 619.8  bg/cell 6.57e-05
+N8 t 0: rc 30.2 zc -0.0  E_tube 4278.0 (198496 cells)  E_shell 502.3  bg/cell 4.70e-05
+N8 t 2000: rc 27.2 zc +9.5  E_tube 1456.7 (178548 cells)  E_shell 381.0  bg/cell 1.78e-04
+N8 t 4000: rc 27.2 zc +8.2  E_tube 1433.1 (178276 cells)  E_shell 503.2  bg/cell 4.44e-05

@@ -1,0 +1,25 @@
+N=347941  dt=5.1282e-03  src_a=[-8.08290377  0.          0.        ]  src_b=[8.08290377 0.         0.        ]
+  step 0
+  step 2000
+  step 4000
+  step 6000
+  step 8000
+  step 10000
+  step 12000
+  step 14000
+  step 16000
+  step 18000
+  step 20000
+fit cells: 3471 / 347941
+
+fit: u ~= A/r_a + B/r_b,  A=0.266439  B=-0.266439  (expect A ~ -B)
+R^2 = 0.999921
+RMS residual / mean|u| = 1.3326%
+
+residual by distance-from-nearest-source bin:
+  r in [2.0,4.0)  n=    68  mean|u|=6.2387e-02  mean|resid|=4.6917e-04  rel=0.75%
+  r in [4.0,6.0)  n=   404  mean|u|=3.0818e-02  mean|resid|=1.3256e-04  rel=0.43%
+  r in [6.0,8.0)  n=   754  mean|u|=1.4719e-02  mean|resid|=1.0327e-04  rel=0.70%
+  r in [8.0,10.0)  n=  1073  mean|u|=6.5675e-03  mean|resid|=8.3015e-05  rel=1.26%
+  r in [10.0,12.0)  n=   824  mean|u|=3.1594e-03  mean|resid|=6.9449e-05  rel=2.20%
+  r in [12.0,14.0)  n=   348  mean|u|=1.0022e-03  mean|resid|=4.3843e-05  rel=4.37%

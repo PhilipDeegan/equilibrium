@@ -1,0 +1,14 @@
+fixed c2=0.7, 1500 steps, scanning n_cells_per_wavelength over [8, 12, 16]
+
+[n_cpw=8] N=164375 wavelength=9.238 v_phase=3.6212 dt=0.005128
+[n_cpw=8] wall=115.9s full_slope=-0.3126 v_phase=3.6212 v_B~3.3086 frac_deficit=+0.0863 blew_up=False
+[n_cpw=12] N=164375 wavelength=13.856 v_phase=3.6380 dt=0.005128
+[n_cpw=12] wall=119.3s full_slope=-0.3342 v_phase=3.6380 v_B~3.3038 frac_deficit=+0.0919 blew_up=False
+[n_cpw=16] N=164375 wavelength=18.475 v_phase=3.6439 dt=0.005128
+[n_cpw=16] wall=117.1s full_slope=-0.4252 v_phase=3.6439 v_B~3.2187 frac_deficit=+0.1167 blew_up=False
+
+=== summary ===
+n_cpw=  8: v_phase=3.6212 full_slope=-0.3126 v_B~3.3086 frac_deficit=+0.0863 blew_up=False
+n_cpw= 12: v_phase=3.6380 full_slope=-0.3342 v_B~3.3038 frac_deficit=+0.0919 blew_up=False
+n_cpw= 16: v_phase=3.6439 full_slope=-0.4252 v_B~3.2187 frac_deficit=+0.1167 blew_up=False
+done

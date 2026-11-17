@@ -1,0 +1,11 @@
+v1 equivalence: max|phi_stepcross - phi_crossv2| = 8.882e-16
+gate=v1       global sum(dphi)=-1.214e-16  max|antisymmetry viol|=2.220e-16  |dphi|_max=9.096e-04
+gate=shear    global sum(dphi)=+6.696e-16  max|antisymmetry viol|=2.220e-16  |dphi|_max=9.094e-04
+gate=product  global sum(dphi)=-1.440e-16  max|antisymmetry viol|=2.220e-16  |dphi|_max=9.095e-04
+gate=curl     global sum(dphi)=+6.939e-18  max|antisymmetry viol|=1.388e-17  |dphi|_max=9.061e-04
+gate=barrier  global sum(dphi)=-1.214e-16  max|antisymmetry viol|=2.220e-16  |dphi|_max=9.096e-04
+shear null on uniform coherent transit (interior pairs): max m = 0.000e+00  (rim max 2.607e+00)
+curl null on uniform coherent transit: max|B| = 5.551e-17
+barrier sub-threshold: 500 ticks, max drive=4.317e-05 (m0=1.0e-03)  max|phi drift|=0.000e+00
+barrier over-threshold: frac firing=0.998  max|phi_barrier - phi_v1| on firing cells=0.000e+00
+cross_v2_uniform selftest OK

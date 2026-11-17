@@ -1,0 +1,15 @@
+seed throughput max 6.9669e+00 -> kappa for saturation ~ 7.177e-02
+n 64 R 10.0 a 4.0 q 4.0 A 1.0 kappa 0.5 dmax 0.5 T 120.0 omega 0.8000 transit 31.4 E0 3.9128e+03
+  t     10  E/E0 0.9913  in-tube 1.045  rbar 10.75  zrms  2.25  cen  -0.11  +0.04  -0.00  lop 0.018  m* 4  P(m=2..6) 0.00 0.02 0.96 0.02 0.00  dmax 0.444  (ETA 0.2 min)
+  t     20  E/E0 0.9791  in-tube 0.974  rbar 12.02  zrms  2.26  cen  +0.64  +0.20  -0.00  lop 0.007  m* 4  P(m=2..6) 0.00 0.06 0.89 0.05 0.00  dmax 0.474  (ETA 0.2 min)
+  t     30  E/E0 0.9561  in-tube 0.763  rbar 13.54  zrms  3.72  cen  +2.38  -0.56  -0.00  lop 0.061  m* 4  P(m=2..6) 0.01 0.17 0.55 0.25 0.02  dmax 0.438  (ETA 0.2 min)
+  t     40  E/E0 0.8524  in-tube 0.798  rbar 13.90  zrms  3.85  cen  +0.28  -2.47  +0.00  lop 0.123  m* 4  P(m=2..6) 0.03 0.33 0.42 0.18 0.04  dmax 0.441  (ETA 0.1 min)
+  t     50  E/E0 0.7592  in-tube 0.719  rbar 14.91  zrms  4.46  cen  +1.91  -6.39  +0.00  lop 0.165  m* 5  P(m=2..6) 0.01 0.25 0.27 0.43 0.04  dmax 0.455  (ETA 0.1 min)
+  t     60  E/E0 0.6531  in-tube 0.697  rbar 16.07  zrms  4.62  cen  +3.36  -9.62  -0.00  lop 0.152  m* 5  P(m=2..6) 0.02 0.09 0.15 0.51 0.20  dmax 0.446  (ETA 0.1 min)
+  t     70  E/E0 0.5518  in-tube 0.572  rbar 17.83  zrms  4.56  cen  +4.30 -13.53  +0.00  lop 0.167  m* 5  P(m=2..6) 0.03 0.04 0.13 0.31 0.25  dmax 0.445  (ETA 0.1 min)
+  t     80  E/E0 0.4423  in-tube 0.308  rbar 19.85  zrms  5.15  cen  +5.04 -17.01  -0.00  lop 0.142  m* 3  P(m=2..6) 0.05 0.36 0.08 0.13 0.09  dmax 0.454  (ETA 0.1 min)
+  t     90  E/E0 0.3110  in-tube 0.371  rbar 20.80  zrms  4.97  cen  +4.89 -18.83  -0.00  lop 0.159  m* 4  P(m=2..6) 0.08 0.17 0.18 0.15 0.13  dmax 0.454  (ETA 0.1 min)
+  t    100  E/E0 0.2003  in-tube 0.165  rbar 22.40  zrms  5.28  cen  +5.12 -20.79  -0.00  lop 0.201  m* 2  P(m=2..6) 0.49 0.13 0.03 0.01 0.05  dmax 0.400  (ETA 0.0 min)
+  t    110  E/E0 0.1356  in-tube 0.125  rbar 22.81  zrms  4.76  cen  +2.17 -21.11  -0.00  lop 0.187  m* 4  P(m=2..6) 0.19 0.21 0.31 0.13 0.06  dmax 0.414  (ETA 0.0 min)
+  t    120  E/E0 0.0983  in-tube 0.062  rbar 22.37  zrms  7.02  cen  +1.59 -21.11  +0.00  lop 0.110  m* 2  P(m=2..6) 0.28 0.19 0.17 0.09 0.00  dmax 0.355  (ETA 0.0 min)
+RESULT q 4.0 A 1.0 kappa 0.5 ksig 0.0  E/E0 0.0983  in-tube 0.062  rbar 22.37  zrms 7.02  m* 2  dmax 0.355

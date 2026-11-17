@@ -1,0 +1,17 @@
+t 17000: E_far 104.3  rc 30.7 zc +5.3 minor 6.8 core 12366 windings -4.00 / -1.00
+t 17500: E_far 101.1  rc 30.8 zc +11.3 minor 6.9 core 12085 windings -4.00 / -1.00
+t 18000: E_far 96.2  rc 30.6 zc +17.3 minor 6.9 core 11881 windings -4.00 / -1.00
+t 18500: E_far 92.3  rc 30.7 zc +23.3 minor 6.8 core 12045 windings -4.00 / -1.00
+t 19000: E_far 89.6  rc 30.6 zc +29.5 minor 6.8 core 11811 windings -4.00 / -1.00
+t 19500: E_far 97.5  rc 30.7 zc +35.7 minor 6.7 core 12049 windings -4.00 / -1.00
+t 20000: E_far 103.3  rc 30.7 zc +41.9 minor 6.6 core 11849 windings -4.00 / -1.00
+t 20500: E_far 107.1  rc 30.6 zc +48.1 minor 6.5 core 11909 windings -4.00 / -1.00
+t 21000: E_far 113.5  rc 30.4 zc +54.3 minor 6.4 core 11691 windings -4.00 / -1.00
+t 21500: E_far 127.2  rc 30.3 zc +60.7 minor 6.4 core 11456 windings -4.00 / -1.00
+t 22000: E_far 140.8  rc 30.4 zc +66.7 minor 6.4 core 11859 windings -4.00 / -1.00
+t 22500: E_far 146.5  rc 30.6 zc +72.8 minor 6.4 core 12136 windings -4.00 / -1.00
+t 23000: E_far 127.5  rc 30.7 zc +78.8 minor 6.3 core 12040 windings -4.00 / -1.00
+t 23500: E_far 116.4  rc 30.3 zc +85.3 minor 6.4 core 11383 windings -4.00 / -1.00
+t 24000: E_far 103.2  rc 30.2 zc -81.5 minor 6.3 core 11215 windings -4.00 / -1.00
+t 24500: E_far 120.9  rc 30.6 zc -75.2 minor 6.5 core 11633 windings -4.00 / -1.00
+t 25000: E_far 124.2  rc 30.7 zc -68.9 minor 6.4 core 11933 windings -4.00 / -1.00

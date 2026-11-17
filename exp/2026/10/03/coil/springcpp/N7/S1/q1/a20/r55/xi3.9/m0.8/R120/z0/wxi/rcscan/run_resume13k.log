@@ -1,0 +1,12 @@
+# RECONSTRUCTED 10-03: the original springcpp_N7_resume13k.log was deleted by mistake while nesting plots.
+# Lines below are copied from the session transcript (subset); the full record is rec_from13000.npz in this dir.
+springcpp_N7_S1_q1_a20_r55_xi3.9_m0.8_R120_z0_wxi_rcscan: N_cells=9401207 build+seed 9s; g 0.0082 xi 3.90; strand pitch (toroidal advance per turn) 49.4 cells at r0, inner-side turn spacing 31.4
+  t 13000: core cells 33849, minor radius 15.0, helix phase +2.723, winding centre circle -7.00, meridional -1.00, centre (rho, z) (56.5, +4.1), D_near 131805 D_core 114231, frame shift +48.5
+  t 14000: core cells 36408, minor radius 15.0, helix phase -1.266, winding centre circle -7.00, meridional -1.00, centre (rho, z) (61.2, +2.9), D_near 148669 D_core 128868, frame shift +55.4
+  t 15000: core cells 35062, minor radius 14.5, helix phase +0.645, winding centre circle -6.00, meridional -1.00, centre (rho, z) (63.3, +1.3), D_near 138076 D_core 122302, frame shift +60.0
+  t 16000: core cells 33268, minor radius 14.4, helix phase +2.500, winding centre circle -5.00, meridional -1.00, centre (rho, z) (61.6, +1.6), D_near 138078 D_core 120077, frame shift +62.4
+  t 17000: core cells 33879, minor radius 15.4, helix phase -2.045, winding centre circle -4.00, meridional -1.00, centre (rho, z) (60.2, +3.0), D_near 147294 D_core 120918, frame shift +65.8
+  t 18000: core cells 32743, minor radius 17.5, helix phase -0.039, winding centre circle -4.00, meridional -1.00, centre (rho, z) (58.5, +3.2), D_near 121065 D_core 98461, frame shift +71.6
+  t 19000: core cells 30991, minor radius 18.4, helix phase +2.410, winding centre circle -3.00, meridional -1.00, centre (rho, z) (56.3, +5.1), D_near 120562 D_core 94234, frame shift +78.5
+  t 20000: core cells 30783, minor radius 18.6, helix phase -1.100, winding centre circle -3.00, meridional -1.00, centre (rho, z) (56.4, +3.3), D_near 129506 D_core 98888, frame shift +87.8
+  20000 ticks in 1293s

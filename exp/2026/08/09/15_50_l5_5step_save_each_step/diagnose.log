@@ -1,0 +1,282 @@
+[IC] loaded /bk/l5_core_diameter9_cells_across_220.h5 n_leaves=23005337 t=34.6s
+[IC] NaN/Inf: u_nan=0 u_inf=0 phi_nan=0 phi_inf=0
+[IC] radial |u| profile (bin_center, mean, std, max_abs):
+    r= 0.38  mean_u= 1.9619e-01  std_u=2.8541e-01  max|u|=1.0000e+00
+    r= 1.12  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r= 1.88  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r= 2.62  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r= 3.38  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r= 4.12  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r= 4.88  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r= 5.62  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r= 6.38  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r= 7.12  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r= 7.88  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r= 8.62  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r= 9.38  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=10.12  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=10.88  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=11.62  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=12.38  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=13.12  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=13.88  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=14.62  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=15.38  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=16.12  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=16.88  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=17.62  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=18.38  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=19.12  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=19.88  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=20.62  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=21.38  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=22.12  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=22.88  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=23.62  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=24.38  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=25.12  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=25.88  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=26.62  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=27.38  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=28.12  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=28.88  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=29.62  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+[IC] level-junction |du|: cross-level n=11702 mean=0.0000e+00 median=0.0000e+00 p95=0.0000e+00 max=0.0000e+00
+[IC] level-junction |du|: same-level  n=167934596 mean=2.6998e-03 median=0.0000e+00 p95=1.5211e-02 max=7.1251e-02
+[IC] cross/same p95 ratio = 0.000
+
+[step1] loaded /bk/l5_5step_save_each_step/step_01.h5 n_leaves=23005337 t=35.4s
+[step1] NaN/Inf: u_nan=0 u_inf=0 phi_nan=0 phi_inf=0
+[step1] radial |u| profile (bin_center, mean, std, max_abs):
+    r= 0.38  mean_u= 1.9619e-01  std_u=2.8543e-01  max|u|=1.0004e+00
+    r= 1.12  mean_u= 9.5147e-13  std_u=5.6872e-11  max|u|=4.6694e-09
+    r= 1.88  mean_u= 2.8155e-16  std_u=3.1506e-13  max|u|=9.1505e-12
+    r= 2.62  mean_u=-7.3472e-23  std_u=3.4136e-21  max|u|=6.8755e-20
+    r= 3.38  mean_u=-7.6073e-30  std_u=2.2465e-28  max|u|=4.1722e-27
+    r= 4.12  mean_u= 9.3515e-32  std_u=1.0290e-30  max|u|=1.1502e-29
+    r= 4.88  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r= 5.62  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r= 6.38  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r= 7.12  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r= 7.88  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r= 8.62  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r= 9.38  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=10.12  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=10.88  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=11.62  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=12.38  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=13.12  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=13.88  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=14.62  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=15.38  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=16.12  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=16.88  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=17.62  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=18.38  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=19.12  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=19.88  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=20.62  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=21.38  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=22.12  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=22.88  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=23.62  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=24.38  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=25.12  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=25.88  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=26.62  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=27.38  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=28.12  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=28.88  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=29.62  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+[step1] level-junction |du|: cross-level n=11702 mean=3.0374e-31 median=0.0000e+00 p95=4.3125e-32 max=3.4790e-29
+[step1] level-junction |du|: same-level  n=167934596 mean=2.2862e-03 median=3.1966e-12 p95=1.2846e-02 max=7.0985e-02
+[step1] cross/same p95 ratio = 0.000
+
+[step2] loaded /bk/l5_5step_save_each_step/step_02.h5 n_leaves=23005337 t=34.5s
+[step2] NaN/Inf: u_nan=0 u_inf=0 phi_nan=0 phi_inf=0
+[step2] radial |u| profile (bin_center, mean, std, max_abs):
+    r= 0.38  mean_u= 1.9619e-01  std_u=2.8533e-01  max|u|=9.9995e-01
+    r= 1.12  mean_u= 2.7298e-12  std_u=2.2236e-10  max|u|=1.8496e-08
+    r= 1.88  mean_u= 2.5800e-15  std_u=1.2734e-12  max|u|=3.7061e-11
+    r= 2.62  mean_u=-9.7494e-24  std_u=7.2131e-20  max|u|=1.5094e-18
+    r= 3.38  mean_u= 1.9060e-27  std_u=4.5648e-26  max|u|=7.2567e-25
+    r= 4.12  mean_u= 2.7734e-28  std_u=3.0509e-27  max|u|=3.4106e-26
+    r= 4.88  mean_u=-1.1822e-36  std_u=3.9931e-36  max|u|=1.0262e-35
+    r= 5.62  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r= 6.38  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r= 7.12  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r= 7.88  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r= 8.62  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r= 9.38  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=10.12  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=10.88  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=11.62  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=12.38  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=13.12  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=13.88  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=14.62  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=15.38  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=16.12  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=16.88  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=17.62  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=18.38  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=19.12  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=19.88  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=20.62  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=21.38  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=22.12  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=22.88  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=23.62  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=24.38  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=25.12  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=25.88  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=26.62  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=27.38  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=28.12  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=28.88  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=29.62  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+[step2] level-junction |du|: cross-level n=11702 mean=9.0044e-28 median=7.5376e-33 p95=1.2778e-28 max=1.0316e-25
+[step2] level-junction |du|: same-level  n=167934596 mean=1.8370e-03 median=1.0721e-11 p95=1.0295e-02 max=6.9261e-02
+[step2] cross/same p95 ratio = 0.000
+
+[step3] loaded /bk/l5_5step_save_each_step/step_03.h5 n_leaves=23005337 t=35.6s
+[step3] NaN/Inf: u_nan=0 u_inf=0 phi_nan=0 phi_inf=0
+[step3] radial |u| profile (bin_center, mean, std, max_abs):
+    r= 0.38  mean_u= 1.9619e-01  std_u=2.8537e-01  max|u|=1.0002e+00
+    r= 1.12  mean_u= 5.8414e-12  std_u=4.9133e-10  max|u|=4.0816e-08
+    r= 1.88  mean_u= 7.3276e-15  std_u=2.8536e-12  max|u|=8.3077e-11
+    r= 2.62  mean_u= 1.9540e-21  std_u=3.9640e-19  max|u|=8.3598e-18
+    r= 3.38  mean_u= 5.5394e-26  std_u=7.9603e-25  max|u|=1.0922e-23
+    r= 4.12  mean_u= 6.3138e-27  std_u=6.9416e-26  max|u|=7.7607e-25
+    r= 4.88  mean_u=-1.2484e-34  std_u=7.7343e-34  max|u|=1.7948e-33
+    r= 5.62  mean_u= 1.0910e-38  std_u=4.6609e-38  max|u|=2.1002e-37
+    r= 6.38  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r= 7.12  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r= 7.88  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r= 8.62  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r= 9.38  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=10.12  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=10.88  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=11.62  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=12.38  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=13.12  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=13.88  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=14.62  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=15.38  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=16.12  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=16.88  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=17.62  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=18.38  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=19.12  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=19.88  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=20.62  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=21.38  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=22.12  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=22.88  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=23.62  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=24.38  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=25.12  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=25.88  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=26.62  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=27.38  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=28.12  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=28.88  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=29.62  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+[step3] level-junction |du|: cross-level n=11702 mean=2.0473e-26 median=7.1255e-31 p95=2.8977e-27 max=2.3474e-24
+[step3] level-junction |du|: same-level  n=167934596 mean=1.1666e-03 median=2.8830e-11 p95=6.4721e-03 max=6.5983e-02
+[step3] cross/same p95 ratio = 0.000
+
+[step4] loaded /bk/l5_5step_save_each_step/step_04.h5 n_leaves=23005337 t=35.4s
+[step4] NaN/Inf: u_nan=0 u_inf=0 phi_nan=0 phi_inf=0
+[step4] radial |u| profile (bin_center, mean, std, max_abs):
+    r= 0.38  mean_u= 1.9619e-01  std_u=2.8522e-01  max|u|=9.9988e-01
+    r= 1.12  mean_u= 9.6475e-12  std_u=8.5565e-10  max|u|=7.0847e-08
+    r= 1.88  mean_u= 1.4844e-14  std_u=5.0331e-12  max|u|=1.4644e-10
+    r= 2.62  mean_u= 9.1521e-21  std_u=1.2990e-18  max|u|=2.7474e-17
+    r= 3.38  mean_u= 4.3780e-25  std_u=5.5189e-24  max|u|=7.0159e-23
+    r= 4.12  mean_u= 4.7434e-26  std_u=5.2104e-25  max|u|=5.8258e-24
+    r= 4.88  mean_u= 2.1385e-31  std_u=7.0953e-31  max|u|=4.0890e-30
+    r= 5.62  mean_u= 3.2566e-35  std_u=1.3808e-34  max|u|=6.2252e-34
+    r= 6.38  mean_u= 5.4942e-39  std_u=4.1923e-38  max|u|=3.2615e-37
+    r= 7.12  mean_u= 2.8942e-54  std_u=2.8554e-53  max|u|=2.8460e-52
+    r= 7.88  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r= 8.62  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r= 9.38  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=10.12  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=10.88  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=11.62  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=12.38  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=13.12  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=13.88  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=14.62  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=15.38  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=16.12  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=16.88  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=17.62  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=18.38  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=19.12  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=19.88  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=20.62  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=21.38  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=22.12  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=22.88  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=23.62  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=24.38  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=25.12  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=25.88  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=26.62  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=27.38  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=28.12  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=28.88  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=29.62  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+[step4] level-junction |du|: cross-level n=11702 mean=1.5363e-25 median=1.3437e-29 p95=2.1701e-26 max=1.7621e-23
+[step4] level-junction |du|: same-level  n=167934596 mean=6.5283e-04 median=5.5576e-11 p95=3.5939e-03 max=6.1104e-02
+[step4] cross/same p95 ratio = 0.000
+
+[step5] loaded /bk/l5_5step_save_each_step/step_05.h5 n_leaves=23005337 t=35.1s
+[step5] NaN/Inf: u_nan=0 u_inf=0 phi_nan=0 phi_inf=0
+[step5] radial |u| profile (bin_center, mean, std, max_abs):
+    r= 0.38  mean_u= 1.9619e-01  std_u=2.8535e-01  max|u|=1.0004e+00
+    r= 1.12  mean_u= 1.4989e-11  std_u=1.3064e-09  max|u|=1.0772e-07
+    r= 1.88  mean_u= 2.5316e-14  std_u=7.7888e-12  max|u|=2.2633e-10
+    r= 2.62  mean_u= 2.6471e-20  std_u=3.2315e-18  max|u|=6.8429e-17
+    r= 3.38  mean_u= 1.9961e-24  std_u=2.3781e-23  max|u|=2.8970e-22
+    r= 4.12  mean_u= 2.1220e-25  std_u=2.3280e-24  max|u|=2.6032e-23
+    r= 4.88  mean_u= 5.3463e-30  std_u=1.7527e-29  max|u|=1.0117e-28
+    r= 5.62  mean_u= 1.4852e-33  std_u=3.5746e-33  max|u|=1.5371e-32
+    r= 6.38  mean_u= 1.6313e-35  std_u=1.2447e-34  max|u|=9.6847e-34
+    r= 7.12  mean_u= 1.0550e-42  std_u=8.9268e-42  max|u|=7.7195e-41
+    r= 7.88  mean_u= 4.1403e-48  std_u=2.4171e-47  max|u|=1.4526e-46
+    r= 8.62  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r= 9.38  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=10.12  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=10.88  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=11.62  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=12.38  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=13.12  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=13.88  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=14.62  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=15.38  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=16.12  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=16.88  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=17.62  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=18.38  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=19.12  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=19.88  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=20.62  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=21.38  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=22.12  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=22.88  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=23.62  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=24.38  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=25.12  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=25.88  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=26.62  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=27.38  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=28.12  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=28.88  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+    r=29.62  mean_u= 0.0000e+00  std_u=0.0000e+00  max|u|=0.0000e+00
+[step5] level-junction |du|: cross-level n=11702 mean=6.8641e-25 median=1.1956e-28 p95=9.6831e-26 max=7.8737e-23
+[step5] level-junction |du|: same-level  n=167934596 mean=2.6170e-04 median=1.1465e-10 p95=1.3777e-03 max=5.4641e-02
+[step5] cross/same p95 ratio = 0.000
+

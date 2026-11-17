@@ -1,0 +1,25 @@
+linked before smoothing +1.000000 +1.000000 +0.000000
+smoothed tau 19.753: linked +1.000000 +0.999156 +0.147495
+linked-circulation lines at r 0.0 20.0 46.0
+/opt/py/py/lib/python3.13/site-packages/numpy/_core/fromnumeric.py:3862: RuntimeWarning: Mean of empty slice
+  return _methods._mean(a, axis=axis, dtype=dtype,
+/opt/py/py/lib/python3.13/site-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+P 278 N 5371238 R0 40.0 kappa 1.0 dt 0.0182 ticks 7975 midpoint x2
+t 0 instantaneous (term x unit time): |Gamma|-weighted z +0.03874; defect-label z +nan; max off-integer at defects 0.000e+00; max |Gamma| off-defect 1.886e-03
+       t count sum_n rho z_label z_|G| max|G-n|@def max|G|@non sum|G|@non/count  E_lf
+    0.00     0    +0    nan    +nan +0.1632 0.000e+00 1.886e-03 1.867e+03  12883.437629  leak 8.920e-01 rms 8.878 sum|G| 1.8671e+03 linked +1.000000 +0.999156 +0.147495 x_|G| +0.13966  (11.8 s/tick, ETA 1572 min)
+   10.00     0    +0    nan    +nan +0.5504 0.000e+00 1.883e-03 1.867e+03  12883.437620  leak 8.918e-01 rms 8.884 sum|G| 1.8668e+03 linked +1.000000 +0.999154 +0.147435 x_|G| +0.13909  (1.5 s/tick, ETA 187 min)
+   20.00     0    +0    nan    +nan +0.9375 0.000e+00 1.885e-03 1.867e+03  12883.437616  leak 8.921e-01 rms 8.884 sum|G| 1.8667e+03 linked +1.000000 +0.999153 +0.147136 x_|G| +0.13850  (1.4 s/tick, ETA 156 min)
+   30.00     0    +0    nan    +nan +1.3249 0.000e+00 1.888e-03 1.867e+03  12883.437619  leak 8.923e-01 rms 8.885 sum|G| 1.8667e+03 linked +1.000000 +0.999157 +0.146834 x_|G| +0.13790  (1.3 s/tick, ETA 139 min)
+   40.00     0    +0    nan    +nan +1.7124 0.000e+00 1.889e-03 1.867e+03  12883.437612  leak 8.920e-01 rms 8.888 sum|G| 1.8669e+03 linked +1.000000 +0.999160 +0.146587 x_|G| +0.13730  (1.3 s/tick, ETA 126 min)
+   50.00     0    +0    nan    +nan +2.0998 0.000e+00 1.892e-03 1.867e+03  12883.437615  leak 8.924e-01 rms 8.892 sum|G| 1.8671e+03 linked +1.000000 +0.999163 +0.146287 x_|G| +0.13669  (1.3 s/tick, ETA 113 min)
+   60.00     0    +0    nan    +nan +2.4872 0.000e+00 1.898e-03 1.867e+03  12883.437615  leak 8.926e-01 rms 8.896 sum|G| 1.8673e+03 linked +1.000000 +0.999169 +0.145786 x_|G| +0.13607  (1.3 s/tick, ETA 100 min)
+   70.00     0    +0    nan    +nan +2.8746 0.000e+00 1.904e-03 1.867e+03  12883.437615  leak 8.922e-01 rms 8.901 sum|G| 1.8674e+03 linked +1.000000 +0.999175 +0.145112 x_|G| +0.13545  (1.3 s/tick, ETA 87 min)
+   80.00     0    +0    nan    +nan +3.2615 0.000e+00 1.911e-03 1.868e+03  12883.437615  leak 8.927e-01 rms 8.907 sum|G| 1.8676e+03 linked +1.000000 +0.999180 +0.144314 x_|G| +0.13484  (1.3 s/tick, ETA 75 min)
+   90.00     0    +0    nan    +nan +3.6493 0.000e+00 1.917e-03 1.868e+03  12883.437615  leak 8.930e-01 rms 8.914 sum|G| 1.8678e+03 linked +1.000000 +0.999187 +0.143568 x_|G| +0.13421  (1.3 s/tick, ETA 63 min)
+  100.00     0    +0    nan    +nan +4.0367 0.000e+00 1.922e-03 1.868e+03  12883.437615  leak 8.926e-01 rms 8.923 sum|G| 1.8681e+03 linked +1.000000 +0.999196 +0.142663 x_|G| +0.13359  (1.2 s/tick, ETA 52 min)
+  110.00     0    +0    nan    +nan +4.4231 0.000e+00 1.927e-03 1.868e+03  12883.437611  leak 8.931e-01 rms 8.932 sum|G| 1.8684e+03 linked +1.000000 +0.999204 +0.141585 x_|G| +0.13298  (1.2 s/tick, ETA 40 min)
+  120.00     0    +0    nan    +nan +4.8090 0.000e+00 1.929e-03 1.869e+03  12883.437619  leak 8.934e-01 rms 8.945 sum|G| 1.8688e+03 linked +1.000000 +0.999212 +0.140429 x_|G| +0.13238  (1.2 s/tick, ETA 29 min)
+  130.00     0    +0    nan    +nan +5.1926 0.000e+00 1.930e-03 1.869e+03  12883.437616  leak 8.931e-01 rms 8.960 sum|G| 1.8695e+03 linked +1.000000 +0.999223 +0.139286 x_|G| +0.13178  (1.2 s/tick, ETA 17 min)
+  140.00     0    +0    nan    +nan +5.5749 0.000e+00 1.935e-03 1.870e+03  12883.437615  leak 8.937e-01 rms 8.978 sum|G| 1.8704e+03 linked +1.000000 +0.999234 +0.137981 x_|G| +0.13120  (1.2 s/tick, ETA 6 min)

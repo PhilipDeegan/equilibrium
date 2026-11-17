@@ -1,0 +1,44 @@
+arm=closed n_leaves=2784735 n_ring=192 omega=0.032723 dt=0.005154 T_mode=192.0 steps=4000 (t_end=20.6) near_leaves=7212 build_t=4.4s
+  lam=tube min=0.0050 max=1.0000 mean_near=0.8927
+  step      0 t=   0.00  E/E0=1.000000  Enear/Enear0=1.000000  near_frac=1.0000  u(c,s)=(+1.0000,+0.0000) phi(c,s)=(+1.0000,-0.0000)  wall=5s
+  step    100 t=   0.52  E/E0=0.996934  Enear/Enear0=0.996933  near_frac=1.0000  u(c,s)=(-0.4699,+0.0032) phi(c,s)=(+1.0000,+0.0032)  wall=26s
+  step    200 t=   1.03  E/E0=0.998933  Enear/Enear0=0.997702  near_frac=0.9988  u(c,s)=(-0.0109,-0.0009) phi(c,s)=(+1.0000,-0.0009)  wall=47s
+  step    300 t=   1.55  E/E0=0.999782  Enear/Enear0=0.958330  near_frac=0.9585  u(c,s)=(+0.0796,+0.0011) phi(c,s)=(+1.0000,+0.0011)  wall=68s
+  step    400 t=   2.06  E/E0=0.999618  Enear/Enear0=0.896314  near_frac=0.8967  u(c,s)=(-0.1251,-0.0001) phi(c,s)=(+1.0000,-0.0001)  wall=89s
+  step    500 t=   2.58  E/E0=0.999539  Enear/Enear0=0.809560  near_frac=0.8099  u(c,s)=(+0.0666,+0.0002) phi(c,s)=(+1.0000,+0.0002)  wall=109s
+  step    600 t=   3.09  E/E0=0.999856  Enear/Enear0=0.738505  near_frac=0.7386  u(c,s)=(-0.0225,+0.0001) phi(c,s)=(+1.0000,+0.0001)  wall=130s
+  step    700 t=   3.61  E/E0=1.000043  Enear/Enear0=0.699004  near_frac=0.6990  u(c,s)=(-0.0255,+0.0001) phi(c,s)=(+1.0000,+0.0001)  wall=151s
+  step    800 t=   4.12  E/E0=0.999917  Enear/Enear0=0.661690  near_frac=0.6617  u(c,s)=(+0.0263,-0.0001) phi(c,s)=(+1.0000,-0.0001)  wall=172s
+  step    900 t=   4.64  E/E0=0.999851  Enear/Enear0=0.628666  near_frac=0.6288  u(c,s)=(-0.0117,+0.0003) phi(c,s)=(+1.0000,+0.0003)  wall=192s
+  step   1000 t=   5.15  E/E0=1.000007  Enear/Enear0=0.602608  near_frac=0.6026  u(c,s)=(-0.0207,-0.0002) phi(c,s)=(+1.0000,-0.0002)  wall=213s
+  step   1100 t=   5.67  E/E0=1.000132  Enear/Enear0=0.583654  near_frac=0.5836  u(c,s)=(+0.0392,+0.0002) phi(c,s)=(+1.0000,+0.0002)  wall=234s
+  step   1200 t=   6.18  E/E0=1.000062  Enear/Enear0=0.568282  near_frac=0.5682  u(c,s)=(-0.0428,-0.0000) phi(c,s)=(+1.0000,-0.0000)  wall=256s
+  step   1300 t=   6.70  E/E0=0.999946  Enear/Enear0=0.554722  near_frac=0.5548  u(c,s)=(+0.0277,-0.0000) phi(c,s)=(+1.0000,-0.0000)  wall=276s
+  step   1400 t=   7.22  E/E0=0.999942  Enear/Enear0=0.543028  near_frac=0.5431  u(c,s)=(-0.0067,+0.0000) phi(c,s)=(+1.0000,+0.0000)  wall=297s
+  step   1500 t=   7.73  E/E0=1.000026  Enear/Enear0=0.535137  near_frac=0.5351  u(c,s)=(-0.0091,-0.0000) phi(c,s)=(+1.0000,-0.0000)  wall=318s
+  step   1600 t=   8.25  E/E0=1.000123  Enear/Enear0=0.530229  near_frac=0.5302  u(c,s)=(+0.0125,-0.0001) phi(c,s)=(+1.0000,-0.0001)  wall=339s
+  step   1700 t=   8.76  E/E0=1.000215  Enear/Enear0=0.526427  near_frac=0.5263  u(c,s)=(-0.0029,+0.0001) phi(c,s)=(+1.0000,+0.0001)  wall=360s
+  step   1800 t=   9.28  E/E0=1.000236  Enear/Enear0=0.523276  near_frac=0.5232  u(c,s)=(-0.0117,-0.0001) phi(c,s)=(+1.0000,-0.0001)  wall=380s
+  step   1900 t=   9.79  E/E0=1.000127  Enear/Enear0=0.521414  near_frac=0.5213  u(c,s)=(+0.0239,+0.0001) phi(c,s)=(+1.0000,+0.0001)  wall=401s
+  step   2000 t=  10.31  E/E0=0.999986  Enear/Enear0=0.521033  near_frac=0.5210  u(c,s)=(-0.0266,-0.0000) phi(c,s)=(+1.0000,-0.0000)  wall=422s
+  step   2100 t=  10.82  E/E0=0.999978  Enear/Enear0=0.521258  near_frac=0.5213  u(c,s)=(+0.0199,-0.0000) phi(c,s)=(+1.0000,-0.0000)  wall=443s
+  step   2200 t=  11.34  E/E0=0.999982  Enear/Enear0=0.521434  near_frac=0.5214  u(c,s)=(-0.0068,+0.0001) phi(c,s)=(+1.0000,+0.0001)  wall=464s
+  step   2300 t=  11.85  E/E0=1.000016  Enear/Enear0=0.521617  near_frac=0.5216  u(c,s)=(-0.0057,-0.0000) phi(c,s)=(+1.0000,-0.0000)  wall=486s
+  step   2400 t=  12.37  E/E0=0.999964  Enear/Enear0=0.521840  near_frac=0.5219  u(c,s)=(+0.0124,-0.0000) phi(c,s)=(+1.0000,-0.0000)  wall=507s
+  step   2500 t=  12.89  E/E0=0.999948  Enear/Enear0=0.522141  near_frac=0.5222  u(c,s)=(-0.0128,+0.0000) phi(c,s)=(+1.0000,+0.0000)  wall=527s
+  step   2600 t=  13.40  E/E0=1.000006  Enear/Enear0=0.522445  near_frac=0.5224  u(c,s)=(+0.0067,-0.0001) phi(c,s)=(+1.0000,-0.0001)  wall=548s
+  step   2700 t=  13.92  E/E0=1.000052  Enear/Enear0=0.522461  near_frac=0.5224  u(c,s)=(+0.0024,+0.0001) phi(c,s)=(+1.0000,+0.0001)  wall=569s
+  step   2800 t=  14.43  E/E0=1.000019  Enear/Enear0=0.522415  near_frac=0.5224  u(c,s)=(-0.0112,-0.0001) phi(c,s)=(+1.0000,-0.0001)  wall=590s
+  step   2900 t=  14.95  E/E0=0.999953  Enear/Enear0=0.522403  near_frac=0.5224  u(c,s)=(+0.0169,+0.0000) phi(c,s)=(+1.0000,+0.0000)  wall=611s
+  step   3000 t=  15.46  E/E0=0.999987  Enear/Enear0=0.522389  near_frac=0.5224  u(c,s)=(-0.0195,+0.0000) phi(c,s)=(+1.0000,+0.0000)  wall=632s
+  step   3100 t=  15.98  E/E0=1.000098  Enear/Enear0=0.522484  near_frac=0.5224  u(c,s)=(+0.0196,-0.0000) phi(c,s)=(+1.0000,-0.0000)  wall=653s
+  step   3200 t=  16.49  E/E0=1.000162  Enear/Enear0=0.522417  near_frac=0.5223  u(c,s)=(-0.0202,+0.0000) phi(c,s)=(+1.0000,+0.0000)  wall=673s
+  step   3300 t=  17.01  E/E0=1.000105  Enear/Enear0=0.522138  near_frac=0.5221  u(c,s)=(+0.0155,-0.0001) phi(c,s)=(+1.0000,-0.0001)  wall=694s
+  step   3400 t=  17.52  E/E0=0.999997  Enear/Enear0=0.521882  near_frac=0.5219  u(c,s)=(-0.0099,+0.0000) phi(c,s)=(+1.0000,+0.0000)  wall=714s
+  step   3500 t=  18.04  E/E0=1.000046  Enear/Enear0=0.521553  near_frac=0.5215  u(c,s)=(-0.0002,-0.0001) phi(c,s)=(+1.0000,-0.0001)  wall=735s
+  step   3600 t=  18.55  E/E0=1.000045  Enear/Enear0=0.521495  near_frac=0.5215  u(c,s)=(+0.0086,+0.0000) phi(c,s)=(+1.0000,+0.0000)  wall=755s
+  step   3700 t=  19.07  E/E0=1.000111  Enear/Enear0=0.521165  near_frac=0.5211  u(c,s)=(-0.0231,-0.0001) phi(c,s)=(+1.0000,-0.0001)  wall=775s
+  step   3800 t=  19.59  E/E0=1.000068  Enear/Enear0=0.520851  near_frac=0.5208  u(c,s)=(+0.0243,-0.0001) phi(c,s)=(+1.0000,-0.0001)  wall=796s
+  step   3900 t=  20.10  E/E0=1.000044  Enear/Enear0=0.520613  near_frac=0.5206  u(c,s)=(-0.0274,-0.0001) phi(c,s)=(+1.0000,-0.0001)  wall=817s
+  step   4000 t=  20.62  E/E0=1.000092  Enear/Enear0=0.519828  near_frac=0.5198  u(c,s)=(+0.0254,-0.0001) phi(c,s)=(+1.0000,-0.0001)  wall=837s
+done total_t=837s

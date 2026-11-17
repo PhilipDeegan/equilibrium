@@ -1,0 +1,48 @@
+P 64 a 6.0 N 65536 triangles 786432  g_c 4.2469  g 4.2469  hold 1.0  order 4
+  t    0.0  (E+Ee)/E0 1.000000  Ephi/E0 1.0000  Ee/E0 0.0000  |dphi| 0.0000  cos 0.9672  fine 0.0002  in/shell/out 0.9699 0.0301 0.0000  (ETA 9.7 min)
+  t    5.0  (E+Ee)/E0 1.000000  Ephi/E0 0.9992  Ee/E0 0.0008  |dphi| 0.0401  cos 0.9673  fine 0.0001  in/shell/out 0.9662 0.0335 0.0003  (ETA 9.8 min)
+  t   10.0  (E+Ee)/E0 0.999998  Ephi/E0 0.9979  Ee/E0 0.0021  |dphi| 0.0521  cos 0.9673  fine 0.0001  in/shell/out 0.9652 0.0341 0.0006  (ETA 9.4 min)
+  t   15.0  (E+Ee)/E0 0.999999  Ephi/E0 0.9964  Ee/E0 0.0036  |dphi| 0.0674  cos 0.9682  fine 0.0001  in/shell/out 0.9631 0.0361 0.0008  (ETA 9.0 min)
+  t   20.0  (E+Ee)/E0 1.000001  Ephi/E0 0.9952  Ee/E0 0.0048  |dphi| 0.0872  cos 0.9685  fine 0.0001  in/shell/out 0.9602 0.0388 0.0011  (ETA 8.6 min)
+  t   25.0  (E+Ee)/E0 1.000002  Ephi/E0 0.9944  Ee/E0 0.0056  |dphi| 0.1054  cos 0.9684  fine 0.0001  in/shell/out 0.9575 0.0410 0.0015  (ETA 8.3 min)
+  t   30.0  (E+Ee)/E0 1.000003  Ephi/E0 0.9937  Ee/E0 0.0063  |dphi| 0.1205  cos 0.9681  fine 0.0001  in/shell/out 0.9553 0.0426 0.0021  (ETA 8.0 min)
+  t   35.0  (E+Ee)/E0 1.000004  Ephi/E0 0.9932  Ee/E0 0.0068  |dphi| 0.1329  cos 0.9677  fine 0.0001  in/shell/out 0.9536 0.0437 0.0027  (ETA 7.6 min)
+  t   40.0  (E+Ee)/E0 1.000004  Ephi/E0 0.9928  Ee/E0 0.0072  |dphi| 0.1426  cos 0.9674  fine 0.0001  in/shell/out 0.9523 0.0444 0.0033  (ETA 7.3 min)
+  t   45.0  (E+Ee)/E0 1.000005  Ephi/E0 0.9924  Ee/E0 0.0076  |dphi| 0.1506  cos 0.9671  fine 0.0001  in/shell/out 0.9512 0.0449 0.0039  (ETA 7.0 min)
+  t   50.0  (E+Ee)/E0 1.000007  Ephi/E0 0.9920  Ee/E0 0.0081  |dphi| 0.1573  cos 0.9672  fine 0.0001  in/shell/out 0.9502 0.0454 0.0044  (ETA 6.6 min)
+  t   55.0  (E+Ee)/E0 1.000007  Ephi/E0 0.9914  Ee/E0 0.0086  |dphi| 0.1636  cos 0.9674  fine 0.0001  in/shell/out 0.9494 0.0459 0.0047  (ETA 6.3 min)
+  t   60.0  (E+Ee)/E0 1.000008  Ephi/E0 0.9907  Ee/E0 0.0093  |dphi| 0.1699  cos 0.9678  fine 0.0001  in/shell/out 0.9482 0.0469 0.0049  (ETA 6.0 min)
+  t   65.0  (E+Ee)/E0 1.000009  Ephi/E0 0.9901  Ee/E0 0.0099  |dphi| 0.1763  cos 0.9683  fine 0.0001  in/shell/out 0.9470 0.0478 0.0052  (ETA 5.7 min)
+  t   70.0  (E+Ee)/E0 1.000009  Ephi/E0 0.9894  Ee/E0 0.0106  |dphi| 0.1836  cos 0.9687  fine 0.0001  in/shell/out 0.9456 0.0489 0.0055  (ETA 5.3 min)
+  t   75.0  (E+Ee)/E0 1.000011  Ephi/E0 0.9887  Ee/E0 0.0113  |dphi| 0.1916  cos 0.9692  fine 0.0001  in/shell/out 0.9437 0.0504 0.0059  (ETA 5.0 min)
+  t   80.0  (E+Ee)/E0 1.000012  Ephi/E0 0.9878  Ee/E0 0.0122  |dphi| 0.2001  cos 0.9694  fine 0.0001  in/shell/out 0.9419 0.0517 0.0064  (ETA 4.6 min)
+  t   85.0  (E+Ee)/E0 1.000013  Ephi/E0 0.9867  Ee/E0 0.0133  |dphi| 0.2094  cos 0.9697  fine 0.0001  in/shell/out 0.9395 0.0538 0.0067  (ETA 4.3 min)
+  t   90.0  (E+Ee)/E0 1.000014  Ephi/E0 0.9854  Ee/E0 0.0146  |dphi| 0.2193  cos 0.9696  fine 0.0001  in/shell/out 0.9374 0.0556 0.0070  (ETA 4.0 min)
+  t   95.0  (E+Ee)/E0 1.000016  Ephi/E0 0.9838  Ee/E0 0.0163  |dphi| 0.2313  cos 0.9690  fine 0.0001  in/shell/out 0.9341 0.0587 0.0073  (ETA 3.6 min)
+  t  100.0  (E+Ee)/E0 1.000018  Ephi/E0 0.9818  Ee/E0 0.0182  |dphi| 0.2449  cos 0.9679  fine 0.0001  in/shell/out 0.9302 0.0620 0.0077  (ETA 3.3 min)
+  t  105.0  (E+Ee)/E0 1.000022  Ephi/E0 0.9796  Ee/E0 0.0204  |dphi| 0.2601  cos 0.9659  fine 0.0001  in/shell/out 0.9257 0.0660 0.0084  (ETA 3.0 min)
+  t  110.0  (E+Ee)/E0 1.000025  Ephi/E0 0.9769  Ee/E0 0.0232  |dphi| 0.2767  cos 0.9630  fine 0.0001  in/shell/out 0.9202 0.0707 0.0092  (ETA 2.6 min)
+  t  115.0  (E+Ee)/E0 1.000030  Ephi/E0 0.9735  Ee/E0 0.0265  |dphi| 0.2950  cos 0.9583  fine 0.0001  in/shell/out 0.9138 0.0762 0.0100  (ETA 2.3 min)
+  t  120.0  (E+Ee)/E0 1.000036  Ephi/E0 0.9694  Ee/E0 0.0306  |dphi| 0.3151  cos 0.9514  fine 0.0001  in/shell/out 0.9069 0.0821 0.0111  (ETA 2.0 min)
+  t  125.0  (E+Ee)/E0 1.000044  Ephi/E0 0.9644  Ee/E0 0.0356  |dphi| 0.3381  cos 0.9407  fine 0.0001  in/shell/out 0.8991 0.0885 0.0124  (ETA 1.7 min)
+  t  130.0  (E+Ee)/E0 1.000054  Ephi/E0 0.9584  Ee/E0 0.0417  |dphi| 0.3654  cos 0.9253  fine 0.0000  in/shell/out 0.8901 0.0959 0.0139  (ETA 1.3 min)
+  t  135.0  (E+Ee)/E0 1.000066  Ephi/E0 0.9511  Ee/E0 0.0490  |dphi| 0.3994  cos 0.9029  fine 0.0000  in/shell/out 0.8799 0.1041 0.0160  (ETA 1.0 min)
+  t  140.0  (E+Ee)/E0 1.000083  Ephi/E0 0.9423  Ee/E0 0.0578  |dphi| 0.4455  cos 0.8668  fine 0.0000  in/shell/out 0.8676 0.1137 0.0188  (ETA 0.6 min)
+  t  145.0  (E+Ee)/E0 1.000106  Ephi/E0 0.9312  Ee/E0 0.0690  |dphi| 0.5107  cos 0.8059  fine 0.0000  in/shell/out 0.8526 0.1249 0.0226  (ETA 0.3 min)
+  t  150.0  (E+Ee)/E0 1.000145  Ephi/E0 0.9158  Ee/E0 0.0844  |dphi| 0.6003  cos 0.7074  fine 0.0000  in/shell/out 0.8339 0.1386 0.0275  (ETA 0.0 min)
+Traceback (most recent call last):
+  File "/home/p/git/eq/exp/2026/10/24/handoff/ho.py", line 181, in <module>
+    np.savez_compressed(args.out, phi=ac.phi, e=e, hist=np.array([[h["t"], h["Ephi"], h["Ee"], h["d"], h["cos"], h["fine"], *h["sh"]] for h in hist]))
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/py/py/lib/python3.13/site-packages/numpy/lib/_npyio_impl.py", line 753, in savez_compressed
+    _savez(file, args, kwds, True, allow_pickle=allow_pickle)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/py/py/lib/python3.13/site-packages/numpy/lib/_npyio_impl.py", line 779, in _savez
+    zipf = zipfile_factory(file, mode="w", compression=compression)
+  File "/opt/py/py/lib/python3.13/site-packages/numpy/lib/_npyio_impl.py", line 112, in zipfile_factory
+    return zipfile.ZipFile(file, *args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/py/py/lib/python3.13/zipfile/__init__.py", line 1367, in __init__
+    self.fp = io.open(file, filemode)
+              ~~~~~~~^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/o4_a6.npz'

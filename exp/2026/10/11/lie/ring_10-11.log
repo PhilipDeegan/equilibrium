@@ -1,0 +1,14 @@
+flow lie midpoint x3 kappa +0.1 a0 1.0 R0 12.0 wt 3.0 P 120 dt 0.0182 (550 ticks)
+  t   0.00: |B| centroid rho  13.03 z  -0.000; sum|B|    889.35; max |u| 0.000e+00; E_lf          nan
+  t   2.00: |B| centroid rho  13.04 z  +0.067; sum|B|    886.71; max |u| 6.987e-02; E_lf  1310.417296
+  t   4.00: |B| centroid rho  13.05 z  +0.132; sum|B|    882.03; max |u| 7.968e-02; E_lf  1310.417507
+  t   6.00: |B| centroid rho  13.05 z  +0.198; sum|B|    884.09; max |u| 6.761e-02; E_lf  1310.416985
+  t   8.00: |B| centroid rho  13.05 z  +0.263; sum|B|    886.62; max |u| 6.302e-02; E_lf  1310.417014
+  t  10.00: |B| centroid rho  13.06 z  +0.328; sum|B|    887.74; max |u| 6.450e-02; E_lf  1310.416984
+flow lie midpoint x3 kappa -0.1 a0 1.0 R0 12.0 wt 3.0 P 120 dt 0.0182 (550 ticks)
+  t   0.00: |B| centroid rho  13.03 z  -0.000; sum|B|    889.35; max |u| 0.000e+00; E_lf          nan
+  t   2.00: |B| centroid rho  13.04 z  -0.067; sum|B|    886.71; max |u| 6.987e-02; E_lf  1310.417296
+  t   4.00: |B| centroid rho  13.05 z  -0.132; sum|B|    882.03; max |u| 7.968e-02; E_lf  1310.417507
+  t   6.00: |B| centroid rho  13.05 z  -0.198; sum|B|    884.09; max |u| 6.761e-02; E_lf  1310.416985
+  t   8.00: |B| centroid rho  13.05 z  -0.263; sum|B|    886.62; max |u| 6.302e-02; E_lf  1310.417014
+  t  10.00: |B| centroid rho  13.06 z  -0.328; sum|B|    887.74; max |u| 6.450e-02; E_lf  1310.416984

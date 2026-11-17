@@ -1,0 +1,239 @@
+H0 (from /bk/l1_wider_margin_ic220.h5)=4.462388e+06
+loaded /bk/l1_wider_margin_stepped/step_140_final.h5 (resuming from absolute step 140) n_leaves=15542429 t=49.9s peak_rss_GB=12.83
+dt=5.128205e-03
+step 141 step_time=4.1s H=4.869625e+06 H/H0=1.091260 H_by_level=[5.708003197466529e-49, 4869625.022731934] peak_rss_GB=12.83
+[step_141] n_leaves=15542429 n_slice=148637 -> exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_141.png
+step 141 plotted exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_141.png plot_time=3.7s
+step 142 step_time=4.1s H=4.873271e+06 H/H0=1.092077 H_by_level=[7.642278874179857e-49, 4873271.420867403] peak_rss_GB=14.46
+step 143 step_time=4.1s H=4.876888e+06 H/H0=1.092887 H_by_level=[1.0210608879747503e-48, 4876887.814040158] peak_rss_GB=14.46
+step 144 step_time=4.1s H=4.880474e+06 H/H0=1.093691 H_by_level=[1.3613932341094723e-48, 4880473.906308844] peak_rss_GB=14.46
+[step_144] n_leaves=15542429 n_slice=148637 -> exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_144.png
+step 144 plotted exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_144.png plot_time=3.6s
+step 145 step_time=4.1s H=4.884029e+06 H/H0=1.094488 H_by_level=[1.8114716638907867e-48, 4884029.09126437] peak_rss_GB=14.46
+step 146 step_time=4.1s H=4.887552e+06 H/H0=1.095277 H_by_level=[2.4055149554514962e-48, 4887552.4426022945] peak_rss_GB=14.46
+step 147 step_time=4.1s H=4.891043e+06 H/H0=1.096059 H_by_level=[3.188052185403674e-48, 4891042.710734586] peak_rss_GB=14.46
+[step_147] n_leaves=15542429 n_slice=148637 -> exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_147.png
+step 147 plotted exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_147.png plot_time=3.6s
+step 148 step_time=4.1s H=4.894498e+06 H/H0=1.096834 H_by_level=[4.216922831198347e-48, 4894498.325709108] peak_rss_GB=14.46
+step 149 step_time=4.1s H=4.897917e+06 H/H0=1.097600 H_by_level=[5.567119373645259e-48, 4897917.406501987] peak_rss_GB=14.46
+step 150 step_time=4.1s H=4.901298e+06 H/H0=1.098358 H_by_level=[7.335700574047864e-48, 4901297.776702202] peak_rss_GB=14.46
+[step_150] n_leaves=15542429 n_slice=148637 -> exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_150.png
+step 150 plotted exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_150.png plot_time=3.6s
+step 151 step_time=4.1s H=4.904637e+06 H/H0=1.099106 H_by_level=[9.64806315331825e-48, 4904636.986403502] peak_rss_GB=14.46
+step 152 step_time=4.1s H=4.907932e+06 H/H0=1.099844 H_by_level=[1.2665934120320386e-47, 4907932.340008728] peak_rss_GB=14.46
+step 153 step_time=4.1s H=4.911181e+06 H/H0=1.100572 H_by_level=[1.6597539102619114e-47, 4911180.9296047315] peak_rss_GB=14.46
+[step_153] n_leaves=15542429 n_slice=148637 -> exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_153.png
+step 153 plotted exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_153.png plot_time=3.6s
+step 154 step_time=4.2s H=4.914380e+06 H/H0=1.101289 H_by_level=[2.171051818502734e-47, 4914379.673219585] peak_rss_GB=14.46
+step 155 step_time=4.1s H=4.917525e+06 H/H0=1.101994 H_by_level=[2.8348305449093366e-47, 4917525.357498627] peak_rss_GB=14.46
+step 156 step_time=4.1s H=4.920615e+06 H/H0=1.102686 H_by_level=[3.69508683761805e-47, 4920614.683878409] peak_rss_GB=14.46
+[step_156] n_leaves=15542429 n_slice=148637 -> exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_156.png
+step 156 plotted exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_156.png plot_time=3.6s
+step 157 step_time=4.1s H=4.923644e+06 H/H0=1.103365 H_by_level=[4.808092680755691e-47, 4923644.317502824] peak_rss_GB=14.46
+step 158 step_time=4.1s H=4.926611e+06 H/H0=1.104030 H_by_level=[6.245704839499173e-47, 4926610.937938] peak_rss_GB=14.46
+step 159 step_time=4.1s H=4.929511e+06 H/H0=1.104680 H_by_level=[8.099536084539872e-47, 4929511.290737037] peak_rss_GB=14.46
+[step_159] n_leaves=15542429 n_slice=148637 -> exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_159.png
+step 159 plotted exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_159.png plot_time=3.7s
+step 160 step_time=4.1s H=4.932342e+06 H/H0=1.105314 H_by_level=[1.0486204594659663e-46, 4932342.238818467] peak_rss_GB=14.46
+step 161 step_time=4.1s H=4.935101e+06 H/H0=1.105933 H_by_level=[1.3553930489395375e-46, 4935100.812690578] peak_rss_GB=14.46
+step 162 step_time=4.1s H=4.937784e+06 H/H0=1.106534 H_by_level=[1.749081314187932e-46, 4937784.258490449] peak_rss_GB=14.46
+[step_162] n_leaves=15542429 n_slice=148637 -> exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_162.png
+step 162 plotted exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_162.png plot_time=3.6s
+step 163 step_time=4.1s H=4.940390e+06 H/H0=1.107118 H_by_level=[2.2535202616845554e-46, 4940390.082899893] peak_rss_GB=14.46
+step 164 step_time=4.1s H=4.942916e+06 H/H0=1.107684 H_by_level=[2.8988676617254512e-46, 4942916.094017237] peak_rss_GB=14.46
+step 165 step_time=4.1s H=4.945360e+06 H/H0=1.108232 H_by_level=[3.723225477020885e-46, 4945360.437368173] peak_rss_GB=14.46
+[step_165] n_leaves=15542429 n_slice=148637 -> exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_165.png
+step 165 plotted exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_165.png plot_time=3.7s
+step 166 step_time=4.1s H=4.947722e+06 H/H0=1.108761 H_by_level=[4.7746629870940796e-46, 4947721.626317685] peak_rss_GB=14.46
+step 167 step_time=4.1s H=4.949999e+06 H/H0=1.109271 H_by_level=[6.113737680837878e-46, 4949998.566285512] peak_rss_GB=14.46
+step 168 step_time=4.1s H=4.952191e+06 H/H0=1.109762 H_by_level=[7.816632155067349e-46, 4952190.572262906] peak_rss_GB=14.46
+[step_168] n_leaves=15542429 n_slice=148637 -> exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_168.png
+step 168 plotted exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_168.png plot_time=3.6s
+step 169 step_time=4.1s H=4.954297e+06 H/H0=1.110234 H_by_level=[9.979052351717928e-46, 4954297.3793117525] peak_rss_GB=14.46
+step 170 step_time=4.1s H=4.956319e+06 H/H0=1.110688 H_by_level=[1.2721065546281195e-45, 4956319.145830357] peak_rss_GB=14.46
+step 171 step_time=4.1s H=4.958256e+06 H/H0=1.111122 H_by_level=[1.6193096838532522e-45, 4958256.449598939] peak_rss_GB=14.46
+[step_171] n_leaves=15542429 n_slice=148637 -> exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_171.png
+step 171 plotted exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_171.png plot_time=3.7s
+step 172 step_time=4.1s H=4.960110e+06 H/H0=1.111537 H_by_level=[2.0583352027630632e-45, 4960110.276698181] peak_rss_GB=14.47
+step 173 step_time=4.1s H=4.961882e+06 H/H0=1.111934 H_by_level=[2.6126994523337452e-45, 4961882.003584188] peak_rss_GB=14.47
+step 174 step_time=4.1s H=4.963573e+06 H/H0=1.112313 H_by_level=[3.311747657262218e-45, 4963573.372777325] peak_rss_GB=14.47
+[step_174] n_leaves=15542429 n_slice=148637 -> exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_174.png
+step 174 plotted exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_174.png plot_time=3.6s
+step 175 step_time=4.1s H=4.965186e+06 H/H0=1.112675 H_by_level=[4.192051323082802e-45, 4965186.462735981] peak_rss_GB=14.47
+step 176 step_time=4.1s H=4.966724e+06 H/H0=1.113019 H_by_level=[5.299129437499189e-45, 4966723.652595091] peak_rss_GB=14.47
+step 177 step_time=4.1s H=4.968188e+06 H/H0=1.113347 H_by_level=[6.689565947365311e-45, 4968187.582621833] peak_rss_GB=14.47
+[step_177] n_leaves=15542429 n_slice=148637 -> exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_177.png
+step 177 plotted exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_177.png plot_time=3.6s
+step 178 step_time=4.1s H=4.969581e+06 H/H0=1.113659 H_by_level=[8.433611637602185e-45, 4969581.111232315] peak_rss_GB=14.47
+step 179 step_time=4.1s H=4.970907e+06 H/H0=1.113957 H_by_level=[1.0618377454466654e-44, 4970907.269629621] peak_rss_GB=14.47
+step 180 step_time=4.1s H=4.972169e+06 H/H0=1.114239 H_by_level=[1.3351749147685444e-44, 4972169.214991143] peak_rss_GB=14.47
+[step_180] n_leaves=15542429 n_slice=148637 -> exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_180.png
+step 180 plotted exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_180.png plot_time=3.7s
+step 181 step_time=4.1s H=4.973370e+06 H/H0=1.114509 H_by_level=[1.6767180635164707e-44, 4973370.183317456] peak_rss_GB=14.47
+step 182 step_time=4.1s H=4.974513e+06 H/H0=1.114765 H_by_level=[2.1029556651560877e-44, 4974513.442933033] peak_rss_GB=14.47
+step 183 step_time=4.1s H=4.975602e+06 H/H0=1.115009 H_by_level=[2.634235513693746e-44, 4975602.24968015] peak_rss_GB=14.47
+[step_183] n_leaves=15542429 n_slice=148637 -> exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_183.png
+step 183 plotted exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_183.png plot_time=3.7s
+step 184 step_time=4.1s H=4.976640e+06 H/H0=1.115241 H_by_level=[3.295638777341306e-44, 4976639.804731992] peak_rss_GB=14.47
+step 185 step_time=4.1s H=4.977629e+06 H/H0=1.115463 H_by_level=[4.1180454654278023e-44, 4977629.215937688] peak_rss_GB=14.47
+step 186 step_time=4.1s H=4.978573e+06 H/H0=1.115675 H_by_level=[5.139431813380639e-44, 4978573.463432526] peak_rss_GB=14.47
+[step_186] n_leaves=15542429 n_slice=148637 -> exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_186.png
+step 186 plotted exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_186.png plot_time=3.7s
+step 187 step_time=4.1s H=4.979475e+06 H/H0=1.115877 H_by_level=[6.406448366582574e-44, 4979475.370223931] peak_rss_GB=14.47
+step 188 step_time=4.1s H=4.980338e+06 H/H0=1.116070 H_by_level=[7.976337451323282e-44, 4980337.578272042] peak_rss_GB=14.47
+step 189 step_time=4.1s H=4.981163e+06 H/H0=1.116255 H_by_level=[9.919260569970259e-44, 4981162.530426051] peak_rss_GB=14.47
+[step_189] n_leaves=15542429 n_slice=148637 -> exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_189.png
+step 189 plotted exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_189.png plot_time=3.6s
+step 190 step_time=4.1s H=4.981952e+06 H/H0=1.116432 H_by_level=[1.2321120414581384e-43, 4981952.45850257] peak_rss_GB=14.47
+step 191 step_time=4.1s H=4.982709e+06 H/H0=1.116601 H_by_level=[1.528697909207348e-43, 4982709.377556722] peak_rss_GB=14.47
+step 192 step_time=4.1s H=4.983435e+06 H/H0=1.116764 H_by_level=[1.8945194306594392e-43, 4983435.086277258] peak_rss_GB=14.47
+[step_192] n_leaves=15542429 n_slice=148637 -> exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_192.png
+step 192 plotted exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_192.png plot_time=3.6s
+step 193 step_time=4.1s H=4.984131e+06 H/H0=1.116920 H_by_level=[2.3452419255016543e-43, 4984131.17329657] peak_rss_GB=14.47
+step 194 step_time=4.1s H=4.984799e+06 H/H0=1.117070 H_by_level=[2.8999640571419147e-43, 4984799.029000316] peak_rss_GB=14.47
+step 195 step_time=4.1s H=4.985440e+06 H/H0=1.117213 H_by_level=[3.5819462644814268e-43, 4985439.862423516] peak_rss_GB=14.47
+[step_195] n_leaves=15542429 n_slice=148637 -> exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_195.png
+step 195 plotted exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_195.png plot_time=3.6s
+step 196 step_time=4.1s H=4.986055e+06 H/H0=1.117351 H_by_level=[4.419488701801976e-43, 4986054.722492585] peak_rss_GB=14.47
+step 197 step_time=4.1s H=4.986645e+06 H/H0=1.117483 H_by_level=[5.4469883514922886e-43, 4986644.523022497] peak_rss_GB=14.47
+step 198 step_time=4.2s H=4.987210e+06 H/H0=1.117610 H_by_level=[6.706210660186414e-43, 4987210.070557756] peak_rss_GB=14.47
+[step_198] n_leaves=15542429 n_slice=148637 -> exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_198.png
+step 198 plotted exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_198.png plot_time=3.6s
+step 199 step_time=4.1s H=4.987752e+06 H/H0=1.117732 H_by_level=[8.247817786658977e-43, 4987752.094304434] peak_rss_GB=14.47
+step 200 step_time=4.1s H=4.988271e+06 H/H0=1.117848 H_by_level=[1.013320352725241e-42, 4988271.277164446] peak_rss_GB=14.47
+step 201 step_time=4.1s H=4.988768e+06 H/H0=1.117959 H_by_level=[1.2436694421622865e-42, 4988768.287095617] peak_rss_GB=14.47
+[step_201] n_leaves=15542429 n_slice=148637 -> exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_201.png
+step 201 plotted exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_201.png plot_time=3.7s
+step 202 step_time=4.1s H=4.989244e+06 H/H0=1.118066 H_by_level=[1.5248187695855833e-42, 4989243.807804291] peak_rss_GB=14.47
+step 203 step_time=4.1s H=4.989699e+06 H/H0=1.118168 H_by_level=[1.8676309872835316e-42, 4989698.568021559] peak_rss_GB=14.47
+step 204 step_time=4.1s H=4.990133e+06 H/H0=1.118265 H_by_level=[2.2852195423592056e-42, 4990133.36853847] peak_rss_GB=14.47
+[step_204] n_leaves=15542429 n_slice=148637 -> exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_204.png
+step 204 plotted exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_204.png plot_time=3.6s
+step 205 step_time=4.1s H=4.990549e+06 H/H0=1.118358 H_by_level=[2.7934003159874085e-42, 4990549.106332201] peak_rss_GB=14.47
+step 206 step_time=4.1s H=4.990947e+06 H/H0=1.118447 H_by_level=[3.411230965792846e-42, 4990946.795160783] peak_rss_GB=14.47
+step 207 step_time=4.1s H=4.991328e+06 H/H0=1.118533 H_by_level=[4.161654441699676e-42, 4991327.582202576] peak_rss_GB=14.47
+[step_207] n_leaves=15542429 n_slice=148637 -> exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_207.png
+step 207 plotted exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_207.png plot_time=3.7s
+step 208 step_time=4.1s H=4.991693e+06 H/H0=1.118615 H_by_level=[5.0722661346743714e-42, 4991692.760320668] peak_rss_GB=14.47
+step 209 step_time=4.1s H=4.992044e+06 H/H0=1.118693 H_by_level=[6.176227630669852e-42, 4992043.7757850895] peak_rss_GB=14.47
+step 210 step_time=4.1s H=4.992382e+06 H/H0=1.118769 H_by_level=[7.513354167345498e-42, 4992382.23135324] peak_rss_GB=14.47
+[step_210] n_leaves=15542429 n_slice=148637 -> exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_210.png
+step 210 plotted exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_210.png plot_time=3.7s
+step 211 step_time=4.1s H=4.992710e+06 H/H0=1.118843 H_by_level=[9.131407731796089e-42, 4992709.884764692] peak_rss_GB=14.47
+step 212 step_time=4.1s H=4.993029e+06 H/H0=1.118914 H_by_level=[1.1087633413273365e-41, 4993028.642845809] peak_rss_GB=14.47
+step 213 step_time=4.1s H=4.993341e+06 H/H0=1.118984 H_by_level=[1.3450583274746508e-41, 4993340.551515553] peak_rss_GB=14.47
+[step_213] n_leaves=15542429 n_slice=148637 -> exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_213.png
+step 213 plotted exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_213.png plot_time=3.7s
+step 214 step_time=4.1s H=4.993648e+06 H/H0=1.119053 H_by_level=[1.6302279792454961e-41, 4993647.782162852] peak_rss_GB=14.47
+step 215 step_time=4.1s H=4.993953e+06 H/H0=1.119121 H_by_level=[1.9740780020429445e-41, 4993952.614882343] peak_rss_GB=14.47
+step 216 step_time=4.1s H=4.994257e+06 H/H0=1.119189 H_by_level=[2.388321228416187e-41, 4994257.419199117] peak_rss_GB=14.47
+[step_216] n_leaves=15542429 n_slice=148637 -> exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_216.png
+step 216 plotted exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_216.png plot_time=3.6s
+step 217 step_time=4.1s H=4.994565e+06 H/H0=1.119258 H_by_level=[2.8869369645227946e-41, 4994564.632941334] peak_rss_GB=14.48
+step 218 step_time=4.1s H=4.994877e+06 H/H0=1.119328 H_by_level=[3.4865958897235305e-41, 4994876.739979865] peak_rss_GB=14.48
+step 219 step_time=4.1s H=4.995196e+06 H/H0=1.119400 H_by_level=[4.207162078928974e-41, 4995196.247588436] peak_rss_GB=14.48
+[step_219] n_leaves=15542429 n_slice=148637 -> exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_219.png
+step 219 plotted exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_219.png plot_time=3.7s
+step 220 step_time=4.1s H=4.995526e+06 H/H0=1.119474 H_by_level=[5.072285691419691e-41, 4995525.664104289] peak_rss_GB=14.48
+step 221 step_time=4.1s H=4.995867e+06 H/H0=1.119550 H_by_level=[6.11010216939696e-41, 4995867.477641374] peak_rss_GB=14.48
+step 222 step_time=4.1s H=4.996224e+06 H/H0=1.119630 H_by_level=[7.354056466195738e-41, 4996224.13651249] peak_rss_GB=14.48
+[step_222] n_leaves=15542429 n_slice=148637 -> exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_222.png
+step 222 plotted exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_222.png plot_time=3.6s
+step 223 step_time=4.1s H=4.996598e+06 H/H0=1.119714 H_by_level=[8.843873937713232e-41, 4996598.031932022] peak_rss_GB=14.48
+step 224 step_time=4.1s H=4.996991e+06 H/H0=1.119802 H_by_level=[1.0626703149912389e-40, 4996991.483530153] peak_rss_GB=14.48
+step 225 step_time=4.1s H=4.997407e+06 H/H0=1.119895 H_by_level=[1.2758460059636088e-40, 4997406.728111286] peak_rss_GB=14.48
+[step_225] n_leaves=15542429 n_slice=148637 -> exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_225.png
+step 225 plotted exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_225.png plot_time=3.6s
+step 226 step_time=4.1s H=4.997846e+06 H/H0=1.119993 H_by_level=[1.5305407906656948e-40, 4997845.911931247] peak_rss_GB=14.48
+step 227 step_time=4.1s H=4.998311e+06 H/H0=1.120098 H_by_level=[1.8346012816953715e-40, 4998311.08674823] peak_rss_GB=14.48
+step 228 step_time=4.1s H=4.998804e+06 H/H0=1.120208 H_by_level=[2.197312168139139e-40, 4998804.209643809] peak_rss_GB=14.48
+[step_228] n_leaves=15542429 n_slice=148637 -> exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_228.png
+step 228 plotted exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_228.png plot_time=3.6s
+step 229 step_time=4.1s H=4.999327e+06 H/H0=1.120325 H_by_level=[2.629651647909293e-40, 4999327.146657991] peak_rss_GB=14.48
+step 230 step_time=4.1s H=4.999882e+06 H/H0=1.120450 H_by_level=[3.144590802014756e-40, 4999881.6799730845] peak_rss_GB=14.48
+step 231 step_time=4.1s H=5.000470e+06 H/H0=1.120581 H_by_level=[3.757444227093632e-40, 5000469.518469089] peak_rss_GB=14.48
+[step_231] n_leaves=15542429 n_slice=148637 -> exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_231.png
+step 231 plotted exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_231.png plot_time=3.6s
+step 232 step_time=4.1s H=5.001092e+06 H/H0=1.120721 H_by_level=[4.486280420686555e-40, 5001092.311187211] peak_rss_GB=14.48
+step 233 step_time=4.1s H=5.001752e+06 H/H0=1.120869 H_by_level=[5.352401775233217e-40, 5001751.663284722] peak_rss_GB=14.48
+step 234 step_time=4.1s H=5.002449e+06 H/H0=1.121025 H_by_level=[6.380905609197621e-40, 5002449.153876378] peak_rss_GB=14.48
+[step_234] n_leaves=15542429 n_slice=148637 -> exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_234.png
+step 234 plotted exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_234.png plot_time=3.6s
+step 235 step_time=4.1s H=5.003186e+06 H/H0=1.121190 H_by_level=[7.601339478563995e-40, 5003186.355218636] peak_rss_GB=14.48
+step 236 step_time=4.1s H=5.003965e+06 H/H0=1.121365 H_by_level=[9.0484661053781e-40, 5003964.852512421] peak_rss_GB=14.48
+step 237 step_time=4.1s H=5.004786e+06 H/H0=1.121549 H_by_level=[1.0763155673247038e-39, 5004786.263720289] peak_rss_GB=14.48
+[step_237] n_leaves=15542429 n_slice=148637 -> exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_237.png
+step 237 plotted exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_237.png plot_time=3.6s
+step 238 step_time=4.1s H=5.005652e+06 H/H0=1.121743 H_by_level=[1.279342602000691e-39, 5005652.258689609] peak_rss_GB=14.48
+step 239 step_time=4.1s H=5.006565e+06 H/H0=1.121947 H_by_level=[1.5195654459002238e-39, 5006564.576914093] peak_rss_GB=14.48
+step 240 step_time=4.1s H=5.007525e+06 H/H0=1.122163 H_by_level=[1.803598864416054e-39, 5007525.043360385] peak_rss_GB=14.48
+[step_240] n_leaves=15542429 n_slice=148637 -> exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_240.png
+step 240 plotted exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_240.png plot_time=3.6s
+step 241 step_time=4.1s H=5.008536e+06 H/H0=1.122389 H_by_level=[2.1391988130539643e-39, 5008535.58175621] peak_rss_GB=14.48
+step 242 step_time=4.1s H=5.009598e+06 H/H0=1.122627 H_by_level=[2.5354533151365682e-39, 5009598.224888276] peak_rss_GB=14.48
+step 243 step_time=4.1s H=5.010715e+06 H/H0=1.122877 H_by_level=[3.003004272611344e-39, 5010715.121462261] peak_rss_GB=14.48
+[step_243] n_leaves=15542429 n_slice=148637 -> exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_243.png
+step 243 plotted exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_243.png plot_time=3.6s
+step 244 step_time=4.1s H=5.011889e+06 H/H0=1.123140 H_by_level=[3.554305063590223e-39, 5011888.539266506] peak_rss_GB=14.48
+step 245 step_time=4.1s H=5.013121e+06 H/H0=1.123417 H_by_level=[4.2039195170837704e-39, 5013120.864397143] peak_rss_GB=14.48
+step 246 step_time=4.1s H=5.014415e+06 H/H0=1.123706 H_by_level=[4.9688687003890575e-39, 5014414.596472412] peak_rss_GB=14.48
+[step_246] n_leaves=15542429 n_slice=148637 -> exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_246.png
+step 246 plotted exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_246.png plot_time=3.6s
+step 247 step_time=4.1s H=5.015772e+06 H/H0=1.124011 H_by_level=[5.869032923041943e-39, 5015772.339841178] peak_rss_GB=14.48
+step 248 step_time=4.1s H=5.017197e+06 H/H0=1.124330 H_by_level=[6.927617470642785e-39, 5017196.790925406] peak_rss_GB=14.48
+step 249 step_time=4.1s H=5.018691e+06 H/H0=1.124665 H_by_level=[8.171691851950919e-39, 5018690.721921624] peak_rss_GB=14.48
+[step_249] n_leaves=15542429 n_slice=148637 -> exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_249.png
+step 249 plotted exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_249.png plot_time=3.6s
+step 250 step_time=4.1s H=5.020257e+06 H/H0=1.125016 H_by_level=[9.632813795965289e-39, 5020256.961170829] peak_rss_GB=14.48
+step 251 step_time=4.1s H=5.021898e+06 H/H0=1.125384 H_by_level=[1.1347750897789058e-38, 5021898.370673853] peak_rss_GB=14.48
+step 252 step_time=4.1s H=5.023618e+06 H/H0=1.125769 H_by_level=[1.3359314711849256e-38, 5023617.82114329] peak_rss_GB=14.48
+[step_252] n_leaves=15542429 n_slice=148637 -> exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_252.png
+step 252 plotted exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_252.png plot_time=3.6s
+step 253 step_time=4.2s H=5.025418e+06 H/H0=1.126172 H_by_level=[1.5717324261416633e-38, 5025418.165239279] peak_rss_GB=14.48
+step 254 step_time=4.1s H=5.027302e+06 H/H0=1.126595 H_by_level=[1.8479718411550095e-38, 5027302.209540485] peak_rss_GB=14.48
+step 255 step_time=4.1s H=5.029273e+06 H/H0=1.127036 H_by_level=[2.1713839380727602e-38, 5029272.685813011] peak_rss_GB=14.48
+[step_255] n_leaves=15542429 n_slice=148637 -> exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_255.png
+step 255 plotted exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_255.png plot_time=3.7s
+step 256 step_time=4.1s H=5.031332e+06 H/H0=1.127498 H_by_level=[2.5497912892374033e-38, 5031332.2223304445] peak_rss_GB=14.48
+step 257 step_time=4.1s H=5.033483e+06 H/H0=1.127980 H_by_level=[2.9922754145175316e-38, 5033483.315732169] peak_rss_GB=14.48
+step 258 step_time=4.1s H=5.035728e+06 H/H0=1.128483 H_by_level=[3.509373297176472e-38, 5035728.304093755] peak_rss_GB=14.48
+[step_258] n_leaves=15542429 n_slice=148637 -> exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_258.png
+step 258 plotted exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_258.png plot_time=3.7s
+step 259 step_time=4.2s H=5.038069e+06 H/H0=1.129007 H_by_level=[4.1133036328120714e-38, 5038069.341735702] peak_rss_GB=14.48
+step 260 step_time=4.2s H=5.040508e+06 H/H0=1.129554 H_by_level=[4.818227168900754e-38, 5040508.376243403] peak_rss_GB=14.48
+step 261 step_time=4.2s H=5.043047e+06 H/H0=1.130123 H_by_level=[5.640546110628685e-38, 5043047.128178546] peak_rss_GB=14.48
+[step_261] n_leaves=15542429 n_slice=148637 -> exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_261.png
+step 261 plotted exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_261.png plot_time=3.7s
+step 262 step_time=4.2s H=5.045687e+06 H/H0=1.130714 H_by_level=[6.5992482716496e-38, 5045687.073759733] peak_rss_GB=14.48
+step 263 step_time=4.1s H=5.048429e+06 H/H0=1.131329 H_by_level=[7.716302447445534e-38, 5048429.4308599895] peak_rss_GB=14.48
+step 264 step_time=4.1s H=5.051275e+06 H/H0=1.131967 H_by_level=[9.01711239672674e-38, 5051275.148410741] peak_rss_GB=14.48
+[step_264] n_leaves=15542429 n_slice=148637 -> exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_264.png
+step 264 plotted exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_264.png plot_time=3.7s
+step 265 step_time=4.1s H=5.054225e+06 H/H0=1.132628 H_by_level=[1.0531037847151465e-37, 5054224.899363201] peak_rss_GB=14.48
+step 266 step_time=4.2s H=5.057279e+06 H/H0=1.133312 H_by_level=[1.2291992111640358e-37, 5057279.077165817] peak_rss_GB=14.48
+step 267 step_time=4.2s H=5.060438e+06 H/H0=1.134020 H_by_level=[1.4339127228906382e-37, 5060437.795675094] peak_rss_GB=14.48
+[step_267] n_leaves=15542429 n_slice=148637 -> exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_267.png
+step 267 plotted exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_267.png plot_time=3.8s
+step 268 step_time=4.1s H=5.063701e+06 H/H0=1.134751 H_by_level=[1.6717619046990117e-37, 5063700.892297681] peak_rss_GB=14.48
+step 269 step_time=4.1s H=5.067068e+06 H/H0=1.135506 H_by_level=[1.9479566374486116e-37, 5067067.934167952] peak_rss_GB=14.48
+step 270 step_time=4.1s H=5.070538e+06 H/H0=1.136283 H_by_level=[2.268502025689004e-37, 5070538.227013298] peak_rss_GB=14.48
+[step_270] n_leaves=15542429 n_slice=148637 -> exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_270.png
+step 270 plotted exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_270.png plot_time=3.7s
+step 271 step_time=4.1s H=5.074111e+06 H/H0=1.137084 H_by_level=[2.640316162388784e-37, 5074110.826308614] peak_rss_GB=14.48
+step 272 step_time=4.1s H=5.077785e+06 H/H0=1.137907 H_by_level=[3.0713648030616816e-37, 5077784.550425234] peak_rss_GB=14.48
+step 273 step_time=4.1s H=5.081558e+06 H/H0=1.138753 H_by_level=[3.570815301822471e-37, 5081557.995214412] peak_rss_GB=14.48
+[step_273] n_leaves=15542429 n_slice=148637 -> exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_273.png
+step 273 plotted exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_273.png plot_time=3.6s
+step 274 step_time=4.1s H=5.085430e+06 H/H0=1.139621 H_by_level=[4.149212478824234e-37, 5085429.5497264955] peak_rss_GB=14.48
+step 275 step_time=4.1s H=5.089397e+06 H/H0=1.140510 H_by_level=[4.818679446743744e-37, 5089397.412498264] peak_rss_GB=14.48
+step 276 step_time=4.1s H=5.093460e+06 H/H0=1.141420 H_by_level=[5.593146828698899e-37, 5093459.608113701] peak_rss_GB=14.48
+[step_276] n_leaves=15542429 n_slice=148637 -> exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_276.png
+step 276 plotted exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_276.png plot_time=3.6s
+step 277 step_time=4.2s H=5.097614e+06 H/H0=1.142351 H_by_level=[6.488614257073756e-37, 5097614.003539726] peak_rss_GB=14.48
+step 278 step_time=4.1s H=5.101858e+06 H/H0=1.143302 H_by_level=[7.523448558675886e-37, 5101858.324001143] peak_rss_GB=14.48
+step 279 step_time=4.1s H=5.106190e+06 H/H0=1.144273 H_by_level=[8.71872361387681e-37, 5106190.167961201] peak_rss_GB=14.48
+[step_279] n_leaves=15542429 n_slice=148637 -> exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_279.png
+step 279 plotted exp/2026/08/11/15_05_l1_wider_margin/plots/xz_step_279.png plot_time=3.7s
+step 280 step_time=4.2s H=5.110607e+06 H/H0=1.145263 H_by_level=[1.009860753400874e-36, 5110607.021077041] peak_rss_GB=14.48
+saved final /bk/l1_wider_margin_stepped/step_280_final.h5 save_time=1.3s
+FINAL peak_rss_GB=14.48 total_time=949.0s

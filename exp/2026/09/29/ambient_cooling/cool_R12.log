@@ -1,0 +1,13 @@
+N=9377 faces=61288 frozen dim=51912 (0.735 of all DOF)
+0 {'u': np.float64(4695.69), 'grad': np.float64(4721.724), 'sol': np.float64(25908.752), 'u_in': np.float64(2361.288), 'grad_in': np.float64(2191.442), 'sol_in': np.float64(12893.489), 'antisym': 0.0}
+4000 {'u': np.float64(88.082), 'grad': np.float64(282.386), 'sol': np.float64(14741.962), 'u_in': np.float64(77.398), 'grad_in': np.float64(159.872), 'sol_in': np.float64(12762.678), 'antisym': 3.655}
+8000 {'u': np.float64(28.053), 'grad': np.float64(238.234), 'sol': np.float64(14588.644), 'u_in': np.float64(25.227), 'grad_in': np.float64(124.903), 'sol_in': np.float64(12757.624), 'antisym': 3.66}
+12000 {'u': np.float64(13.039), 'grad': np.float64(222.282), 'sol': np.float64(14521.409), 'u_in': np.float64(11.991), 'grad_in': np.float64(111.539), 'sol_in': np.float64(12755.062), 'antisym': 3.66}
+16000 {'u': np.float64(7.841), 'grad': np.float64(218.606), 'sol': np.float64(14476.131), 'u_in': np.float64(7.366), 'grad_in': np.float64(109.921), 'sol_in': np.float64(12751.846), 'antisym': 3.66}
+20000 {'u': np.float64(4.562), 'grad': np.float64(215.964), 'sol': np.float64(14443.826), 'u_in': np.float64(4.345), 'grad_in': np.float64(108.599), 'sol_in': np.float64(12750.885), 'antisym': 3.66}
+24000 {'u': np.float64(3.704), 'grad': np.float64(212.915), 'sol': np.float64(14418.296), 'u_in': np.float64(3.562), 'grad_in': np.float64(106.139), 'sol_in': np.float64(12750.936), 'antisym': 3.66}
+28000 {'u': np.float64(3.489), 'grad': np.float64(212.428), 'sol': np.float64(14395.637), 'u_in': np.float64(3.38), 'grad_in': np.float64(106.035), 'sol_in': np.float64(12749.349), 'antisym': 3.66}
+32000 {'u': np.float64(1.783), 'grad': np.float64(212.867), 'sol': np.float64(14377.106), 'u_in': np.float64(1.722), 'grad_in': np.float64(106.849), 'sol_in': np.float64(12748.636), 'antisym': 3.66}
+36000 {'u': np.float64(2.279), 'grad': np.float64(210.826), 'sol': np.float64(14360.449), 'u_in': np.float64(2.21), 'grad_in': np.float64(105.482), 'sol_in': np.float64(12748.111), 'antisym': 3.66}
+40000 {'u': np.float64(1.539), 'grad': np.float64(211.261), 'sol': np.float64(14345.422), 'u_in': np.float64(1.493), 'grad_in': np.float64(106.125), 'sol_in': np.float64(12747.451), 'antisym': 3.66}
+saved /home/p/git/eq/exp/2026/09/29/ambient_cooling/cool_R12.npz

@@ -1,0 +1,4 @@
+t 10000: rc 119.5 zc +4.6 coil cells 65826; centre-circle windings [-6, -4] (min rho on circles 0.00); meridional -1.00
+t 12000: rc 121.4 zc +1.6 coil cells 52036; centre-circle windings [-6, -4] (min rho on circles 0.00); meridional -1.00
+t 14000: rc 121.3 zc +2.5 coil cells 50592; centre-circle windings [-6, -4] (min rho on circles 0.00); meridional -1.00
+t 16000: rc 118.8 zc +3.7 coil cells 49954; centre-circle windings [-6, -4] (min rho on circles 0.00); meridional -1.00

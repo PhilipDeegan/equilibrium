@@ -1,0 +1,4 @@
+N2 t 0: rc 31.2 zc -0.0  E interior 38.7 (3792 cells)  band 2049.4  outside 533.0  bg/cell 3.85e-05  interior toroidal gradient x 2 pi rho = -12.32
+N2 t 4000: rc 31.7 zc +6.9  E interior 37.9 (3848 cells)  band 1596.8  outside 575.3  bg/cell 5.49e-05  interior toroidal gradient x 2 pi rho = -12.04
+N4 t 0: rc 30.6 zc +0.0  E interior 61.1 (3724 cells)  band 2623.1  outside 473.1  bg/cell 3.70e-05  interior toroidal gradient x 2 pi rho = -23.66
+N4 t 4000: rc 31.8 zc +5.4  E interior 60.7 (3960 cells)  band 1814.3  outside 542.8  bg/cell 4.95e-05  interior toroidal gradient x 2 pi rho = -26.11

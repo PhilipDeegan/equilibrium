@@ -1,0 +1,12 @@
+linked before smoothing +1.000000 +1.000000 -0.000000
+smoothed tau 0.7: linked +1.000000 +0.999696 +0.000000
+linked-circulation lines at r 0.0 4.5 15.0
+P 72 N 93312 R0 9.0 kappa 1.0 dt 0.0182 ticks 165 midpoint x3
+t 0 instantaneous (term x unit time): |Gamma|-weighted z +0.18181; defect-label z +nan; max off-integer at defects 0.000e+00; max |Gamma| off-defect 5.442e-02
+       t count sum_n rho z_label z_|G| max|G-n|@def max|G|@non sum|G|@non/count  E_lf
+    0.00     0    +0    nan    +nan +0.1488 0.000e+00 5.365e-02 4.150e+02  3158.161638  leak 4.476e-02 rms 1.690 sum|G| 4.1497e+02 linked +1.000000 +0.999696 +0.000000 x_|G| +0.14500  (0.3 s/tick, ETA 1 min)
+    0.51     0    +0    nan    +nan +0.2415 0.000e+00 5.133e-02 4.148e+02  3158.156266  leak 4.507e-02 rms 1.698 sum|G| 4.1481e+02 linked +1.000000 +0.999700 +0.000000 x_|G| +0.14304  (0.7 s/tick, ETA 1 min)
+    1.02     0    +0    nan    +nan +0.3334 0.000e+00 5.006e-02 4.145e+02  3158.163771  leak 4.576e-02 rms 1.711 sum|G| 4.1448e+02 linked +1.000000 +0.999709 +0.000000 x_|G| +0.13996  (0.6 s/tick, ETA 1 min)
+    1.53     0    +0    nan    +nan +0.4232 0.000e+00 5.037e-02 4.143e+02  3158.163400  leak 4.681e-02 rms 1.719 sum|G| 4.1428e+02 linked +1.000000 +0.999717 +0.000000 x_|G| +0.13599  (0.6 s/tick, ETA 1 min)
+    2.04     0    +0    nan    +nan +0.5080 0.000e+00 5.064e-02 4.148e+02  3158.160310  leak 4.852e-02 rms 1.723 sum|G| 4.1481e+02 linked +1.000000 +0.999721 +0.000000 x_|G| +0.13172  (0.6 s/tick, ETA 1 min)
+    2.55     0    +0    nan    +nan +0.5864 0.000e+00 5.047e-02 4.166e+02  3158.159553  leak 4.946e-02 rms 1.732 sum|G| 4.1659e+02 linked +1.000000 +0.999726 +0.000000 x_|G| +0.12735  (0.6 s/tick, ETA 0 min)

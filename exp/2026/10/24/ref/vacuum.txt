@@ -1,0 +1,15 @@
+case vacuum box side 55.426 n 64 dx 0.866 a 9.0 smooth 1.0 amp 0.3 eta 0.0 nu 0.0  seed lam a/4.49 0.8916
+  t    0.00  EB/EB0 1.00000  EV/EB0 0.000e+00  H/H0 1.00000  lam a/4.49 0.8916  overlap 1.0000  in/shell/out 0.9726 0.0274 0.0000  cz -0.000 cr 0.000  fine 2.72e-06
+  t    5.00  EB/EB0 0.47237  EV/EB0 0.000e+00  H/H0 0.40133  lam a/4.49 1.0592  overlap -0.7755  in/shell/out 0.7446 0.2292 0.0261  cz -0.000 cr 0.000  fine 4.34e-06
+  t   10.00  EB/EB0 0.49657  EV/EB0 0.000e+00  H/H0 0.50170  lam a/4.49 0.8801  overlap -0.0784  in/shell/out 0.3417 0.4112 0.2470  cz -0.000 cr 0.000  fine 3.14e-06
+  t   15.00  EB/EB0 0.50000  EV/EB0 0.000e+00  H/H0 0.50000  lam a/4.49 0.8916  overlap 0.1352  in/shell/out 0.0645 0.2513 0.6842  cz -0.000 cr 0.000  fine 2.84e-06
+  t   20.00  EB/EB0 0.49978  EV/EB0 0.000e+00  H/H0 0.49492  lam a/4.49 0.9024  overlap -0.0097  in/shell/out 0.0001 0.0621 0.9378  cz -0.003 cr 0.094  fine 2.25e-06
+  t   25.00  EB/EB0 0.53852  EV/EB0 0.000e+00  H/H0 0.54796  lam a/4.49 0.8720  overlap -0.0000  in/shell/out 0.0000 0.0000 1.0000  cz -0.065 cr 0.474  fine 1.70e-06
+  t   30.00  EB/EB0 0.45044  EV/EB0 0.000e+00  H/H0 0.44158  lam a/4.49 0.9135  overlap 0.0000  in/shell/out 0.0000 0.0000 1.0000  cz -0.296 cr 0.886  fine 2.03e-06
+  t   35.00  EB/EB0 0.48708  EV/EB0 0.000e+00  H/H0 0.50615  lam a/4.49 0.8480  overlap 0.0004  in/shell/out 0.0000 0.0014 0.9986  cz -0.574 cr 1.162  fine 2.23e-06
+  t   40.00  EB/EB0 0.44452  EV/EB0 0.000e+00  H/H0 0.44064  lam a/4.49 0.9014  overlap -0.0007  in/shell/out 0.0013 0.0130 0.9857  cz -0.513 cr 0.799  fine 2.99e-06
+  t   45.00  EB/EB0 0.54680  EV/EB0 0.000e+00  H/H0 0.55739  lam a/4.49 0.8701  overlap -0.0577  in/shell/out 0.0059 0.0374 0.9567  cz -0.949 cr 1.094  fine 2.76e-06
+  t   50.00  EB/EB0 0.44670  EV/EB0 0.000e+00  H/H0 0.44293  lam a/4.49 0.9010  overlap 0.1153  in/shell/out 0.0189 0.0343 0.9468  cz -0.783 cr 0.837  fine 3.53e-06
+  t   55.00  EB/EB0 0.50580  EV/EB0 0.000e+00  H/H0 0.50005  lam a/4.49 0.9044  overlap 0.0319  in/shell/out 0.0094 0.0427 0.9478  cz -0.808 cr 0.765  fine 3.14e-06
+  t   60.00  EB/EB0 0.60970  EV/EB0 0.000e+00  H/H0 0.60855  lam a/4.49 0.8937  overlap -0.1269  in/shell/out 0.0295 0.0618 0.9087  cz -0.815 cr 0.737  fine 2.46e-06
+RESULT vacuum  EB 0.6097  H 0.6086  overlap -0.1269  in 0.9726->0.0295  lam 0.8916->0.8937  fine 2.7e-06->2.5e-06  wall 0 s

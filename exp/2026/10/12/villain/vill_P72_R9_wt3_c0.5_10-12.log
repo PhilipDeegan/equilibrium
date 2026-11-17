@@ -1,0 +1,11 @@
+linked-circulation lines at r 0.0 4.5 21.0
+  return _methods._mean(a, axis=axis, dtype=dtype,
+  ret = ret.dtype.type(ret / rcount)
+P 72 N 93312 R0 9.0 kappa 0.132 dt 0.0182 ticks 220 midpoint x3
+t 0 instantaneous (term x unit time): |Gamma|-weighted z +0.28864; defect-label z +nan; max off-integer at defects 0.000e+00; max |Gamma| off-defect 1.545e-01
+       t count sum_n rho z_label z_|G| max|G-n|@def max|G|@non sum|G|@non/count  E_lf
+    0.00     0    +0    nan    +nan -0.0000 0.000e+00 1.363e-01 4.945e+03  61915.178490  leak 6.491e-02 rms 5.288 sum|G| 4.9455e+03 linked +0.500000 +2.243582 -0.005212
+    1.00     0    +0    nan    +nan +0.3676 0.000e+00 1.005e-01 5.273e+03  61912.861545  leak 6.333e-02 rms 5.561 sum|G| 5.2728e+03 linked +0.543686 +2.375406 -0.005214
+    2.00     0    +0    nan    +nan +0.4256 0.000e+00 7.385e-02 5.439e+03  61913.941785  leak 7.992e-02 rms 5.935 sum|G| 5.4388e+03 linked +1.841580 +2.224232 -0.005264
+    3.00     0    +0    nan    +nan +0.5162 0.000e+00 8.840e-02 5.752e+03  61913.377336  leak 1.084e-01 rms 6.138 sum|G| 5.7519e+03 linked +0.734560 +2.156256 -0.005878
+    4.00     0    +0    nan    +nan +0.7132 0.000e+00 1.095e-01 6.269e+03  61913.188387  leak 1.248e-01 rms 6.276 sum|G| 6.2691e+03 linked +0.494136 +2.115922 -0.005294

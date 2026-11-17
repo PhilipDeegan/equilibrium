@@ -1,0 +1,14 @@
+#ifndef EQUILIBRIUM_CORE_DEBUG_HPP
+#define EQUILIBRIUM_CORE_DEBUG_HPP
+
+#if !defined(NDEBUG) or EQUILIBRIUM_DEBUG_DO == 1
+#define EQUILIBRIUM_DEBUG_DO(...) __VA_ARGS__
+#define EQUILIBRIUM_DEBUG_DO_ELSE(...)
+
+#else
+#define EQUILIBRIUM_DEBUG_DO(...)
+#define EQUILIBRIUM_DEBUG_DO_ELSE(...) __VA_ARGS__
+
+#endif  // __has_include(...)
+
+#endif /* EQUILIBRIUM_CORE_DEBUG_HPP */

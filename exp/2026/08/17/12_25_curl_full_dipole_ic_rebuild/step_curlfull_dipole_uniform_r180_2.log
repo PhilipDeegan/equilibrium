@@ -1,0 +1,114 @@
+H0 (from /bk/curlfull_dipole_uniform_r180_ic220.h5)=8.655935e+06
+cross_scale=0.001
+loaded /bk/curlfull_dipole_uniform_r180_stepped/step_100_final.h5 (resuming from absolute step 100) n_leaves=31734323 lam_max=3.427853e+00 lam_mean=2.727626e-01 t=9.3s peak_rss_GB=21.65
+dt=5.128205e-03
+step 101 step_time=3.8s H=8.646591e+06 H/H0=0.998921 peak_rss_GB=22.36
+step 102 step_time=4.8s H=8.646500e+06 H/H0=0.998910 peak_rss_GB=25.43
+step 103 step_time=4.6s H=8.646409e+06 H/H0=0.998899 peak_rss_GB=25.43
+step 104 step_time=4.9s H=8.646318e+06 H/H0=0.998889 peak_rss_GB=25.43
+step 105 step_time=4.9s H=8.646227e+06 H/H0=0.998878 peak_rss_GB=25.43
+step 106 step_time=5.4s H=8.646137e+06 H/H0=0.998868 peak_rss_GB=25.43
+step 107 step_time=5.2s H=8.646046e+06 H/H0=0.998858 peak_rss_GB=25.43
+step 108 step_time=5.2s H=8.645956e+06 H/H0=0.998847 peak_rss_GB=25.43
+step 109 step_time=5.2s H=8.645866e+06 H/H0=0.998837 peak_rss_GB=25.43
+step 110 step_time=4.9s H=8.645776e+06 H/H0=0.998826 peak_rss_GB=25.43
+step 111 step_time=4.7s H=8.645686e+06 H/H0=0.998816 peak_rss_GB=25.43
+step 112 step_time=5.3s H=8.645596e+06 H/H0=0.998806 peak_rss_GB=25.43
+step 113 step_time=5.1s H=8.645507e+06 H/H0=0.998795 peak_rss_GB=25.43
+step 114 step_time=5.0s H=8.645417e+06 H/H0=0.998785 peak_rss_GB=25.43
+step 115 step_time=5.2s H=8.645328e+06 H/H0=0.998775 peak_rss_GB=25.43
+step 116 step_time=4.8s H=8.645239e+06 H/H0=0.998764 peak_rss_GB=25.43
+step 117 step_time=4.6s H=8.645150e+06 H/H0=0.998754 peak_rss_GB=25.43
+step 118 step_time=5.3s H=8.645061e+06 H/H0=0.998744 peak_rss_GB=25.43
+step 119 step_time=5.1s H=8.644972e+06 H/H0=0.998733 peak_rss_GB=25.43
+step 120 step_time=5.1s H=8.644883e+06 H/H0=0.998723 peak_rss_GB=25.43
+step 121 step_time=4.7s H=8.644794e+06 H/H0=0.998713 peak_rss_GB=25.43
+step 122 step_time=4.6s H=8.644705e+06 H/H0=0.998703 peak_rss_GB=25.43
+step 123 step_time=5.2s H=8.644616e+06 H/H0=0.998692 peak_rss_GB=25.43
+step 124 step_time=5.0s H=8.644527e+06 H/H0=0.998682 peak_rss_GB=25.43
+step 125 step_time=5.0s H=8.644439e+06 H/H0=0.998672 peak_rss_GB=25.43
+[step_125] n_leaves=31734323 levels=[0] -> exp/2026/08/17/12_25_curl_full_dipole_ic_rebuild/plots/uniform_r180_stepped/xz_step_125.png
+step 125 plotted exp/2026/08/17/12_25_curl_full_dipole_ic_rebuild/plots/uniform_r180_stepped/xz_step_125.png plot_time=9.7s
+step 126 step_time=5.0s H=8.644350e+06 H/H0=0.998662 peak_rss_GB=26.44
+step 127 step_time=5.2s H=8.644261e+06 H/H0=0.998651 peak_rss_GB=26.44
+step 128 step_time=5.0s H=8.644173e+06 H/H0=0.998641 peak_rss_GB=26.44
+step 129 step_time=5.1s H=8.644084e+06 H/H0=0.998631 peak_rss_GB=26.44
+step 130 step_time=3.7s H=8.643995e+06 H/H0=0.998621 peak_rss_GB=26.44
+step 131 step_time=3.7s H=8.643907e+06 H/H0=0.998610 peak_rss_GB=26.44
+step 132 step_time=5.0s H=8.643818e+06 H/H0=0.998600 peak_rss_GB=26.44
+step 133 step_time=4.4s H=8.643729e+06 H/H0=0.998590 peak_rss_GB=26.44
+step 134 step_time=5.0s H=8.643640e+06 H/H0=0.998580 peak_rss_GB=26.44
+step 135 step_time=5.3s H=8.643551e+06 H/H0=0.998569 peak_rss_GB=26.44
+step 136 step_time=5.2s H=8.643463e+06 H/H0=0.998559 peak_rss_GB=26.44
+step 137 step_time=5.0s H=8.643374e+06 H/H0=0.998549 peak_rss_GB=26.44
+step 138 step_time=4.9s H=8.643285e+06 H/H0=0.998539 peak_rss_GB=26.44
+step 139 step_time=4.5s H=8.643196e+06 H/H0=0.998528 peak_rss_GB=26.44
+step 140 step_time=4.8s H=8.643107e+06 H/H0=0.998518 peak_rss_GB=26.44
+step 141 step_time=5.0s H=8.643018e+06 H/H0=0.998508 peak_rss_GB=26.44
+step 142 step_time=5.0s H=8.642929e+06 H/H0=0.998497 peak_rss_GB=26.44
+step 143 step_time=5.0s H=8.642840e+06 H/H0=0.998487 peak_rss_GB=26.44
+step 144 step_time=4.8s H=8.642751e+06 H/H0=0.998477 peak_rss_GB=26.44
+step 145 step_time=4.6s H=8.642661e+06 H/H0=0.998466 peak_rss_GB=26.44
+step 146 step_time=5.1s H=8.642572e+06 H/H0=0.998456 peak_rss_GB=26.44
+step 147 step_time=5.1s H=8.642483e+06 H/H0=0.998446 peak_rss_GB=26.44
+step 148 step_time=5.0s H=8.642394e+06 H/H0=0.998436 peak_rss_GB=26.44
+step 149 step_time=4.8s H=8.642304e+06 H/H0=0.998425 peak_rss_GB=26.44
+step 150 step_time=4.6s H=8.642215e+06 H/H0=0.998415 peak_rss_GB=26.44
+[step_150] n_leaves=31734323 levels=[0] -> exp/2026/08/17/12_25_curl_full_dipole_ic_rebuild/plots/uniform_r180_stepped/xz_step_150.png
+step 150 plotted exp/2026/08/17/12_25_curl_full_dipole_ic_rebuild/plots/uniform_r180_stepped/xz_step_150.png plot_time=9.9s
+step 151 step_time=4.9s H=8.642126e+06 H/H0=0.998405 peak_rss_GB=26.64
+step 152 step_time=4.7s H=8.642036e+06 H/H0=0.998394 peak_rss_GB=26.64
+step 153 step_time=4.8s H=8.641947e+06 H/H0=0.998384 peak_rss_GB=26.64
+step 154 step_time=5.2s H=8.641857e+06 H/H0=0.998374 peak_rss_GB=26.64
+step 155 step_time=5.2s H=8.641768e+06 H/H0=0.998363 peak_rss_GB=26.64
+step 156 step_time=5.0s H=8.641679e+06 H/H0=0.998353 peak_rss_GB=26.64
+step 157 step_time=4.8s H=8.641589e+06 H/H0=0.998343 peak_rss_GB=26.64
+step 158 step_time=4.5s H=8.641500e+06 H/H0=0.998332 peak_rss_GB=26.64
+step 159 step_time=4.8s H=8.641410e+06 H/H0=0.998322 peak_rss_GB=26.64
+step 160 step_time=5.0s H=8.641321e+06 H/H0=0.998312 peak_rss_GB=26.64
+step 161 step_time=3.7s H=8.641232e+06 H/H0=0.998301 peak_rss_GB=26.64
+step 162 step_time=4.1s H=8.641142e+06 H/H0=0.998291 peak_rss_GB=26.64
+step 163 step_time=4.9s H=8.641053e+06 H/H0=0.998281 peak_rss_GB=26.64
+step 164 step_time=5.0s H=8.640964e+06 H/H0=0.998270 peak_rss_GB=26.64
+step 165 step_time=5.0s H=8.640875e+06 H/H0=0.998260 peak_rss_GB=26.64
+step 166 step_time=4.6s H=8.640785e+06 H/H0=0.998250 peak_rss_GB=26.64
+step 167 step_time=5.1s H=8.640696e+06 H/H0=0.998239 peak_rss_GB=26.64
+step 168 step_time=5.1s H=8.640607e+06 H/H0=0.998229 peak_rss_GB=26.64
+step 169 step_time=5.1s H=8.640518e+06 H/H0=0.998219 peak_rss_GB=26.64
+step 170 step_time=4.6s H=8.640429e+06 H/H0=0.998209 peak_rss_GB=26.64
+step 171 step_time=4.8s H=8.640340e+06 H/H0=0.998198 peak_rss_GB=26.64
+step 172 step_time=5.0s H=8.640251e+06 H/H0=0.998188 peak_rss_GB=26.64
+step 173 step_time=5.2s H=8.640162e+06 H/H0=0.998178 peak_rss_GB=26.64
+step 174 step_time=4.8s H=8.640074e+06 H/H0=0.998168 peak_rss_GB=26.64
+step 175 step_time=5.0s H=8.639985e+06 H/H0=0.998157 peak_rss_GB=26.64
+[step_175] n_leaves=31734323 levels=[0] -> exp/2026/08/17/12_25_curl_full_dipole_ic_rebuild/plots/uniform_r180_stepped/xz_step_175.png
+step 175 plotted exp/2026/08/17/12_25_curl_full_dipole_ic_rebuild/plots/uniform_r180_stepped/xz_step_175.png plot_time=9.3s
+step 176 step_time=5.0s H=8.639896e+06 H/H0=0.998147 peak_rss_GB=26.66
+step 177 step_time=5.1s H=8.639808e+06 H/H0=0.998137 peak_rss_GB=26.66
+step 178 step_time=5.0s H=8.639719e+06 H/H0=0.998127 peak_rss_GB=26.66
+step 179 step_time=4.8s H=8.639631e+06 H/H0=0.998116 peak_rss_GB=26.66
+step 180 step_time=4.8s H=8.639543e+06 H/H0=0.998106 peak_rss_GB=26.66
+step 181 step_time=5.2s H=8.639454e+06 H/H0=0.998096 peak_rss_GB=26.66
+step 182 step_time=5.1s H=8.639366e+06 H/H0=0.998086 peak_rss_GB=26.66
+step 183 step_time=4.9s H=8.639278e+06 H/H0=0.998076 peak_rss_GB=26.66
+step 184 step_time=4.8s H=8.639190e+06 H/H0=0.998065 peak_rss_GB=26.66
+step 185 step_time=4.8s H=8.639102e+06 H/H0=0.998055 peak_rss_GB=26.66
+step 186 step_time=5.2s H=8.639014e+06 H/H0=0.998045 peak_rss_GB=26.66
+step 187 step_time=5.1s H=8.638926e+06 H/H0=0.998035 peak_rss_GB=26.66
+step 188 step_time=5.0s H=8.638838e+06 H/H0=0.998025 peak_rss_GB=26.66
+step 189 step_time=4.8s H=8.638750e+06 H/H0=0.998015 peak_rss_GB=26.66
+step 190 step_time=4.5s H=8.638662e+06 H/H0=0.998005 peak_rss_GB=26.66
+step 191 step_time=4.6s H=8.638575e+06 H/H0=0.997994 peak_rss_GB=26.66
+step 192 step_time=3.7s H=8.638487e+06 H/H0=0.997984 peak_rss_GB=26.66
+step 193 step_time=4.3s H=8.638400e+06 H/H0=0.997974 peak_rss_GB=26.66
+step 194 step_time=5.2s H=8.638312e+06 H/H0=0.997964 peak_rss_GB=26.66
+step 195 step_time=5.7s H=8.638225e+06 H/H0=0.997954 peak_rss_GB=26.66
+step 196 step_time=6.1s H=8.638137e+06 H/H0=0.997944 peak_rss_GB=26.66
+step 197 step_time=6.6s H=8.638050e+06 H/H0=0.997934 peak_rss_GB=26.66
+step 198 step_time=5.4s H=8.637962e+06 H/H0=0.997924 peak_rss_GB=26.66
+step 199 step_time=5.0s H=8.637875e+06 H/H0=0.997914 peak_rss_GB=26.66
+step 200 step_time=5.1s H=8.637788e+06 H/H0=0.997903 peak_rss_GB=26.66
+[step_200] n_leaves=31734323 levels=[0] -> exp/2026/08/17/12_25_curl_full_dipole_ic_rebuild/plots/uniform_r180_stepped/xz_step_200.png
+step 200 plotted exp/2026/08/17/12_25_curl_full_dipole_ic_rebuild/plots/uniform_r180_stepped/xz_step_200.png plot_time=9.5s
+saved final /bk/curlfull_dipole_uniform_r180_stepped/step_200_final.h5 save_time=3.7s
+FINAL peak_rss_GB=26.67 total_time=711.4s

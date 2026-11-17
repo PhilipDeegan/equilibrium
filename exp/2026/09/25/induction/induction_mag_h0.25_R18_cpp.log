@@ -1,0 +1,10 @@
+src=mag |J_mag - J_sampled|/|J_sampled| (interior) = 7.326e-02
+h=0.25 N=2030741 M_theory=5.89763e-02 T=5.50 (reflection ~8.76) n=4291
+  t=1.03 I1=0.361 Phi2/(M I1)=0.4233 Phi1=5.8045e-02 |u|max=1.16e-05 (394s)
+  t=2.05 I1=0.922 Phi2/(M I1)=1.1159 Phi1=1.9910e-01 |u|max=6.13e-06 (790s)
+  t=3.08 I1=1.000 Phi2/(M I1)=1.2072 Phi1=2.1411e-01 |u|max=5.03e-06 (1196s)
+  t=4.10 I1=1.000 Phi2/(M I1)=1.0493 Phi1=2.0661e-01 |u|max=4.76e-06 (1587s)
+  t=5.13 I1=1.000 Phi2/(M I1)=1.0492 Phi1=2.0660e-01 |u|max=1.30e-04 (1982s)
+  t=5.50 I1=1.000 Phi2/(M I1)=1.0492 Phi1=2.0660e-01 |u|max=2.21e-04 (2124s)
+
+hold window t>3.0: <Phi2>/M = 1.0677  (rms osc 0.0412);  <Phi1> = 2.0732e-01

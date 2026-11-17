@@ -1,0 +1,11 @@
+walk m 0.8 xi 3.9: c_s 0.0453 cells/tick, M 4.000, om0 0.9273 rad/tick, gap 2 om0 = 1.855 = 160 x (c_s / xi)
+ k xi   step omega/(c k)   walk Bogoliubov omega/(c_s k)   walk group v / c_s
+ 0.05   1 (transverse 0)     1.001                          1.002
+ 0.10   1 (transverse 0)     1.002                          1.007
+ 0.20   1 (transverse 0)     1.010                          1.030
+ 0.30   1 (transverse 0)     1.022                          1.066
+ 0.50   1 (transverse 0)     1.061                          1.179
+ 0.70   1 (transverse 0)     1.116                          1.335
+ 1.00   1 (transverse 0)     1.225                          1.633
+ 1.50   1 (transverse 0)     1.458                          2.229
+ 2.00   1 (transverse 0)     1.732                          2.887

@@ -1,0 +1,28 @@
+int g dV = 1.0000000000000002
+w=5.736 period=1.095 window=[4.79,8.08] (3 periods) N=2784735
+  step 400/6302 t=0.51 |u|max=3.37e-03 (246s)
+  step 800/6302 t=1.03 |u|max=6.03e-03 (419s)
+  step 1200/6302 t=1.54 |u|max=5.31e-03 (579s)
+  step 1600/6302 t=2.05 |u|max=6.73e-03 (739s)
+  step 2000/6302 t=2.56 |u|max=7.27e-03 (899s)
+  step 2400/6302 t=3.08 |u|max=8.01e-03 (1060s)
+  step 2800/6302 t=3.59 |u|max=8.89e-03 (1221s)
+  step 3200/6302 t=4.10 |u|max=9.85e-03 (1382s)
+  step 3600/6302 t=4.62 |u|max=1.11e-02 (1543s)
+  step 4000/6302 t=5.13 |u|max=1.19e-02 (1739s)
+  step 4400/6302 t=5.64 |u|max=1.27e-02 (1951s)
+  step 4800/6302 t=6.15 |u|max=1.31e-02 (2162s)
+  step 5200/6302 t=6.67 |u|max=1.29e-02 (2375s)
+  step 5600/6302 t=7.18 |u|max=1.22e-02 (2587s)
+  step 6000/6302 t=7.69 |u|max=1.10e-02 (2800s)
+
+measurements=160  P_theory=1.7924e-02  source work -<J.E> / P_th = 0.444
+r= 5.0 P/P_th=0.474  r^2*S_eq=9.8607e-04  sin^2 fit amp/theory=0.472  pattern resid=0.017  pole/eq=+0.056
+      S(th)/S_th_eq: +0.026 +0.124 +0.285 +0.416 +0.461 +0.416 +0.285 +0.124 +0.026
+r= 6.5 P/P_th=0.477  r^2*S_eq=9.9043e-04  sin^2 fit amp/theory=0.474  pattern resid=0.019  pole/eq=+0.057
+      S(th)/S_th_eq: +0.026 +0.127 +0.287 +0.417 +0.463 +0.417 +0.287 +0.127 +0.026
+r= 8.0 P/P_th=0.476  r^2*S_eq=9.9302e-04  sin^2 fit amp/theory=0.474  pattern resid=0.016  pole/eq=+0.057
+      S(th)/S_th_eq: +0.026 +0.125 +0.284 +0.417 +0.464 +0.417 +0.284 +0.125 +0.026
+r= 9.5 P/P_th=0.475  r^2*S_eq=9.8865e-04  sin^2 fit amp/theory=0.472  pattern resid=0.017  pole/eq=+0.055
+      S(th)/S_th_eq: +0.025 +0.124 +0.285 +0.416 +0.462 +0.416 +0.285 +0.124 +0.025
+equatorial slope d log S / d log r = -1.994 (theory -2)

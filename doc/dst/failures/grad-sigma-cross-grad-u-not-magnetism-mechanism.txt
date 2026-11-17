@@ -1,0 +1,22 @@
+CONTEXT: a derived formula, dCirc/dt = -dt*W_sq*d2^2*(grad(sigma) x
+grad(u)) — a Biermann-battery-like "electric<->magnetic leak"
+identity — was proposed in-session as a mechanism for how DST
+magnetism arises from charge-like sources.
+
+WHAT FAILED: the formula was DEPRECATED as a magnetism-mechanism
+claim; it does not describe how DST magnetism actually works.
+
+ROOT CAUSE: it conflated charge-like u/lam sources with
+motion/circulation-like magnetism — a category error. DST magnetism
+is understood elsewhere (see [[project_dst_magnetic_field]]) as
+arising from motion/circulation — u-translation of rotating lam
+producing a phi wake — not from a static gradient-cross-gradient
+source term between sigma and u.
+
+LESSON: the algebra itself is still valid for the one narrow question
+it actually answers (can a lam-gradient generate net circulation from
+none — yes, in principle) and, per
+[[project_curl_full_dipole_spheromak]], is real but numerically
+inaccessible at any real scale. Don't re-derive it, and don't cite it
+as "how DST magnetism works" — that specific interpretive claim is
+retracted; the algebra is not.

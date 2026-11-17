@@ -1,0 +1,9 @@
+
+=== scale=20 cells  R=100.00  n_steps=15000 ===
+  init_electron_dipole_ic: scale=20.0  R_sph=1.0  sigma=None  r_axis=12.21  u_bg=0.0  inner_cells=43655/5441209  (0.8%)
+  divergence_clean: div_rms 3.2009e-02 → 3.1368e-10  (×9.80e-09)
+
+--- electron  barrier/m0=2.49e+00  cs=0.1  dt=5.1282e-03 ---
+  step     surv      rms   <G>eng
+     0   1.0000   1.0000   0.0047
+   500   0.9944   0.8287   0.0001

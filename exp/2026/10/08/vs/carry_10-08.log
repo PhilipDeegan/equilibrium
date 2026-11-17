@@ -1,0 +1,21 @@
+kappa +1.0 a0 1.0 R0 12.0 wt 3.0 dt 0.0182 (1100 ticks)
+  t   0.00: |B| centroid rho  13.03 z  -0.000; sum|B|    889.35; max |u| 0.000e+00; E   1310.417
+  t   4.00: |B| centroid rho  13.03 z  +0.125; sum|B|    888.82; max |u| 4.860e-02; E   1311.510
+  t   8.00: |B| centroid rho  13.03 z  +0.249; sum|B|    888.30; max |u| 5.092e-02; E   1313.196
+  t  12.00: |B| centroid rho  13.04 z  +0.371; sum|B|    887.96; max |u| 4.761e-02; E   1315.482
+  t  16.00: |B| centroid rho  13.05 z  +0.493; sum|B|    888.15; max |u| 5.125e-02; E   1318.367
+  t  20.00: |B| centroid rho  13.06 z  +0.612; sum|B|    888.49; max |u| 5.268e-02; E   1321.817
+kappa +1.0 a0 2.0 R0 12.0 wt 3.0 dt 0.0182 (1100 ticks)
+  t   0.00: |B| centroid rho  13.03 z  -0.000; sum|B|   1778.70; max |u| 0.000e+00; E   5241.669
+  t   4.00: |B| centroid rho  13.03 z  +0.245; sum|B|   1774.22; max |u| 1.940e-01; E   5258.521
+  t   8.00: |B| centroid rho  13.04 z  +0.487; sum|B|   1772.24; max |u| 2.009e-01; E   5284.473
+  t  12.00: |B| centroid rho  13.06 z  +0.721; sum|B|   1774.42; max |u| 1.929e-01; E   5319.488
+  t  16.00: |B| centroid rho  13.10 z  +0.932; sum|B|   1773.32; max |u| 2.137e-01; E   5362.840
+  t  20.00: |B| centroid rho  13.13 z  +1.133; sum|B|   1773.25; max |u| 2.204e-01; E   5413.658
+kappa +1.0 a0 1.0 R0 18.0 wt 3.0 dt 0.0182 (1100 ticks)
+  t   0.00: |B| centroid rho  18.59 z  -0.000; sum|B|   1324.53; max |u| 0.000e+00; E   1898.251
+  t   4.00: |B| centroid rho  18.59 z  +0.083; sum|B|   1324.10; max |u| 4.826e-02; E   1899.726
+  t   8.00: |B| centroid rho  18.59 z  +0.166; sum|B|   1323.86; max |u| 4.987e-02; E   1902.023
+  t  12.00: |B| centroid rho  18.59 z  +0.247; sum|B|   1323.73; max |u| 5.058e-02; E   1905.158
+  t  16.00: |B| centroid rho  18.60 z  +0.326; sum|B|   1323.47; max |u| 5.028e-02; E   1909.149
+  t  20.00: |B| centroid rho  18.61 z  +0.402; sum|B|   1323.06; max |u| 5.559e-02; E   1913.982

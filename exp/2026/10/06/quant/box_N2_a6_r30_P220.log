@@ -1,0 +1,14 @@
+  seed: mean phase jump across face x +0.0002
+  seed: mean phase jump across face y -0.0003
+  seed: mean phase jump across face z -0.3722
+springbox_N2_S1_q1_a6_r30_xi3.9_m0.8_P220_z0_wxi_rc_par: N_cells=2662000 build+seed 6s; g 0.0082 xi 3.90; strand pitch (toroidal advance per turn) 94.2 cells at r0, inner-side turn spacing 75.4
+  t 0: core cells 4108, minor radius 6.1, helix phase -0.000, winding centre circle -2.00, meridional -1.00, centre (rho, z) (30.5, -0.0), D_near 41912 D_core 25823, frame shift +0.0
+  t 1000: core cells 10105, minor radius 6.1, helix phase +0.903, winding centre circle -2.00, meridional -1.00, centre (rho, z) (30.0, +6.4), D_near 49781 D_core 33874, frame shift +8.1
+  t 2000: core cells 10002, minor radius 6.5, helix phase +1.681, winding centre circle -2.00, meridional -1.00, centre (rho, z) (30.5, +6.9), D_near 52955 D_core 33835, frame shift +21.9
+  t 3000: core cells 10396, minor radius 6.1, helix phase +2.470, winding centre circle -2.00, meridional -1.00, centre (rho, z) (30.4, +7.4), D_near 52258 D_core 34800, frame shift +35.8
+  t 4000: core cells 9801, minor radius 5.9, helix phase -2.977, winding centre circle -2.00, meridional -1.00, centre (rho, z) (30.1, +6.8), D_near 47377 D_core 33446, frame shift +50.8
+  t 5000: core cells 10299, minor radius 6.4, helix phase -2.082, winding centre circle -2.00, meridional -1.00, centre (rho, z) (30.0, +7.2), D_near 51365 D_core 34068, frame shift +64.7
+  t 6000: core cells 10496, minor radius 6.7, helix phase -1.281, winding centre circle -2.00, meridional -1.00, centre (rho, z) (30.3, +6.8), D_near 56105 D_core 34808, frame shift +79.7
+  t 7000: core cells 9867, minor radius 6.5, helix phase -0.447, winding centre circle -2.00, meridional -1.00, centre (rho, z) (30.1, +7.0), D_near 46644 D_core 32832, frame shift +93.5
+  t 8000: core cells 10373, minor radius 6.0, helix phase +0.436, winding centre circle -2.00, meridional -1.00, centre (rho, z) (30.3, +6.7), D_near 52161 D_core 35368, frame shift +108.5
+  8000 ticks in 274s

@@ -1,0 +1,26 @@
+base (u,phi) wave: wavelength=9.238 v_phase=3.6212 dt=0.005128
+sweeping c2 over [0.4, 0.5, 0.7, 1.0, 1.5], 1500 steps each
+
+[c2=0.4] c2=     0.4 final: t=   7.69 |B|_rms=4.4146e-02 gap=  -8.908 blew_up=False
+  (101.9s)
+
+[c2=0.5] c2=     0.5 final: t=   7.69 |B|_rms=5.4231e-02 gap=  -6.678 blew_up=False
+  (102.3s)
+
+[c2=0.7] c2=     0.7 final: t=   7.69 |B|_rms=6.5118e-02 gap=  -2.375 blew_up=False
+  (102.2s)
+
+[c2=1] c2=       1 final: t=   7.69 |B|_rms=8.6113e-02 gap=  -3.077 blew_up=False
+  (102.0s)
+
+[c2=1.5] c2=     1.5 final: t=   7.69 |B|_rms=1.1585e-01 gap=  -2.751 blew_up=False
+  (102.6s)
+
+=== summary ===
+v_phase (base u,phi wave) = 3.6212
+c2=     0.4: blew_up=False gap0= -0.582 gap_final= -8.908 early_slope=-0.1795 full_slope=-0.6470
+c2=     0.5: blew_up=False gap0= -0.582 gap_final= -6.678 early_slope=+0.2440 full_slope=-0.5734
+c2=     0.7: blew_up=False gap0= -0.582 gap_final= -2.375 early_slope=+0.6904 full_slope=-0.3126
+c2=       1: blew_up=False gap0= -0.582 gap_final= -3.077 early_slope=+0.5525 full_slope=-0.3116
+c2=     1.5: blew_up=False gap0= -0.582 gap_final= -2.751 early_slope=-0.3527 full_slope=-0.3464
+done

@@ -1,0 +1,35 @@
+springcpp_N16_S1_q1_a10_r120_xi3.9_m0.8_R200_z0_wxi_rc_par t 4000: rc 119.8 zc +0.3 coil core 54706 axis core 3482 floor/cell -1.37e-02
+   D  interior     10714  strands    162688  near     57821  outer    -15396  axis     11450  floor   -155715  | total 71561
+   E  interior     839.1  strands    7300.5  near    2736.5  outer    3234.7  axis    1812.9  floor     470.4  | total 15923.7 (floor E not computed)
+   structure (interior + strands + near): D 231222  E 10876.1  E/D 0.0470
+springcpp_N16_S1_q1_a10_r120_xi3.9_m0.8_R200_z0_wxi_rc_par t 8000: rc 120.9 zc +7.7 coil core 55082 axis core 2459 floor/cell -3.80e-04
+   D  interior     11269  strands    165261  near     62186  outer      8933  axis     33029  floor     -4332  | total 276347
+   E  interior     833.5  strands    7257.1  near    2784.5  outer    3356.4  axis    1123.2  floor     472.3  | total 15354.8 (floor E not computed)
+   structure (interior + strands + near): D 238717  E 10875.1  E/D 0.0456
+springcpp_N16_S1_q1_a10_r120_xi3.9_m0.8_R200_z0_wxi_rc_par t 12000: rc 120.2 zc +2.0 coil core 54452 axis core 0 floor/cell -1.14e-02
+   D  interior     11275  strands    164170  near     63030  outer       280  axis      1078  floor   -129485  | total 110347
+   E  interior     832.3  strands    7174.9  near    2693.4  outer    3197.3  axis    1093.2  floor     465.1  | total 14991.0 (floor E not computed)
+   structure (interior + strands + near): D 238475  E 10700.5  E/D 0.0449
+springcpp_N16_S1_q1_a10_r120_xi3.9_m0.8_R200_z0_wxi_rc_par t 16000: rc 120.3 zc +2.0 coil core 54726 axis core 0 floor/cell -2.25e-03
+   D  interior     11433  strands    165453  near     63625  outer     11781  axis      5839  floor    -25610  | total 232521
+   E  interior     828.2  strands    7132.7  near    2644.2  outer    3015.6  axis     663.7  floor     460.8  | total 14284.4 (floor E not computed)
+   structure (interior + strands + near): D 240511  E 10605.1  E/D 0.0441
+Traceback (most recent call last):
+  File "/home/p/git/eq/exp/2026/10/06/coil/deficit_budget.py", line 36, in <module>
+    ck = np.load(f)
+  File "/opt/py/py/lib/python3.13/site-packages/numpy/lib/_npyio_impl.py", line 454, in load
+    fid = stack.enter_context(open(os.fspath(file), "rb"))
+                              ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/bk/dst/2026/10/05/coil/springcpp_N30_S1_q1_a10_r120_xi3.9_m0.8_R200_z0_wxi_rc_par/state_t04000.npz'
+springcpp_N30_S1_q1_a10_r120_xi3.9_m0.8_R200_z0_wxi_rc_par t 6000: rc 121.6 zc +3.6 coil core 70652 axis core 2084 floor/cell +2.01e-02
+   D  interior     14586  strands    194679  near     88105  outer     94684  axis    -13583  floor    229134  | total 607606
+   E  interior    1823.7  strands   10743.4  near    2736.3  outer    2965.1  axis     752.5  floor     455.1  | total 19020.9 (floor E not computed)
+   structure (interior + strands + near): D 297371  E 15303.3  E/D 0.0515
+springcpp_N30_S1_q1_a10_r120_xi3.9_m0.8_R200_z0_wxi_rc_par t 8000: rc 121.9 zc +5.8 coil core 68476 axis core 2438 floor/cell -6.19e-03
+   D  interior     21326  strands    160888  near     81442  outer     42519  axis     34715  floor    -70678  | total 270211
+   E  interior    1372.2  strands    9663.2  near    3900.5  outer    3545.5  axis    1204.0  floor     476.3  | total 19685.3 (floor E not computed)
+   structure (interior + strands + near): D 263656  E 14935.8  E/D 0.0566
+springcpp_N30_S1_q1_a10_r120_xi3.9_m0.8_R200_z0_wxi_rc_par t 16000: rc 118.8 zc +3.7 coil core 49954 axis core 0 floor/cell -1.96e-03
+   D  interior     13080  strands    123825  near     92523  outer     48992  axis        76  floor    -22278  | total 256219
+   E  interior     442.9  strands    4596.5  near    3695.3  outer    3571.9  axis     629.6  floor     491.9  | total 12936.1 (floor E not computed)
+   structure (interior + strands + near): D 229428  E 8734.6  E/D 0.0381

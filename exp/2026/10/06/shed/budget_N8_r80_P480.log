@@ -1,0 +1,28 @@
+springbox_N8_S1_q1_a10_r80_xi3.9_m0.8_P480_z0_wxi_rc_par t 0: rc 80.3 zc +0.0 coil core 14556 axis core 0 floor/cell +2.58e-03
+   D  interior      5170  strands     91834  near     51304  outer     58312  axis      1511  floor     57933  | total 266063
+   E  interior     454.9  strands    5373.6  near    1614.3  outer    1812.7  axis     265.4  floor    1281.0  | total 10801.9
+   structure (interior + strands + near): D 148307  E 7442.8  E/D 0.0502
+springbox_N8_S1_q1_a10_r80_xi3.9_m0.8_P480_z0_wxi_rc_par t 1000: rc 80.7 zc +2.7 coil core 34805 axis core 0 floor/cell +1.46e-03
+   D  interior      7707  strands    113361  near     55751  outer     57653  axis     -1261  floor     32852  | total 266063
+   E  interior     411.7  strands    4116.9  near    1708.4  outer    1915.0  axis     280.7  floor    1510.4  | total 9943.2
+   structure (interior + strands + near): D 176819  E 6237.1  E/D 0.0353
+springbox_N8_S1_q1_a10_r80_xi3.9_m0.8_P480_z0_wxi_rc_par t 2000: rc 81.0 zc +2.4 coil core 33813 axis core 0 floor/cell +2.62e-03
+   D  interior      8039  strands    111865  near     50117  outer     35467  axis      1953  floor     58622  | total 266063
+   E  interior     414.1  strands    4123.9  near    1734.3  outer    1917.7  axis     284.5  floor    1531.3  | total 10005.7
+   structure (interior + strands + near): D 170021  E 6272.3  E/D 0.0369
+springbox_N8_S1_q1_a10_r80_xi3.9_m0.8_P480_z0_wxi_rc_par t 4000: rc 80.1 zc +2.7 coil core 34793 axis core 0 floor/cell +2.16e-03
+   D  interior      7736  strands    110918  near     52477  outer     46482  axis      -139  floor     48589  | total 266063
+   E  interior     411.0  strands    4141.4  near    1720.8  outer    1888.5  axis     263.0  floor    1545.1  | total 9969.7
+   structure (interior + strands + near): D 171131  E 6273.2  E/D 0.0367
+springbox_N8_S1_q1_a10_r80_xi3.9_m0.8_P480_z0_wxi_rc_par t 8000: rc 80.5 zc +2.3 coil core 34314 axis core 0 floor/cell +2.67e-03
+   D  interior      7915  strands    110177  near     47741  outer     38545  axis      1755  floor     59929  | total 266063
+   E  interior     417.9  strands    4112.9  near    1744.5  outer    1908.7  axis     267.2  floor    1535.9  | total 9987.1
+   structure (interior + strands + near): D 165834  E 6275.3  E/D 0.0378
+springbox_N8_S1_q1_a10_r80_xi3.9_m0.8_P480_z0_wxi_rc_par t 12000: rc 80.9 zc +3.1 coil core 35111 axis core 0 floor/cell +2.15e-03
+   D  interior      8202  strands    113417  near     52620  outer     41839  axis      1674  floor     48312  | total 266063
+   E  interior     409.9  strands    4072.7  near    1729.1  outer    1918.5  axis     278.2  floor    1539.7  | total 9948.0
+   structure (interior + strands + near): D 174239  E 6211.7  E/D 0.0357
+springbox_N8_S1_q1_a10_r80_xi3.9_m0.8_P480_z0_wxi_rc_par t 16000: rc 80.9 zc +3.1 coil core 34902 axis core 0 floor/cell +2.49e-03
+   D  interior      8532  strands    114079  near     53181  outer     35655  axis     -1238  floor     55854  | total 266063
+   E  interior     409.3  strands    4058.1  near    1724.7  outer    1909.3  axis     287.7  floor    1557.7  | total 9946.7
+   structure (interior + strands + near): D 175792  E 6192.0  E/D 0.0352

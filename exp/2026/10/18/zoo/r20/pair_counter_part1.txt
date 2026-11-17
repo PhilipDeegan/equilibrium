@@ -1,0 +1,7 @@
+struct pair_counter n 1 P 140 R 20.0 N 686000 curves 2 smooth 4.938 ticks 1650
+  t   0.00  disp  +0.000  +0.000  +0.000  rms2 3.1645  leak 1.0601e-01  sum|G| 1.86364e+03  E 9.81692802e+03  (88.79 s/tick, ETA 2441.6 min)
+  t   1.00  disp  -0.000  -0.000  +0.000  rms2 3.1688  leak 1.0604e-01  sum|G| 1.86526e+03  E 9.81692744e+03  (3.35 s/tick, ETA 89.0 min)
+  t   2.00  disp  -0.000  -0.000  +0.000  rms2 3.1775  leak 1.0627e-01  sum|G| 1.86678e+03  E 9.81692809e+03  (2.55 s/tick, ETA 65.4 min)
+  t   3.00  disp  -0.000  -0.001  +0.000  rms2 3.1838  leak 1.0667e-01  sum|G| 1.86827e+03  E 9.81692832e+03  (2.26 s/tick, ETA 56.0 min)
+  t   4.00  disp  -0.000  -0.001  +0.000  rms2 3.1877  leak 1.0704e-01  sum|G| 1.86979e+03  E 9.81692815e+03  (2.11 s/tick, ETA 50.4 min)
+  t   5.00  disp  -0.000  -0.001  +0.000  rms2 3.1923  leak 1.0726e-01  sum|G| 1.87136e+03  E 9.81692796e+03  (2.03 s/tick, ETA 46.5 min)

@@ -1,0 +1,24 @@
+CONTEXT: Using synthetic point/small-radius perturbation test cases (Parts
+32-35 of the old L8-blowup investigation log) as a cheap proxy for
+diagnosing the real production-spheromak L8 base-update blowup
+(H/H0=134).
+
+WHAT FAILED: The synthetic point/small-radius perturbation tests showed
+oscillatory, eta_h-responsive behavior driven by high-frequency content.
+This looked like useful diagnostic signal at the time, but it does not
+match the real blowup's behavior.
+
+ROOT CAUSE: The real production spheromak IC is smooth and does not
+carry the high-frequency content that the synthetic point perturbations
+were probing — the two are testing genuinely different regimes. The
+real blowup's actual driver turned out to be under-resolution
+(cells_across too small relative to the spheromak's own diameter at L8),
+not high-frequency/eta_h-sensitive dynamics.
+
+LESSON: Don't reuse the Parts 32-35 synthetic point-perturbation results
+to reason about the real production spheromak IC's blowup — they are
+not diagnostic of it and answer a different question (high-frequency
+sensitivity) than the one that mattered (resolution relative to object
+size). When validating an AMR blowup fix, test on an IC with the same
+smoothness/scale characteristics as the real target, not a convenient
+synthetic stand-in.

@@ -1,0 +1,22 @@
+[W=+1.0] N=43599  dt=5.1282e-03  omega=0.7654  period=8.21  n_rest=8004  ring_r=1.394
+  [W=+1.0] step 1000/8004  max|phi|=3.2169e-02
+  [W=+1.0] step 2000/8004  max|phi|=3.1337e-02
+  [W=+1.0] step 3000/8004  max|phi|=3.2396e-02
+  [W=+1.0] step 4000/8004  max|phi|=3.2896e-02
+  [W=+1.0] step 5000/8004  max|phi|=3.2743e-02
+  [W=+1.0] step 6000/8004  max|phi|=3.2703e-02
+  [W=+1.0] step 7000/8004  max|phi|=3.2957e-02
+  [W=+1.0] step 8000/8004  max|phi|=3.3264e-02
+[W=+1.0] power-law fit over 25 bins: A=0.000991125064081584  slope=-2.6453427736542117  (expect slope~-3 for dipole 1/r^3)
+[W=-1.0] N=43599  dt=5.1282e-03  omega=0.7654  period=8.21  n_rest=8004  ring_r=1.394
+  [W=-1.0] step 1000/8004  max|phi|=4.0097e-02
+  [W=-1.0] step 2000/8004  max|phi|=3.6778e-02
+  [W=-1.0] step 3000/8004  max|phi|=3.4299e-02
+  [W=-1.0] step 4000/8004  max|phi|=3.3631e-02
+  [W=-1.0] step 5000/8004  max|phi|=3.3945e-02
+  [W=-1.0] step 6000/8004  max|phi|=3.4353e-02
+  [W=-1.0] step 7000/8004  max|phi|=3.4611e-02
+  [W=-1.0] step 8000/8004  max|phi|=3.4919e-02
+[W=-1.0] power-law fit over 25 bins: A=0.0012545010934203202  slope=-2.780046747672683  (expect slope~-3 for dipole 1/r^3)
+saved exp/2026/08/20/18_00_cycling_ring_charge_test/radial_profile.npz
+saved exp/2026/08/20/18_00_cycling_ring_charge_test/radial_profile.png

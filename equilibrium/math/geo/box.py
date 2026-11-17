@@ -1,0 +1,176 @@
+import numpy as np
+
+from equilibrium.math.numpy import as_arrays, is_nd_array, is_scalar, to_array
+
+
+class Box:
+    def __init__(self, lower, upper):
+        lower, upper = as_arrays(lower, upper)
+        assert lower.shape == upper.shape
+        assert (lower <= upper).all()
+        self.lower = lower.astype(int)  # can't slice with floats
+        self.upper = upper.astype(int)
+        self.ndim = len(self.lower)
+
+    def __mul__(self, box2):
+        """
+        return the box resulting from the intersection
+        of box2 with self. No intersection returns None
+        """
+        box1 = self
+
+        lower, upper = np.maximum(box1.lower, box2.lower), np.minimum(
+            box1.upper, box2.upper
+        )
+        if (lower <= upper).all():
+            return Box(lower, upper)
+
+    @property
+    def shape(self):
+        """returns the length per dimension"""
+        return (self.upper - self.lower) + 1
+
+    def nCells(self):
+        """returns the number of cells in the box"""
+        return self.shape.prod()
+
+    def __str__(self):
+        return f"Box({self.lower.tolist()},{self.upper.tolist()})"
+
+    def __repr__(self):
+        return self.__str__()
+
+    def __contains__(self, item):
+        """true if item is completely within self"""
+        if not isinstance(item, Box):
+            item = to_array(item)
+
+        if is_nd_array(item):
+            assert len(item) == self.ndim
+            item = Box(item, item)
+
+        return (item.lower >= self.lower).all() and (item.upper <= self.upper).all()
+
+    def __eq__(self, other):
+        return (
+            isinstance(other, Box)
+            and (self.lower == other.lower).all()
+            and (self.upper == other.upper).all()
+        )
+
+    def __sub__(self, other):
+        if isinstance(other, (list, tuple)):
+            assert all([isinstance(item, Box) for item in other])
+            return remove_all(self, other)
+        assert isinstance(other, Box)
+        return remove(self, other)
+
+    def copy(self):
+        return Box(self.lower.copy(), self.upper.copy())
+
+
+def box_nd(dim, lower, upper):
+    return Box(*[np.asarray([p] * dim) for p in [lower, upper]])
+
+
+def box_1d(lower, upper):
+    return box_nd(1, lower, upper)
+
+
+def box_2d(lower, upper):
+    return box_nd(2, lower, upper)
+
+
+def box_3d(lower, upper):
+    return box_nd(3, lower, upper)
+
+
+def shift(box, offset):
+    return Box(box.lower + offset, box.upper + offset)
+
+
+def grow(box, size):
+    if is_scalar(size) and box.ndim > 1:
+        raise ValueError("box.py: grow must use a list for dimension > 1")
+    if (np.asarray(size) < 0).any():
+        raise ValueError("size must be >=0")
+    return Box(box.lower - size, box.upper + size)
+
+
+def shrink(box, size):
+    if is_scalar(size) and box.ndim > 1:
+        raise ValueError("box.py: shrink must use a list for dimension > 1")
+    if (np.asarray(size) < 0).any():
+        raise ValueError("size must be >=0")
+    return Box(box.lower + size, box.upper - size)
+
+
+def remove(box, to_remove):
+    """
+    removes "remove" from the box
+    this operation returns the list of the boxes
+    that are not part of the intersection box*remove
+    """
+    intersection = box * to_remove
+
+    if intersection is None:
+        return [box]
+
+    def copy(arr, replace):
+        cpy = np.copy(arr)
+        for i, v in replace.items():
+            cpy[i] = v
+        return cpy
+
+    boxes = {}
+
+    if intersection.lower[0] > box.lower[0]:
+        boxes["left"] = Box(box.lower, copy(box.upper, {0: intersection.lower[0] - 1}))
+    if intersection.upper[0] < box.upper[0]:
+        boxes["right"] = Box(copy(box.lower, {0: intersection.upper[0] + 1}), box.upper)
+
+    if box.ndim > 1:
+        minx = intersection.lower[0] if "left" in boxes else box.lower[0]
+        maxx = intersection.upper[0] if "right" in boxes else box.upper[0]
+        if intersection.lower[1] > box.lower[1]:
+            boxes["down"] = Box(
+                copy(box.lower, {0: minx}),
+                copy(box.upper, {0: maxx, 1: intersection.lower[1] - 1}),
+            )
+        if intersection.upper[1] < box.upper[1]:
+            boxes["up"] = Box(
+                copy(box.lower, {0: minx, 1: intersection.upper[1] + 1}),
+                copy(box.upper, {0: maxx}),
+            )
+
+    if box.ndim > 2:
+        miny = intersection.lower[1] if "down" in boxes else box.lower[1]
+        maxy = intersection.upper[1] if "up" in boxes else box.upper[1]
+        if intersection.lower[2] > box.lower[2]:
+            boxes["back"] = Box(
+                copy(box.lower, {0: minx, 1: miny}),
+                copy(intersection.lower - 1, {0: maxx, 1: maxy}),
+            )
+        if intersection.upper[2] < box.upper[2]:
+            boxes["front"] = Box(
+                copy(intersection.upper + 1, {0: minx, 1: miny}),
+                copy(box.upper, {0: maxx, 1: maxy}),
+            )
+
+    return list(boxes.values())
+
+
+def remove_all(box, to_remove):
+    if len(to_remove) > 0:
+        remaining = box - to_remove[0]
+        for to_rm in to_remove[1:]:
+            tmp, remove = [], []
+            for i, rem in enumerate(remaining):
+                if rem * to_rm is not None:
+                    remove.append(i)
+                    tmp += rem - to_rm
+            for rm in reversed(remove):
+                del remaining[rm]
+            remaining += tmp
+        return remaining
+    return box

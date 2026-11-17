@@ -1,0 +1,19 @@
+winding=+1.0000
+N=5441209  R=100.0  hops=4  ring_r=5.318  omega=0.1960  period=32.05146205068719  dt=5.1282e-03  m0=1.00e-04
+fit range r=[40.00,80.00]  equatorial cells in range=833308  polar cells in range=146902
+  step=0
+  step=1000
+  step=2000
+  step=3000
+  step=4000
+  step=5000
+  step=6000
+  step=7000
+reached step=8000, computing E/B/S over full domain...
+
+=== Radial |S| falloff (log-log slope; classical far-zone dipole = -2) ===
+equatorial (theta>70 deg, n=1119): slope=+0.291
+polar      (theta<20 deg, n=3914): slope=-0.065
+|S|(equator)/|S|(pole) at r=40.00: 9.496e-01  (classical magnetic-dipole prediction: >> 1, ideally -> inf)
+
+[plot] exp/2026/08/18/18_45_poynting_far_zone_rerun/poynting_dipole_compare_R100_farzone.png

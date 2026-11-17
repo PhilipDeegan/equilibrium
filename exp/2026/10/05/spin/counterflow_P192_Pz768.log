@@ -1,0 +1,1 @@
+case n1 +4 n2 -4: q1 0.0567 q2 -0.0567  w1.w2 5.6e-35  rel velocity 0.0283  clean rho sd at T 5.50e-16; |d| 2.8e-07 -> 6.9e-07, growth (linear stage) nan / tick (0 pts)

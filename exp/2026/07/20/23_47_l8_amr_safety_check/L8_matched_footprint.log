@@ -1,0 +1,24 @@
+R=20.0  max_level=8  region_r0=5.0  lam_target=1.0  lam_scale=0.05  lam_mode=dynamic  n_steps=10
+cross_scales (1): 1.0000e-03
+
+=== cross_scale=1.0000e-03 ===
+calibration: SCALE OVERRIDE active -- scale_ref=1.3606e-03 @ L8  ->  scale=1.3606e-03 sim-units @ L8 (real-world neutron/Bohr-radius calibration bypassed; this run is a pure numerical stability probe, not a calibrated physical result)
+  init_spheromak_ic_refinable: scale=1.3606e-03  R_sph=1.0  sigma=None  inner_cells=3839/180671  (2.1%)
+  [post-store] phi_rms=4.2801e-02  phi_nonzero_cells=3838
+  IC: cross_scale=1.0000e-03  gate=barrier  m0=2.49e+00  N_total=180671  N_spheromak=3839 (2.1%)  R=20  scale=1.3606e-03  B0_max=0.617  phi_rms=4.2801e-02  dt=5.1282e-03  level_max=8  est_mem=0.0414 GB
+  step=     1  H=4.286868e+05  H/H0=130.8033
+  step=     2  H=4.181718e+05  H/H0=127.5949
+  step=     3  H=1.333191e+05  H/H0=40.6791
+  step=     4  H=2.590209e+05  H/H0=79.0339
+  step=     5  H=2.548631e+05  H/H0=77.7652
+  step=     6  H=2.981681e+05  H/H0=90.9787
+  step=     7  H=3.667705e+05  H/H0=111.9110
+  step=     8  H=3.477282e+05  H/H0=106.1007
+  step=     9  H=3.291038e+05  H/H0=100.4180
+  step=    10  H=3.302828e+05  H/H0=100.7777
+
+ cross_scale   phi_rms_0   phi_rms_f         H_0         H_f  lam_mean_f   lam_max_f    circ_r12_0    circ_r12_f   n_leaves  lvl_max
+------------------------------------------------------------------------------------------------------------------------------------
+  1.0000e-03  4.2801e-02  5.1043e-01  3.2773e+03  3.3028e+05      0.0087      0.9961   +0.0000e+00   -1.7876e-79     180671        8
+
+plot saved -> tmp/refined_neutron_decay_sweep.png

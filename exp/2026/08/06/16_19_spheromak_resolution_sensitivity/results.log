@@ -1,0 +1,4 @@
+mult=1  scale=1.3606e-03  cells_across_diameter=17.9  finest_region_r=2.2862e-03 (margin=1.68x)  N_leaves=284119  H0=3.2773e+03  H1=4.3940e+05  H/H0=134.0728
+mult=2  scale=2.7212e-03  cells_across_diameter=35.7  finest_region_r=4.5725e-03 (margin=1.68x)  N_leaves=1298535  H0=2.6242e+04  H1=9.7042e+05  H/H0=36.9803
+mult=4  region_r0=15.4733  N_leaves_after_telescope=4329303
+mult=4  scale=5.4424e-03  cells_across_diameter=71.4  finest_region_r=7.0751e-03 (margin=1.30x)  N_leaves=4329303  H0=2.0935e+05  H1=2.2034e+06  H/H0=10.5247

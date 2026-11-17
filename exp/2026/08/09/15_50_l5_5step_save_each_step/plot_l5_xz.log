@@ -1,0 +1,7 @@
+[IC] load_t=35.0s  n_L5=14348907  n_slice=170897
+[step1] load_t=34.6s  n_L5=14348907  n_slice=170897
+[step2] load_t=34.4s  n_L5=14348907  n_slice=170897
+[step3] load_t=34.5s  n_L5=14348907  n_slice=170897
+[step4] load_t=34.4s  n_L5=14348907  n_slice=170897
+[step5] load_t=34.2s  n_L5=14348907  n_slice=170897
+plot saved -> /home/p/git/eq/exp/2026/08/09/15_50_l5_5step_save_each_step/l5_xz_slices.png

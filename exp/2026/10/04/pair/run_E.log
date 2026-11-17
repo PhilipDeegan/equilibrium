@@ -1,0 +1,13 @@
+  component 1: rings [(40.0, 0.0, 1, '1')], face jumps [ 0.      0.     -0.3494]
+  component 2: rings [(40.0, 0.0, 1, '2')], face jumps [-0.     -0.     -0.3489]
+pair_r40z0q1c1_r40z0q1c2_mix45_P300_xi3.9: N_cells=6750000 build+seed 450s; g 0.0082 xi 3.9; side 173.2
+  t 0: v1 cores [5048 cells z +0.0 r 40.0]; v2 cores [5048 cells z +0.0 r 40.0]; rho cores [5048 cells z +0.0 r 40.0]; rho min 0.000, bg sd 0.032
+  t 250: v1 cores [14820 cells z +3.4 r 39.7]; v2 cores [14821 cells z +3.4 r 39.7]; rho cores [14764 cells z +3.4 r 39.7]; rho min 0.000, bg sd 0.039
+  t 500: v1 cores [14285 cells z +6.5 r 39.6]; v2 cores [14284 cells z +6.5 r 39.6]; rho cores [14178 cells z +6.5 r 39.5]; rho min 0.000, bg sd 0.044
+  t 750: v1 cores [13455 cells z +9.5 r 39.4]; v2 cores [13447 cells z +9.5 r 39.4]; rho cores [13381 cells z +9.5 r 39.4]; rho min 0.000, bg sd 0.045
+  t 1000: v1 cores [13418 cells z +12.5 r 39.3]; v2 cores [13422 cells z +12.5 r 39.3]; rho cores [13324 cells z +12.5 r 39.3]; rho min 0.001, bg sd 0.043
+  t 1250: v1 cores [12566 cells z +15.4 r 39.3]; v2 cores [12557 cells z +15.4 r 39.3]; rho cores [12463 cells z +15.4 r 39.3]; rho min 0.001, bg sd 0.043
+  t 1500: v1 cores [13232 cells z +18.6 r 39.4]; v2 cores [13245 cells z +18.6 r 39.4]; rho cores [13139 cells z +18.6 r 39.4]; rho min 0.000, bg sd 0.043
+  t 1750: v1 cores [12798 cells z +21.6 r 39.3]; v2 cores [12804 cells z +21.6 r 39.3]; rho cores [12703 cells z +21.7 r 39.3]; rho min 0.001, bg sd 0.044
+  t 2000: v1 cores [12781 cells z +24.7 r 39.2]; v2 cores [12787 cells z +24.7 r 39.2]; rho cores [12692 cells z +24.6 r 39.2]; rho min 0.001, bg sd 0.043
+  t 2250: v1 cores [12895 cells z +27.6 r 39.2]; v2 cores [12884 cells z +27.6 r 39.2]; rho cores [12783 cells z +27.6 r 39.2]; rho min 0.000, bg sd 0.044

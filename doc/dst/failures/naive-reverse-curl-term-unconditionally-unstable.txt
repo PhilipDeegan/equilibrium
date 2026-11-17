@@ -1,0 +1,49 @@
+CONTEXT: first prototype of a candidate missing Ampere/Lorentz-style term for
+dphi/dt, built from the already-validated 12-elementary-triangle circulation
+primitive (equilibrium.substrate.discrete_curl): new_term[i,k] = sum, over
+every elementary-triangle instance using directed edge (i,k) as one of its 3
+legs, of that triangle's own circulation -- the discrete adjoint/
+co-differential of the circulation operator, i.e. a DST-native curl(curl(phi))
+candidate. Wired in as dphi/dt += k_curl * new_term, on top of the existing
+du/dt=-div(phi), dphi/dt=-grad(u), plain explicit Euler, small dt=0.02,
+k_curl=0.05, tested on a real curl-full 8-tile constant-phi ring
+(exp/2026/09/05/21_10_frozen_b_photon_confirmation/probe_plaquette_wave_term.py).
+
+WHAT FAILED: the operator ITSELF is correct (validated: max|new_term|=2.4e-15
+on a random discrete-exact/curl-free phi -- exactly zero as required, a real
+nontrivial confirmation the reverse-index bookkeeping is geometrically
+self-consistent). But wiring it directly into dphi/dt this way is
+UNCONDITIONALLY UNSTABLE: the ring's circulation, instead of oscillating or
+propagating, grew monotonically and unboundedly (8.0 -> 26.3 over 400 steps),
+and total energy H blew up by a factor of ~3.4 million over the same run.
+Worse, the control test (a curl-free companion-style IC, which should see
+new_term stay at ~0 forever since nothing sources curl into it) also blew up
+(H ratio 2.57x, new_term end magnitude 1.5, up from ~1e-15 at t=0) -- meaning
+even floating-point-level roundoff in new_term gets exponentially amplified
+by this coupling, regardless of whether real curl content is present.
+
+ROOT CAUSE: the existing (u, phi) pair is a genuine symplectic/Hamiltonian
+system -- du/dt=-div(phi) and dphi/dt=-grad(u) are a conjugate
+position/momentum pair with opposite-signed coupling, which is exactly why
+plain step() is stable (bounded H, real oscillation) at dt below the
+CFL-like stable_dt() bound. new_term is a SELF-loop on phi alone (built only
+from phi, no new conjugate field), added directly with one fixed sign and no
+partner term closing the loop the other way -- it is not part of any
+symplectic pair, so there is no structural reason for explicit-Euler
+integration of it to be stable at any dt, and it isn't.
+
+LESSON: don't wire a curl(curl(phi))-style term into dphi/dt directly as a
+bare additive self-coupling and expect stable wave-like propagation for
+free. The classical precedent (d^2A/dt^2 = c^2 laplacian(A)) is a genuine
+SECOND-ORDER equation, which in DST's own first-order (u,phi) formulation
+would need a real conjugate "momentum" field for phi's curl-full part --
+not just phi coupled back to itself -- mirroring how u/phi are already a
+proper symplectic pair. Before trying this again: either (a) design an
+actual staggered/leapfrog integration scheme for this specific term (matching
+however the existing u/phi update achieves its own stability), or (b)
+introduce a genuine second dynamical field (call it psi, playing the role B
+itself would need as an independent momentum-like partner to phi_curl, not
+derived from phi alone) so the new term closes into a proper conjugate pair
+the way (u,phi) already does. Do not just retune k_curl/dt on the current
+construction -- the instability triggers even at floating-point-level
+residual curl, so no small-parameter fix will stabilise this specific wiring.

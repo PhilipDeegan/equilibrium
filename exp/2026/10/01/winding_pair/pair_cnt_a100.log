@@ -1,0 +1,2 @@
+pair_cnt alpha=100 N=15009 omegas=['3.3251', '3.3251'] scale=0.7215 E_tube0/E_tot=0.9996 steps=27280
+  t=    0.00 Etube/E0=1.0000 sigma=0.0462 rho_rms=5.340 lam_max=297.477 |a|=0.088 0.378 0.378 0.378 0.378 0.029 0.029 (0s)

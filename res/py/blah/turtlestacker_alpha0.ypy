@@ -1,0 +1,1478 @@
+import numpy as np
+from numpy import random
+import math
+from math import *
+import turtle
+import time
+
+print(
+    """
+Turtle Stacker Alpha v0
+
+A Catalogue of a tiny fantasy galaxy that exists inside your computer
+There are 4,294,967,296 star systems, each with a positive integer ID
+"""
+)
+
+# seed = random.randint(0,4294967296)
+seed = int(input("Input the ID number you want to display or input 0 for random: "))
+if seed == 0:
+    seed = random.randint(0, 4294967296)
+np.random.seed(seed)
+
+# current known bugs/undesirable effects:
+# holding the scroll button will sometimes cause two orbits to be labelled
+# bianary detail attributes tags flicker
+# setting albedo to >=1 seems to disrupt the fabric of reality, which I guess is fine but weird
+
+
+consonants = [
+    "b",
+    "c",
+    "d",
+    "f",
+    "g",
+    "h",
+    "j",
+    "k",
+    "l",
+    "m",
+    "n",
+    "p",
+    "qu",
+    "r",
+    "s",
+    "t",
+    "v",
+    "x",
+    "z",
+]
+vowels = ["a", "e", "i", "o", "u"]
+dipthongs = ["ou", "ie", "igh", "ay", "oi", "oo", "ea", "ee", "air", "ure", "ow"]
+suffixes = [
+    "us",
+    "tl",
+    "ia",
+    "se",
+    "ix",
+    "ium",
+    "na",
+    "or",
+    "no",
+    "es",
+    "an",
+    "on",
+    "im",
+    "la",
+]
+
+greekLetters = [
+    "α ",
+    "β ",
+    "γ ",
+    "δ ",
+    "ε ",
+    "ζ ",
+    "η ",
+    "θ ",
+    "ι ",
+    "κ ",
+    "λ ",
+    "μ ",
+    "ν ",
+    "ξ ",
+    "ο ",
+    "π ",
+    "ρ ",
+    "σ ",
+    "τ ",
+    "υ ",
+    "φ ",
+    "χ ",
+    "ψ ",
+    "ω ",
+]
+numerals = [
+    "I",
+    "II",
+    "III",
+    "IV",
+    "V",
+    "VI",
+    "VII",
+    "VIII",
+    "IX",
+    "X",
+    "XI",
+    "XII",
+    "XIII",
+    "XIV",
+    "XV",
+    "XVI",
+]
+planetSuffixes = [
+    "ury",
+    "us",
+    "ars",
+    "er",
+    "urn",
+    "une",
+    "ia",
+    "y",
+    "a",
+    "ara",
+    "as",
+    "is",
+    "es",
+    "air",
+    "os",
+    "an",
+    "ine",
+    "on",
+    "ona",
+    "al",
+    "ora",
+    "ol",
+]
+
+nameTemplate = random.randint(0, 6)
+if nameTemplate == 0:
+    sysName = (
+        random.choice(consonants)
+        + random.choice(vowels)
+        + random.choice(consonants)
+        + random.choice(suffixes)
+    )
+if nameTemplate == 1:
+    sysName = (
+        random.choice(consonants)
+        + random.choice(dipthongs)
+        + random.choice(consonants)
+        + random.choice(suffixes)
+    )
+if nameTemplate == 2:
+    sysName = (
+        random.choice(consonants)
+        + random.choice(vowels)
+        + random.choice(consonants)
+        + random.choice(vowels)
+        + random.choice(consonants)
+        + random.choice(suffixes)
+    )
+if nameTemplate == 3:
+    sysName = (
+        random.choice(consonants)
+        + random.choice(vowels)
+        + random.choice(consonants)
+        + random.choice(dipthongs)
+        + random.choice(consonants)
+        + random.choice(suffixes)
+    )
+if nameTemplate == 4:
+    sysName = (
+        random.choice(consonants)
+        + random.choice(dipthongs)
+        + random.choice(consonants)
+        + random.choice(vowels)
+        + random.choice(consonants)
+        + random.choice(suffixes)
+    )
+if nameTemplate == 5:
+    sysName = (
+        random.choice(dipthongs) + random.choice(consonants) + random.choice(suffixes)
+    )
+if nameTemplate == 6:
+    sysName = (
+        random.choice(vowels) + random.choice(consonants) + random.choice(suffixes)
+    )
+if nameTemplate == 7:
+    sysName = (
+        random.choice(consonants)
+        + random.choice(vowels)
+        + random.choice(consonants)
+        + random.choice(dipthongs)
+    )
+if nameTemplate == 8:
+    sysName = (
+        random.choice(consonants)
+        + random.choice(dipthongs)
+        + random.choice(consonants)
+        + random.choice(vowels)
+    )
+sysName = sysName.capitalize()
+
+# constants
+sigma = 0.0000002  # stephan-Boltzmann constant (does not reflect reality)
+metalDensity = 8
+rockDensity = 6
+volatileDensity = 4
+gasDensity = 2
+
+
+# -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+class star:
+    def __init__(
+        self, mass, luminosity, lifePhase, lifetimeMS, radius, temp, color, alive, name
+    ):
+        self.mass = 0
+        self.luminosity = 0
+        self.lifePhase = 0
+        self.lifetimeMS = 0
+        self.radius = 0
+
+    def set_mass(
+        self,
+    ):  # mass expressed as 1=sol, randomizes mass from 0 to 64 with a strong preference towards low numbers, then adds 1-16 to anything that's below the red dwarf cutoff
+        self.mass = (
+            (random.random() * 4)
+            * (random.random() * 4)
+            * (random.random() * 2)
+            * (random.random() * 2)
+        )
+        if self.mass < 0.08:
+            self.mass += random.randint(1, 16)
+
+    def set_lifePhase(
+        self,
+    ):  # ensure that this is run after set_mass()+set_lifetimeMS and before set_luminostity() or there will be pain
+        if self.mass >= 10:  # high mass stars
+            if age > (
+                self.lifetimeMS + 256
+            ):  # checks if beyond range of supergiant lifespan
+                self.lifePhase = 6  # in this case, black hole or a neuton star depending on mass (20+ gets black hole)
+                if self.mass >= 20:
+                    self.lifePhase = 7  # 3 is only used to describe black holes
+                self.mass /= 2  # I was gonna make this fancier but fuck it supernovas simply half the star's mass
+            elif age > self.lifetimeMS:
+                self.lifePhase = 4  # a supergiant
+            else:
+                self.lifePhase = 2  # main sequence
+        elif self.mass >= 0.6:  # mid mass stars
+            if age > (
+                self.lifetimeMS + 16384
+            ):  # medium mass giants live considerably longer than supergiants
+                self.lifePhase = 5  # in this case, white dwarf
+                self.mass /= 7.5  # white dwarves loose this much mass when formed, got this because 10 (the upper limit of mid range stars) / 7.5=1.333... just below the max mass of white dwarves
+            elif age > self.lifetimeMS:
+                self.lifePhase = 3  # a post ms giant
+            else:
+                self.lifePhase = 1
+        else:
+            self.lifePhase = 0  # low mass stars don't evolve, I mean they'll become black dwarves eventually but age shouldnt be set that high
+
+    def set_luminosity(self):
+        if self.lifePhase == 7:  # black hole
+            self.luminosity = 0.01
+        elif self.lifePhase == 6:  # Neutron Star
+            self.luminosity = ((self.mass) ** 2) / 16  # its a game
+        elif self.lifePhase == 4:  # Super Giant
+            self.luminosity = 256 * ((self.mass) ** 3.5)
+        elif self.lifePhase == 2:  # Main Sequence Giant
+            self.luminosity = 1.4 * ((self.mass) ** 3.5)
+        elif self.lifePhase == 5:  # White Dwarf
+            self.luminosity = ((self.mass) ** 2) / 4  # idk bro
+        elif self.lifePhase == 3:  # Giant
+            self.luminosity = 64 * (
+                (self.mass) ** 3.5
+            )  # I just made this up after looking at stats on known examples
+        elif self.lifePhase == 1:  # Main Sequence
+            if self.color == "#99ff33" or "#11ff00":
+                self.luminosity = (
+                    (self.mass) ** 3
+                ) * 0.6  # the things that live in coronas live by absorbing non green light, this is by far the simplest aliens I'll write probably
+            else:
+                self.luminosity = (self.mass) ** 3
+        elif self.lifePhase == 0:  # Main Sequence Dwarf
+            self.luminosity = (self.mass) ** (2)
+
+    def set_lifetimeMS(self):
+        if self.mass > 10:
+            self.lifetimeMS = (
+                (10 ** 4) * ((self.mass) ** -2.5)
+            ) * 4  # I want MS giants to be more common
+        else:
+            self.lifetimeMS = (10 ** 4) * (
+                (self.mass) ** -2.5
+            )  # from "Lifetime" section of https://en.wikipedia.org/wiki/Main_sequence, upper bound is ~ 5,524,271.728019902 and lower bound is ~ 0.30517578125 (expressed in 1=million years)
+
+    def set_radius(self):  # run this after lifePhase, expressed in sol radius
+        if self.lifePhase <= 2:  # if MS
+            self.radius = self.mass ** 0.8  # don't quote me on this
+        elif self.lifePhase == 3:
+            self.radius = 16 * (
+                self.mass ** 0.8
+            )  # a vast understatement for the sake of gameplay
+        elif self.lifePhase == 4:
+            self.radius = 32 * (self.mass ** 0.8)  # supergiant
+        elif self.lifePhase == 5:
+            self.radius = self.mass ** (
+                -1 / 3
+            )  # white dwarf, note that the negative power makes more massive white dwarves smaller, I like that
+        elif self.lifePhase == 6:
+            self.radius = 0.01  # neutron stars are way smaller than this irl but I want them to have a chance at being visible
+        else:
+            self.radius = 0.01
+
+    def set_color(
+        self,
+    ):  # do this before set lum unless you come up with a better way of modifying lum for green stars lol
+        if self.lifePhase == 7:  # black hole
+            self.color = "#000000"
+        elif self.lifePhase == 6:  # Neutron Star
+            self.color = "#f0e6ff"
+        elif self.lifePhase == 4:  # Super Giant
+            if self.mass >= 16:
+                self.color = "#ff6600"
+            else:
+                self.color = "#ff0000"
+        elif self.lifePhase == 2:  # Main Sequence Giant
+            if self.mass >= 16:
+                self.color = "#6666ff"
+            else:
+                self.color = "#b3b3ff"
+        elif self.lifePhase == 5:  # White Dwarf
+            self.color = "#ffffff"
+        elif self.lifePhase == 3:  # Giant
+            if self.mass >= 6:
+                self.color = "#ff6600"
+            else:
+                self.color = "#ff0000"
+        elif self.lifePhase == 1:  # Main Sequence
+            if self.mass >= 4:
+                self.color = "#e6ffff"
+            elif self.mass >= 2:
+                if self.alive > 0:
+                    self.color = "#99ff33"  # green
+                else:
+                    self.color = "#ffffff"
+            elif self.mass >= 0.8:
+                if self.alive > 0:
+                    self.color = "#11ff00"  # also green
+                else:
+                    self.color = "#ffff66"
+            else:
+                self.color = "#ff9933"
+        elif self.lifePhase == 0:  # Main Sequence Dwarf
+            if self.mass >= 0.4:
+                self.color = "#ff3300"
+            else:
+                self.color = "#ff0000"
+
+    def describeStar(self):
+        if self.lifePhase == 0:
+            print("RED DWARF")
+        if self.lifePhase == 1:
+            print("YELLOW")
+        if self.lifePhase == 2:
+            print("BLUE")
+        if self.lifePhase == 3:
+            print("RED GIANT")
+        if self.lifePhase == 4:
+            print("RED SUPER GIANT")
+        if self.lifePhase == 5:
+            print("WHITE DWARF")
+        if self.lifePhase == 6:
+            print("COMPACT STAR")
+        if self.lifePhase == 7:
+            print("BLACK HOLE")
+
+    def printAttributes(self):
+        if self.lifePhase == 0:
+            print(self.name, ", Main Sequence Dwarf")
+        if self.lifePhase == 1:
+            print(self.name, ", Main Sequence")
+        if self.lifePhase == 2:
+            print(self.name, ", Main Sequence Giant")
+        if self.lifePhase == 3:
+            print(self.name, ", Post Main Sequence Giant")
+        if self.lifePhase == 4:
+            print(self.name, ", Post Main Sequence Super Giant")
+        if self.lifePhase == 5:
+            print(self.name, ", White Dwarf")
+        if self.lifePhase == 6:
+            print(self.name, ", Neutron Star")
+        if self.lifePhase == 7:
+            print(self.name, ", Black Hole")
+        print("Mass: ", round(self.mass, 2), " M☉")
+        print("luminosity: ", round(self.luminosity, 2), " L☉")
+        print("Radius: ", round(self.radius, 2), " R☉")
+
+
+# -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# only consider the luminosity of the star(s) at age = 0, make sure to set the age vaiable AFTER this line
+age = 0
+star1 = star(0, 0, 0, 0, 0, 0, 0, 0, 0)
+star2 = star(0, 0, 0, 0, 0, 0, 0, 0, 0)
+
+# bianaryCheck = 0
+bianaryCheck = random.randint(0, 3)
+star1.color = "#ff00ff"
+star2.color = "#ff00ff"  # magenta means error you dip
+
+star1.set_mass()
+star1.set_lifetimeMS()
+star1.set_lifePhase()
+star1.alive = random.randint(0, 1)
+star1.set_luminosity()
+star1.set_radius()
+
+if bianaryCheck == 0:
+    star2.set_mass()
+    star2.set_lifetimeMS()
+    star2.set_lifePhase()
+    star2.alive = random.randint(0, 2)
+    star2.set_luminosity()
+    star2.set_radius()
+
+starRoche_initial = (star1.radius + star2.radius) / 215
+# combine the luminosities of both stars if there are two, no need to call bianaryCheck as long as default parameters are 0:
+
+
+def sumL():
+    global totalLuminosity
+    totalLuminosity = star1.luminosity
+    if bianaryCheck == 0:
+        totalLuminosity += star2.luminosity
+
+
+sumL()
+# radius is expressed as 1=AU
+frostLine = 5 * (totalLuminosity) ** 0.5
+
+# now that the frost line is set we can change the age to its intended value...
+ageMultiplier = random.randint(
+    1, 32
+)  # this represents if the star is in a star forming region or not (lower means closer to a star forming region) may be determined logically in the future
+age = (
+    random.randint(1, 10) * random.randint(1, 100)
+) * ageMultiplier  # randomizes age with preference on small numbers
+# ...and update the other attributes
+star1.set_lifePhase()
+star1.set_color()
+star1.set_luminosity()
+star1.set_radius()
+
+if bianaryCheck == 0:
+    star2.set_lifePhase()
+    star2.set_color()
+    star2.set_luminosity()
+    star2.set_radius()
+
+sumL()
+
+starRoche_current = (
+    star1.radius + star2.radius
+) / 215  # star radius is in sol, 215 converts to au and somewhat simulates roche limit
+
+# if bianary, determine mutual orbits
+if bianaryCheck == 0:
+    if star1.mass >= star2.mass:
+        primaryStar = 1
+    else:
+        primaryStar = 2
+    starsSeperation = (star1.radius + star2.radius) * 2.1
+    star1Orbit = starsSeperation * (star2.mass / (star1.mass + star2.mass))
+    star2Orbit = starsSeperation * (star1.mass / (star1.mass + star2.mass))
+
+# let's also set the number of terrestial planets based on the frost line
+if frostLine > 10:
+    inplanCount = random.randint(6, 8)
+elif frostLine > 2:
+    inplanCount = random.randint(2, 8)
+else:
+    inplanCount = random.randint(1, 6)
+
+outplanCount = random.randint(1, 8)
+
+# -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------#
+##PLANETS##
+
+# list of relevant elements and compounds#
+# hydrogen
+# helium
+# neon
+# carbon
+# nitrogen
+# oxygen
+# silicon
+# phosporus
+# sulfur
+# iron
+# nickel
+# magnesium
+# calcium
+# aluminum
+
+# methane
+# ammonia
+# water
+# sulphuric acid
+
+# silica
+# hydrocarbons
+# tholins
+
+
+# rock stuff
+# carbon
+# silicate
+# metals
+
+# ice stuff
+# water
+# methane
+# ammonia
+
+# material classes: metals, rocks, volatiles, gases
+# metals: iron/nickel
+# rocks: silicate/carbon
+# volatiles:water/methane/ammonia
+# gases:hydrogen/helium
+
+# goofy names:
+
+# carbon = paragen (element, rock)
+# oxygen = calcogen (element, gas)
+# nitrogen = azogen (element, gas)
+# sulfur = vitrogen
+# silicate = lithogen (element)
+# phosphorus = somagen (element)
+# hydrogen = luminon
+# helium = stellon
+
+
+# methane = liphane (volatile, compound)
+# ammonia = amothane (volatile, comound)
+# water = hydrane (volatile, compound)
+
+# READ THIS https://astrobites.org/2014/05/26/how-easily-do-carbon-rich-planets-form/
+
+
+# set the relative elemental abundancies for the system
+sysParagen = random.uniform()  # carbon
+sysAzogen = random.uniform()  # nitrogen
+sysCalcogen = random.uniform()  # oxygen
+
+sysLithogen = random.uniform()  # silicon
+sysSomagen = random.uniform()  # phosphorus
+sysVitrogen = random.uniform()  # sulfur
+
+
+# sun like systems
+# 1270047585
+
+# cool systems
+# 2241905075
+# 3779862243
+
+
+class planet:
+    def __init__(
+        self,
+        mass,
+        radius,
+        orbitRadius,
+        albedo,
+        temp,
+        metalMultiplier,
+        rockMultiplier,
+        volatileMultiplier,
+        gasMultiplier,
+        name,
+    ):
+        for k in ['mass', 'radius', 'orbitRadius', 'temp']:
+            object.__setattr__(self, k, 0)
+
+        for k in ['metalMultiplier', 'rockMultiplier', 'volatileMultiplier', 'gasMultiplier']:
+            object.__setattr__(self, k, 0)
+
+        self.mass = 0
+        self.radius = 0
+        self.orbitRadius = 0
+        self.temp = 0
+        self.albedo = 0.5
+        self.metalMultiplier = 0
+        self.rockMultiplier = 0
+        self.volatileMultiplier = 0
+        self.gasMultiplier = 0
+        self.name = "Planet 404"
+
+    # derived from extrasolar section of https://en.wikipedia.org/wiki/Planetary_equilibrium_temperature
+    def set_temp(self):
+        self.temp = (
+            (totalLuminosity * (1 - self.albedo))
+            / (16 * sigma * math.pi * self.orbitRadius ** 2)
+        ) ** 0.25
+        # self.temp *= 100 #this is for looks
+
+    def set_radius(self):  # run after mass and composition
+        # this is average density, toss that into a formula that combines volume=mass/density and the volume of a sphere as it relates to radius,
+        #  I have no idea what units this will put out but I shouldn't be using real units anyways:
+        # ((self.metalMultiplier * metalDensity)+(self.rockMultiplier * rockDensity)+(self.volatileMultiplier * volatileDensity)+(self.gasMultiplier * gasDensity))
+        self.radius = (
+            (
+                0.75
+                * (
+                    self.mass
+                    / (
+                        (self.metalMultiplier * metalDensity)
+                        + (self.rockMultiplier * rockDensity)
+                        + (self.volatileMultiplier * volatileDensity)
+                        + (self.gasMultiplier * gasDensity)
+                    )
+                )
+            )
+            / math.pi
+        ) ** (
+            1 / 3
+        )  # lol
+
+    def set_name(self):
+        nameTemplate = random.randint(0, 3)
+        if nameTemplate == 0:
+            self.name = (
+                random.choice(consonants)
+                + random.choice(vowels)
+                + random.choice(consonants)
+                + random.choice(planetSuffixes)
+            )
+        if nameTemplate == 1:
+            self.name = (
+                random.choice(vowels)
+                + random.choice(consonants)
+                + random.choice(planetSuffixes)
+            )
+        if nameTemplate == 2:
+            self.name = (
+                random.choice(consonants)
+                + random.choice(dipthongs)
+                + random.choice(consonants)
+                + random.choice(planetSuffixes)
+            )
+        if nameTemplate == 3:
+            self.name = (
+                random.choice(dipthongs)
+                + random.choice(consonants)
+                + random.choice(planetSuffixes)
+            )
+        self.name = self.name.capitalize()
+        planetNameFlavor = random.randint(0, 7)
+        if planetNameFlavor == 0:
+            self.name = self.name + " " + random.choice(greekLetters)
+        if planetNameFlavor == 1:
+            self.name = self.name + " " + random.choice(numerals)
+
+    def printAttributes(self):
+        print(self.name)
+        if (
+            self.metalMultiplier > self.rockMultiplier
+            and self.metalMultiplier > self.volatileMultiplier
+            and self.metalMultiplier > self.gasMultiplier
+        ):
+            print("metal planet")
+        elif (
+            self.rockMultiplier > self.volatileMultiplier
+            and self.rockMultiplier > self.gasMultiplier
+        ):
+            print("rock planet")
+        elif self.volatileMultiplier > self.gasMultiplier:
+            print("volatile planet")
+        else:
+            print("gas planet")
+        print("orbit: ", self.orbitRadius)
+        print("mass: ", self.mass)
+        print("temperature: ", self.temp)
+        print("metal: ", self.metalMultiplier)
+        print("rock: ", self.rockMultiplier)
+        print("volatile: ", self.volatileMultiplier)
+        print("gas: ", self.gasMultiplier)
+        print("################")
+
+
+class innerPlanet(planet):
+    def set_orbitRadius(self):
+        global previousOrbit
+        self.orbitRadius = previousOrbit + (
+            inplan_averageSeperation * random.uniform(0.6, 1.4)
+        )
+        previousOrbit += inplan_averageSeperation
+
+    def set_composition(self):  # I have no idea what Im doing
+        self.metalMultiplier = frostLine / (self.orbitRadius - starRoche_initial)
+        self.rockMultiplier = (self.orbitRadius * 10) / (frostLine)
+        self.gasMultiplier = random.uniform(0, 1) * self.mass
+        self.volatileMultiplier = random.uniform(0, 1) * self.mass
+
+    def set_mass(
+        self,
+    ):  # yea sorry you fucked up it doesnt make sense but this runs after composition and in part determines composition because of its dependencies lmao
+        self.mass = random.uniform(0, 2) * random.uniform(1, 2) * random.uniform(1, 4)
+        if self.mass > 10:  # turns it into a giant
+            self.mass *= 4
+            self.gasMultiplier += 256
+            self.volatileMultiplier += 8
+        else:
+            self.gasMultiplier *= self.mass / (self.temp / 2)
+            self.volatileMultiplier *= self.mass / (self.temp / 2)
+        compositionMultTotal = (
+            self.metalMultiplier
+            + self.rockMultiplier
+            + self.volatileMultiplier
+            + self.gasMultiplier
+        )
+        self.metalMultiplier /= compositionMultTotal
+        self.rockMultiplier /= compositionMultTotal
+        self.volatileMultiplier /= compositionMultTotal
+        self.gasMultiplier /= compositionMultTotal  # converts to %
+
+
+class outerPlanet(planet):
+    def set_orbitRadius(self):
+        global previousOrbit
+        self.orbitRadius = previousOrbit + (
+            outplan_averageSeperation * random.uniform(0.6, 1.4)
+        )
+        previousOrbit += outplan_averageSeperation
+
+    def set_composition(self):
+        self.metalMultiplier = random.uniform(0, 2)
+        self.rockMultiplier = random.uniform(0, 2)
+        self.gasMultiplier = random.uniform(0, 4) * self.mass
+        self.volatileMultiplier = random.uniform(0, 4) * (self.mass + 0.5)
+
+    def set_mass(self):  # run AFTER composition
+        self.mass = (
+            random.uniform(0, 2)
+            * random.uniform(1, 4)
+            * random.uniform(1, 4)
+            * random.uniform(1, 4)
+        )
+        if self.mass > 10:  # turns it into an ice giant
+            self.mass *= 2
+            self.gasMultiplier += 2
+            self.volatileMultiplier += 16
+        if self.mass > 12:
+            self.mass *= 2
+            self.gasMultiplier += 256
+            self.volatileMultiplier += 8
+
+        compositionMultTotal = (
+            self.metalMultiplier
+            + self.rockMultiplier
+            + self.volatileMultiplier
+            + self.gasMultiplier
+        )
+        self.metalMultiplier /= compositionMultTotal
+        self.rockMultiplier /= compositionMultTotal
+        self.volatileMultiplier /= compositionMultTotal
+        self.gasMultiplier /= compositionMultTotal  # converts to %
+
+
+# -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------#
+
+previousOrbit = starRoche_initial  # keeps planets from falling into the star
+inplan_averageSeperation = (frostLine - starRoche_initial) / inplanCount
+outplan_averageSeperation = (frostLine * 4) / outplanCount
+
+# BUILD ZONE#
+
+planetList = []
+systemradiusLimit = 100
+
+# I could've made this more compact if I knew any better when I wrote this bit, I don't know if I care to fix it yet tho so BRRRRRRRRRRRRRRRRRRRRRR
+# terrestial planets
+inplan1 = innerPlanet(0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+inplan1.set_orbitRadius()
+if systemradiusLimit > inplan1.orbitRadius > starRoche_current:
+    planetList.append(inplan1)
+
+if inplanCount >= 2:
+    inplan2 = innerPlanet(0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+    inplan2.set_orbitRadius()
+    if systemradiusLimit > inplan2.orbitRadius > starRoche_current:
+        planetList.append(inplan2)
+
+if inplanCount >= 3:
+    inplan3 = innerPlanet(0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+    inplan3.set_orbitRadius()
+    if systemradiusLimit > inplan3.orbitRadius > starRoche_current:
+        planetList.append(inplan3)
+
+if inplanCount >= 4:
+    inplan4 = innerPlanet(0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+    inplan4.set_orbitRadius()
+    if systemradiusLimit > inplan4.orbitRadius > starRoche_current:
+        planetList.append(inplan4)
+
+if inplanCount >= 5:
+    inplan5 = innerPlanet(0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+    inplan5.set_orbitRadius()
+    if systemradiusLimit > inplan5.orbitRadius > starRoche_current:
+        planetList.append(inplan5)
+
+if inplanCount >= 6:
+    inplan6 = innerPlanet(0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+    inplan6.set_orbitRadius()
+    if systemradiusLimit > inplan6.orbitRadius > starRoche_current:
+        planetList.append(inplan6)
+
+if inplanCount >= 7:
+    inplan7 = innerPlanet(0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+    inplan7.set_orbitRadius()
+    if systemradiusLimit > inplan7.orbitRadius > starRoche_current:
+        planetList.append(inplan7)
+
+if inplanCount == 8:
+    inplan8 = innerPlanet(0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+    inplan8.set_orbitRadius()
+    if systemradiusLimit > inplan8.orbitRadius > starRoche_current:
+        planetList.append(inplan8)
+
+# Outer Planets
+
+previousOrbit = frostLine
+
+outplan1 = outerPlanet(0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+outplan1.set_orbitRadius()
+if systemradiusLimit > outplan1.orbitRadius > starRoche_current:
+    planetList.append(outplan1)
+
+if outplanCount >= 2:
+    outplan2 = outerPlanet(0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+    outplan2.set_orbitRadius()
+    if systemradiusLimit > outplan2.orbitRadius > starRoche_current:
+        planetList.append(outplan2)
+
+if outplanCount >= 3:
+    outplan3 = outerPlanet(0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+    outplan3.set_orbitRadius()
+    if systemradiusLimit > outplan3.orbitRadius > starRoche_current:
+        planetList.append(outplan3)
+
+if outplanCount >= 4:
+    outplan4 = outerPlanet(0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+    outplan4.set_orbitRadius()
+    if systemradiusLimit > outplan4.orbitRadius > starRoche_current:
+        planetList.append(outplan4)
+
+if outplanCount >= 5:
+    outplan5 = outerPlanet(0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+    outplan5.set_orbitRadius()
+    if systemradiusLimit > outplan5.orbitRadius > starRoche_current:
+        planetList.append(outplan5)
+
+if outplanCount >= 6:
+    outplan6 = outerPlanet(0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+    outplan6.set_orbitRadius()
+    if systemradiusLimit > outplan6.orbitRadius > starRoche_current:
+        planetList.append(outplan6)
+
+if outplanCount >= 7:
+    outplan7 = outerPlanet(0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+    outplan7.set_orbitRadius()
+    if systemradiusLimit > outplan7.orbitRadius > starRoche_current:
+        planetList.append(outplan7)
+
+if outplanCount >= 8:
+    outplan8 = outerPlanet(0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+    outplan8.set_orbitRadius()
+    if systemradiusLimit > outplan8.orbitRadius > starRoche_current:
+        planetList.append(outplan8)
+
+# set deriviative attributes for extant planets
+counter = 0
+for x in planetList:
+    x.set_name()
+    x.set_temp()
+    x.set_composition()
+    x.set_mass()
+    x.set_radius()
+    counter += 1
+    if counter == planetList.count:
+        break
+
+#################################################################################
+###!!! C A U T I O N :  T U R T L E   Z O N E !!!###
+#################################################################################
+
+screen = turtle.Screen()
+screen.setup(1920, 1060)
+screen.bgcolor("black")
+screen.tracer(0)
+
+
+###display modifiers###
+displayMultiplier = 8 / ((star1.radius + star2.radius) / 2)
+star1sizeDisplay = star1.radius * displayMultiplier
+star2sizeDisplay = star2.radius * displayMultiplier
+if bianaryCheck == 0:
+    star1displayOrbit = (
+        (8 * star1Orbit + star1Orbit * 60 ** 0.5) / 2
+    ) * displayMultiplier
+    star2displayOrbit = (
+        (8 * star2Orbit + star2Orbit * 60 ** 0.5) / 2
+    ) * displayMultiplier
+
+if bianaryCheck == 0:
+    coorbitSpeed = 1 / ((star1Orbit + star2Orbit) * 16)
+    if coorbitSpeed > 0.08:
+        coorbitSpeed = 0.08
+
+
+if len(planetList) == 0:
+    planetDisplayMult = 1
+else:
+    planetDisplayMult = 400 / planetList[-1].orbitRadius
+
+
+################
+originX = -480
+originY = 0
+
+# dividerLine = turtle.Turtle()
+# dividerLine.color("grey")
+# dividerLine.goto(0,540)
+# dividerLine.goto(0,-540)
+
+sysMasscenter = turtle.Turtle()
+sysMasscenter.hideturtle()
+sysMasscenter.up()
+sysMasscenter.goto(originX, originY)
+
+###############################################################################################
+
+
+class Legend(turtle.Turtle):
+    def __init__(self, scale):
+        super().__init__()
+        self.scale = scale
+
+    def printLegend(self):
+        self.hideturtle()
+        self.color("grey")
+        self.up()
+        self.goto(
+            originX, displayMultiplier * -1 * self.scale * 10
+        )  # I dont understand why these need the *10
+        self.down()
+        self.circle(displayMultiplier * self.scale * 10)
+        self.up()
+        self.goto((displayMultiplier * self.scale * 11) + originX, 0)
+        self.write(
+            str(self.scale) + " R☉",
+            True,
+            align="left",
+            font=("Liberation Mono", 10, "normal"),
+        )
+
+
+if bianaryCheck == 0:
+    if (star1.radius + star2.radius) < 0.4:
+        legendsol = Legend(0.2)
+    else:
+        legendsol = Legend(int((star1.radius + star2.radius + 1) * 1.1))
+    legendsol.printLegend()
+else:
+    if displayMultiplier < 60 and 6 > star1.lifePhase > 0:
+        legendsol = Legend(int((star1.radius + 1) * 1.1))
+        legendsol.printLegend()
+    if star1.lifePhase >= 6:
+        legendsol = Legend(0.02)
+        legendsol.printLegend()
+    if star1.lifePhase == 0:
+        legendsol = Legend(round((star1.radius + 0.1), 1))
+        legendsol.printLegend()
+
+###############################################################################################
+
+
+class nameTag(turtle.Turtle):
+    def __init__(self):
+        super().__init__()
+        self.color("white")
+        self.hideturtle()
+        self.penup()
+
+
+class star1nameTag(nameTag):
+    def move(self):
+        self.clear()
+        self.goto(displayStar1.xcor(), displayStar1.ycor() + displayStar1.size * 10)
+        self.write(
+            (displayStar1.name),
+            False,
+            align="left",
+            font=("Liberation Mono", 10, "normal"),
+        )
+
+
+class star2nameTag(nameTag):
+    def move(self):
+        self.clear()
+        self.goto(displayStar2.xcor(), displayStar2.ycor() + displayStar2.size * 10)
+        self.write(
+            (displayStar2.name),
+            False,
+            align="left",
+            font=("Liberation Mono", 10, "normal"),
+        )
+
+
+###############################################################################################
+
+detailedStarAttributes = False
+
+
+class starAttributesTag(turtle.Turtle):
+    def __init__(self):
+        super().__init__()
+        self.color("cyan")
+        self.hideturtle()
+        self.penup()
+
+    def toggle(self):
+        global detailedStarAttributes
+        global bianaryCheck
+        detailedStarAttributes = not detailedStarAttributes
+        if bianaryCheck > 0:
+            if detailedStarAttributes is True:
+                self.goto(
+                    displayStar1.xcor() + displayStar1.size * 11,
+                    displayStar1.ycor() - 16,
+                )
+                self.write(
+                    ("Mass: " + str(round(star1.mass, 2))),
+                    False,
+                    align="left",
+                    font=("Liberation Mono", 10, "normal"),
+                )
+                self.goto(
+                    displayStar1.xcor() + displayStar1.size * 11,
+                    displayStar1.ycor() - 32,
+                )
+                self.write(
+                    ("Luminosity: " + str(round(star1.luminosity, 2))),
+                    False,
+                    align="left",
+                    font=("Liberation Mono", 10, "normal"),
+                )
+            else:
+                self.clear()
+
+    def displayBianary(self):
+        global detailedStarAttributes
+        if detailedStarAttributes is True:
+            self.goto(
+                displayStar1.xcor() + displayStar1.size * 11, displayStar1.ycor() - 16
+            )
+            self.write(
+                ("Mass: " + str(round(star1.mass, 2))),
+                False,
+                align="left",
+                font=("Liberation Mono", 10, "normal"),
+            )
+            self.goto(
+                displayStar1.xcor() + displayStar1.size * 11, displayStar1.ycor() - 32
+            )
+            self.write(
+                ("Luminosity: " + str(round(star1.luminosity, 2))),
+                False,
+                align="left",
+                font=("Liberation Mono", 10, "normal"),
+            )
+
+            self.goto(
+                displayStar2.xcor() + displayStar2.size * 11, displayStar2.ycor() - 16
+            )
+            self.write(
+                ("Mass: " + str(round(star2.mass, 2))),
+                False,
+                align="left",
+                font=("Liberation Mono", 10, "normal"),
+            )
+            self.goto(
+                displayStar2.xcor() + displayStar2.size * 11, displayStar2.ycor() - 32
+            )
+            self.write(
+                ("Luminosity: " + str(round(star2.luminosity, 2))),
+                False,
+                align="left",
+                font=("Liberation Mono", 10, "normal"),
+            )
+
+            self.clear()
+        else:
+            self.clear()
+
+
+starAttributesTag = starAttributesTag()
+
+###############################################################################################
+cursorDisplayMult = 64
+cursor = len(planetList)
+cursorX = -32
+cursorY = 240
+
+
+class planetCursor(turtle.Turtle):
+    global cursor
+
+    def __init__(self):
+        super().__init__()
+        self.color("cyan")
+        self.hideturtle()
+        self.penup()
+        self.pensize(width=2)
+
+    def moveup(self):
+        global cursor
+        cursor -= 1
+        for c in [displayListplan[cursor]]:
+            self.clear()
+            self.color("cyan")
+            self.goto(480, c.orbitRadius)
+            self.pendown()
+            self.circle(c.orbitRadius * -1)
+            self.write(
+                str(round(c.orbitRadius / planetDisplayMult, 2)) + " AU",
+                False,
+                align="left",
+                font=("Liberation Mono", 10, "normal"),
+            )
+            self.penup()
+
+            self.goto(480 - c.orbitRadius, 0)
+            self.pendown()
+            self.goto(64 - c.orbitRadius * 0.1, 0)
+            # self.goto(-16, 64)
+            for d in [
+                planetList[cursor]
+            ]:  # the sole purpose of the following wall of text is for looks. I wanted it to be pretty.
+
+                self.goto(cursorX, cursorY - d.radius * cursorDisplayMult)
+                if (
+                    d.gasMultiplier > 0.016
+                ):  # if the planet has less than this percentage of a material type we're just gonna pretend like it doesn't exist. this causes it to shrink by an unnoticeable amount
+                    self.penup()
+                    self.pendown()
+                    self.begin_fill()
+                    self.circle(
+                        d.radius * cursorDisplayMult
+                    )  # total radius and gas line
+                    self.end_fill()
+                    self.goto(cursorX, cursorY)
+                    self.goto(
+                        cursorX + (d.radius * cursorDisplayMult) + 8, cursorY + 16
+                    )
+                    self.goto(
+                        cursorX + (d.radius * cursorDisplayMult) + 16, cursorY + 16
+                    )
+                    self.write(
+                        "Gases",
+                        False,
+                        align="left",
+                        font=("Liberation Mono", 10, "normal"),
+                    )
+
+                if d.volatileMultiplier > 0.016:
+                    self.penup()
+                    self.goto(
+                        cursorX,
+                        cursorY
+                        - d.radius
+                        * cursorDisplayMult
+                        * (d.volatileMultiplier + d.rockMultiplier + d.metalMultiplier),
+                    )
+                    self.color("#00cccc")
+                    self.pendown()
+                    self.begin_fill()
+                    self.circle(
+                        d.radius
+                        * cursorDisplayMult
+                        * (d.volatileMultiplier + d.rockMultiplier + d.metalMultiplier)
+                    )  # volatile line
+                    self.end_fill()
+                    self.goto(cursorX, cursorY)
+                    self.goto(cursorX + (d.radius * cursorDisplayMult) + 8, cursorY)
+                    self.goto(cursorX + (d.radius * cursorDisplayMult) + 16, cursorY)
+                    self.write(
+                        "Volatiles",
+                        False,
+                        align="left",
+                        font=("Liberation Mono", 10, "normal"),
+                    )
+
+                if d.rockMultiplier > 0.016:
+                    self.penup()
+                    self.goto(
+                        cursorX,
+                        cursorY
+                        - d.radius
+                        * cursorDisplayMult
+                        * (d.rockMultiplier + d.metalMultiplier),
+                    )
+                    self.color("#009999")
+                    self.pendown()
+                    self.begin_fill()
+                    self.circle(
+                        d.radius
+                        * cursorDisplayMult
+                        * (d.rockMultiplier + d.metalMultiplier)
+                    )  # rock line
+                    self.end_fill()
+                    self.goto(cursorX, cursorY)
+                    self.goto(
+                        cursorX + (d.radius * cursorDisplayMult) + 8, cursorY - 16
+                    )
+                    self.goto(
+                        cursorX + (d.radius * cursorDisplayMult) + 16, cursorY - 16
+                    )
+                    self.write(
+                        "Rock",
+                        False,
+                        align="left",
+                        font=("Liberation Mono", 10, "normal"),
+                    )
+
+                if d.metalMultiplier > 0.016:
+                    self.penup()
+                    self.goto(
+                        cursorX,
+                        cursorY - d.radius * cursorDisplayMult * d.metalMultiplier,
+                    )
+                    self.color("#006666")
+                    self.pendown()
+                    self.begin_fill()
+                    self.circle(
+                        d.radius * cursorDisplayMult * d.metalMultiplier
+                    )  # metal line
+                    self.end_fill()
+                    self.goto(cursorX, cursorY)
+                    self.goto(
+                        cursorX + (d.radius * cursorDisplayMult) + 8, cursorY - 32
+                    )
+                    self.goto(
+                        cursorX + (d.radius * cursorDisplayMult) + 16, cursorY - 32
+                    )
+                    self.write(
+                        "Metals",
+                        False,
+                        align="left",
+                        font=("Liberation Mono", 10, "normal"),
+                    )
+
+                self.penup()
+                self.color("cyan")
+                self.goto(cursorX + (d.radius * cursorDisplayMult) + 16, cursorY + 32)
+                self.write(
+                    d.name,
+                    False,
+                    align="left",
+                    font=("Liberation Mono", 10, "underline"),
+                )  # prints the planets name
+
+                self.goto(cursorX + (d.radius * cursorDisplayMult * -1) - 16, cursorY)
+                self.write(
+                    "Average temperature: " + str(round(d.temp, 2)),
+                    False,
+                    align="right",
+                    font=("Liberation Mono", 10, "normal"),
+                )  # prints temperature
+
+                self.goto(
+                    cursorX + (d.radius * cursorDisplayMult * -1) - 16, cursorY - 16
+                )
+                self.write(
+                    "Albedo: " + str(round(d.albedo, 2)),
+                    False,
+                    align="right",
+                    font=("Liberation Mono", 10, "normal"),
+                )  # prints albedo
+
+        if cursor < 0:
+            cursor = len(planetList) - 1
+
+    def select(self):
+        global cursor
+        for c in [planetList[cursor]]:
+            c.printAttributes()
+
+
+# I have acquired a nontransferable skill, who uses turtle graphics? Me bitch.
+
+
+###############################################################################################
+class displayStar(turtle.Turtle):
+    def __init__(self, orbitRadius, color, size, primary, name):
+        super().__init__(shape="circle")
+        self.orbitRadius = orbitRadius
+        self.c = color
+        self.color(self.c)
+        self.size = size
+        self.shapesize(size, size)
+        # self.up()
+        # self.angle = 0
+        self.primary = sysMasscenter
+        self.name = "ERRORNAME"
+
+    def move(self):
+        x = self.orbitRadius * cos(self.angle)  # Angle in radians
+        y = self.orbitRadius * sin(self.angle)
+        self.goto(self.primary.xcor() + x, self.primary.ycor() + y)
+        # self.clear()
+        # self.write(self.name, False, align="left")
+
+
+class displayPlanet(turtle.Turtle):
+    def __init__(self, orbitRadius, color, size, primary, orbitalSpeed):
+        super().__init__(shape="circle")
+        self.orbitRadius = orbitRadius
+        self.c = color
+        self.color(self.c)
+        self.size = size
+        self.shapesize(size, size)
+        self.up()
+        self.angle = random.uniform(0, (2 * math.pi))  # puts planets in random spots
+        self.primary = planMasscenter
+        self.pencolor("grey")
+
+    def move(self):
+        x = self.orbitRadius * cos(self.angle)  # Angle in radians
+        y = self.orbitRadius * sin(self.angle)
+        self.goto(self.primary.xcor() + x, self.primary.ycor() + y)
+
+
+if bianaryCheck == 0:  # bianary
+    displayStar1 = displayStar(
+        star1displayOrbit, star1.color, star1sizeDisplay, sysMasscenter, "ERRORNAME"
+    )
+    displayStar2 = displayStar(
+        star2displayOrbit, star2.color, star2sizeDisplay, sysMasscenter, "ERRORNAME"
+    )
+    displayStar1.angle = random.uniform(0, (2 * math.pi))
+    displayStar2.angle = displayStar1.angle + math.pi
+    if primaryStar == 1:
+        displayStar1.name = sysName + " α"
+        displayStar2.name = sysName + " β"
+    else:
+        displayStar2.name = sysName + " α"
+        displayStar1.name = sysName + " β"
+
+    displayListstar = [displayStar2, displayStar1]
+    star1nameTag = star1nameTag()
+    star2nameTag = star2nameTag()
+    if star1.lifePhase == 7:
+        displayStar1.pencolor("white")
+        displayStar1.name = "BH " + str(seed)  # names black holes
+    if star1.lifePhase == 6:
+        displayStar1.name = "PSR " + str(seed)  # names compact stars
+    if star2.lifePhase == 7:
+        displayStar2.pencolor("white")
+        displayStar2.name = "BH " + str(seed + 1)  # names black holes
+    if star2.lifePhase == 6:
+        displayStar2.name = "PSR " + str(seed + 1)  # names compact stars
+else:  # single star
+    displayStar1 = displayStar(
+        0, star1.color, star1sizeDisplay, sysMasscenter, "ERRORNAME"
+    )
+    displayStar1.angle = 0
+    displayStar1.name = sysName
+    displayListstar = [displayStar1]
+    if star1.lifePhase == 7:
+        displayStar1.pencolor("white")
+        displayStar1.name = "BH " + str(seed)  # names black holes
+    if star1.lifePhase == 6:
+        displayStar1.name = "PSR " + str(seed)  # names compact stars
+    star1nameTag = star1nameTag()
+
+displayListplan = []
+
+# rendering planets at right
+planMasscenter = turtle.Turtle()
+planMasscenter.hideturtle()
+planMasscenter.up()
+planMasscenter.goto(480, 0)
+
+
+for y in planetList:
+    y = displayPlanet(
+        (y.orbitRadius * planetDisplayMult), "grey", y.radius * 0.4, planMasscenter, 0
+    )
+    displayListplan.append(y)
+
+for y in displayListplan:
+    y.orbitalSpeed = ((4 / y.orbitRadius) ** 0.5) * (planetDisplayMult / 400)
+    y.penup()
+    y.move()
+    y.pendown()
+
+for y in displayListstar:
+    y.penup()
+    y.move()
+    y.pendown()
+
+planetCount = displayListplan.count
+
+planetCursor = planetCursor()
+
+star1nameTag.move()
+
+
+### print basic system info to console ###
+star1.name = displayStar1.name
+print("ID: ", seed, ", The ", sysName, " system:")
+print("################")
+if bianaryCheck == 0:
+    star2.name = displayStar2.name
+    print("Bianary Star System:")
+    star1.printAttributes()
+    star2.printAttributes()
+else:
+    print("Single Star System:")
+    star1.printAttributes()
+print("################")
+
+print("Planet Count: ", len(displayListplan))
+print(
+    """
+Controls:
+    Space: Select planet/display basic attributes
+    S: Toggle star attributes
+    Enter: Print planet attributes
+"""
+)
+
+
+###turtle loop###
+
+while True:
+    screen.update()
+
+    for i in displayListplan:
+        i.move()
+    for i in displayListstar:
+        i.move()
+    for p in displayListplan:
+        p.angle += p.orbitalSpeed
+    if bianaryCheck == 0:
+        displayStar1.angle += coorbitSpeed
+        displayStar2.angle += coorbitSpeed
+        star2nameTag.move()
+        star1nameTag.move()
+        starAttributesTag.displayBianary()
+    else:
+        pass
+    screen.onkey(starAttributesTag.toggle, "s")
+    # screen.onkey(starAttributesTag.displaySingle, "s")
+    if len(displayListplan) > 0:
+        screen.onkey(planetCursor.moveup, "space")
+        screen.onkey(planetCursor.select, "Return")
+    else:
+        pass
+
+    screen.listen()
+
+    time.sleep(0.01)

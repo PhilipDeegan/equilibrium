@@ -1,0 +1,40 @@
+P 300 side 173.2; walk m 0.8 xi 3.9 g 0.00822 c_s 0.0453 / tick; step c 2.000
+w  4.0 (w/xi 1.03) eps 0.01 r_f   20: front step  27.5 walk  44.5; peak ratio walk/step  0.90; L2 diff  1.22
+w  4.0 (w/xi 1.03) eps 0.01 r_f   35: front step  41.5 walk  81.5; peak ratio walk/step  0.69; L2 diff  1.30
+w  4.0 (w/xi 1.03) eps 0.01 r_f   50: front step  56.5 walk  84.5; peak ratio walk/step  0.58; L2 diff  1.19
+w  4.0 (w/xi 1.03) eps 0.10 r_f   20: front step  27.5 walk  44.5; peak ratio walk/step  0.89; L2 diff  1.22
+w  4.0 (w/xi 1.03) eps 0.10 r_f   35: front step  41.5 walk  81.5; peak ratio walk/step  0.68; L2 diff  1.30
+w  4.0 (w/xi 1.03) eps 0.10 r_f   50: front step  56.5 walk  84.5; peak ratio walk/step  0.58; L2 diff  1.19
+w  4.0 (w/xi 1.03) eps 0.30 r_f   20: front step  27.5 walk  44.5; peak ratio walk/step  0.88; L2 diff  1.22
+w  4.0 (w/xi 1.03) eps 0.30 r_f   35: front step  41.5 walk  81.5; peak ratio walk/step  0.68; L2 diff  1.29
+w  4.0 (w/xi 1.03) eps 0.30 r_f   50: front step  56.5 walk  84.5; peak ratio walk/step  0.57; L2 diff  1.19
+w  4.0 (w/xi 1.03) eps 0.60 r_f   20: front step  27.5 walk  50.5; peak ratio walk/step  0.85; L2 diff  1.22
+w  4.0 (w/xi 1.03) eps 0.60 r_f   35: front step  41.5 walk  81.5; peak ratio walk/step  0.67; L2 diff  1.29
+w  4.0 (w/xi 1.03) eps 0.60 r_f   50: front step  56.5 walk  84.5; peak ratio walk/step  0.56; L2 diff  1.19
+w  8.0 (w/xi 2.05) eps 0.01 r_f   20: front step  34.5 walk  37.5; peak ratio walk/step  1.16; L2 diff  0.44
+w  8.0 (w/xi 2.05) eps 0.01 r_f   35: front step  49.5 walk  55.5; peak ratio walk/step  1.15; L2 diff  0.67
+w  8.0 (w/xi 2.05) eps 0.01 r_f   50: front step  64.5 walk  72.5; peak ratio walk/step  1.12; L2 diff  0.82
+w  8.0 (w/xi 2.05) eps 0.10 r_f   20: front step  34.5 walk  37.5; peak ratio walk/step  1.15; L2 diff  0.46
+w  8.0 (w/xi 2.05) eps 0.10 r_f   35: front step  49.5 walk  55.5; peak ratio walk/step  1.14; L2 diff  0.69
+w  8.0 (w/xi 2.05) eps 0.10 r_f   50: front step  64.5 walk  72.5; peak ratio walk/step  1.10; L2 diff  0.83
+w  8.0 (w/xi 2.05) eps 0.30 r_f   20: front step  34.5 walk  38.5; peak ratio walk/step  1.13; L2 diff  0.50
+w  8.0 (w/xi 2.05) eps 0.30 r_f   35: front step  49.5 walk  56.5; peak ratio walk/step  1.11; L2 diff  0.72
+w  8.0 (w/xi 2.05) eps 0.30 r_f   50: front step  64.5 walk  73.5; peak ratio walk/step  1.06; L2 diff  0.84
+w  8.0 (w/xi 2.05) eps 0.60 r_f   20: front step  34.5 walk  39.5; peak ratio walk/step  1.12; L2 diff  0.56
+w  8.0 (w/xi 2.05) eps 0.60 r_f   35: front step  49.5 walk  57.5; peak ratio walk/step  1.07; L2 diff  0.76
+w  8.0 (w/xi 2.05) eps 0.60 r_f   50: front step  64.5 walk  74.5; peak ratio walk/step  1.01; L2 diff  0.86
+w 16.0 (w/xi 4.10) eps 0.01 r_f   20: front step  50.5 walk  50.5; peak ratio walk/step  1.04; L2 diff  0.08
+w 16.0 (w/xi 4.10) eps 0.01 r_f   35: front step  65.5 walk  65.5; peak ratio walk/step  1.06; L2 diff  0.12
+w 16.0 (w/xi 4.10) eps 0.01 r_f   50: front step  80.5 walk  81.5; peak ratio walk/step  1.08; L2 diff  0.16
+w 16.0 (w/xi 4.10) eps 0.10 r_f   20: front step  50.5 walk  50.5; peak ratio walk/step  1.04; L2 diff  0.11
+w 16.0 (w/xi 4.10) eps 0.10 r_f   35: front step  65.5 walk  66.5; peak ratio walk/step  1.07; L2 diff  0.15
+w 16.0 (w/xi 4.10) eps 0.10 r_f   50: front step  80.5 walk  81.5; peak ratio walk/step  1.09; L2 diff  0.19
+w 16.0 (w/xi 4.10) eps 0.30 r_f   20: front step  50.5 walk  50.5; peak ratio walk/step  1.06; L2 diff  0.17
+w 16.0 (w/xi 4.10) eps 0.30 r_f   35: front step  65.5 walk  66.5; peak ratio walk/step  1.09; L2 diff  0.22
+w 16.0 (w/xi 4.10) eps 0.30 r_f   50: front step  80.5 walk  83.5; peak ratio walk/step  1.11; L2 diff  0.26
+w 16.0 (w/xi 4.10) eps 0.60 r_f   20: front step  50.5 walk  51.5; peak ratio walk/step  1.08; L2 diff  0.26
+w 16.0 (w/xi 4.10) eps 0.60 r_f   35: front step  65.5 walk  67.5; peak ratio walk/step  1.12; L2 diff  0.32
+w 16.0 (w/xi 4.10) eps 0.60 r_f   50: front step  80.5 walk  84.5; peak ratio walk/step  1.13; L2 diff  0.37
+rotational IC: sampled smooth A, discrete-divergence-free projection changed it by 8.89e-07 (relative L2)
+
+rotational: smooth divergence-free ring flow (R 20.0, tube 4.0): after 200 step() ticks max |d phi| / max |phi| 1.35e-15, max |u| 2.68e-16 / max |phi| 2.42e-01

@@ -1,0 +1,11 @@
+loaded /bk/curlfull_dipole_uniform_r180_ic220.h5 n_leaves=31734323 t=3.9s
+ring found: 328 tiles, centre=[ 2.16628883e-16 -1.28014130e-15  0.00000000e+00], t=8.6s
+t=0  u_rms=1.682628e-01  circ=1.499395e+03
+dt=5.128205e-03
+step  10  step_time=0.8s  u_rms=1.693886e-01 (ratio 1.006691)  circ=1.499395e+03 (ratio 1.000000)
+step  20  step_time=0.9s  u_rms=1.706880e-01 (ratio 1.014413)  circ=1.499395e+03 (ratio 1.000000)
+step  30  step_time=0.8s  u_rms=1.720666e-01 (ratio 1.022606)  circ=1.499395e+03 (ratio 1.000000)
+step  40  step_time=0.8s  u_rms=1.734254e-01 (ratio 1.030682)  circ=1.499395e+03 (ratio 1.000000)
+step  50  step_time=0.8s  u_rms=1.747044e-01 (ratio 1.038283)  circ=1.499395e+03 (ratio 1.000000)
+step  60  step_time=0.8s  u_rms=1.758997e-01 (ratio 1.045387)  circ=1.499395e+03 (ratio 1.000000)
+FINAL total_time=80.4s

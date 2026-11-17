@@ -1,0 +1,39 @@
+scale @ L1 = 4.8  ->  scale @ L0 = 14.4  (sph_frac_this_level=0.18)
+n_steps @ L1 = 100  ->  n_steps @ L0 = 300  (report 10 -> 30, time_factor=3)
+=== sweep_neutron_decay_cross_scale (max_level=0) ===
+  init_spheromak_ic: scale=14.4  R_sph=1.0  sigma=None  inner_cells=16361/2784735  (0.6%)
+  [pre-store] phi_nonzero=16360  outer_nonzero_python=0  inner=16361  N=2784735
+  [post-store] outer_nonzero=0  max_r_with_phi=0.998 sph-u
+  IC: cross_scale=1.0000e-03  gate=barrier  m0=1.00e-02  N_total=2784735  N_spheromak=16361 (0.6%)  R=80  scale=14.4  B0_max=0.617  phi_rms=2.2388e-02  dt=5.1282e-03
+
+=== refined_neutron_decay (max_level=0, scale_override matched) ===
+calibration: SCALE OVERRIDE active -- scale_ref=1.4400e+01 @ L0  ->  scale=1.4400e+01 sim-units @ L0 (real-world neutron/Bohr-radius calibration bypassed; this run is a pure numerical stability probe, not a calibrated physical result)
+  init_spheromak_ic_refinable: scale=1.4400e+01  R_sph=1.0  sigma=None  inner_cells=16361/2784735  (0.6%)
+  [post-store] phi_rms=2.2388e-02  phi_nonzero_cells=16360
+  IC: cross_scale=1.0000e-03  gate=barrier  m0=1.00e-02  N_total=2784735  N_spheromak=16361 (0.6%)  R=80  scale=1.4400e+01  B0_max=0.617  phi_rms=2.2388e-02  dt=5.1282e-03  level_max=0  est_mem=0.6377 GB
+  step=    30  H=1.380914e+04  H/H0=1.0005
+  step=    60  H=1.384211e+04  H/H0=1.0029
+  step=    90  H=1.389921e+04  H/H0=1.0070
+  step=   120  H=1.397774e+04  H/H0=1.0127
+  step=   150  H=1.407499e+04  H/H0=1.0198
+  step=   180  H=1.418799e+04  H/H0=1.0280
+  step=   210  H=1.431357e+04  H/H0=1.0370
+  step=   240  H=1.444887e+04  H/H0=1.0469
+  step=   270  H=1.459159e+04  H/H0=1.0572
+  step=   300  H=1.473956e+04  H/H0=1.0679
+
+=== side-by-side ===
+  step     H_organic     H_refined    rel_diff   phi_organic   phi_refined
+     0  1.380221e+04  1.380221e+04   0.000e+00  2.238779e-02  2.238779e-02
+    30  1.380914e+04  1.380914e+04   0.000e+00  2.241034e-02  2.241034e-02
+    60  1.384211e+04  1.384211e+04   0.000e+00  2.248259e-02  2.248259e-02
+    90  1.389921e+04  1.389921e+04   0.000e+00  2.258738e-02  2.258738e-02
+   120  1.397774e+04  1.397774e+04   0.000e+00  2.271267e-02  2.271267e-02
+   150  1.407499e+04  1.407499e+04   0.000e+00  2.285069e-02  2.285069e-02
+   180  1.418799e+04  1.418799e+04   0.000e+00  2.299708e-02  2.299708e-02
+   210  1.431357e+04  1.431357e+04   0.000e+00  2.314956e-02  2.314956e-02
+   240  1.444887e+04  1.444887e+04   0.000e+00  2.330767e-02  2.330767e-02
+   270  1.459159e+04  1.459159e+04   0.000e+00  2.347186e-02  2.347186e-02
+   300  1.473956e+04  1.473956e+04   0.000e+00  2.364300e-02  2.364300e-02
+
+n_leaves: organic=2784735 (lvl_max=0)  refined=2784735 (lvl_max=0)

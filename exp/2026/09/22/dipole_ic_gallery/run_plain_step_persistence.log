@@ -1,0 +1,66 @@
+
+=== init_electron_dipole_ic_vecpot ===
+  init_electron_dipole_ic_vecpot: scale=50.0  R_sph=1.0  r_axis=30.53  u_bg=0.0  inner_cells=680395/2784735  (24.4%)
+  divergence_clean: div_rms 2.7641e-04 → 2.5593e-12  (×9.26e-09)
+    n_leaves=2784735  build_t=48.2s  E0=3.377281e+05  circ0=6.329581e+02
+    step   50  E/E0=1.00000000  circ=6.329581e+02
+    step  100  E/E0=1.00000000  circ=6.329581e+02
+    step  150  E/E0=1.00000000  circ=6.329581e+02
+    step  200  E/E0=1.00000000  circ=6.329581e+02
+    step  250  E/E0=1.00000000  circ=6.329581e+02
+    step  300  E/E0=1.00000000  circ=6.329581e+02
+    SUMMARY: E/E0 final=1.00000000  circ0=6.3296e+02 circ_final=6.3296e+02  shape_drift(mid)=0.0000  shape_drift(end)=0.0000  total_t=98.2s
+
+=== init_electron_dipole_ic (non-vecpot) ===
+  init_electron_dipole_ic: scale=50.0  R_sph=1.0  sigma=None  r_axis=30.53  u_bg=0.0  inner_cells=680395/2784735  (24.4%)
+  divergence_clean: div_rms 7.0847e-02 → 6.7316e-10  (×9.50e-09)
+    n_leaves=2784735  build_t=68.4s  E0=1.623554e+05  circ0=-1.166011e-15
+    step   50  E/E0=1.00000000  circ=1.225610e-15
+    step  100  E/E0=1.00000000  circ=-2.546971e-15
+    step  150  E/E0=1.00000000  circ=3.122509e-16
+    step  200  E/E0=1.00000000  circ=1.110915e-15
+    step  250  E/E0=1.00000000  circ=-5.115080e-15
+    step  300  E/E0=1.00000000  circ=-1.872321e-15
+    SUMMARY: E/E0 final=1.00000000  circ0=-1.1660e-15 circ_final=-1.8723e-15  shape_drift(mid)=0.0000  shape_drift(end)=0.0000  total_t=111.9s
+
+=== seed_dipole_ic (dipole_mode_ic.py) ===
+    n_leaves=2784735  build_t=14.9s  E0=4.164206e+05  circ0=0.000000e+00
+    step   50  E/E0=0.99985909  circ=2.792021e-17
+    step  100  E/E0=0.99978114  circ=3.310945e-16
+    step  150  E/E0=0.99975257  circ=-8.389177e-17
+    step  200  E/E0=0.99978775  circ=-5.152752e-16
+    step  250  E/E0=0.99981938  circ=-5.801022e-17
+    step  300  E/E0=0.99985987  circ=1.657982e-16
+    SUMMARY: E/E0 final=0.99985987  circ0=0.0000e+00 circ_final=1.6580e-16  shape_drift(mid)=0.6138  shape_drift(end)=0.8124  total_t=58.9s
+
+=== plain 8-tile ring (find_toroidal_ring+init_toroidal_winding) ===
+    n_leaves=2784735  build_t=5.3s  E0=8.000000e+00  circ0=-1.221245e-15
+    step   50  E/E0=0.99331497  circ=-1.887379e-15
+    step  100  E/E0=0.99781156  circ=-2.553513e-15
+    step  150  E/E0=0.99961376  circ=-5.551115e-16
+    step  200  E/E0=1.00065235  circ=-9.992007e-16
+    step  250  E/E0=1.00065758  circ=-1.221245e-15
+    step  300  E/E0=1.00061306  circ=-1.221245e-15
+    SUMMARY: E/E0 final=1.00061306  circ0=-1.2212e-15 circ_final=-1.2212e-15  shape_drift(mid)=0.2827  shape_drift(end)=0.4203  total_t=49.9s
+
+=== init_spheromak_ic ===
+  init_spheromak_ic: scale=50.0  R_sph=1.0  sigma=None  inner_cells=680395/2784735  (24.4%)
+  [pre-store] phi_nonzero=680394  outer_nonzero_python=0  inner=680395  N=2784735
+  [post-store] outer_nonzero=0  max_r_with_phi=1.000 sph-u
+    n_leaves=2784735  build_t=9.4s  E0=5.745408e+05  circ0=4.918569e+02
+    step   50  E/E0=1.00001234  circ=4.918569e+02
+    step  100  E/E0=1.00002275  circ=4.918569e+02
+    step  150  E/E0=1.00003105  circ=4.918569e+02
+    step  200  E/E0=1.00003722  circ=4.918569e+02
+    step  250  E/E0=1.00004134  circ=4.918568e+02
+    step  300  E/E0=1.00004357  circ=4.918563e+02
+    SUMMARY: E/E0 final=1.00004357  circ0=4.9186e+02 circ_final=4.9186e+02  shape_drift(mid)=2.3912  shape_drift(end)=11.0969  total_t=54.3s
+
+=== FINAL SUMMARY (plain step(), NO step_cross, N_STEPS=300) ===
+init_electron_dipole_ic_vecpot                               E/E0=1.00000000  circ0=6.3296e+02  circ_final=6.3296e+02  shape_drift_end=0.0000
+init_electron_dipole_ic (non-vecpot)                         E/E0=1.00000000  circ0=-1.1660e-15  circ_final=-1.8723e-15  shape_drift_end=0.0000
+seed_dipole_ic (dipole_mode_ic.py)                           E/E0=0.99985987  circ0=0.0000e+00  circ_final=1.6580e-16  shape_drift_end=0.8124
+plain 8-tile ring (find_toroidal_ring+init_toroidal_winding) E/E0=1.00061306  circ0=-1.2212e-15  circ_final=-1.2212e-15  shape_drift_end=0.4203
+init_spheromak_ic                                            E/E0=1.00004357  circ0=4.9186e+02  circ_final=4.9186e+02  shape_drift_end=11.0969
+
+Saved /home/deegan/git/eq/exp/2026/09/22/dipole_ic_gallery/plain_step_persistence.png

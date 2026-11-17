@@ -1,0 +1,37 @@
+H0 (from /bk/curlfull_dipole_uniform_r180_ic220.h5)=8.655935e+06
+cross_scale=1000
+loaded /bk/curlfull_dipole_uniform_r180_ic220.h5 (resuming from absolute step 0) n_leaves=31734323 lam_max=3.427853e+00 lam_mean=2.727626e-01 t=10.0s peak_rss_GB=21.65
+dt=5.128205e-03
+[step_000] n_leaves=31734323 levels=[0] -> /home/p/git/eq/exp/2026/08/17/12_25_curl_full_dipole_ic_rebuild/plots/uniform_r180_crossscale1000/xz_step_000.png
+step 1 step_time=2.6s H=3.495882e+08 H/H0=40.387108 peak_rss_GB=22.66
+[step_001] n_leaves=31734323 levels=[0] -> /home/p/git/eq/exp/2026/08/17/12_25_curl_full_dipole_ic_rebuild/plots/uniform_r180_crossscale1000/xz_step_001.png
+step 1 plotted /home/p/git/eq/exp/2026/08/17/12_25_curl_full_dipole_ic_rebuild/plots/uniform_r180_crossscale1000/xz_step_001.png plot_time=10.6s
+step 2 step_time=2.6s H=8.218584e+10 H/H0=9494.737768 peak_rss_GB=26.64
+[step_002] n_leaves=31734323 levels=[0] -> /home/p/git/eq/exp/2026/08/17/12_25_curl_full_dipole_ic_rebuild/plots/uniform_r180_crossscale1000/xz_step_002.png
+step 2 plotted /home/p/git/eq/exp/2026/08/17/12_25_curl_full_dipole_ic_rebuild/plots/uniform_r180_crossscale1000/xz_step_002.png plot_time=9.2s
+step 3 step_time=2.6s H=3.817807e+13 H/H0=4410622.942560 peak_rss_GB=26.65
+[step_003] n_leaves=31734323 levels=[0] -> /home/p/git/eq/exp/2026/08/17/12_25_curl_full_dipole_ic_rebuild/plots/uniform_r180_crossscale1000/xz_step_003.png
+step 3 plotted /home/p/git/eq/exp/2026/08/17/12_25_curl_full_dipole_ic_rebuild/plots/uniform_r180_crossscale1000/xz_step_003.png plot_time=9.8s
+step 4 step_time=2.7s H=2.402095e+16 H/H0=2775084264.080262 peak_rss_GB=26.67
+[step_004] n_leaves=31734323 levels=[0] -> /home/p/git/eq/exp/2026/08/17/12_25_curl_full_dipole_ic_rebuild/plots/uniform_r180_crossscale1000/xz_step_004.png
+step 4 plotted /home/p/git/eq/exp/2026/08/17/12_25_curl_full_dipole_ic_rebuild/plots/uniform_r180_crossscale1000/xz_step_004.png plot_time=8.7s
+step 5 step_time=3.0s H=1.849622e+19 H/H0=2136824942352.142578 peak_rss_GB=26.68
+[step_005] n_leaves=31734323 levels=[0] -> /home/p/git/eq/exp/2026/08/17/12_25_curl_full_dipole_ic_rebuild/plots/uniform_r180_crossscale1000/xz_step_005.png
+step 5 plotted /home/p/git/eq/exp/2026/08/17/12_25_curl_full_dipole_ic_rebuild/plots/uniform_r180_crossscale1000/xz_step_005.png plot_time=7.9s
+step 6 step_time=3.7s H=1.715734e+22 H/H0=1982147704845464.000000 peak_rss_GB=26.69
+[step_006] n_leaves=31734323 levels=[0] -> /home/p/git/eq/exp/2026/08/17/12_25_curl_full_dipole_ic_rebuild/plots/uniform_r180_crossscale1000/xz_step_006.png
+step 6 plotted /home/p/git/eq/exp/2026/08/17/12_25_curl_full_dipole_ic_rebuild/plots/uniform_r180_crossscale1000/xz_step_006.png plot_time=7.8s
+step 7 step_time=3.4s H=1.838006e+25 H/H0=2123404904837638144.000000 peak_rss_GB=26.72
+[step_007] n_leaves=31734323 levels=[0] -> /home/p/git/eq/exp/2026/08/17/12_25_curl_full_dipole_ic_rebuild/plots/uniform_r180_crossscale1000/xz_step_007.png
+step 7 plotted /home/p/git/eq/exp/2026/08/17/12_25_curl_full_dipole_ic_rebuild/plots/uniform_r180_crossscale1000/xz_step_007.png plot_time=9.2s
+step 8 step_time=3.0s H=2.420607e+28 H/H0=2796470948531496550400.000000 peak_rss_GB=26.73
+[step_008] n_leaves=31734323 levels=[0] -> /home/p/git/eq/exp/2026/08/17/12_25_curl_full_dipole_ic_rebuild/plots/uniform_r180_crossscale1000/xz_step_008.png
+step 8 plotted /home/p/git/eq/exp/2026/08/17/12_25_curl_full_dipole_ic_rebuild/plots/uniform_r180_crossscale1000/xz_step_008.png plot_time=9.7s
+step 9 step_time=2.8s H=3.450887e+31 H/H0=3986728811602544779329536.000000 peak_rss_GB=26.73
+[step_009] n_leaves=31734323 levels=[0] -> /home/p/git/eq/exp/2026/08/17/12_25_curl_full_dipole_ic_rebuild/plots/uniform_r180_crossscale1000/xz_step_009.png
+step 9 plotted /home/p/git/eq/exp/2026/08/17/12_25_curl_full_dipole_ic_rebuild/plots/uniform_r180_crossscale1000/xz_step_009.png plot_time=9.6s
+step 10 step_time=2.8s H=5.819819e+34 H/H0=6723500965819531746638561280.000000 peak_rss_GB=26.74
+[step_010] n_leaves=31734323 levels=[0] -> /home/p/git/eq/exp/2026/08/17/12_25_curl_full_dipole_ic_rebuild/plots/uniform_r180_crossscale1000/xz_step_010.png
+step 10 plotted /home/p/git/eq/exp/2026/08/17/12_25_curl_full_dipole_ic_rebuild/plots/uniform_r180_crossscale1000/xz_step_010.png plot_time=10.1s
+saved final /bk/curlfull_dipole_uniform_r180_crossscale1000/step_010_final.h5 save_time=2.8s
+FINAL peak_rss_GB=26.74 total_time=157.6s

@@ -1,0 +1,19 @@
+R=20.0  max_level=8  region_r0=5.0  lam_target=1.0  lam_scale=0.05  lam_mode=dynamic  n_steps=5
+cross_scales (1): 1.0000e-03
+
+=== cross_scale=1.0000e-03 ===
+calibration: 1 sim-unit=2.9399e-12 m  neutron scale=2.7212e-04 sim-units  (a0=5.2918e-11 m, margin=0.9)
+  init_spheromak_ic_refinable: scale=2.7212e-04  R_sph=1.0  sigma=None  inner_cells=27/180671  (0.0%)
+  [post-store] phi_rms=3.9742e-03  phi_nonzero_cells=26
+  IC: cross_scale=1.0000e-03  gate=barrier  m0=2.49e+00  N_total=180671  N_spheromak=27 (0.0%)  R=20  scale=2.7212e-04  B0_max=0.512  phi_rms=3.9742e-03  dt=5.1282e-03  level_max=8  est_mem=0.0414 GB
+  step=     1  H=1.783888e+04  H/H0=567.2762
+  step=     2  H=7.815115e+03  H/H0=248.5206
+  step=     3  H=2.167311e+04  H/H0=689.2049
+  step=     4  H=1.189979e+04  H/H0=378.4134
+  step=     5  H=1.405276e+04  H/H0=446.8778
+
+ cross_scale   phi_rms_0   phi_rms_f         H_0         H_f  lam_mean_f   lam_max_f    circ_r12_0    circ_r12_f   n_leaves  lvl_max
+------------------------------------------------------------------------------------------------------------------------------------
+  1.0000e-03  3.9742e-03  1.0539e-01  3.1447e+01  1.4053e+04      0.0001      0.9663   +0.0000e+00   +0.0000e+00     180671        8
+
+plot saved -> tmp/refined_neutron_decay_sweep.png

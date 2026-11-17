@@ -1,0 +1,17 @@
+cycle 0 t 16000: start  rc 30.9 zc +5.3 minor 6.9 core 12442 windings -4.00 / -1.00  E_far 167.0
+  end t 17000: shed (E_far end - start) +11.0; rotation -39.7 deg, dz +12.0; windings -4.00 / -1.00; proj loss 5.80e-05; d_avg nan; wall 305s
+cycle 1 t 17000: start  rc 30.7 zc +5.3 minor 6.8 core 12366 windings -4.00 / -1.00  E_far 104.3
+  end t 18000: shed (E_far end - start) +14.2; rotation -40.3 deg, dz +12.1; windings -4.00 / -1.00; proj loss 5.71e-05; d_avg 0.0186; wall 608s
+cycle 2 t 18000: start  rc 30.7 zc +5.3 minor 6.9 core 12201 windings -4.00 / -1.00  E_far 94.9
+  end t 19000: shed (E_far end - start) +17.4; rotation -41.2 deg, dz +12.2; windings -4.00 / -1.00; proj loss 5.70e-05; d_avg 0.0166; wall 896s
+cycle 3 t 19000: start  rc 30.6 zc +5.3 minor 6.9 core 12032 windings -4.00 / -1.00  E_far 88.6
+  end t 20000: shed (E_far end - start) +23.3; rotation -41.4 deg, dz +12.4; windings -4.00 / -1.00; proj loss 5.69e-05; d_avg 0.0143; wall 1181s
+cycle 4 t 20000: start  rc 30.5 zc +5.3 minor 6.8 core 11904 windings -4.00 / -1.00  E_far 83.3
+  end t 21000: shed (E_far end - start) +27.9; rotation -41.1 deg, dz +12.5; windings -4.00 / -1.00; proj loss 5.68e-05; d_avg 0.0098; wall 1467s
+cycle 5 t 21000: start  rc 30.5 zc +5.2 minor 6.7 core 12016 windings -4.00 / -1.00  E_far 79.4
+  end t 22000: shed (E_far end - start) +31.2; rotation -40.9 deg, dz +12.6; windings -4.00 / -1.00; proj loss 5.66e-05; d_avg 0.0091; wall 1757s
+cycle 6 t 22000: start  rc 30.5 zc +5.2 minor 6.7 core 12007 windings -4.00 / -1.00  E_far 77.0
+  end t 23000: shed (E_far end - start) +36.3; rotation -41.0 deg, dz +12.6; windings -4.00 / -1.00; proj loss 5.62e-05; d_avg 0.0087; wall 2050s
+cycle 7 t 23000: start  rc 30.4 zc +5.2 minor 6.6 core 11876 windings -4.00 / -1.00  E_far 76.7
+  end t 24000: shed (E_far end - start) +41.7; rotation -41.3 deg, dz +12.6; windings -4.00 / -1.00; proj loss 5.59e-05; d_avg 0.0076; wall 2344s
+cycle 8 t 24000: start  rc 30.3 zc +5.2 minor 6.6 core 11814 windings -4.00 / -1.00  E_far 79.5

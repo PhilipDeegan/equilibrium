@@ -1,0 +1,21 @@
+int g dV = 1.0000000000000002
+w=5.736 period=1.095 window=[4.79,4.79] (0 periods) N=178119
+  step 400/1870 t=1.03 |u|max=8.80e-03 (67s)
+  step 800/1870 t=2.05 |u|max=1.19e-02 (138s)
+  step 1200/1870 t=3.08 |u|max=1.27e-02 (208s)
+  step 1600/1870 t=4.10 |u|max=1.64e-02 (274s)
+
+measurements=0  P_theory=1.7924e-02
+/home/p/git/eq/exp/2026/09/24/e_field/dipole_radiation.py:96: RuntimeWarning: invalid value encountered in scalar divide
+  f"  pole/eq={Sbar[a,0]/Sbar[a,len(thc)//2]:+.3f}")
+r= 5.0 P/P_th=0.000  r^2*S_eq=0.0000e+00  sin^2 fit amp/theory=0.000  pattern resid=0.000  pole/eq=+nan
+      S(th)/S_th_eq: +0.000 +0.000 +0.000 +0.000 +0.000 +0.000 +0.000 +0.000 +0.000
+r= 6.5 P/P_th=0.000  r^2*S_eq=0.0000e+00  sin^2 fit amp/theory=0.000  pattern resid=0.000  pole/eq=+nan
+      S(th)/S_th_eq: +0.000 +0.000 +0.000 +0.000 +0.000 +0.000 +0.000 +0.000 +0.000
+r= 8.0 P/P_th=0.000  r^2*S_eq=0.0000e+00  sin^2 fit amp/theory=0.000  pattern resid=0.000  pole/eq=+nan
+      S(th)/S_th_eq: +0.000 +0.000 +0.000 +0.000 +0.000 +0.000 +0.000 +0.000 +0.000
+r= 9.5 P/P_th=0.000  r^2*S_eq=0.0000e+00  sin^2 fit amp/theory=0.000  pattern resid=0.000  pole/eq=+nan
+      S(th)/S_th_eq: +0.000 +0.000 +0.000 +0.000 +0.000 +0.000 +0.000 +0.000 +0.000
+/home/p/git/eq/exp/2026/09/24/e_field/dipole_radiation.py:99: RuntimeWarning: divide by zero encountered in log
+  slope = np.polyfit(np.log(r_shells), np.log(np.abs(eq)), 1)[0]
+equatorial slope d log S / d log r = nan (theory -2)

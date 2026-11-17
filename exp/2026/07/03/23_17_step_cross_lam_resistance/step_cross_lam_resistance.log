@@ -1,0 +1,7 @@
+lam=   0.0  sigma^2=1.0000e+00  |circ_A|(t=0)=1.3657e+01  |circ_A|(final)=6.7911e-03  remaining_frac=4.9727e-04
+lam=   1.0  sigma^2=2.5000e-01  |circ_A|(t=0)=1.3657e+01  |circ_A|(final)=1.6449e+00  remaining_frac=1.2044e-01
+lam=   5.0  sigma^2=2.7778e-02  |circ_A|(t=0)=1.3657e+01  |circ_A|(final)=1.0753e+01  remaining_frac=7.8736e-01
+lam=  20.0  sigma^2=2.2676e-03  |circ_A|(t=0)=1.3657e+01  |circ_A|(final)=1.3393e+01  remaining_frac=9.8064e-01
+lam= 100.0  sigma^2=9.8030e-05  |circ_A|(t=0)=1.3657e+01  |circ_A|(final)=1.3645e+01  remaining_frac=9.9916e-01
+
+plot saved -> tmp/step_cross_lam_resistance.png

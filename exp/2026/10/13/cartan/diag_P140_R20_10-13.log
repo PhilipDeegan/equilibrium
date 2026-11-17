@@ -1,0 +1,4 @@
+lie     max|T| 7.966e-02 antisym 3.9e-16 sum phi.T / sum|phi T| -3.5e-18 max|div| / max|T| 1.79e+00 far / core dGamma 5.515e-01 far max 4.52e-03 (3.8 s)
+cartan  max|T| 1.867e-02 antisym 0.0e+00 sum phi.T / sum|phi T| -6.6e-19 max|div| / max|T| 2.07e+00 far / core dGamma 4.379e-04 far max 1.04e-06 (1.4 s)
+core (d < 2 rms) dGamma: corr(cartan, lie) +0.5093; lie = s * cartan, s +8.3481 -> kappa_cartan = s * 0.132 = +1.1020
+core rms 4.447; far ring |Gamma| max 1.12e-05

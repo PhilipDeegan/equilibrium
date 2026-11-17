@@ -1,0 +1,33 @@
+arm=linear R=70.0 R0=35.0 A=20.0 m=4 N=1867369 tube=359076 dt=0.00513 steps=6000 t_end=30.8 kappa=1.0 tau=1.0 build=5s
+  step     0 t=  0.00 E/E0=1.00000 Enear/E0=1.00000 <u>tube=-4.918e-09 <u>ext=+0.000e+00 u_mode(c,s)=(+0.297,-0.000) Q[-0.000e+00 -0.000e+00 -0.000e+00] lam_max=0.000 <lam>tube=0.000 wall=5s
+  step   200 t=  1.03 E/E0=1.00001 Enear/E0=1.00001 <u>tube=-3.675e-06 <u>ext=-1.002e-07 u_mode(c,s)=(+0.265,+0.179) Q[-2.284e+00 -1.795e-04 -4.241e-12] lam_max=0.000 <lam>tube=0.000 wall=32s
+  step   400 t=  2.05 E/E0=0.99992 Enear/E0=0.99910 <u>tube=-1.637e-05 <u>ext=+2.164e-07 u_mode(c,s)=(+0.159,+0.311) Q[+1.239e+00 -1.087e+00 -4.938e-04] lam_max=0.000 <lam>tube=0.000 wall=60s
+  step   600 t=  3.08 E/E0=0.99995 Enear/E0=0.98876 <u>tube=-3.229e-05 <u>ext=+5.630e-06 u_mode(c,s)=(-0.003,+0.356) Q[-5.968e-01 -2.322e+00 -1.253e+00] lam_max=0.000 <lam>tube=0.000 wall=88s
+  step   800 t=  4.10 E/E0=1.00006 Enear/E0=0.95648 <u>tube=-3.852e-05 <u>ext=+1.570e-05 u_mode(c,s)=(-0.171,+0.296) Q[+1.138e+00 -3.841e-01 +4.765e+00] lam_max=0.000 <lam>tube=0.000 wall=117s
+  step  1000 t=  5.13 E/E0=1.00005 Enear/E0=0.90512 <u>tube=-2.417e-05 <u>ext=+1.864e-05 u_mode(c,s)=(-0.281,+0.149) Q[+8.046e-02 -9.059e-01 +2.675e+00] lam_max=0.000 <lam>tube=0.000 wall=145s
+  step  1200 t=  6.15 E/E0=1.00000 Enear/E0=0.84675 <u>tube=+1.430e-05 <u>ext=+1.141e-05 u_mode(c,s)=(-0.291,-0.031) Q[+1.961e+00 +1.060e+00 -6.016e+00] lam_max=0.000 <lam>tube=0.000 wall=174s
+  step  1400 t=  7.18 E/E0=0.99997 Enear/E0=0.78611 <u>tube=+6.137e-05 <u>ext=+2.480e-05 u_mode(c,s)=(-0.201,-0.182) Q[+1.549e+00 -1.136e+01 +2.568e-01] lam_max=0.000 <lam>tube=0.000 wall=202s
+  step  1600 t=  8.21 E/E0=0.99998 Enear/E0=0.72781 <u>tube=+8.898e-05 <u>ext=+4.917e-05 u_mode(c,s)=(-0.052,-0.255) Q[-1.122e+01 -2.454e+00 +9.233e+00] lam_max=0.000 <lam>tube=0.000 wall=230s
+  step  1800 t=  9.23 E/E0=1.00002 Enear/E0=0.68418 <u>tube=+6.819e-05 <u>ext=+2.898e-05 u_mode(c,s)=(+0.088,-0.235) Q[-2.643e-01 +6.531e+00 +9.969e+00] lam_max=0.000 <lam>tube=0.000 wall=257s
+  step  2000 t= 10.26 E/E0=1.00004 Enear/E0=0.65938 <u>tube=+2.348e-05 <u>ext=-2.437e-05 u_mode(c,s)=(+0.168,-0.149) Q[+1.788e+00 +7.779e+00 +3.812e+00] lam_max=0.000 <lam>tube=0.000 wall=285s
+  step  2200 t= 11.28 E/E0=1.00004 Enear/E0=0.63873 <u>tube=-3.465e-05 <u>ext=-8.576e-05 u_mode(c,s)=(+0.178,-0.039) Q[+6.142e+00 +2.527e+00 -4.634e+00] lam_max=0.000 <lam>tube=0.000 wall=312s
+  step  2400 t= 12.31 E/E0=1.00001 Enear/E0=0.61193 <u>tube=-5.277e-05 <u>ext=-1.261e-04 u_mode(c,s)=(+0.142,+0.056) Q[+3.308e+00 +7.030e-01 -9.829e+00] lam_max=0.000 <lam>tube=0.000 wall=339s
+  step  2600 t= 13.33 E/E0=0.99994 Enear/E0=0.58783 <u>tube=-7.636e-05 <u>ext=-1.301e-04 u_mode(c,s)=(+0.085,+0.120) Q[+6.999e+00 -1.149e+01 -8.836e+00] lam_max=0.000 <lam>tube=0.000 wall=365s
+  step  2800 t= 14.36 E/E0=0.99992 Enear/E0=0.57024 <u>tube=-8.018e-05 <u>ext=-6.385e-05 u_mode(c,s)=(+0.021,+0.147) Q[-2.450e+00 -2.355e+00 -7.110e+00] lam_max=0.000 <lam>tube=0.000 wall=389s
+  step  3000 t= 15.38 E/E0=1.00000 Enear/E0=0.55859 <u>tube=-6.499e-05 <u>ext=+4.114e-05 u_mode(c,s)=(-0.041,+0.140) Q[-8.964e+00 -7.281e+00 +1.241e+01] lam_max=0.000 <lam>tube=0.000 wall=419s
+  step  3200 t= 16.41 E/E0=1.00008 Enear/E0=0.55305 <u>tube=-3.009e-05 <u>ext=+1.107e-04 u_mode(c,s)=(-0.093,+0.101) Q[-9.033e+00 -3.062e+00 +1.177e+01] lam_max=0.000 <lam>tube=0.000 wall=444s
+  step  3400 t= 17.44 E/E0=1.00005 Enear/E0=0.55761 <u>tube=+1.408e-05 <u>ext=+1.046e-04 u_mode(c,s)=(-0.126,+0.037) Q[-1.293e+00 +7.350e+00 -5.108e+00] lam_max=0.000 <lam>tube=0.000 wall=468s
+  step  3600 t= 18.46 E/E0=0.99998 Enear/E0=0.57623 <u>tube=+6.528e-05 <u>ext=+7.442e-05 u_mode(c,s)=(-0.133,-0.039) Q[+1.153e+01 -2.041e+00 -4.055e+00] lam_max=0.000 <lam>tube=0.000 wall=492s
+  step  3800 t= 19.49 E/E0=0.99998 Enear/E0=0.60585 <u>tube=+1.054e-04 <u>ext=+5.272e-05 u_mode(c,s)=(-0.109,-0.111) Q[+9.258e+00 +3.188e+00 -5.277e+00] lam_max=0.000 <lam>tube=0.000 wall=517s
+  step  4000 t= 20.51 E/E0=1.00000 Enear/E0=0.63803 <u>tube=+6.207e-05 <u>ext=+1.730e-05 u_mode(c,s)=(-0.061,-0.163) Q[+1.446e+01 +2.047e+00 -1.225e+00] lam_max=0.000 <lam>tube=0.000 wall=542s
+  step  4200 t= 21.54 E/E0=1.00000 Enear/E0=0.66638 <u>tube=+2.177e-05 <u>ext=+7.155e-06 u_mode(c,s)=(+0.002,-0.183) Q[-1.218e+01 +1.341e+01 +4.173e+00] lam_max=0.000 <lam>tube=0.000 wall=582s
+  step  4400 t= 22.56 E/E0=1.00002 Enear/E0=0.68929 <u>tube=-2.959e-06 <u>ext=-1.844e-05 u_mode(c,s)=(+0.072,-0.165) Q[-6.404e+00 -3.387e+00 +1.592e+01] lam_max=0.000 <lam>tube=0.000 wall=613s
+  step  4600 t= 23.59 E/E0=1.00003 Enear/E0=0.70726 <u>tube=+1.008e-05 <u>ext=-7.834e-05 u_mode(c,s)=(+0.138,-0.107) Q[-4.983e-01 +3.996e+00 -3.545e-01] lam_max=0.000 <lam>tube=0.000 wall=640s
+  step  4800 t= 24.62 E/E0=0.99999 Enear/E0=0.72005 <u>tube=+4.595e-05 <u>ext=-1.073e-04 u_mode(c,s)=(+0.184,-0.014) Q[+1.680e+00 -6.838e+00 -1.466e+01] lam_max=0.000 <lam>tube=0.000 wall=667s
+  step  5000 t= 25.64 E/E0=0.99993 Enear/E0=0.72656 <u>tube=+7.166e-05 <u>ext=-3.997e-05 u_mode(c,s)=(+0.192,+0.101) Q[+5.117e+00 -1.764e+01 -5.083e+00] lam_max=0.000 <lam>tube=0.000 wall=694s
+  step  5200 t= 26.67 E/E0=0.99997 Enear/E0=0.72652 <u>tube=+5.331e-05 <u>ext=+5.105e-05 u_mode(c,s)=(+0.151,+0.212) Q[-5.423e+00 +1.102e+00 -1.489e+01] lam_max=0.000 <lam>tube=0.000 wall=722s
+  step  5400 t= 27.69 E/E0=1.00004 Enear/E0=0.72247 <u>tube=-2.450e-05 <u>ext=+8.402e-05 u_mode(c,s)=(+0.056,+0.283) Q[-3.612e+00 -1.447e+00 -3.711e+00] lam_max=0.000 <lam>tube=0.000 wall=749s
+  step  5600 t= 28.72 E/E0=1.00004 Enear/E0=0.71934 <u>tube=-1.069e-04 <u>ext=+7.636e-05 u_mode(c,s)=(-0.073,+0.284) Q[+2.644e+00 +1.463e+01 +1.058e+01] lam_max=0.000 <lam>tube=0.000 wall=774s
+  step  5800 t= 29.74 E/E0=1.00004 Enear/E0=0.72296 <u>tube=-1.254e-04 <u>ext=+3.294e-05 u_mode(c,s)=(-0.196,+0.203) Q[+9.954e+00 +1.579e+01 +1.156e+01] lam_max=0.000 <lam>tube=0.000 wall=814s
+  step  6000 t= 30.77 E/E0=1.00004 Enear/E0=0.73963 <u>tube=-7.712e-05 <u>ext=-2.039e-05 u_mode(c,s)=(-0.269,+0.056) Q[-8.435e-01 +3.434e+00 +5.807e+00] lam_max=0.000 <lam>tube=0.000 wall=843s
+done 843s

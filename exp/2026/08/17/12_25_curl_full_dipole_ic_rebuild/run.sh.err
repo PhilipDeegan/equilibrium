@@ -1,0 +1,1 @@
+exp/2026/08/17/12_25_curl_full_dipole_ic_rebuild/run.sh: line 27:  7816 Killed                  python3 -u "$CWD/build_curlfull_dipole_uniform_r180.py" --out /bk/curlfull_dipole_uniform_r180_ic220.h5 --n-threads 3 > "$CWD/build_curlfull_dipole_uniform_r180.log" 2>&1

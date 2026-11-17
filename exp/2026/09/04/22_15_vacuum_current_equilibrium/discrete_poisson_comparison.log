@@ -1,0 +1,23 @@
+N=347941  dt=5.1282e-03  src_a=[-8.08290377  0.          0.        ]  src_b=[8.08290377 0.         0.        ]
+  step 0
+  step 4000
+  step 8000
+  step 12000
+  step 16000
+  step 20000
+solving discrete Poisson: 347939 free unknowns
+CG info=0
+
+DST-dynamic vs discrete-Poisson-reference (same mask as continuum comparison):
+R^2 = 0.999926  RMS residual/mean|u| = 1.2912%
+
+residual by distance-from-nearest-source bin (DST dynamic vs discrete Poisson):
+  r in [2.0,4.0)  n=    68  mean|u_dyn|=6.2387e-02  mean|resid|=4.2445e-04  rel=0.68%
+  r in [4.0,6.0)  n=   404  mean|u_dyn|=3.0818e-02  mean|resid|=1.8748e-04  rel=0.61%
+  r in [6.0,8.0)  n=   754  mean|u_dyn|=1.4719e-02  mean|resid|=8.4193e-05  rel=0.57%
+  r in [8.0,10.0)  n=  1073  mean|u_dyn|=6.5675e-03  mean|resid|=8.9557e-05  rel=1.36%
+  r in [10.0,12.0)  n=   824  mean|u_dyn|=3.1594e-03  mean|resid|=7.3102e-05  rel=2.31%
+  r in [12.0,14.0)  n=   348  mean|u_dyn|=1.0022e-03  mean|resid|=7.7181e-05  rel=7.70%
+
+[reference] discrete-Poisson-solution vs smooth continuum 1/r fit:
+R^2 = 0.999907  RMS residual/mean|u| = 1.4410%

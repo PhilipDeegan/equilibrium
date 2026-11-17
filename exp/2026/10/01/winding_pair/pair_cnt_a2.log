@@ -1,0 +1,3 @@
+pair_cnt alpha=2 N=15009 omegas=['2.0986', '2.0986'] scale=0.6904 E_tube0/E_tot=0.9990 E0=124.946 seed_res=9.7e-11 steps=18187
+  t=    0.00 Etube/E0=1.0000 sigma=0.5737 rho_rms=5.373 lam_max=4.136 |a|=0.084 0.362 0.362 0.362 0.362 0.027 0.027 (0s)
+done 1516s

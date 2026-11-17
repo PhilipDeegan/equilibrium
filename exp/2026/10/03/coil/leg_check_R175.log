@@ -1,0 +1,6 @@
+t 13000: r>100, y>0 -> ring n8835 az 155..165 z-zc -54..-6; MAIN n6892 az 111..123 z-zc -45..+1; ring n8885 az 65..76 z-zc -48..+2; ring n8288 az 20..29 z-zc -57..-9 | gaps main->rings ['33.4', '13.3', '39.3']
+t 14000: r>100, y>0 -> ring n8456 az 147..156 z-zc -55..-9; MAIN n7286 az 101..114 z-zc -45..+2; ring n10209 az 56..67 z-zc -49..+1; ring n7118 az 12..19 z-zc -58..-14 | gaps main->rings ['39.4', '15.5', '44.0']
+t 15000: r>100, y>0 -> ring n7060 az 138..146 z-zc -55..-13; MAIN n7541 az 91..105 z-zc -45..-2; ring n10695 az 47..59 z-zc -48..-2; ring n5892 az 2..8 z-zc -57..-20 | gaps main->rings ['44.9', '18.0', '47.4']
+t 16000: r>100, y>0 -> ring n5188 az 170..176 z-zc -54..-20; ring n5829 az 128..135 z-zc -51..-14; MAIN n7385 az 83..97 z-zc -42..-4; ring n10247 az 39..52 z-zc -48..-1 | gaps main->rings ['48.6', '46.3', '27.1']
+t 17000: r>100, y>0 -> ring n5144 az 159..165 z-zc -49..-18; MAIN n8307 az 75..89 z-zc -40..-3; ring n5312 az 118..124 z-zc -45..-12; ring n9564 az 32..45 z-zc -47..+1 | gaps main->rings ['47.2', '45.6', '33.9']
+t 18000: r>100, y>0 -> ring n4788 az 147..153 z-zc -49..-20; ring n5019 az 106..113 z-zc -45..-14; ring n7669 az 67..80 z-zc -42..-4; ring n9121 az 24..37 z-zc -50..-2 | gaps main->rings ['44.5', '43.5', '17.2', '41.6']

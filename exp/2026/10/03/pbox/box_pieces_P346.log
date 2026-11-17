@@ -1,0 +1,55 @@
+t 9000: 1 pieces, sizes [68891]; background rho sd 0.098
+    68891 at (  +0.0,  +0.0,  +7.4) extents sd [39.4 39.4 13.2]; winding +1 +1 +1 -0
+t 12000: 9 pieces, sizes [24662, 4417, 4417, 4415, 4415, 73, 70, 69, 69]; background rho sd 0.115
+    24662 at (  -0.0,  +0.0, -18.6) extents sd [39.5 39.5  4.8]; winding +1 +1 +1 +1
+     4417 at ( +93.8, +47.2, +44.3) extents sd [8.2 7.8 2.1]; winding -0 +1 +1 +0
+     4417 at ( -47.2, +93.8, +44.3) extents sd [8.2 7.8 2.1]; winding +1 +1 +1 +1
+     4415 at ( -93.8, -47.2, +44.3) extents sd [8.2 7.8 2.1]; winding +1 +1 +1 +1
+     4415 at ( +47.2, -93.8, +44.3) extents sd [8.2 7.8 2.1]; winding +1 +1 +1 +1
+t 13000: 6 pieces, sizes [18573, 8660, 3752, 3746, 3745, 3742]; background rho sd 0.110
+    18573 at (  -0.0,  +0.0, -19.5) extents sd [39.4 39.4  2.4]; winding +1 +1 +1 +1
+     8660 at ( +99.9, -99.9,  -3.4) extents sd [7.2 5.1 5.1]; winding +0 -0 +0 +0
+     3752 at ( -92.6, +44.5, +58.7) extents sd [8.3 6.6 1.5]; winding +1 +1 +1 +1
+     3746 at ( +92.6, -44.5, +58.7) extents sd [8.3 6.6 1.5]; winding -1 -1 -1 -1
+     3745 at ( +44.5, +92.6, +58.7) extents sd [8.3 6.6 1.5]; winding -1 -1 -1 -1
+     3742 at ( -44.5, -92.6, +58.7) extents sd [8.3 6.6 1.5]; winding -1 +0 -1 -0
+t 14000: 5 pieces, sizes [21721, 2637, 2636, 2634, 2631]; background rho sd 0.115
+    21721 at (  -0.0,  +0.0, -26.7) extents sd [38.8 38.7  4.4]; winding +1 +1 +1 +1
+     2637 at ( -72.0, +38.0, +65.1) extents sd [7.7 6.8 1.3]; winding -1 -1 -1 -1
+     2636 at ( +72.0, -38.0, +65.1) extents sd [7.7 6.8 1.3]; winding -1 -1 -1 -1
+     2634 at ( +37.9, +72.0, +65.1) extents sd [7.7 6.8 1.3]; winding +1 +1 +1 +1
+     2631 at ( -37.9, -72.0, +65.1) extents sd [7.7 6.8 1.3]; winding +1 +1 +1 +1
+t 15000: 5 pieces, sizes [20834, 3245, 3244, 3237, 3234]; background rho sd 0.112
+    20834 at (  +0.0,  +0.0, -40.0) extents sd [39.1 39.1  4.3]; winding -1 -1 -1 -1
+     3245 at ( -33.9, -53.9, +70.4) extents sd [7.9 6.7 1.8]; winding -1 -1 -1 -1
+     3244 at ( +33.9, +53.9, +70.4) extents sd [7.9 6.7 1.8]; winding -1 -1 -1 -1
+     3237 at ( +53.9, -33.9, +70.4) extents sd [7.8 6.7 1.8]; winding +1 +1 +1 +1
+     3234 at ( -53.9, +34.0, +70.4) extents sd [7.8 6.7 1.8]; winding -1 -1 -1 -1
+t 16000: 5 pieces, sizes [21765, 2918, 2917, 2916, 2909]; background rho sd 0.110
+    21765 at (  -0.0,  -0.0, -39.1) extents sd [39.7 39.6  2.2]; winding +1 +1 +1 +1
+     2918 at ( -32.0, -39.7, +92.4) extents sd [8.5 6.1 1.4]; winding +1 +1 +1 +1
+     2917 at ( -39.7, +32.2, +92.4) extents sd [8.5 6.1 1.4]; winding +1 +1 +1 +1
+     2916 at ( +32.1, +39.7, +92.4) extents sd [8.5 6.1 1.4]; winding +1 +1 +1 +1
+     2909 at ( +39.6, -32.1, +92.4) extents sd [8.5 6.1 1.4]; winding -1 -1 -1 -1
+t 17000: 6 pieces, sizes [22627, 3233, 3233, 3227, 3212, 74]; background rho sd 0.112
+    22627 at (  -0.0,  -0.0,  +5.1) extents sd [39.5 39.5  4.1]; winding +1 +1 +1 +1
+     3233 at ( -22.6, +32.0, -41.2) extents sd [8.9 5.  1.3]; winding +0 -1 -1 -1
+     3233 at ( +22.5, -31.9, -41.2) extents sd [9.  5.  1.3]; winding +1 +1 +1 +1
+     3227 at ( +31.9, +22.6, -41.2) extents sd [9.  5.  1.3]; winding -1 -1 -1 -1
+     3212 at ( -31.8, -22.6, -41.2) extents sd [8.9 5.  1.3]; winding +1 +0 +1 +1
+t 18000: 6 pieces, sizes [21786, 2229, 2227, 2224, 2223, 670]; background rho sd 0.111
+    21786 at (  +0.0,  -0.0, +15.2) extents sd [39.8 39.8  3.6]; winding +1 +1 +1 +1
+     2229 at (  +1.4, +33.3,  -4.6) extents sd [5.5 5.  1.4]; winding +0 -1 -1 -1
+     2227 at (  -1.5, -33.3,  -4.6) extents sd [5.5 5.  1.4]; winding +1 +1 +1 +0
+     2224 at ( -33.2,  +1.5,  -4.5) extents sd [5.5 5.  1.4]; winding -1 -1 -1 -1
+     2223 at ( +33.2,  -1.5,  -4.5) extents sd [5.5 5.  1.4]; winding +1 +1 +1 +1
+      670 at (  -0.0,  +0.0,  -9.7) extents sd [4.5 4.5 0.8]; winding -0 +0 -0 +0
+t 19000: 6 pieces, sizes [35514, 209, 129, 129, 127, 116]; background rho sd 0.115
+    35514 at (  +0.0,  -0.1,  +6.5) extents sd [40.  39.9  3.1]; winding -1 -1 -0 -1
+      209 at (  -0.0,  +0.1, +24.3) extents sd [2.2 2.2 0.7]; winding -0 -0 -0 +0
+      129 at ( -24.4, -20.1, +23.7) extents sd [3.9 1.4 0.7]; winding +0 -0 -0 +0
+      129 at ( +20.1, -24.4, +23.7) extents sd [3.9 1.3 0.7]; winding +0 +0 +0 +0
+      127 at ( +24.3, +20.2, +23.8) extents sd [3.8 1.3 0.6]; winding -0 -0 +0 -0
+      116 at ( -20.1, +24.3, +23.8) extents sd [3.8 1.3 0.6]; winding -0 -0 +0 -0
+t 20000: 1 pieces, sizes [21222]; background rho sd 0.114
+    21222 at (  +0.0,  +0.0,  +4.9) extents sd [39.8 39.8  3. ]; winding -1 -1 -1 -1

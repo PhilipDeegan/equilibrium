@@ -1,0 +1,7 @@
+[L0 base] R_L0=60.0  n_leaves=1175219  t=0.4s  peak_rss_GB=0.81
+[L1 core, r<=46.666666666666664] n_leaves=15542429  level_hist=[622634, 14919795]  t=228.1s  peak_rss_GB=11.98
+cells_across=220  scale=36.666667  margin to R_L1=46.666666666666664: 10.00 (30.0 L1-cells)
+inner_cells=7243583/15542429 (46.6052%)
+H0=8.655806e+06  phi_pol_rms=1.809902e-01  phi_tor_rms=1.963250e-01  u_rms=2.404326e-01  lam_scale=1  lam_max=3.427853e+00  lam_mean=5.569146e-01  peak_rss_GB=26.84
+saved /bk/curlfull_dipole_l1_wider_margin_ic220.h5  save_t=1.3s
+FINAL total_t=288.9s  peak_rss_GB=26.84

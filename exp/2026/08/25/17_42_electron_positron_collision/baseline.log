@@ -1,0 +1,26 @@
+N=1175219  R=60.0  scale=8.0  z0=+/-10.0  m0=2.49  cross_scale=0.1
+
+[electron] dipole IC at z=+10.0
+  init_electron_dipole_ic: scale=8.0  R_sph=1.0  sigma=None  r_axis=4.89  u_bg=0.0  inner_cells=2798/1175219  (0.2%)
+  divergence_clean: div_rms 4.3261e-02 → 4.0899e-10  (×9.45e-09)
+[positron] mirrored dipole IC at z=-10.0
+  init_electron_dipole_ic: scale=8.0  R_sph=1.0  sigma=None  r_axis=4.89  u_bg=0.0  inner_cells=2798/1175219  (0.2%)
+  divergence_clean: div_rms 4.3261e-02 → 4.0899e-10  (×9.45e-09)
+w0_e=4.9645e+02  w0_p=4.9645e+02  dt=5.1282e-03
+
+   step       J_mid      phi_up     phi_mid      phi_dn    surv_e    surv_p       H_total
+  ------------------------------------------------------------------------------------------
+      0  1.7901e-05  1.3562e-02  1.1450e-02  1.3562e-02    1.0000    1.0000   1.52417e+03
+      1  1.7901e-05  1.3537e-02  1.1450e-02  1.3537e-02    1.0000    1.0000   1.51927e+03
+      2  1.7900e-05  1.3512e-02  1.1450e-02  1.3512e-02    1.0000    1.0000   1.51444e+03
+      3  1.7900e-05  1.3487e-02  1.1450e-02  1.3487e-02    1.0000    1.0000   1.50966e+03
+      4  1.7899e-05  1.3463e-02  1.1450e-02  1.3463e-02    1.0000    1.0000   1.50492e+03
+      5  1.7899e-05  1.3439e-02  1.1450e-02  1.3439e-02    1.0000    1.0000   1.50019e+03
+      6  1.7898e-05  1.3415e-02  1.1450e-02  1.3415e-02    1.0000    1.0000   1.49554e+03
+      7  1.7898e-05  1.3391e-02  1.1450e-02  1.3391e-02    1.0000    1.0000   1.49093e+03
+      8  1.7897e-05  1.3367e-02  1.1450e-02  1.3367e-02    1.0000    1.0000   1.48639e+03
+      9  1.7897e-05  1.3344e-02  1.1450e-02  1.3344e-02    1.0000    1.0000   1.48194e+03
+     10  1.7896e-05  1.3322e-02  1.1450e-02  1.3322e-02    1.0000    1.0000   1.47754e+03
+final state saved -> /bk/dst/electron_positron_baseline.hdf5
+data saved -> exp/2026/08/25/17_42_electron_positron_collision/baseline.npz
+plot -> exp/2026/08/25/17_42_electron_positron_collision/baseline.png

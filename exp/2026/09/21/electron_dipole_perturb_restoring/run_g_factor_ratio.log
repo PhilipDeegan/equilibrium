@@ -1,0 +1,9 @@
+N=347941  ring tiles=96  r_ring=14.895
+single-ring : Gamma=1.6087e+02  H_near=9.6000e+01  Gamma/H=1.6757e+00
+  init_electron_dipole_ic_vecpot: scale=24.4  R_sph=1.0  r_axis=14.90  u_bg=0.0  inner_cells=79063/347941  (22.7%)
+  divergence_clean: div_rms 7.9069e-04 → 6.8395e-12  (×8.65e-09)
+double-ring : scale=24.395  r_axis=14.898  (target r_ring=14.895)
+double-ring : Gamma=3.6654e+02  H_near=3.9029e+04  Gamma/H=9.3913e-03
+
+=== result ===
+(Gamma/H)_double / (Gamma/H)_single = 0.0056   (target ~2.0 if this matches the electron's g-factor anomaly)

@@ -1,0 +1,7 @@
+CONTEXT: the ring lean-drift probe (init_toroidal_winding, 2026-09-01 night, exp/2026/09/01/19_50_step_cross_necessity/probe_ring_lean_drift.py) used a ±amplitude sign-flip comparison as a candidate check for chirality-dependent behaviour under plain step() dynamics.
+
+WHAT FAILED: the check reliably returned cos_sim=+1.000 every time it was run, which could be misread as "no chirality signal detected" (a real negative result).
+
+ROOT CAUSE: it is not a real chirality test in this regime at all. For any linear, step_cross-free dynamics, both the energy-flux vector S and the energy H are bilinear/quadratic in (u, phi). Flipping the amplitude sign of the whole field flips both u and phi together, which leaves any bilinear/quadratic quantity invariant — cos_sim=+1.000 is a mathematically guaranteed identity, not an empirical finding about the system's chirality response. It was confirmed empirically every time only because it could not have come out any other way.
+
+LESSON: before using a ±amplitude sign-flip as a chirality/asymmetry probe, check whether the diagnostic being compared (S, H, or anything built from them) is bilinear or quadratic in the field — if so, the sign-flip check is a guaranteed identity and proves nothing. Don't re-derive or re-run this specific check expecting new information; a real chirality test needs a genuinely different construction (e.g. comparing two independently-seeded opposite-handedness ICs, not a global amplitude sign flip of one IC).

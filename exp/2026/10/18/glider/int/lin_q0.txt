@@ -1,0 +1,9 @@
+P 100 N 250000 fam pack sig 3.0 amp 1.0 beta 0.0 seed 0 H0 1.87648e+02
+  t   0.0  H/H0-1 +0.00e+00  Ewin/H 0.898  umax 1.000e+00  cen  +0.21  +0.15  +0.38  reuse nan  Pz tot +2.681e+02 win +2.428e+02  Eout 1.9202e+01 nz_out 4478058  (0 s)
+  t  10.0  H/H0-1 +3.23e-04  Ewin/H 0.679  umax 5.485e-01  cen  +0.07  +0.04  +9.20  reuse 0.05  Pz tot +2.676e+02 win +1.932e+02  Eout 6.0171e+01 nz_out 4726839  (6 s)
+  t  20.0  H/H0-1 +3.55e-04  Ewin/H 0.329  umax 1.803e-01  cen  +0.03  +0.02 +19.25  reuse 0.02  Pz tot +2.676e+02 win +9.536e+01  Eout 1.2587e+02 nz_out 4726915  (12 s)
+  t  30.0  H/H0-1 +3.38e-04  Ewin/H 0.175  umax 8.300e-02  cen  +0.53  +0.52 -28.55  reuse 0.02  Pz tot +2.676e+02 win +5.108e+01  Eout 1.5485e+02 nz_out 4726915  (17 s)
+  t  40.0  H/H0-1 +3.40e-04  Ewin/H 0.103  umax 4.521e-02  cen  +0.54  +0.54 -18.48  reuse 0.01  Pz tot +2.676e+02 win +3.000e+01  Eout 1.6838e+02 nz_out 4726915  (23 s)
+  t  50.0  H/H0-1 +3.48e-04  Ewin/H 0.069  umax 3.013e-02  cen  +0.01  +0.00  -8.61  reuse 0.01  Pz tot +2.675e+02 win +2.004e+01  Eout 1.7477e+02 nz_out 4726839  (29 s)
+  t  60.0  H/H0-1 +3.46e-04  Ewin/H 0.049  umax 2.135e-02  cen  +0.56  +0.56  +1.24  reuse 0.01  Pz tot +2.681e+02 win +1.433e+01  Eout 1.7856e+02 nz_out 4726839  (35 s)
+RESULT fam pack sig 3.0 amp 1.0 beta 0.0 seed 0  Ewin/H end 0.049 min 0.049  |v| late 0.993  reuse late 0.01  umax end/0 0.021  dH/H 3.6e-04

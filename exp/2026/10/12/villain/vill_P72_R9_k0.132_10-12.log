@@ -1,0 +1,34 @@
+P 72 N 93312 R0 9.0 kappa 0.132 dt 0.0182 ticks 220 midpoint x3
+t 0 instantaneous (term x unit time): |Gamma|-weighted z -0.00176; defect-label z +0.00489; max off-integer at defects 4.989e-01; max |Gamma| off-defect 4.954e-01
+       t count sum_n rho z_label z_|G| max|G-n|@def max|G|@non sum|G|@non/count  E_lf
+    0.00   408    -4   8.88 -0.0208 -0.0208 3.331e-16 4.246e-16 5.799e-14  8007.316957
+    0.51   408    -4   8.88 -0.0208 +0.0053 4.745e-01 2.991e-01 1.605e+00  8013.407103
+    1.02   168    -6   8.89 +0.0115 +0.0586 4.990e-01 4.965e-01 6.558e+00  7997.031572
+    1.53    85    -5   8.85 +0.0702 +0.0915 4.997e-01 4.992e-01 1.730e+01  8001.631537
+    2.04    15    -5   9.03 +0.1926 +0.1330 4.805e-01 4.947e-01 1.156e+02  8151.486495
+    2.55    72   -12   9.12 -0.0781 +0.1790 4.987e-01 4.992e-01 2.753e+01  8896.734850
+    3.05   352  -288   8.72 -0.1515 +0.2067 4.993e-01 4.996e-01 6.971e+00  16695.594306
+/home/p/git/eq/exp/2026/10/12/villain/vill.py:57: RuntimeWarning: overflow encountered in multiply
+  T[:, k] -= M2[:, n] * v[j, b]
+/home/p/git/eq/exp/2026/10/12/villain/vill.py:57: RuntimeWarning: overflow encountered in subtract
+  T[:, k] -= M2[:, n] * v[j, b]
+/home/p/git/eq/exp/2026/10/12/villain/vill.py:57: RuntimeWarning: invalid value encountered in subtract
+  T[:, k] -= M2[:, n] * v[j, b]
+/home/p/git/eq/exp/2026/10/12/villain/vill.py:59: RuntimeWarning: overflow encountered in multiply
+  T[:, k] -= v[:, a_] * M2[nb[:, a_], n]
+/home/p/git/eq/exp/2026/10/12/villain/vill.py:59: RuntimeWarning: invalid value encountered in subtract
+  T[:, k] -= v[:, a_] * M2[nb[:, a_], n]
+/home/p/git/eq/exp/2026/10/12/villain/vill.py:60: RuntimeWarning: overflow encountered in multiply
+  return W * T
+/home/p/git/eq/exp/2026/10/12/villain/vill.py:52: RuntimeWarning: invalid value encountered in add
+  M2[:, n] = sum(a[:, p_] + a[nb[:, p_], q] for p_, q in paths[k_]) / len(paths[k_])
+/home/p/git/eq/exp/2026/10/12/villain/vill.py:59: RuntimeWarning: overflow encountered in subtract
+  T[:, k] -= v[:, a_] * M2[nb[:, a_], n]
+Traceback (most recent call last):
+  File "/home/p/git/eq/exp/2026/10/12/villain/vill.py", line 128, in <module>
+    c, sn, rho, zl, zw, fdef, gnon, snon = tri_stats(ph)
+                                           ~~~~~~~~~^^^^
+  File "/home/p/git/eq/exp/2026/10/12/villain/vill.py", line 95, in tri_stats
+    return (int(m.sum()), int(n.sum()), rho.mean(), zc, zw, frac[m].max() if m.any() else 0.0,
+                          ~~~^^^^^^^^^
+ValueError: cannot convert float NaN to integer

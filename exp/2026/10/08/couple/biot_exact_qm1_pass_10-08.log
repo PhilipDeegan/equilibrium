@@ -1,0 +1,8 @@
+P  300 s  173.2 d  122.5: own (self + images + U0) <u_z> +4.39928e-02; partner +2.4681e-03 -> dv +0.00062
+P  300 s  173.2 d  122.8: own (self + images + U0) <u_z> +4.39928e-02; partner +2.3167e-03 -> dv +0.00058
+P  300 s  173.2 d  123.7: own (self + images + U0) <u_z> +4.39928e-02; partner +1.8981e-03 -> dv +0.00047
+P  300 s  173.2 d  125.2: own (self + images + U0) <u_z> +4.39928e-02; partner +1.3017e-03 -> dv +0.00033
+P  300 s  173.2 d  127.3: own (self + images + U0) <u_z> +4.39928e-02; partner +6.3253e-04 -> dv +0.00016
+P  300 s  173.2 d  133.0: own (self + images + U0) <u_z> +4.39928e-02; partner -5.9464e-04 -> dv -0.00015
+P  300 s  173.2 d  140.7: own (self + images + U0) <u_z> +4.39928e-02; partner -1.3917e-03 -> dv -0.00035
+P  300 s  173.2 d  150.0: own (self + images + U0) <u_z> +4.39928e-02; partner -1.6599e-03 -> dv -0.00041

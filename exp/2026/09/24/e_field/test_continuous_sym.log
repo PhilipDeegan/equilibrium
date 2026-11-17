@@ -1,0 +1,14 @@
+.......F.
+======================================================================
+FAIL: test_AE_propagates_second_order (tst.substrate.test_continuous.TestTransverseWaveNeedsE.test_AE_propagates_second_order)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/p/git/eq/tst/substrate/test_continuous.py", line 136, in test_AE_propagates_second_order
+    self.assertAlmostEqual(e[0] / 2.022e-2, 1.0, delta=0.02)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 3.5818999839585737 != 1.0 within 0.02 delta (2.5818999839585737 difference)
+
+----------------------------------------------------------------------
+Ran 9 tests in 198.442s
+
+FAILED (failures=1)

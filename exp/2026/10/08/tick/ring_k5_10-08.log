@@ -1,0 +1,7 @@
+ring: P 120 N 432000 dt 0.0182 ticks 1650 kappa 5.0 triangles/cell 24
+  t   0.00: defect triangles 696 (sum n -4, |n|>1: 0), rho  14.85 +- 0.26, z  +0.003; max |u| 0.000e+00; E 7543.356
+  t   6.00: defect triangles 752 (sum n +0, |n|>1: 0), rho  14.65 +- 0.41, z  +0.334; max |u| 1.517e+01; E 21814.023
+  t  12.00: defect triangles 724 (sum n +0, |n|>1: 0), rho  14.43 +- 0.47, z  +0.585; max |u| 9.272e+00; E 21252.736
+  t  18.00: defect triangles 692 (sum n +0, |n|>1: 0), rho  14.18 +- 0.50, z  +0.720; max |u| 8.146e+00; E 21007.132
+  t  24.00: defect triangles 676 (sum n +0, |n|>1: 0), rho  14.03 +- 0.49, z  +0.840; max |u| 1.052e+01; E 21006.287
+  t  30.00: defect triangles 672 (sum n +0, |n|>1: 0), rho  13.96 +- 0.52, z  +0.872; max |u| 8.448e+00; E 20892.318

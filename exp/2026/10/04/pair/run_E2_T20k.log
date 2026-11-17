@@ -1,0 +1,85 @@
+  component 1: rings [(40.0, -4.0, 1, '1')], face jumps [ 0.     -0.     -0.3495]
+  component 2: rings [(40.0, 4.0, 1, '2')], face jumps [-0.     0.    -0.349]
+pair_r40z-4q1c1_r40z4q1c2_mix45_P300_xi3.9T20k: N_cells=6750000 build+seed 216s; g 0.0082 xi 3.9; side 173.2
+  t 0: v1 cores [4964 cells z -4.0 r 40.1]; v2 cores [4964 cells z +4.0 r 40.1]; rho cores [none]; rho min 0.402, bg sd 0.036
+  t 250: v1 cores [18492 cells z -0.2 r 38.3]; v2 cores [21760 cells z +6.9 r 41.0]; rho cores [1726 cells z +3.2 r 39.5]; rho min 0.228, bg sd 0.040
+  t 500: v1 cores [17254 cells z +4.1 r 35.8]; v2 cores [22468 cells z +8.8 r 42.9]; rho cores [none]; rho min 0.264, bg sd 0.045
+  t 750: v1 cores [16245 cells z +8.3 r 34.4]; v2 cores [23133 cells z +10.5 r 43.8]; rho cores [none]; rho min 0.300, bg sd 0.046
+  t 1000: v1 cores [15521 cells z +12.8 r 34.1]; v2 cores [23648 cells z +12.1 r 43.9]; rho cores [none]; rho min 0.331, bg sd 0.045
+  t 1250: v1 cores [16872 cells z +17.6 r 34.6]; v2 cores [22754 cells z +13.3 r 43.4]; rho cores [none]; rho min 0.342, bg sd 0.044
+  t 1500: v1 cores [18800 cells z +22.0 r 35.5]; v2 cores [24316 cells z +15.1 r 42.6]; rho cores [none]; rho min 0.333, bg sd 0.045
+  t 1750: v1 cores [18632 cells z +25.9 r 36.9]; v2 cores [24042 cells z +17.2 r 41.2]; rho cores [none]; rho min 0.319, bg sd 0.045
+  t 2000: v1 cores [17466 cells z +28.9 r 38.1]; v2 cores [22758 cells z +19.7 r 39.3]; rho cores [none]; rho min 0.294, bg sd 0.044
+  t 2250: v1 cores [18289 cells z +31.4 r 40.1]; v2 cores [22550 cells z +23.1 r 37.3]; rho cores [none]; rho min 0.291, bg sd 0.044
+  t 2500: v1 cores [16912 cells z +33.5 r 41.5]; v2 cores [23444 cells z +27.3 r 35.2]; rho cores [none]; rho min 0.240, bg sd 0.044
+  t 2750: v1 cores [18113 cells z +35.3 r 42.7]; v2 cores [25300 cells z +31.9 r 33.5]; rho cores [none]; rho min 0.255, bg sd 0.043
+  t 3000: v1 cores [16808 cells z +36.9 r 43.1]; v2 cores [25026 cells z +37.2 r 33.3]; rho cores [none]; rho min 0.286, bg sd 0.043
+  t 3250: v1 cores [17294 cells z +38.4 r 42.6]; v2 cores [24343 cells z +42.0 r 34.0]; rho cores [none]; rho min 0.256, bg sd 0.043
+  t 3500: v1 cores [17450 cells z +40.0 r 41.8]; v2 cores [23594 cells z +46.9 r 35.8]; rho cores [none]; rho min 0.247, bg sd 0.044
+  t 3750: v1 cores [17324 cells z +42.4 r 40.6]; v2 cores [24981 cells z +51.1 r 37.7]; rho cores [none]; rho min 0.285, bg sd 0.045
+  t 4000: v1 cores [16494 cells z +45.3 r 38.9]; v2 cores [27278 cells z +54.5 r 39.4]; rho cores [none]; rho min 0.292, bg sd 0.045
+  t 4250: v1 cores [15996 cells z +48.8 r 37.3]; v2 cores [27682 cells z +57.0 r 41.5]; rho cores [none]; rho min 0.286, bg sd 0.043
+  t 4500: v1 cores [17259 cells z +52.4 r 35.6]; v2 cores [25896 cells z +58.7 r 43.0]; rho cores [none]; rho min 0.247, bg sd 0.042
+  t 4750: v1 cores [16241 cells z +57.1 r 34.7]; v2 cores [26053 cells z +60.2 r 44.0]; rho cores [none]; rho min 0.270, bg sd 0.043
+  t 5000: v1 cores [16713 cells z +61.8 r 34.3]; v2 cores [24989 cells z +61.5 r 44.2]; rho cores [none]; rho min 0.313, bg sd 0.043
+  t 5250: v1 cores [16640 cells z +66.7 r 34.6]; v2 cores [23462 cells z +63.1 r 43.8]; rho cores [none]; rho min 0.312, bg sd 0.043
+  t 5500: v1 cores [16941 cells z +71.0 r 35.7]; v2 cores [23749 cells z +64.6 r 42.7]; rho cores [none]; rho min 0.281, bg sd 0.043
+  t 5750: v1 cores [17379 cells z +74.8 r 37.2]; v2 cores [22519 cells z +66.9 r 41.3]; rho cores [none]; rho min 0.292, bg sd 0.044
+  t 6000: v1 cores [17994 cells z +78.1 r 39.2]; v2 cores [23033 cells z +69.4 r 38.6]; rho cores [none]; rho min 0.263, bg sd 0.044
+  t 6250: v1 cores [16973 cells z +81.0 r 40.6]; v2 cores [24427 cells z +72.3 r 36.3]; rho cores [63 cells z +77.6 r 39.0 | 62 cells z +77.6 r 39.0 | 62 cells z +77.6 r 39.0 | 60 cells z +77.6 r 39.0]; rho min 0.226, bg sd 0.044
+  t 6500: v1 cores [17074 cells z +82.9 r 41.7]; v2 cores [22597 cells z +76.3 r 35.0]; rho cores [none]; rho min 0.298, bg sd 0.044
+  t 6750: v1 cores [17673 cells z +84.5 r 42.6]; v2 cores [23373 cells z +81.5 r 33.6]; rho cores [none]; rho min 0.308, bg sd 0.045
+  t 7000: v1 cores [17799 cells z +86.2 r 43.1]; v2 cores [24581 cells z +86.5 r 32.9]; rho cores [none]; rho min 0.282, bg sd 0.045
+  t 7250: v1 cores [17905 cells z -85.4 r 42.8]; v2 cores [25213 cells z -81.7 r 33.9]; rho cores [none]; rho min 0.265, bg sd 0.046
+  t 7500: v1 cores [18759 cells z -83.8 r 41.9]; v2 cores [25670 cells z -76.8 r 35.6]; rho cores [none]; rho min 0.256, bg sd 0.046
+  t 7750: v1 cores [18875 cells z -81.7 r 40.5]; v2 cores [28305 cells z -72.7 r 37.8]; rho cores [none]; rho min 0.256, bg sd 0.045
+  t 8000: v1 cores [17924 cells z -78.9 r 38.9]; v2 cores [26404 cells z -69.4 r 39.8]; rho cores [none]; rho min 0.267, bg sd 0.045
+  t 8250: v1 cores [17335 cells z -75.5 r 37.0]; v2 cores [26631 cells z -67.0 r 41.6]; rho cores [none]; rho min 0.270, bg sd 0.043
+  t 8500: v1 cores [17958 cells z -71.7 r 35.4]; v2 cores [23411 cells z -65.4 r 42.6]; rho cores [none]; rho min 0.311, bg sd 0.043
+  t 8750: v1 cores [19201 cells z -66.9 r 34.1]; v2 cores [21599 cells z -64.0 r 43.5]; rho cores [none]; rho min 0.297, bg sd 0.045
+  t 9000: v1 cores [19632 cells z -62.1 r 33.3]; v2 cores [20620 cells z -62.3 r 43.6]; rho cores [none]; rho min 0.312, bg sd 0.045
+  t 9250: v1 cores [19016 cells z -57.7 r 33.7]; v2 cores [19497 cells z -60.7 r 43.2]; rho cores [none]; rho min 0.310, bg sd 0.044
+  t 9500: v1 cores [18711 cells z -53.1 r 35.3]; v2 cores [18782 cells z -59.0 r 42.3]; rho cores [none]; rho min 0.261, bg sd 0.043
+  t 9750: v1 cores [19915 cells z -49.1 r 37.1]; v2 cores [17885 cells z -56.8 r 40.8]; rho cores [none]; rho min 0.238, bg sd 0.042
+  t 10000: v1 cores [21500 cells z -45.3 r 39.4]; v2 cores [18662 cells z -54.3 r 39.1]; rho cores [none]; rho min 0.238, bg sd 0.042
+  t 10250: v1 cores [20496 cells z -42.7 r 41.0]; v2 cores [17280 cells z -50.8 r 37.5]; rho cores [none]; rho min 0.290, bg sd 0.043
+  t 10500: v1 cores [22547 cells z -40.9 r 42.3]; v2 cores [17007 cells z -46.4 r 35.9]; rho cores [none]; rho min 0.240, bg sd 0.043
+  t 10750: v1 cores [23172 cells z -39.4 r 43.6]; v2 cores [17144 cells z -41.7 r 34.5]; rho cores [none]; rho min 0.233, bg sd 0.044
+  t 11000: v1 cores [24016 cells z -37.9 r 44.0]; v2 cores [17934 cells z -36.6 r 34.4]; rho cores [246 cells z -37.0 r 38.5 | 243 cells z -37.0 r 38.5 | 234 cells z -37.1 r 38.5 | 231 cells z -37.1 r 38.5]; rho min 0.182, bg sd 0.045
+  t 11250: v1 cores [22158 cells z -36.6 r 43.4]; v2 cores [19136 cells z -32.0 r 34.7]; rho cores [none]; rho min 0.245, bg sd 0.045
+  t 11500: v1 cores [22417 cells z -34.9 r 42.5]; v2 cores [20307 cells z -27.8 r 35.9]; rho cores [none]; rho min 0.273, bg sd 0.045
+  t 11750: v1 cores [21826 cells z -32.7 r 41.1]; v2 cores [19354 cells z -23.9 r 37.6]; rho cores [none]; rho min 0.311, bg sd 0.045
+  t 12000: v1 cores [21881 cells z -30.1 r 39.1]; v2 cores [20624 cells z -20.7 r 39.2]; rho cores [none]; rho min 0.309, bg sd 0.045
+  t 12250: v1 cores [20974 cells z -26.9 r 36.9]; v2 cores [21073 cells z -18.1 r 40.7]; rho cores [none]; rho min 0.266, bg sd 0.046
+  t 12500: v1 cores [20572 cells z -22.9 r 35.4]; v2 cores [21726 cells z -16.3 r 42.3]; rho cores [none]; rho min 0.266, bg sd 0.045
+  t 12750: v1 cores [20204 cells z -18.7 r 34.2]; v2 cores [21158 cells z -14.4 r 43.4]; rho cores [114 cells z -15.4 r 38.9 | 111 cells z -15.4 r 38.8 | 107 cells z -15.4 r 38.8 | 106 cells z -15.4 r 38.8]; rho min 0.224, bg sd 0.044
+  t 13000: v1 cores [17747 cells z -13.7 r 34.2]; v2 cores [22226 cells z -12.9 r 43.7]; rho cores [112 cells z -12.2 r 38.4 | 110 cells z -12.3 r 38.4 | 105 cells z -12.3 r 38.5 | 102 cells z -12.3 r 38.5]; rho min 0.221, bg sd 0.044
+  t 13250: v1 cores [19368 cells z -8.4 r 34.5]; v2 cores [21013 cells z -11.4 r 43.1]; rho cores [none]; rho min 0.273, bg sd 0.044
+  t 13500: v1 cores [19716 cells z -3.7 r 35.5]; v2 cores [19599 cells z -10.0 r 42.1]; rho cores [none]; rho min 0.258, bg sd 0.044
+  t 13750: v1 cores [20364 cells z +0.3 r 37.3]; v2 cores [19697 cells z -8.0 r 40.5]; rho cores [none]; rho min 0.267, bg sd 0.045
+  t 14000: v1 cores [21619 cells z +3.6 r 39.1]; v2 cores [20112 cells z -5.5 r 38.7]; rho cores [none]; rho min 0.245, bg sd 0.045
+  t 14250: v1 cores [23036 cells z +6.2 r 41.1]; v2 cores [19229 cells z -2.2 r 37.0]; rho cores [none]; rho min 0.245, bg sd 0.044
+  t 14500: v1 cores [24009 cells z +8.6 r 42.7]; v2 cores [19600 cells z +1.5 r 35.5]; rho cores [none]; rho min 0.252, bg sd 0.043
+  t 14750: v1 cores [21994 cells z +10.4 r 43.6]; v2 cores [17655 cells z +6.3 r 34.8]; rho cores [none]; rho min 0.279, bg sd 0.041
+  t 15000: v1 cores [20896 cells z +11.6 r 43.8]; v2 cores [17863 cells z +11.8 r 34.3]; rho cores [none]; rho min 0.321, bg sd 0.041
+  t 15250: v1 cores [21001 cells z +13.1 r 43.5]; v2 cores [19236 cells z +16.6 r 34.4]; rho cores [none]; rho min 0.283, bg sd 0.043
+  t 15500: v1 cores [21962 cells z +14.7 r 42.7]; v2 cores [20942 cells z +21.1 r 35.7]; rho cores [none]; rho min 0.237, bg sd 0.045
+  t 15750: v1 cores [21088 cells z +16.8 r 41.3]; v2 cores [20319 cells z +25.0 r 37.1]; rho cores [none]; rho min 0.245, bg sd 0.045
+  t 16000: v1 cores [20903 cells z +19.4 r 39.6]; v2 cores [21233 cells z +28.5 r 39.0]; rho cores [273 cells z +24.8 r 39.2 | 264 cells z +24.8 r 39.2 | 262 cells z +24.8 r 39.2 | 259 cells z +24.8 r 39.2]; rho min 0.173, bg sd 0.044
+  t 16250: v1 cores [21565 cells z +22.6 r 37.5]; v2 cores [21460 cells z +30.9 r 41.0]; rho cores [none]; rho min 0.245, bg sd 0.044
+  t 16500: v1 cores [19186 cells z +26.4 r 35.5]; v2 cores [22079 cells z +33.0 r 42.6]; rho cores [none]; rho min 0.312, bg sd 0.044
+  t 16750: v1 cores [18246 cells z +31.0 r 34.3]; v2 cores [23527 cells z +34.8 r 43.5]; rho cores [none]; rho min 0.307, bg sd 0.045
+  t 17000: v1 cores [19060 cells z +35.9 r 33.7]; v2 cores [23078 cells z +36.2 r 43.7]; rho cores [none]; rho min 0.275, bg sd 0.047
+  t 17250: v1 cores [18652 cells z +40.7 r 33.6]; v2 cores [24644 cells z +37.6 r 43.7]; rho cores [none]; rho min 0.234, bg sd 0.047
+  t 17500: v1 cores [18845 cells z +45.2 r 35.0]; v2 cores [26301 cells z +39.2 r 42.6]; rho cores [none]; rho min 0.279, bg sd 0.046
+  t 17750: v1 cores [17561 cells z +49.3 r 36.8]; v2 cores [24252 cells z +40.8 r 41.1]; rho cores [none]; rho min 0.297, bg sd 0.045
+  t 18000: v1 cores [18197 cells z +52.4 r 38.6]; v2 cores [22486 cells z +43.1 r 39.5]; rho cores [none]; rho min 0.297, bg sd 0.043
+  t 18250: v1 cores [18344 cells z +55.0 r 40.5]; v2 cores [21652 cells z +46.3 r 37.6]; rho cores [none]; rho min 0.291, bg sd 0.042
+  t 18500: v1 cores [19400 cells z +57.2 r 42.1]; v2 cores [20543 cells z +50.5 r 35.9]; rho cores [none]; rho min 0.284, bg sd 0.043
+  t 18750: v1 cores [20545 cells z +59.1 r 43.2]; v2 cores [21526 cells z +55.2 r 34.4]; rho cores [none]; rho min 0.273, bg sd 0.045
+  t 19000: v1 cores [20213 cells z +60.8 r 43.7]; v2 cores [19922 cells z +60.0 r 33.9]; rho cores [none]; rho min 0.270, bg sd 0.045
+  t 19250: v1 cores [21152 cells z +62.3 r 43.5]; v2 cores [19247 cells z +65.0 r 34.2]; rho cores [74 cells z +64.7 r 39.2 | 71 cells z +64.7 r 39.2 | 67 cells z +64.7 r 39.2 | 67 cells z +64.7 r 39.2]; rho min 0.222, bg sd 0.044
+  t 19500: v1 cores [19789 cells z +64.1 r 42.6]; v2 cores [21028 cells z +69.8 r 35.5]; rho cores [none]; rho min 0.234, bg sd 0.043
+  t 19750: v1 cores [18836 cells z +66.0 r 41.0]; v2 cores [22419 cells z +74.2 r 37.1]; rho cores [none]; rho min 0.270, bg sd 0.043
+  t 20000: v1 cores [18422 cells z +68.7 r 39.1]; v2 cores [23587 cells z +77.7 r 39.1]; rho cores [none]; rho min 0.275, bg sd 0.044
+  20000 ticks in 1032s

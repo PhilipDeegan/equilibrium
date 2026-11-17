@@ -1,0 +1,21 @@
+linked-circulation lines at r 0.0 4.5 16.5
+P 72 N 93312 R0 9.0 kappa 0.132 dt 0.0182 ticks 220 midpoint x3
+t 0 instantaneous (term x unit time): |Gamma|-weighted z +0.00001; defect-label z +0.00791; max off-integer at defects 5.000e-01; max |Gamma| off-defect 4.997e-01
+       t count sum_n rho z_label z_|G| max|G-n|@def max|G|@non sum|G|@non/count  E_lf
+    0.00 316144    +0  10.62 +0.0000 +0.0000 5.000e-01 4.993e-01 4.216e-02  288073680127760.375000  leak 3.784e-03 rms 2.711 sum|G| 3.4534e+08 linked +1.000000 +10018.261116 -11.402209
+  T[:, k] -= M2[:, n] * v[j, b]
+  T[:, k] -= M2[:, n] * v[j, b]
+  T[:, k] -= M2[:, n] * v[j, b]
+  T[:, k] -= v[:, a_] * M2[nb[:, a_], n]
+  T[:, k] -= v[:, a_] * M2[nb[:, a_], n]
+  T[:, k] -= v[:, a_] * M2[nb[:, a_], n]
+  M2[:, n] = sum(a[:, p_] + a[nb[:, p_], q] for p_, q in paths[k_]) / len(paths[k_])
+  return W * T
+Traceback (most recent call last):
+  File "/home/p/git/eq/exp/2026/10/12/villain/vill.py", line 161, in <module>
+    c, sn, rho, zl, zw, fdef, gnon, snon, leak, rms, tot = tri_stats(ph)
+                                                           ~~~~~~~~~^^^^
+  File "/home/p/git/eq/exp/2026/10/12/villain/vill.py", line 102, in tri_stats
+    return (int(m.sum()), int(n.sum()), rho.mean() if m.any() else np.nan, zc if m.any() else np.nan, zw,
+                          ~~~^^^^^^^^^
+ValueError: cannot convert float NaN to integer

@@ -1,0 +1,19 @@
+CONTEXT: building the double-slit demo (equilibrium/substrate/double_slit.py),
+needed a wall/backplate material model for the slit screen.
+
+WHAT FAILED: first-try approach modeled the wall/backplate as an imposed
+fixed_u=0 boundary condition (a hard Dirichlet wall).
+
+ROOT CAUSE: fixed_u=0 forces perfect reflection by fiat -- wall-body leakage
+comes out exactly zero, which is both physically wrong and exactly the kind
+of imposed idealisation DST is supposed to avoid (the point is for
+reflection/diffraction/leakage to fall out of the substrate's own update
+rule, not be hand-imposed as a boundary type).
+
+LESSON: model solid material as a high-lam (dense) region embedded in a
+low-lam background gas (gas_lam, real-atmosphere analogue), not as a
+fixed_u=0 boundary condition. Front-face reflection, slit-edge diffraction,
+and partial wall-body leakage all then emerge from the same sigma-gradient
+update rule already used everywhere else. Check any future "wall", "plate",
+or "screen" object for this same fixed_u=0 shortcut before trusting its
+reflection/leakage behavior.

@@ -1,0 +1,7 @@
+flow lie midpoint x3 kappa +0.1 a0 1.0 R0 18.0 wt 3.0 P 120 dt 0.0182 (550 ticks)
+  t   0.00: |B| centroid rho  18.59 z  -0.000; sum|B|   1324.53; max |u| 0.000e+00; E_lf          nan
+  t   2.00: |B| centroid rho  18.59 z  +0.045; sum|B|   1320.85; max |u| 6.315e-02; E_lf  1898.251330
+  t   4.00: |B| centroid rho  18.60 z  +0.088; sum|B|   1314.06; max |u| 7.397e-02; E_lf  1898.251665
+  t   6.00: |B| centroid rho  18.60 z  +0.132; sum|B|   1316.56; max |u| 6.299e-02; E_lf  1898.250911
+  t   8.00: |B| centroid rho  18.60 z  +0.175; sum|B|   1319.31; max |u| 6.252e-02; E_lf  1898.251024
+  t  10.00: |B| centroid rho  18.60 z  +0.218; sum|B|   1321.54; max |u| 5.956e-02; E_lf  1898.251051

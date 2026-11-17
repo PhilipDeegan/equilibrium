@@ -1,0 +1,18 @@
+R=120  scale=108.0  cells_across=216.0
+[built_sphere] t=4.81s  peak_rss_GB=6.70
+n_leaves=9401207
+  init_spheromak_ic_refinable: scale=1.0800e+02  R_sph=1.0  sigma=None  inner_cells=6854327/9401207  (72.9%)
+  [post-store] phi_rms=2.4916e-01  phi_nonzero_cells=6854326
+[seeded_ic] t=21.41s  peak_rss_GB=25.06
+[set_bc] t=21.41s  peak_rss_GB=25.06
+[stepper_ready] t=21.47s  peak_rss_GB=25.06
+[step_0] t=21.68s  peak_rss_GB=25.06
+[step_1] t=21.88s  peak_rss_GB=25.06
+[step_2] t=22.08s  peak_rss_GB=25.06
+[step_3] t=22.29s  peak_rss_GB=25.06
+[step_4] t=22.49s  peak_rss_GB=25.06
+[pos_copied] t=22.57s  peak_rss_GB=25.06
+[kdtree_built] t=24.54s  peak_rss_GB=25.06
+[fields_copied] t=25.19s  peak_rss_GB=25.06
+[anisotropy_done] t=25.19s  peak_rss_GB=25.06
+RESULT:   120         216.0     9401207  0.1986  0.1992  0.2013  0.2006

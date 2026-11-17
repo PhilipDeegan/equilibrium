@@ -1,0 +1,54 @@
+base (u,phi) wave: wavelength=9.238 v_phase=3.6212 dt=0.005128
+[c2=0.7] step=     0 t=   0.01 |B|_rms=6.1661e-06 B_centroid_z= -47.135 u_centroid_z= -46.552 gap= -0.582 wall=   0.1s
+[c2=0.7] step=   100 t=   0.52 |B|_rms=2.4169e-02 B_centroid_z= -46.515 u_centroid_z= -45.345 gap= -1.170 wall=   8.7s
+[c2=0.7] step=   200 t=   1.03 |B|_rms=5.5770e-02 B_centroid_z= -45.947 u_centroid_z= -45.509 gap= -0.438 wall=  18.0s
+[c2=0.7] step=   300 t=   1.54 |B|_rms=6.1424e-02 B_centroid_z= -45.801 u_centroid_z= -45.629 gap= -0.173 wall=  26.5s
+[c2=0.7] step=   400 t=   2.06 |B|_rms=5.3311e-02 B_centroid_z= -45.015 u_centroid_z= -44.375 gap= -0.640 wall=  35.0s
+[c2=0.7] step=   500 t=   2.57 |B|_rms=4.4878e-02 B_centroid_z= -47.708 u_centroid_z= -43.162 gap= -4.546 wall=  43.6s
+[c2=0.7] step=   600 t=   3.08 |B|_rms=5.7609e-02 B_centroid_z= -44.357 u_centroid_z= -43.378 gap= -0.979 wall=  52.1s
+[c2=0.7] step=   700 t=   3.59 |B|_rms=9.2985e-02 B_centroid_z= -44.254 u_centroid_z= -43.555 gap= -0.699 wall=  60.7s
+[c2=0.7] step=   800 t=   4.11 |B|_rms=8.4948e-02 B_centroid_z= -44.361 u_centroid_z= -42.150 gap= -2.211 wall=  69.3s
+[c2=0.7] step=   900 t=   4.62 |B|_rms=6.1591e-02 B_centroid_z= -43.479 u_centroid_z= -40.824 gap= -2.655 wall=  77.8s
+[c2=0.7] step=  1000 t=   5.13 |B|_rms=7.0349e-02 B_centroid_z= -45.143 u_centroid_z= -42.502 gap= -2.641 wall=  86.3s
+[c2=0.7] step=  1100 t=   5.65 |B|_rms=7.3994e-02 B_centroid_z= -41.800 u_centroid_z= -41.323 gap= -0.477 wall=  94.9s
+[c2=0.7] step=  1200 t=   6.16 |B|_rms=8.3740e-02 B_centroid_z= -42.853 u_centroid_z= -39.645 gap= -3.208 wall= 103.7s
+[c2=0.7] step=  1300 t=   6.67 |B|_rms=8.1618e-02 B_centroid_z= -43.897 u_centroid_z= -39.677 gap= -4.220 wall= 112.3s
+[c2=0.7] step=  1400 t=   7.18 |B|_rms=6.9496e-02 B_centroid_z= -42.222 u_centroid_z= -40.399 gap= -1.822 wall= 120.7s
+[c2=0.7] step=  1500 t=   7.70 |B|_rms=6.5025e-02 B_centroid_z= -41.906 u_centroid_z= -39.547 gap= -2.359 wall= 129.2s
+[c2=0.7] step=  1600 t=   8.21 |B|_rms=6.4648e-02 B_centroid_z= -40.698 u_centroid_z= -37.019 gap= -3.678 wall= 137.7s
+[c2=0.7] step=  1700 t=   8.72 |B|_rms=7.4010e-02 B_centroid_z= -43.326 u_centroid_z= -37.777 gap= -5.549 wall= 146.2s
+[c2=0.7] step=  1800 t=   9.24 |B|_rms=8.3228e-02 B_centroid_z= -41.831 u_centroid_z= -38.562 gap= -3.270 wall= 154.7s
+[c2=0.7] step=  1900 t=   9.75 |B|_rms=8.1715e-02 B_centroid_z= -39.464 u_centroid_z= -36.633 gap= -2.831 wall= 163.2s
+[c2=0.7] step=  2000 t=  10.26 |B|_rms=6.7769e-02 B_centroid_z= -40.803 u_centroid_z= -35.189 gap= -5.614 wall= 171.8s
+[c2=0.7] step=  2100 t=  10.77 |B|_rms=6.6648e-02 B_centroid_z= -41.786 u_centroid_z= -35.566 gap= -6.221 wall= 180.3s
+[c2=0.7] step=  2200 t=  11.29 |B|_rms=8.6007e-02 B_centroid_z= -41.377 u_centroid_z= -36.509 gap= -4.868 wall= 188.8s
+[c2=0.7] step=  2300 t=  11.80 |B|_rms=9.1422e-02 B_centroid_z= -37.842 u_centroid_z= -33.890 gap= -3.952 wall= 197.3s
+[c2=0.7] step=  2400 t=  12.31 |B|_rms=9.1125e-02 B_centroid_z= -38.266 u_centroid_z= -33.173 gap= -5.092 wall= 205.9s
+[c2=0.7] step=  2500 t=  12.83 |B|_rms=8.0466e-02 B_centroid_z= -41.885 u_centroid_z= -34.424 gap= -7.461 wall= 214.4s
+[c2=0.7] step=  2600 t=  13.34 |B|_rms=7.5145e-02 B_centroid_z= -39.102 u_centroid_z= -33.652 gap= -5.450 wall= 222.9s
+[c2=0.7] step=  2700 t=  13.85 |B|_rms=9.4982e-02 B_centroid_z= -37.831 u_centroid_z= -32.177 gap= -5.653 wall= 231.4s
+[c2=0.7] step=  2800 t=  14.36 |B|_rms=9.4895e-02 B_centroid_z= -37.054 u_centroid_z= -31.686 gap= -5.368 wall= 239.8s
+[c2=0.7] step=  2900 t=  14.88 |B|_rms=8.2706e-02 B_centroid_z= -38.620 u_centroid_z= -31.911 gap= -6.709 wall= 248.1s
+[c2=0.7] step=  3000 t=  15.39 |B|_rms=8.0271e-02 B_centroid_z= -39.771 u_centroid_z= -32.364 gap= -7.407 wall= 256.5s
+[c2=0.7] step=  3100 t=  15.90 |B|_rms=8.7276e-02 B_centroid_z= -36.293 u_centroid_z= -29.833 gap= -6.459 wall= 264.8s
+[c2=0.7] step=  3200 t=  16.42 |B|_rms=9.1315e-02 B_centroid_z= -36.277 u_centroid_z= -29.740 gap= -6.537 wall= 273.3s
+[c2=0.7] step=  3300 t=  16.93 |B|_rms=8.8321e-02 B_centroid_z= -38.098 u_centroid_z= -29.936 gap= -8.162 wall= 281.8s
+[c2=0.7] step=  3400 t=  17.44 |B|_rms=8.8204e-02 B_centroid_z= -37.299 u_centroid_z= -29.848 gap= -7.451 wall= 290.3s
+[c2=0.7] step=  3500 t=  17.95 |B|_rms=9.1218e-02 B_centroid_z= -35.334 u_centroid_z= -28.028 gap= -7.306 wall= 298.7s
+[c2=0.7] step=  3600 t=  18.47 |B|_rms=9.6133e-02 B_centroid_z= -34.938 u_centroid_z= -27.176 gap= -7.762 wall= 307.3s
+[c2=0.7] step=  3700 t=  18.98 |B|_rms=9.4643e-02 B_centroid_z= -36.732 u_centroid_z= -28.203 gap= -8.529 wall= 315.8s
+[c2=0.7] step=  3800 t=  19.49 |B|_rms=9.4721e-02 B_centroid_z= -36.027 u_centroid_z= -27.224 gap= -8.804 wall= 324.4s
+[c2=0.7] step=  3900 t=  20.01 |B|_rms=1.0352e-01 B_centroid_z= -34.475 u_centroid_z= -26.200 gap= -8.276 wall= 332.9s
+[c2=0.7] step=  4000 t=  20.52 |B|_rms=1.0107e-01 B_centroid_z= -33.691 u_centroid_z= -24.655 gap= -9.035 wall= 341.4s
+[c2=0.7] step=  4100 t=  21.03 |B|_rms=9.9183e-02 B_centroid_z= -34.242 u_centroid_z= -26.375 gap= -7.868 wall= 350.1s
+[c2=0.7] step=  4200 t=  21.54 |B|_rms=1.0150e-01 B_centroid_z= -35.277 u_centroid_z= -25.781 gap= -9.496 wall= 358.7s
+[c2=0.7] step=  4300 t=  22.06 |B|_rms=1.0125e-01 B_centroid_z= -33.613 u_centroid_z= -23.633 gap= -9.980 wall= 367.3s
+[c2=0.7] step=  4400 t=  22.57 |B|_rms=1.0459e-01 B_centroid_z= -33.392 u_centroid_z= -22.527 gap=-10.865 wall= 375.8s
+[c2=0.7] step=  4500 t=  23.08 |B|_rms=1.0236e-01 B_centroid_z= -33.077 u_centroid_z= -25.060 gap= -8.016 wall= 384.3s
+[c2=0.7] step=  4600 t=  23.59 |B|_rms=1.0209e-01 B_centroid_z= -32.728 u_centroid_z= -23.966 gap= -8.762 wall= 393.0s
+[c2=0.7] step=  4700 t=  24.11 |B|_rms=1.0246e-01 B_centroid_z= -33.000 u_centroid_z= -21.101 gap=-11.899 wall= 401.5s
+[c2=0.7] step=  4800 t=  24.62 |B|_rms=1.0326e-01 B_centroid_z= -33.435 u_centroid_z= -20.713 gap=-12.722 wall= 410.1s
+[c2=0.7] step=  4900 t=  25.13 |B|_rms=1.0601e-01 B_centroid_z= -32.561 u_centroid_z= -23.043 gap= -9.518 wall= 418.6s
+[c2=0.7] step=  4999 t=  25.64 |B|_rms=1.0849e-01 B_centroid_z= -31.099 u_centroid_z= -21.989 gap= -9.110 wall= 427.1s
+[c2=0.7] SUMMARY: gap0=-0.582 gap_final=-9.110 slope_first_half=-0.3845 slope_second_half=-0.3813 slope_last_quarter=-0.3618
+done

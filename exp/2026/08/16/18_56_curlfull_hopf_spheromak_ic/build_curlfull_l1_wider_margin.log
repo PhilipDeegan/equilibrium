@@ -1,0 +1,7 @@
+[L0 base] R_L0=60.0  n_leaves=1175219  t=0.4s  peak_rss_GB=0.82
+[L1 core, r<=46.666666666666664] n_leaves=15542429  level_hist=[622634, 14919795]  t=228.2s  peak_rss_GB=12.02
+cells_across=220  scale=36.666667  hops=41
+ring pair found: A=328 tiles, B=4 tiles  t=4.9s
+H0=3.320000e+02  phi_rms=1.746870e-03  lam_scale=1  lam_max=1.000000e+00  peak_rss_GB=12.02
+saved /bk/curlfull_l1_wider_margin_ic220.h5  save_t=1.3s
+FINAL total_t=235.3s  peak_rss_GB=12.02

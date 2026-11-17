@@ -1,0 +1,12 @@
+springcpp_N2_S1_q1_a10_r30_xi3.9_m0.8_R110_z0_wxi_rc_par t 0: core-weighted ring radius rc 31.2, zc -0.0, core cells 4576
+  shell R 55.3 (60122 cells): fitted loop q +1 rl 30.8 zl -0.0; rms phase 0.298, rms residual 0.086; rl = rc fixed: residual 0.086
+  shell R 66.0 (85934 cells): fitted loop q +1 rl 30.8 zl -0.0; rms phase 0.204, rms residual 0.047; rl = rc fixed: residual 0.047
+  shell R 76.7 (113882 cells): fitted loop q +1 rl 30.8 zl -0.0; rms phase 0.150, rms residual 0.029; rl = rc fixed: residual 0.029
+springcpp_N2_S1_q1_a10_r30_xi3.9_m0.8_R110_z0_wxi_rc_par t 2000: core-weighted ring radius rc 32.4, zc +6.7, core cells 10156
+  shell R 55.3 (59966 cells): fitted loop q +1 rl 27.4 zl +7.9; rms phase 0.254, rms residual 0.129; rl = rc fixed: residual 0.157
+  shell R 66.0 (85482 cells): fitted loop q +1 rl 25.0 zl +10.6; rms phase 0.145, rms residual 0.067; rl = rc fixed: residual 0.111
+  shell R 76.7 (115290 cells): fitted loop q +1 rl 20.9 zl +13.1; rms phase 0.076, rms residual 0.036; rl = rc fixed: residual 0.101
+springcpp_N2_S1_q1_a10_r30_xi3.9_m0.8_R110_z0_wxi_rc_par t 4000: core-weighted ring radius rc 31.7, zc +6.9, core cells 11162
+  shell R 55.3 (60310 cells): fitted loop q +1 rl 29.3 zl +10.2; rms phase 0.280, rms residual 0.119; rl = rc fixed: residual 0.128
+  shell R 66.0 (85882 cells): fitted loop q +1 rl 26.6 zl +11.9; rms phase 0.161, rms residual 0.067; rl = rc fixed: residual 0.092
+  shell R 76.7 (114894 cells): fitted loop q +1 rl 21.6 zl +12.8; rms phase 0.081, rms residual 0.038; rl = rc fixed: residual 0.091

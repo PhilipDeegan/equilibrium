@@ -1,0 +1,23 @@
+[integ_g0.5] N=1493309 sponge_fraction=0.15 damp_max=0.5 r_inner=55.25 r_ring=19.80 dt=5.1282e-03 predicted_round_trip_t=22.42 (n_steps*dt=33.33)
+[integ_g0.5] done, 261 log points
+[integ_g1.0] N=1493309 sponge_fraction=0.15 damp_max=1.0 r_inner=55.25 r_ring=19.80 dt=5.1282e-03 predicted_round_trip_t=22.42 (n_steps*dt=33.33)
+[integ_g1.0] done, 261 log points
+[integ_g2.0] N=1493309 sponge_fraction=0.15 damp_max=2.0 r_inner=55.25 r_ring=19.80 dt=5.1282e-03 predicted_round_trip_t=22.42 (n_steps*dt=33.33)
+[integ_g2.0] done, 261 log points
+[integ_g4.0] N=1493309 sponge_fraction=0.15 damp_max=4.0 r_inner=55.25 r_ring=19.80 dt=5.1282e-03 predicted_round_trip_t=22.42 (n_steps*dt=33.33)
+[integ_g4.0] done, 261 log points
+
+=== late-time (last third of run) outer-shell |S| comparison across configs ===
+integ_g0.5           r=   8: mean=8.3723e-09 std=6.9011e-09 max=2.6256e-08
+integ_g0.5           r=  20: mean=8.4197e-08 std=2.3775e-08 max=1.6095e-07
+integ_g0.5           r=  24: mean=1.9691e-08 std=6.1504e-09 max=3.7531e-08
+integ_g1.0           r=   8: mean=5.3673e-09 std=2.0319e-09 max=9.8752e-09
+integ_g1.0           r=  20: mean=1.3236e-07 std=9.5383e-08 max=3.9119e-07
+integ_g1.0           r=  24: mean=3.4123e-08 std=2.4134e-08 max=9.7788e-08
+integ_g2.0           r=   8: mean=8.5336e-09 std=4.8317e-09 max=1.6501e-08
+integ_g2.0           r=  20: mean=2.1562e-07 std=1.6590e-07 max=5.9701e-07
+integ_g2.0           r=  24: mean=5.5530e-08 std=4.2029e-08 max=1.5063e-07
+integ_g4.0           r=   8: mean=1.0549e-08 std=6.0604e-09 max=1.9483e-08
+integ_g4.0           r=  20: mean=2.7098e-07 std=2.1389e-07 max=7.3233e-07
+integ_g4.0           r=  24: mean=6.9088e-08 std=5.4187e-08 max=1.8481e-07
+done

@@ -1,0 +1,38 @@
+N=347941  dt=5.1282e-03  src_a=[-8.08290377  0.          0.        ]  src_b=[8.08290377 0.         0.        ]
+       0  I_mid=+0.000000e+00  H=2.000000e+00
+    1000  I_mid=+1.698049e+01  H=3.075123e+03
+    2000  I_mid=+4.643760e+01  H=1.218530e+04
+    3000  I_mid=+7.071002e+01  H=2.735519e+04
+    4000  I_mid=+9.724516e+01  H=4.861456e+04
+    5000  I_mid=+1.172649e+02  H=7.594822e+04
+    6000  I_mid=+1.415012e+02  H=1.093599e+05
+    7000  I_mid=+1.656120e+02  H=1.488332e+05
+    8000  I_mid=+1.892464e+02  H=1.943876e+05
+    9000  I_mid=+2.131021e+02  H=2.460131e+05
+   10000  I_mid=+2.368300e+02  H=3.037139e+05
+   11000  I_mid=+2.605868e+02  H=3.674870e+05
+   12000  I_mid=+2.842735e+02  H=4.373336e+05
+   13000  I_mid=+3.079653e+02  H=5.132533e+05
+   14000  I_mid=+3.316585e+02  H=5.952468e+05
+   15000  I_mid=+3.553698e+02  H=6.833144e+05
+   16000  I_mid=+3.790060e+02  H=7.774545e+05
+   17000  I_mid=+4.028850e+02  H=8.776682e+05
+   18000  I_mid=+4.263983e+02  H=9.839549e+05
+   19000  I_mid=+4.500115e+02  H=1.096315e+06
+   20000  I_mid=+4.736938e+02  H=1.214749e+06
+state saved -> exp/2026/09/05/14_45_vacuum_current_bfield/vacuum_current_state.npz
+
+cells with finite B: 326535/347941
+settled-region cells: 3471
+classical target: B = 0 EXACTLY everywhere (two spherically-symmetric point current sources -- pseudovector/reflection symmetry argument, see module docstring)
+
+|B| (raw, uncalibrated) over settled region:
+  rms=5.962204e-15  max=5.304218e-14  mean=4.297121e-15
+
+|B| (calibrated, /1.3333) over settled region -- directly comparable to the classical zero target:
+  rms=4.471653e-15  max=3.978163e-14  mean=3.222841e-15
+
+reference scales in the same region: u_rms=1.635199e-02  phi_rms=1.011914e+00
+
+around the source-source (x) axis:
+  B_azimuthal rms=4.268877e-15  B_radial(perp) rms=3.630451e-15  B_x rms=1.834332e-15

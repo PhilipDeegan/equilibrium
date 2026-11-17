@@ -1,0 +1,13 @@
+=== case A: wave-step only (isolates AMR/ancestor-substitution junction error) ===
+[ghost build] L0 leaves before=622634 -> after refine, level counts=[0, 31730913] n_leaves=31730913
+[wave_only] dt_real=5.128205e-03 dt_ghost=5.128205e-03
+[wave_only] L1 leaves=14919795  at_junction=14367210  interior=552585
+[wave_only] JUNCTION   mean|du|=1.701926e-36  max|du|=3.915194e-33
+[wave_only] INTERIOR   mean|du|=1.327405e-40  max|du|=1.490666e-37
+
+=== case B: wave-step + step_cross (full physics, matches the real 08/11 runs) ===
+[ghost build] L0 leaves before=622634 -> after refine, level counts=[0, 31730913] n_leaves=31730913
+[wave_plus_cross] dt_real=5.128205e-03 dt_ghost=5.128205e-03
+[wave_plus_cross] L1 leaves=14919795  at_junction=14367210  interior=552585
+[wave_plus_cross] JUNCTION   mean|du|=1.701926e-36  max|du|=3.915194e-33
+[wave_plus_cross] INTERIOR   mean|du|=1.327405e-40  max|du|=1.490666e-37

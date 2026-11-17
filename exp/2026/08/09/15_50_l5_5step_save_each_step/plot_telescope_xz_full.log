@@ -1,0 +1,6 @@
+[l5_core_diameter9_cells_across_220] n_leaves=23005337 n_slice=276717 -> /bk/l5_5step_save_each_step/plots_full/xz_l5_core_diameter9_cells_across_220.png
+[step_01] n_leaves=23005337 n_slice=276717 -> /bk/l5_5step_save_each_step/plots_full/xz_step_01.png
+[step_02] n_leaves=23005337 n_slice=276717 -> /bk/l5_5step_save_each_step/plots_full/xz_step_02.png
+[step_03] n_leaves=23005337 n_slice=276717 -> /bk/l5_5step_save_each_step/plots_full/xz_step_03.png
+[step_04] n_leaves=23005337 n_slice=276717 -> /bk/l5_5step_save_each_step/plots_full/xz_step_04.png
+[step_05] n_leaves=23005337 n_slice=276717 -> /bk/l5_5step_save_each_step/plots_full/xz_step_05.png

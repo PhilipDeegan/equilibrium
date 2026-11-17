@@ -1,0 +1,7 @@
+reference t 6000: structure rms(rho - 1) 0.208
+  t 5000: rms vs t 6000 at best rotation 0.095 (phi   8.4 deg), at phi 0 0.219; torus radius 91.8 (ref 94.1)
+  t 7000: rms vs t 6000 at best rotation 0.096 (phi  36.1 deg), at phi 0 0.226; torus radius 94.7 (ref 94.1)
+  t 11000: rms vs t 6000 at best rotation 0.211 (phi  43.0 deg), at phi 0 0.215; torus radius 82.4 (ref 94.1)
+  t 15000: rms vs t 6000 at best rotation 0.141 (phi   4.5 deg), at phi 0 0.178; torus radius 92.4 (ref 94.1)
+  t 16000: rms vs t 6000 at best rotation 0.096 (phi  40.1 deg), at phi 0 0.182; torus radius 93.1 (ref 94.1)
+  t 17000: rms vs t 6000 at best rotation 0.096 (phi  30.2 deg), at phi 0 0.271; torus radius 92.9 (ref 94.1)

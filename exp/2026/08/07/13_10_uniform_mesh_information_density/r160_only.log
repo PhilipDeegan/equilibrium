@@ -1,0 +1,4 @@
+R=160  scale=144.0  cells_across=288.0
+[built_sphere] t=13.37s  peak_rss_GB=15.75
+n_leaves=22286353
+  init_spheromak_ic_refinable: scale=1.4400e+02  R_sph=1.0  sigma=None  inner_cells=16246777/22286353  (72.9%)

@@ -1,0 +1,25 @@
+  init_electron_dipole_ic_vecpot: scale=4.5  R_sph=1.0  r_axis=2.75  u_bg=0.0  inner_cells=531/147047  (0.4%)
+  divergence_clean: div_rms 1.2108e-03 → 9.4377e-12  (×7.79e-09)
+N=147047  R_domain=30.0  scale=4.50  r_axis=2.748  dt=5.1282e-03
+dipole-envelope cells: 531/147047
+bump window cells: 359  struct-excl-bump cells: 294
+sanity (200 steps, no perturbation, no irreversible ops): H 2.738790e+02 -> 2.738790e+02 (rel 1.31e-14)
+  init_electron_dipole_ic_vecpot: scale=4.5  R_sph=1.0  r_axis=2.75  u_bg=0.0  inner_cells=531/147047  (0.4%)
+  divergence_clean: div_rms 1.2108e-03 → 9.4377e-12  (×7.79e-09)
+bump-only excess energy at t=0 (eps_u=0.05, w=1.35): E_bump=4.4472e-02
+
+=== regime sweep (paired with-bump vs. reference), 3000 steps each ===
+[  linear (control)] E_bump0=4.4472e-02 E_bump_final=8.9006e-04 retained=0.0200  struct_dphi_rms_growth=+nan  (53.3s)
+[   step_cross only] E_bump0=4.4472e-02 E_bump_final=3.4297e-04 retained=0.0077  struct_dphi_rms_growth=+nan  (81.3s)
+[   lam_relax a=0.5] E_bump0=4.4472e-02 E_bump_final=9.9462e-04 retained=0.0224  struct_dphi_rms_growth=+nan  (62.0s)
+[   lam_relax a=1.0] E_bump0=4.4472e-02 E_bump_final=1.0233e-03 retained=0.0230  struct_dphi_rms_growth=+nan  (63.1s)
+[   lam_relax a=2.0] E_bump0=4.4472e-02 E_bump_final=1.0247e-03 retained=0.0230  struct_dphi_rms_growth=+nan  (63.3s)
+
+=== summary ===
+linear control: E_bump retained fraction = 0.0200  (baseline free-dispersion rate)
+     step_cross only: retained=0.0077  struct_growth=+nan  no clear separation from linear
+     lam_relax a=0.5: retained=0.0224  struct_growth=+nan  MORE retained than linear (confinement signal)
+     lam_relax a=1.0: retained=0.0230  struct_growth=+nan  MORE retained than linear (confinement signal)
+     lam_relax a=2.0: retained=0.0230  struct_growth=+nan  MORE retained than linear (confinement signal)
+
+saved results_bump.npz

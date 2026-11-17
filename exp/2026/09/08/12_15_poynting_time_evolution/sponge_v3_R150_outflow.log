@@ -1,0 +1,12 @@
+[outflow_c3.16228] N=18366667 sponge_fraction=0.15 damp_max=3.16228 r_inner=150.00 r_ring=19.80 dt=5.1282e-03 start_step=4875 predicted_round_trip_t=82.35 (t range this leg: 25.00 -> 70.00)
+saved exp/2026/09/08/12_15_poynting_time_evolution/sponge_v3_R150_outflow_outflow_c3.16228_frames/t_045.000.png
+saved exp/2026/09/08/12_15_poynting_time_evolution/sponge_v3_R150_outflow_outflow_c3.16228_frames/t_065.000.png
+saved exp/2026/09/08/12_15_poynting_time_evolution/sponge_v3_R150_outflow_outflow_c3.16228_frames/t_070.000.png
+[outflow_c3.16228] saved final state -> exp/2026/09/08/12_15_poynting_time_evolution/sponge_v3_R150_outflow_outflow_c3.16228_step0013650.h5
+[outflow_c3.16228] done, 354 log points
+
+=== late-time (last third of run) outer-shell |S| comparison across configs ===
+outflow_c3.16228     r=   8: mean=6.2739e-10 std=1.4365e-10 max=8.4363e-10
+outflow_c3.16228     r=  20: mean=9.5762e-09 std=9.1632e-10 max=1.2024e-08
+outflow_c3.16228     r=  24: mean=2.7881e-09 std=4.9333e-10 max=5.9010e-09
+done

@@ -1,0 +1,39 @@
+H0 (from /bk/curlfull_dipole_l1_wider_margin_ic220.h5)=8.655806e+06
+cross_scale=1000
+loaded /bk/curlfull_dipole_l1_wider_margin_ic220.h5 (resuming from absolute step 0) n_leaves=15542429 lam_max=3.427853e+00 lam_mean=5.569146e-01 t=13.6s peak_rss_GB=11.49
+dt=5.128205e-03
+/home/p/git/eq/exp/2026/08/17/12_25_curl_full_dipole_ic_rebuild/plot_curlfull_dipole_ic.py:110: RuntimeWarning: All-NaN slice encountered
+  lw = 0.5 + 2.5 * (speed_safe / np.nanmax(speed_safe))
+[step_000] n_leaves=15542429 levels=[0, 1] -> /home/p/git/eq/exp/2026/08/17/12_25_curl_full_dipole_ic_rebuild/plots/l1_wider_margin_crossscale1000/xz_step_000.png
+step 1 step_time=5.4s H=2.608237e+07 H/H0=3.013280 H_by_level=[0.0, 26082369.026345927] peak_rss_GB=11.98
+[step_001] n_leaves=15542429 levels=[0, 1] -> /home/p/git/eq/exp/2026/08/17/12_25_curl_full_dipole_ic_rebuild/plots/l1_wider_margin_crossscale1000/xz_step_001.png
+step 1 plotted /home/p/git/eq/exp/2026/08/17/12_25_curl_full_dipole_ic_rebuild/plots/l1_wider_margin_crossscale1000/xz_step_001.png plot_time=9.1s
+step 2 step_time=5.1s H=6.382708e+08 H/H0=73.739038 H_by_level=[0.0, 638270787.6279403] peak_rss_GB=13.91
+[step_002] n_leaves=15542429 levels=[0, 1] -> /home/p/git/eq/exp/2026/08/17/12_25_curl_full_dipole_ic_rebuild/plots/l1_wider_margin_crossscale1000/xz_step_002.png
+step 2 plotted /home/p/git/eq/exp/2026/08/17/12_25_curl_full_dipole_ic_rebuild/plots/l1_wider_margin_crossscale1000/xz_step_002.png plot_time=9.2s
+step 3 step_time=4.9s H=3.036186e+10 H/H0=3507.686867 H_by_level=[0.0, 30361856050.514824] peak_rss_GB=13.93
+[step_003] n_leaves=15542429 levels=[0, 1] -> /home/p/git/eq/exp/2026/08/17/12_25_curl_full_dipole_ic_rebuild/plots/l1_wider_margin_crossscale1000/xz_step_003.png
+step 3 plotted /home/p/git/eq/exp/2026/08/17/12_25_curl_full_dipole_ic_rebuild/plots/l1_wider_margin_crossscale1000/xz_step_003.png plot_time=9.6s
+step 4 step_time=4.9s H=1.923996e+12 H/H0=222278.050716 H_by_level=[0.0, 1923995622912.4482] peak_rss_GB=13.96
+[step_004] n_leaves=15542429 levels=[0, 1] -> /home/p/git/eq/exp/2026/08/17/12_25_curl_full_dipole_ic_rebuild/plots/l1_wider_margin_crossscale1000/xz_step_004.png
+step 4 plotted /home/p/git/eq/exp/2026/08/17/12_25_curl_full_dipole_ic_rebuild/plots/l1_wider_margin_crossscale1000/xz_step_004.png plot_time=9.6s
+step 5 step_time=6.1s H=1.489794e+14 H/H0=17211495.984928 H_by_level=[0.0, 148979365402842.44] peak_rss_GB=14.12
+[step_005] n_leaves=15542429 levels=[0, 1] -> /home/p/git/eq/exp/2026/08/17/12_25_curl_full_dipole_ic_rebuild/plots/l1_wider_margin_crossscale1000/xz_step_005.png
+step 5 plotted /home/p/git/eq/exp/2026/08/17/12_25_curl_full_dipole_ic_rebuild/plots/l1_wider_margin_crossscale1000/xz_step_005.png plot_time=8.4s
+step 6 step_time=7.2s H=1.406749e+16 H/H0=1625209090.807392 H_by_level=[0.0, 1.4067494144888458e+16] peak_rss_GB=14.12
+[step_006] n_leaves=15542429 levels=[0, 1] -> /home/p/git/eq/exp/2026/08/17/12_25_curl_full_dipole_ic_rebuild/plots/l1_wider_margin_crossscale1000/xz_step_006.png
+step 6 plotted /home/p/git/eq/exp/2026/08/17/12_25_curl_full_dipole_ic_rebuild/plots/l1_wider_margin_crossscale1000/xz_step_006.png plot_time=8.2s
+step 7 step_time=6.5s H=1.536139e+18 H/H0=177469229403.778076 H_by_level=[0.0, 1.536139171061468e+18] peak_rss_GB=14.12
+[step_007] n_leaves=15542429 levels=[0, 1] -> /home/p/git/eq/exp/2026/08/17/12_25_curl_full_dipole_ic_rebuild/plots/l1_wider_margin_crossscale1000/xz_step_007.png
+step 7 plotted /home/p/git/eq/exp/2026/08/17/12_25_curl_full_dipole_ic_rebuild/plots/l1_wider_margin_crossscale1000/xz_step_007.png plot_time=8.2s
+step 8 step_time=5.9s H=2.087478e+20 H/H0=24116504117080.757812 H_by_level=[3.1139253911825892e-192, 2.0874777429204602e+20] peak_rss_GB=14.13
+[step_008] n_leaves=15542429 levels=[0, 1] -> /home/p/git/eq/exp/2026/08/17/12_25_curl_full_dipole_ic_rebuild/plots/l1_wider_margin_crossscale1000/xz_step_008.png
+step 8 plotted /home/p/git/eq/exp/2026/08/17/12_25_curl_full_dipole_ic_rebuild/plots/l1_wider_margin_crossscale1000/xz_step_008.png plot_time=9.3s
+step 9 step_time=5.2s H=3.041360e+22 H/H0=3513664529042453.500000 H_by_level=[9.847221848032118e-163, 3.0413597529970896e+22] peak_rss_GB=14.13
+[step_009] n_leaves=15542429 levels=[0, 1] -> /home/p/git/eq/exp/2026/08/17/12_25_curl_full_dipole_ic_rebuild/plots/l1_wider_margin_crossscale1000/xz_step_009.png
+step 9 plotted /home/p/git/eq/exp/2026/08/17/12_25_curl_full_dipole_ic_rebuild/plots/l1_wider_margin_crossscale1000/xz_step_009.png plot_time=8.9s
+step 10 step_time=5.1s H=5.248654e+24 H/H0=606373854835798656.000000 H_by_level=[1.2404832647654633e-147, 5.248654281376101e+24] peak_rss_GB=14.13
+[step_010] n_leaves=15542429 levels=[0, 1] -> /home/p/git/eq/exp/2026/08/17/12_25_curl_full_dipole_ic_rebuild/plots/l1_wider_margin_crossscale1000/xz_step_010.png
+step 10 plotted /home/p/git/eq/exp/2026/08/17/12_25_curl_full_dipole_ic_rebuild/plots/l1_wider_margin_crossscale1000/xz_step_010.png plot_time=8.8s
+saved final /bk/curlfull_dipole_l1_wider_margin_crossscale1000/step_010_final.h5 save_time=1.4s
+FINAL peak_rss_GB=14.13 total_time=176.1s

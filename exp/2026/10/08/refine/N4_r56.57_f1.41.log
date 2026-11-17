@@ -1,0 +1,230 @@
+  seed: mean phase jump across face x -0.0000
+  seed: mean phase jump across face y +0.0000
+  seed: mean phase jump across face z -0.6630
+  seed projected onto + branch: norm 7249691.517 -> 7249323.257 (branch- 368.261)
+prof_pp_springbox_N4_S1_q1_a14.14_r56.57_xi5.515_m0.8_P312_z0_wxi_rc_par_f141: N_cells=7592832 build+seed 65s; g 0.0041 xi 5.51; strand pitch (toroidal advance per turn) 88.9 cells at r0, inner-side turn spacing 66.6
+P t 0: coil 56424 c (57.5,+0.0) wind -4 minrho 0.54 asp 1.00 tilt 90 rad 14.66 | k2 z 0.00@+45.0 r 0.00@-90.0 k4 z 13.98@-22.5 r 13.89@+0.0 k8 z 0.98@-11.3 r 1.03@-0.0 | axis 0
+S t 0: D_in 339734 E_in 462.34 E_tot 545.986 rho_mid 0.99595
+  t 0: core cells 56424, minor radius 14.4, helix phase +0.000, winding centre circle -4.00, meridional -1.00, centre (rho, z) (57.5, +0.0), D_near 307972 D_core 205561, frame shift +0.0
+P t 400: coil 52237 c (57.3,+3.1) wind -4 minrho 0.48 asp 1.07 tilt 135 rad 13.90 | k2 z 0.00@+87.9 r 0.00@-59.0 k4 z 13.31@-17.0 r 13.01@+6.6 k8 z 1.80@-9.9 r 1.70@+2.5 | axis 0
+S t 400: D_in 335805 E_in 473.86 E_tot 546.003 rho_mid 0.99185
+P t 800: coil 50541 c (57.6,+2.5) wind -4 minrho 0.40 asp 1.15 tilt 148 rad 13.56 | k2 z 0.00@-2.9 r 0.00@+55.6 k4 z 12.48@-12.2 r 12.84@+11.8 k8 z 2.83@-5.3 r 3.02@+7.3 | axis 0
+S t 800: D_in 323626 E_in 495.43 E_tot 545.988 rho_mid 0.98776
+P t 1200: coil 49116 c (58.0,+1.8) wind -4 minrho 0.38 asp 1.24 tilt 159 rad 13.47 | k2 z 0.00@-77.1 r 0.00@-17.4 k4 z 11.58@-7.3 r 12.95@+16.6 k8 z 3.98@+0.0 r 4.21@+12.3 | axis 0
+S t 1200: D_in 304138 E_in 528.62 E_tot 545.994 rho_mid 0.98240
+P t 1600: coil 49089 c (58.2,+0.8) wind -4 minrho 0.33 asp 1.33 tilt 169 rad 13.49 | k2 z 0.00@-24.3 r 0.00@+3.9 k4 z 10.81@-2.1 r 13.14@+21.0 k8 z 4.63@+5.7 r 4.87@+17.0 | axis 0
+S t 1600: D_in 280590 E_in 581.32 E_tot 545.983 rho_mid 0.97823
+P t 2000: coil 50338 c (58.2,+3.5) wind -4 minrho 0.30 asp 1.43 tilt 178 rad 13.66 | k2 z 0.00@+54.2 r 0.00@-72.3 k4 z 10.13@+3.2 r 13.61@+25.2 k8 z 5.14@+10.9 r 5.50@+21.5 | axis 0
+S t 2000: D_in 272023 E_in 595.33 E_tot 545.983 rho_mid 0.97574
+  t 2000: core cells 50338, minor radius 13.3, helix phase +1.762, winding centre circle -4.00, meridional -1.00, centre (rho, z) (58.2, +3.5), D_near 250019 D_core 177954, frame shift +10.4
+P t 2400: coil 50052 c (58.4,+2.5) wind -4 minrho 0.23 asp 1.48 tilt 6 rad 13.62 | k2 z 0.00@-49.4 r 0.00@+25.3 k4 z 9.70@+8.7 r 13.77@+29.1 k8 z 5.34@+16.4 r 6.28@-18.7 | axis 0
+S t 2400: D_in 273294 E_in 591.11 E_tot 545.987 rho_mid 0.97310
+P t 2800: coil 50377 c (59.1,+1.4) wind -4 minrho 0.23 asp 1.47 tilt 9 rad 13.45 | k2 z 0.00@+19.6 r 0.00@-20.3 k4 z 9.35@+13.7 r 13.72@+33.5 k8 z 5.48@+21.6 r 6.84@-13.0 | axis 0
+S t 2800: D_in 277565 E_in 583.03 E_tot 545.989 rho_mid 0.97108
+P t 3200: coil 49543 c (59.6,+1.0) wind -4 minrho 0.24 asp 1.48 tilt 11 rad 13.31 | k2 z 0.00@-89.8 r 0.00@+69.4 k4 z 9.08@+19.0 r 13.79@+37.9 k8 z 5.26@-18.3 r 7.22@-7.9 | axis 0
+S t 3200: D_in 287762 E_in 562.84 E_tot 545.990 rho_mid 0.97356
+P t 3600: coil 49081 c (59.4,+0.4) wind -4 minrho 0.29 asp 1.47 tilt 10 rad 13.06 | k2 z 0.00@-65.0 r 0.00@+54.8 k4 z 8.81@+23.3 r 13.59@+43.1 k8 z 4.83@-13.2 r 7.31@-2.7 | axis 0
+S t 3600: D_in 299699 E_in 539.05 E_tot 545.975 rho_mid 0.98035
+P t 4000: coil 49549 c (59.3,+3.3) wind -4 minrho 0.29 asp 1.45 tilt 11 rad 13.00 | k2 z 0.00@-5.4 r 0.00@+25.5 k4 z 8.90@+27.7 r 13.38@-42.0 k8 z 4.78@-8.0 r 7.38@+2.3 | axis 0
+S t 4000: D_in 304119 E_in 531.20 E_tot 545.972 rho_mid 0.98194
+  t 4000: core cells 49549, minor radius 12.6, helix phase -2.864, winding centre circle -4.00, meridional -1.00, centre (rho, z) (59.3, +3.3), D_near 246325 D_core 177998, frame shift +24.2
+P t 4400: coil 51863 c (59.1,+2.4) wind -4 minrho 0.31 asp 1.32 tilt 13 rad 12.94 | k2 z 0.00@-22.9 r 0.00@-86.7 k4 z 9.44@+31.8 r 12.79@-36.9 k8 z 4.98@-2.7 r 7.03@+8.0 | axis 0
+S t 4400: D_in 307378 E_in 522.34 E_tot 545.982 rho_mid 0.97876
+P t 4800: coil 49711 c (59.1,+1.5) wind -4 minrho 0.34 asp 1.20 tilt 9 rad 12.90 | k2 z 0.00@-33.2 r 0.00@+72.6 k4 z 9.85@+35.7 r 12.35@-31.9 k8 z 5.68@+2.4 r 6.74@+13.8 | axis 0
+S t 4800: D_in 319956 E_in 491.89 E_tot 545.991 rho_mid 0.97924
+P t 5200: coil 49914 c (58.8,+1.4) wind -4 minrho 0.37 asp 1.18 tilt 1 rad 12.99 | k2 z 0.00@-67.1 r 0.00@-8.8 k4 z 10.01@+39.8 r 12.45@-27.2 k8 z 5.88@+8.2 r 6.60@+19.7 | axis 0
+S t 5200: D_in 335023 E_in 452.17 E_tot 545.985 rho_mid 0.98138
+P t 5600: coil 48607 c (58.1,+0.6) wind -4 minrho 0.33 asp 1.16 tilt 175 rad 13.01 | k2 z 0.00@-33.2 r 0.00@-28.6 k4 z 10.41@+44.3 r 12.50@-22.4 k8 z 5.65@+13.3 r 5.91@-20.1 | axis 0
+S t 5600: D_in 332085 E_in 458.76 E_tot 545.997 rho_mid 0.98351
+P t 6000: coil 50164 c (57.9,+3.2) wind -4 minrho 0.31 asp 1.15 tilt 164 rad 13.15 | k2 z 0.00@-38.0 r 0.00@+56.2 k4 z 11.04@-41.3 r 12.43@-17.3 k8 z 5.09@+17.9 r 5.50@-15.1 | axis 0
+S t 6000: D_in 314294 E_in 500.74 E_tot 545.969 rho_mid 0.98294
+  t 6000: core cells 50164, minor radius 12.8, helix phase -1.239, winding centre circle -4.00, meridional -1.00, centre (rho, z) (57.9, +3.2), D_near 282876 D_core 194507, frame shift +37.0
+P t 6400: coil 53227 c (58.0,+1.2) wind -4 minrho 0.40 asp 1.19 tilt 161 rad 13.31 | k2 z 0.00@+18.0 r 0.00@-80.1 k4 z 11.21@-36.8 r 12.81@-12.2 k8 z 4.42@-21.6 r 5.23@-8.9 | axis 0
+S t 6400: D_in 298870 E_in 531.62 E_tot 545.975 rho_mid 0.98175
+P t 6800: coil 51976 c (58.8,+2.2) wind -4 minrho 0.33 asp 1.19 tilt 159 rad 13.16 | k2 z 0.00@+57.9 r 0.00@+60.8 k4 z 11.34@-31.8 r 12.60@-7.2 k8 z 3.92@-15.9 r 4.95@-3.6 | axis 0
+S t 6800: D_in 294850 E_in 535.10 E_tot 545.998 rho_mid 0.97692
+P t 7200: coil 49726 c (59.1,+2.2) wind -4 minrho 0.26 asp 1.29 tilt 156 rad 13.14 | k2 z 0.00@+82.2 r 0.00@-73.2 k4 z 11.11@-27.6 r 13.03@-1.8 k8 z 3.24@-12.0 r 4.75@+1.4 | axis 0
+S t 7200: D_in 293072 E_in 534.81 E_tot 545.994 rho_mid 0.97743
+P t 7600: coil 50187 c (58.2,+1.1) wind -4 minrho 0.21 asp 1.35 tilt 159 rad 13.26 | k2 z 0.00@+89.4 r 0.00@+68.5 k4 z 10.90@-22.7 r 13.56@+2.9 k8 z 2.66@-7.5 r 3.91@+4.5 | axis 0
+S t 7600: D_in 283360 E_in 562.82 E_tot 545.981 rho_mid 0.98074
+P t 8000: coil 50639 c (57.6,+3.9) wind -4 minrho 0.23 asp 1.38 tilt 165 rad 13.42 | k2 z 0.00@+56.2 r 0.00@-1.0 k4 z 10.86@-17.3 r 13.73@+7.3 k8 z 2.81@-2.4 r 3.32@+7.7 | axis 0
+S t 8000: D_in 276651 E_in 588.31 E_tot 545.982 rho_mid 0.98828
+  t 8000: core cells 50639, minor radius 13.1, helix phase +0.446, winding centre circle -4.00, meridional -1.00, centre (rho, z) (57.6, +3.9), D_near 258674 D_core 183402, frame shift +49.7
+P t 8400: coil 51518 c (57.9,+2.7) wind -4 minrho 0.32 asp 1.39 tilt 172 rad 13.59 | k2 z 0.00@+19.8 r 0.00@-76.2 k4 z 11.00@-11.8 r 13.78@+12.1 k8 z 2.90@+1.6 r 3.66@+12.1 | axis 0
+S t 8400: D_in 284055 E_in 573.58 E_tot 545.998 rho_mid 0.99620
+P t 8800: coil 49005 c (58.3,+2.3) wind -4 minrho 0.37 asp 1.41 tilt 179 rad 13.55 | k2 z 0.00@-30.5 r 0.00@-23.2 k4 z 10.59@-6.2 r 14.05@+16.6 k8 z 3.23@+4.1 r 3.79@+15.8 | axis 0
+S t 8800: D_in 295283 E_in 552.97 E_tot 545.989 rho_mid 0.99395
+P t 9200: coil 49001 c (58.3,+1.8) wind -4 minrho 0.32 asp 1.43 tilt 8 rad 13.50 | k2 z 0.00@-54.2 r 0.00@-26.5 k4 z 10.45@-0.1 r 14.04@+20.6 k8 z 3.56@+8.0 r 4.21@+19.3 | axis 0
+S t 9200: D_in 302701 E_in 537.33 E_tot 545.977 rho_mid 0.98394
+P t 9600: coil 50354 c (58.2,+1.3) wind -4 minrho 0.26 asp 1.41 tilt 12 rad 13.33 | k2 z 0.00@-67.1 r 0.00@-18.0 k4 z 10.34@+5.1 r 13.76@+25.4 k8 z 3.66@+12.1 r 4.50@-21.4 | axis 0
+S t 9600: D_in 304342 E_in 535.58 E_tot 545.977 rho_mid 0.97050
+P t 10000: coil 50638 c (57.5,+4.4) wind -4 minrho 0.29 asp 1.36 tilt 21 rad 13.22 | k2 z 0.00@+33.9 r 0.00@-8.4 k4 z 10.99@+10.5 r 13.08@+29.8 k8 z 3.53@+17.0 r 4.39@-18.0 | axis 0
+S t 10000: D_in 309981 E_in 517.68 E_tot 545.980 rho_mid 0.96747
+  t 10000: core cells 50638, minor radius 12.9, helix phase +2.179, winding centre circle -4.00, meridional -1.00, centre (rho, z) (57.5, +4.4), D_near 261587 D_core 183809, frame shift +63.5
+P t 10400: coil 49347 c (57.6,+2.7) wind -4 minrho 0.35 asp 1.29 tilt 27 rad 12.95 | k2 z 0.00@-61.9 r 0.00@+29.6 k4 z 11.16@+15.4 r 12.44@+34.9 k8 z 3.89@+22.4 r 4.44@-12.9 | axis 0
+S t 10400: D_in 315885 E_in 498.31 E_tot 545.986 rho_mid 0.97423
+P t 10800: coil 49388 c (57.8,+2.0) wind -4 minrho 0.35 asp 1.18 tilt 28 rad 12.75 | k2 z 0.00@-16.2 r 0.00@-4.4 k4 z 10.98@+19.7 r 12.08@+40.2 k8 z 4.63@-17.2 r 4.60@-7.3 | axis 0
+S t 10800: D_in 321932 E_in 474.12 E_tot 545.983 rho_mid 0.97771
+P t 11200: coil 49679 c (58.4,+1.1) wind -4 minrho 0.31 asp 1.15 tilt 20 rad 12.73 | k2 z 0.00@-50.0 r 0.00@+31.1 k4 z 10.66@+24.8 r 12.01@-44.9 k8 z 5.27@-11.8 r 5.21@-0.7 | axis 0
+S t 11200: D_in 324741 E_in 457.03 E_tot 545.987 rho_mid 0.97782
+P t 11600: coil 49561 c (57.9,+0.5) wind -4 minrho 0.34 asp 1.20 tilt 14 rad 12.70 | k2 z 0.00@-31.9 r 0.00@-89.5 k4 z 10.24@+29.9 r 12.35@-39.6 k8 z 4.79@-6.3 r 5.57@+3.8 | axis 0
+S t 11600: D_in 317573 E_in 461.74 E_tot 545.999 rho_mid 0.97985
+P t 12000: coil 46409 c (57.7,+2.8) wind -4 minrho 0.37 asp 1.21 tilt 11 rad 12.61 | k2 z 0.00@-14.7 r 0.00@+17.4 k4 z 10.07@+34.6 r 12.45@-34.1 k8 z 4.44@-1.3 r 5.66@+9.2 | axis 0
+S t 12000: D_in 300611 E_in 495.61 E_tot 545.998 rho_mid 0.98326
+  t 12000: core cells 46409, minor radius 12.3, helix phase -2.340, winding centre circle -4.00, meridional -1.00, centre (rho, z) (57.7, +2.8), D_near 246943 D_core 174871, frame shift +78.5
+P t 12400: coil 47311 c (58.2,+2.7) wind -4 minrho 0.40 asp 1.15 tilt 12 rad 12.66 | k2 z 0.00@-13.1 r 0.00@+55.4 k4 z 10.32@+39.3 r 12.16@-29.2 k8 z 4.82@+4.1 r 5.83@+15.2 | axis 0
+S t 12400: D_in 278103 E_in 553.89 E_tot 545.988 rho_mid 0.97648
+P t 12800: coil 46588 c (58.4,+1.1) wind -4 minrho 0.39 asp 1.11 tilt 175 rad 12.56 | k2 z 0.00@-80.5 r 0.00@+51.7 k4 z 10.36@+43.5 r 11.94@-23.9 k8 z 4.99@+9.8 r 5.65@+21.4 | axis 0
+S t 12800: D_in 264771 E_in 592.51 E_tot 545.988 rho_mid 0.97284
+P t 13200: coil 47242 c (59.0,+1.5) wind -4 minrho 0.37 asp 1.18 tilt 158 rad 12.57 | k2 z 0.00@-28.9 r 0.00@-31.1 k4 z 10.16@-42.7 r 12.09@-18.5 k8 z 5.07@+14.7 r 5.73@-18.3 | axis 0
+S t 13200: D_in 269646 E_in 596.29 E_tot 545.984 rho_mid 0.97602
+P t 13600: coil 47226 c (58.6,+1.1) wind -4 minrho 0.29 asp 1.26 tilt 159 rad 12.61 | k2 z 0.00@+6.6 r 0.00@-15.5 k4 z 10.21@-38.6 r 12.26@-13.7 k8 z 4.61@+19.9 r 5.53@-13.6 | axis 0
+S t 13600: D_in 286792 E_in 563.70 E_tot 545.976 rho_mid 0.98271
+P t 14000: coil 50002 c (58.4,+3.3) wind -4 minrho 0.30 asp 1.33 tilt 158 rad 12.88 | k2 z 0.00@-81.6 r 0.00@+85.6 k4 z 10.45@-34.4 r 12.78@-8.7 k8 z 4.27@-19.9 r 4.79@-7.5 | axis 0
+S t 14000: D_in 298419 E_in 546.49 E_tot 545.959 rho_mid 0.98749
+  t 14000: core cells 50002, minor radius 12.5, helix phase -0.705, winding centre circle -4.00, meridional -1.00, centre (rho, z) (58.4, +3.3), D_near 270503 D_core 190636, frame shift +90.1
+P t 14400: coil 53322 c (59.2,+2.8) wind -4 minrho 0.30 asp 1.41 tilt 161 rad 13.04 | k2 z 0.00@-7.0 r 0.00@-15.7 k4 z 10.07@-29.7 r 13.39@-3.9 k8 z 4.06@-15.1 r 4.96@-2.0 | axis 0
+S t 14400: D_in 306497 E_in 530.63 E_tot 545.962 rho_mid 0.98636
+P t 14800: coil 55549 c (59.8,+2.6) wind -4 minrho 0.26 asp 1.46 tilt 165 rad 13.10 | k2 z 0.00@+60.2 r 0.00@-11.5 k4 z 9.72@-24.7 r 13.52@+0.8 k8 z 3.93@-10.4 r 5.67@+2.6 | axis 0
+S t 14800: D_in 310833 E_in 518.66 E_tot 545.994 rho_mid 0.98316
+P t 15200: coil 52834 c (59.8,+1.2) wind -4 minrho 0.19 asp 1.53 tilt 168 rad 13.01 | k2 z 0.00@+24.7 r 0.00@-64.5 k4 z 9.29@-19.8 r 13.55@+5.3 k8 z 3.67@-6.0 r 6.15@+6.6 | axis 0
+S t 15200: D_in 306898 E_in 525.87 E_tot 546.001 rho_mid 0.98468
+P t 15600: coil 50394 c (58.8,+1.0) wind -4 minrho 0.16 asp 1.58 tilt 173 rad 13.06 | k2 z 0.00@+9.9 r 0.00@-17.2 k4 z 9.10@-14.7 r 13.79@+9.4 k8 z 3.43@-1.6 r 5.90@+10.1 | axis 0
+S t 15600: D_in 304413 E_in 522.68 E_tot 545.997 rho_mid 0.98316
+P t 16000: coil 48176 c (57.8,+3.3) wind -4 minrho 0.18 asp 1.62 tilt 1 rad 13.12 | k2 z 0.00@+44.9 r 0.00@-61.9 k4 z 9.00@-9.2 r 14.11@+13.4 k8 z 3.42@+3.9 r 5.13@+13.4 | axis 0
+S t 16000: D_in 309632 E_in 498.21 E_tot 545.986 rho_mid 0.98143
+  t 16000: core cells 48176, minor radius 12.7, helix phase +0.929, winding centre circle -4.00, meridional -1.00, centre (rho, z) (57.8, +3.3), D_near 263871 D_core 178187, frame shift +105.1
+P t 16400: coil 49579 c (57.8,+2.3) wind -4 minrho 0.22 asp 1.55 tilt 10 rad 13.03 | k2 z 0.00@+78.4 r 0.00@-23.9 k4 z 9.41@-3.5 r 13.54@+17.2 k8 z 3.84@+7.7 r 4.85@+16.9 | axis 0
+S t 16400: D_in 309671 E_in 491.32 E_tot 545.961 rho_mid 0.98159
+P t 16800: coil 51953 c (57.6,+1.3) wind -4 minrho 0.25 asp 1.49 tilt 18 rad 13.09 | k2 z 0.00@-80.5 r 0.00@-73.8 k4 z 10.04@+1.8 r 13.40@+21.3 k8 z 3.95@+11.3 r 3.53@+21.3 | axis 0
+S t 16800: D_in 302416 E_in 504.01 E_tot 545.987 rho_mid 0.98653
+P t 17200: coil 49934 c (57.7,+1.9) wind -4 minrho 0.30 asp 1.37 tilt 29 rad 12.88 | k2 z 0.00@-18.2 r 0.00@-11.0 k4 z 10.91@+7.2 r 12.56@+26.0 k8 z 3.72@+15.0 r 3.68@-19.4 | axis 0
+S t 17200: D_in 294946 E_in 518.22 E_tot 546.010 rho_mid 0.97965
+P t 17600: coil 47279 c (57.6,+0.2) wind -4 minrho 0.34 asp 1.24 tilt 35 rad 12.56 | k2 z 0.00@-73.9 r 0.00@-13.5 k4 z 11.15@+12.0 r 12.00@+31.4 k8 z 3.27@+19.5 r 3.78@-13.4 | axis 0
+S t 17600: D_in 297318 E_in 513.24 E_tot 546.002 rho_mid 0.97002
+P t 18000: coil 44692 c (57.1,+3.0) wind -4 minrho 0.35 asp 1.14 tilt 34 rad 12.24 | k2 z 0.00@-81.2 r 0.00@+61.2 k4 z 10.99@+16.4 r 11.63@+37.1 k8 z 2.85@-19.5 r 3.83@-8.3 | axis 0
+S t 18000: D_in 310761 E_in 482.85 E_tot 545.977 rho_mid 0.96629
+  t 18000: core cells 44692, minor radius 12.0, helix phase +2.651, winding centre circle -4.00, meridional -1.00, centre (rho, z) (57.1, +3.0), D_near 237180 D_core 164494, frame shift +118.9
+P t 18400: coil 45564 c (57.1,+2.0) wind -4 minrho 0.35 asp 1.05 tilt 32 rad 12.09 | k2 z 0.00@+89.4 r 0.00@-9.1 k4 z 10.96@+20.6 r 11.20@+42.7 k8 z 3.56@-13.0 r 3.79@-3.6 | axis 0
+S t 18400: D_in 323059 E_in 457.72 E_tot 545.965 rho_mid 0.97529
+P t 18800: coil 49301 c (57.4,+2.2) wind -4 minrho 0.37 asp 1.07 tilt 146 rad 12.42 | k2 z 0.00@-4.0 r 0.00@+7.4 k4 z 11.18@+24.9 r 11.40@-41.6 k8 z 4.14@-8.4 r 4.16@+2.6 | axis 0
+S t 18800: D_in 322785 E_in 466.25 E_tot 545.967 rho_mid 0.98772
+P t 19200: coil 52341 c (58.1,+1.7) wind -4 minrho 0.29 asp 1.14 tilt 157 rad 12.75 | k2 z 0.00@-4.9 r 0.00@-72.3 k4 z 10.98@+30.4 r 11.91@-36.2 k8 z 4.76@-3.5 r 4.65@+8.5 | axis 0
+S t 19200: D_in 321447 E_in 469.86 E_tot 545.993 rho_mid 0.99388
+P t 19600: coil 49069 c (57.6,+1.0) wind -4 minrho 0.29 asp 1.25 tilt 168 rad 12.60 | k2 z 0.00@-42.8 r 0.00@-80.1 k4 z 10.27@+35.9 r 12.55@-30.8 k8 z 3.97@+1.3 r 4.32@+13.4 | axis 0
+S t 19600: D_in 311697 E_in 495.33 E_tot 546.015 rho_mid 0.98953
+P t 20000: coil 47221 c (57.9,+3.4) wind -4 minrho 0.35 asp 1.25 tilt 178 rad 12.33 | k2 z 0.00@-40.2 r 0.00@+84.8 k4 z 10.03@+41.0 r 12.36@-26.3 k8 z 3.51@+7.1 r 4.40@+18.0 | axis 0
+S t 20000: D_in 292776 E_in 539.16 E_tot 546.001 rho_mid 0.97857
+  t 20000: core cells 47221, minor radius 12.0, helix phase -1.841, winding centre circle -4.00, meridional -1.00, centre (rho, z) (57.9, +3.4), D_near 246637 D_core 170742, frame shift +131.6
+P t 20400: coil 45649 c (58.7,+3.0) wind -4 minrho 0.39 asp 1.21 tilt 2 rad 12.29 | k2 z 0.00@-28.8 r 0.00@+66.4 k4 z 9.98@-44.2 r 12.40@-22.1 k8 z 3.74@+12.2 r 4.39@-22.2 | axis 0
+S t 20400: D_in 263112 E_in 610.52 E_tot 545.984 rho_mid 0.97150
+P t 20800: coil 46741 c (59.0,+2.5) wind -4 minrho 0.36 asp 1.20 tilt 172 rad 12.49 | k2 z 0.00@-18.7 r 0.00@-5.5 k4 z 10.35@-40.0 r 12.47@-16.9 k8 z 3.65@+16.9 r 4.43@-16.8 | axis 0
+S t 20800: D_in 237913 E_in 677.17 E_tot 545.976 rho_mid 0.96653
+P t 21200: coil 47064 c (58.6,+2.2) wind -4 minrho 0.32 asp 1.28 tilt 166 rad 12.52 | k2 z 0.00@-79.6 r 0.00@-88.3 k4 z 10.11@-35.7 r 12.77@-11.2 k8 z 3.57@+21.0 r 4.06@-11.1 | axis 0
+S t 21200: D_in 244041 E_in 661.00 E_tot 545.987 rho_mid 0.96980
+P t 21600: coil 47758 c (58.3,+0.5) wind -4 minrho 0.25 asp 1.31 tilt 168 rad 12.44 | k2 z 0.00@-47.6 r 0.00@-20.0 k4 z 9.78@-30.9 r 12.73@-6.9 k8 z 3.73@-18.8 r 4.43@-6.1 | axis 0
+S t 21600: D_in 271342 E_in 587.06 E_tot 545.978 rho_mid 0.97162
+P t 22000: coil 49353 c (58.4,+3.1) wind -4 minrho 0.27 asp 1.38 tilt 168 rad 12.82 | k2 z 0.00@+20.7 r 0.00@-38.0 k4 z 9.92@-26.5 r 13.11@-1.6 k8 z 3.97@-13.9 r 5.19@-1.1 | axis 0
+S t 22000: D_in 290903 E_in 533.96 E_tot 545.966 rho_mid 0.97954
+  t 22000: core cells 49353, minor radius 12.5, helix phase -0.194, winding centre circle -4.00, meridional -1.00, centre (rho, z) (58.4, +3.1), D_near 264683 D_core 184690, frame shift +146.6
+P t 22400: coil 52102 c (58.6,+2.9) wind -4 minrho 0.29 asp 1.36 tilt 175 rad 12.99 | k2 z 0.00@-89.2 r 0.00@+51.7 k4 z 9.82@-20.4 r 13.27@+2.8 k8 z 4.10@-8.6 r 5.67@+2.9 | axis 0
+S t 22400: D_in 301992 E_in 504.26 E_tot 545.967 rho_mid 0.98933
+P t 22800: coil 51960 c (58.3,+2.1) wind -4 minrho 0.27 asp 1.34 tilt 177 rad 12.83 | k2 z 0.00@+82.9 r 0.00@-61.0 k4 z 9.89@-15.0 r 12.77@+7.7 k8 z 4.40@-2.9 r 5.61@+7.8 | axis 0
+S t 22800: D_in 312211 E_in 480.67 E_tot 545.997 rho_mid 0.99327
+P t 23200: coil 49094 c (58.4,+0.9) wind -4 minrho 0.23 asp 1.45 tilt 1 rad 12.76 | k2 z 0.00@+82.0 r 0.00@-77.2 k4 z 9.15@-10.0 r 13.36@+12.3 k8 z 4.07@+2.1 r 5.57@+12.4 | axis 0
+S t 23200: D_in 328765 E_in 447.11 E_tot 545.994 rho_mid 0.98635
+P t 23600: coil 48580 c (57.9,+0.9) wind -4 minrho 0.22 asp 1.42 tilt 7 rad 12.62 | k2 z 0.00@-64.3 r 0.00@+9.0 k4 z 9.47@-4.7 r 13.12@+16.6 k8 z 3.72@+6.4 r 4.73@+16.2 | axis 0
+S t 23600: D_in 352381 E_in 383.67 E_tot 545.978 rho_mid 0.97880
+P t 24000: coil 50411 c (58.2,+3.3) wind -4 minrho 0.28 asp 1.40 tilt 15 rad 12.49 | k2 z 0.00@-44.7 r 0.00@-67.8 k4 z 9.73@+0.7 r 12.82@+20.6 k8 z 3.43@+10.4 r 4.41@+20.6 | axis 0
+S t 24000: D_in 359938 E_in 371.89 E_tot 545.964 rho_mid 0.99008
+  t 24000: core cells 50411, minor radius 12.1, helix phase +1.514, winding centre circle -4.00, meridional -1.00, centre (rho, z) (58.2, +3.3), D_near 291805 D_core 191101, frame shift +159.3
+P t 24400: coil 53714 c (58.2,+2.5) wind -4 minrho 0.27 asp 1.30 tilt 19 rad 12.55 | k2 z 0.00@-72.0 r 0.00@-61.1 k4 z 10.19@+4.8 r 12.54@+25.6 k8 z 3.22@+14.8 r 3.89@-20.1 | axis 0
+S t 24400: D_in 345588 E_in 416.12 E_tot 545.978 rho_mid 0.99208
+P t 24800: coil 54015 c (58.0,+2.1) wind -4 minrho 0.33 asp 1.17 tilt 35 rad 12.52 | k2 z 0.00@-77.6 r 0.00@+84.0 k4 z 11.09@+9.9 r 11.85@+30.5 k8 z 3.48@+19.1 r 2.95@-14.1 | axis 0
+S t 24800: D_in 325069 E_in 476.78 E_tot 546.007 rho_mid 0.99067
+P t 25200: coil 48772 c (57.9,+1.6) wind -4 minrho 0.33 asp 1.01 tilt 98 rad 12.15 | k2 z 0.00@-42.6 r 0.00@+38.6 k4 z 11.22@+13.9 r 11.11@+36.8 k8 z 3.72@-20.8 r 2.99@-8.9 | axis 0
+S t 25200: D_in 309761 E_in 510.51 E_tot 546.021 rho_mid 0.97809
+P t 25600: coil 44938 c (58.0,+1.1) wind -4 minrho 0.28 asp 1.15 tilt 158 rad 11.94 | k2 z 0.00@-40.8 r 0.00@+5.9 k4 z 10.40@+18.4 r 11.33@+41.8 k8 z 3.14@-15.2 r 4.60@-2.6 | axis 0
+S t 25600: D_in 295770 E_in 538.22 E_tot 545.995 rho_mid 0.97810
+P t 26000: coil 43937 c (57.6,+4.1) wind -4 minrho 0.29 asp 1.26 tilt 166 rad 12.14 | k2 z 0.00@-61.0 r 0.00@-69.1 k4 z 9.99@+23.2 r 11.88@-42.9 k8 z 3.81@-8.6 r 4.62@+2.4 | axis 0
+S t 26000: D_in 279186 E_in 572.69 E_tot 545.987 rho_mid 0.97132
+  t 26000: core cells 43937, minor radius 11.9, helix phase -3.038, winding centre circle -4.00, meridional -1.00, centre (rho, z) (57.6, +4.1), D_near 212989 D_core 159657, frame shift +173.2
+P t 26400: coil 42999 c (57.3,+2.2) wind -4 minrho 0.30 asp 1.32 tilt 175 rad 12.26 | k2 z 0.00@-27.5 r 0.00@+84.6 k4 z 9.42@+29.0 r 12.74@-37.6 k8 z 3.90@-3.5 r 4.24@+7.1 | axis 0
+S t 26400: D_in 261523 E_in 608.76 E_tot 545.994 rho_mid 0.96695
+P t 26800: coil 43792 c (57.5,+1.3) wind -4 minrho 0.25 asp 1.32 tilt 0 rad 12.20 | k2 z 0.00@-27.6 r 0.00@-59.2 k4 z 9.48@+34.7 r 12.53@-32.9 k8 z 3.68@+0.7 r 4.60@+12.0 | axis 0
+S t 26800: D_in 253694 E_in 620.81 E_tot 545.972 rho_mid 0.96786
+P t 27200: coil 48171 c (58.0,+2.0) wind -4 minrho 0.28 asp 1.32 tilt 9 rad 12.25 | k2 z 0.00@-87.2 r 0.00@+28.0 k4 z 9.63@+40.6 r 12.48@-28.4 k8 z 3.47@+5.1 r 4.43@+16.7 | axis 0
+S t 27200: D_in 252071 E_in 614.84 E_tot 545.974 rho_mid 0.97421
+P t 27600: coil 47125 c (58.1,+0.4) wind -4 minrho 0.29 asp 1.26 tilt 18 rad 12.12 | k2 z 0.00@-41.2 r 0.00@-46.0 k4 z 10.11@-44.3 r 11.96@-23.6 k8 z 3.21@+10.4 r 4.16@+20.8 | axis 0
+S t 27600: D_in 252610 E_in 621.53 E_tot 545.998 rho_mid 0.97776
+P t 28000: coil 47005 c (58.0,+3.1) wind -4 minrho 0.33 asp 1.11 tilt 29 rad 11.97 | k2 z 0.00@-31.4 r 0.00@+49.4 k4 z 10.69@-39.9 r 11.34@-18.5 k8 z 3.46@+15.7 r 2.98@-19.0 | axis 0
+S t 28000: D_in 268074 E_in 584.54 E_tot 545.983 rho_mid 0.97234
+  t 28000: core cells 47005, minor radius 11.7, helix phase -1.253, winding centre circle -4.00, meridional -1.00, centre (rho, z) (58.0, +3.1), D_near 233587 D_core 175086, frame shift +188.2
+P t 28400: coil 46438 c (58.1,+2.8) wind -4 minrho 0.34 asp 1.04 tilt 7 rad 11.79 | k2 z 0.00@-47.7 r 0.00@-51.3 k4 z 10.63@-35.6 r 11.09@-13.4 k8 z 3.28@+20.1 r 2.95@-14.2 | axis 0
+S t 28400: D_in 280192 E_in 567.58 E_tot 545.968 rho_mid 0.97288
+P t 28800: coil 49527 c (58.4,+1.8) wind -4 minrho 0.31 asp 1.13 tilt 145 rad 12.08 | k2 z 0.00@-44.5 r 0.00@-87.5 k4 z 10.86@-32.1 r 11.33@-8.1 k8 z 3.24@-20.6 r 3.26@-7.1 | axis 0
+S t 28800: D_in 302567 E_in 516.54 E_tot 545.973 rho_mid 0.97131
+P t 29200: coil 51295 c (58.8,+1.1) wind -4 minrho 0.29 asp 1.23 tilt 154 rad 12.34 | k2 z 0.00@-56.5 r 0.00@-85.1 k4 z 10.53@-27.1 r 11.86@-2.9 k8 z 3.47@-14.4 r 4.04@-2.1 | axis 0
+S t 29200: D_in 331028 E_in 443.73 E_tot 545.984 rho_mid 0.98793
+P t 29600: coil 50755 c (58.5,+1.4) wind -4 minrho 0.26 asp 1.38 tilt 160 rad 12.48 | k2 z 0.00@+37.4 r 0.00@-0.5 k4 z 9.77@-22.6 r 12.74@+2.7 k8 z 3.01@-10.9 r 4.81@+2.1 | axis 0
+S t 29600: D_in 351837 E_in 393.65 E_tot 545.966 rho_mid 0.99703
+P t 30000: coil 52359 c (58.1,+3.8) wind -4 minrho 0.20 asp 1.49 tilt 166 rad 12.64 | k2 z 0.00@-52.2 r 0.00@+88.6 k4 z 9.17@-17.4 r 13.16@+7.5 k8 z 3.59@-6.1 r 5.29@+6.5 | axis 0
+S t 30000: D_in 354243 E_in 387.80 E_tot 545.968 rho_mid 1.00357
+  t 30000: core cells 52359, minor radius 12.2, helix phase +0.455, winding centre circle -4.00, meridional -1.00, centre (rho, z) (58.1, +3.8), D_near 310689 D_core 200499, frame shift +202.1
+P t 30400: coil 53740 c (58.3,+2.3) wind -4 minrho 0.21 asp 1.54 tilt 174 rad 12.68 | k2 z 0.00@+18.7 r 0.00@+31.9 k4 z 8.68@-12.0 r 13.27@+11.7 k8 z 4.01@-0.7 r 5.77@+10.7 | axis 0
+S t 30400: D_in 346709 E_in 400.79 E_tot 546.005 rho_mid 1.00117
+P t 30800: coil 48969 c (58.7,+2.4) wind -4 minrho 0.18 asp 1.55 tilt 0 rad 12.51 | k2 z 0.00@-66.9 r 0.00@+24.7 k4 z 8.67@-6.4 r 12.84@+16.1 k8 z 4.34@+4.5 r 5.95@+15.7 | axis 0
+S t 30800: D_in 335197 E_in 426.77 E_tot 546.009 rho_mid 0.99352
+P t 31200: coil 50055 c (58.7,+2.0) wind -4 minrho 0.22 asp 1.56 tilt 10 rad 12.26 | k2 z 0.00@+48.5 r 0.00@+44.0 k4 z 8.42@-0.4 r 12.81@+19.8 k8 z 4.25@+9.1 r 5.40@+19.2 | axis 0
+S t 31200: D_in 317450 E_in 466.51 E_tot 545.982 rho_mid 0.98340
+P t 31600: coil 48121 c (57.6,+0.9) wind -4 minrho 0.19 asp 1.48 tilt 13 rad 11.92 | k2 z 0.00@+64.7 r 0.00@+84.5 k4 z 8.61@+4.1 r 12.57@+24.3 k8 z 3.43@+13.7 r 3.82@-20.7 | axis 0
+S t 31600: D_in 292439 E_in 524.70 E_tot 545.993 rho_mid 0.97131
+P t 32000: coil 47548 c (58.2,+4.1) wind -4 minrho 0.21 asp 1.39 tilt 21 rad 11.83 | k2 z 0.00@+57.2 r 0.00@-36.3 k4 z 9.29@+9.0 r 12.04@+28.3 k8 z 3.32@+18.5 r 3.90@-16.2 | axis 0
+S t 32000: D_in 274590 E_in 570.67 E_tot 545.989 rho_mid 0.96565
+  t 32000: core cells 47548, minor radius 11.4, helix phase +2.076, winding centre circle -4.00, meridional -1.00, centre (rho, z) (58.2, +4.1), D_near 241508 D_core 181927, frame shift +214.8
+P t 32400: coil 46544 c (58.5,+2.1) wind -4 minrho 0.32 asp 1.26 tilt 25 rad 11.84 | k2 z 0.00@-44.4 r 0.00@-10.3 k4 z 9.95@+13.3 r 11.44@+33.3 k8 z 3.65@-20.3 r 4.40@-10.2 | axis 0
+S t 32400: D_in 279282 E_in 551.88 E_tot 545.982 rho_mid 0.96428
+P t 32800: coil 46002 c (58.2,+2.1) wind -4 minrho 0.28 asp 1.17 tilt 24 rad 11.60 | k2 z 0.00@-56.8 r 0.00@-12.8 k4 z 9.90@+18.0 r 11.23@+39.1 k8 z 3.47@-15.4 r 3.59@-4.9 | axis 0
+S t 32800: D_in 280042 E_in 563.09 E_tot 545.996 rho_mid 0.97192
+P t 33200: coil 46474 c (57.6,+1.9) wind -4 minrho 0.29 asp 1.09 tilt 11 rad 11.65 | k2 z 0.00@-32.4 r 0.00@-8.1 k4 z 10.14@+22.3 r 11.13@+44.6 k8 z 3.33@-10.3 r 3.50@+0.3 | axis 0
+S t 33200: D_in 282263 E_in 551.52 E_tot 545.973 rho_mid 0.98008
+P t 33600: coil 45701 c (57.1,+0.1) wind -4 minrho 0.32 asp 1.10 tilt 7 rad 11.74 | k2 z 0.00@+17.7 r 0.00@+47.0 k4 z 10.23@+28.0 r 11.27@-40.0 k8 z 3.17@-4.9 r 3.48@+6.4 | axis 0
+S t 33600: D_in 275623 E_in 574.00 E_tot 546.001 rho_mid 0.98029
+P t 34000: coil 43975 c (57.4,+2.6) wind -4 minrho 0.26 asp 1.12 tilt 2 rad 11.63 | k2 z 0.00@-44.0 r 0.00@+18.3 k4 z 9.98@+33.0 r 11.24@-34.5 k8 z 3.22@-0.5 r 3.77@+11.8 | axis 0
+S t 34000: D_in 284112 E_in 550.40 E_tot 545.998 rho_mid 0.97131
+  t 34000: core cells 43975, minor radius 11.3, helix phase -2.407, winding centre circle -4.00, meridional -1.00, centre (rho, z) (57.4, +2.6), D_near 231589 D_core 166681, frame shift +230.9
+P t 34400: coil 44376 c (57.6,+3.4) wind -4 minrho 0.26 asp 1.11 tilt 4 rad 11.55 | k2 z 0.00@+21.2 r 0.00@-44.2 k4 z 9.95@+38.1 r 11.12@-29.1 k8 z 2.79@+3.4 r 3.88@+15.7 | axis 0
+S t 34400: D_in 295367 E_in 519.09 E_tot 545.976 rho_mid 0.97223
+P t 34800: coil 46693 c (57.7,+1.4) wind -4 minrho 0.33 asp 1.04 tilt 17 rad 11.69 | k2 z 0.00@-54.9 r 0.00@-15.4 k4 z 10.58@+43.0 r 10.83@-24.9 k8 z 3.08@+9.6 r 3.25@+19.7 | axis 0
+S t 34800: D_in 291305 E_in 534.87 E_tot 545.987 rho_mid 0.97328
+P t 35200: coil 47022 c (58.0,+1.7) wind -4 minrho 0.30 asp 1.08 tilt 120 rad 11.89 | k2 z 0.00@-42.1 r 0.00@-6.4 k4 z 11.18@-42.9 r 10.67@-19.1 k8 z 3.75@+15.1 r 2.58@-19.5 | axis 0
+S t 35200: D_in 282503 E_in 560.07 E_tot 545.973 rho_mid 0.98151
+P t 35600: coil 51960 c (57.9,+1.1) wind -4 minrho 0.25 asp 1.22 tilt 132 rad 12.10 | k2 z 0.00@-7.0 r 0.00@+39.3 k4 z 11.24@-38.7 r 10.92@-13.4 k8 z 3.47@+19.4 r 2.39@-12.0 | axis 0
+S t 35600: D_in 281787 E_in 562.73 E_tot 545.961 rho_mid 0.98158
+P t 36000: coil 50158 c (57.9,+4.0) wind -4 minrho 0.20 asp 1.35 tilt 146 rad 12.07 | k2 z 0.00@+13.7 r 0.00@-39.5 k4 z 10.35@-34.1 r 11.58@-8.5 k8 z 2.78@-21.8 r 3.05@-6.5 | axis 0
+S t 36000: D_in 286827 E_in 551.77 E_tot 545.998 rho_mid 0.98486
+  t 36000: core cells 50158, minor radius 11.7, helix phase -0.700, winding centre circle -4.00, meridional -1.00, centre (rho, z) (57.9, +4.0), D_near 271317 D_core 190444, frame shift +243.6
+P t 36400: coil 49960 c (58.8,+1.9) wind -4 minrho 0.15 asp 1.60 tilt 152 rad 12.36 | k2 z 0.00@+76.6 r 0.00@-87.9 k4 z 9.75@-31.2 r 12.45@-3.0 k8 z 3.15@-16.9 r 4.40@-2.0 | axis 0
+S t 36400: D_in 307885 E_in 487.16 E_tot 545.988 rho_mid 0.98979
+P t 36800: coil 49756 c (59.1,+2.9) wind -4 minrho 0.13 asp 1.80 tilt 163 rad 12.86 | k2 z 0.00@+1.6 r 0.00@+78.0 k4 z 8.54@-26.2 r 13.96@+1.2 k8 z 2.74@-12.3 r 5.73@+0.2 | axis 0
+S t 36800: D_in 323526 E_in 448.55 E_tot 545.975 rho_mid 0.98623
+P t 37200: coil 51104 c (58.4,+1.0) wind -4 minrho 0.06 asp 1.85 tilt 171 rad 12.95 | k2 z 0.00@-18.6 r 0.00@+88.7 k4 z 7.98@-20.2 r 14.27@+5.0 k8 z 2.82@-7.0 r 5.78@+3.8 | axis 0
+S t 37200: D_in 328830 E_in 444.73 E_tot 545.978 rho_mid 0.98816
+P t 37600: coil 52107 c (58.8,+1.1) wind -4 minrho 0.14 asp 1.92 tilt 180 rad 13.02 | k2 z 0.00@-10.0 r 0.00@-42.5 k4 z 7.53@-13.5 r 14.43@+8.5 k8 z 3.29@-2.3 r 6.11@+8.5 | axis 0
+S t 37600: D_in 336333 E_in 426.73 E_tot 545.963 rho_mid 0.98917
+P t 38000: coil 54716 c (58.9,+4.2) wind -4 minrho 0.14 asp 1.86 tilt 7 rad 12.84 | k2 z 0.00@+17.4 r 0.00@+67.5 k4 z 7.78@-7.6 r 13.66@+12.6 k8 z 3.90@+0.7 r 5.72@+11.4 | axis 0
+S t 38000: D_in 344704 E_in 413.02 E_tot 545.994 rho_mid 0.99466
+  t 38000: core cells 54716, minor radius 12.2, helix phase +0.935, winding centre circle -4.00, meridional -1.00, centre (rho, z) (58.9, +4.2), D_near 303051 D_core 203681, frame shift +257.5
+P t 38400: coil 50481 c (58.6,+2.1) wind -4 minrho 0.13 asp 1.81 tilt 17 rad 12.57 | k2 z 0.00@-28.5 r 0.00@-52.4 k4 z 8.45@-1.6 r 12.96@+16.3 k8 z 4.07@+5.8 r 5.35@+15.8 | axis 0
+S t 38400: D_in 345506 E_in 415.92 E_tot 545.993 rho_mid 0.98393
+P t 38800: coil 51598 c (58.1,+2.4) wind -4 minrho 0.15 asp 1.76 tilt 27 rad 12.21 | k2 z 0.00@-45.3 r 0.00@-48.4 k4 z 9.06@+4.1 r 12.49@+20.1 k8 z 3.61@+10.8 r 4.44@+19.4 | axis 0
+S t 38800: D_in 329832 E_in 458.07 E_tot 546.000 rho_mid 0.97918
+P t 39200: coil 49447 c (58.2,+1.1) wind -4 minrho 0.17 asp 1.60 tilt 36 rad 11.80 | k2 z 0.00@-83.4 r 0.00@-79.4 k4 z 9.94@+8.2 r 11.27@+24.1 k8 z 3.69@+15.7 r 3.96@-21.1 | axis 0
+S t 39200: D_in 305835 E_in 507.95 E_tot 546.019 rho_mid 0.97420
+P t 39600: coil 46653 c (57.7,+0.6) wind -4 minrho 0.14 asp 1.46 tilt 47 rad 11.31 | k2 z 0.00@-84.0 r 0.00@-24.4 k4 z 10.39@+12.2 r 10.21@+29.1 k8 z 3.01@+19.9 r 2.88@-16.1 | axis 0
+S t 39600: D_in 282122 E_in 560.79 E_tot 545.988 rho_mid 0.96534
+P t 40000: coil 45152 c (57.8,+3.0) wind -4 minrho 0.20 asp 1.25 tilt 67 rad 10.98 | k2 z 0.00@+23.0 r 0.00@-14.0 k4 z 10.59@+15.3 r 9.23@+35.4 k8 z 3.20@-19.0 r 2.73@-8.1 | axis 0
+S t 40000: D_in 276476 E_in 559.92 E_tot 545.993 rho_mid 0.96785
+  t 40000: core cells 45152, minor radius 10.6, helix phase +2.547, winding centre circle -4.00, meridional -1.00, centre (rho, z) (57.8, +3.0), D_near 216334 D_core 164860, frame shift +272.5
+  40000 ticks in 6844s
+  slosh series -> /home/p/git/eq/exp/2026/10/08/refine/slosh_prof_pp_springbox_N4_S1_q1_a14.14_r56.57_xi5.515_m0.8_P312_z0_wxi_rc_par_f141.log

@@ -1,0 +1,59 @@
+CONTEXT: testing whether giving psi a u-coupled advective term (built by
+direct structural analogy to SubstrateLattice.step_lam_force's gravity
+flux, per the "missing terms for a genuine leapfrogging EM wave"
+discussion, `now` 2026-09-06 night) lets a curl-full bump drift toward
+higher u. Design: a STATIC u=U_SLOPE*z background with fixed_u=True
+everywhere (no wave, cheapest possible test of the mechanism's core
+claim), small toroidal bump, compare eta=0 (control) vs eta=1 (test),
+3000 steps each (exp/2026/09/06/23_10_psi_advection_by_u_gradient/).
+
+WHAT FAILED: the eta=0 CONTROL also blew up. psi_rms grew from 3.3e-5 to
+141.8 and phi_rms from 0.021 to 20.2 over 3000 steps, with NO advection
+term active at all (eta=0 disables advect_psi_like_lam entirely) -- pure
+baseline (phi,psi) circulation coupling, the same one already validated
+as bounded/oscillatory in probe_long_energy_bound.py/
+probe_long_ring_bound.py. The macro circulation centroid also drifted
+substantially in the control (+9.2 over the run) despite zero advection
+term -- meaning this run's own "control" was never a valid baseline.
+
+ROOT CAUSE: fixed_u=True with a domain-spanning linear u=U_SLOPE*z
+background removes the (u,phi) system's own restoring mechanism. The
+validated (phi,psi) boundedness relies on u responding back to phi
+(that's the whole reason plain step() is a genuine bounded oscillator,
+not just phi accumulating drive forever) -- freezing u eliminates that
+feedback entirely. With u frozen and nonzero-gradient everywhere,
+dphi_base = -dt*W*(u_nb-u) is a CONSTANT nonzero forcing every step
+(u_nb-u never changes, since u never updates), so phi grows LINEARLY in
+time unconditionally (confirmed: phi_rms trace is consistent with linear
+growth in t, not exponential), and psi (fed by circ_D(phi), itself
+growing) grows faster still (roughly quadratic in t, consistent with
+integrating a linearly-growing source). This has nothing to do with the
+new eta-driven psi-advection term -- it happens with eta=0 too.
+
+Note, NOT invalidating the underlying gravity mechanism: step_lam_force
+itself is normally used against a REAL, bounded, self-consistently
+evolving u source (a point/proton-like field via ordinary step(), not an
+artificially frozen infinite linear ramp) -- this failure is specific to
+this test's IC choice, not to step_lam_force's own established use in
+probe_moat_translation.py/probe_lam_sink.py etc.
+
+INCONCLUSIVE, not decided either way: eta=1 DID diverge much faster/
+further than eta=0 (e.g. step 2000: centroid_z=-1.82 at eta=0 vs +26.04
+at eta=1) -- a large, real difference, so the eta term is clearly doing
+something nontrivial. But since the eta=0 "control" itself is not a
+valid bounded baseline, this difference cannot be cleanly attributed to
+"genuine advection" versus "the eta term accelerating the same underlying
+unbounded-forcing runaway." Not evidence for or against the mechanism.
+
+LESSON: when testing a NEW term against a modified baseline (here,
+fixed_u for convenience), re-verify the BASELINE (eta/new-term OFF)
+reproduces the previously-validated bounded behavior before trusting any
+comparison against the modified case -- don't assume "it worked before
+under different conditions" transfers to a new IC/BC choice.
+
+NOT YET DONE: redesign with u NOT frozen (let it evolve normally via the
+real symplectic step, seeded from a bounded, localized source -- e.g. a
+real static-point-charge-like u profile that's finite in extent, not an
+infinite linear ramp) so the baseline (eta=0) genuinely reproduces the
+already-validated bounded (phi,psi) behavior, THEN re-test whether eta>0
+adds a real, attributable drift on top of that valid baseline.

@@ -1,0 +1,23 @@
+int g dV = 1.0000000000000002
+w=5.736 period=1.095 window=[4.79,6.98] (2 periods) N=347941
+  step 400/2724 t=1.03 |u|max=6.22e-03 (8s)
+  step 800/2724 t=2.05 |u|max=7.02e-03 (17s)
+  step 1200/2724 t=3.08 |u|max=8.46e-03 (26s)
+  step 1600/2724 t=4.10 |u|max=1.04e-02 (35s)
+  step 2000/2724 t=5.13 |u|max=1.25e-02 (45s)
+  step 2400/2724 t=6.15 |u|max=1.25e-02 (56s)
+
+measurements=107  P_theory=1.7924e-02  source work -<J.E> / P_th = 0.425
+r= 5.0 P/P_th=0.388  r^2*S_eq=8.3250e-04  sin^2 fit amp/theory=0.386  pattern resid=0.022  pole/eq=+0.064
+      S(th)/S_th_eq: +0.025 +0.107 +0.221 +0.340 +0.389 +0.340 +0.221 +0.107 +0.025
+      eq. azimuth S/mean: 1.001 0.996 1.004 0.996 1.004 0.996 1.004 1.000  spread (max-min)/mean=0.008
+r= 6.5 P/P_th=0.387  r^2*S_eq=8.3521e-04  sin^2 fit amp/theory=0.385  pattern resid=0.023  pole/eq=+0.067
+      S(th)/S_th_eq: +0.026 +0.105 +0.219 +0.339 +0.390 +0.339 +0.219 +0.105 +0.026
+      eq. azimuth S/mean: 1.001 1.001 0.999 1.001 0.999 1.001 0.999 0.999  spread (max-min)/mean=0.002
+r= 8.0 P/P_th=0.389  r^2*S_eq=8.4518e-04  sin^2 fit amp/theory=0.388  pattern resid=0.020  pole/eq=+0.063
+      S(th)/S_th_eq: +0.025 +0.103 +0.221 +0.341 +0.395 +0.341 +0.221 +0.103 +0.025
+      eq. azimuth S/mean: 0.999 0.999 1.001 0.999 1.001 0.999 1.001 1.001  spread (max-min)/mean=0.002
+r= 9.5 P/P_th=0.386  r^2*S_eq=8.4364e-04  sin^2 fit amp/theory=0.385  pattern resid=0.022  pole/eq=+0.061
+      S(th)/S_th_eq: +0.024 +0.104 +0.219 +0.337 +0.394 +0.337 +0.219 +0.104 +0.024
+      eq. azimuth S/mean: 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000  spread (max-min)/mean=0.000
+equatorial slope d log S / d log r = -1.976 (theory -2)

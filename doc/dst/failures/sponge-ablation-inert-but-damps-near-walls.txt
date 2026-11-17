@@ -1,0 +1,23 @@
+CONTEXT: Before running the 2026-08-20 EM chirality verifiers, checked whether
+the `DampedLattice` sponge BC (carried over from the prior day's traveling-wave
+reproducer) mattered for these new single-wave-period tests
+(exp/2026/08/20/17_21_sponge_ablation/).
+
+WHAT FAILED: The sponge BC is provably inert for the metric it was validated
+against (traveling-wave correlation: Δcorr<2e-3 with the sponge removed
+entirely) but it DOES visibly damp the field near the domain walls within a
+single wave period. sponge_ablation.png shows the sponge zone flattening to
+~0 while the true IC tail there is ~0.3 amplitude — a large, visible effect
+the correlation metric simply didn't register.
+
+ROOT CAUSE: The sponge was reused unmodified from a different, longer-running
+test where its near-wall damping was presumably harmless relative to that
+test's timescale and observable. It was carried over into a new,
+shorter/single-period test without re-checking that its side effects were
+still negligible for what THIS test measures.
+
+LESSON: A BC or mechanism shown "inert" for one summary statistic is not
+inert in general — check its effect on the raw field, not just whatever
+scalar metric it was validated against. For any future single-period
+dispersion-style test, drop this sponge BC entirely rather than carrying it
+over by default.

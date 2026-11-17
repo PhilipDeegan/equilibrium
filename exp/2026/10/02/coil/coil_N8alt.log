@@ -1,0 +1,4 @@
+coil_N8alt_a10_r30_xi3.9_m0.5_R72: N_cells=2030741 build+seed 79s; g 0.0219 xi 3.90 omega0 0.5236; single-loop GP speed 0.0802 -> coil rotation 0.00267 rad/tick (294 ticks per loop spacing); loop spacing on the centre circle 23.6 cells
+  t 0: core cells 14272, coil phase -0.0000, minor radii [10.1, 10.1, 10.1, 10.1, 10.1, 10.1, 10.1, 10.1], windings [1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0, -1.0]
+  t 300: core cells 11067, coil phase +0.3921, minor radii [27.5, 20.6, 27.3, 20.6, 27.3, 20.6, 27.3, 20.6], windings [-0.0, 0.0, 0.0, 0.0, 0.0, -0.0, 0.0, 0.0]
+  1200 ticks in 1178s; coil rotation +0.00054 rad/tick (single-loop GP / r0: 0.00267)

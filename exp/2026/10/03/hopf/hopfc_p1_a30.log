@@ -1,0 +1,6 @@
+hopfc_p1_q1_a30_k4_xi3.9_m0.8_R140: N_cells=14930859 build+seed 10s; g 0.0082; f(r_inner 105) = 0.0208
+  t 0: rho min 1.0000 max 1.0000 std 2.45e-16; n_z min -1.000, cells n_z<0 151768, n_z<-0.5 62908 at rho_cyl 29.8 z -0.0; loop turns +1.00
+  t 50: rho min 0.8514 max 1.1979 std 1.13e-02; n_z min -1.000, cells n_z<0 151670, n_z<-0.5 63114 at rho_cyl 29.9 z -0.4; loop turns +1.00
+  t 100: rho min 0.7507 max 1.4014 std 2.25e-02; n_z min -1.000, cells n_z<0 153138, n_z<-0.5 63578 at rho_cyl 30.0 z -1.0; loop turns +1.00
+  t 150: rho min 0.6806 max 1.5646 std 3.27e-02; n_z min -1.000, cells n_z<0 157354, n_z<-0.5 65280 at rho_cyl 30.1 z -1.7; loop turns +1.00
+  t 200: rho min 0.6312 max 1.6936 std 4.12e-02; n_z min -1.000, cells n_z<0 163128, n_z<-0.5 67432 at rho_cyl 30.0 z -2.4; loop turns +1.00

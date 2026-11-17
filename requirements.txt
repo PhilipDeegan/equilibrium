@@ -1,0 +1,14 @@
+numpy
+black
+ruff
+autoflake
+isort
+pylint
+pydantic
+pylint-pydantic
+ddt
+pyyaml
+matplotlib
+scipy
+astropy
+jplephem

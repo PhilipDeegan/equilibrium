@@ -1,0 +1,40 @@
+Thu 13 Aug 2026 18:04:43 CEST
+=== round: N_STEPS=30  L1R60 resuming from /bk/l1_wider_margin_active_stepped/step_300_final.h5  uniformR180 resuming from /bk/uniform_r180_active_stepped/step_300_final.h5 ===
+Thu 13 Aug 2026 18:12:26 CEST
+=== round done: L1R60 rc=0  uniformR180 rc=0 ===
+Thu 13 Aug 2026 18:17:31 CEST
+=== round: N_STEPS=30  L1R60 resuming from /bk/l1_wider_margin_active_stepped/step_330_final.h5  uniformR180 resuming from /bk/uniform_r180_active_stepped/step_330_final.h5 ===
+Thu 13 Aug 2026 18:25:19 CEST
+=== round done: L1R60 rc=0  uniformR180 rc=0 ===
+Thu 13 Aug 2026 18:27:34 CEST
+=== round: N_STEPS=30  L1R60 resuming from /bk/l1_wider_margin_active_stepped/step_360_final.h5  uniformR180 resuming from /bk/uniform_r180_active_stepped/step_360_final.h5 ===
+Thu 13 Aug 2026 18:35:17 CEST
+=== round done: L1R60 rc=0  uniformR180 rc=0 ===
+Thu 13 Aug 2026 18:38:05 CEST
+=== round: N_STEPS=30  L1R60 resuming from /bk/l1_wider_margin_active_stepped/step_390_final.h5  uniformR180 resuming from /bk/uniform_r180_active_stepped/step_390_final.h5 ===
+Thu 13 Aug 2026 18:45:47 CEST
+=== round done: L1R60 rc=0  uniformR180 rc=0 ===
+Thu 13 Aug 2026 18:47:08 CEST
+=== round: N_STEPS=30  L1R60 resuming from /bk/l1_wider_margin_active_stepped/step_420_final.h5  uniformR180 resuming from /bk/uniform_r180_active_stepped/step_420_final.h5 ===
+Thu 13 Aug 2026 18:54:47 CEST
+=== round done: L1R60 rc=0  uniformR180 rc=0 ===
+Thu 13 Aug 2026 18:56:53 CEST
+=== round: N_STEPS=30  L1R60 resuming from /bk/l1_wider_margin_active_stepped/step_450_final.h5  uniformR180 resuming from /bk/uniform_r180_active_stepped/step_450_final.h5 ===
+Thu 13 Aug 2026 19:04:32 CEST
+=== round done: L1R60 rc=0  uniformR180 rc=0 ===
+Thu 13 Aug 2026 19:07:09 CEST
+=== round: N_STEPS=30  L1R60 resuming from /bk/l1_wider_margin_active_stepped/step_480_final.h5  uniformR180 resuming from /bk/uniform_r180_active_stepped/step_480_final.h5 ===
+Thu 13 Aug 2026 19:14:47 CEST
+=== round done: L1R60 rc=0  uniformR180 rc=0 ===
+Thu 13 Aug 2026 19:19:13 CEST
+=== round: N_STEPS=30  L1R60 resuming from /bk/l1_wider_margin_active_stepped/step_510_final.h5  uniformR180 resuming from /bk/uniform_r180_active_stepped/step_510_final.h5 ===
+Thu 13 Aug 2026 19:27:02 CEST
+=== round done: L1R60 rc=0  uniformR180 rc=0 ===
+removed '/bk/l1_wider_margin_active_stepped/step_480_final.h5'
+removed '/bk/uniform_r180_active_stepped/step_480_final.h5'
+Thu 13 Aug 2026 19:34:56 CEST
+=== round: N_STEPS=30  L1R60 resuming from /bk/l1_wider_margin_active_stepped/step_540_final.h5  uniformR180 resuming from /bk/uniform_r180_active_stepped/step_540_final.h5 ===
+Thu 13 Aug 2026 19:42:37 CEST
+=== round done: L1R60 rc=0  uniformR180 rc=0 ===
+removed '/bk/l1_wider_margin_active_stepped/step_510_final.h5'
+removed '/bk/uniform_r180_active_stepped/step_510_final.h5'

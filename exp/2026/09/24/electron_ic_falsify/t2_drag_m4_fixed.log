@@ -1,0 +1,33 @@
+arm=drag R=70.0 R0=35.0 A=20.0 m=4 N=1867369 tube=359076 dt=0.00513 steps=6000 t_end=30.8 kappa=1.0 tau=1.0 build=5s
+  step     0 t=  0.00 E/E0=1.00000 Enear/E0=1.00000 <u>tube=-4.918e-09 <u>ext=+0.000e+00 u_mode(c,s)=(+0.297,-0.000) Q[-0.000e+00 -0.000e+00 -0.000e+00] lam_max=0.000 <lam>tube=0.000 wall=5s
+  step   200 t=  1.03 E/E0=1.00011 Enear/E0=1.00011 <u>tube=-3.835e-06 <u>ext=-1.002e-07 u_mode(c,s)=(+0.272,+0.126) Q[-2.278e+00 -1.794e-04 -4.241e-12] lam_max=3.412 <lam>tube=0.299 wall=81s
+  step   400 t=  2.05 E/E0=1.00014 Enear/E0=0.99933 <u>tube=-1.840e-05 <u>ext=+2.889e-07 u_mode(c,s)=(+0.196,+0.198) Q[+1.953e+00 -1.084e+00 -4.937e-04] lam_max=4.673 <lam>tube=0.420 wall=158s
+  step   600 t=  3.08 E/E0=1.00012 Enear/E0=0.99064 <u>tube=-2.973e-05 <u>ext=+6.707e-06 u_mode(c,s)=(+0.085,+0.221) Q[-9.548e-01 -2.062e+00 -1.251e+00] lam_max=5.185 <lam>tube=0.475 wall=234s
+  step   800 t=  4.10 E/E0=1.00009 Enear/E0=0.97232 <u>tube=-2.865e-05 <u>ext=+1.539e-05 u_mode(c,s)=(-0.025,+0.202) Q[-9.874e-02 -1.252e+00 +5.159e+00] lam_max=5.455 <lam>tube=0.499 wall=308s
+  step  1000 t=  5.13 E/E0=1.00008 Enear/E0=0.95413 <u>tube=-1.966e-05 <u>ext=+1.219e-05 u_mode(c,s)=(-0.112,+0.158) Q[+5.062e-01 -9.490e-01 +2.488e+00] lam_max=5.701 <lam>tube=0.505 wall=381s
+  step  1200 t=  6.15 E/E0=1.00008 Enear/E0=0.94009 <u>tube=+2.716e-07 <u>ext=+6.198e-06 u_mode(c,s)=(-0.166,+0.101) Q[+2.390e+00 +2.650e+00 -7.960e+00] lam_max=5.943 <lam>tube=0.502 wall=458s
+  step  1400 t=  7.18 E/E0=1.00009 Enear/E0=0.92926 <u>tube=+1.854e-05 <u>ext=+3.355e-05 u_mode(c,s)=(-0.186,+0.043) Q[+1.053e+00 -1.123e+01 +4.558e+00] lam_max=6.248 <lam>tube=0.496 wall=530s
+  step  1600 t=  8.21 E/E0=1.00011 Enear/E0=0.92039 <u>tube=+2.699e-05 <u>ext=+6.098e-05 u_mode(c,s)=(-0.177,-0.011) Q[-1.147e+01 +1.667e-01 +1.054e+01] lam_max=6.619 <lam>tube=0.491 wall=619s
+  step  1800 t=  9.23 E/E0=1.00013 Enear/E0=0.91311 <u>tube=+2.364e-05 <u>ext=+2.368e-05 u_mode(c,s)=(-0.148,-0.057) Q[+3.789e+00 +6.344e+00 +5.383e+00] lam_max=7.145 <lam>tube=0.486 wall=693s
+  step  2000 t= 10.26 E/E0=1.00015 Enear/E0=0.90827 <u>tube=+3.294e-05 <u>ext=-2.562e-05 u_mode(c,s)=(-0.106,-0.093) Q[+6.572e+00 +6.800e-01 -3.782e+00] lam_max=7.794 <lam>tube=0.480 wall=767s
+  step  2200 t= 11.28 E/E0=1.00017 Enear/E0=0.90623 <u>tube=+3.230e-05 <u>ext=-5.175e-05 u_mode(c,s)=(-0.059,-0.116) Q[+3.363e+00 -5.668e+00 -5.452e+00] lam_max=8.712 <lam>tube=0.475 wall=851s
+  step  2400 t= 12.31 E/E0=1.00020 Enear/E0=0.90609 <u>tube=+3.686e-05 <u>ext=-6.120e-05 u_mode(c,s)=(-0.016,-0.123) Q[+1.516e+00 +2.708e+00 -3.405e+00] lam_max=9.824 <lam>tube=0.473 wall=899s
+  step  2600 t= 13.33 E/E0=1.00023 Enear/E0=0.90689 <u>tube=+1.647e-05 <u>ext=-5.951e-05 u_mode(c,s)=(+0.015,-0.115) Q[+3.070e+00 -1.818e+00 +2.523e+00] lam_max=11.068 <lam>tube=0.473 wall=948s
+  step  2800 t= 14.36 E/E0=1.00028 Enear/E0=0.90793 <u>tube=+1.826e-05 <u>ext=-5.685e-05 u_mode(c,s)=(+0.030,-0.095) Q[-4.138e+00 -2.268e+00 +4.625e-01] lam_max=12.084 <lam>tube=0.478 wall=999s
+  step  3000 t= 15.38 E/E0=1.00034 Enear/E0=0.90882 <u>tube=-1.825e-05 <u>ext=-6.072e-05 u_mode(c,s)=(+0.029,-0.066) Q[-4.016e+00 -6.862e+00 -1.460e+00] lam_max=13.193 <lam>tube=0.486 wall=1050s
+  step  3200 t= 16.41 E/E0=1.00037 Enear/E0=0.90961 <u>tube=-4.406e-06 <u>ext=-4.154e-05 u_mode(c,s)=(+0.016,-0.034) Q[+1.755e+01 -4.373e-02 -1.203e+00] lam_max=13.411 <lam>tube=0.497 wall=1101s
+  step  3400 t= 17.44 E/E0=1.00037 Enear/E0=0.91082 <u>tube=+2.568e-05 <u>ext=+8.016e-06 u_mode(c,s)=(-0.003,-0.004) Q[-2.971e+01 +5.602e+00 +5.809e+00] lam_max=13.437 <lam>tube=0.508 wall=1152s
+  step  3600 t= 18.46 E/E0=1.00041 Enear/E0=0.91346 <u>tube=-1.337e-04 <u>ext=+4.894e-06 u_mode(c,s)=(-0.021,+0.019) Q[+3.537e+01 -2.364e+01 +4.179e+00] lam_max=16.016 <lam>tube=0.519 wall=1204s
+  step  3800 t= 19.49 E/E0=1.00043 Enear/E0=0.91743 <u>tube=+6.864e-05 <u>ext=+7.124e-05 u_mode(c,s)=(-0.034,+0.031) Q[-2.954e+01 +3.761e+01 -5.266e+00] lam_max=17.309 <lam>tube=0.532 wall=1255s
+  step  4000 t= 20.51 E/E0=1.00045 Enear/E0=0.92205 <u>tube=-3.206e-05 <u>ext=+9.335e-05 u_mode(c,s)=(-0.036,+0.032) Q[+1.630e+01 -4.218e+01 +2.000e+01] lam_max=22.701 <lam>tube=0.540 wall=1302s
+  step  4200 t= 21.54 E/E0=1.00046 Enear/E0=0.92702 <u>tube=-1.794e-04 <u>ext=+1.101e-05 u_mode(c,s)=(-0.027,+0.024) Q[+2.441e+01 -3.780e+00 +3.392e+00] lam_max=27.875 <lam>tube=0.543 wall=1348s
+  step  4400 t= 22.56 E/E0=1.00045 Enear/E0=0.93252 <u>tube=-8.744e-05 <u>ext=+1.741e-04 u_mode(c,s)=(-0.006,+0.008) Q[-5.344e+01 +5.484e+01 -5.883e+01] lam_max=30.852 <lam>tube=0.542 wall=1395s
+  step  4600 t= 23.59 E/E0=1.00043 Enear/E0=0.93836 <u>tube=-1.474e-04 <u>ext=+1.706e-04 u_mode(c,s)=(+0.026,-0.007) Q[+2.570e+01 -9.354e+01 +1.018e+02] lam_max=30.018 <lam>tube=0.538 wall=1441s
+  step  4800 t= 24.62 E/E0=1.00042 Enear/E0=0.94420 <u>tube=-3.750e-04 <u>ext=-1.983e-05 u_mode(c,s)=(+0.063,-0.018) Q[+3.455e+01 +5.563e+01 -6.315e+01] lam_max=24.777 <lam>tube=0.534 wall=1488s
+  step  5000 t= 25.64 E/E0=1.00046 Enear/E0=0.94886 <u>tube=-4.974e-04 <u>ext=+9.453e-05 u_mode(c,s)=(+0.099,-0.020) Q[-3.078e+01 +3.460e+01 -3.872e+01] lam_max=19.415 <lam>tube=0.529 wall=1535s
+  step  5200 t= 26.67 E/E0=1.00051 Enear/E0=0.95146 <u>tube=-4.616e-04 <u>ext=+3.718e-04 u_mode(c,s)=(+0.127,-0.008) Q[-8.237e+00 -6.449e+01 +1.029e+02] lam_max=17.915 <lam>tube=0.526 wall=1581s
+  step  5400 t= 27.69 E/E0=1.00056 Enear/E0=0.95153 <u>tube=-6.178e-04 <u>ext=+4.791e-05 u_mode(c,s)=(+0.138,+0.015) Q[+6.309e-02 +1.267e+01 -2.903e+01] lam_max=25.359 <lam>tube=0.525 wall=1629s
+  step  5600 t= 28.72 E/E0=1.00059 Enear/E0=0.94819 <u>tube=-4.368e-04 <u>ext=-2.571e-04 u_mode(c,s)=(+0.123,+0.041) Q[-3.859e+01 -1.560e+01 -9.397e+01] lam_max=37.856 <lam>tube=0.525 wall=1676s
+  step  5800 t= 29.74 E/E0=1.00061 Enear/E0=0.94279 <u>tube=-1.505e-04 <u>ext=+1.151e-05 u_mode(c,s)=(+0.082,+0.056) Q[+5.958e+01 -7.187e+01 +1.653e+01] lam_max=45.759 <lam>tube=0.526 wall=1722s
+  step  6000 t= 30.77 E/E0=1.00062 Enear/E0=0.93899 <u>tube=-7.044e-04 <u>ext=+2.399e-04 u_mode(c,s)=(+0.029,+0.061) Q[-2.096e+01 +6.441e+01 +7.822e+01] lam_max=53.668 <lam>tube=0.528 wall=1769s
+done 1769s

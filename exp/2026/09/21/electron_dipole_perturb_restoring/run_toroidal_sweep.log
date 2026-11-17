@@ -1,0 +1,19 @@
+N=347941  ring tiles=96  r_ring=14.895  dt=5.1282e-03
+single-ring baseline: Gamma=1.6087e+02  H=9.6000e+01  Gamma/H=1.6757e+00
+
+   eps      Gamma     H_near    Gamma/H    g_eff |  rate(300 steps)
+  init_electron_dipole_ic_vecpot: scale=24.4  R_sph=1.0  r_axis=14.90  u_bg=0.0  inner_cells=79063/347941  (22.7%)
+  divergence_clean: div_rms 7.9069e-04 → 6.8395e-12  (×8.65e-09)
+  0.00 3.6654e+02 3.9029e+04 9.3913e-03   0.0056 |      +3.9988e-15  (2.3s)
+  init_electron_dipole_ic_vecpot: scale=24.4  R_sph=1.0  r_axis=14.90  u_bg=0.0  inner_cells=79063/347941  (22.7%)
+  divergence_clean: div_rms 7.9069e-04 → 6.8395e-12  (×8.65e-09)
+  0.10 3.8398e+02 4.4119e+04 8.7033e-03   0.0052 |      +3.8590e-15  (2.2s)
+  init_electron_dipole_ic_vecpot: scale=24.4  R_sph=1.0  r_axis=14.90  u_bg=0.0  inner_cells=79063/347941  (22.7%)
+  divergence_clean: div_rms 7.9069e-04 → 6.8395e-12  (×8.65e-09)
+  0.30 4.1887e+02 5.5397e+04 7.5612e-03   0.0045 |      +3.4149e-15  (2.3s)
+  init_electron_dipole_ic_vecpot: scale=24.4  R_sph=1.0  r_axis=14.90  u_bg=0.0  inner_cells=79063/347941  (22.7%)
+  divergence_clean: div_rms 7.9069e-04 → 6.8395e-12  (×8.65e-09)
+  0.50 4.5376e+02 6.8140e+04 6.6593e-03   0.0040 |      +3.0539e-15  (2.3s)
+  init_electron_dipole_ic_vecpot: scale=24.4  R_sph=1.0  r_axis=14.90  u_bg=0.0  inner_cells=79063/347941  (22.7%)
+  divergence_clean: div_rms 7.9069e-04 → 6.8395e-12  (×8.65e-09)
+  1.00 5.4099e+02 1.0640e+05 5.0843e-03   0.0030 |      +2.3113e-15  (2.2s)
