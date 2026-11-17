@@ -46,9 +46,13 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        # every test in exactly one shard: phlop -r matches the test's module path
+        # every test in exactly one shard: phlop -r matches the test's module path and Class.method.
+        #  Balanced on a full run's times (17 Nov 2026): the two junction-mismatch tests take
+        #  ~10 and ~3 min, the three multi-level spheromak decays ~4 min each
         shard:
-        - { name: adaptive, regex: 'tst\.substrate\.adaptive\.' }
+        - { name: adaptive junction, regex: 'tst\.substrate\.adaptive\..*TestStepCrossUniformVsJunctionMismatch' }
+        - { name: adaptive spheromak, regex: 'tst\.substrate\.adaptive\..*TestSpheromakDecayMultiLevel' }
+        - { name: adaptive, regex: 'tst\.substrate\.adaptive\.(?!.*(TestStepCrossUniformVsJunctionMismatch|TestSpheromakDecayMultiLevel))' }
         - { name: substrate a-l, regex: 'tst\.substrate\.(?!adaptive\.)test_[a-l]' }
         - { name: substrate m-z, regex: 'tst\.substrate\.(?!adaptive\.)test_[m-z]' }
         - { name: other, regex: 'tst\.(?!substrate\.)' }
