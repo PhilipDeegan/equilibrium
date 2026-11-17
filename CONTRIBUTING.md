@@ -67,7 +67,9 @@ Rebuild after every C++ change; a running Python process keeps the old `.so`.
 
 ## CI gates
 
-Pull requests, not drafts: the build and tests, clang-format and black/ruff on changed lines and
+Pull requests, not drafts: the extensions built once, the Python tests in parallel shards
+(`.github/workflows/build_nix.yml`; a new test file lands in the shard its name matches), the C++
+lattice tests (`test_lattice`), clang-format and black/ruff on changed lines and
 files, iwyu on all of `inc/`, and clang-tidy on changed C++ lines (warning only).
 
 ## Visualisation (`vis/`)
