@@ -33,6 +33,11 @@ KLOG=1 mkn build -Oqp mod,mod_lattice -x mpi -g 0 -W 9
 assertions with optimisation, drop `-g 0` and keep `-O`: `mkn build -KOqp mod,mod_lattice,test_lattice -x mpi -gW 9`.
 Rebuild after every C++ change; a running Python process keeps the old `.so`.
 
+`-K` builds mkn dependencies statically, avoiding shared-library call overhead. Final binaries
+and libraries (extensions, tests, tools) set `mode: none` in `mkn.yaml`, so `-K` doesn't force
+`-static` at link time and they link whichever of shared or static is found (there is no static
+`libmpi`).
+
 ## Tests
 
 ```sh
