@@ -83,4 +83,4 @@ jobs:
         apt update && apt install -y curl
         curl -Lo mkn https://github.com/mkn/mkn/releases/download/latest/mkn_nix
         chmod +x mkn
-        KLOG=3 ./mkn clean build test -dtOqp test_lattice -Wx res/mkn/mpi # not -K: no static libmpi
+        KLOG=3 ./mkn clean build test -dtKOqp test_lattice -Wx res/mkn/mpi

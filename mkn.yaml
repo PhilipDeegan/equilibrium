@@ -43,16 +43,19 @@ profile:
 
 - name: test_lattice
   inc: inc
+  mode: none
   self: cppdict thread_pool highfive
   test: tst/eq/core/data/lattice/test_(\w+).cpp
 
 - name: check_amr_junctions
   inc: inc
+  mode: none
   self: cppdict thread_pool highfive
   main: tst/eq/core/data/lattice/check_amr_junctions.cpp
 
 - name: measure_junction_ghost_error
   inc: inc
+  mode: none
   self: cppdict thread_pool highfive
   main: tst/eq/core/data/lattice/measure_junction_ghost_error.cpp
 
