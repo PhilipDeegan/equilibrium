@@ -1,21 +1,20 @@
 #ifndef _EQUILIBRIUM_CORE_DATA_LATTICE_CLUSTER_HPP_
 #define _EQUILIBRIUM_CORE_DATA_LATTICE_CLUSTER_HPP_
 
-#include "bc.hpp"
-#include "dst_info.hpp"
-#include "split_criterion.hpp"
-#include "cell/adaptive_cell.hpp"
-
-#include "eq/core/phlop.hpp"
+#include "eq/core/data/lattice/bc.hpp"
+#include "eq/core/data/lattice/dst_info.hpp"
+#include "eq/core/data/lattice/split_criterion.hpp"
+#include "eq/core/data/lattice/cell/adaptive_cell.hpp"
 
 #include <algorithm>
 #include <cassert>
-#include <cstddef>
 #include <cstdint>
 #include <cstdlib>
-#include <cstring>
 #include <unordered_map>
 #include <vector>
+#include <array>
+#include <memory>
+#include <utility>
 
 namespace equilibrium::dst::discrete {
 

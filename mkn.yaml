@@ -91,3 +91,35 @@ profile:
             checks: CSV       #(optional, default="", see: [link](https://clang.llvm.org/extra/clang-tidy/checks/list.html))
             config: file      #(optional, default='.clang-tidy')
             types: cpp:cxx:cc #(optional, default=cpp:cxx:cc)
+# include-what-you-use report for inc/, needs iwyu on PATH
+- name: iwyu
+  self: lattice_core phlop highfive
+  inc: inc
+  mode: none
+  mod:
+  - name: lang.python3
+  - name: cpp.iwyu
+    compile:
+      paths: inc
+      inc: /usr/lib/x86_64-linux-gnu/openmpi/include /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi
+      headers: -x c++-header
+      args: -Xiwyu --cxx17ns -Xiwyu --mapping_file=res/iwyu.imp
+
+# iwyu's suggestions applied (fix_include): CI builds this and fails on any resulting diff
+# mpicxx adds MPI's include directories itself, iwyu needs them given (Debian/Ubuntu openmpi)
+- name: iwyu_fix
+  self: lattice_core phlop highfive
+  inc: inc
+  mode: none
+  mod:
+  - name: lang.python3
+  - name: cpp.iwyu
+    compile:
+      paths: inc
+      inc: /usr/lib/x86_64-linux-gnu/openmpi/include /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi
+      headers: -x c++-header
+      args: -Xiwyu --cxx17ns -Xiwyu --mapping_file=res/iwyu.imp
+      # --noreorder keeps the include order (eq, other, system), --nosafe_headers lets it
+      # remove unused includes from headers too
+      fix: --nocomments --noreorder --nosafe_headers
+      system_last: true

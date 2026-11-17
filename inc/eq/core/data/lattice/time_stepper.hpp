@@ -24,7 +24,7 @@
 //   "ratio" — refinement ratio for by_level (default 3.0)
 
 #include "dict.hpp"
-#include "dst_info.hpp"
+#include "eq/core/data/lattice/dst_info.hpp"
 
 #include <algorithm>
 #include <cmath>
