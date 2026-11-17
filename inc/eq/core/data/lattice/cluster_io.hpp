@@ -1,15 +1,18 @@
 #ifndef EQUILIBRIUM_CORE_DATA_LATTICE_CLUSTER_IO_HPP
 #define EQUILIBRIUM_CORE_DATA_LATTICE_CLUSTER_IO_HPP
 
-#include "bc.hpp"
-#include "cluster.hpp"
+#include "eq/core/data/lattice/bc.hpp"
+#include "eq/core/data/lattice/cluster.hpp"
 #include "eq/core/phlop.hpp"
-
 #include "highfive/H5File.hpp"
+#include "eq/core/data/lattice/dst_info.hpp"
 
 #include <cstdint>
 #include <string>
 #include <vector>
+#include <cstddef>
+#include <memory>
+#include <utility>
 
 namespace equilibrium::dst::discrete {
 

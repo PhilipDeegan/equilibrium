@@ -22,9 +22,9 @@
 //   static diagnostic toggles    they switch discrete junction corrections
 
 #include "eq/core/data/lattice/adaptive_lattice.hpp"
+
 #include "eq/core/data/lattice/cluster.hpp"
 #include "eq/core/data/lattice/time_stepper.hpp"
-
 #include "BS_thread_pool.hpp"
 
 #include <algorithm>
@@ -38,6 +38,7 @@
 #include <string>
 #include <unordered_map>
 #include <vector>
+#include <initializer_list>
 
 namespace equilibrium::dst::continuous {
 

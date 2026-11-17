@@ -60,6 +60,15 @@ Rebuild after every C++ change; a running Python process keeps the old `.so`.
 - Python: create directories with `Path(p).mkdir(parents=True, exist_ok=True)`; launch scripts
   with `python3 -u` (`-Ou` with optimisation) so output streams.
 - Lint: `./sh/lint.sh` (black, ruff, autoflake).
+- Includes are full paths from `inc/` (`"eq/core/debug.hpp"`, not `"debug.hpp"`) and follow
+  include-what-you-use: `mkn build -p iwyu_fix -x res/mkn/mpi` applies its suggestions, and CI
+  fails if that changes anything. `res/iwyu.imp` maps third-party internals to their public
+  headers.
+
+## CI gates
+
+Pull requests, not drafts: the build and tests, clang-format and black/ruff on changed lines and
+files, iwyu on all of `inc/`, and clang-tidy on changed C++ lines (warning only).
 
 ## Visualisation (`vis/`)
 

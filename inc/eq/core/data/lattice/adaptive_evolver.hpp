@@ -7,6 +7,7 @@
 #include "eq/core/phlop.hpp"
 
 #include <cstddef>
+#include <memory>
 
 namespace equilibrium::dst::discrete {
 

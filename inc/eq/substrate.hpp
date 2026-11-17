@@ -6,6 +6,7 @@
 #include <cstdint>
 #include <thread>
 #include <vector>
+#include <cstddef>
 
 namespace eq {
 

@@ -4,11 +4,15 @@
 #include "eq/core/phlop.hpp"
 #include "eq/core/debug.hpp"
 #include "eq/core/mca.hpp"
-
-#include "bcc_defs.hpp"
-#include "cluster.hpp"
-#include "time_stepper.hpp"
-#include "debug/debug_adaptive_lattice.hpp"
+#include "eq/core/data/lattice/bcc_defs.hpp"
+#include "eq/core/data/lattice/cluster.hpp"
+#include "eq/core/data/lattice/time_stepper.hpp"
+#include "eq/core/data/lattice/debug/debug_adaptive_lattice.hpp"
+#include "BS_thread_pool.hpp"
+#include "eq/core/data/lattice/bc.hpp"
+#include "eq/core/data/lattice/cell/adaptive_cell.hpp"
+#include "eq/core/data/lattice/cell/discrete_cell.hpp"
+#include "eq/core/data/lattice/dst_info.hpp"
 
 #include <algorithm>
 #include <array>
@@ -26,8 +30,8 @@
 #include <stdexcept>
 #include <tuple>
 #include <vector>
-
-#include "BS_thread_pool.hpp"
+#include <utility>
+#include <variant>
 
 namespace equilibrium::dst::discrete {
 

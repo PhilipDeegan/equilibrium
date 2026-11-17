@@ -1,7 +1,7 @@
 #ifndef _EQUILIBRIUM_CORE_DATA_LATTICE_CELL_ADAPTIVE_CELL_HPP_
 #define _EQUILIBRIUM_CORE_DATA_LATTICE_CELL_ADAPTIVE_CELL_HPP_
 
-#include "discrete_cell.hpp"
+#include "eq/core/data/lattice/cell/discrete_cell.hpp"
 
 #include <cstddef>
 #include <cstdint>

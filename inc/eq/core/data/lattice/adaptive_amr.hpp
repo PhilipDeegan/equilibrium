@@ -5,13 +5,20 @@
 // (wiring) — kept in a separate header to avoid a circular include between the
 // two layers.
 
-#include "bcc_geometry.hpp"
-#include "adaptive_lattice.hpp"
+#include "eq/core/data/lattice/bcc_geometry.hpp"
+#include "eq/core/data/lattice/adaptive_lattice.hpp"
 #include "eq/core/phlop.hpp"
+#include "eq/core/data/lattice/cell/adaptive_cell.hpp"
+#include "eq/core/data/lattice/cluster.hpp"
+#include "eq/core/data/lattice/dst_info.hpp"
+#include "eq/core/data/lattice/split_criterion.hpp"
 
 #include <algorithm>
 #include <cmath>
 #include <vector>
+#include <cstddef>
+#include <cstdint>
+#include <memory>
 
 namespace equilibrium::dst::discrete {
 
