@@ -1,0 +1,22 @@
+# iwyu mappings for eq, used by the iwyu profiles in mkn.yaml
+[
+  # prefer the C++ headers: <cassert> over <assert.h>. iwyu's own mappings already mark the C
+  # headers public, so they can't be remapped by include, only by symbol
+  { symbol: ["assert", "private", "<cassert>", "public"] },
+
+  # libstdc++ 14 <format> forward declares std::vector, iwyu credits it when only a declaration
+  # is needed
+  { symbol: ["std::vector", "private", "<vector>", "public"] },
+
+  # phlop's scope timers come through eq/core/phlop.hpp's EQ_SCOPE_TIMER
+  { include: ["@\"phlop/timing/.*\"", "private", "\"eq/core/phlop.hpp\"", "public"] },
+
+  # HighFive: H5File.hpp (and H5Easy.hpp) are the public headers, its other headers and the HDF5
+  # C headers (and mpi.h, through parallel HDF5) come with them
+  { include: ["@\"highfive/bits/.*\"", "private", "\"highfive/H5File.hpp\"", "public"] },
+  { include: ["@\"highfive/h5easy_bits/.*\"", "private", "\"highfive/H5Easy.hpp\"", "public"] },
+  { include: ["@\"highfive/H5(DataSet|DataSpace|DataType|Group|Object|PropertyList|Attribute|Exception|Selection|Utility)\\.hpp\"", "private", "\"highfive/H5File.hpp\"", "public"] },
+  { include: ["@\"H5[A-Za-z_]*\\.hpp\"", "private", "\"highfive/H5File.hpp\"", "public"] },
+  { include: ["@\"H5[A-Za-z]*(public|pubconf)\\.h\"", "private", "\"highfive/H5File.hpp\"", "public"] },
+  { include: ["@<H5[A-Za-z]*(public|pubconf)\\.h>", "private", "\"highfive/H5File.hpp\"", "public"] },
+]

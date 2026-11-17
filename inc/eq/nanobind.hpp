@@ -2,7 +2,8 @@
 #define _EQUILIBRIUM_NANOBIND_HPP_
 
 #include <nanobind/ndarray.h>
-#include <nanobind/operators.h>
+#include <algorithm>
+#include <cstddef>
 
 // #include <array>
 // #include <vector>
@@ -10,6 +11,9 @@
 #include "mkn/kul/alloc.hpp"
 // #include "mkn/avx/span.hpp"
 #include "mkn/avx/lazy.hpp"
+#include "mkn/avx.hpp"
+#include "mkn/kul/span.hpp"
+#include "nanobind/nanobind.h"
 
 namespace eq::nb {
 

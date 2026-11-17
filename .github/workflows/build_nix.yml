@@ -5,37 +5,86 @@ concurrency:
   cancel-in-progress: true
 
 on:
-  pull_request:
+  pull_request: # not drafts (each job's if): a draft's pushes cost no Actions minutes, being
+    #  marked ready for review runs everything once; test locally meanwhile
+    types: [opened, synchronize, reopened, ready_for_review]
 
+# the extensions are built once (build), the Python tests run in parallel shards against them
+#  (python), the C++ lattice tests build and run on their own (cpp)
 jobs:
   build:
-    name: Python ${{ matrix.python-version }}
+    if: ${{ !github.event.pull_request.draft }}
     runs-on: ubuntu-24.04
     container: ghcr.io/pharchive/phare_dep/ubuntu:24.04
-
-    strategy:
-      fail-fast: false
-      max-parallel: 4
-      matrix:
-        python-version: ['3.13']
-
+    timeout-minutes: 60
     steps:
     - uses: actions/checkout@v4
-      with:
-        submodules: true
 
-    - uses: actions/setup-python@v4
+    - uses: actions/setup-python@v5
       with:
-        python-version: ${{ matrix.python-version }}
-        architecture: x64
+        python-version: "3.13"
 
     - run: |
         apt update && apt install -y curl
         curl -Lo mkn https://github.com/mkn/mkn/releases/download/latest/mkn_nix
         chmod +x mkn
-        KLOG=3 ./mkn clean build -dtKOqp mod,mod_lattice test -Wx res/mkn/mpi
+        KLOG=3 ./mkn clean build -dtKOqp mod,mod_lattice -Wx res/mkn/mpi
+
+    - uses: actions/upload-artifact@v4
+      with:
+        name: extensions
+        path: equilibrium/*.so
+        if-no-files-found: error
+        retention-days: 1
+
+  python:
+    needs: build
+    name: python (${{ matrix.shard.name }})
+    runs-on: ubuntu-24.04
+    container: ghcr.io/pharchive/phare_dep/ubuntu:24.04 # the extensions' runtime libraries
+    timeout-minutes: 120
+    strategy:
+      fail-fast: false
+      matrix:
+        # every test in exactly one shard: phlop -r matches the test's module path and Class.method.
+        #  Balanced on a full run's times (17 Nov 2026): the two junction-mismatch tests take
+        #  ~10 and ~3 min, the three multi-level spheromak decays ~4 min each
+        shard:
+        - { name: adaptive junction, regex: 'tst\.substrate\.adaptive\..*TestStepCrossUniformVsJunctionMismatch' }
+        - { name: adaptive spheromak, regex: 'tst\.substrate\.adaptive\..*TestSpheromakDecayMultiLevel' }
+        - { name: adaptive, regex: 'tst\.substrate\.adaptive\.(?!.*(TestStepCrossUniformVsJunctionMismatch|TestSpheromakDecayMultiLevel))' }
+        - { name: substrate a-l, regex: 'tst\.substrate\.(?!adaptive\.)test_[a-l]' }
+        - { name: substrate m-z, regex: 'tst\.substrate\.(?!adaptive\.)test_[m-z]' }
+        - { name: other, regex: 'tst\.(?!substrate\.)' }
+    steps:
+    - uses: actions/checkout@v4
+
+    - uses: actions/setup-python@v5
+      with:
+        python-version: "3.13"
+
+    - uses: actions/download-artifact@v4
+      with:
+        name: extensions
+        path: equilibrium
 
     - run: |
+        git clone --depth 1 https://github.com/PhilipDeegan/phlop tpp/phlop
         python3 -m pip install -r requirements.txt
         export EQ_TEST_N_THREADS=1
-        ./sh/test.sh
+        PYTHONPATH=$PWD:$PWD/tpp/phlop python3 -m phlop.run.test_cases -i tst -c 2 \
+          -r '${{ matrix.shard.regex }}'
+
+  cpp:
+    if: ${{ !github.event.pull_request.draft }}
+    runs-on: ubuntu-24.04
+    container: ghcr.io/pharchive/phare_dep/ubuntu:24.04
+    timeout-minutes: 120
+    steps:
+    - uses: actions/checkout@v4
+
+    - run: |
+        apt update && apt install -y curl
+        curl -Lo mkn https://github.com/mkn/mkn/releases/download/latest/mkn_nix
+        chmod +x mkn
+        KLOG=3 ./mkn clean build test -dtKOqp test_lattice -Wx res/mkn/mpi

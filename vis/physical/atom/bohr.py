@@ -32,7 +32,7 @@ def electrons_energy(n: Atom):
 
 def electrons_velocity(n: Atom):
     θ = PI / 12
-    x, y, z = n.ep[0]
+    x, y, _ = n.ep[0]
     n.ep[0][0] = np.cos(θ) * x + np.sin(θ) * y
     n.ep[0][1] = -np.sin(θ) * x + np.cos(θ) * y
     return n

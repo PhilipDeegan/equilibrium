@@ -24,10 +24,10 @@
 //       at square-face distance from each other (3 siblings per child).
 //     Hex faces: no sibling is at hex distance — all hex faces point outside.
 
-#include "bcc_defs.hpp"
-#include "adaptive_lattice.hpp"
-#include "eq/core/phlop.hpp"
-#include "cluster.hpp"
+#include "eq/core/data/lattice/bcc_defs.hpp"
+#include "eq/core/data/lattice/adaptive_lattice.hpp"
+#include "eq/core/data/lattice/cluster.hpp"
+#include "eq/core/data/lattice/cell/adaptive_cell.hpp"
 
 #include <array>
 #include <cmath>
@@ -35,6 +35,9 @@
 #include <cstdint>
 #include <stdexcept>
 #include <vector>
+#include <limits>
+#include <unordered_map>
+#include <utility>
 
 namespace equilibrium::dst::discrete {
 namespace bcc {

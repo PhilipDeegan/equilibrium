@@ -31,11 +31,12 @@
 //   "ref"   — u floor            (default 0.0)
 
 #include "dict.hpp"
-#include "dst_info.hpp"  // for DSTDict typedef
+#include "eq/core/data/lattice/dst_info.hpp"  // for DSTDict typedef
 
 #include <cmath>
 #include <cstdint>
 #include <string>
+#include <algorithm>
 
 namespace equilibrium::dst::discrete {
 

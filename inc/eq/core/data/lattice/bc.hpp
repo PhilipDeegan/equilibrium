@@ -31,6 +31,8 @@
 #include <cstddef>
 #include <cstdint>
 #include <vector>
+#include <iterator>
+#include <utility>
 
 namespace equilibrium::dst::discrete {
 

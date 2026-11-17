@@ -1,6 +1,8 @@
 #ifndef EQUILIBRIUM_CORE_DATA_LATTICE_ADAPTIVE_LATTICE_DEBUG_HPP
 #define EQUILIBRIUM_CORE_DATA_LATTICE_ADAPTIVE_LATTICE_DEBUG_HPP
 
+#include "eq/core/debug.hpp"
+
 #include <algorithm>
 #include <cmath>
 #include <cstdint>
@@ -12,6 +14,7 @@
 #include <string>
 #include <utility>
 #include <vector>
+#include <iterator>
 
 namespace equilibrium::dst::discrete {
 
