@@ -11,6 +11,10 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
   cancel-in-progress: true
 
+env:
+  CURL_GET: curl -fL --retry 3 --retry-delay 2
+  PATH_GET: https://github.com/mkn/mkn/releases/latest/download
+
 jobs:
   clang-format:
     if: ${{ !github.event.pull_request.draft }}
@@ -86,7 +90,7 @@ jobs:
     - uses: actions/checkout@v4
 
     - run: |
-        curl -fsSL --retry 5 --retry-delay 2 --retry-all-errors -o mkn https://github.com/mkn/mkn/releases/latest/download/mkn_nix
+        $CURL_GET -o mkn $PATH_GET/mkn_nix
         chmod +x mkn
         KLOG=3 ./mkn build -dtKOqp iwyu_fix -Wx res/mkn/mpi # build: the module must link
         git config --global --add safe.directory "$PWD"
@@ -118,7 +122,7 @@ jobs:
     - name: compile commands
       run: |
         git config --global --add safe.directory "$PWD"
-        curl -fsSL --retry 5 --retry-delay 2 --retry-all-errors -o mkn https://github.com/mkn/mkn/releases/latest/download/mkn_nix
+        $CURL_GET -o mkn $PATH_GET/mkn_nix
         chmod +x mkn && mv mkn /usr/local/bin/mkn
         python3 res/ci/compile_db.py mod,mod_lattice -dKO -x res/mkn/mpi
 

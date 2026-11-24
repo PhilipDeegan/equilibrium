@@ -11,6 +11,10 @@ on:
 
 # the extensions are built once (build), the Python tests run in parallel shards against them
 #  (python), the C++ lattice tests build and run on their own (cpp)
+env:
+  CURL_GET: curl -fL --retry 3 --retry-delay 2
+  PATH_GET: https://github.com/mkn/mkn/releases/latest/download
+
 jobs:
   build:
     if: ${{ !github.event.pull_request.draft }}
@@ -26,7 +30,7 @@ jobs:
 
     - run: |
         apt update && apt install -y curl
-        curl -fsSL --retry 5 --retry-delay 2 --retry-all-errors -o mkn https://github.com/mkn/mkn/releases/latest/download/mkn_nix
+        $CURL_GET -o mkn $PATH_GET/mkn_nix
         chmod +x mkn
         KLOG=3 ./mkn clean build -dtKOqp mod,mod_lattice -Wx res/mkn/mpi
 
@@ -85,6 +89,6 @@ jobs:
 
     - run: |
         apt update && apt install -y curl
-        curl -fsSL --retry 5 --retry-delay 2 --retry-all-errors -o mkn https://github.com/mkn/mkn/releases/latest/download/mkn_nix
+        $CURL_GET -o mkn $PATH_GET/mkn_nix
         chmod +x mkn
         KLOG=3 ./mkn clean build test -dtKOqp test_lattice -Wx res/mkn/mpi
