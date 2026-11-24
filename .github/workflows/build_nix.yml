@@ -26,7 +26,7 @@ jobs:
 
     - run: |
         apt update && apt install -y curl
-        curl -Lo mkn https://github.com/mkn/mkn/releases/download/latest/mkn_nix
+        curl -fsSL --retry 5 --retry-delay 2 --retry-all-errors -o mkn https://github.com/mkn/mkn/releases/latest/download/mkn_nix
         chmod +x mkn
         KLOG=3 ./mkn clean build -dtKOqp mod,mod_lattice -Wx res/mkn/mpi
 
@@ -85,6 +85,6 @@ jobs:
 
     - run: |
         apt update && apt install -y curl
-        curl -Lo mkn https://github.com/mkn/mkn/releases/download/latest/mkn_nix
+        curl -fsSL --retry 5 --retry-delay 2 --retry-all-errors -o mkn https://github.com/mkn/mkn/releases/latest/download/mkn_nix
         chmod +x mkn
         KLOG=3 ./mkn clean build test -dtKOqp test_lattice -Wx res/mkn/mpi
