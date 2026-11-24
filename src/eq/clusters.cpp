@@ -84,7 +84,7 @@ void bind_clusters(nb::module_& top, nb::module_& continuous) {
             new (t)
                 ExecutionModel{.usable_threads = usable_threads, .max_scheduled = max_scheduled};
             if (mpi) {
-#if EQ_DAMN_CLUSTERS_MPI
+#if EQ_KELVIN_LEVEL_MPI
               damn::mpi::set_ranks(*t);
               if (!t->mpi()) throw std::runtime_error("ExecutionModel: mpi=True before mpi_init()");
 #else
@@ -103,7 +103,7 @@ void bind_clusters(nb::module_& top, nb::module_& continuous) {
       .def("threaded", &ExecutionModel::threaded)
       .def("mpi_only", &ExecutionModel::mpi_only);
 
-#if EQ_DAMN_CLUSTERS_MPI
+#if EQ_KELVIN_LEVEL_MPI
   top.def("mpi_init", [] {
     if (!damn::mpi::is_init()) {
       int provided = 0;
@@ -135,7 +135,8 @@ void bind_clusters(nb::module_& top, nb::module_& continuous) {
           "periodic",
           [](ct::AdaptiveLattice& lat, std::array<int, 3> P, std::array<int, 3> patch_cells,
              ExecutionModel& exec, double d1, double u0, double lam0) {
-            return new PyClusters(lat, cs::build_periodic(lat, P, patch_cells, exec, d1, u0, lam0));
+            return new PyClusters(lat,
+                                  cs::build_periodic(lat, P, exec, {patch_cells, d1, u0, lam0}));
           },
           nb::arg("lattice"), nb::arg("P"), nb::arg("patch_cells"), nb::arg("exec"),
           nb::arg("d1") = 1.0, nb::arg("u0") = 0.0, nb::arg("lam0") = 0.0,
@@ -145,7 +146,7 @@ void bind_clusters(nb::module_& top, nb::module_& continuous) {
           "box",
           [](ct::AdaptiveLattice& lat, std::array<int, 3> N, std::array<int, 3> patch_cells,
              ExecutionModel& exec, double d1, double u0, double lam0) {
-            return new PyClusters(lat, cs::build_box(lat, N, patch_cells, exec, d1, u0, lam0));
+            return new PyClusters(lat, cs::build_box(lat, N, exec, {patch_cells, d1, u0, lam0}));
           },
           nb::arg("lattice"), nb::arg("N"), nb::arg("patch_cells"), nb::arg("exec"),
           nb::arg("d1") = 1.0, nb::arg("u0") = 0.0, nb::arg("lam0") = 0.0,
@@ -163,7 +164,7 @@ void bind_clusters(nb::module_& top, nb::module_& continuous) {
       .def(
           "exchange_lam", [](PyClusters& p) { cs::exchange(p.c, cs::lam_names); },
           "after setting lam: ghosts' from their owners (collective with MPI)")
-      .def_prop_ro("rank", [](PyClusters& p) { return p.c.rank; })
+      .def_prop_ro("rank", [](PyClusters& p) { return p.c.level.rank; })
       .def_prop_ro("n_clusters", [](PyClusters& p) { return p.lat->clusters.size(); })
       .def_prop_ro("n_owned", [](PyClusters& p) { return p.owned.size(); })
       .def_prop_ro(
@@ -171,9 +172,9 @@ void bind_clusters(nb::module_& top, nb::module_& continuous) {
           [](PyClusters& p) {
             auto a = array<std::int32_t, 3>(p.keys.size());
             for (std::size_t j = 0; j < p.keys.size(); ++j) {
-              a.data()[3 * j] = p.keys[j].x;
-              a.data()[3 * j + 1] = p.keys[j].y;
-              a.data()[3 * j + 2] = p.keys[j].z;
+              a.data()[3 * j] = p.keys[j][0];
+              a.data()[3 * j + 1] = p.keys[j][1];
+              a.data()[3 * j + 2] = p.keys[j][2];
             }
             return a;
           },
