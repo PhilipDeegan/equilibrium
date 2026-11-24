@@ -18,7 +18,6 @@
 
 #include "eq/core/data/lattice/continuous/adaptive_lattice.hpp"
 #include "eq/core/data/lattice/bcc_defs.hpp"
-
 #include "damn/amr/copy.hpp"
 #include "damn/amr/hierarchy.hpp"
 #include "damn/amr/lattice.hpp"
@@ -28,7 +27,11 @@
 #include "damn/core/geometry/box.hpp"
 #include "damn/core/geometry/point.hpp"
 #include "damn/core/exec/execution_model.hpp"
+#include "damn/core/geometry/box_spans.hpp"
+#include "eq/core/data/lattice/cell/adaptive_cell.hpp"
+#include "eq/core/data/lattice/cluster.hpp"
 
+// IWYU pragma: no_include "mpi.h"
 #if __has_include("mpi.h")
 #define EQ_DAMN_CLUSTERS_MPI 1
 #include "damn/mpi/copy.hpp"
@@ -51,6 +54,10 @@
 #include <unordered_map>
 #include <utility>
 #include <vector>
+
+namespace equilibrium::dst::discrete {
+struct TimeStepper;
+}  // namespace equilibrium::dst::discrete
 
 namespace equilibrium::dst::continuous::clusters {
 

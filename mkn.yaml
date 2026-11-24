@@ -117,7 +117,7 @@ profile:
             types: cpp:cxx:cc #(optional, default=cpp:cxx:cc)
 # include-what-you-use report for inc/, needs iwyu on PATH
 - name: iwyu
-  self: lattice_core phlop highfive
+  self: lattice_core phlop highfive damn_mpi
   inc: inc
   mode: none
   mod:
@@ -132,7 +132,7 @@ profile:
 # iwyu's suggestions applied (fix_include): CI builds this and fails on any resulting diff
 # mpicxx adds MPI's include directories itself, iwyu needs them given (Debian/Ubuntu openmpi)
 - name: iwyu_fix
-  self: lattice_core phlop highfive
+  self: lattice_core phlop highfive damn_mpi
   inc: inc
   mode: none
   mod:
