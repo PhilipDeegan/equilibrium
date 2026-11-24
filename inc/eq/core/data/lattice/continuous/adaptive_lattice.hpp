@@ -382,6 +382,13 @@ struct AdaptiveLattice {
   // throws. The volumetric sponge (step_sponge: vol_rate / vol_damp) is allowed.
   void step(AdaptiveCellCluster& cl, TimeStepper const& ts) {
     EQ_SCOPE("equilibrium::dst::continuous::AdaptiveLattice::step");
+    step_u(cl, ts);
+    step_phi(cl, ts);
+  }
+
+  // step's two halves: u from phi, then phi from the new u. Clusters whose faces reach each other's
+  // sites exchange u between them (continuous/damn_clusters.hpp)
+  void step_u(AdaptiveCellCluster& cl, TimeStepper const& ts) {
     _require_no_face_bc(cl, "step");
     auto& an = anchors(cl);
     if (an.medium())
@@ -401,7 +408,11 @@ struct AdaptiveLattice {
       EQ_SCOPE("equilibrium::dst::continuous::AdaptiveLattice::_pass1", time, perf_light);
       _pass1(cl, an, ts, b, e, g);
     });
-    _par(L, [&](std::size_t b, std::size_t e) {
+  }
+
+  void step_phi(AdaptiveCellCluster& cl, TimeStepper const& ts) {
+    auto& an = anchors(cl);
+    _par(cl.leaf_indices.size(), [&](std::size_t b, std::size_t e) {
       EQ_SCOPE("equilibrium::dst::continuous::AdaptiveLattice::_pass2", time, perf_light);
       _pass2(cl, an, ts, b, e);
     });

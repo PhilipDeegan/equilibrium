@@ -20,9 +20,10 @@ profile:
     MKN_PYTHON_LIB_EMBED=0
 
 - name: mod_lattice
-  self: lattice_core phlop highfive
+  self: lattice_core phlop highfive damn_mpi
   inc: inc
   src: src/eq/lattice.cpp
+       src/eq/clusters.cpp
        tpp/phlop/src/phlop/timing/scope_timer.cpp
   mode: none
   mod: lang.python3 python3.module
@@ -46,6 +47,26 @@ profile:
   mode: none
   self: cppdict thread_pool highfive
   test: tst/eq/core/data/lattice/test_(\w+).cpp
+
+# needs an MPI compiler, -x mpi, as the python module (one damn build for both); serial: mpi_ranks 0
+- name: test_damn_clusters
+  inc: . inc
+  mode: none
+  self: cppdict thread_pool damn_mpi
+  arg: -std=c++20
+  test: tst/eq/damn/test_(\w+).cpp
+
+# tpp/damn may be a symlink to a local damn checkout, otherwise it is cloned; needs an MPI
+# compiler, -x mpi
+- name: damn_mpi
+  dep: damn&tpp/damn(https://github.com/PhilipDeegan/damn)[damn_mpi]
+
+- name: test_damn_clusters_mpi
+  inc: . inc
+  mode: none
+  self: cppdict thread_pool damn_mpi
+  arg: -std=c++20
+  main: tst/eq/damn_mpi/test_clusters_mpi.cpp
 
 - name: check_amr_junctions
   inc: inc
@@ -96,7 +117,7 @@ profile:
             types: cpp:cxx:cc #(optional, default=cpp:cxx:cc)
 # include-what-you-use report for inc/, needs iwyu on PATH
 - name: iwyu
-  self: lattice_core phlop highfive
+  self: lattice_core phlop highfive damn_mpi
   inc: inc
   mode: none
   mod:
@@ -111,7 +132,7 @@ profile:
 # iwyu's suggestions applied (fix_include): CI builds this and fails on any resulting diff
 # mpicxx adds MPI's include directories itself, iwyu needs them given (Debian/Ubuntu openmpi)
 - name: iwyu_fix
-  self: lattice_core phlop highfive
+  self: lattice_core phlop highfive damn_mpi
   inc: inc
   mode: none
   mod:
