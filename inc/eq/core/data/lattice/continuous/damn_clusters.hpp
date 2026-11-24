@@ -7,6 +7,9 @@
 //
 // eq site (ix, iy, iz), h units: damn cell floor(ix / 2) per axis, its corner site if even, its
 // body site if odd. Faces never cross more than one cell, so ghosts are the patch box grown by 1.
+// The sites are the keys in a box (Keys): a periodic direction's are whole cells, a bounded one's
+// need not be (build_bcc_box's [-N, N]: one sublattice a layer more than the other), the domain's
+// cells are those holding a site and a cell's missing site is absent (no cell, faces to it inert).
 
 #include "eq/core/data/lattice/continuous/adaptive_lattice.hpp"
 #include "eq/core/data/lattice/bcc_defs.hpp"
@@ -26,7 +29,6 @@
 #include <cstdint>
 #include <stdexcept>
 #include <string>
-#include <string_view>
 #include <unordered_map>
 #include <utility>
 #include <vector>
@@ -37,27 +39,54 @@ using Box3 = damn::core::Box<int, 3>;
 using Point3 = damn::core::Point<int, 3>;
 using Site = damn::amr::kelvin::Site;
 using Hierarchy = damn::amr::Hierarchy<3, damn::amr::Kelvin>;
+using Key = discrete::bcc::IntVec3;
 
 inline constexpr std::array<Site, 2> sites_of_cell{Site::corner, Site::body};
 
-[[nodiscard]] inline discrete::bcc::IntVec3 key_of(Point3 const& cell, Site const site) {
+[[nodiscard]] inline Key key_of(Point3 const& cell, Site const site) {
   auto const b = site == Site::body ? 1 : 0;
   return {2 * cell[0] + b, 2 * cell[1] + b, 2 * cell[2] + b};
 }
 
-[[nodiscard]] inline Point3 cell_of(discrete::bcc::IntVec3 const& key) {
+[[nodiscard]] inline Point3 cell_of(Key const& key) {
   return Point3{std::array{damn::core::floor_div(key.x, 2), damn::core::floor_div(key.y, 2),
                            damn::core::floor_div(key.z, 2)}};
 }
 
-[[nodiscard]] inline Site site_of(discrete::bcc::IntVec3 const& key) {
+[[nodiscard]] inline Site site_of(Key const& key) {
   return (key.x & 1) ? Site::body : Site::corner;
 }
 
-// a cluster's cells (global indices) per site over box (its patch grown by 1), -1: none
+// the domain's sites: keys lower..upper per direction (h units), periodic or bounded
+struct Keys {
+  std::array<int, 3> lower{}, upper{};
+  std::array<bool, 3> periodic{};
+
+  // whether key is a site: past a bounded direction's ends it is not, a periodic one's are images
+  [[nodiscard]] bool has(Key const& key) const;
+  [[nodiscard]] Box3 cells() const;
+};
+
+inline bool Keys::has(Key const& key) const {
+  std::array const k{key.x, key.y, key.z};
+  for (std::size_t d = 0; d < 3; ++d)
+    if (!periodic[d] && (k[d] < lower[d] || k[d] > upper[d])) return false;
+  return true;
+}
+
+inline Box3 Keys::cells() const {
+  return Box3{std::array{damn::core::floor_div(lower[0], 2), damn::core::floor_div(lower[1], 2),
+                         damn::core::floor_div(lower[2], 2)},
+              std::array{damn::core::floor_div(upper[0], 2), damn::core::floor_div(upper[1], 2),
+                         damn::core::floor_div(upper[2], 2)}};
+}
+
+// a cluster's cells (global indices) per site over box (its patch grown by 1), -1: none (past a
+// bounded domain's end, or an absent site)
 struct Sites {
   Box3 box{};
   std::array<std::vector<std::int32_t>, 2> g{};
+  mutable double absent = 0;  // what damn reads and writes for an absent site
 
   [[nodiscard]] std::size_t flat(Point3 const& c) const;
   [[nodiscard]] std::int32_t& at(Site site, Point3 const& c);
@@ -91,7 +120,9 @@ struct SiteField {
   return damn::core::grow(cells, 1);
 }
 [[nodiscard]] inline double& value(SiteField const& f, Box3 const&, Point3 const& p) {
-  auto cell = (*f.cluster)[f.sites->at(f.site, p)];
+  auto const g = f.sites->at(f.site, p);
+  if (g < 0) return f.sites->absent;
+  auto cell = (*f.cluster)[g];
   return f.field == Field::u ? cell.u : cell.lam;
 }
 
@@ -109,6 +140,7 @@ inline void for_each_resource(ClusterData& d, auto&& fn) {
 // lat's clusters, one per local patch in level order, their sites, damn's view of them
 struct Clusters {
   Hierarchy h{};
+  Keys keys{};
   int rank = 0;
   std::vector<Sites> sites{};
   damn::amr::LevelData<3, ClusterData> data{};
@@ -123,20 +155,43 @@ inline void exchange(Clusters& c, std::vector<std::string> const& names) {
   damn::amr::copy(damn::amr::fill_ghosts, c.neighbours, names, c.data);
 }
 
-// a periodic box of P sites per axis (h units, multiples of 4, as build_bcc_box_periodic's), cut in
-// patches of at most patch_cells cells (2 h each) over topology's ranks; lat's clusters replaced by
-// rank's patches, u0, lam0 everywhere, phi 0. lat's leaves include the ghosts: diagnostics take
-// for_each_owned
+// keys' domain cut in patches of at most patch_cells cells (2 h each) over topology's ranks; lat's
+// clusters replaced by rank's patches, u0, lam0 everywhere, phi 0. lat's leaves include the
+// ghosts: diagnostics take for_each_owned. A periodic direction's keys are whole cells
+[[nodiscard]] inline Clusters build(AdaptiveLattice& lat, Keys const& keys,
+                                    std::array<int, 3> const& patch_cells, double d1 = 1.0,
+                                    double u0 = 0.0, double lam0 = 0.0, int rank = 0,
+                                    damn::amr::Topology const& topology = damn::amr::single_node());
+
+// build_bcc_box_periodic(P)'s sites (P multiples of 4)
 [[nodiscard]] inline Clusters build_periodic(
     AdaptiveLattice& lat, std::array<int, 3> const& P, std::array<int, 3> const& patch_cells,
     double const d1 = 1.0, double const u0 = 0.0, double const lam0 = 0.0, int const rank = 0,
-    damn::amr::Topology const& topology = damn::amr::single_node());
+    damn::amr::Topology const& topology = damn::amr::single_node()) {
+  for (auto const p : P)
+    if (p < 4 || p % 4)
+      throw std::invalid_argument(
+          "clusters::build_periodic: periods are multiples of 4 (whole cells)");
+  Keys const keys{{-P[0] / 2, -P[1] / 2, -P[2] / 2},
+                  {P[0] / 2 - 1, P[1] / 2 - 1, P[2] / 2 - 1},
+                  {true, true, true}};
+  return build(lat, keys, patch_cells, d1, u0, lam0, rank, topology);
+}
+
+// build_bcc_box's sites for sides 2 N h (h = d1 / sqrt 3): keys -N..N, bounded
+[[nodiscard]] inline Clusters build_box(
+    AdaptiveLattice& lat, std::array<int, 3> const& N, std::array<int, 3> const& patch_cells,
+    double const d1 = 1.0, double const u0 = 0.0, double const lam0 = 0.0, int const rank = 0,
+    damn::amr::Topology const& topology = damn::amr::single_node()) {
+  Keys const keys{{-N[0], -N[1], -N[2]}, {N[0], N[1], N[2]}, {false, false, false}};
+  return build(lat, keys, patch_cells, d1, u0, lam0, rank, topology);
+}
 
 // the cluster's own sites (not ghosts): fn(global index, eq key)
 inline void for_each_owned(Clusters const& c, std::size_t const i, auto&& fn) {
-  auto const& box = c.data.patches[i].box;
-  damn::core::for_each_point(box, [&](auto const& cell) {
-    for (auto const site : sites_of_cell) fn(c.sites[i].at(site, cell), key_of(cell, site));
+  damn::core::for_each_point(c.data.patches[i].box, [&](auto const& cell) {
+    for (auto const site : sites_of_cell)
+      if (auto const g = c.sites[i].at(site, cell); g >= 0) fn(g, key_of(cell, site));
   });
 }
 
@@ -152,26 +207,26 @@ inline void step_all(AdaptiveLattice& lat, Clusters& c, discrete::TimeStepper co
   step_all(lat, c, ts, [](Clusters& cs) { exchange(cs, u_names); });
 }
 
-inline Clusters build_periodic(AdaptiveLattice& lat, std::array<int, 3> const& P,
-                               std::array<int, 3> const& patch_cells, double const d1,
-                               double const u0, double const lam0, int const rank,
-                               damn::amr::Topology const& topology) {
+inline Clusters build(AdaptiveLattice& lat, Keys const& keys, std::array<int, 3> const& patch_cells,
+                      double const d1, double const u0, double const lam0, int const rank,
+                      damn::amr::Topology const& topology) {
   using discrete::AdaptiveCellCluster;
   using discrete::CellSlab;
-  for (auto const p : P)
-    if (p < 4 || p % 4)
-      throw std::invalid_argument(
-          "clusters::build_periodic: periods are multiples of 4 (whole cells)");
+  for (std::size_t d = 0; d < 3; ++d) {
+    if (keys.lower[d] > keys.upper[d]) throw std::invalid_argument("clusters::build: no keys");
+    if (keys.periodic[d] && ((keys.lower[d] & 1) || !(keys.upper[d] & 1)))
+      throw std::invalid_argument("clusters::build: a periodic direction's keys are whole cells");
+  }
 
   double const h = d1 / std::sqrt(3.0);
   Clusters c;
+  c.keys = keys;
   c.rank = rank;
-  c.h.domain = Box3{std::array{-P[0] / 4, -P[1] / 4, -P[2] / 4},
-                    std::array{P[0] / 4 - 1, P[1] / 4 - 1, P[2] / 4 - 1}};
+  c.h.domain = keys.cells();
   c.h.dx = {2 * h, 2 * h, 2 * h};
-  c.h.origin =
-      damn::core::Point<double, 3>{std::array{-P[0] / 2 * h, -P[1] / 2 * h, -P[2] / 2 * h}};
-  c.h.periodic = {true, true, true};
+  c.h.origin = damn::core::Point<double, 3>{std::array{
+      2 * c.h.domain.lower[0] * h, 2 * c.h.domain.lower[1] * h, 2 * c.h.domain.lower[2] * h}};
+  c.h.periodic = keys.periodic;
   c.h.max_levels = 1;
   c.h.ratio = 3;
   damn::amr::set_level(
@@ -192,6 +247,7 @@ inline Clusters build_periodic(AdaptiveLattice& lat, std::array<int, 3> const& P
       bool const owned = damn::core::isIn(cell, local[i].box);
       for (auto const site : sites_of_cell) {
         auto const key = key_of(cell, site);
+        if (!keys.has(key)) continue;
         double const x = key.x * h, y = key.y * h, z = key.z * h;
         auto const g = cl.alloc_cell(0, AdaptiveCellCluster::zone_id(x, y, z));
         sites.at(site, cell) = g;
@@ -218,11 +274,13 @@ inline Clusters build_periodic(AdaptiveLattice& lat, std::array<int, 3> const& P
 
     damn::core::for_each_point(sites.box, [&](auto const& cell) {
       for (auto const site : sites_of_cell) {
+        auto const g = std::as_const(sites).at(site, cell);
+        if (g < 0) continue;
         auto const key = key_of(cell, site);
-        auto ref = cl[sites.at(site, cell)];
+        auto ref = cl[g];
         for (std::size_t k = 0; k < CellSlab::NF; ++k) {
           auto const d = discrete::bcc::face_delta(k);
-          discrete::bcc::IntVec3 const to{key.x + d[0], key.y + d[1], key.z + d[2]};
+          Key const to{key.x + d[0], key.y + d[1], key.z + d[2]};
           ref.nb[k] = std::as_const(sites).at(site_of(to), cell_of(to));
         }
       }

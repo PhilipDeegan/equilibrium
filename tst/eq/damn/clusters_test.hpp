@@ -1,8 +1,9 @@
 #ifndef EQ_TST_DAMN_CLUSTERS_TEST_HPP
 #define EQ_TST_DAMN_CLUSTERS_TEST_HPP
 
-// test_clusters.cpp's and test_clusters_mpi.cpp's: a reference run of one build_bcc_box_periodic
-// cluster, compared site by site, bit for bit, with clusters built, exchanged and stepped by Ops
+// test_clusters.cpp's and test_clusters_mpi.cpp's: a reference run of one cluster
+// (build_bcc_box_periodic, build_bcc_box), compared site by site, bit for bit, with the same sites
+// as clusters built, exchanged and stepped by Ops
 
 #include "eq/core/data/lattice/continuous/damn_clusters.hpp"
 #include "eq/core/data/lattice/bcc_geometry.hpp"
@@ -43,10 +44,27 @@ struct State {
 double u_init(IntVec3 const& k) { return 0.01 * ((7 * k.x + 13 * k.y + 29 * k.z) % 17 + 17) - 0.1; }
 double lam_init(IntVec3 const& k) { return 0.1 * ((k.x + 2 * k.y + 3 * k.z) & 3); }
 
-// the key of a periodic box site, wrapped into [-P/2, P/2)
-IntVec3 wrap(IntVec3 k, std::array<int, 3> const& P) {
-  auto w = [](int i, int p) { return ((i + p / 2) % p + p) % p - p / 2; };
-  return {w(k.x, P[0]), w(k.y, P[1]), w(k.z, P[2])};
+using continuous::clusters::Keys;
+
+// the sites of keys: periodic (build_bcc_box_periodic(P)) or bounded (build_bcc_box, sides 2 N h)
+Keys periodic(std::array<int, 3> const& P) {
+  return {{-P[0] / 2, -P[1] / 2, -P[2] / 2},
+          {P[0] / 2 - 1, P[1] / 2 - 1, P[2] / 2 - 1},
+          {true, true, true}};
+}
+Keys bounded(std::array<int, 3> const& N) {
+  return {{-N[0], -N[1], -N[2]}, {N[0], N[1], N[2]}, {}};
+}
+
+// a site's key, a periodic direction's wrapped into lower..upper
+IntVec3 wrap(IntVec3 const k, Keys const& keys) {
+  std::array a{k.x, k.y, k.z};
+  for (std::size_t d = 0; d < 3; ++d)
+    if (keys.periodic[d]) {
+      auto const n = keys.upper[d] - keys.lower[d] + 1;
+      a[d] = ((a[d] - keys.lower[d]) % n + n) % n + keys.lower[d];
+    }
+  return {a[0], a[1], a[2]};
 }
 
 IntVec3 key_at(discrete::AdaptiveCellCluster& cl, std::int32_t const g, double const h) {
@@ -58,11 +76,17 @@ IntVec3 key_at(discrete::AdaptiveCellCluster& cl, std::int32_t const g, double c
   return {r(0), r(1), r(2)};
 }
 
-std::map<Key, State> reference(std::array<int, 3> const& P, int const steps, double const dt) {
+std::map<Key, State> reference(Keys const& keys, int const steps, double const dt) {
   AdaptiveLattice lat;
   auto& cl = lat.clusters[0];
-  discrete::bcc::build_bcc_box_periodic(cl, P[0], P[1], P[2]);
   double const h = 1.0 / std::sqrt(3.0);
+  if (keys.periodic[0])
+    discrete::bcc::build_bcc_box_periodic(cl, keys.upper[0] - keys.lower[0] + 1,
+                                          keys.upper[1] - keys.lower[1] + 1,
+                                          keys.upper[2] - keys.lower[2] + 1);
+  else
+    discrete::bcc::build_bcc_box(cl, 2 * keys.upper[0] * h, 2 * keys.upper[1] * h,
+                                 2 * keys.upper[2] * h);
   lat.rebuild_leaf_indices(cl);
   for (auto const g : cl.leaf_indices) {
     auto const k = key_at(cl, g, h);
@@ -86,11 +110,11 @@ bool same(double const a, double const b) {
   return std::bit_cast<std::uint64_t>(a) == std::bit_cast<std::uint64_t>(b);
 }
 
-// Ops: build(lat, P, patch_cells), exchange(c, names), step_all(lat, c, ts); this rank's sites
+// Ops: build(lat, keys, patch_cells), exchange(c, names), step_all(lat, c, ts); this rank's sites
 //  against ref, the ones it owns: n_owned, to add over the ranks
 template <typename Ops>
-std::size_t compare(std::array<int, 3> const& P, std::array<int, 3> const& patch_cells,
-                    int const steps, double const dt, std::map<Key, State> const& ref) {
+std::size_t compare(Keys const& P, std::array<int, 3> const& patch_cells, int const steps,
+                    double const dt, std::map<Key, State> const& ref) {
   AdaptiveLattice lat;
   auto c = Ops::build(lat, P, patch_cells);
   for (std::size_t i = 0; i < lat.clusters.size(); ++i)
@@ -114,9 +138,10 @@ std::size_t compare(std::array<int, 3> const& P, std::array<int, 3> const& patch
   for (int s = 0; s < steps; ++s) Ops::step_all(lat, c, ts);
 
   std::size_t n = 0;
-  auto const label = "patch " + std::to_string(patch_cells[0]) + "x" +
-                     std::to_string(patch_cells[1]) + "x" + std::to_string(patch_cells[2]) + " (" +
-                     std::to_string(lat.clusters.size()) + " clusters)";
+  auto const label = std::string{P.periodic[0] ? "periodic" : "bounded"} + ", patch " +
+                     std::to_string(patch_cells[0]) + "x" + std::to_string(patch_cells[1]) + "x" +
+                     std::to_string(patch_cells[2]) + " (" + std::to_string(lat.clusters.size()) +
+                     " clusters)";
   for (std::size_t i = 0; i < lat.clusters.size(); ++i)
     continuous::clusters::for_each_owned(c, i, [&](std::int32_t const g, IntVec3 const& k) {
       auto const w = wrap(k, P);
