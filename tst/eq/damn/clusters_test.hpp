@@ -20,8 +20,9 @@
 
 using namespace equilibrium::dst;
 using continuous::AdaptiveLattice;
+using continuous::clusters::Key;
+using continuous::clusters::KeyBox;
 using discrete::CellSlab;
-using discrete::bcc::IntVec3;
 
 namespace clusters_test {
 
@@ -34,49 +35,36 @@ void check(bool const ok, std::string const& what) {
   }
 }
 
-using Key = std::tuple<int, int, int>;
+using RefKey = std::tuple<int, int, int>;
 
 struct State {
   double u;
   std::array<double, CellSlab::NF> phi;
 };
 
-double u_init(IntVec3 const& k) { return 0.01 * ((7 * k.x + 13 * k.y + 29 * k.z) % 17 + 17) - 0.1; }
-double lam_init(IntVec3 const& k) { return 0.1 * ((k.x + 2 * k.y + 3 * k.z) & 3); }
-
-using continuous::clusters::Keys;
+double u_init(Key const& k) { return 0.01 * ((7 * k[0] + 13 * k[1] + 29 * k[2]) % 17 + 17) - 0.1; }
+double lam_init(Key const& k) { return 0.1 * ((k[0] + 2 * k[1] + 3 * k[2]) & 3); }
 
 // the sites of keys: periodic (build_bcc_box_periodic(P)) or bounded (build_bcc_box, sides 2 N h)
-Keys periodic(std::array<int, 3> const& P) {
-  return {{-P[0] / 2, -P[1] / 2, -P[2] / 2},
-          {P[0] / 2 - 1, P[1] / 2 - 1, P[2] / 2 - 1},
+KeyBox periodic(std::array<int, 3> const& P) {
+  return {Key{std::array{-P[0] / 2, -P[1] / 2, -P[2] / 2}},
+          Key{std::array{P[0] / 2 - 1, P[1] / 2 - 1, P[2] / 2 - 1}},
           {true, true, true}};
 }
-Keys bounded(std::array<int, 3> const& N) {
-  return {{-N[0], -N[1], -N[2]}, {N[0], N[1], N[2]}, {}};
+KeyBox bounded(std::array<int, 3> const& N) {
+  return {Key{std::array{-N[0], -N[1], -N[2]}}, Key{N}, {}};
 }
 
-// a site's key, a periodic direction's wrapped into lower..upper
-IntVec3 wrap(IntVec3 const k, Keys const& keys) {
-  std::array a{k.x, k.y, k.z};
-  for (std::size_t d = 0; d < 3; ++d)
-    if (keys.periodic[d]) {
-      auto const n = keys.upper[d] - keys.lower[d] + 1;
-      a[d] = ((a[d] - keys.lower[d]) % n + n) % n + keys.lower[d];
-    }
-  return {a[0], a[1], a[2]};
-}
-
-IntVec3 key_at(discrete::AdaptiveCellCluster& cl, std::int32_t const g, double const h) {
+Key key_at(discrete::AdaptiveCellCluster& cl, std::int32_t const g, double const h) {
   auto const& slab = cl.slab(discrete::AdaptiveCellCluster::slab_of(g));
   auto const slot = discrete::AdaptiveCellCluster::slot_of(g);
   auto r = [&](int d) {
     return static_cast<int>(std::lround(slab.pos[d * CellSlab::CAPACITY + slot] / h));
   };
-  return {r(0), r(1), r(2)};
+  return Key{std::array{r(0), r(1), r(2)}};
 }
 
-std::map<Key, State> reference(Keys const& keys, int const steps, double const dt) {
+std::map<RefKey, State> reference(KeyBox const& keys, int const steps, double const dt) {
   AdaptiveLattice lat;
   auto& cl = lat.clusters[0];
   double const h = 1.0 / std::sqrt(3.0);
@@ -96,12 +84,12 @@ std::map<Key, State> reference(Keys const& keys, int const steps, double const d
   auto const ts = discrete::TimeStepper::make_fixed(dt);
   for (int s = 0; s < steps; ++s) lat.step(cl, ts);
 
-  std::map<Key, State> out;
+  std::map<RefKey, State> out;
   for (auto const g : cl.leaf_indices) {
     auto const k = key_at(cl, g, h);
     State st{cl[g].u, {}};
     for (std::size_t f = 0; f < CellSlab::NF; ++f) st.phi[f] = cl[g].phi[f];
-    out[{k.x, k.y, k.z}] = st;
+    out[{k[0], k[1], k[2]}] = st;
   }
   return out;
 }
@@ -113,13 +101,13 @@ bool same(double const a, double const b) {
 // Ops: build(lat, keys, patch_cells), exchange(c, names), step_all(lat, c, ts); this rank's sites
 //  against ref, the ones it owns: n_owned, to add over the ranks
 template <typename Ops>
-std::size_t compare(Keys const& P, std::array<int, 3> const& patch_cells, int const steps,
-                    double const dt, std::map<Key, State> const& ref) {
+std::size_t compare(KeyBox const& P, std::array<int, 3> const& patch_cells, int const steps,
+                    double const dt, std::map<RefKey, State> const& ref) {
   AdaptiveLattice lat;
   auto c = Ops::build(lat, P, patch_cells);
   for (std::size_t i = 0; i < lat.clusters.size(); ++i)
-    continuous::clusters::for_each_owned(c, i, [&](std::int32_t const g, IntVec3 const& k) {
-      auto const w = wrap(k, P);
+    continuous::clusters::for_each_owned(c, i, [&](std::int32_t const g, Key const& k) {
+      auto const w = P.wrap(k);
       lat.clusters[i][g].u = u_init(w);
       lat.clusters[i][g].lam = lam_init(w);
     });
@@ -130,7 +118,7 @@ std::size_t compare(Keys const& P, std::array<int, 3> const& patch_cells, int co
   double const h = 1.0 / std::sqrt(3.0);
   for (auto& cl : lat.clusters)
     for (auto const g : cl.leaf_indices) {
-      auto const w = wrap(key_at(cl, g, h), P);
+      auto const w = P.wrap(key_at(cl, g, h));
       check(same(cl[g].u, u_init(w)) && same(cl[g].lam, lam_init(w)), "ghost filled");
     }
 
@@ -143,15 +131,15 @@ std::size_t compare(Keys const& P, std::array<int, 3> const& patch_cells, int co
                      std::to_string(patch_cells[2]) + " (" + std::to_string(lat.clusters.size()) +
                      " clusters)";
   for (std::size_t i = 0; i < lat.clusters.size(); ++i)
-    continuous::clusters::for_each_owned(c, i, [&](std::int32_t const g, IntVec3 const& k) {
-      auto const w = wrap(k, P);
-      auto const it = ref.find({w.x, w.y, w.z});
+    continuous::clusters::for_each_owned(c, i, [&](std::int32_t const g, Key const& k) {
+      auto const w = P.wrap(k);
+      auto const it = ref.find({w[0], w[1], w[2]});
       check(it != ref.end(), label + ": site in the reference");
       if (it == ref.end()) return;
       ++n;
       auto cell = lat.clusters[i][g];
-      check(same(cell.u, it->second.u), label + ": u at " + std::to_string(w.x) + "," +
-                                            std::to_string(w.y) + "," + std::to_string(w.z));
+      check(same(cell.u, it->second.u), label + ": u at " + std::to_string(w[0]) + "," +
+                                            std::to_string(w[1]) + "," + std::to_string(w[2]));
       for (std::size_t f = 0; f < CellSlab::NF; ++f)
         check(same(cell.phi[f], it->second.phi[f]), label + ": phi " + std::to_string(f));
     });

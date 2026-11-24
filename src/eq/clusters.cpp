@@ -84,7 +84,7 @@ void bind_clusters(nb::module_& top, nb::module_& continuous) {
             new (t)
                 ExecutionModel{.usable_threads = usable_threads, .max_scheduled = max_scheduled};
             if (mpi) {
-#if EQ_DAMN_CLUSTERS_MPI
+#if EQ_KELVIN_LEVEL_MPI
               damn::mpi::set_ranks(*t);
               if (!t->mpi()) throw std::runtime_error("ExecutionModel: mpi=True before mpi_init()");
 #else
@@ -103,7 +103,7 @@ void bind_clusters(nb::module_& top, nb::module_& continuous) {
       .def("threaded", &ExecutionModel::threaded)
       .def("mpi_only", &ExecutionModel::mpi_only);
 
-#if EQ_DAMN_CLUSTERS_MPI
+#if EQ_KELVIN_LEVEL_MPI
   top.def("mpi_init", [] {
     if (!damn::mpi::is_init()) {
       int provided = 0;
@@ -163,7 +163,7 @@ void bind_clusters(nb::module_& top, nb::module_& continuous) {
       .def(
           "exchange_lam", [](PyClusters& p) { cs::exchange(p.c, cs::lam_names); },
           "after setting lam: ghosts' from their owners (collective with MPI)")
-      .def_prop_ro("rank", [](PyClusters& p) { return p.c.rank; })
+      .def_prop_ro("rank", [](PyClusters& p) { return p.c.level.rank; })
       .def_prop_ro("n_clusters", [](PyClusters& p) { return p.lat->clusters.size(); })
       .def_prop_ro("n_owned", [](PyClusters& p) { return p.owned.size(); })
       .def_prop_ro(
@@ -171,9 +171,9 @@ void bind_clusters(nb::module_& top, nb::module_& continuous) {
           [](PyClusters& p) {
             auto a = array<std::int32_t, 3>(p.keys.size());
             for (std::size_t j = 0; j < p.keys.size(); ++j) {
-              a.data()[3 * j] = p.keys[j].x;
-              a.data()[3 * j + 1] = p.keys[j].y;
-              a.data()[3 * j + 2] = p.keys[j].z;
+              a.data()[3 * j] = p.keys[j][0];
+              a.data()[3 * j + 1] = p.keys[j][1];
+              a.data()[3 * j + 2] = p.keys[j][2];
             }
             return a;
           },

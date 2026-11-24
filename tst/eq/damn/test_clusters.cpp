@@ -21,7 +21,8 @@ namespace {
 damn::core::ExecutionModel exec;
 
 struct Serial {
-  static auto build(AdaptiveLattice& lat, Keys const& keys, std::array<int, 3> const& patch_cells) {
+  static auto build(AdaptiveLattice& lat, KeyBox const& keys,
+                    std::array<int, 3> const& patch_cells) {
     return continuous::clusters::build(lat, keys, patch_cells, exec);
   }
   static void exchange(continuous::clusters::Clusters& c, std::vector<std::string> const& names) {

@@ -18,7 +18,8 @@ namespace {
 damn::core::ExecutionModel exec;
 
 struct Mpi {
-  static auto build(AdaptiveLattice& lat, Keys const& keys, std::array<int, 3> const& patch_cells) {
+  static auto build(AdaptiveLattice& lat, KeyBox const& keys,
+                    std::array<int, 3> const& patch_cells) {
     return continuous::clusters::build(lat, keys, patch_cells, exec);
   }
   static void exchange(continuous::clusters::Clusters& c, std::vector<std::string> const& names) {
@@ -39,7 +40,7 @@ int main(int argc, char** argv) {
 
   int const steps = 40;
   double const dt = 0.05;
-  auto const run = [&](Keys const& keys, auto const& patch_sizes) {
+  auto const run = [&](KeyBox const& keys, auto const& patch_sizes) {
     auto const ref = reference(keys, steps, dt);
     for (auto const& patch_cells : patch_sizes) {
       long n = static_cast<long>(compare<Mpi>(keys, patch_cells, steps, dt, ref)), total = 0;
