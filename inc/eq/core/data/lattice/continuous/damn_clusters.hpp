@@ -1,0 +1,253 @@
+#ifndef _EQUILIBRIUM_CORE_DATA_LATTICE_CONTINUOUS_DAMN_CLUSTERS_HPP_
+#define _EQUILIBRIUM_CORE_DATA_LATTICE_CONTINUOUS_DAMN_CLUSTERS_HPP_
+
+// Level 0 as several clusters, one per patch of a damn Kelvin hierarchy. A cluster holds its
+// patch's sites and, as ghosts, the sites its faces reach past the patch (one cell): leaves with u
+// and phi fixed, filled from their owners by damn between step_u and step_phi.
+//
+// eq site (ix, iy, iz), h units: damn cell floor(ix / 2) per axis, its corner site if even, its
+// body site if odd. Faces never cross more than one cell, so ghosts are the patch box grown by 1.
+
+#include "eq/core/data/lattice/continuous/adaptive_lattice.hpp"
+#include "eq/core/data/lattice/bcc_defs.hpp"
+
+#include "damn/amr/copy.hpp"
+#include "damn/amr/hierarchy.hpp"
+#include "damn/amr/lattice.hpp"
+#include "damn/amr/level_data.hpp"
+#include "damn/amr/neighbours.hpp"
+#include "damn/amr/topology.hpp"
+#include "damn/core/geometry/box.hpp"
+#include "damn/core/geometry/point.hpp"
+
+#include <array>
+#include <cmath>
+#include <cstddef>
+#include <cstdint>
+#include <stdexcept>
+#include <string>
+#include <string_view>
+#include <unordered_map>
+#include <utility>
+#include <vector>
+
+namespace equilibrium::dst::continuous::clusters {
+
+using Box3 = damn::core::Box<int, 3>;
+using Point3 = damn::core::Point<int, 3>;
+using Site = damn::amr::kelvin::Site;
+using Hierarchy = damn::amr::Hierarchy<3, damn::amr::Kelvin>;
+
+inline constexpr std::array<Site, 2> sites_of_cell{Site::corner, Site::body};
+
+[[nodiscard]] inline discrete::bcc::IntVec3 key_of(Point3 const& cell, Site const site) {
+  auto const b = site == Site::body ? 1 : 0;
+  return {2 * cell[0] + b, 2 * cell[1] + b, 2 * cell[2] + b};
+}
+
+[[nodiscard]] inline Point3 cell_of(discrete::bcc::IntVec3 const& key) {
+  return Point3{std::array{damn::core::floor_div(key.x, 2), damn::core::floor_div(key.y, 2),
+                           damn::core::floor_div(key.z, 2)}};
+}
+
+[[nodiscard]] inline Site site_of(discrete::bcc::IntVec3 const& key) {
+  return (key.x & 1) ? Site::body : Site::corner;
+}
+
+// a cluster's cells (global indices) per site over box (its patch grown by 1), -1: none
+struct Sites {
+  Box3 box{};
+  std::array<std::vector<std::int32_t>, 2> g{};
+
+  [[nodiscard]] std::size_t flat(Point3 const& c) const;
+  [[nodiscard]] std::int32_t& at(Site site, Point3 const& c);
+  [[nodiscard]] std::int32_t at(Site site, Point3 const& c) const;
+};
+
+inline std::size_t Sites::flat(Point3 const& c) const {
+  auto const s = box.shape();
+  return static_cast<std::size_t>(((c[2] - box.lower[2]) * s[1] + (c[1] - box.lower[1])) * s[0] +
+                                  (c[0] - box.lower[0]));
+}
+inline std::int32_t& Sites::at(Site const site, Point3 const& c) {
+  return g[static_cast<std::size_t>(site)][flat(c)];
+}
+inline std::int32_t Sites::at(Site const site, Point3 const& c) const {
+  return damn::core::isIn(c, box) ? g[static_cast<std::size_t>(site)][flat(c)] : -1;
+}
+
+enum class Field : std::uint8_t { u, lam };
+
+// one field on one site of a cluster's cells, as damn BoxData over the cluster's patch
+struct SiteField {
+  discrete::AdaptiveCellCluster* cluster = nullptr;
+  Sites const* sites = nullptr;
+  Site site = Site::corner;
+  Field field = Field::u;
+};
+
+[[nodiscard]] inline Box3 domain_box(SiteField const&, Box3 const& cells) { return cells; }
+[[nodiscard]] inline Box3 ghost_box(SiteField const&, Box3 const& cells) {
+  return damn::core::grow(cells, 1);
+}
+[[nodiscard]] inline double& value(SiteField const& f, Box3 const&, Point3 const& p) {
+  auto cell = (*f.cluster)[f.sites->at(f.site, p)];
+  return f.field == Field::u ? cell.u : cell.lam;
+}
+
+struct ClusterData {
+  SiteField u_corner, u_body, lam_corner, lam_body;
+};
+
+inline void for_each_resource(ClusterData& d, auto&& fn) {
+  fn("u_corner", d.u_corner);
+  fn("u_body", d.u_body);
+  fn("lam_corner", d.lam_corner);
+  fn("lam_body", d.lam_body);
+}
+
+// lat's clusters, one per local patch in level order, their sites, damn's view of them
+struct Clusters {
+  Hierarchy h{};
+  int rank = 0;
+  std::vector<Sites> sites{};
+  damn::amr::LevelData<3, ClusterData> data{};
+  damn::amr::Neighbours<3> neighbours{};
+};
+
+inline std::vector<std::string> const u_names{"u_corner", "u_body"};
+inline std::vector<std::string> const lam_names{"lam_corner", "lam_body"};
+
+// ghosts' u (or lam) from their owners on this rank (damn/mpi: continuous/damn_clusters_mpi.hpp)
+inline void exchange(Clusters& c, std::vector<std::string> const& names) {
+  damn::amr::copy(damn::amr::fill_ghosts, c.neighbours, names, c.data);
+}
+
+// a periodic box of P sites per axis (h units, multiples of 4, as build_bcc_box_periodic's), cut in
+// patches of at most patch_cells cells (2 h each) over topology's ranks; lat's clusters replaced by
+// rank's patches, u0, lam0 everywhere, phi 0. lat's leaves include the ghosts: diagnostics take
+// for_each_owned
+[[nodiscard]] inline Clusters build_periodic(
+    AdaptiveLattice& lat, std::array<int, 3> const& P, std::array<int, 3> const& patch_cells,
+    double const d1 = 1.0, double const u0 = 0.0, double const lam0 = 0.0, int const rank = 0,
+    damn::amr::Topology const& topology = damn::amr::single_node());
+
+// the cluster's own sites (not ghosts): fn(global index, eq key)
+inline void for_each_owned(Clusters const& c, std::size_t const i, auto&& fn) {
+  auto const& box = c.data.patches[i].box;
+  damn::core::for_each_point(box, [&](auto const& cell) {
+    for (auto const site : sites_of_cell) fn(c.sites[i].at(site, cell), key_of(cell, site));
+  });
+}
+
+// step on every cluster, ghosts' u refreshed between the halves by exchange_u(c)
+inline void step_all(AdaptiveLattice& lat, Clusters& c, discrete::TimeStepper const& ts,
+                     auto&& exchange_u) {
+  for (auto& cl : lat.clusters) lat.step_u(cl, ts);
+  exchange_u(c);
+  for (auto& cl : lat.clusters) lat.step_phi(cl, ts);
+}
+
+inline void step_all(AdaptiveLattice& lat, Clusters& c, discrete::TimeStepper const& ts) {
+  step_all(lat, c, ts, [](Clusters& cs) { exchange(cs, u_names); });
+}
+
+inline Clusters build_periodic(AdaptiveLattice& lat, std::array<int, 3> const& P,
+                               std::array<int, 3> const& patch_cells, double const d1,
+                               double const u0, double const lam0, int const rank,
+                               damn::amr::Topology const& topology) {
+  using discrete::AdaptiveCellCluster;
+  using discrete::CellSlab;
+  for (auto const p : P)
+    if (p < 4 || p % 4)
+      throw std::invalid_argument(
+          "clusters::build_periodic: periods are multiples of 4 (whole cells)");
+
+  double const h = d1 / std::sqrt(3.0);
+  Clusters c;
+  c.rank = rank;
+  c.h.domain = Box3{std::array{-P[0] / 4, -P[1] / 4, -P[2] / 4},
+                    std::array{P[0] / 4 - 1, P[1] / 4 - 1, P[2] / 4 - 1}};
+  c.h.dx = {2 * h, 2 * h, 2 * h};
+  c.h.origin =
+      damn::core::Point<double, 3>{std::array{-P[0] / 2 * h, -P[1] / 2 * h, -P[2] / 2 * h}};
+  c.h.periodic = {true, true, true};
+  c.h.max_levels = 1;
+  c.h.ratio = 3;
+  damn::amr::set_level(
+      c.h, damn::amr::uniform_level_0(c.h, patch_cells, static_cast<int>(topology.ranks.size())));
+
+  auto const local = damn::amr::local_patches(c.h.levels[0], rank);
+  lat.clusters.clear();
+  for (std::size_t i = 0; i < local.size(); ++i) lat.clusters.emplace_back();
+  c.sites.resize(local.size());
+
+  for (std::size_t i = 0; i < local.size(); ++i) {
+    auto& cl = lat.clusters[i];
+    auto& sites = c.sites[i];
+    sites.box = damn::core::grow(local[i].box, 1);
+    for (auto& g : sites.g) g.assign(sites.box.size(), -1);
+
+    damn::core::for_each_point(sites.box, [&](auto const& cell) {
+      bool const owned = damn::core::isIn(cell, local[i].box);
+      for (auto const site : sites_of_cell) {
+        auto const key = key_of(cell, site);
+        double const x = key.x * h, y = key.y * h, z = key.z * h;
+        auto const g = cl.alloc_cell(0, AdaptiveCellCluster::zone_id(x, y, z));
+        sites.at(site, cell) = g;
+        auto ref = cl[g];
+        ref.u = u0;
+        ref.L = d1;
+        ref.lam = lam0;
+        ref.fixed_u = owned ? 0 : 1;
+        ref.fixed_phi = owned ? 0 : static_cast<std::uint16_t>((1u << CellSlab::NF) - 1);
+        ref.parent = -1;
+        ref.first_child = -1;
+        ref.n_children = 0;
+        auto& slab = cl.slab(AdaptiveCellCluster::slab_of(g));
+        auto const slot = AdaptiveCellCluster::slot_of(g);
+        slab.pos[0 * CellSlab::CAPACITY + slot] = x;
+        slab.pos[1 * CellSlab::CAPACITY + slot] = y;
+        slab.pos[2 * CellSlab::CAPACITY + slot] = z;
+        for (std::size_t k = 0; k < CellSlab::NF; ++k) {
+          ref.phi[k] = 0.0;
+          ref.nb[k] = -1;
+        }
+      }
+    });
+
+    damn::core::for_each_point(sites.box, [&](auto const& cell) {
+      for (auto const site : sites_of_cell) {
+        auto const key = key_of(cell, site);
+        auto ref = cl[sites.at(site, cell)];
+        for (std::size_t k = 0; k < CellSlab::NF; ++k) {
+          auto const d = discrete::bcc::face_delta(k);
+          discrete::bcc::IntVec3 const to{key.x + d[0], key.y + d[1], key.z + d[2]};
+          ref.nb[k] = std::as_const(sites).at(site_of(to), cell_of(to));
+        }
+      }
+    });
+    lat.rebuild_leaf_indices(cl);
+  }
+
+  std::unordered_map<std::uint32_t, std::size_t> index_of;
+  for (std::size_t i = 0; i < local.size(); ++i) index_of[local[i].id] = i;
+  c.data = damn::amr::allocate(c.h.levels[0], rank, [&](damn::amr::Patch<3> const& patch) {
+    ClusterData d;
+    auto const it = index_of.find(patch.id);
+    if (it == index_of.end()) return d;  // the prototype of a rank without patches: boxes only
+    auto* cl = &lat.clusters[it->second];
+    auto const* sites = &c.sites[it->second];
+    d.u_corner = {cl, sites, Site::corner, Field::u};
+    d.u_body = {cl, sites, Site::body, Field::u};
+    d.lam_corner = {cl, sites, Site::corner, Field::lam};
+    d.lam_body = {cl, sites, Site::body, Field::lam};
+    return d;
+  });
+  c.neighbours = damn::amr::make_neighbours(c.h, 0, rank, topology, 1);
+  return c;
+}
+
+}  // namespace equilibrium::dst::continuous::clusters
+
+#endif  // _EQUILIBRIUM_CORE_DATA_LATTICE_CONTINUOUS_DAMN_CLUSTERS_HPP_
