@@ -1,14 +1,18 @@
 // continuous::clusters with mpi_ranks > 0: test_clusters.cpp's comparison with the clusters over
-// MPI ranks, ghosts exchanged by damn::mpi::copy; any number of ranks
-//   mkn clean build -p test_damn_clusters_mpi -dKO -t 4 -x mpi && mpirun -n 3
-//   ./bin/test_damn_clusters_mpi/...
+// MPI ranks, ghosts exchanged by damn::mpi::copy; any number of ranks, each reporting its checks
+//   mkn clean build -p test_damn_clusters_mpi -dKO -t 4 -x mpi
+//   mpirun -n 3 ./bin/test_damn_clusters_mpi/equilibrium
 
 #include "tst/eq/damn/clusters_test.hpp"
+
+#include "damn/mpi/mpi_utils.hpp"
+#include "mkn/kul/fail.hpp"
 
 #include <mpi.h>
 
 #include <array>
-#include <cstdio>
+#include <cstddef>
+#include <exception>
 #include <string>
 #include <vector>
 
@@ -20,7 +24,7 @@ damn::core::ExecutionModel exec;
 struct Mpi {
   static auto build(AdaptiveLattice& lat, KeyBox const& keys,
                     std::array<int, 3> const& patch_cells) {
-    return continuous::clusters::build(lat, keys, patch_cells, exec);
+    return continuous::clusters::build(lat, keys, exec, {.patch_cells = patch_cells});
   }
   static void exchange(continuous::clusters::Clusters& c, std::vector<std::string> const& names) {
     continuous::clusters::exchange(c, names);
@@ -30,33 +34,28 @@ struct Mpi {
     continuous::clusters::step_all(lat, c, ts);
   }
 };
+
+void run(KeyBox const& keys, std::vector<std::array<int, 3>> const& patch_sizes) {
+  auto const ref = reference(keys);
+  for (auto const& patch_cells : patch_sizes) {
+    auto const counts = damn::mpi::collect(compare<Mpi>(keys, patch_cells, ref));
+    std::size_t total = 0;
+    for (auto const n : counts) total += n;
+    MKN_KUL_TEST_CHECK(total == ref.size(), "every site once over the ranks");
+  }
+}
 }  // namespace
 
-int main(int argc, char** argv) {
+int main(int argc, char** argv) try {
   MPI_Init(&argc, &argv);
-  int rank = 0;
-  MPI_Comm_rank(MPI_COMM_WORLD, &rank);
   damn::mpi::set_ranks(exec);
 
-  int const steps = 40;
-  double const dt = 0.05;
-  auto const run = [&](KeyBox const& keys, auto const& patch_sizes) {
-    auto const ref = reference(keys, steps, dt);
-    for (auto const& patch_cells : patch_sizes) {
-      long n = static_cast<long>(compare<Mpi>(keys, patch_cells, steps, dt, ref)), total = 0;
-      MPI_Allreduce(&n, &total, 1, MPI_LONG, MPI_SUM, MPI_COMM_WORLD);
-      check(total == static_cast<long>(ref.size()), "every site once over the ranks");
-    }
-  };
-  run(periodic({16, 12, 8}), std::vector{std::array{8, 6, 4}, std::array{4, 3, 2},
-                                         std::array{3, 4, 4}, std::array{1, 1, 1}});
-  run(bounded({7, 6, 5}),
-      std::vector{std::array{8, 8, 8}, std::array{3, 2, 4}, std::array{1, 1, 1}});
-  run(bounded({4, 4, 4}), std::vector{std::array{3, 2, 4}});
+  run(periodic({16, 12, 8}), {{8, 6, 4}, {4, 3, 2}, {3, 4, 4}, {1, 1, 1}});
+  run(bounded({7, 6, 5}), {{8, 8, 8}, {3, 2, 4}, {1, 1, 1}});
+  run(bounded({4, 4, 4}), {{3, 2, 4}});
 
-  int all = 0;
-  MPI_Allreduce(&failures, &all, 1, MPI_INT, MPI_SUM, MPI_COMM_WORLD);
-  if (rank == 0) std::printf(all ? "%d failures\n" : "PASS\n", all);
   MPI_Finalize();
-  return all ? 1 : 0;
+  return 0;
+} catch (std::exception const& e) {
+  mkn::kul::fail(e.what());
 }

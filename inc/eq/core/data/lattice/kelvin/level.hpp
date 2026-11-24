@@ -1,5 +1,5 @@
-#ifndef _EQUILIBRIUM_CORE_DATA_LATTICE_KELVIN_LEVEL_HPP_
-#define _EQUILIBRIUM_CORE_DATA_LATTICE_KELVIN_LEVEL_HPP_
+#ifndef EQUILIBRIUM_CORE_DATA_LATTICE_KELVIN_LEVEL_HPP
+#define EQUILIBRIUM_CORE_DATA_LATTICE_KELVIN_LEVEL_HPP
 
 // A Kelvin lattice's level 0 for any model: the domain's sites (damn::amr::kelvin::KeyBox) cut in
 // patches of a damn Kelvin hierarchy over an ExecutionModel's ranks, a PatchData of the model's per
@@ -154,4 +154,4 @@ void for_each_patch(Level<PatchData>& level, auto&& fn) {
 
 }  // namespace equilibrium::kelvin
 
-#endif  // _EQUILIBRIUM_CORE_DATA_LATTICE_KELVIN_LEVEL_HPP_
+#endif  // EQUILIBRIUM_CORE_DATA_LATTICE_KELVIN_LEVEL_HPP

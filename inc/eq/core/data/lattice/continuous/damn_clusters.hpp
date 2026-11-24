@@ -86,25 +86,26 @@ struct Clusters {
   std::vector<Sites> sites{};
 };
 
-// keys' domain cut in patches of at most patch_cells cells over exec's ranks; lat's clusters
-// replaced by this rank's patches, u0, lam0 everywhere, phi 0. lat's leaves include the ghosts:
+// how a domain is cut and started: patches of at most patch_cells cells (2 h each), hex face
+//  distance d1 (h = d1 / sqrt 3), u0 and lam0 everywhere, phi 0
+struct Setup {
+  std::array<int, 3> patch_cells{};
+  double d1 = 1.0, u0 = 0.0, lam0 = 0.0;
+};
+
+// keys' domain cut as setup says over exec's ranks; lat's clusters replaced by this rank's
+// patches. lat's leaves include the ghosts:
 // diagnostics take for_each_owned
 [[nodiscard]] Clusters build(AdaptiveLattice& lat, KeyBox const& keys,
-                             std::array<int, 3> const& patch_cells,
-                             damn::core::ExecutionModel& exec, double d1 = 1.0, double u0 = 0.0,
-                             double lam0 = 0.0);
+                             damn::core::ExecutionModel& exec, Setup const& setup);
 
 // build_bcc_box_periodic(P)'s sites (P multiples of 4)
 [[nodiscard]] Clusters build_periodic(AdaptiveLattice& lat, std::array<int, 3> const& P,
-                                      std::array<int, 3> const& patch_cells,
-                                      damn::core::ExecutionModel& exec, double d1 = 1.0,
-                                      double u0 = 0.0, double lam0 = 0.0);
+                                      damn::core::ExecutionModel& exec, Setup const& setup);
 
-// build_bcc_box's sites for sides 2 N h (h = d1 / sqrt 3): keys -N..N, bounded
+// build_bcc_box's sites for sides 2 N h: keys -N..N, bounded
 [[nodiscard]] Clusters build_box(AdaptiveLattice& lat, std::array<int, 3> const& N,
-                                 std::array<int, 3> const& patch_cells,
-                                 damn::core::ExecutionModel& exec, double d1 = 1.0, double u0 = 0.0,
-                                 double lam0 = 0.0);
+                                 damn::core::ExecutionModel& exec, Setup const& setup);
 
 // ghosts' u (or lam) from their owners (collective with MPI)
 void exchange(Clusters& c, std::vector<std::string> const& names);
@@ -173,9 +174,7 @@ inline void step_all(AdaptiveLattice& lat, Clusters& c, discrete::TimeStepper co
 }
 
 inline Clusters build_periodic(AdaptiveLattice& lat, std::array<int, 3> const& P,
-                               std::array<int, 3> const& patch_cells,
-                               damn::core::ExecutionModel& exec, double const d1, double const u0,
-                               double const lam0) {
+                               damn::core::ExecutionModel& exec, Setup const& setup) {
   for (auto const p : P)
     if (p < 4 || p % 4)
       throw std::invalid_argument(
@@ -183,22 +182,21 @@ inline Clusters build_periodic(AdaptiveLattice& lat, std::array<int, 3> const& P
   KeyBox const keys{Key{std::array{-P[0] / 2, -P[1] / 2, -P[2] / 2}},
                     Key{std::array{P[0] / 2 - 1, P[1] / 2 - 1, P[2] / 2 - 1}},
                     {true, true, true}};
-  return build(lat, keys, patch_cells, exec, d1, u0, lam0);
+  return build(lat, keys, exec, setup);
 }
 
 inline Clusters build_box(AdaptiveLattice& lat, std::array<int, 3> const& N,
-                          std::array<int, 3> const& patch_cells, damn::core::ExecutionModel& exec,
-                          double const d1, double const u0, double const lam0) {
+                          damn::core::ExecutionModel& exec, Setup const& setup) {
   KeyBox const keys{Key{std::array{-N[0], -N[1], -N[2]}}, Key{N}, {false, false, false}};
-  return build(lat, keys, patch_cells, exec, d1, u0, lam0);
+  return build(lat, keys, exec, setup);
 }
 
-inline Clusters build(AdaptiveLattice& lat, KeyBox const& keys,
-                      std::array<int, 3> const& patch_cells, damn::core::ExecutionModel& exec,
-                      double const d1, double const u0, double const lam0) {
+inline Clusters build(AdaptiveLattice& lat, KeyBox const& keys, damn::core::ExecutionModel& exec,
+                      Setup const& setup) {
   using discrete::AdaptiveCellCluster;
   using discrete::CellSlab;
 
+  auto const [patch_cells, d1, u0, lam0] = setup;
   Clusters c{kelvin::make_level<ClusterData>(keys, patch_cells, exec, d1), {}};
   auto const& local = c.level.local;
   double const h = d1 / std::sqrt(3.0);

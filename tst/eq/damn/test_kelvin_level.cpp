@@ -4,6 +4,9 @@
 
 #include "eq/core/data/lattice/kelvin/level.hpp"
 
+#include "mkn/kul/fail.hpp"
+#include "mkn/kul/test.hpp"
+
 #include "damn/amr/kelvin/site_data.hpp"
 #include "damn/amr/kelvin/sites.hpp"
 #include "damn/core/exec/execution_model.hpp"
@@ -12,11 +15,13 @@
 #include <bit>
 #include <cstddef>
 #include <cstdint>
-#include <cstdio>
+#include <exception>
 #include <map>
 #include <string>
 #include <tuple>
 #include <vector>
+
+MKN_KUL_TEST_DECLARE();
 
 namespace kv = equilibrium::kelvin;
 namespace dk = damn::amr::kelvin;
@@ -31,8 +36,6 @@ void for_each_resource(Diffusion& d, auto&& fn) {
   dk::for_each_site_resource("u", d.u, fn);
   dk::for_each_site_resource("next", d.next, fn);
 }
-
-int failures = 0;
 
 using Sites = std::map<std::tuple<int, int, int>, double>;
 
@@ -75,7 +78,7 @@ Sites run(dk::KeyBox<3> const& keys, std::array<int, 3> const& patch_cells,
   });
   kv::exchange(level, dk::site_names({"u"}));
   for (int s = 0; s < 30; ++s) step(level, 0.02);
-  if (exec.threads_used != 1) ++failures;
+  MKN_KUL_TEST_CHECK(exec.threads_used == 1, "every lease given back");
 
   Sites out;
   for (std::size_t i = 0; i < level.local.size(); ++i) {
@@ -91,20 +94,17 @@ Sites run(dk::KeyBox<3> const& keys, std::array<int, 3> const& patch_cells,
   return out;
 }
 
-void compare(char const* what, Sites const& ref, Sites const& got) {
+void compare(std::string const& what, Sites const& ref, Sites const& got) {
   bool same = ref.size() == got.size();
   for (auto const& [k, v] : ref)
     same = same and got.contains(k) and
            std::bit_cast<std::uint64_t>(got.at(k)) == std::bit_cast<std::uint64_t>(v);
-  if (!same) {
-    ++failures;
-    std::fprintf(stderr, "FAIL: %s\n", what);
-  }
+  MKN_KUL_TEST_CHECK(same, what + ": the one patch, one thread bits");
 }
 
 }  // namespace
 
-int main() {
+int main() try {
   dk::KeyBox<3> const periodic{
       dk::Key<3>{std::array{-8, -6, -4}}, dk::Key<3>{std::array{7, 5, 3}}, {true, true, true}};
   dk::KeyBox<3> const bounded{
@@ -113,15 +113,11 @@ int main() {
     auto const ref = run(*keys, {8, 8, 8}, 1);
     for (std::size_t const threads : {1, 4})
       for (auto const patch_cells : {std::array{8, 8, 8}, std::array{3, 2, 4}, std::array{1, 1, 1}})
-        compare((std::string{keys == &periodic ? "periodic " : "bounded "} +
-                 std::to_string(patch_cells[0]) + " threads " + std::to_string(threads))
-                    .c_str(),
+        compare(std::string{keys == &periodic ? "periodic " : "bounded "} +
+                    std::to_string(patch_cells[0]) + " threads " + std::to_string(threads),
                 ref, run(*keys, patch_cells, threads));
   }
-  if (failures) {
-    std::fprintf(stderr, "%d failures\n", failures);
-    return 1;
-  }
-  std::printf("PASS\n");
   return 0;
+} catch (std::exception const& e) {
+  mkn::kul::fail(e.what());
 }

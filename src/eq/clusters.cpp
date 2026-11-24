@@ -135,7 +135,8 @@ void bind_clusters(nb::module_& top, nb::module_& continuous) {
           "periodic",
           [](ct::AdaptiveLattice& lat, std::array<int, 3> P, std::array<int, 3> patch_cells,
              ExecutionModel& exec, double d1, double u0, double lam0) {
-            return new PyClusters(lat, cs::build_periodic(lat, P, patch_cells, exec, d1, u0, lam0));
+            return new PyClusters(lat,
+                                  cs::build_periodic(lat, P, exec, {patch_cells, d1, u0, lam0}));
           },
           nb::arg("lattice"), nb::arg("P"), nb::arg("patch_cells"), nb::arg("exec"),
           nb::arg("d1") = 1.0, nb::arg("u0") = 0.0, nb::arg("lam0") = 0.0,
@@ -145,7 +146,7 @@ void bind_clusters(nb::module_& top, nb::module_& continuous) {
           "box",
           [](ct::AdaptiveLattice& lat, std::array<int, 3> N, std::array<int, 3> patch_cells,
              ExecutionModel& exec, double d1, double u0, double lam0) {
-            return new PyClusters(lat, cs::build_box(lat, N, patch_cells, exec, d1, u0, lam0));
+            return new PyClusters(lat, cs::build_box(lat, N, exec, {patch_cells, d1, u0, lam0}));
           },
           nb::arg("lattice"), nb::arg("N"), nb::arg("patch_cells"), nb::arg("exec"),
           nb::arg("d1") = 1.0, nb::arg("u0") = 0.0, nb::arg("lam0") = 0.0,
