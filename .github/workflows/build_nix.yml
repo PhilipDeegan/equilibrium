@@ -32,7 +32,9 @@ jobs:
         apt update && apt install -y curl
         $CURL_GET -o mkn $PATH_GET/mkn_nix
         chmod +x mkn
-        KLOG=3 ./mkn clean build -dtKOqp mod,mod_lattice -Wx res/mkn/mpi
+        # -O 3, not -O (9: -march=native): the extensions run on the python jobs' runners, whose
+        #  CPUs may lack the build runner's instructions (Illegal instruction)
+        KLOG=3 ./mkn clean build -dtKqp mod,mod_lattice -O 3 -Wx res/mkn/mpi
 
     - uses: actions/upload-artifact@v4
       with:
