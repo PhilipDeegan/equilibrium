@@ -1,9 +1,8 @@
-// continuous::clusters::mpi: test_clusters.cpp's comparison with the clusters over MPI ranks,
-// ghosts exchanged by damn::mpi::copy; any number of ranks
+// continuous::clusters with mpi_ranks > 0: test_clusters.cpp's comparison with the clusters over
+// MPI ranks, ghosts exchanged by damn::mpi::copy; any number of ranks
 //   mkn clean build -p test_damn_clusters_mpi -dKO -t 4 -x mpi && mpirun -n 3
 //   ./bin/test_damn_clusters_mpi/...
 
-#include "eq/core/data/lattice/continuous/damn_clusters_mpi.hpp"
 #include "tst/eq/damn/clusters_test.hpp"
 
 #include <mpi.h>
@@ -16,16 +15,18 @@
 using namespace clusters_test;
 
 namespace {
+damn::core::ExecutionModel exec;
+
 struct Mpi {
   static auto build(AdaptiveLattice& lat, Keys const& keys, std::array<int, 3> const& patch_cells) {
-    return continuous::clusters::mpi::build(lat, keys, patch_cells);
+    return continuous::clusters::build(lat, keys, patch_cells, exec);
   }
   static void exchange(continuous::clusters::Clusters& c, std::vector<std::string> const& names) {
-    continuous::clusters::mpi::exchange(c, names);
+    continuous::clusters::exchange(c, names);
   }
   static void step_all(AdaptiveLattice& lat, continuous::clusters::Clusters& c,
                        discrete::TimeStepper const& ts) {
-    continuous::clusters::mpi::step_all(lat, c, ts);
+    continuous::clusters::step_all(lat, c, ts);
   }
 };
 }  // namespace
@@ -34,6 +35,7 @@ int main(int argc, char** argv) {
   MPI_Init(&argc, &argv);
   int rank = 0;
   MPI_Comm_rank(MPI_COMM_WORLD, &rank);
+  damn::mpi::set_ranks(exec);
 
   int const steps = 40;
   double const dt = 0.05;

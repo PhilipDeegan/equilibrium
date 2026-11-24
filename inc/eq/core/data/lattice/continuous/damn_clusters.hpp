@@ -10,6 +10,11 @@
 // The sites are the keys in a box (Keys): a periodic direction's are whole cells, a bounded one's
 // need not be (build_bcc_box's [-N, N]: one sublattice a layer more than the other), the domain's
 // cells are those holding a site and a cell's missing site is absent (no cell, faces to it inert).
+//
+// An ExecutionModel says where: with mpi() the patches are over MPI_COMM_WORLD's ranks and
+// damn::mpi moves the ghosts (needs mpi.h at compile time), else one process. step_all steps the
+// clusters side by side on the threads it leases from it (use_threads), the main thread only if
+// none are free.
 
 #include "eq/core/data/lattice/continuous/adaptive_lattice.hpp"
 #include "eq/core/data/lattice/bcc_defs.hpp"
@@ -22,11 +27,25 @@
 #include "damn/amr/topology.hpp"
 #include "damn/core/geometry/box.hpp"
 #include "damn/core/geometry/point.hpp"
+#include "damn/core/exec/execution_model.hpp"
+
+#if __has_include("mpi.h")
+#define EQ_DAMN_CLUSTERS_MPI 1
+#include "damn/mpi/copy.hpp"
+#include "damn/mpi/execution_model.hpp"
+#include "damn/mpi/mpi_utils.hpp"
+#include "damn/mpi/topology.hpp"
+#else
+#define EQ_DAMN_CLUSTERS_MPI 0
+#endif
+
+#include "BS_thread_pool.hpp"
 
 #include <array>
 #include <cmath>
 #include <cstddef>
 #include <cstdint>
+#include <memory>
 #include <stdexcept>
 #include <string>
 #include <unordered_map>
@@ -137,37 +156,48 @@ inline void for_each_resource(ClusterData& d, auto&& fn) {
   fn("lam_body", d.lam_body);
 }
 
-// lat's clusters, one per local patch in level order, their sites, damn's view of them
+// lat's clusters, one per local patch in level order, their sites, damn's view of them; exec
+// outlives it
 struct Clusters {
   Hierarchy h{};
   Keys keys{};
   int rank = 0;
+  damn::core::ExecutionModel* exec = nullptr;
   std::vector<Sites> sites{};
   damn::amr::LevelData<3, ClusterData> data{};
   damn::amr::Neighbours<3> neighbours{};
+  std::unique_ptr<BS::thread_pool<>> pool{};  // the most threads a lease may give, idle between
 };
 
 inline std::vector<std::string> const u_names{"u_corner", "u_body"};
 inline std::vector<std::string> const lam_names{"lam_corner", "lam_body"};
 
-// ghosts' u (or lam) from their owners on this rank (damn/mpi: continuous/damn_clusters_mpi.hpp)
+// ghosts' u (or lam) from their owners, any rank's with exec->mpi() (collective)
 inline void exchange(Clusters& c, std::vector<std::string> const& names) {
-  damn::amr::copy(damn::amr::fill_ghosts, c.neighbours, names, c.data);
+  if (c.exec->mpi()) {
+#if EQ_DAMN_CLUSTERS_MPI
+    damn::mpi::copy(damn::amr::fill_ghosts, c.neighbours, names, c.data);
+#else
+    throw std::runtime_error("clusters::exchange: mpi_ranks > 0 in a build without MPI");
+#endif
+  } else
+    damn::amr::copy(damn::amr::fill_ghosts, c.neighbours, names, c.data);
 }
 
-// keys' domain cut in patches of at most patch_cells cells (2 h each) over topology's ranks; lat's
-// clusters replaced by rank's patches, u0, lam0 everywhere, phi 0. lat's leaves include the
+// keys' domain cut in patches of at most patch_cells cells (2 h each) over exec's ranks; lat's
+// clusters replaced by this rank's patches, u0, lam0 everywhere, phi 0. lat's leaves include the
 // ghosts: diagnostics take for_each_owned. A periodic direction's keys are whole cells
 [[nodiscard]] inline Clusters build(AdaptiveLattice& lat, Keys const& keys,
-                                    std::array<int, 3> const& patch_cells, double d1 = 1.0,
-                                    double u0 = 0.0, double lam0 = 0.0, int rank = 0,
-                                    damn::amr::Topology const& topology = damn::amr::single_node());
+                                    std::array<int, 3> const& patch_cells,
+                                    damn::core::ExecutionModel& exec, double d1 = 1.0,
+                                    double u0 = 0.0, double lam0 = 0.0);
 
 // build_bcc_box_periodic(P)'s sites (P multiples of 4)
-[[nodiscard]] inline Clusters build_periodic(
-    AdaptiveLattice& lat, std::array<int, 3> const& P, std::array<int, 3> const& patch_cells,
-    double const d1 = 1.0, double const u0 = 0.0, double const lam0 = 0.0, int const rank = 0,
-    damn::amr::Topology const& topology = damn::amr::single_node()) {
+[[nodiscard]] inline Clusters build_periodic(AdaptiveLattice& lat, std::array<int, 3> const& P,
+                                             std::array<int, 3> const& patch_cells,
+                                             damn::core::ExecutionModel& exec,
+                                             double const d1 = 1.0, double const u0 = 0.0,
+                                             double const lam0 = 0.0) {
   for (auto const p : P)
     if (p < 4 || p % 4)
       throw std::invalid_argument(
@@ -175,16 +205,16 @@ inline void exchange(Clusters& c, std::vector<std::string> const& names) {
   Keys const keys{{-P[0] / 2, -P[1] / 2, -P[2] / 2},
                   {P[0] / 2 - 1, P[1] / 2 - 1, P[2] / 2 - 1},
                   {true, true, true}};
-  return build(lat, keys, patch_cells, d1, u0, lam0, rank, topology);
+  return build(lat, keys, patch_cells, exec, d1, u0, lam0);
 }
 
 // build_bcc_box's sites for sides 2 N h (h = d1 / sqrt 3): keys -N..N, bounded
-[[nodiscard]] inline Clusters build_box(
-    AdaptiveLattice& lat, std::array<int, 3> const& N, std::array<int, 3> const& patch_cells,
-    double const d1 = 1.0, double const u0 = 0.0, double const lam0 = 0.0, int const rank = 0,
-    damn::amr::Topology const& topology = damn::amr::single_node()) {
+[[nodiscard]] inline Clusters build_box(AdaptiveLattice& lat, std::array<int, 3> const& N,
+                                        std::array<int, 3> const& patch_cells,
+                                        damn::core::ExecutionModel& exec, double const d1 = 1.0,
+                                        double const u0 = 0.0, double const lam0 = 0.0) {
   Keys const keys{{-N[0], -N[1], -N[2]}, {N[0], N[1], N[2]}, {false, false, false}};
-  return build(lat, keys, patch_cells, d1, u0, lam0, rank, topology);
+  return build(lat, keys, patch_cells, exec, d1, u0, lam0);
 }
 
 // the cluster's own sites (not ghosts): fn(global index, eq key)
@@ -195,21 +225,35 @@ inline void for_each_owned(Clusters const& c, std::size_t const i, auto&& fn) {
   });
 }
 
-// step on every cluster, ghosts' u refreshed between the halves by exchange_u(c)
-inline void step_all(AdaptiveLattice& lat, Clusters& c, discrete::TimeStepper const& ts,
-                     auto&& exchange_u) {
-  for (auto& cl : lat.clusters) lat.step_u(cl, ts);
-  exchange_u(c);
-  for (auto& cl : lat.clusters) lat.step_phi(cl, ts);
+// fn(cluster) for every cluster, side by side on the threads leased for it (one cluster per thread
+//  at a time), on this thread if none are free or lat threads within a cluster itself
+inline void for_each_cluster(AdaptiveLattice& lat, Clusters& c, auto&& fn) {
+  auto const n = lat.clusters.size();
+  auto lease = (c.pool && lat.n_threads() <= 1 && n > 1) ? c.exec->use_threads(n)
+                                                         : damn::core::ThreadLease{};
+  if (lease.size() == 0) {
+    for (auto& cl : lat.clusters) fn(cl);
+    return;
+  }
+  c.pool->detach_blocks<std::size_t>(
+      0, n,
+      [&](std::size_t const b, std::size_t const e) {
+        for (auto i = b; i < e; ++i) fn(lat.clusters[i]);
+      },
+      lease.size());
+  c.pool->wait();
 }
 
+// a step of every cluster, ghosts' u refreshed between its halves
 inline void step_all(AdaptiveLattice& lat, Clusters& c, discrete::TimeStepper const& ts) {
-  step_all(lat, c, ts, [](Clusters& cs) { exchange(cs, u_names); });
+  for_each_cluster(lat, c, [&](auto& cl) { lat.step_u(cl, ts); });
+  exchange(c, u_names);
+  for_each_cluster(lat, c, [&](auto& cl) { lat.step_phi(cl, ts); });
 }
 
 inline Clusters build(AdaptiveLattice& lat, Keys const& keys, std::array<int, 3> const& patch_cells,
-                      double const d1, double const u0, double const lam0, int const rank,
-                      damn::amr::Topology const& topology) {
+                      damn::core::ExecutionModel& exec, double const d1, double const u0,
+                      double const lam0) {
   using discrete::AdaptiveCellCluster;
   using discrete::CellSlab;
   for (std::size_t d = 0; d < 3; ++d) {
@@ -218,10 +262,24 @@ inline Clusters build(AdaptiveLattice& lat, Keys const& keys, std::array<int, 3>
       throw std::invalid_argument("clusters::build: a periodic direction's keys are whole cells");
   }
 
+  exec.check();
+#if EQ_DAMN_CLUSTERS_MPI
+  damn::mpi::check(exec);
+  auto const rank = exec.mpi() ? damn::mpi::rank() : 0;
+  auto const topology = exec.mpi() ? damn::mpi::topology() : damn::amr::single_node();
+#else
+  if (exec.mpi()) throw std::runtime_error("clusters::build: mpi_ranks > 0 in a build without MPI");
+  auto const rank = 0;
+  auto const topology = damn::amr::single_node();
+#endif
+
   double const h = d1 / std::sqrt(3.0);
   Clusters c;
   c.keys = keys;
   c.rank = rank;
+  c.exec = &exec;
+  if (auto const most = exec.schedulable(); most > 1)
+    c.pool = std::make_unique<BS::thread_pool<>>(most - 1);
   c.h.domain = keys.cells();
   c.h.dx = {2 * h, 2 * h, 2 * h};
   c.h.origin = damn::core::Point<double, 3>{std::array{

@@ -1586,6 +1586,8 @@ static void bind_continuous(nb::module_& m, nb::module_& d) {
       .def("rebuild", &ct::AdaptiveLatticeEvolver::rebuild);
 }
 
+void bind_clusters(nb::module_& top, nb::module_& continuous);  // clusters.cpp
+
 NB_MODULE(lattice, m) {
   auto d = m.def_submodule("discrete", "Current AMR model: discrete face-flux rule (reference)");
   bind_discrete(d);
@@ -1593,4 +1595,5 @@ NB_MODULE(lattice, m) {
     if (!nb::cast<std::string>(item.first).starts_with("__")) m.attr(item.first) = item.second;
   auto c = m.def_submodule("continuous", "Continuous model: faces as anchors of a continuum field");
   bind_continuous(c, d);
+  bind_clusters(m, c);
 }

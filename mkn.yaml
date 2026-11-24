@@ -20,9 +20,10 @@ profile:
     MKN_PYTHON_LIB_EMBED=0
 
 - name: mod_lattice
-  self: lattice_core phlop highfive
+  self: lattice_core phlop highfive damn_mpi
   inc: inc
   src: src/eq/lattice.cpp
+       src/eq/clusters.cpp
        tpp/phlop/src/phlop/timing/scope_timer.cpp
   mode: none
   mod: lang.python3 python3.module
@@ -47,18 +48,16 @@ profile:
   self: cppdict thread_pool highfive
   test: tst/eq/core/data/lattice/test_(\w+).cpp
 
-# tpp/damn may be a symlink to a local damn checkout, otherwise it is cloned
-- name: damn
-  dep: damn&tpp/damn(https://github.com/PhilipDeegan/damn)[damn_core]
-
+# needs an MPI compiler, -x mpi, as the python module (one damn build for both); serial: mpi_ranks 0
 - name: test_damn_clusters
   inc: . inc
   mode: none
-  self: cppdict thread_pool damn
+  self: cppdict thread_pool damn_mpi
   arg: -std=c++20
   test: tst/eq/damn/test_(\w+).cpp
 
-# needs an MPI compiler, -x mpi; run with mpirun -n <any>
+# tpp/damn may be a symlink to a local damn checkout, otherwise it is cloned; needs an MPI
+# compiler, -x mpi
 - name: damn_mpi
   dep: damn&tpp/damn(https://github.com/PhilipDeegan/damn)[damn_mpi]
 
