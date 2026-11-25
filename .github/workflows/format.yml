@@ -124,7 +124,7 @@ jobs:
         git config --global --add safe.directory "$PWD"
         $CURL_GET -o mkn $PATH_GET/mkn_nix
         chmod +x mkn && mv mkn /usr/local/bin/mkn
-        python3 res/ci/compile_db.py mod,mod_lattice,test_damn_clusters,test_damn_clusters_mpi -dKO -x res/mkn/mpi
+        python3 res/ci/compile_db.py mod,mod_lattice,test_damn_clusters,test_damn_clusters_mpi,test_kelvin_levels_mpi -dKO -x res/mkn/mpi
 
     - continue-on-error: true # warning only (step level: the job stays green)
       run: |

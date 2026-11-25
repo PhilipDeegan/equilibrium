@@ -164,7 +164,7 @@ void bind_clusters(nb::module_& top, nb::module_& continuous) {
       .def(
           "exchange_lam", [](PyClusters& p) { cs::exchange(p.c, cs::lam_names); },
           "after setting lam: ghosts' from their owners (collective with MPI)")
-      .def_prop_ro("rank", [](PyClusters& p) { return p.c.level.rank; })
+      .def_prop_ro("rank", [](PyClusters& p) { return p.c.levels.rank; })
       .def_prop_ro("n_clusters", [](PyClusters& p) { return p.lat->clusters.size(); })
       .def_prop_ro("n_owned", [](PyClusters& p) { return p.owned.size(); })
       .def_prop_ro(

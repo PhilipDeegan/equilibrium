@@ -1,11 +1,11 @@
 #ifndef _EQUILIBRIUM_CORE_DATA_LATTICE_CONTINUOUS_DAMN_CLUSTERS_HPP_
 #define _EQUILIBRIUM_CORE_DATA_LATTICE_CONTINUOUS_DAMN_CLUSTERS_HPP_
 
-// The continuous DST model on a kelvin::Level: one AdaptiveCellCluster per patch holding its sites
-// and, as ghosts, the sites its faces reach past the patch (one cell): leaves with u and phi fixed,
-// filled from their owners by damn between AdaptiveLattice::step_u and step_phi. The cluster
-// storage is DST's (u, lam, phi per face); its u and lam reach damn through ClusterField, a BoxData
-// over a cluster's cells by site (Sites: cell and site to global index)
+// The continuous DST model on a kelvin::Levels' level 0: one AdaptiveCellCluster per patch holding
+// its sites and, as ghosts, the sites its faces reach past the patch (one cell): leaves with u and
+// phi fixed, filled from their owners by damn between AdaptiveLattice::step_u and step_phi. The
+// cluster storage is DST's (u, lam, phi per face); its u and lam reach damn through ClusterField, a
+// BoxData over a cluster's cells by site (Sites: cell and site to global index)
 
 // IWYU pragma: no_include "mpi.h"
 #include "eq/core/data/lattice/continuous/adaptive_lattice.hpp"
@@ -80,9 +80,9 @@ void for_each_resource(ClusterData& d, auto&& fn);
 inline std::vector<std::string> const u_names{"u_corner", "u_body"};
 inline std::vector<std::string> const lam_names{"lam_corner", "lam_body"};
 
-// the level and its clusters' site maps (lat's clusters, one per local patch, in order)
+// level 0 and its clusters' site maps (lat's clusters, one per local patch, in order)
 struct Clusters {
-  kelvin::Level<ClusterData> level;
+  kelvin::Levels<ClusterData> levels;
   std::vector<Sites> sites{};
 };
 
@@ -148,11 +148,11 @@ void for_each_resource(ClusterData& d, auto&& fn) {
 }
 
 inline void exchange(Clusters& c, std::vector<std::string> const& names) {
-  kelvin::exchange(c.level, names);
+  kelvin::exchange(c.levels, 0, names);
 }
 
 void for_each_owned(Clusters const& c, std::size_t const i, auto&& fn) {
-  damn::core::for_each_point(c.level.local[i].box, [&](auto const& cell) {
+  damn::core::for_each_point(c.levels[0].local[i].box, [&](auto const& cell) {
     for (auto const site : sites_of_cell)
       if (auto const g = c.sites[i].at(site, cell); g >= 0)
         fn(g, damn::amr::kelvin::key_of(cell, site));
@@ -164,7 +164,7 @@ void for_each_cluster(AdaptiveLattice& lat, Clusters& c, auto&& fn) {
     for (auto& cl : lat.clusters) fn(cl);
     return;
   }
-  kelvin::for_each_patch(c.level, [&](std::size_t const i, auto&) { fn(lat.clusters[i]); });
+  kelvin::for_each_patch(c.levels, 0, [&](std::size_t const i, auto&) { fn(lat.clusters[i]); });
 }
 
 inline void step_all(AdaptiveLattice& lat, Clusters& c, discrete::TimeStepper const& ts) {
@@ -197,8 +197,9 @@ inline Clusters build(AdaptiveLattice& lat, KeyBox const& keys, damn::core::Exec
   using discrete::CellSlab;
 
   auto const [patch_cells, d1, u0, lam0] = setup;
-  Clusters c{kelvin::make_level<ClusterData>(keys, patch_cells, exec, d1), {}};
-  auto const& local = c.level.local;
+  Clusters c{kelvin::make_levels<ClusterData>(keys, exec, {.patch_cells = patch_cells, .d1 = d1}),
+             {}};
+  auto const& local = c.levels[0].local;
   double const h = d1 / std::sqrt(3.0);
 
   lat.clusters.clear();
@@ -255,7 +256,7 @@ inline Clusters build(AdaptiveLattice& lat, KeyBox const& keys, damn::core::Exec
     lat.rebuild_leaf_indices(cl);
   }
 
-  kelvin::allocate(c.level, [&](damn::amr::Patch<3> const&, std::size_t const i) {
+  kelvin::allocate(c.levels, 0, [&](damn::amr::Patch<3> const&, std::size_t const i) {
     ClusterData d;
     if (i == local.size()) return d;  // the prototype of a rank without patches: boxes only
     auto* cl = &lat.clusters[i];
